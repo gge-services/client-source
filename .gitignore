@@ -1,0 +1,6 @@
+node_modules/
+deobfuscated.js
+*.log
+*.map
+*.tmp
+work/
