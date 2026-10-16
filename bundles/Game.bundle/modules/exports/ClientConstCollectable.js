@@ -1,0 +1,57 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var __dep_export_CollectableRendererAllianceRewardBackground = require("gge-module:export_CollectableRendererAllianceRewardBackground");
+var __dep_export_CollectableRendererBuildingLevelMC = require("gge-module:export_CollectableRendererBuildingLevelMC");
+var __s0local0 = function () {
+  function ClientConstCollectable() {}
+  ClientConstCollectable._getRendererDic = function () {
+    var __s5local0 = new Map();
+    __s5local0.set(__dep_export_CollectableRenderOptions.CollectableRenderOptions.ICON, __dep_export_CollectableRendererIcon.CollectableRendererIcon);
+    __s5local0.set(__dep_export_CollectableRenderOptions.CollectableRenderOptions.TOOLTIP, __dep_export_CollectableRendererTooltip.CollectableRendererTooltip);
+    __s5local0.set(__dep_export_CollectableRenderOptions.CollectableRenderOptions.TEXTFIELD, __dep_export_CollectableRendererTextfield.CollectableRendererTextfield);
+    __s5local0.set(__dep_export_CollectableRenderOptions.CollectableRenderOptions.TEXT_BACKGROUND, __dep_export_CollectableRendererTextBackground.CollectableRendererTextBackground);
+    __s5local0.set(__dep_export_CollectableRenderOptions.CollectableRenderOptions.INFO_BUTTON, __dep_export_CollectableRendererInfoButton.CollectableRendererInfoButton);
+    __s5local0.set(__dep_export_CollectableRenderOptions.CollectableRenderOptions.ICON_TRANSFORM, __dep_export_CollectableRendererIconTransform.CollectableRendererIconTransform);
+    __s5local0.set(__dep_export_CollectableRenderOptions.CollectableRenderOptions.COLOR_BACKGROUND, __dep_export_CollectableRendererColorBackground.CollectableRendererColorBackground);
+    __s5local0.set(__dep_export_CollectableRenderOptions.CollectableRenderOptions.EQUIPMENT_BACKGROUND, __dep_export_CollectableRendererEquipmentBackground.CollectableRendererEquipmentBackground);
+    __s5local0.set(__dep_export_CollectableRenderOptions.CollectableRenderOptions.COST_TEXTFIELD, __dep_export_CollectableRendererCostTextfield.CollectableRendererCostTextfield);
+    __s5local0.set(__dep_export_CollectableRenderOptions.CollectableRenderOptions.MINUTESKIP_BACKGROUND, __dep_export_CollectableRendererMinuteSkipBackground.CollectableRendererMinuteSkipBackground);
+    __s5local0.set(__dep_export_CollectableRenderOptions.CollectableRenderOptions.BUILDING_LEVEL_MC, __dep_export_CollectableRendererBuildingLevelMC.CollectableRendererBuildingLevelMC);
+    __s5local0.set(__dep_export_CollectableRenderOptions.CollectableRenderOptions.DYNAMIC_LEVEL_INDICATOR, __dep_export_CollectableRendererLevelIndicatorMC.CollectableRendererLevelIndicatorMC);
+    __s5local0.set(__dep_export_CollectableRenderOptions.CollectableRenderOptions.ALLIANCE_REWARD_BACKGROUND, __dep_export_CollectableRendererAllianceRewardBackground.CollectableRendererAllianceRewardBackground);
+    __s5local0.set(__dep_export_CollectableRenderOptions.CollectableRenderOptions.STORAGE_BAR, __dep_export_CollectableRendererStoragebar.CollectableRendererStoragebar);
+    return __s5local0;
+  };
+  ClientConstCollectable.__initialize_static_members = function () {
+    ClientConstCollectable.GROUP_LIST_REPAIR_COST_RESOURCES = [__dep_export_CollectableEnum.CollectableEnum.WOOD, __dep_export_CollectableEnum.CollectableEnum.STONE, __dep_export_CollectableEnum.CollectableEnum.FOOD];
+    ClientConstCollectable.GROUP_LIST_RESOURCES = [__dep_export_CollectableEnum.CollectableEnum.WOOD, __dep_export_CollectableEnum.CollectableEnum.STONE, __dep_export_CollectableEnum.CollectableEnum.FOOD, __dep_export_CollectableEnum.CollectableEnum.COAL, __dep_export_CollectableEnum.CollectableEnum.OIL, __dep_export_CollectableEnum.CollectableEnum.GLASS, __dep_export_CollectableEnum.CollectableEnum.IRON, __dep_export_CollectableEnum.CollectableEnum.AQUAMARINE, __dep_export_CollectableEnum.CollectableEnum.HONEY, __dep_export_CollectableEnum.CollectableEnum.MEAD, __dep_export_CollectableEnum.CollectableEnum.BEEF];
+    ClientConstCollectable.GROUP_LIST_BASIC_CURRENCY = [__dep_export_CollectableEnum.CollectableEnum.C1, __dep_export_CollectableEnum.CollectableEnum.C2];
+    ClientConstCollectable.GROUP_LIST_GOODS = ClientConstCollectable.GROUP_LIST_RESOURCES.concat(ClientConstCollectable.GROUP_LIST_BASIC_CURRENCY);
+    ClientConstCollectable.GROUP_LIST_EQUIPMENT = [__dep_export_CollectableEnum.CollectableEnum.EQUIPMENT_RARENESS, __dep_export_CollectableEnum.CollectableEnum.EQUIPMENT_UNIQUE, __dep_export_CollectableEnum.CollectableEnum.HERO_RANDOM, __dep_export_CollectableEnum.CollectableEnum.EQUIPMENT_UNIQUE_ENCHANTED];
+    ClientConstCollectable.GROUP_LIST_COMBINED_EVENT_REWARDS = [__dep_export_CollectableEnum.CollectableEnum.AQUAMARINE, __dep_export_CollectableEnum.CollectableEnum.IRON, __dep_export_CollectableEnum.CollectableEnum.GLASS, __dep_export_CollectableEnum.CollectableEnum.OIL, __dep_export_CollectableEnum.CollectableEnum.COAL, __dep_export_CollectableEnum.CollectableEnum.FOOD, __dep_export_CollectableEnum.CollectableEnum.STONE, __dep_export_CollectableEnum.CollectableEnum.WOOD, __dep_export_CollectableEnum.CollectableEnum.PERMANENT_TOOL_SLOT, __dep_export_CollectableEnum.CollectableEnum.GEM_RANDOM, __dep_export_CollectableEnum.CollectableEnum.GEM, __dep_export_CollectableEnum.CollectableEnum.CONSTRUCTION_ITEM, __dep_export_CollectableEnum.CollectableEnum.EQUIPMENT_UNIQUE, __dep_export_CollectableEnum.CollectableEnum.EQUIPMENT_RARENESS, __dep_export_CollectableEnum.CollectableEnum.EQUIPMENT_UNIQUE_ENCHANTED, __dep_export_CollectableEnum.CollectableEnum.HERO_RANDOM, __dep_export_CollectableEnum.CollectableEnum.C1, __dep_export_CollectableEnum.CollectableEnum.C2, __dep_export_CollectableEnum.CollectableEnum.UNITS, __dep_export_CollectableEnum.CollectableEnum.BUILDING];
+    ClientConstCollectable.RENDERER_CLASS_DIC = ClientConstCollectable._getRendererDic();
+    ClientConstCollectable.COLLECTABLES_WITHOUT_TEXTFIELD = [__dep_export_CollectableEnum.CollectableEnum.EQUIPMENT_RARENESS, __dep_export_CollectableEnum.CollectableEnum.EQUIPMENT_UNIQUE, __dep_export_CollectableEnum.CollectableEnum.HERO_RANDOM, __dep_export_CollectableEnum.CollectableEnum.GEM, __dep_export_CollectableEnum.CollectableEnum.GEM_RANDOM, __dep_export_CollectableEnum.CollectableEnum.BOOSTER, __dep_export_CollectableEnum.CollectableEnum.BUILDING, __dep_export_CollectableEnum.CollectableEnum.EXTINGUISH_FIRE, __dep_export_CollectableEnum.CollectableEnum.ALLIANCE_GIFT, __dep_export_CollectableEnum.CollectableEnum.DUNGEON_PROTECTION, __dep_export_CollectableEnum.CollectableEnum.RELIC_EQUIPMENT];
+  };
+  ClientConstCollectable.XML_PREFIX_COST = "cost";
+  ClientConstCollectable.XML_PREFIX_ADD = "add";
+  ClientConstCollectable.XML_PREFIX_AMOUNT = "amount";
+  ClientConstCollectable.XML_PREFIX_SELL = "sell";
+  return ClientConstCollectable;
+}();
+exports.ClientConstCollectable = __s0local0;
+var __dep_export_CollectableEnum = require("gge-module:export_CollectableEnum");
+var __dep_export_CollectableRendererColorBackground = require("gge-module:export_CollectableRendererColorBackground");
+var __dep_export_CollectableRendererCostTextfield = require("gge-module:export_CollectableRendererCostTextfield");
+var __dep_export_CollectableRendererEquipmentBackground = require("gge-module:export_CollectableRendererEquipmentBackground");
+var __dep_export_CollectableRendererIcon = require("gge-module:export_CollectableRendererIcon");
+var __dep_export_CollectableRendererIconTransform = require("gge-module:export_CollectableRendererIconTransform");
+var __dep_export_CollectableRendererInfoButton = require("gge-module:export_CollectableRendererInfoButton");
+var __dep_export_CollectableRendererMinuteSkipBackground = require("gge-module:export_CollectableRendererMinuteSkipBackground");
+var __dep_export_CollectableRendererStoragebar = require("gge-module:export_CollectableRendererStoragebar");
+var __dep_export_CollectableRendererTextBackground = require("gge-module:export_CollectableRendererTextBackground");
+var __dep_export_CollectableRendererTextfield = require("gge-module:export_CollectableRendererTextfield");
+var __dep_export_CollectableRendererTooltip = require("gge-module:export_CollectableRendererTooltip");
+var __dep_export_CollectableRenderOptions = require("gge-module:export_CollectableRenderOptions");
+var __dep_export_CollectableRendererLevelIndicatorMC = require("gge-module:export_CollectableRendererLevelIndicatorMC");
+__s0local0.__initialize_static_members();

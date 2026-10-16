@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-06",
+  "legacyDataCommit": "e09bcc330c88a1f424ea6bbbccec9db9b4126691",
+  "comparisonReports": [
+    "Game.bundle",
+    "ggs.dll"
+  ],
+  "note": "Prior module bodies were retained in their original GGE Data Git commit; this snapshot is provenance-only."
+}

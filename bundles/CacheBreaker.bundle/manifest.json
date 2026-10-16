@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 1,
+  "bundle": "CacheBreaker.bundle",
+  "sourceCommit": "15cbbddc54f2b7c170c4ecda397968629916c9cc",
+  "deobfuscatedBundleSha256": "57dffaa5116c9333de75db99c27e38ceff85dbb2d2f67afcc79bc362610f3a11",
+  "officialRawBundleSha256": "941e59132e1b6b36929f287b751ee9d44130b1ce25ef4ee3774abdc299a9580b",
+  "officialRawAsset": "CacheBreaker.bundle.de68e795a225893322b2.js",
+  "upstreamSourceMap": "https://s3-eu-west-1.amazonaws.com/com.ggs-unicorns.sourcemaps/CacheBreaker.bundle.de68e795a225893322b2.js.map",
+  "entryId": "1985",
+  "sourceFileCount": 13,
+  "publishedModuleCount": 13,
+  "unresolvedLineage": 0,
+  "bootstrap": [
+    "bootstrap/entry.js"
+  ],
+  "specifiers": {
+    "gge-module:opaque_6fd0a7f85c69b366718f0fa2": "opaque/opaque_6fd0a7f85c69b366718f0fa2.js",
+    "gge-module:opaque_81dacdf05bd322922517ac3a": "opaque/opaque_81dacdf05bd322922517ac3a.js",
+    "gge-module:opaque_9e901e8e2483a22f7a07841d": "opaque/opaque_9e901e8e2483a22f7a07841d.js",
+    "gge-module:opaque_c549e43d1112dfff66e323f0": "opaque/opaque_c549e43d1112dfff66e323f0.js",
+    "gge-module:opaque_4a010f68867132feee202c9e": "opaque/opaque_4a010f68867132feee202c9e.js",
+    "gge-module:export_appVersion": "exports/appVersion.js",
+    "gge-module:export_StartscreenHelper": "exports/StartscreenHelper.js",
+    "gge-module:export_CastleEnvironmentGlobals": "exports/CastleEnvironmentGlobals.js",
+    "gge-module:package__goodgamestudios_empire-createjs-assets": "packages/_goodgamestudios_empire-createjs-assets.js",
+    "gge-module:package_TranspilationEmpire": "packages/TranspilationEmpire.js",
+    "gge-module:export_RelativePathEnvironment": "exports/RelativePathEnvironment.js",
+    "gge-module:export_wrapper": "exports/wrapper.js",
+    "gge-module:opaque_08cd54218d41be91e4aee873": "opaque/opaque_08cd54218d41be91e4aee873.js"
+  },
+  "modules": [
+    {
+      "webpackId": "0",
+      "path": "modules/opaque/opaque_6fd0a7f85c69b366718f0fa2.js",
+      "specifier": "gge-module:opaque_6fd0a7f85c69b366718f0fa2",
+      "sourceSha256": "6fd0a7f85c69b366718f0fa2438fdf4ceaca57b87a6b80ec81250cb0779ccf28",
+      "canonicalSha256": "2b4bee36dceda45cea71492acabeceeb008f3375c638cc8f344fb53bbded7736",
+      "lineage": [],
+      "confidence": "current-only"
+    },
+    {
+      "webpackId": "1",
+      "path": "modules/opaque/opaque_81dacdf05bd322922517ac3a.js",
+      "specifier": "gge-module:opaque_81dacdf05bd322922517ac3a",
+      "sourceSha256": "81dacdf05bd322922517ac3a5f659b3e82239130c99dd592c0c477c6333935b4",
+      "canonicalSha256": "68b730eb4c1fac7027bd9ccd8937f80f38746a58a94e447e718bda40c618fd21",
+      "lineage": [],
+      "confidence": "current-only"
+    },
+    {
+      "webpackId": "2",
+      "path": "modules/opaque/opaque_9e901e8e2483a22f7a07841d.js",
+      "specifier": "gge-module:opaque_9e901e8e2483a22f7a07841d",
+      "sourceSha256": "9e901e8e2483a22f7a07841d6fc3f77472b0b67cce826d158be46e1cf855bde2",
+      "canonicalSha256": "d4f8a41cf0efa6e0afb2872d5a76e8ffb870b90ed910aeb8fa53c1f2640d0022",
+      "lineage": [],
+      "confidence": "current-only"
+    },
+    {
+      "webpackId": "122",
+      "path": "modules/opaque/opaque_c549e43d1112dfff66e323f0.js",
+      "specifier": "gge-module:opaque_c549e43d1112dfff66e323f0",
+      "sourceSha256": "c549e43d1112dfff66e323f021d0d669abfbf95e02896695b24a305a83111a6f",
+      "canonicalSha256": "0ce384cf82a571c40a00f419d5e2e184c155465fe5845eb4f9f4d6f06c08ea3c",
+      "lineage": [],
+      "confidence": "current-only"
+    },
+    {
+      "webpackId": "125",
+      "path": "modules/opaque/opaque_4a010f68867132feee202c9e.js",
+      "specifier": "gge-module:opaque_4a010f68867132feee202c9e",
+      "sourceSha256": "4a010f68867132feee202c9e88050ce4ac22673935271153307c9c099a254473",
+      "canonicalSha256": "dabe096aad05b6b82eb8766026fbdb572ae9f3b496a44f167bbee4e668061ce4",
+      "lineage": [],
+      "confidence": "current-only"
+    },
+    {
+      "webpackId": "293",
+      "path": "modules/exports/appVersion.js",
+      "specifier": "gge-module:export_appVersion",
+      "sourceSha256": "a2fa8abe792232eb0f0dfc84fefc5005f4e9dd746ad8c2b75cbf2a80a8b46e09",
+      "canonicalSha256": "04875284a232c8eefd94045a3801bcd2fcc28f40613c6dc079e2264659ce7284",
+      "lineage": [],
+      "confidence": "current-only"
+    },
+    {
+      "webpackId": "337",
+      "path": "modules/exports/StartscreenHelper.js",
+      "specifier": "gge-module:export_StartscreenHelper",
+      "sourceSha256": "c6ca089809ec50722cdd0a3b8fe9ae90346d0d1ca78166bba45840e012e34e86",
+      "canonicalSha256": "a8e5b8eab35ee34c651dcaf040dc479ddd45d7bfb30b55a0b2fc27fa0570a181",
+      "lineage": [],
+      "confidence": "current-only"
+    },
+    {
+      "webpackId": "856",
+      "path": "modules/exports/CastleEnvironmentGlobals.js",
+      "specifier": "gge-module:export_CastleEnvironmentGlobals",
+      "sourceSha256": "2d411bf65afa7493050fcfb9a02c9e517115a821fc46cab21456924991f2cc63",
+      "canonicalSha256": "bdbab1de1e1f3d8bef4d9f27e64bfaef27017a6338ad1a891f227bf5a7cf181b",
+      "lineage": [],
+      "confidence": "current-only"
+    },
+    {
+      "webpackId": "857",
+      "path": "modules/packages/_goodgamestudios_empire-createjs-assets.js",
+      "specifier": "gge-module:package__goodgamestudios_empire-createjs-assets",
+      "sourceSha256": "cec3922caf0113548b80e0e6c0b90804602956a64342cad4bc649fadd6e62660",
+      "canonicalSha256": "bedb0189a845e257d74d068fb69a03583d9c0e07ee56c8bce54618d3c5039468",
+      "lineage": [],
+      "confidence": "current-only"
+    },
+    {
+      "webpackId": "858",
+      "path": "modules/packages/TranspilationEmpire.js",
+      "specifier": "gge-module:package_TranspilationEmpire",
+      "sourceSha256": "e3436369340b9eb5317a22b96eb305e2ac4a4301f595180e760396fa57a5caf6",
+      "canonicalSha256": "a3d33966f24f27cf01a6c814b2b6bf5637d47c37b7cfd5a62b977421e12ca10a",
+      "lineage": [],
+      "confidence": "current-only"
+    },
+    {
+      "webpackId": "1986",
+      "path": "modules/exports/RelativePathEnvironment.js",
+      "specifier": "gge-module:export_RelativePathEnvironment",
+      "sourceSha256": "fcf788bd8ca947ac153f7df453462e23a27fa41b4a6c6b2e3d893500bd1ee8be",
+      "canonicalSha256": "ea6d188c5a843dc0e8d2bb5a521c948ddbb2aa08d4aacc0d7dc8919483ab9d68",
+      "lineage": [],
+      "confidence": "current-only"
+    },
+    {
+      "webpackId": "1987",
+      "path": "modules/exports/wrapper.js",
+      "specifier": "gge-module:export_wrapper",
+      "sourceSha256": "c9511ea01703b75ceb8153f13e80f1359d811a54e335f1ed57c7557092c3b05f",
+      "canonicalSha256": "d9136449d06dda3e26ab44d1310d986dcc1bd968141f4c1abf88a98dd4cf4533",
+      "lineage": [],
+      "confidence": "current-only"
+    },
+    {
+      "webpackId": "1988",
+      "path": "modules/opaque/opaque_08cd54218d41be91e4aee873.js",
+      "specifier": "gge-module:opaque_08cd54218d41be91e4aee873",
+      "sourceSha256": "08cd54218d41be91e4aee8737220b3580ca289ecc00b177112865057048282e0",
+      "canonicalSha256": "69110b7d64370e8a07630dec1155ae416066794f9e1a84bab751c12f521e4fb7",
+      "lineage": [],
+      "confidence": "current-only"
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "bundle": "CastleLoader.bundle",
+  "sourceCommit": "15cbbddc54f2b7c170c4ecda397968629916c9cc",
+  "deobfuscatedBundleSha256": "de5d9c14b66afe916d06054a98a0647ff06d5f7022927b9c6cf5bc8cafc82dde",
+  "officialRawBundleSha256": "406003ae3f018ffaf55720e6352390221c4a686969c9155d9dae495a4a06e954",
+  "officialRawAsset": "CastleLoader.bundle.a8f55a09b7e8c07abc9e.js",
+  "upstreamSourceMap": "https://s3-eu-west-1.amazonaws.com/com.ggs-unicorns.sourcemaps/CastleLoader.bundle.a8f55a09b7e8c07abc9e.js.map",
+  "entryId": "1984",
+  "sourceFileCount": 2,
+  "publishedModuleCount": 2,
+  "unresolvedLineage": 0,
+  "bootstrap": [
+    "bootstrap/entry.js"
+  ],
+  "specifiers": {
+    "gge-module:opaque_9e901e8e2483a22f7a07841d": "opaque/opaque_9e901e8e2483a22f7a07841d.js",
+    "gge-module:opaque_4a010f68867132feee202c9e": "opaque/opaque_4a010f68867132feee202c9e.js"
+  },
+  "modules": [
+    {
+      "webpackId": "2",
+      "path": "modules/opaque/opaque_9e901e8e2483a22f7a07841d.js",
+      "specifier": "gge-module:opaque_9e901e8e2483a22f7a07841d",
+      "sourceSha256": "9e901e8e2483a22f7a07841d6fc3f77472b0b67cce826d158be46e1cf855bde2",
+      "canonicalSha256": "d4f8a41cf0efa6e0afb2872d5a76e8ffb870b90ed910aeb8fa53c1f2640d0022",
+      "lineage": [],
+      "confidence": "current-only"
+    },
+    {
+      "webpackId": "125",
+      "path": "modules/opaque/opaque_4a010f68867132feee202c9e.js",
+      "specifier": "gge-module:opaque_4a010f68867132feee202c9e",
+      "sourceSha256": "4a010f68867132feee202c9e88050ce4ac22673935271153307c9c099a254473",
+      "canonicalSha256": "dabe096aad05b6b82eb8766026fbdb572ae9f3b496a44f167bbee4e668061ce4",
+      "lineage": [],
+      "confidence": "current-only"
+    }
+  ]
+}

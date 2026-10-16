@@ -1,0 +1,16 @@
+{
+  "name": "@gge/client-canonical",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "compare": "node compare.mjs",
+    "test": "node --test test.mjs fetch-client.test.mjs",
+    "verify": "node verify.mjs ../.."
+  },
+  "dependencies": {
+    "@babel/parser": "7.29.9",
+    "@babel/traverse": "7.29.0",
+    "@babel/generator": "7.29.0"
+  }
+}

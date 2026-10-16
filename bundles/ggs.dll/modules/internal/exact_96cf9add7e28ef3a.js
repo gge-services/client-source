@@ -1,0 +1,33 @@
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+var __dep_class_WorldAssignmentGlobals = require("gge-module:class_WorldAssignmentGlobals");
+exports.WorldAssignmentGlobals = __dep_class_WorldAssignmentGlobals.WorldAssignmentGlobals;
+var __dep_class_WorldAssignmentError = require("gge-module:class_WorldAssignmentError");
+exports.WorldAssignmentError = __dep_class_WorldAssignmentError.WorldAssignmentError;
+var __dep_class_WorldAssignmentErrorCodes = require("gge-module:class_WorldAssignmentErrorCodes");
+exports.WorldAssignmentErrorCodes = __dep_class_WorldAssignmentErrorCodes.WorldAssignmentErrorCodes;
+var __dep_class_WorldAssignment = require("gge-module:class_WorldAssignment");
+exports.WorldAssignment = __dep_class_WorldAssignment.WorldAssignment;
+var __dep_class_WorldAssignmentFacade = require("gge-module:class_WorldAssignmentFacade");
+exports.WorldAssignmentFacade = __dep_class_WorldAssignmentFacade.WorldAssignmentFacade;
+var __dep_class_Country = require("gge-module:class_Country");
+exports.Country = __dep_class_Country.Country;
+var __dep_class_NetworkInstance = require("gge-module:class_NetworkInstance");
+exports.NetworkInstance = __dep_class_NetworkInstance.NetworkInstance;
+var __dep_class_NetworkProperties = require("gge-module:class_NetworkProperties");
+exports.NetworkProperties = __dep_class_NetworkProperties.NetworkProperties;
+var __dep_class_Branch = require("gge-module:class_Branch");
+exports.Branch = __dep_class_Branch.Branch;
+var __dep_exact_b84f427a919a891c = require("gge-module:exact_b84f427a919a891c");
+exports.CDN = __dep_exact_b84f427a919a891c.CDN;
+var __dep_class_CountryCodes = require("gge-module:class_CountryCodes");
+exports.CountryCodes = __dep_class_CountryCodes.CountryCodes;
+var __dep_class_CountryDetectionConstants = require("gge-module:class_CountryDetectionConstants");
+exports.CountryDetectionConstants = __dep_class_CountryDetectionConstants.CountryDetectionConstants;
+var __dep_exact_877bc301dee292e0 = require("gge-module:exact_877bc301dee292e0");
+exports.CountryDetectorFactors = __dep_exact_877bc301dee292e0.CountryDetectorFactors;
+var __dep_class_LanguageCodes = require("gge-module:class_LanguageCodes");
+exports.LanguageCodes = __dep_class_LanguageCodes.LanguageCodes;
+var __dep_class_WorldAssignmentTrackingConstants = require("gge-module:class_WorldAssignmentTrackingConstants");
+exports.WorldAssignmentTrackingConstants = __dep_class_WorldAssignmentTrackingConstants.WorldAssignmentTrackingConstants;

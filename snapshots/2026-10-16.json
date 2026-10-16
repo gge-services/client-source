@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "capturedAt": "2026-10-16",
+  "sourceDataCommit": "15cbbddc54f2b7c170c4ecda397968629916c9cc",
+  "rawBundlesPreviouslyCommittedToData": true,
+  "bundles": [
+    {
+      "bundle": "Game.bundle",
+      "deobfuscatedBundleSha256": "6f2cb6c06269a9c7a2139044680df8799756db9f9c46ee7fb018b4ec6f5f53dc",
+      "officialRawBundleSha256": "ec23943550a13c2c2f68ef4d6ea06b34e48d1c09fcf80942849f77ac3e84a357",
+      "officialRawAsset": "Game.bundle.4230c06b48520e83ead4.js",
+      "moduleCount": 5826,
+      "unmatched": 0,
+      "sourceMap": "https://s3-eu-west-1.amazonaws.com/com.ggs-unicorns.sourcemaps/Game.bundle.4230c06b48520e83ead4.js.map"
+    },
+    {
+      "bundle": "ggs.dll",
+      "deobfuscatedBundleSha256": "0b899e5e673ce2a82bd4ed9e770ef5e752e135267a9ee279fc72bc0baa7c3d8f",
+      "officialRawBundleSha256": "764f8435b351d512525d87bdd4eef60b0d9143b81df18a0df0de122236a994f2",
+      "officialRawAsset": "ggs.dll.0b914fe686cb8e274f41.js",
+      "moduleCount": 1008,
+      "unmatched": 23,
+      "sourceMap": "https://s3-eu-west-1.amazonaws.com/com.ggs-unicorns.sourcemaps/dll/ggs.dll.0b914fe686cb8e274f41.js.map"
+    },
+    {
+      "bundle": "CacheBreaker.bundle",
+      "deobfuscatedBundleSha256": "57dffaa5116c9333de75db99c27e38ceff85dbb2d2f67afcc79bc362610f3a11",
+      "officialRawBundleSha256": "941e59132e1b6b36929f287b751ee9d44130b1ce25ef4ee3774abdc299a9580b",
+      "officialRawAsset": "CacheBreaker.bundle.de68e795a225893322b2.js",
+      "moduleCount": 13,
+      "unmatched": 0,
+      "sourceMap": "https://s3-eu-west-1.amazonaws.com/com.ggs-unicorns.sourcemaps/CacheBreaker.bundle.de68e795a225893322b2.js.map"
+    },
+    {
+      "bundle": "CastleLoader.bundle",
+      "deobfuscatedBundleSha256": "de5d9c14b66afe916d06054a98a0647ff06d5f7022927b9c6cf5bc8cafc82dde",
+      "officialRawBundleSha256": "406003ae3f018ffaf55720e6352390221c4a686969c9155d9dae495a4a06e954",
+      "officialRawAsset": "CastleLoader.bundle.a8f55a09b7e8c07abc9e.js",
+      "moduleCount": 2,
+      "unmatched": 0,
+      "sourceMap": "https://s3-eu-west-1.amazonaws.com/com.ggs-unicorns.sourcemaps/CastleLoader.bundle.a8f55a09b7e8c07abc9e.js.map"
+    },
+    {
+      "bundle": "vendor.bundle",
+      "deobfuscatedBundleSha256": "88fadf2dabd30f832ff524dbac13ab1105d682f31a7ca057400b69e99887c883",
+      "officialRawBundleSha256": "d42f3a15afb91b0156510545ece4b4b4e7ff147b234ad4babab8c3995b725fbc",
+      "officialRawAsset": "vendor.bundle.4aee9ab6.js",
+      "moduleCount": 1,
+      "unmatched": 0,
+      "sourceMap": "https://s3-eu-west-1.amazonaws.com/com.ggs-unicorns.sourcemaps/vendor.bundle.4aee9ab6.js.map"
+    }
+  ]
+}

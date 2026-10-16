@@ -1,0 +1,8 @@
+var __dep_exact_d8857732a937369e = require("gge-module:exact_d8857732a937369e");
+var __dep_class_Item = require("gge-module:class_Item");
+var __s0local0 = require("gge-module:export_formatLocale").formatLocale;
+exports.locale2 = function (__s1param0) {
+  return __s0local0(function getLocale(__s3param0) {
+    return __s3param0 || (__dep_exact_d8857732a937369e.chrome && __dep_exact_d8857732a937369e.chrome.runtime && typeof __dep_exact_d8857732a937369e.chrome.runtime.getManifest == "function" && (__s3param0 = __dep_exact_d8857732a937369e.chrome.runtime.getManifest()) && __s3param0.current_locale ? __s3param0.current_locale : !(__s3param0 = __dep_exact_d8857732a937369e.navigator && (__dep_exact_d8857732a937369e.navigator.languages && __dep_exact_d8857732a937369e.navigator.languages[0] || __dep_exact_d8857732a937369e.navigator.language || __dep_exact_d8857732a937369e.navigator.userLanguage)) && __dep_exact_d8857732a937369e.navigator && __dep_exact_d8857732a937369e.navigator.userAgent && (__s3param0 = __dep_exact_d8857732a937369e.navigator.userAgent.match(/;.(\w+-\w+)/i)) ? __s3param0[1] : (__s3param0 ||= (__dep_exact_d8857732a937369e.clientInformation || Object.create(null)).language, __s3param0 || (__dep_exact_d8857732a937369e.Intl && typeof __dep_exact_d8857732a937369e.Intl.DateTimeFormat == "function" && (__s3param0 = __dep_exact_d8857732a937369e.Intl.DateTimeFormat().resolvedOptions && __dep_exact_d8857732a937369e.Intl.DateTimeFormat().resolvedOptions().locale), __s3param0 || !["LANG", "LANGUAGE"].some(Object.hasOwnProperty, __dep_class_Item.env)) ? __s3param0 : (__dep_class_Item.env.LANG || __dep_class_Item.env.LANGUAGE || String()).replace(/[.:].*/, "").replace("_", "-")));
+  }(__s1param0));
+};

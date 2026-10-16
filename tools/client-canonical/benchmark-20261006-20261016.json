@@ -1,0 +1,56 @@
+{
+  "toolVersion": "0.1.0",
+  "comparison": {
+    "oldClientDate": "2026-10-06",
+    "newClientDate": "2026-10-16",
+    "sourceMapsUsed": false,
+    "testType": "real-official-client-versions",
+    "sourceOfInputs": "Webcrack 2.16.0 unpacked JavaScript modules"
+  },
+  "gameBundle": {
+    "oldRevision": "a4a25ae6d735e29092f6",
+    "newRevision": "4230c06b48520e83ead4",
+    "oldModules": 5826,
+    "newModules": 5826,
+    "matchedModules": 5826,
+    "unchangedModules": 5811,
+    "changedModules": 15,
+    "changedCodeModules": 13,
+    "changedPackageMetadataModules": 2,
+    "unmatchedModules": 0,
+    "unresolvedImportModules": 0,
+    "parserErrors": 0,
+    "canonicalOnlyChangedModules": 0,
+    "diffLinesAdded": 455,
+    "diffLinesRemoved": 362,
+    "monolithicDiffLinesAdded": 111182,
+    "monolithicDiffLinesRemoved": 110756
+  },
+  "ggsDll": {
+    "oldRevision": "145565eddbcbe244aab0",
+    "newRevision": "0b914fe686cb8e274f41",
+    "oldModules": 1008,
+    "newModules": 1008,
+    "matchedModules": 985,
+    "unchangedNormalizedModules": 983,
+    "changedNormalizedModules": 2,
+    "sourceChangedModules": 24,
+    "sourceChangesNormalizedAway": 22,
+    "unmatchedModulesPerVersion": 23,
+    "unresolvedImportModules": 65,
+    "parserErrors": 0,
+    "canonicalOnlyChangedModules": 0,
+    "diffLinesAdded": 71,
+    "diffLinesRemoved": 6,
+    "monolithicDiffLinesAdded": 10580,
+    "monolithicDiffLinesRemoved": 10432
+  },
+  "limitations": [
+    "The normalized output is a non-executable audit view, not restored original source.",
+    "Unmatched and unresolved modules require manual or additional structural matching.",
+    "AST normalization suppresses cosmetic differences but is not formal semantic equivalence.",
+    "Cross-version module IDs were mostly unchanged in this real-world pair; synthetic tests validate shuffled IDs.",
+    "Diff line counts exclude unmatched modules and are not total semantic-change counts.",
+    "The GGE Data and Protocol production source-evidence pipeline has not been migrated to this prototype."
+  ]
+}

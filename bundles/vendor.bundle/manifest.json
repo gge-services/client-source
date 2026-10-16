@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "bundle": "vendor.bundle",
+  "sourceCommit": "15cbbddc54f2b7c170c4ecda397968629916c9cc",
+  "deobfuscatedBundleSha256": "88fadf2dabd30f832ff524dbac13ab1105d682f31a7ca057400b69e99887c883",
+  "officialRawBundleSha256": "d42f3a15afb91b0156510545ece4b4b4e7ff147b234ad4babab8c3995b725fbc",
+  "officialRawAsset": "vendor.bundle.4aee9ab6.js",
+  "upstreamSourceMap": "https://s3-eu-west-1.amazonaws.com/com.ggs-unicorns.sourcemaps/vendor.bundle.4aee9ab6.js.map",
+  "entryId": null,
+  "sourceFileCount": 0,
+  "publishedModuleCount": 1,
+  "unresolvedLineage": 0,
+  "bootstrap": [],
+  "specifiers": {},
+  "modules": [
+    {
+      "webpackId": null,
+      "path": "modules/vendor-runtime.js",
+      "specifier": "gge-module:vendor-runtime",
+      "sourceSha256": "88fadf2dabd30f832ff524dbac13ab1105d682f31a7ca057400b69e99887c883",
+      "canonicalSha256": "88fadf2dabd30f832ff524dbac13ab1105d682f31a7ca057400b69e99887c883",
+      "lineage": [],
+      "confidence": "single-vendor-asset"
+    }
+  ]
+}
