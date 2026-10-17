@@ -1,7 +1,7 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var __s0local0 = require("gge-module:exact_c549e43d1112dfff").getLogger("CastleArrayHelper");
+// Canonical symbol view; NOT a standalone executable Webpack module.
+// Bundle: Game.bundle; Webpack module: 559
+// Export: CastleArrayHelper; preserved source: modules/webpack/exports/CastleArrayHelper.js
+// Original canonical SHA-256: be53f7e996fdeb7e2fb6f208ce12ffd91e7bbb115ff4caf9cf6b086b8f6ce505
 var __s0local1 = function () {
   function CastleArrayHelper() {}
   CastleArrayHelper.toUintVector = function (__s5param0) {
@@ -30,6 +30,3 @@ var __s0local1 = function () {
   return CastleArrayHelper;
 }();
 exports.CastleArrayHelper = __s0local1;
-exports.numericSort = function (__s17param0, __s17param1) {
-  return __s17param0 - __s17param1;
-};

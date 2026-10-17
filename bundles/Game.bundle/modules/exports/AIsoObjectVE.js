@@ -1,41 +1,7 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var __dep_exact_6fd0a7f85c69b366 = require("gge-module:exact_6fd0a7f85c69b366");
-var __dep_exact_9e901e8e2483a22f = require("gge-module:exact_9e901e8e2483a22f");
-var __dep_exact_9e901e8e2483a22f_1 = require("gge-module:exact_9e901e8e2483a22f");
-var __dep_exact_81dacdf05bd32292 = require("gge-module:exact_81dacdf05bd32292");
-var __dep_exact_81dacdf05bd32292_1 = require("gge-module:exact_81dacdf05bd32292");
-var __dep_export_ClientConstUtils = require("gge-module:export_ClientConstUtils");
-var __dep_export_CastleSpecialEventEvent = require("gge-module:export_CastleSpecialEventEvent");
-var __dep_export_CastleModel = require("gge-module:export_CastleModel");
-var __dep_export_CrestVO = require("gge-module:export_CrestVO");
-var __dep_export_CastleGoodgameExternalClip = require("gge-module:export_CastleGoodgameExternalClip");
-var __dep_export_CastleComponent = require("gge-module:export_CastleComponent");
-var __dep_export_CastleMovieClipHelper = require("gge-module:export_CastleMovieClipHelper");
-var __dep_export_FlagHelper = require("gge-module:export_FlagHelper");
-var __dep_export_DispCreatorComponent = require("gge-module:export_DispCreatorComponent");
-var __dep_export_IsoAdditionalClipEnum = require("gge-module:export_IsoAdditionalClipEnum");
-var __dep_export_IsoLayerEnum = require("gge-module:export_IsoLayerEnum");
-var __dep_export_IsoObjectLayerEnum = require("gge-module:export_IsoObjectLayerEnum");
-var __dep_export_IsoObjectRotationEnum = require("gge-module:export_IsoObjectRotationEnum");
-var __s0local0 = createjs.MovieClip;
-var __s0local1 = createjs.Container;
-var __s0local2 = createjs.Point;
-var __s0local3 = createjs.Rectangle;
-var __s0local4 = function (__s1param0) {
-  function VEContainer(__s3param0) {
-    var __s3local0 = __s1param0.call(this) || this;
-    __s3local0.veRef = __s3param0;
-    if (__dep_exact_81dacdf05bd32292.currentBrowserInfo.isMobile) {
-      __s3local0.doubleClickEnabled = true;
-    }
-    return __s3local0;
-  }
-  __dep_exact_6fd0a7f85c69b366.__extends(VEContainer, __s1param0);
-  return VEContainer;
-}(__s0local1);
-exports.VEContainer = __s0local4;
+// Canonical symbol view; NOT a standalone executable Webpack module.
+// Bundle: Game.bundle; Webpack module: 320
+// Export: AIsoObjectVE; preserved source: modules/webpack/exports/AIsoObjectVE.js
+// Original canonical SHA-256: 3082a726d23fdf645ce6339d2c6a5c33a9f5ca1e932ed5f4ebea57efdccbe0bd
 var __s0local5 = function (__s6param0) {
   function AIsoObjectVE() {
     var __s8local0 = this;
@@ -517,13 +483,4 @@ var __s0local5 = function (__s6param0) {
   return AIsoObjectVE;
 }(__dep_export_CastleComponent.CastleComponent);
 exports.AIsoObjectVE = __s0local5;
-var __dep_export_CastleLayoutManager = require("gge-module:export_CastleLayoutManager");
-var __dep_export_IsoDispCreatorCacheBehaviour = require("gge-module:export_IsoDispCreatorCacheBehaviour");
-var __dep_export_IsoConst = require("gge-module:export_IsoConst");
-var __dep_export_IsoObjectEnum = require("gge-module:export_IsoObjectEnum");
-var __dep_export_IsoHelper = require("gge-module:export_IsoHelper");
-var __dep_export_Iso = require("gge-module:export_Iso");
-var __dep_export_IsoAdditionalClipManager = require("gge-module:export_IsoAdditionalClipManager");
-var __dep_export_IsoObjectLayerManager = require("gge-module:export_IsoObjectLayerManager");
-var __dep_export_IsoStatusIconManager = require("gge-module:export_IsoStatusIconManager");
 __dep_exact_81dacdf05bd32292.classImplementsInterfaces(__s0local5, "ICollectableRendererList", "IIngameUICapable");

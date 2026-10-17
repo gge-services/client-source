@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto'
 import { readFile, writeFile, mkdir, readdir, copyFile } from 'node:fs/promises'
 import { join, dirname, relative, resolve } from 'node:path'
+import { spawnSync } from 'node:child_process'
 import { canonical, symbols } from './compare.mjs'
 
 const sha256 = bytes => createHash('sha256').update(bytes).digest('hex')
@@ -187,3 +188,5 @@ if (capturedAt === '2026-10-16') await save(join(root, 'snapshots', '2026-10-06.
 }, null, 2) + '\n')
 const n = results.reduce((sum, item) => sum + item.moduleCount, 0)
 process.stdout.write('Published ' + n + ' modules across ' + results.length + ' bundles\n')
+const refined = spawnSync(process.execPath, [join(import.meta.dirname, 'refine-modules.mjs'), root, capturedAt], { stdio: 'inherit' })
+if (refined.status !== 0) throw Error('AST symbol refinement failed after publishing Webpack modules')

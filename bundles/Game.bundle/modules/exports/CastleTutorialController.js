@@ -1,15 +1,7 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var __dep_exact_6fd0a7f85c69b366 = require("gge-module:exact_6fd0a7f85c69b366");
-var __dep_exact_9e901e8e2483a22f = require("gge-module:exact_9e901e8e2483a22f");
-var __dep_export_CastleLayoutManagerEvent = require("gge-module:export_CastleLayoutManagerEvent");
-var __dep_export_CastleServerMessageArrivedEvent = require("gge-module:export_CastleServerMessageArrivedEvent");
-var __dep_export_CastleBasicController = require("gge-module:export_CastleBasicController");
-var __dep_export_CastleEventDispatcher = require("gge-module:export_CastleEventDispatcher");
-var __dep_export_CastleModel = require("gge-module:export_CastleModel");
-var __dep_export_TutorialListenerObject = require("gge-module:export_TutorialListenerObject");
-var __s0local0 = createjs.MouseEvent;
+// Canonical symbol view; NOT a standalone executable Webpack module.
+// Bundle: Game.bundle; Webpack module: 835
+// Export: CastleTutorialController; preserved source: modules/webpack/exports/CastleTutorialController.js
+// Original canonical SHA-256: 70ec26426a76d5ef19511f264a02db0499be98334be48cf1985f4cd52aa62432
 var __s0local1 = function (__s1param0) {
   function CastleTutorialController(__s3param0) {
     return __s1param0.call(this) || this;
@@ -156,8 +148,3 @@ var __s0local1 = function (__s1param0) {
   return CastleTutorialController;
 }(__dep_export_CastleEventDispatcher.CastleEventDispatcher);
 exports.CastleTutorialController = __s0local1;
-var __dep_export_CastleLayoutManager = require("gge-module:export_CastleLayoutManager");
-var __s0local2 = function () {
-  return function TutorialControllerSingletonBlocker() {};
-}();
-exports.TutorialControllerSingletonBlocker = __s0local2;

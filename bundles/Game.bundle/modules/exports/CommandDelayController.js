@@ -1,6 +1,7 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
+// Canonical symbol view; NOT a standalone executable Webpack module.
+// Bundle: Game.bundle; Webpack module: 518
+// Export: CommandDelayController; preserved source: modules/webpack/exports/CommandDelayController.js
+// Original canonical SHA-256: e45afc12fda9301870a515faa76a893e61844ff6080538f75a18787ae8837eb0
 var __s0local0 = function () {
   function CommandDelayController(__s3param0) {
     if (__s3param0 == null) {
@@ -86,9 +87,3 @@ var __s0local0 = function () {
   return CommandDelayController;
 }();
 exports.CommandDelayController = __s0local0;
-var __s0local1 = function () {
-  return function SingletonBlocker() {};
-}();
-exports.SingletonBlocker = __s0local1;
-var __dep_exact_f855840627e6e145 = require("gge-module:exact_f855840627e6e145");
-var __dep_export_CastleDelayCommandVO = require("gge-module:export_CastleDelayCommandVO");

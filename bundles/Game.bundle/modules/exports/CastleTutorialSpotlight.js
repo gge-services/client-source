@@ -1,13 +1,7 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var __dep_exact_608de47b6498f9b0 = require("gge-module:exact_608de47b6498f9b0");
-var __dep_exact_608de47b6498f9b0_1 = require("gge-module:exact_608de47b6498f9b0");
-var __s0local0 = createjs.Graphics;
-var __s0local1 = createjs.Container;
-var __s0local2 = createjs.Shape;
-var __s0local3 = createjs.Point;
-var __s0local4 = createjs.Ticker;
+// Canonical symbol view; NOT a standalone executable Webpack module.
+// Bundle: Game.bundle; Webpack module: 465
+// Export: CastleTutorialSpotlight; preserved source: modules/webpack/exports/CastleTutorialSpotlight.js
+// Original canonical SHA-256: 46e343eb935fe491b13a4e7c4bd8a04c66e21c9c50ff098aa13ee1c8aa421436
 var __s0local5 = function () {
   function CastleTutorialSpotlight(__s3param0) {
     this.onTick = function (__s5param0) {
@@ -170,10 +164,3 @@ var __s0local5 = function () {
   return CastleTutorialSpotlight;
 }();
 exports.CastleTutorialSpotlight = __s0local5;
-var __dep_export_CastleLayoutManager = require("gge-module:export_CastleLayoutManager");
-var __dep_export_CastleBasicController = require("gge-module:export_CastleBasicController");
-var __dep_export_CastleLayoutManagerEvent = require("gge-module:export_CastleLayoutManagerEvent");
-var __s0local6 = function () {
-  return function SingletonBlocker() {};
-}();
-exports.SingletonBlocker = __s0local6;

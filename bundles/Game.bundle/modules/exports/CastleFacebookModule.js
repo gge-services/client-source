@@ -1,26 +1,7 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var __dep_exact_6fd0a7f85c69b366 = require("gge-module:exact_6fd0a7f85c69b366");
-var __dep_exact_9e901e8e2483a22f = require("gge-module:exact_9e901e8e2483a22f");
-var __dep_exact_9e901e8e2483a22f_1 = require("gge-module:exact_9e901e8e2483a22f");
-var __dep_exact_c549e43d1112dfff = require("gge-module:exact_c549e43d1112dfff");
-var __dep_export_CastleFacebookSDKEvent = require("gge-module:export_CastleFacebookSDKEvent");
-var __dep_export_SpecialServerHelper = require("gge-module:export_SpecialServerHelper");
-var __dep_export_CastleBasicController = require("gge-module:export_CastleBasicController");
-var __s0local0 = __dep_exact_c549e43d1112dfff.getLogger("CastleFacebookModule");
-var __s0local1 = ["public_profile", "email"].join(",");
-var __s0local2 = ["id", "name", "first_name", "last_name", "link", "gender", "locale", "verified", "email", "age_range", "timezone", "birthday", "token_for_business"];
-var __s0local3 = function () {
-  function FacebookLoginStatus() {}
-  FacebookLoginStatus.UNKNOWN = "unknown";
-  FacebookLoginStatus.NOT_AUTHORIZED = "not_authorized";
-  FacebookLoginStatus.CONNECTED = "connected";
-  FacebookLoginStatus.AUTH_EXPIRED = "authorization_expired";
-  return FacebookLoginStatus;
-}();
-exports.FacebookLoginStatus = __s0local3;
-var __s0local4 = false;
+// Canonical symbol view; NOT a standalone executable Webpack module.
+// Bundle: Game.bundle; Webpack module: 228
+// Export: CastleFacebookModule; preserved source: modules/webpack/exports/CastleFacebookModule.js
+// Original canonical SHA-256: 8b589a4220ac87899c7c86c6c2363793eab18ed1d34a9dd2125e06b9f6c88868
 var __s0local5 = function () {
   function FacebookModule() {
     this._available = false;
@@ -262,32 +243,4 @@ var __s0local5 = function () {
   };
   return FacebookModule;
 }();
-exports.FacebookModule = __s0local5;
-function __s0local6(__s115param0) {
-  var __s115local0;
-  var __s115local1;
-  if (document.hidden !== undefined) {
-    __s115local0 = "hidden";
-    __s115local1 = "visibilitychange";
-  } else if (document.msHidden !== undefined) {
-    __s115local0 = "msHidden";
-    __s115local1 = "msvisibilitychange";
-  } else if (document.webkitHidden !== undefined) {
-    __s115local0 = "webkitHidden";
-    __s115local1 = "webkitvisibilitychange";
-  }
-  document.addEventListener(__s115local1, function () {
-    return __s115param0(document[__s115local0]);
-  }, false);
-}
-exports.facebookAuthResponse = function () {
-  return FB.getAuthResponse();
-};
-function __s0local7(__s124param0) {
-  if (__s124param0.authResponse && __s124param0.status == __s0local3.CONNECTED) {
-    return Promise.resolve(__s124param0);
-  } else {
-    return Promise.reject(__s124param0);
-  }
-}
 exports.CastleFacebookModule = new __s0local5();

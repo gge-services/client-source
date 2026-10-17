@@ -19,7 +19,7 @@
     "gge-module:opaque_9e901e8e2483a22f7a07841d": "opaque/opaque_9e901e8e2483a22f7a07841d.js",
     "gge-module:opaque_c549e43d1112dfff66e323f0": "opaque/opaque_c549e43d1112dfff66e323f0.js",
     "gge-module:opaque_4a010f68867132feee202c9e": "opaque/opaque_4a010f68867132feee202c9e.js",
-    "gge-module:export_appVersion": "exports/appVersion.js",
+    "gge-module:export_appVersion": "webpack/exports/appVersion.js",
     "gge-module:export_StartscreenHelper": "exports/StartscreenHelper.js",
     "gge-module:export_CastleEnvironmentGlobals": "exports/CastleEnvironmentGlobals.js",
     "gge-module:package__goodgamestudios_empire-createjs-assets": "packages/_goodgamestudios_empire-createjs-assets.js",
@@ -76,7 +76,7 @@
     },
     {
       "webpackId": "293",
-      "path": "modules/exports/appVersion.js",
+      "path": "modules/webpack/exports/appVersion.js",
       "specifier": "gge-module:export_appVersion",
       "sourceSha256": "a2fa8abe792232eb0f0dfc84fefc5005f4e9dd746ad8c2b75cbf2a80a8b46e09",
       "canonicalSha256": "04875284a232c8eefd94045a3801bcd2fcc28f40613c6dc079e2264659ce7284",
@@ -146,5 +146,32 @@
       "lineage": [],
       "confidence": "current-only"
     }
-  ]
+  ],
+  "symbolViews": [
+    {
+      "name": "appVersion",
+      "path": "modules/exports/appVersion.js",
+      "webpackId": "293",
+      "ownerPath": "modules/webpack/exports/appVersion.js",
+      "canonicalSha256": "a08cbb35ecd9bb2318bf2e707d9c90fdd4166fe9e48581d83c91da462b151099",
+      "statementCount": 1,
+      "sourceStatementIndices": [
+        6
+      ]
+    },
+    {
+      "name": "CastleVersionInformation",
+      "path": "modules/exports/CastleVersionInformation.js",
+      "webpackId": "293",
+      "ownerPath": "modules/webpack/exports/appVersion.js",
+      "canonicalSha256": "03179b138f12e11646bd41cde0e8702e513011ed1ed49ab4cbf3e7f6317f8494",
+      "statementCount": 3,
+      "sourceStatementIndices": [
+        9,
+        10,
+        11
+      ]
+    }
+  ],
+  "symbolViewCount": 2
 }

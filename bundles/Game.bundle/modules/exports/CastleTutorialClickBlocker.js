@@ -1,7 +1,7 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var __s0local0 = createjs.MouseEvent;
+// Canonical symbol view; NOT a standalone executable Webpack module.
+// Bundle: Game.bundle; Webpack module: 435
+// Export: CastleTutorialClickBlocker; preserved source: modules/webpack/exports/CastleTutorialClickBlocker.js
+// Original canonical SHA-256: cbcb7cda08aff0fcc3827cd40f6acc134cfb603beaf2b350836c9676246dc911
 var __s0local1 = function () {
   function CastleTutorialClickBlocker(__s3param0) {
     this.added = false;
@@ -154,15 +154,3 @@ var __s0local1 = function () {
   return CastleTutorialClickBlocker;
 }();
 exports.CastleTutorialClickBlocker = __s0local1;
-var __dep_export_Iso = require("gge-module:export_Iso");
-var __dep_export_CastleLayoutManager = require("gge-module:export_CastleLayoutManager");
-var __dep_export_CastleOptionPanel = require("gge-module:export_CastleOptionPanel");
-var __s0local2 = function () {
-  return function SingletonBlocker() {};
-}();
-exports.SingletonBlocker = __s0local2;
-var __dep_exact_9e901e8e2483a22f = require("gge-module:exact_9e901e8e2483a22f");
-var __dep_exact_9e901e8e2483a22f_1 = require("gge-module:exact_9e901e8e2483a22f");
-var __dep_exact_9e901e8e2483a22f_2 = require("gge-module:exact_9e901e8e2483a22f");
-var __dep_exact_81dacdf05bd32292 = require("gge-module:exact_81dacdf05bd32292");
-var __dep_export_ButtonHelper = require("gge-module:export_ButtonHelper");

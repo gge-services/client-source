@@ -1,6 +1,7 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
+// Canonical symbol view; NOT a standalone executable Webpack module.
+// Bundle: Game.bundle; Webpack module: 330
+// Export: CastleTutorialDialogFilter; preserved source: modules/webpack/exports/CastleTutorialDialogFilter.js
+// Original canonical SHA-256: e60bd871379b610a719746857cf4649e27e793627aab3c813a07fe72b2886e16
 var __s0local0 = function () {
   function CastleTutorialDialogFilter(__s3param0) {
     this._allowedDialogs = [];
@@ -56,9 +57,3 @@ var __s0local0 = function () {
   return CastleTutorialDialogFilter;
 }();
 exports.CastleTutorialDialogFilter = __s0local0;
-var __dep_export_CastleLayoutManager = require("gge-module:export_CastleLayoutManager");
-var __dep_export_CastleExternalPreloaderDialog = require("gge-module:export_CastleExternalPreloaderDialog");
-var __s0local1 = function () {
-  return function SingletonBlocker() {};
-}();
-exports.SingletonBlocker = __s0local1;

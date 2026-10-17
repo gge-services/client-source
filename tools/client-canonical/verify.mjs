@@ -1,6 +1,7 @@
 import { createHash } from 'node:crypto'
 import { readFile, readdir } from 'node:fs/promises'
 import { join, resolve } from 'node:path'
+import { spawnSync } from 'node:child_process'
 
 const root = resolve(process.argv[2] ?? '.')
 const sourceRoot = process.argv[3] ? resolve(process.argv[3]) : null
@@ -55,3 +56,6 @@ for (const metadata of snapshot.bundles) {
   console.log(metadata.bundle, manifest.modules.length, 'verified', manifest.unresolvedLineage, 'unresolved lineage')
 }
 console.log('VERIFIED', total, 'files across', snapshot.bundles.length, 'bundles;', unresolved, 'lineage matches require review')
+
+const audit = spawnSync(process.execPath, [join(import.meta.dirname, 'audit-symbol-views.mjs'), root], { stdio: 'inherit' })
+if (audit.status !== 0) throw Error('Independent AST class/export audit failed')

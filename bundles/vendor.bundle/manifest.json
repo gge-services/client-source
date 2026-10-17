@@ -22,5 +22,778 @@
       "lineage": [],
       "confidence": "single-vendor-asset"
     }
-  ]
+  ],
+  "symbolViews": [
+    {
+      "name": "EventHandler",
+      "path": "modules/helpers/EventHandler__webpack_null__at_0.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "64bef606c79d2af67ecfa49879223f2cde0df3f482144602b82ded46dcfbcded",
+      "helper": true,
+      "sourceStart": 0,
+      "sourceEnd": 308
+    },
+    {
+      "name": "MessageHandler",
+      "path": "modules/helpers/MessageHandler__webpack_null__at_309.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "d318e89f3cfaec52912477bf047aea4b8d20642f497541eb8b188f58fd862f0e",
+      "helper": true,
+      "sourceStart": 309,
+      "sourceEnd": 2979
+    },
+    {
+      "name": "Event",
+      "path": "modules/helpers/Event__webpack_null__at_4956.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "c2710c9d8c7b9eda90f934cc9caf3862258c16ee3c8f3baff27d2b1d245418a4",
+      "helper": true,
+      "sourceStart": 4956,
+      "sourceEnd": 5322
+    },
+    {
+      "name": "EventDispatcher",
+      "path": "modules/helpers/EventDispatcher__webpack_null__at_6038.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "778cb99efdab5c042f41e1b3c9c5ebca55b5d76ad55d032bd3977162d532b3d8",
+      "helper": true,
+      "sourceStart": 6038,
+      "sourceEnd": 6133
+    },
+    {
+      "name": "Ticker",
+      "path": "modules/helpers/Ticker__webpack_null__at_9857.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "cef69e1488fa2a76bf0e0d005bf5a88d20e945da014ad03062ace74441e425af",
+      "helper": true,
+      "sourceStart": 9857,
+      "sourceEnd": 9924
+    },
+    {
+      "name": "MouseEvent",
+      "path": "modules/helpers/MouseEvent__webpack_null__at_15763.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "71f4be95110459d252f773e663c2ae359b03724d2ec0f9cf476b84e660356011",
+      "helper": true,
+      "sourceStart": 15763,
+      "sourceEnd": 16072
+    },
+    {
+      "name": "Matrix2D",
+      "path": "modules/helpers/Matrix2D__webpack_null__at_17074.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "bca55e589951027ad158fe276ce3a18f1d6776e524edd1e4279437ac3ac6cdcd",
+      "helper": true,
+      "sourceStart": 17074,
+      "sourceEnd": 17153
+    },
+    {
+      "name": "DisplayProps",
+      "path": "modules/helpers/DisplayProps__webpack_null__at_22414.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "dd10a7d45fd425424b3c825944402963335f3cd39566d8054733b00624ffefa1",
+      "helper": true,
+      "sourceStart": 22414,
+      "sourceEnd": 22491
+    },
+    {
+      "name": "Point",
+      "path": "modules/helpers/Point__webpack_null__at_23750.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "ede28b8a8cc216bb6795960c81a80c04d6600cc0156b1629351396c8a8bd55e1",
+      "helper": true,
+      "sourceStart": 23750,
+      "sourceEnd": 23802
+    },
+    {
+      "name": "Rectangle",
+      "path": "modules/helpers/Rectangle__webpack_null__at_24239.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "ae922a595a1d477e3e83cffb99f927f694c053879057217ab46f21f789049b3c",
+      "helper": true,
+      "sourceStart": 24239,
+      "sourceEnd": 24307
+    },
+    {
+      "name": "ButtonHelper",
+      "path": "modules/helpers/ButtonHelper__webpack_null__at_26444.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "28e5fc38954495544fe593842f3cb367107b3c25648a2eea487b1f245e7ccfa0",
+      "helper": true,
+      "sourceStart": 26444,
+      "sourceEnd": 27067
+    },
+    {
+      "name": "Shadow",
+      "path": "modules/helpers/Shadow__webpack_null__at_29012.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "933ffae1a61a1f61976bfb890de125a8032d7a65ff3b16ac5cae005c971376fc",
+      "helper": true,
+      "sourceStart": 29012,
+      "sourceEnd": 29154
+    },
+    {
+      "name": "SpriteSheet",
+      "path": "modules/helpers/SpriteSheet__webpack_null__at_29469.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "75c4714cb5f4db887f2ad68372b6e08c37f51941a1eed182713a8367145df3c2",
+      "helper": true,
+      "sourceStart": 29469,
+      "sourceEnd": 29902
+    },
+    {
+      "name": "Graphics",
+      "path": "modules/helpers/Graphics__webpack_null__at_35258.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "ec51e64a0b12b460006a37b3a1a2542416bbd3ce70d95d827c3597bc7456bb17",
+      "helper": true,
+      "sourceStart": 35258,
+      "sourceEnd": 35677
+    },
+    {
+      "name": "DisplayObject",
+      "path": "modules/helpers/DisplayObject__webpack_null__at_52571.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "bc10ae9afe2638af95ecd3356ed04c19ae0469a62cfb928355f8ac91b4394c13",
+      "helper": true,
+      "sourceStart": 52571,
+      "sourceEnd": 53631
+    },
+    {
+      "name": "Container",
+      "path": "modules/helpers/Container__webpack_null__at_64194.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "c4b4a2c2da8b1ede35e58bef61285247b953b9738de788f36f1899f10e59eb47",
+      "helper": true,
+      "sourceStart": 64194,
+      "sourceEnd": 64343
+    },
+    {
+      "name": "Stage",
+      "path": "modules/helpers/Stage__webpack_null__at_72489.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "98b8849e7faa9954091b6f013fd6b7912396053b7942cf6b8d6b304a8581348c",
+      "helper": true,
+      "sourceStart": 72489,
+      "sourceEnd": 73099
+    },
+    {
+      "name": "Bitmap",
+      "path": "modules/helpers/Bitmap__webpack_null__at_84218.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "699e1e5869657fb1753f86fc17cd57737159bc66bc7f3d5f7a4bb7be17839b5b",
+      "helper": true,
+      "sourceStart": 84218,
+      "sourceEnd": 84457
+    },
+    {
+      "name": "Sprite",
+      "path": "modules/helpers/Sprite__webpack_null__at_86185.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "521eb2400c831165bbb02f1100095dc92e9ddae8ffe79570fb0877c8ce0cca2d",
+      "helper": true,
+      "sourceStart": 86185,
+      "sourceEnd": 86565
+    },
+    {
+      "name": "Shape",
+      "path": "modules/helpers/Shape__webpack_null__at_90601.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "480f01596d8d2e8b38605dd307f6a5bc0f486aa372431a6826d1715851044e79",
+      "helper": true,
+      "sourceStart": 90601,
+      "sourceEnd": 90712
+    },
+    {
+      "name": "Text",
+      "path": "modules/helpers/Text__webpack_null__at_91423.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "62d729791ef93d92ac56c554b70a51c784ba83103e6126ffe6949305fe2e7f6a",
+      "helper": true,
+      "sourceStart": 91423,
+      "sourceEnd": 91707
+    },
+    {
+      "name": "BitmapText",
+      "path": "modules/helpers/BitmapText__webpack_null__at_96464.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "460835b5ea38f43944b7856ed61f4df92061322bfdb3b1a30e24ffb5333d49ba",
+      "helper": true,
+      "sourceStart": 96464,
+      "sourceEnd": 96790
+    },
+    {
+      "name": "MovieClip",
+      "path": "modules/helpers/MovieClip__webpack_null__at_100468.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "b2e58402cbe7b84658c74e28d627bd8099998ad5687d7d031b54024b2382e035",
+      "helper": true,
+      "sourceStart": 100468,
+      "sourceEnd": 101121
+    },
+    {
+      "name": "MovieClipPlugin",
+      "path": "modules/helpers/MovieClipPlugin__webpack_null__at_102089.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "b0864f8c9eeb0eb68918805d0459ab97b85968f80a0d3f488f4516ded400111e",
+      "helper": true,
+      "sourceStart": 102089,
+      "sourceEnd": 102174
+    },
+    {
+      "name": "SpriteSheetUtils",
+      "path": "modules/helpers/SpriteSheetUtils__webpack_null__at_106710.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "6cc93c032ea9a4a442a3de5789e03a9f574fcfae59e58316eb410ee6691a4c68",
+      "helper": true,
+      "sourceStart": 106710,
+      "sourceEnd": 106796
+    },
+    {
+      "name": "SpriteSheetBuilder",
+      "path": "modules/helpers/SpriteSheetBuilder__webpack_null__at_110048.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "30eb0d2975e1ad1b522ff24766c37ea29ac991983519f0acfe12a9882462bed8",
+      "helper": true,
+      "sourceStart": 110048,
+      "sourceEnd": 110498
+    },
+    {
+      "name": "DOMElement",
+      "path": "modules/helpers/DOMElement__webpack_null__at_117171.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "4b536b2e73e500c03e49461f3f4e0696480ef6cba5625fabb69af8e90c77795b",
+      "helper": true,
+      "sourceStart": 117171,
+      "sourceEnd": 117572
+    },
+    {
+      "name": "Filter",
+      "path": "modules/helpers/Filter__webpack_null__at_119447.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "6cd5617a3a671d2465f7c0c042c85d0b0a9e790db48d9b2e0ec996fda6066968",
+      "helper": true,
+      "sourceStart": 119447,
+      "sourceEnd": 119467
+    },
+    {
+      "name": "BlurFilter",
+      "path": "modules/helpers/BlurFilter__webpack_null__at_120104.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "59fc30048a3b8b3cbd284e913d81b1c9c2cf37908b9e77208ebad3210421b949",
+      "helper": true,
+      "sourceStart": 120104,
+      "sourceEnd": 120356
+    },
+    {
+      "name": "AlphaMapFilter",
+      "path": "modules/helpers/AlphaMapFilter__webpack_null__at_127783.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "5a5896160ab73360fcd37b21b71610ca97784f4b04efc370942214666c65af62",
+      "helper": true,
+      "sourceStart": 127783,
+      "sourceEnd": 127891
+    },
+    {
+      "name": "AlphaMaskFilter",
+      "path": "modules/helpers/AlphaMaskFilter__webpack_null__at_129292.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "cedeafbbf18ea8873cf449618ff807c8493a39b3ce22a0ff64b63bfe3f863cd9",
+      "helper": true,
+      "sourceStart": 129292,
+      "sourceEnd": 129344
+    },
+    {
+      "name": "ColorFilter",
+      "path": "modules/helpers/ColorFilter__webpack_null__at_129920.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "61d674c83c98ab66d05ac7f7ac7c22be69061eb1a0307b7253ae2f14cc54fdcb",
+      "helper": true,
+      "sourceStart": 129920,
+      "sourceEnd": 130228
+    },
+    {
+      "name": "ColorMatrix",
+      "path": "modules/helpers/ColorMatrix__webpack_null__at_131062.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "1b5e0c4d9d164f997dcb2a3a700e165214945838fda105a102be0854b7ac9028",
+      "helper": true,
+      "sourceStart": 131062,
+      "sourceEnd": 131131
+    },
+    {
+      "name": "ColorMatrixFilter",
+      "path": "modules/helpers/ColorMatrixFilter__webpack_null__at_135559.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "511f58c09a7edc0cd0ff388ba670a66c55045575e76ab2da38b451d9f08f693b",
+      "helper": true,
+      "sourceStart": 135559,
+      "sourceEnd": 135615
+    },
+    {
+      "name": "Touch",
+      "path": "modules/helpers/Touch__webpack_null__at_136627.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "8f135c51476d3eb98ad66650ecc2ec51a5841221364ed683220872969b2ae74d",
+      "helper": true,
+      "sourceStart": 136627,
+      "sourceEnd": 136691
+    },
+    {
+      "name": "ErrorEvent",
+      "path": "modules/helpers/ErrorEvent__webpack_null__at_142471.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "a056e3e07d927b0cf15e82575a3c2d734e2b2bff23968f6d5e3c04368e444ee9",
+      "helper": true,
+      "sourceStart": 142471,
+      "sourceEnd": 142603
+    },
+    {
+      "name": "ProgressEvent",
+      "path": "modules/helpers/ProgressEvent__webpack_null__at_142854.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "dd29c82992e689f552940df5f471f138c87281706522badf286fc0106cdaa0dd",
+      "helper": true,
+      "sourceStart": 142854,
+      "sourceEnd": 143044
+    },
+    {
+      "name": "LoadItem",
+      "path": "modules/helpers/LoadItem__webpack_null__at_162891.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "49d6243be4ec20ff6bd81d0d9722c83c0bb2732ef4b1029283d3a6e8585cdac8",
+      "helper": true,
+      "sourceStart": 162891,
+      "sourceEnd": 163285
+    },
+    {
+      "name": "AbstractLoader",
+      "path": "modules/helpers/AbstractLoader__webpack_null__at_167704.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "3853d0ee9753afb124766a4ef7527adf28f84efb5c378469b3f3fba6ce31a1ae",
+      "helper": true,
+      "sourceStart": 167704,
+      "sourceEnd": 168130
+    },
+    {
+      "name": "AbstractMediaLoader",
+      "path": "modules/helpers/AbstractMediaLoader__webpack_null__at_172657.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "6f33f0a4da835eb332dc70fe0785c5d2154ecbaca733d4606eb71b201b7203d2",
+      "helper": true,
+      "sourceStart": 172657,
+      "sourceEnd": 172878
+    },
+    {
+      "name": "TagRequest",
+      "path": "modules/helpers/TagRequest__webpack_null__at_174331.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "8c30cde3811aa679a48254cb7543791eaf54a61e10b912070de868dbac92aafe",
+      "helper": true,
+      "sourceStart": 174331,
+      "sourceEnd": 174596
+    },
+    {
+      "name": "MediaTagRequest",
+      "path": "modules/helpers/MediaTagRequest__webpack_null__at_176756.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "86db347621f0b96ac0eca73644241d5eefeb1c7e174702ece346571321e511c9",
+      "helper": true,
+      "sourceStart": 176756,
+      "sourceEnd": 176959
+    },
+    {
+      "name": "XHRRequest",
+      "path": "modules/helpers/XHRRequest__webpack_null__at_178354.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "bb16d55e0acc898157032ba1de8a01dc52d7493ead02d382b2fd9cba9f0545ee",
+      "helper": true,
+      "sourceStart": 178354,
+      "sourceEnd": 179140
+    },
+    {
+      "name": "LoadQueue",
+      "path": "modules/helpers/LoadQueue__webpack_null__at_187132.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "76b0eeebb6eccb9a2d0d6ecca7f0a67e2600fd7779886ac9adbdf76e5abe18d1",
+      "helper": true,
+      "sourceStart": 187132,
+      "sourceEnd": 187823
+    },
+    {
+      "name": "TextLoader",
+      "path": "modules/helpers/TextLoader__webpack_null__at_204123.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "9295a14ae7db53c70d255be45e6e5855db53f5179af56985cf67387fff06cd62",
+      "helper": true,
+      "sourceStart": 204123,
+      "sourceEnd": 204227
+    },
+    {
+      "name": "BinaryLoader",
+      "path": "modules/helpers/BinaryLoader__webpack_null__at_204494.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "05022b065b3e8267110612f8fe1b36bad91411047d656806e9be65e7f672e5f0",
+      "helper": true,
+      "sourceStart": 204494,
+      "sourceEnd": 204652
+    },
+    {
+      "name": "CSSLoader",
+      "path": "modules/helpers/CSSLoader__webpack_null__at_205019.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "5e9a32c69d3459786e872a2f698c02ce0acf29d357dd6722fe83321bb040ca4e",
+      "helper": true,
+      "sourceStart": 205019,
+      "sourceEnd": 205357
+    },
+    {
+      "name": "ImageLoader",
+      "path": "modules/helpers/ImageLoader__webpack_null__at_205998.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "dac8ab99ff26b8ca4011ba50480edbf6499c7c6c149c8ea2188b2c8ac96471f7",
+      "helper": true,
+      "sourceStart": 205998,
+      "sourceEnd": 206604
+    },
+    {
+      "name": "JavaScriptLoader",
+      "path": "modules/helpers/JavaScriptLoader__webpack_null__at_208273.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "589d93b091a2866977c4a5ca471d446721e4f13876b2e514f3bd743401e55cee",
+      "helper": true,
+      "sourceStart": 208273,
+      "sourceEnd": 208522
+    },
+    {
+      "name": "JSONLoader",
+      "path": "modules/helpers/JSONLoader__webpack_null__at_208972.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "4076daf8447e27d543fb3f20a01da0c0f378c1da3656a750b2d1f6e38a5e2974",
+      "helper": true,
+      "sourceStart": 208972,
+      "sourceEnd": 209123
+    },
+    {
+      "name": "JSONPLoader",
+      "path": "modules/helpers/JSONPLoader__webpack_null__at_209668.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "16288a099e25b1b95b81e70405836e0d72404b06627a2079c9abe173410eb448",
+      "helper": true,
+      "sourceStart": 209668,
+      "sourceEnd": 209870
+    },
+    {
+      "name": "ManifestLoader",
+      "path": "modules/helpers/ManifestLoader__webpack_null__at_211274.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "1594d381a58a2a3194b743833caf3ae323131a9b7a56b3d46fbc0247cd0fdaa4",
+      "helper": true,
+      "sourceStart": 211274,
+      "sourceEnd": 211443
+    },
+    {
+      "name": "SoundLoader",
+      "path": "modules/helpers/SoundLoader__webpack_null__at_213820.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "eda9017b951b532164c4839a6d7926f02529d620fc85109b04e6a4f645d17f51",
+      "helper": true,
+      "sourceStart": 213820,
+      "sourceEnd": 214275
+    },
+    {
+      "name": "VideoLoader",
+      "path": "modules/helpers/VideoLoader__webpack_null__at_214724.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "226ad94afff112a4eb0350930b2f552cb9b9fd69119f9d56e654fa663533169d",
+      "helper": true,
+      "sourceStart": 214724,
+      "sourceEnd": 215081
+    },
+    {
+      "name": "SpriteSheetLoader",
+      "path": "modules/helpers/SpriteSheetLoader__webpack_null__at_215451.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "0e06bf2acfa6261015dfcc99b880ada37ff2d7e1ef543ab8a795c5490427ec4d",
+      "helper": true,
+      "sourceStart": 215451,
+      "sourceEnd": 215601
+    },
+    {
+      "name": "SVGLoader",
+      "path": "modules/helpers/SVGLoader__webpack_null__at_217988.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "5c7240139b1ab13cd38ccb54fc3adc6e7c3b9e82eb1a8952e05e17cc19676994",
+      "helper": true,
+      "sourceStart": 217988,
+      "sourceEnd": 218352
+    },
+    {
+      "name": "XMLLoader",
+      "path": "modules/helpers/XMLLoader__webpack_null__at_219023.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "bf4617b012f57f476347dfb89702956d28b57044bfa3088b0bc2eee3e9900cf0",
+      "helper": true,
+      "sourceStart": 219023,
+      "sourceEnd": 219172
+    },
+    {
+      "name": "BrowserDetect",
+      "path": "modules/helpers/BrowserDetect__webpack_null__at_220106.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "6da875423ee932d0c15421bf7968571eed25fbba8028047626d5cc3dc03d2e15",
+      "helper": true,
+      "sourceStart": 220106,
+      "sourceEnd": 220186
+    },
+    {
+      "name": "Sound",
+      "path": "modules/helpers/Sound__webpack_null__at_221565.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "68d2f035e695f0fc6045cf4ddeefe8506667983188dc37b7d2db7f4b2b12e5a5",
+      "helper": true,
+      "sourceStart": 221565,
+      "sourceEnd": 221629
+    },
+    {
+      "name": "SoundChannel",
+      "path": "modules/helpers/SoundChannel__webpack_null__at_221649.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "3699fadecdbe63ea40af53d1aa6ae6ef34a185762f48f57cfce9695613d15918",
+      "helper": true,
+      "sourceStart": 221649,
+      "sourceEnd": 221703
+    },
+    {
+      "name": "Loader",
+      "path": "modules/helpers/Loader__webpack_null__at_247398.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "88396a26a813295a7c4c4f2fd7c4977c6da0fe5dcdf235d1ff705a90f6f4e144",
+      "helper": true,
+      "sourceStart": 247398,
+      "sourceEnd": 247499
+    },
+    {
+      "name": "WebAudioSoundInstance",
+      "path": "modules/helpers/WebAudioSoundInstance__webpack_null__at_248205.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "322769b82afe0fd401984e7f16c1bcd74b46c7437a129a9522b984c360ec70a0",
+      "helper": true,
+      "sourceStart": 248205,
+      "sourceEnd": 248718
+    },
+    {
+      "name": "WebAudioPlugin",
+      "path": "modules/helpers/WebAudioPlugin__webpack_null__at_252834.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "ce43853f177e43a0afa75ee42f0fb84d878e351b0fc57b03a1d13cb8bfe45c74",
+      "helper": true,
+      "sourceStart": 252834,
+      "sourceEnd": 253474
+    },
+    {
+      "name": "HTMLAudioTagPool",
+      "path": "modules/helpers/HTMLAudioTagPool__webpack_null__at_257399.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "cde825484bbd88af4ceeb86d796f5456eb24fe52bb221fe624851d1e36ed0e2d",
+      "helper": true,
+      "sourceStart": 257399,
+      "sourceEnd": 257485
+    },
+    {
+      "name": "TagPool",
+      "path": "modules/helpers/TagPool__webpack_null__at_257516.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "9771c0e9ddafc210f2120ea4fddd46ffb7040d23651fd9a8f25478cb29bfb6b5",
+      "helper": true,
+      "sourceStart": 257516,
+      "sourceEnd": 257562
+    },
+    {
+      "name": "HTMLAudioSoundInstance",
+      "path": "modules/helpers/HTMLAudioSoundInstance__webpack_null__at_259010.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "bf7e9bc612c4062885c47d8344990cc2010ce527d41e32aac2eb3ec1b72c7e88",
+      "helper": true,
+      "sourceStart": 259010,
+      "sourceEnd": 259709
+    },
+    {
+      "name": "HTMLAudioPlugin",
+      "path": "modules/helpers/HTMLAudioPlugin__webpack_null__at_265984.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "46715752e032e52dcbaaf1302b03eadc19b6a0364d8ae7c417c09933f879bf7a",
+      "helper": true,
+      "sourceStart": 265984,
+      "sourceEnd": 266240
+    },
+    {
+      "name": "Tween",
+      "path": "modules/helpers/Tween__webpack_null__at_267982.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "fe5bd741bdd9ba81ec6a7930ad0840b83c03f12bb746dd19ac45530a3f5bdfb0",
+      "helper": true,
+      "sourceStart": 267982,
+      "sourceEnd": 269000
+    },
+    {
+      "name": "Timeline",
+      "path": "modules/helpers/Timeline__webpack_null__at_276963.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "5ceb376945db840c1776f7255728e613d66bc4f38c5772a2ec7980cb87ac334a",
+      "helper": true,
+      "sourceStart": 276963,
+      "sourceEnd": 277863
+    },
+    {
+      "name": "Ease",
+      "path": "modules/helpers/Ease__webpack_null__at_281803.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "f2268ba7a38039e4de8cb2c7b413074bd72df2b6245089a422b5c1abb6cfc78f",
+      "helper": true,
+      "sourceStart": 281803,
+      "sourceEnd": 281866
+    },
+    {
+      "name": "MotionGuidePlugin",
+      "path": "modules/helpers/MotionGuidePlugin__webpack_null__at_286016.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "d896c7c4f86ecb2b3c599760cb071009d8069f1f73de9b840aad54be1641083e",
+      "helper": true,
+      "sourceStart": 286016,
+      "sourceEnd": 286105
+    },
+    {
+      "name": "BitmapData",
+      "path": "modules/helpers/BitmapData__webpack_null__at_292066.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "e1d9f9ce610dc70cf9b90a39843f8efb7facefd29e457fe0cd25e3a7ffc9f733",
+      "helper": true,
+      "sourceStart": 292066,
+      "sourceEnd": 292411
+    },
+    {
+      "name": "NoiseGenerator",
+      "path": "modules/helpers/NoiseGenerator__webpack_null__at_311322.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "28e2d898d1e0d2cd5aa209f9139675ebeb078b5381a7aaf07f2ef0d3989711e8",
+      "helper": true,
+      "sourceStart": 311322,
+      "sourceEnd": 311350
+    },
+    {
+      "name": "ColorTransform",
+      "path": "modules/helpers/ColorTransform__webpack_null__at_320297.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "fa88854e9ff5da581cb6226362f8debfff2a4050a1bb0e7b8f9a74a38d6e1b8c",
+      "helper": true,
+      "sourceStart": 320297,
+      "sourceEnd": 320898
+    },
+    {
+      "name": "DropShadowFilter",
+      "path": "modules/helpers/DropShadowFilter__webpack_null__at_323709.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "ec3ec13386531f630339b5549183216775a1e84829474a6c596903417c02d9be",
+      "helper": true,
+      "sourceStart": 323709,
+      "sourceEnd": 324353
+    },
+    {
+      "name": "ScaleBitmap",
+      "path": "modules/helpers/ScaleBitmap__webpack_null__at_329893.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "f6ae47e230254ecfa7e03d8ac1a8d02465a4cbbb1acca2e11e6445cea810b5ae",
+      "helper": true,
+      "sourceStart": 329893,
+      "sourceEnd": 330285
+    },
+    {
+      "name": "GlowFilter",
+      "path": "modules/helpers/GlowFilter__webpack_null__at_335342.js",
+      "webpackId": null,
+      "ownerPath": "modules/vendor-runtime.js",
+      "canonicalSha256": "75f4436e01d994d509869a2e3e4627105f727d446462c8350704fb92bb4c2840",
+      "helper": true,
+      "sourceStart": 335342,
+      "sourceEnd": 335777
+    }
+  ],
+  "symbolViewCount": 77
 }
