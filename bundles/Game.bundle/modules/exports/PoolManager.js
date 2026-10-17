@@ -1,7 +1,7 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var __s0local0 = require("gge-module:exact_c549e43d1112dfff").getLogger("mapObjectsPool");
+// Canonical symbol view; NOT a standalone executable Webpack module.
+// Bundle: Game.bundle; Webpack module: 581
+// Export: PoolManager; preserved source: modules/webpack/exports/PoolManager.js
+// Original canonical SHA-256: 37497497c5fe7e5567367ec9fbf04bcba61281f0149ab853395158fa4f09d750
 var __s0local1 = function () {
   function PoolManager() {
     this.pool = new Map();
@@ -44,9 +44,3 @@ var __s0local1 = function () {
   return PoolManager;
 }();
 exports.PoolManager = __s0local1;
-exports.mapObjectsPool = new __s0local1();
-exports.isPoolable = function isPoolable(__s20param0) {
-  return __s20param0 instanceof __dep_export_DungeonMapobject.DungeonMapobject || __s20param0 instanceof __dep_export_MonumentMapobject.MonumentMapobject;
-};
-var __dep_export_DungeonMapobject = require("gge-module:export_DungeonMapobject");
-var __dep_export_MonumentMapobject = require("gge-module:export_MonumentMapobject");

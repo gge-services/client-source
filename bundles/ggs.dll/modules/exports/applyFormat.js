@@ -1,19 +1,7 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var __dep_export_DARK_TEXT_PASSIVE_LINK_COLOR = require("gge-module:export_DARK_TEXT_PASSIVE_LINK_COLOR");
-function getFontFamily(__s1param0, __s1param1) {
-  var __s1local0 = __s1param0 && __s1param0.font || __dep_export_DARK_TEXT_PASSIVE_LINK_COLOR.FALLBACK_TEXT_FONT;
-  if (__s1param1) {
-    if (__s1param1.fontOverwrites.has(__s1local0)) {
-      __s1local0 = __s1param1.fontOverwrites.get(__s1local0);
-    }
-    if (!__s1param1.allowedFonts.has(__s1local0)) {
-      __s1local0 = __s1param1.fallbackFont;
-    }
-  }
-  return __s1local0;
-}
+// Canonical symbol view; NOT a standalone executable Webpack module.
+// Bundle: ggs.dll; Webpack module: 240
+// Export: applyFormat; preserved source: modules/webpack/exports/applyFormat.js
+// Original canonical SHA-256: b76a97c07811629e915e93d04676c75a8d45664d36aa211a181824ab868d94e4
 exports.applyFormat = function applyFormat(__s6param0, __s6param1, __s6param2) {
   try {
     var __s6local0 = typeof __s6param1.color == "string" ? __s6param1.color : __dep_export_DARK_TEXT_PASSIVE_LINK_COLOR.FALLBACK_TEXT_COLOR;
@@ -28,4 +16,3 @@ exports.applyFormat = function applyFormat(__s6param0, __s6param1, __s6param2) {
     console.warn("Was unable to apply the format of this textfield", __s11local0);
   }
 };
-exports.getFontFamily = getFontFamily;

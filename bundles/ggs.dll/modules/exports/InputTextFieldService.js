@@ -1,11 +1,7 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var __dep_exact_8b5ddff403cf4eac = require("gge-module:exact_8b5ddff403cf4eac");
-var __dep_export_LoggerConfigurator = require("gge-module:export_LoggerConfigurator");
-var __dep_export_getUpperLeftCorner = require("gge-module:export_getUpperLeftCorner");
-var __dep_exact_d080a25fe68bd590 = require("gge-module:exact_d080a25fe68bd590");
-var __s0local0 = __dep_export_LoggerConfigurator.getLogger(__dep_exact_d080a25fe68bd590.TEXT_FIELDS_LOGGER + ".InputTextFieldService");
+// Canonical symbol view; NOT a standalone executable Webpack module.
+// Bundle: ggs.dll; Webpack module: 603
+// Export: InputTextFieldService; preserved source: modules/webpack/exports/InputTextFieldService.js
+// Original canonical SHA-256: 6ef719c388dfed006e355c42400f274448d44dde570a8f6bc3e129f442ebd36b
 var __s0local1 = function () {
   function InputTextFieldService() {
     var __s3local0 = this;
@@ -122,18 +118,4 @@ var __s0local1 = function () {
   };
   return InputTextFieldService;
 }();
-function isVisibleOnStage(__s53param0) {
-  for (var __s53local0 = __s53param0.isVisible() && !!__s53param0.stage, __s53local1 = __s53param0; __s53local1 && __s53local0;) {
-    if (__s53local1 = __s53local1.parent) {
-      __s53local0 = __s53local1.isVisible();
-    }
-  }
-  if (__s53local0) {
-    var __s53local2 = __s53param0.getBounds();
-    var __s53local3 = __s53param0.localToGlobal(__s53local2.x, __s53local2.y);
-    __s53local0 = __s53param0.stage.getObjectUnderPoint(__s53local3.x + 1, __s53local3.y + 1, 1) === __s53param0;
-  }
-  return __s53local0;
-}
 exports.InputTextFieldService = __s0local1;
-exports.isVisibleOnStage = isVisibleOnStage;

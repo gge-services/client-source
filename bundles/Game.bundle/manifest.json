@@ -14,13 +14,13 @@
     "bootstrap/entry.js"
   ],
   "specifiers": {
-    "gge-module:export_CastleFacebookModule": "exports/CastleFacebookModule.js",
-    "gge-module:export_cxfResetCommandCache": "exports/cxfResetCommandCache.js",
-    "gge-module:export_PoolManager": "exports/PoolManager.js",
-    "gge-module:export_AIsoObjectVE": "exports/AIsoObjectVE.js",
-    "gge-module:export_CastleTutorialController": "exports/CastleTutorialController.js",
-    "gge-module:export_CastleVersionInformation": "exports/CastleVersionInformation.js",
-    "gge-module:export_CastleArrayHelper": "exports/CastleArrayHelper.js",
+    "gge-module:export_CastleFacebookModule": "webpack/exports/CastleFacebookModule.js",
+    "gge-module:export_cxfResetCommandCache": "webpack/exports/cxfResetCommandCache.js",
+    "gge-module:export_PoolManager": "webpack/exports/PoolManager.js",
+    "gge-module:export_AIsoObjectVE": "webpack/exports/AIsoObjectVE.js",
+    "gge-module:export_CastleTutorialController": "webpack/exports/CastleTutorialController.js",
+    "gge-module:export_CastleVersionInformation": "webpack/exports/CastleVersionInformation.js",
+    "gge-module:export_CastleArrayHelper": "webpack/exports/CastleArrayHelper.js",
     "gge-module:export_CastleBasicController": "exports/CastleBasicController.js",
     "gge-module:export_SublayerSwitcher": "exports/SublayerSwitcher.js",
     "gge-module:export_EventIconHelper": "exports/EventIconHelper.js",
@@ -28,7 +28,7 @@
     "gge-module:export_CastleSurveyMessageDialog": "exports/CastleSurveyMessageDialog.js",
     "gge-module:export_CastleBattleLogMessageAdvanced": "exports/CastleBattleLogMessageAdvanced.js",
     "gge-module:export_CastleProfiler": "exports/CastleProfiler.js",
-    "gge-module:export_postPathfinderRequest": "exports/postPathfinderRequest.js",
+    "gge-module:export_postPathfinderRequest": "webpack/exports/postPathfinderRequest.js",
     "gge-module:export_CastleBookmarkAttackerSelectionDialog": "exports/CastleBookmarkAttackerSelectionDialog.js",
     "gge-module:export_CastleFacebookGetUserDataCommand": "exports/CastleFacebookGetUserDataCommand.js",
     "gge-module:export_MultiEventRewardsProperties": "exports/MultiEventRewardsProperties.js",
@@ -321,7 +321,7 @@
     "gge-module:export_CastleUnitAmountComponent": "exports/CastleUnitAmountComponent.js",
     "gge-module:export_LordEffectTooltipTrigger": "exports/LordEffectTooltipTrigger.js",
     "gge-module:export_SubscriptionPackageEnum": "exports/SubscriptionPackageEnum.js",
-    "gge-module:export_CastleTutorialArrowController": "exports/CastleTutorialArrowController.js",
+    "gge-module:export_CastleTutorialArrowController": "webpack/exports/CastleTutorialArrowController.js",
     "gge-module:export_ACollectableItemPercentageBoosterVE": "exports/ACollectableItemPercentageBoosterVE.js",
     "gge-module:export_AIsoViewObjectGroupSimpleList": "exports/AIsoViewObjectGroupSimpleList.js",
     "gge-module:export_AFactionBuildingVE": "exports/AFactionBuildingVE.js",
@@ -342,7 +342,7 @@
     "gge-module:export_CastleConstructionItemsMainDialog": "exports/CastleConstructionItemsMainDialog.js",
     "gge-module:export_DecoStorageEvent": "exports/DecoStorageEvent.js",
     "gge-module:export_ADecoBuildingVO": "exports/ADecoBuildingVO.js",
-    "gge-module:export_CastleTutorialDialogFilter": "exports/CastleTutorialDialogFilter.js",
+    "gge-module:export_CastleTutorialDialogFilter": "webpack/exports/CastleTutorialDialogFilter.js",
     "gge-module:export_ACollectableItemPercentageBoosterVO": "exports/ACollectableItemPercentageBoosterVO.js",
     "gge-module:export_AResourcePanelToolTipResource": "exports/AResourcePanelToolTipResource.js",
     "gge-module:export_GenericEventInfoListProperties": "exports/GenericEventInfoListProperties.js",
@@ -445,7 +445,7 @@
     "gge-module:export_SubscriptionEvent": "exports/SubscriptionEvent.js",
     "gge-module:export_AModernPackageShopBuyElement": "exports/AModernPackageShopBuyElement.js",
     "gge-module:export_CastleSpyDialog": "exports/CastleSpyDialog.js",
-    "gge-module:export_CastleTutorialClickBlocker": "exports/CastleTutorialClickBlocker.js",
+    "gge-module:export_CastleTutorialClickBlocker": "webpack/exports/CastleTutorialClickBlocker.js",
     "gge-module:export_ClientConstKingdom": "exports/ClientConstKingdom.js",
     "gge-module:export_CastleCheatData": "exports/CastleCheatData.js",
     "gge-module:export_CastleBuildingInfoDialogProperties": "exports/CastleBuildingInfoDialogProperties.js",
@@ -475,7 +475,7 @@
     "gge-module:export_CastleMovementDetailsComponent": "exports/CastleMovementDetailsComponent.js",
     "gge-module:export_CastleBasicTipDialog": "exports/CastleBasicTipDialog.js",
     "gge-module:export_AttackDialogHelper": "exports/AttackDialogHelper.js",
-    "gge-module:export_CastleTutorialSpotlight": "exports/CastleTutorialSpotlight.js",
+    "gge-module:export_CastleTutorialSpotlight": "webpack/exports/CastleTutorialSpotlight.js",
     "gge-module:export_CastleStatusPanel": "exports/CastleStatusPanel.js",
     "gge-module:export_AStatusIconSeasonGacha": "exports/AStatusIconSeasonGacha.js",
     "gge-module:export_CastleStormIslandsMainDialog": "exports/CastleStormIslandsMainDialog.js",
@@ -528,7 +528,7 @@
     "gge-module:export_DaimyoCastleMapObjectVO": "exports/DaimyoCastleMapObjectVO.js",
     "gge-module:export_CastleOptionPanel": "exports/CastleOptionPanel.js",
     "gge-module:export_CastleNewsHubOverlay": "exports/CastleNewsHubOverlay.js",
-    "gge-module:export_CommandDelayController": "exports/CommandDelayController.js",
+    "gge-module:export_CommandDelayController": "webpack/exports/CommandDelayController.js",
     "gge-module:export_OptionsDialogProperties": "exports/OptionsDialogProperties.js",
     "gge-module:export_C2SGetEquipmentInventory": "exports/C2SGetEquipmentInventory.js",
     "gge-module:export_CastleVIPDataEvent": "exports/CastleVIPDataEvent.js",
@@ -8567,7 +8567,7 @@
     },
     {
       "webpackId": "228",
-      "path": "modules/exports/CastleFacebookModule.js",
+      "path": "modules/webpack/exports/CastleFacebookModule.js",
       "specifier": "gge-module:export_CastleFacebookModule",
       "sourceSha256": "8e16aba949fb7d6b56852d74e656d3b3c5423f3faaf134a8d753173c0ba95c37",
       "canonicalSha256": "8b589a4220ac87899c7c86c6c2363793eab18ed1d34a9dd2125e06b9f6c88868",
@@ -9109,7 +9109,7 @@
     },
     {
       "webpackId": "273",
-      "path": "modules/exports/cxfResetCommandCache.js",
+      "path": "modules/webpack/exports/cxfResetCommandCache.js",
       "specifier": "gge-module:export_cxfResetCommandCache",
       "sourceSha256": "5acc8329527f9a8d5f4b8a75e85a63f63a7b69521cd1045bd4f5ce0aef71f156",
       "canonicalSha256": "e1e3c4ed197739184eae8c740f5b35de38ea6efc618134e6f0008ccc16aaa261",
@@ -9351,7 +9351,7 @@
     },
     {
       "webpackId": "293",
-      "path": "modules/exports/CastleVersionInformation.js",
+      "path": "modules/webpack/exports/CastleVersionInformation.js",
       "specifier": "gge-module:export_CastleVersionInformation",
       "sourceSha256": "59662c84a33ddb91f792438ab6f6118d582b565abf36556cda60307afb6664e4",
       "canonicalSha256": "044e07362d629b59f649bd06728b1872b95dbad6bc4d3a0752101f443afc3ba4",
@@ -9532,7 +9532,7 @@
     },
     {
       "webpackId": "308",
-      "path": "modules/exports/CastleTutorialArrowController.js",
+      "path": "modules/webpack/exports/CastleTutorialArrowController.js",
       "specifier": "gge-module:export_CastleTutorialArrowController",
       "sourceSha256": "931276ebdef4276b57b25af8bc27663b6fff491381cf336d8895ac983eaf47d9",
       "canonicalSha256": "d09be7bab6b8f54cd634f59a3e6e2f9825fb795ab4dc3e0e7ee075fa79f29052",
@@ -9676,7 +9676,7 @@
     },
     {
       "webpackId": "320",
-      "path": "modules/exports/AIsoObjectVE.js",
+      "path": "modules/webpack/exports/AIsoObjectVE.js",
       "specifier": "gge-module:export_AIsoObjectVE",
       "sourceSha256": "0eaf51671c2f454fc4722e36e3d8283bde97c4b7d2c30ec32bb8ddc54f7178ae",
       "canonicalSha256": "3082a726d23fdf645ce6339d2c6a5c33a9f5ca1e932ed5f4ebea57efdccbe0bd",
@@ -9798,7 +9798,7 @@
     },
     {
       "webpackId": "330",
-      "path": "modules/exports/CastleTutorialDialogFilter.js",
+      "path": "modules/webpack/exports/CastleTutorialDialogFilter.js",
       "specifier": "gge-module:export_CastleTutorialDialogFilter",
       "sourceSha256": "ec7bd1a82acc86a293b559ffce947fdc7bf1a853efda28fa2b02dc383a88d551",
       "canonicalSha256": "e60bd871379b610a719746857cf4649e27e793627aab3c813a07fe72b2886e16",
@@ -11060,7 +11060,7 @@
     },
     {
       "webpackId": "435",
-      "path": "modules/exports/CastleTutorialClickBlocker.js",
+      "path": "modules/webpack/exports/CastleTutorialClickBlocker.js",
       "specifier": "gge-module:export_CastleTutorialClickBlocker",
       "sourceSha256": "52c424885285273e5e40a83786fd484ad6b0a0ae813258eb600aa1a6ded712cf",
       "canonicalSha256": "cbcb7cda08aff0fcc3827cd40f6acc134cfb603beaf2b350836c9676246dc911",
@@ -11420,7 +11420,7 @@
     },
     {
       "webpackId": "465",
-      "path": "modules/exports/CastleTutorialSpotlight.js",
+      "path": "modules/webpack/exports/CastleTutorialSpotlight.js",
       "specifier": "gge-module:export_CastleTutorialSpotlight",
       "sourceSha256": "5833277278d06bba30aabf2dc4ee01715c3d3743487ea61f2e162027f3815a2b",
       "canonicalSha256": "46e343eb935fe491b13a4e7c4bd8a04c66e21c9c50ff098aa13ee1c8aa421436",
@@ -12056,7 +12056,7 @@
     },
     {
       "webpackId": "518",
-      "path": "modules/exports/CommandDelayController.js",
+      "path": "modules/webpack/exports/CommandDelayController.js",
       "specifier": "gge-module:export_CommandDelayController",
       "sourceSha256": "a457ea6fa3b07396f53a1ea6ef797c62f544f4fa05de1a8f4211ee62b8601d09",
       "canonicalSha256": "e45afc12fda9301870a515faa76a893e61844ff6080538f75a18787ae8837eb0",
@@ -12548,7 +12548,7 @@
     },
     {
       "webpackId": "559",
-      "path": "modules/exports/CastleArrayHelper.js",
+      "path": "modules/webpack/exports/CastleArrayHelper.js",
       "specifier": "gge-module:export_CastleArrayHelper",
       "sourceSha256": "b845ded63a56b1e004a85023458918130d1f2139c73b22e7c78215bb527988bd",
       "canonicalSha256": "be53f7e996fdeb7e2fb6f208ce12ffd91e7bbb115ff4caf9cf6b086b8f6ce505",
@@ -12812,7 +12812,7 @@
     },
     {
       "webpackId": "581",
-      "path": "modules/exports/PoolManager.js",
+      "path": "modules/webpack/exports/PoolManager.js",
       "specifier": "gge-module:export_PoolManager",
       "sourceSha256": "9105ddb5908229be5e3478ff15194a13fb0e482a503b86c449b8425bf6588386",
       "canonicalSha256": "37497497c5fe7e5567367ec9fbf04bcba61281f0149ab853395158fa4f09d750",
@@ -15861,7 +15861,7 @@
     },
     {
       "webpackId": "835",
-      "path": "modules/exports/CastleTutorialController.js",
+      "path": "modules/webpack/exports/CastleTutorialController.js",
       "specifier": "gge-module:export_CastleTutorialController",
       "sourceSha256": "dacdf7c676fd9912f48ad772470540bbec8cbb72dd700c89312b0acf8d453be0",
       "canonicalSha256": "70ec26426a76d5ef19511f264a02db0499be98334be48cf1985f4cd52aa62432",
@@ -30455,7 +30455,7 @@
     },
     {
       "webpackId": "2058",
-      "path": "modules/exports/postPathfinderRequest.js",
+      "path": "modules/webpack/exports/postPathfinderRequest.js",
       "specifier": "gge-module:export_postPathfinderRequest",
       "sourceSha256": "e8ead6891e27f7a748e5b4f944e2811c56fafee3e1684871c1a6a34860979642",
       "canonicalSha256": "ba403493a1ec7c5e55f526cccd584e5cbd5d99b50142907d27c3b1a487348e9d",
@@ -75719,5 +75719,525 @@
       ],
       "confidence": "matched"
     }
-  ]
+  ],
+  "symbolViews": [
+    {
+      "name": "SingletonEnforcer",
+      "path": "modules/helpers/SingletonEnforcer__webpack_15__at_1702.js",
+      "webpackId": "15",
+      "ownerPath": "modules/exports/CastleBasicController.js",
+      "canonicalSha256": "43c39438a6171dd1e5b692668155d698e8f6dc4d1e6ffe58ebf48ef9e046f415",
+      "helper": true,
+      "sourceStart": 1702,
+      "sourceEnd": 1733
+    },
+    {
+      "name": "IsoHelperClass",
+      "path": "modules/helpers/IsoHelperClass__webpack_46__at_105.js",
+      "webpackId": "46",
+      "ownerPath": "modules/exports/IsoHelper.js",
+      "canonicalSha256": "bbd7d116eab4b4f6140af05db64212f7d0995ccc7f2d2e3ee3a688835a9c516d",
+      "helper": true,
+      "sourceStart": 105,
+      "sourceEnd": 404
+    },
+    {
+      "name": "FacebookLoginStatus",
+      "path": "modules/exports/FacebookLoginStatus.js",
+      "webpackId": "228",
+      "ownerPath": "modules/webpack/exports/CastleFacebookModule.js",
+      "canonicalSha256": "619991556e94e05a7cf0dcd85531a406e86e1ff62c85747afdab8b41830c506c",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        11,
+        12
+      ]
+    },
+    {
+      "name": "FacebookModule",
+      "path": "modules/exports/FacebookModule.js",
+      "webpackId": "228",
+      "ownerPath": "modules/webpack/exports/CastleFacebookModule.js",
+      "canonicalSha256": "b0f97031f928fd6bcd31287bd5096f1f33476a150711c6badb2d355a7bd38ca1",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        14,
+        15
+      ]
+    },
+    {
+      "name": "facebookAuthResponse",
+      "path": "modules/exports/facebookAuthResponse.js",
+      "webpackId": "228",
+      "ownerPath": "modules/webpack/exports/CastleFacebookModule.js",
+      "canonicalSha256": "9c85396e83c94d541bc719a8ce4d38c9a9430d9f58a3960613b3182674279f3e",
+      "statementCount": 1,
+      "sourceStatementIndices": [
+        17
+      ]
+    },
+    {
+      "name": "CastleFacebookModule",
+      "path": "modules/exports/CastleFacebookModule.js",
+      "webpackId": "228",
+      "ownerPath": "modules/webpack/exports/CastleFacebookModule.js",
+      "canonicalSha256": "9e82b739d2e85a047b402f12d76728db59014f909b0f447e2385f58ee5a5553d",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        14,
+        19
+      ]
+    },
+    {
+      "name": "initCXF",
+      "path": "modules/exports/initCXF.js",
+      "webpackId": "273",
+      "ownerPath": "modules/webpack/exports/cxfResetCommandCache.js",
+      "canonicalSha256": "98ca2448e64e5faf8d5260fc2fb73a251704c2c0a1834adbe2bb71e6cb2e773c",
+      "statementCount": 1,
+      "sourceStatementIndices": [
+        19
+      ]
+    },
+    {
+      "name": "registerUIComponentToCXF",
+      "path": "modules/exports/registerUIComponentToCXF.js",
+      "webpackId": "273",
+      "ownerPath": "modules/webpack/exports/cxfResetCommandCache.js",
+      "canonicalSha256": "2898b38d5144bd65b7b5ba8017c4400c33b4526f8023536af2677f1ea599ef05",
+      "statementCount": 1,
+      "sourceStatementIndices": [
+        20
+      ]
+    },
+    {
+      "name": "unregisterUIComponentToCXF",
+      "path": "modules/exports/unregisterUIComponentToCXF.js",
+      "webpackId": "273",
+      "ownerPath": "modules/webpack/exports/cxfResetCommandCache.js",
+      "canonicalSha256": "e5915c5204a34647108617625c9e78ebd8e03fded2c24fbbc23c12382267991b",
+      "statementCount": 1,
+      "sourceStatementIndices": [
+        21
+      ]
+    },
+    {
+      "name": "cxfResetCommandCache",
+      "path": "modules/exports/cxfResetCommandCache.js",
+      "webpackId": "273",
+      "ownerPath": "modules/webpack/exports/cxfResetCommandCache.js",
+      "canonicalSha256": "339861346866e2ae51858e3c1785a4ca4ae31f44e1f32aca74458f50506fb0b5",
+      "statementCount": 1,
+      "sourceStatementIndices": [
+        22
+      ]
+    },
+    {
+      "name": "SublayerInfo",
+      "path": "modules/helpers/SublayerInfo__webpack_282__at_6316.js",
+      "webpackId": "282",
+      "ownerPath": "modules/exports/SublayerSwitcher.js",
+      "canonicalSha256": "c1366f504e68d6ad129fb3859c5b6d57640d6805f0f454a588a70f8345e0a985",
+      "helper": true,
+      "sourceStart": 6316,
+      "sourceEnd": 6342
+    },
+    {
+      "name": "appVersion",
+      "path": "modules/exports/appVersion.js",
+      "webpackId": "293",
+      "ownerPath": "modules/webpack/exports/CastleVersionInformation.js",
+      "canonicalSha256": "545ad9aae29b6e5f8a0fafaf53160fa33a41c379f0217164e413d3bde3282c2b",
+      "statementCount": 1,
+      "sourceStatementIndices": [
+        6
+      ]
+    },
+    {
+      "name": "CastleVersionInformation",
+      "path": "modules/exports/CastleVersionInformation.js",
+      "webpackId": "293",
+      "ownerPath": "modules/webpack/exports/CastleVersionInformation.js",
+      "canonicalSha256": "3a3d5e2a0917b5cbe913fa8133c07399b852ddb3ea2d1a2158c4f216c66ba4e3",
+      "statementCount": 3,
+      "sourceStatementIndices": [
+        9,
+        10,
+        11
+      ]
+    },
+    {
+      "name": "CastleTutorialArrowController",
+      "path": "modules/exports/CastleTutorialArrowController.js",
+      "webpackId": "308",
+      "ownerPath": "modules/webpack/exports/CastleTutorialArrowController.js",
+      "canonicalSha256": "b57b98cc8d219f506428481dbad525ab3e7423ec1edeb9c77ed82d891a7ac1e7",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "SingletonBlocker",
+      "path": "modules/exports/SingletonBlocker__webpack_308__14ec23bb.js",
+      "webpackId": "308",
+      "ownerPath": "modules/webpack/exports/CastleTutorialArrowController.js",
+      "canonicalSha256": "b0326bf63f58ba3847fa1382b7b5747b7dcb261d1c0d8ead33d7a91295a81cd0",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        4,
+        5
+      ]
+    },
+    {
+      "name": "VEContainer",
+      "path": "modules/exports/VEContainer.js",
+      "webpackId": "320",
+      "ownerPath": "modules/webpack/exports/AIsoObjectVE.js",
+      "canonicalSha256": "b2d8adac656a7d37c85af78a11990f982500b463995b6b7c2a5f773b2d0222ff",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        23,
+        24
+      ]
+    },
+    {
+      "name": "AIsoObjectVE",
+      "path": "modules/exports/AIsoObjectVE.js",
+      "webpackId": "320",
+      "ownerPath": "modules/webpack/exports/AIsoObjectVE.js",
+      "canonicalSha256": "36dbba72f20da83bff34e43bf84b339fe3391b2e3be4af3b626a5316e8d1e4d1",
+      "statementCount": 3,
+      "sourceStatementIndices": [
+        25,
+        26,
+        36
+      ]
+    },
+    {
+      "name": "CastleTutorialDialogFilter",
+      "path": "modules/exports/CastleTutorialDialogFilter.js",
+      "webpackId": "330",
+      "ownerPath": "modules/webpack/exports/CastleTutorialDialogFilter.js",
+      "canonicalSha256": "2fb9eb7b921cb43a68304ee734558c37fa437a01307456fba3c82f6f1ddb0f62",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "SingletonBlocker",
+      "path": "modules/exports/SingletonBlocker__webpack_330__14ec23bb.js",
+      "webpackId": "330",
+      "ownerPath": "modules/webpack/exports/CastleTutorialDialogFilter.js",
+      "canonicalSha256": "a766386a7586ab974d98f0003936528dcefaf6a91d78ab5fb454e4f5050fd0a3",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        5,
+        6
+      ]
+    },
+    {
+      "name": "QueueItem",
+      "path": "modules/helpers/QueueItem__webpack_355__at_3799.js",
+      "webpackId": "355",
+      "ownerPath": "modules/exports/EventIconHelper.js",
+      "canonicalSha256": "f962e6dd206d0319ddd9d069798d565819b92d9ec802cc029ba41bc2dcdbf7aa",
+      "helper": true,
+      "sourceStart": 3799,
+      "sourceEnd": 4053
+    },
+    {
+      "name": "CharacterOffset",
+      "path": "modules/helpers/CharacterOffset__webpack_374__at_10160.js",
+      "webpackId": "374",
+      "ownerPath": "modules/exports/CastleAbstractPrimeSaleDialog.js",
+      "canonicalSha256": "81be4ff17d90b813de67d86f8fc13a4fdfff0f6f4f56e182c050b1625f3d25bf",
+      "helper": true,
+      "sourceStart": 10160,
+      "sourceEnd": 10375
+    },
+    {
+      "name": "RenderScheduler",
+      "path": "modules/helpers/RenderScheduler__webpack_407__at_98.js",
+      "webpackId": "407",
+      "ownerPath": "modules/exports/renderScheduler.js",
+      "canonicalSha256": "dcb7df650f7042ee2b0b4721b8d9f5869a9dad18fcb45eb470a960f91737d40c",
+      "helper": true,
+      "sourceStart": 98,
+      "sourceEnd": 254
+    },
+    {
+      "name": "CastleTutorialClickBlocker",
+      "path": "modules/exports/CastleTutorialClickBlocker.js",
+      "webpackId": "435",
+      "ownerPath": "modules/webpack/exports/CastleTutorialClickBlocker.js",
+      "canonicalSha256": "2f8e1ce93097a2bfb86ccfa6563d8a94eba1abfc3761826b40d1ddac69ab99dd",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "SingletonBlocker",
+      "path": "modules/exports/SingletonBlocker__webpack_435__14ec23bb.js",
+      "webpackId": "435",
+      "ownerPath": "modules/webpack/exports/CastleTutorialClickBlocker.js",
+      "canonicalSha256": "5b90afe052eacd3db80d408a3989799fcb8118a82f2b0275ed7f7aec5c376f8d",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        7,
+        8
+      ]
+    },
+    {
+      "name": "CastleTutorialSpotlight",
+      "path": "modules/exports/CastleTutorialSpotlight.js",
+      "webpackId": "465",
+      "ownerPath": "modules/webpack/exports/CastleTutorialSpotlight.js",
+      "canonicalSha256": "d7a9a3d8cb0fe4e3220dadbb0d9cc5e01a4910fbde250a85ba0bbecd97524153",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        8,
+        9
+      ]
+    },
+    {
+      "name": "SingletonBlocker",
+      "path": "modules/exports/SingletonBlocker__webpack_465__14ec23bb.js",
+      "webpackId": "465",
+      "ownerPath": "modules/webpack/exports/CastleTutorialSpotlight.js",
+      "canonicalSha256": "a595ac10ee86912c3448df5aadcf3546c01cc716f1cff2995748836328bb7c5e",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        13,
+        14
+      ]
+    },
+    {
+      "name": "CommandDelayController",
+      "path": "modules/exports/CommandDelayController.js",
+      "webpackId": "518",
+      "ownerPath": "modules/webpack/exports/CommandDelayController.js",
+      "canonicalSha256": "3274cdf0015d534983c11d066fee299e996a39282714cebc091401ae4db842c3",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        1,
+        2
+      ]
+    },
+    {
+      "name": "SingletonBlocker",
+      "path": "modules/exports/SingletonBlocker__webpack_518__14ec23bb.js",
+      "webpackId": "518",
+      "ownerPath": "modules/webpack/exports/CommandDelayController.js",
+      "canonicalSha256": "aca97f63541f3a44d47a64e31db8a79dbd6c34bcb0d4a6d570066ed21c35b302",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        3,
+        4
+      ]
+    },
+    {
+      "name": "CastleArrayHelper",
+      "path": "modules/exports/CastleArrayHelper.js",
+      "webpackId": "559",
+      "ownerPath": "modules/webpack/exports/CastleArrayHelper.js",
+      "canonicalSha256": "a0d20139290970ba5b9e91386c72d0f8a18b122abd714c66b68811930d1f440f",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "numericSort",
+      "path": "modules/exports/numericSort.js",
+      "webpackId": "559",
+      "ownerPath": "modules/webpack/exports/CastleArrayHelper.js",
+      "canonicalSha256": "a19b4af02bd33c9834a783411397cc526eec5cc9819e55e458ad00e1ec1d71b5",
+      "statementCount": 1,
+      "sourceStatementIndices": [
+        4
+      ]
+    },
+    {
+      "name": "PoolManager",
+      "path": "modules/exports/PoolManager.js",
+      "webpackId": "581",
+      "ownerPath": "modules/webpack/exports/PoolManager.js",
+      "canonicalSha256": "700e34c56cd78646a25fc51b3a1d47ce686bdc0622f37ebb103678da9196274d",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        2,
+        3
+      ]
+    },
+    {
+      "name": "mapObjectsPool",
+      "path": "modules/exports/mapObjectsPool.js",
+      "webpackId": "581",
+      "ownerPath": "modules/webpack/exports/PoolManager.js",
+      "canonicalSha256": "797acad8a9facfb39bb976080a57afb3ffd33551f0ce70c4654735027cd51cac",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        2,
+        4
+      ]
+    },
+    {
+      "name": "isPoolable",
+      "path": "modules/exports/isPoolable.js",
+      "webpackId": "581",
+      "ownerPath": "modules/webpack/exports/PoolManager.js",
+      "canonicalSha256": "96d8055c043a55d020dec514e7a5f3360deffd82c4e7b3e185421e21a77f0c81",
+      "statementCount": 1,
+      "sourceStatementIndices": [
+        5
+      ]
+    },
+    {
+      "name": "CastleTutorialController",
+      "path": "modules/exports/CastleTutorialController.js",
+      "webpackId": "835",
+      "ownerPath": "modules/webpack/exports/CastleTutorialController.js",
+      "canonicalSha256": "d6e70bd3e130617dfae782ed2897dab01ceb1281ce7b22cb8f01a29254fe1c13",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        10,
+        11
+      ]
+    },
+    {
+      "name": "TutorialControllerSingletonBlocker",
+      "path": "modules/exports/TutorialControllerSingletonBlocker.js",
+      "webpackId": "835",
+      "ownerPath": "modules/webpack/exports/CastleTutorialController.js",
+      "canonicalSha256": "c93e23b239be2fc941b116597e2060969c73deb4d19d05c52584829a9675d540",
+      "statementCount": 2,
+      "sourceStatementIndices": [
+        13,
+        14
+      ]
+    },
+    {
+      "name": "UserSurveySeenData",
+      "path": "modules/helpers/UserSurveySeenData__webpack_1810__at_13556.js",
+      "webpackId": "1810",
+      "ownerPath": "modules/exports/CastleSurveyMessageDialog.js",
+      "canonicalSha256": "76d19abf0c4f5b472f021a9c49540cdd88f93c33231b57274dfd19640f34c7ec",
+      "helper": true,
+      "sourceStart": 13556,
+      "sourceEnd": 13609
+    },
+    {
+      "name": "SpecialCurrencyInfoVO",
+      "path": "modules/helpers/SpecialCurrencyInfoVO__webpack_1962__at_107181.js",
+      "webpackId": "1962",
+      "ownerPath": "modules/exports/CastleBattleLogMessageAdvanced.js",
+      "canonicalSha256": "1505784367d09edee445d40868930a704fe64a2c53a8d7f3ec653208d3c749d0",
+      "helper": true,
+      "sourceStart": 107181,
+      "sourceEnd": 107408
+    },
+    {
+      "name": "Measurer",
+      "path": "modules/helpers/Measurer__webpack_1990__at_1174.js",
+      "webpackId": "1990",
+      "ownerPath": "modules/exports/CastleProfiler.js",
+      "canonicalSha256": "e006e16c608976d9a4bd832e45119a5cb63d1b343010d665026244cf3e99057f",
+      "helper": true,
+      "sourceStart": 1174,
+      "sourceEnd": 1346
+    },
+    {
+      "name": "worker",
+      "path": "modules/exports/worker.js",
+      "webpackId": "2058",
+      "ownerPath": "modules/webpack/exports/postPathfinderRequest.js",
+      "canonicalSha256": "1cd7b31644ca8531e624b583dfa0434d38adc85f7d8f7918c7a0ccab6b65bf48",
+      "statementCount": 4,
+      "sourceStatementIndices": [
+        1,
+        2,
+        3,
+        6
+      ]
+    },
+    {
+      "name": "postPathfinderRequest",
+      "path": "modules/exports/postPathfinderRequest.js",
+      "webpackId": "2058",
+      "ownerPath": "modules/webpack/exports/postPathfinderRequest.js",
+      "canonicalSha256": "ad33fcd5512b2df1efb67a7476dc643232ddb5168244631c6c96e8e993257100",
+      "statementCount": 1,
+      "sourceStatementIndices": [
+        7
+      ]
+    },
+    {
+      "name": "ChangedMemberVO",
+      "path": "modules/helpers/ChangedMemberVO__webpack_2315__at_19703.js",
+      "webpackId": "2315",
+      "ownerPath": "modules/exports/CastleBookmarkAttackerSelectionDialog.js",
+      "canonicalSha256": "483534f81bc7cbdde07834c774de222f57ad1fd825aa89e44b324ca9e044a33d",
+      "helper": true,
+      "sourceStart": 19703,
+      "sourceEnd": 19897
+    },
+    {
+      "name": "FacebookUserData",
+      "path": "modules/helpers/FacebookUserData__webpack_3375__at_2696.js",
+      "webpackId": "3375",
+      "ownerPath": "modules/exports/CastleFacebookGetUserDataCommand.js",
+      "canonicalSha256": "1bfa7baec1208bf99102b0a5c1b96b8c40d136b90a25070ee45ae9ebec516ee3",
+      "helper": true,
+      "sourceStart": 2696,
+      "sourceEnd": 2726
+    },
+    {
+      "name": "TempVO",
+      "path": "modules/helpers/TempVO__webpack_3517__at_8913.js",
+      "webpackId": "3517",
+      "ownerPath": "modules/exports/MultiEventRewardsProperties.js",
+      "canonicalSha256": "0f2410e4b184af6b221a164a562a6a5894208df994e0ca29c26b9299557b88cc",
+      "helper": true,
+      "sourceStart": 8913,
+      "sourceEnd": 9244
+    },
+    {
+      "name": "SeasonLeaguePromotionRanksSliderScrollComponent",
+      "path": "modules/helpers/SeasonLeaguePromotionRanksSliderScrollComponent__webpack_3585__at_9494.js",
+      "webpackId": "3585",
+      "ownerPath": "modules/exports/SeasonLeagueMainDialogPromotionRanks.js",
+      "canonicalSha256": "b8d579b81d241a73c119b6a97ff1c69296ecfbd8c4be70473c72db2a656186be",
+      "helper": true,
+      "sourceStart": 9494,
+      "sourceEnd": 9637
+    },
+    {
+      "name": "ReputationProgressbarRewardInfo",
+      "path": "modules/helpers/ReputationProgressbarRewardInfo__webpack_3591__at_10259.js",
+      "webpackId": "3591",
+      "ownerPath": "modules/exports/CastleFactionReputationRewardComponent.js",
+      "canonicalSha256": "56468a93fce5e7b0683078549515e05bdbb6194c3d8b45aa3684f4dc864c736f",
+      "helper": true,
+      "sourceStart": 10259,
+      "sourceEnd": 10407
+    },
+    {
+      "name": "BuildingDistrictInfoVO",
+      "path": "modules/helpers/BuildingDistrictInfoVO__webpack_5305__at_20542.js",
+      "webpackId": "5305",
+      "ownerPath": "modules/exports/AreaDataCommonInfo.js",
+      "canonicalSha256": "d58f4c63851fc236705e9a93ee073942f1098ec2c6b9d38014ef5633fef538db",
+      "helper": true,
+      "sourceStart": 20542,
+      "sourceEnd": 20774
+    }
+  ],
+  "symbolViewCount": 46
 }

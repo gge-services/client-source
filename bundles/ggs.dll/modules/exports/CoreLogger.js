@@ -1,8 +1,7 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var __dep_exact_b38f6783f1595682 = require("gge-module:exact_b38f6783f1595682");
-var __dep_exact_f4aa3b7953d3a506 = require("gge-module:exact_f4aa3b7953d3a506");
+// Canonical symbol view; NOT a standalone executable Webpack module.
+// Bundle: ggs.dll; Webpack module: 217
+// Export: CoreLogger; preserved source: modules/webpack/exports/CoreLogger.js
+// Original canonical SHA-256: 49e200f153d15bdfa869d62165840afc2be486cc5b3d4aa8b42890ccf317d53e
 var __s0local0 = function () {
   function CoreLogger(__s3param0) {
     this._realLogger = __s3param0;
@@ -97,4 +96,3 @@ var __s0local0 = function () {
   return CoreLogger;
 }();
 exports.CoreLogger = __s0local0;
-exports.LoggingLevelMapper = new Map([[__dep_exact_b38f6783f1595682.LoggingLevel.DEBUG, __dep_exact_f4aa3b7953d3a506.DEBUG], [__dep_exact_b38f6783f1595682.LoggingLevel.INFO, __dep_exact_f4aa3b7953d3a506.INFO], [__dep_exact_b38f6783f1595682.LoggingLevel.WARN, __dep_exact_f4aa3b7953d3a506.WARN], [__dep_exact_b38f6783f1595682.LoggingLevel.ERROR, __dep_exact_f4aa3b7953d3a506.ERROR], [__dep_exact_b38f6783f1595682.LoggingLevel.NONE, __dep_exact_f4aa3b7953d3a506.OFF]]);

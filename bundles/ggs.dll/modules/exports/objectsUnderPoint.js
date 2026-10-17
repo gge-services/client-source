@@ -1,14 +1,7 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var __s0local0 = createjs.Graphics;
-var __s0local1 = createjs.Shape;
-var __s0local2 = createjs.DisplayObject;
-exports.GAME_STAGE = "gamestage";
-exports.UI_STAGE = "uiStage";
-exports.BG_STAGE = "bgStage";
-exports.STATIC_STAGE = "staticStage";
-exports.TUTORIAL_STAGE = "tutorialStage";
+// Canonical symbol view; NOT a standalone executable Webpack module.
+// Bundle: ggs.dll; Webpack module: 136
+// Export: objectsUnderPoint; preserved source: modules/webpack/exports/objectsUnderPoint.js
+// Original canonical SHA-256: aff694f329bfcbb167a7f212f2064ce3b57f4fb61c01d2685b643afabe5ef512
 exports.objectsUnderPoint = function objectsUnderPoint(__s1param0, __s1param1, __s1param2, __s1param3, __s1param4, __s1param5, __s1param6, __s1param7, __s1param8) {
   __s1param7 = __s1param7 || 0;
   __s1param8 = __s1param8 || Date.now();

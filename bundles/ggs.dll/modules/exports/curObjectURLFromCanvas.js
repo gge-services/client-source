@@ -1,27 +1,7 @@
-function pngDataURLFromCanvas(__s1param0) {
-  return __s1param0.toDataURL();
-}
-function arrayBufferFromBase64String(__s3param0) {
-  for (var __s3local0 = window.atob(__s3param0), __s3local1 = new Uint8Array(__s3local0.length), __s3local2 = 0; __s3local2 < __s3local0.length; __s3local2++) {
-    __s3local1[__s3local2] = __s3local0.charCodeAt(__s3local2);
-  }
-  return __s3local1.buffer;
-}
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-exports.pngObjectURLFromCanvas = function pngObjectURLFromCanvas(__s7param0) {
-  var __s7local0 = pngDataURLFromCanvas(__s7param0);
-  var __s7local1 = "data:image/png;base64,";
-  if (!__s7local0.startsWith(__s7local1)) {
-    throw new Error("pngDataURL is not valid");
-  }
-  var __s7local2 = arrayBufferFromBase64String(__s7local0.substring(__s7local1.length));
-  var __s7local3 = new Blob([__s7local2], {
-    type: "image/png"
-  });
-  return URL.createObjectURL(__s7local3);
-};
+// Canonical symbol view; NOT a standalone executable Webpack module.
+// Bundle: ggs.dll; Webpack module: 592
+// Export: curObjectURLFromCanvas; preserved source: modules/webpack/exports/curObjectURLFromCanvas.js
+// Original canonical SHA-256: 53828a963062d9e02bc4f2875c4735e25fddba997e376b2142ae635534b3bc72
 exports.curObjectURLFromCanvas = function curObjectURLFromCanvas(__s10param0, __s10param1 = {
   x: 0,
   y: 0

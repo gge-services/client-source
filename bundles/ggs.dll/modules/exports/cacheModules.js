@@ -1,50 +1,7 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var __dep_export_LoggerConfigurator = require("gge-module:export_LoggerConfigurator");
-var __dep_opaque_3ceb4ad97d4557409871cd49 = require("gge-module:opaque_3ceb4ad97d4557409871cd49");
-var __s0local0 = __dep_export_LoggerConfigurator.getLogger("getDefinitionByName");
-function getDefinitionByName(__s1param0) {
-  var __s1local0 = window.cachedModlues[__s1param0];
-  if (__s1local0 !== undefined) {
-    return __s1local0;
-  }
-  var __s1local1 = getDefinitionByNameFromLibrary(__s1param0);
-  if (__s1local1 !== undefined) {
-    return __s1local1;
-  }
-  __s0local0.warn("The definition \"" + __s1param0 + "\" could not be found");
-}
-exports.getDefinitionByName = getDefinitionByName;
-window.getDefinitionByName = getDefinitionByName;
-var __s0local1 = /_walkmap/i;
-function __s0local2(__s5param0) {
-  var __s5local0 = window.Library;
-  if (__s5local0 !== undefined) {
-    for (var __s5local1 in __s5local0) {
-      if (__s5local0.hasOwnProperty(__s5local1)) {
-        var __s5local2 = __s5local0[__s5local1];
-        if (__s5param0 in __s5local2) {
-          return __s5local2[__s5param0];
-        }
-      }
-    }
-  }
-  if (!__s0local1.test(__s5param0)) {
-    __s0local0.error("The definition \"" + __s5param0 + "\" could not be found in Assets Library");
-  }
-}
-var __s0local3 = __dep_opaque_3ceb4ad97d4557409871cd49(__s0local2);
-function getDefinitionByNameFromLibrary(__s13param0) {
-  var __s13local0 = __s0local3(__s13param0);
-  if (!__s13local0) {
-    if (__s13local0 = __s0local2(__s13param0)) {
-      __s0local3.cache.set(__s13param0, __s13local0);
-    }
-  }
-  return __s13local0;
-}
-exports.getDefinitionByNameFromLibrary = getDefinitionByNameFromLibrary;
+// Canonical symbol view; NOT a standalone executable Webpack module.
+// Bundle: ggs.dll; Webpack module: 220
+// Export: cacheModules; preserved source: modules/webpack/exports/cacheModules.js
+// Original canonical SHA-256: f2b74dc1694699d62b13653ece332661403a11b305363495b295ad6db7fc3ca3
 exports.cacheModules = function cacheModules(__s17param0) {
   function isValidModuleName(__s19param0) {
     if (/^\d+$/.test(__s19param0)) {

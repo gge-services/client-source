@@ -1,26 +1,7 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var __dep_exact_6fd0a7f85c69b366 = require("gge-module:exact_6fd0a7f85c69b366");
-var __dep_exact_9e901e8e2483a22f = require("gge-module:exact_9e901e8e2483a22f");
-var __dep_exact_81dacdf05bd32292 = require("gge-module:exact_81dacdf05bd32292");
-var __dep_exact_c549e43d1112dfff = require("gge-module:exact_c549e43d1112dfff");
-var __s0local0 = require("gge-module:package__goodgamestudios_empire-createjs-assets").version;
-exports.appVersion = require("gge-module:package_TranspilationEmpire").version;
-var __s0local1 = function (__s1param0) {
-  var __s1local0 = __s1param0.split(".");
-  var __s1local1 = __s1local0[0];
-  var __s1local2 = __s1local0[1];
-  var __s1local3 = __s1local0[2];
-  for (__s1local3.indexOf("-") && (__s1local3 = __s1local3.split("-")[0]); __s1local2.length < 3;) {
-    __s1local2 = "0" + __s1local2;
-  }
-  while (__s1local3.length < 3) {
-    __s1local3 = "0" + __s1local3;
-  }
-  return __s1local1 + __s1local2 + __s1local3;
-}(exports.appVersion);
-var __s0local2 = __dep_exact_c549e43d1112dfff.getLogger("CastleVersionInformation");
+// Canonical symbol view; NOT a standalone executable Webpack module.
+// Bundle: Game.bundle; Webpack module: 293
+// Export: CastleVersionInformation; preserved source: modules/webpack/exports/CastleVersionInformation.js
+// Original canonical SHA-256: 044e07362d629b59f649bd06728b1872b95dbad6bc4d3a0752101f443afc3ba4
 var __s0local3 = function (__s7param0) {
   function CastleVersionInformation() {
     return __s7param0.call(this) || this;

@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "sourceSnapshotDate": "2026-10-16",
+  "bundles": [
+    {
+      "bundle": "Game.bundle",
+      "webpackModuleCount": 5826,
+      "compoundWebpackModules": 13,
+      "symbolViewCount": 46,
+      "helperViews": 15
+    },
+    {
+      "bundle": "ggs.dll",
+      "webpackModuleCount": 1008,
+      "compoundWebpackModules": 104,
+      "symbolViewCount": 1355,
+      "helperViews": 98
+    },
+    {
+      "bundle": "CacheBreaker.bundle",
+      "webpackModuleCount": 13,
+      "compoundWebpackModules": 1,
+      "symbolViewCount": 2,
+      "helperViews": 0
+    },
+    {
+      "bundle": "CastleLoader.bundle",
+      "webpackModuleCount": 2,
+      "compoundWebpackModules": 0,
+      "symbolViewCount": 0,
+      "helperViews": 0
+    },
+    {
+      "bundle": "vendor.bundle",
+      "webpackModuleCount": 1,
+      "compoundWebpackModules": 0,
+      "symbolViewCount": 77,
+      "helperViews": 77
+    }
+  ]
+}

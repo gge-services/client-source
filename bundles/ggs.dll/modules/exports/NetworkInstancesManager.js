@@ -1,9 +1,7 @@
-Object.defineProperty(exports, "__esModule", {
-  value: true
-});
-var __dep_export_Context = require("gge-module:export_Context");
-var __dep_class_CountryDetectionConstants = require("gge-module:class_CountryDetectionConstants");
-var __s0local0 = require("gge-module:export_LoggerConfigurator").getLogger("WorldAssignment.NetworkInstancesManager");
+// Canonical symbol view; NOT a standalone executable Webpack module.
+// Bundle: ggs.dll; Webpack module: 72
+// Export: NetworkInstancesManager; preserved source: modules/webpack/exports/NetworkInstancesManager.js
+// Original canonical SHA-256: 24892bb524375e0b714f335857c06fb010c21c10ffffe6554fd36c2029e336bd
 var __s0local1 = function () {
   function NetworkInstancesManager() {}
   NetworkInstancesManager.prototype.initializeInstances = function (__s5param0) {
@@ -95,35 +93,3 @@ var __s0local1 = function () {
   return NetworkInstancesManager;
 }();
 exports.NetworkInstancesManager = __s0local1;
-exports.getInstancesByCountryCode = function (__s41param0, __s41param1) {
-  function __s41local0(__s43param0) {
-    return __s43param0.ggsCountryCode === __s41param1;
-  }
-  return __s41param0.filter(function (__s45param0) {
-    return __s45param0.countries.some(__s41local0);
-  });
-};
-exports.finderById = function (__s47param0) {
-  return function (__s49param0) {
-    return __s49param0.instanceId === __s47param0;
-  };
-};
-function __s0local2(__s51param0) {
-  return __s51param0.find(function (__s53param0) {
-    return __s53param0.isFavorite;
-  }) || function (__s55param0) {
-    if (__s55param0 && __s55param0.length > 0) {
-      return __s55param0[0];
-    } else {
-      return undefined;
-    }
-  }(__s51param0);
-}
-exports.findPreferredInstanceForCountry = function (__s59param0, __s59param1) {
-  var __s59local0 = exports.getInstancesByCountryCode(__s59param0, __s59param1);
-  return __s0local2(__s59local0.filter(function (__s61param0) {
-    return !__s61param0.isInternational;
-  })) || __s0local2(__s59local0.filter(function (__s63param0) {
-    return __s63param0.isInternational;
-  }));
-};
