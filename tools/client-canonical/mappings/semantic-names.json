@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "profiles": {
+    "Game.bundle:export_AALCommand": {
+      "source": "bundles/Game.bundle/modules/exports/AALCommand.js",
+      "dependencies": [
+        {"member": "__extends", "name": "inheritanceHelper", "confidence": "high"},
+        {"member": "classImplementsInterfaces", "name": "interfaceHelper", "confidence": "high"},
+        {"member": "ERROR", "name": "gameErrors", "confidence": "high"}
+      ],
+      "methods": {
+        "AALCommand.prototype.executeCommand": {
+          "parameters": [
+            {"name": "statusCode", "evidence": "switch against ERROR.ALL_OK", "confidence": "high"},
+            {"name": "responseFields", "evidence": "JSON.parse(second parameter[1])", "confidence": "high"}
+          ],
+          "locals": [
+            {"pattern": "JSON.parse(responseFields[1])", "name": "parsedResponse", "confidence": "high"}
+          ]
+        }
+      },
+      "attributes": {
+        "OI": {"semanticName": "ownerInfo", "kind": "wire", "renameInCode": false, "evidence": "parseOwnerInfoArray"},
+        "cmdId": {"semanticName": "commandIdentifier", "kind": "public-interface", "renameInCode": false, "evidence": "CastleCommand.prototype.cmdId"}
+      }
+    }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "originalSha256": "dc1387703373918aa846af8d2a01567cac61b2e7d517f468f441b340ca3d1660",
+  "mappingSha256": "373fe70879dbe825ec008bc5de442d20ac727f48ecab20049148a6617b7a53ff",
+  "semanticSha256": "574dd0f51535263e7eea26fd9dd509a0a9e0313951f2ed4bda4faea66d849d25",
+  "module": "bundles/Game.bundle/modules/exports/AALCommand.js",
+  "attributes": {
+    "OI": {
+      "semanticName": "ownerInfo",
+      "kind": "wire",
+      "renameInCode": false,
+      "evidence": "parseOwnerInfoArray"
+    },
+    "cmdId": {
+      "semanticName": "commandIdentifier",
+      "kind": "public-interface",
+      "renameInCode": false,
+      "evidence": "CastleCommand.prototype.cmdId"
+    }
+  }
+}
