@@ -1,0 +1,35 @@
+{
+  "sourceHash": "b85cda62e90d718fffdd3107022aee17ec4bc7a6d322df3ab8e9b49971e06957",
+  "generatedHash": "ea56a05178e804146ba466d3a0c76729bcdd796f5c7eaebac58cf6a5fcee30cf",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    }
+  ],
+  "renamed": [
+    "value"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

@@ -1,0 +1,48 @@
+{
+  "sourceHash": "aad1c8722f7a0b7d77414ec3fdceb20d01d08b9a19932fff46eea638ec7d312e",
+  "generatedHash": "d59871d11936e1b8af9c9fc0d4afea7a3689700132770828fa1fd8a15252fd03",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleColossusDonateDialog",
+      "source": "exports/CastleColossusDonateDialog.js",
+      "imported": "CastleColossusDonateDialog"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "source": "exports/CastleModel.js",
+      "imported": "CastleModel"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

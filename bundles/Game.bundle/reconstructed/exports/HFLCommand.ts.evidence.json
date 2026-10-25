@@ -1,0 +1,48 @@
+{
+  "sourceHash": "69904b564b2194f04f9fcf1e903a29146ebd3bcb46ef62ec3cd124eec0fe177b",
+  "generatedHash": "12ceac1ee2b3fd4d068943e2e628a59464cf0ee76817ba3208e572de70039399",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_HospitalFlagsVO",
+      "source": "exports/HospitalFlagsVO.js",
+      "imported": "HospitalFlagsVO"
+    },
+    {
+      "specifier": "gge-module:export_CastleHospitalEvent",
+      "source": "exports/CastleHospitalEvent.js",
+      "imported": "CastleHospitalEvent"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

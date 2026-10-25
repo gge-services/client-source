@@ -1,0 +1,45 @@
+{
+  "sourceHash": "c4a7bffbee10d61916daf79e0486ef373710abe38afbd2d23b4aeed6bd48bc48",
+  "generatedHash": "81c1dc2d7840eebe6b20f0e04714b46ea375006718f32dfeb957dc77c5afdc85",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBasicController",
+      "source": "exports/CastleBasicController.js",
+      "imported": "CastleBasicController"
+    },
+    {
+      "specifier": "gge-module:export_SeasonLeagueEvent",
+      "source": "exports/SeasonLeagueEvent.js",
+      "imported": "SeasonLeagueEvent"
+    }
+  ],
+  "renamed": [
+    "value"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

@@ -1,0 +1,48 @@
+{
+  "sourceHash": "2b3f3dd02f9a710a10a77564ec75ba84f6becf3349953dfbac28bb12f6275e1f",
+  "generatedHash": "9d7b567c034ac474f2e0a372b6a72df7a012499077a9cb9d3ff78d310cf87aa0",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBasicController",
+      "source": "exports/CastleBasicController.js",
+      "imported": "CastleBasicController"
+    },
+    {
+      "specifier": "gge-module:export_LeaderBoardEvent",
+      "source": "exports/LeaderBoardEvent.js",
+      "imported": "LeaderBoardEvent"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

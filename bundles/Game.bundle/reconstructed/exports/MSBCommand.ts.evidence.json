@@ -1,0 +1,48 @@
+{
+  "sourceHash": "eee29200947d0f97583cf983cf48a0322328db809f9d71953da8fe2c4dcf6f22",
+  "generatedHash": "eae5fc09e2892905ba3ec6097750f025ad3ec00dbdb489e1786df4b201e84a5d",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "source": "exports/CastleModel.js",
+      "imported": "CastleModel"
+    },
+    {
+      "specifier": "gge-module:export_CastleMinuteSkipEvent",
+      "source": "exports/CastleMinuteSkipEvent.js",
+      "imported": "CastleMinuteSkipEvent"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

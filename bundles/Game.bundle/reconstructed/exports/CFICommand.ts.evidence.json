@@ -1,0 +1,58 @@
+{
+  "sourceHash": "3da88238af1d47b2d369e59f2af63bad48c87180e23606977578c36ebb2aef92",
+  "generatedHash": "dd3dc17216c0d6e402e44c09380e80ff262bbde95f9fc55024e1271c79717631",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "source": "exports/CastleModel.js",
+      "imported": "CastleModel"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "source": "exports/CastleDialogHandler.js",
+      "imported": "CastleDialogHandler"
+    },
+    {
+      "specifier": "gge-module:export_AttackDialog",
+      "source": "exports/AttackDialog.js",
+      "imported": "AttackDialog"
+    },
+    {
+      "specifier": "gge-module:export_CastleAttackDialogProperties",
+      "source": "exports/CastleAttackDialogProperties.js",
+      "imported": "CastleAttackDialogProperties"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

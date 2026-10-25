@@ -1,0 +1,50 @@
+{
+  "sourceHash": "2659ef71317345e9df8de3245bf95dc23879b88702fc0f1dc576262ba0e3efd9",
+  "generatedHash": "25132a689aa0fe17afec3657871e00cd6121a7607f6143e5a75454185beac0bb",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:targetGeneralID",
+    "get:defenceDialog"
+  ],
+  "methods": [
+    "internalExecute",
+    "hintGeneralIcon",
+    "hintOpenGeneralSelection",
+    "hintGeneralSelection",
+    "waitForOpenGeneralsPanel",
+    "waitForCloseGeneralsPanel",
+    "waitForOpenGeneralsSelection",
+    "waitForCloseGeneralsSelection",
+    "onCloseDialog"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_GeneralIntroductionGuidanceBasicCommand",
+      "source": "exports/GeneralIntroductionGuidanceBasicCommand.js",
+      "imported": "GeneralIntroductionGuidanceBasicCommand"
+    },
+    {
+      "specifier": "gge-module:export_CastleDefenceDialog",
+      "source": "exports/CastleDefenceDialog.js",
+      "imported": "CastleDefenceDialog"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "source": "exports/CastleModel.js",
+      "imported": "CastleModel"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCharacter",
+      "source": "exports/ClientConstCharacter.js",
+      "imported": "ClientConstCharacter"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogEvent",
+      "source": "exports/CastleDialogEvent.js",
+      "imported": "CastleDialogEvent"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 0,
+  "fullRuntimeEquivalent": false
+}

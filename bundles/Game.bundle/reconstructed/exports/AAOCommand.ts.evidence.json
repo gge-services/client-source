@@ -1,0 +1,48 @@
+{
+  "sourceHash": "edafbe7e9c8122b7b2a112feae59fa6c9cf40d90c13b26cb28f63ff80d6c1d4c",
+  "generatedHash": "ab7a6d501653aeb17ae143390e51ca102baa2573a135d986f4487fe40cba810b",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_AdvisorAttackOverviewVO",
+      "source": "exports/AdvisorAttackOverviewVO.js",
+      "imported": "AdvisorAttackOverviewVO"
+    },
+    {
+      "specifier": "gge-module:export_AdvisorAttackOverviewEvent",
+      "source": "exports/AdvisorAttackOverviewEvent.js",
+      "imported": "AdvisorAttackOverviewEvent"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

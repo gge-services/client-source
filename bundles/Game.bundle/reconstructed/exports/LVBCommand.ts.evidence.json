@@ -1,0 +1,50 @@
+{
+  "sourceHash": "5a1e0b25a70647a95c0f497b096d1601fb58cd10b20e55cd26976daf32b33ff5",
+  "generatedHash": "a7d84368a8bf9eab4b11e2a602b9974084a67bb6fd981a054b96e0e7e51a7348",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "source": "exports/CastleModel.js",
+      "imported": "CastleModel"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "source": "exports/CastleDialogHandler.js",
+      "imported": "CastleDialogHandler"
+    },
+    {
+      "specifier": "gge-module:export_CastleMailGiftDialog",
+      "source": "exports/CastleMailGiftDialog.js",
+      "imported": "CastleMailGiftDialog"
+    }
+  ],
+  "renamed": [
+    "value"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

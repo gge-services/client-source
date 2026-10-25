@@ -1,0 +1,27 @@
+{
+  "sourceHash": "d2c4cde29fda2032bf3acc3186a48a6efbd167438c8c2058d882ffd76cc6f793",
+  "generatedHash": "ad4202fb13d514000b5fb80bff32f412051781ff7f0edba7621f53fffbe4995a",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_FNMCommand",
+      "source": "exports/FNMCommand.js",
+      "imported": "FNMCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    }
+  ],
+  "renamed": [
+    "value"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

@@ -1,0 +1,48 @@
+{
+  "sourceHash": "47471f20548725f6529cec2f2eed71844e41dfbc86b3c4393115c4bc6b7bd9d9",
+  "generatedHash": "73e935d96fa3805ddaea7fa757ac9c5a1f51aec83f9a996d50058a5a1287635d",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "source": "exports/CastleModel.js",
+      "imported": "CastleModel"
+    },
+    {
+      "specifier": "gge-module:export_CastleLuckyWheelGuaranteedJackpotDialog",
+      "source": "exports/CastleLuckyWheelGuaranteedJackpotDialog.js",
+      "imported": "CastleLuckyWheelGuaranteedJackpotDialog"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    }
+  ],
+  "renamed": [
+    "statusCode",
+    "responseFields",
+    "parsedResponse",
+    "value"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}
