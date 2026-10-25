@@ -44,6 +44,42 @@ function isDelegatingConstructor(fn, superName) {
     call.arguments.length === 2 && t.isThisExpression(call.arguments[0]) && exactName(call.arguments[1], 'arguments')
 }
 
+function constructorFromCall(fn, superName) {
+  if (fn.params.length) return null
+  const statements=fn.body.body
+  if (statements.length!==1||!t.isReturnStatement(statements[0]))return null
+  const expr=statements[0].argument
+  if(!t.isLogicalExpression(expr,{operator:'||'})||!t.isThisExpression(expr.right)||
+    !t.isCallExpression(expr.left)||!member(expr.left.callee,'call')||
+    !exactName(expr.left.callee.object,superName)||expr.left.arguments.length!==1||
+    !t.isThisExpression(expr.left.arguments[0]))return null
+  return t.classMethod('constructor',t.identifier('constructor'),[t.restElement(t.identifier('args'))],
+    t.blockStatement([t.expressionStatement(t.callExpression(t.super(),[]))]))
+}
+
+function constructorWithProperties(fn, superName) {
+  const statements=fn.body.body
+  if(fn.params.length||statements.length<3||!t.isVariableDeclaration(statements[0])||
+    statements[0].declarations.length!==1||!t.isReturnStatement(statements.at(-1)))return null
+  const decl=statements[0].declarations[0]
+  if(!t.isIdentifier(decl.id))return null
+  const name=decl.id.name
+  const test=t.functionExpression(null,[],t.blockStatement([t.returnStatement(decl.init)]))
+  if(!isDelegatingConstructor(test,superName))return null
+  if(!exactName(statements.at(-1).argument,name))return null
+  const fields=[]
+  for(const entry of statements.slice(1,-1)) {
+    if(!t.isExpressionStatement(entry)||!t.isAssignmentExpression(entry.expression,{operator:'='})||
+      !t.isMemberExpression(entry.expression.left)||entry.expression.left.computed||
+      !exactName(entry.expression.left.object,name)||!t.isIdentifier(entry.expression.left.property))return null
+    fields.push(t.expressionStatement(t.assignmentExpression('=',
+      t.memberExpression(t.thisExpression(),t.cloneNode(entry.expression.left.property)),
+      t.cloneNode(entry.expression.right,true))))
+  }
+  return t.classMethod('constructor',t.identifier('constructor'),[t.restElement(t.identifier('args'))],
+    t.blockStatement([t.expressionStatement(t.callExpression(t.super(),[t.spreadElement(t.identifier('args'))])),...fields]))
+}
+
 function accessorSuperCall(node, baseExpression, property, method, params) {
   if (!t.isCallExpression(node) || !member(node.callee, 'call') ||
     !member(node.callee.object, method) || node.arguments.length !== (method === 'set' ? 2 : 1) ||
@@ -56,15 +92,26 @@ function accessorSuperCall(node, baseExpression, property, method, params) {
   return true
 }
 
-function rewriteSuperAccessor(method, property, baseExpression) {
+function rewriteSuperAccessor(method, property, baseExpression, className, readonlyBaseAccessors) {
   const file = t.file(t.program([t.classDeclaration(t.identifier('Temporary'), null, t.classBody([method]))]))
   let rewritten = 0
   traverse(file, {
     CallExpression(path) {
       if (!accessorSuperCall(path.node, baseExpression, property, method.kind === 'set' ? 'set' : 'get', method.params)) return
       rewritten++
-      const expr = t.memberExpression(t.super(), t.identifier(property))
-      path.replaceWith(method.kind === 'set' ? t.assignmentExpression('=', expr, t.cloneNode(method.params[0])) : expr)
+      const parentClass = t.isMemberExpression(baseExpression) && t.isIdentifier(baseExpression.property) ? baseExpression.property.name : null
+      if (method.kind === 'set' && readonlyBaseAccessors?.has(parentClass+':'+property)) {
+        if(!path.parentPath.isExpressionStatement())throw Error('Non-statement inherited readonly setter')
+        const inherited=t.callExpression(t.memberExpression(t.identifier('Object'),t.identifier('getPrototypeOf')),
+          [t.memberExpression(t.identifier(className),t.identifier('prototype'))])
+        const attempt=t.callExpression(t.memberExpression(t.identifier('Reflect'),t.identifier('set')),
+          [inherited,t.stringLiteral(property),t.cloneNode(method.params[0]),t.thisExpression()])
+        path.parentPath.replaceWith(t.ifStatement(t.unaryExpression('!',attempt),
+          t.blockStatement([t.throwStatement(t.newExpression(t.identifier('TypeError'),[t.stringLiteral('Inherited accessor is not writable')]))])))
+      }else{
+        const expr = t.memberExpression(t.super(), t.identifier(property))
+        path.replaceWith(method.kind === 'set' ? t.assignmentExpression('=', expr, t.cloneNode(method.params[0])) : expr)
+      }
     }
   })
   if (method.kind === 'set' && rewritten !== 1) throw Error('Unsupported inherited accessor setter: ' + property)
@@ -102,18 +149,32 @@ function resolveImports(sourceAst, cls, options) {
   traverse(bodyAst, {
     MemberExpression(path) {
       const object = path.node.object
-      if (!t.isIdentifier(object) || !assignments.has(object.name) || path.node.computed || !t.isIdentifier(path.node.property)) return
-      const spec = assignments.get(object.name)
+      if (path.node.computed || !t.isIdentifier(path.node.property)) return
+      let spec=null
+      if(t.isIdentifier(object)&&assignments.has(object.name)) spec=assignments.get(object.name)
+      else if(t.isCallExpression(object)&&t.isIdentifier(object.callee,{name:'require'})&&
+        object.arguments.length===1&&t.isStringLiteral(object.arguments[0]))spec=object.arguments[0].value
+      if(!spec)return
       const stable = /^gge-module:export_(.+)$/.exec(spec)
-      if (stable && path.node.property.name === stable[1]) {
+      const mapped = options.resolveMember?.(spec,path.node.property.name)
+      if (mapped) {
+        const key = mapped.imported
+        const previous = modules.get(key)
+        if (previous && (previous.specifier !== mapped.specifier || previous.bundle !== mapped.bundle)) {
+          throw Error('Conflicting named import: '+key)
+        }
+        modules.set(key,mapped)
+        path.replaceWith(t.identifier(key))
+        existing.add(object.name)
+      } else if (stable && path.node.property.name === stable[1]) {
         const key = stable[1]
         const referenced = options.specifiers?.[spec]
         if (!referenced) throw Error('Dependency missing from manifest: ' + spec)
-        modules.set(key, {specifier:spec, source:referenced, imported:key})
+        modules.set(key, {specifier:spec, source:referenced, imported:key,bundle:'Game.bundle'})
         path.replaceWith(t.identifier(key))
         existing.add(object.name)
-      } else if (options.errorExportAvailable && spec.startsWith('gge-module:exact_') && path.node.property.name === 'ERROR') {
-        modules.set('ERROR', {specifier:'ggs.dll:export:ERROR', source:'ggs.dll/modules/exports/ERROR.js', imported:'ERROR',confidence:'unique-member-and-export'})
+      } else if (!options.resolveMember && options.errorExportAvailable && spec.startsWith('gge-module:exact_') && path.node.property.name === 'ERROR') {
+        modules.set('ERROR', {specifier:'ggs.dll:export:ERROR', source:'ggs.dll/modules/exports/ERROR.js', imported:'ERROR',bundle:'ggs.dll',confidence:'unique-member-and-export'})
         path.replaceWith(t.identifier('ERROR'))
         existing.add(object.name)
       }
@@ -125,10 +186,42 @@ function resolveImports(sourceAst, cls, options) {
   }})
   if (unknown.size) throw Error('Unresolved generated dependencies: ' + [...unknown].join(', '))
   const imports = [...modules.entries()].sort(([a],[b])=>a.localeCompare(b)).map(([name,data]) => {
-    const specifier = data.specifier.startsWith('ggs.dll:') ? '../../../ggs.dll/reconstructed/exports/ERROR' : './' + name
+    const specifier = data.bundle === 'ggs.dll' ? '../../../ggs.dll/reconstructed/exports/'+(options.dllImportFileName?.(name)??name) : './' + name
     return t.importDeclaration([t.importSpecifier(t.identifier(name), t.identifier(name))], t.stringLiteral(specifier))
   })
   return {imports, node:bodyAst.program.body[0], modules:[...modules.values()]}
+}
+
+function preserveDynamicSourceTypes(cls) {
+  const file=t.file(t.program([cls]))
+  traverse(file,{
+    VariableDeclarator(path) {
+      if(t.isObjectExpression(path.node.init)&&path.node.init.properties.length===0){
+        path.node.init=t.tsAsExpression(path.node.init,t.tsAnyKeyword())
+      }
+    },
+    AssignmentExpression(path) {
+      if(t.isObjectExpression(path.node.right)&&path.node.right.properties.length===0){
+        path.node.right=t.tsAsExpression(path.node.right,t.tsAnyKeyword())
+      }
+    },
+    ClassMethod(path) {
+      for(const p of path.node.params) {
+        if(!t.isIdentifier(p)||p.optional)continue
+        const defaultCheck=path.node.body.body.some(stmt=>{
+          if(!t.isIfStatement(stmt)||!t.isBinaryExpression(stmt.test))return false
+          const c=stmt.test
+          const compare=(t.isIdentifier(c.left,{name:p.name})&&t.isIdentifier(c.right,{name:'undefined'}))||
+            (t.isIdentifier(c.right,{name:p.name})&&t.isIdentifier(c.left,{name:'undefined'}))
+          if(!compare||!['===','=='].includes(c.operator))return false
+          const body=t.isBlockStatement(stmt.consequent)?stmt.consequent.body:[stmt.consequent]
+          return body.some(n=>t.isExpressionStatement(n)&&t.isAssignmentExpression(n.expression,{operator:'='})&&t.isIdentifier(n.expression.left,{name:p.name}))
+        })
+        if(defaultCheck){p.optional=true;p.typeAnnotation=t.tsTypeAnnotation(t.tsAnyKeyword())}
+      }
+    }
+  })
+  return file.program.body[0]
 }
 
 function replaceParameterAliases(cls) {
@@ -183,13 +276,20 @@ export function reconstructEs5Class(source, options={}) {
       const constructor=body.find(t.isFunctionDeclaration)
       if (!constructor)continue
       const className=constructor.id?.name,superName=dec.init.callee.params[0].name
-      if (!isDelegatingConstructor(constructor,superName))continue
+      const generatedConstructor = isDelegatingConstructor(constructor,superName) ? null :
+        constructorFromCall(constructor,superName) ?? constructorWithProperties(constructor,superName)
+      if (!isDelegatingConstructor(constructor,superName) && !generatedConstructor)continue
       const extending=body.some(n=>t.isExpressionStatement(n) && t.isCallExpression(n.expression) &&
         member(n.expression.callee,'__extends') && exactName(n.expression.arguments[0],className) &&
         exactName(n.expression.arguments[1],superName))
       if (!extending)continue
       if (!body.some(n=>t.isReturnStatement(n)&&exactName(n.argument,className)))continue
-      const members=[];let unsupported=false
+      const needsConstructor=Boolean(!generatedConstructor&&isDelegatingConstructor(constructor,superName)&&options.passThroughConstructors?.has(className))
+      const passThroughConstructor=needsConstructor?t.classMethod('constructor',t.identifier('constructor'),
+        [t.restElement(t.identifier('args'))],
+        t.blockStatement([t.expressionStatement(t.callExpression(t.super(),[t.spreadElement(t.identifier('args'))]))])):null
+      const members=generatedConstructor ? [generatedConstructor] : passThroughConstructor?[passThroughConstructor]:[]
+      let unsupported=false
       for(const element of body) {
         if(t.isFunctionDeclaration(element)||t.isReturnStatement(element))continue
         if(!t.isExpressionStatement(element)){unsupported=true;break}
@@ -198,7 +298,7 @@ export function reconstructEs5Class(source, options={}) {
         if(t.isCallExpression(expr) && objectCall(expr,'defineProperty')) {
           const accessors=getterDescriptor(element,className)
           if(!accessors){unsupported=true;break}
-          members.push(...accessors.map(m=>rewriteSuperAccessor(m,m.key.name,dec.init.arguments[0])))
+          members.push(...accessors.map(m=>rewriteSuperAccessor(m,m.key.name,dec.init.arguments[0],className,options.readonlyBaseAccessors)))
           continue
         }
         if(t.isAssignmentExpression(expr,{operator:'='}) && t.isMemberExpression(expr.left) &&
@@ -211,12 +311,21 @@ export function reconstructEs5Class(source, options={}) {
       }
       if (unsupported || !members.length)continue
       const base=dec.init.arguments[0]
-      if (!t.isMemberExpression(base) || !t.isIdentifier(base.object)||!t.isIdentifier(base.property))continue
+      if (!t.isMemberExpression(base) || !t.isIdentifier(base.property))continue
       const cls=t.classDeclaration(t.identifier(className),t.cloneNode(base,true),t.classBody(members))
       const resolved=resolveImports(ast,rewriteSuperMethods(cls,superName),options)
       const aliases=replaceParameterAliases(resolved.node)
+      aliases.node=preserveDynamicSourceTypes(aliases.node)
       const program=t.program([...resolved.imports,t.exportNamedDeclaration(aliases.node)])
-      const code=generate(t.file(program),{jsescOption:{minimal:true}}).code+'\n'
+      const generated=t.file(program)
+      const unbound=new Set()
+      traverse(generated,{Identifier(path) {
+        if (!path.isReferencedIdentifier()) return
+        if (!/^(__s[0-9]|__dep_)/.test(path.node.name)) return
+        if (!path.scope.hasBinding(path.node.name)) unbound.add(path.node.name)
+      }})
+      if (unbound.size) throw Error('Captured minifier bindings are not available outside the original module: '+[...unbound].sort().join(', '))
+      const code=generate(generated,{jsescOption:{minimal:true}}).code+'\n'
       if (code.includes('Object.getOwnPropertyDescriptor') || code.includes('Object.defineProperty') || code.includes('.prototype.')) throw Error('Unreversed descriptor remains: ' + className)
       parser.parse(code,{sourceType:'module',plugins:['typescript']})
       return {className,code,metadata:{sourceHash:sha(source),generatedHash:sha(code),constructor:'implicit-super',accessors:members.filter(m=>m.kind==='get'||m.kind==='set').map(m=>m.kind+':'+m.key.name),methods:members.filter(m=>m.kind==='method').map(m=>m.key.name),dependencies:resolved.modules,renamed:aliases.renamed,removedRuntimeInterfaceCalls:ast.program.body.filter(n => t.isExpressionStatement(n) && t.isCallExpression(n.expression) && member(n.expression.callee,'classImplementsInterfaces')).length,fullRuntimeEquivalent:false}}

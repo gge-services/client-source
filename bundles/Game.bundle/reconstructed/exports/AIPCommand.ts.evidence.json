@@ -1,0 +1,78 @@
+{
+  "sourceHash": "063fa7dad010b3f2dd1c984178d4a1143a7f0694fa9aae6a288e6109a80286e1",
+  "generatedHash": "ca1348003e62f164a5e53ad2b124e84e2755893f90306bdea26da53205eb0a65",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "ERROR",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleStandardOkDialog",
+      "imported": "CastleStandardOkDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleStandardOkDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicStandardOkDialogProperties",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicStandardOkDialogProperties.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicStandardOkDialogProperties",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "Localize",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/Localize.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:Localize",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [
+    "value"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

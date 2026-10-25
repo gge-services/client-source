@@ -1,0 +1,69 @@
+{
+  "sourceHash": "222cf531e7caff987db794afc3cb8c58925cd953ff3294dddd15ed78820a97de",
+  "generatedHash": "9f9ad6d0ad254f0e687cc8758cde7e2df79af4e07303b0d6b2b570bb12a5b690",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "ERROR",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBasicController",
+      "imported": "CastleBasicController",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBasicController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_GachaEvent",
+      "imported": "GachaEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/GachaEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 0,
+  "fullRuntimeEquivalent": false
+}

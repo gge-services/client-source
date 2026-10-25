@@ -1,0 +1,23 @@
+{
+  "sourceHash": "42c1f666bc9673dc1f9f792cb8d0ac5db90e6badf83286fdbca6c6c27a1b07b2",
+  "generatedHash": "55fdf9ca9cb67710f7bfd2abbbfa0eefebb6200ff4dcaf4a67f573d30ab2f313",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

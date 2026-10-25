@@ -1,0 +1,83 @@
+{
+  "sourceHash": "21eae9018bb977f5524f787d0e905f2992b0a69d37b8070c0c96ab045b970570",
+  "generatedHash": "53005f6339981d95ead6f851cfc9227fab9d3db2e3af2ebfa1d77a3f33d08f28",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand",
+    "addGKLToGC",
+    "addGMLToGC",
+    "addGLLToGC"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "ERROR",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleListVO",
+      "imported": "CastleListVO",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleListVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePlayerInfoEvent",
+      "imported": "CastlePlayerInfoEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePlayerInfoEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

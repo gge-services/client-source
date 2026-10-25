@@ -1,0 +1,118 @@
+{
+  "sourceHash": "00b72edb36003faa2a429a09c469ebb8ce09159a02b8526a042b1ec79206a71e",
+  "generatedHash": "9089dc2ee4a3326cdb2fe7716f1a646823426654ce345f5c903debf9b49d7e0c",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:controller"
+  ],
+  "methods": [
+    "execute",
+    "getCollectableVO",
+    "performAction"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "Localize",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/Localize.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:Localize",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ModernYesNoDialog",
+      "imported": "ModernYesNoDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/ModernYesNoDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicStandardYesNoDialogProperties",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicStandardYesNoDialogProperties.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicStandardYesNoDialogProperties",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstQuestCondition",
+      "imported": "ClientConstQuestCondition",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstQuestCondition.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectableHelper",
+      "imported": "CollectableHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectableEnum",
+      "imported": "CollectableEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCurrency",
+      "imported": "ClientConstCurrency",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCurrency.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SQuestDonateRessourcesVO",
+      "imported": "C2SQuestDonateRessourcesVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SQuestDonateRessourcesVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SQuestDonateCurrencyVO",
+      "imported": "C2SQuestDonateCurrencyVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SQuestDonateCurrencyVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicController.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicController",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

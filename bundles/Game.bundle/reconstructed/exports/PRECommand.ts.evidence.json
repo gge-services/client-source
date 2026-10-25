@@ -1,0 +1,72 @@
+{
+  "sourceHash": "742b7eedf257ed6d07d0b2ff3a7973e6fef8db9f79ff4e3e4688c6011cb35749",
+  "generatedHash": "af43159507553ecef2b50ed265b936fc7252f819463f30aa20986fc85f675f7a",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "ERROR",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "CommKeys",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/CommKeys.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:CommKeys",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleServerMessageArrivedEvent",
+      "imported": "CastleServerMessageArrivedEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleServerMessageArrivedEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

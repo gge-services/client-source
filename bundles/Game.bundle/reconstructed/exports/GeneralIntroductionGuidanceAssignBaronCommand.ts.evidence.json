@@ -20,28 +20,43 @@
   "dependencies": [
     {
       "specifier": "gge-module:export_GeneralIntroductionGuidanceBasicCommand",
-      "source": "exports/GeneralIntroductionGuidanceBasicCommand.js",
-      "imported": "GeneralIntroductionGuidanceBasicCommand"
+      "imported": "GeneralIntroductionGuidanceBasicCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/GeneralIntroductionGuidanceBasicCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_CastleDefenceDialog",
-      "source": "exports/CastleDefenceDialog.js",
-      "imported": "CastleDefenceDialog"
+      "imported": "CastleDefenceDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDefenceDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_CastleModel",
-      "source": "exports/CastleModel.js",
-      "imported": "CastleModel"
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_ClientConstCharacter",
-      "source": "exports/ClientConstCharacter.js",
-      "imported": "ClientConstCharacter"
+      "imported": "ClientConstCharacter",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCharacter.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_CastleDialogEvent",
-      "source": "exports/CastleDialogEvent.js",
-      "imported": "CastleDialogEvent"
+      "imported": "CastleDialogEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     }
   ],
   "renamed": [],

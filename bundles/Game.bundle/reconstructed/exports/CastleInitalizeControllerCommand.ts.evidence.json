@@ -1,0 +1,59 @@
+{
+  "sourceHash": "916699ada3da6f1a01ef1aed3babb28881f66f1e71c53df94376a80cb5373a47",
+  "generatedHash": "a77219081a4815351160d8c13efd3ad6191c28d4cdd5ff077e0d82ca6022a1f6",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:layoutManager"
+  ],
+  "methods": [
+    "initializeGameControllers"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicInitalizeControllerCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicInitalizeControllerCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicInitalizeControllerCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "info",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/info.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:info",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicController.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleSoundController",
+      "imported": "CastleSoundController",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSoundController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

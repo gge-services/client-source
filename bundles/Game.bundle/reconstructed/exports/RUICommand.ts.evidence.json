@@ -1,0 +1,96 @@
+{
+  "sourceHash": "a5b87c528b2b82cd0f6bee14545b56c76ac191fe860a3a7d368f70d6bdea927d",
+  "generatedHash": "f41f45cb45584d2792cdabeda415547c6e574948901d87674ea0ff49b5a4342b",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "ERROR",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleWorldmapEvent",
+      "imported": "CastleWorldmapEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleWorldmapEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleRelocateRuinDialog",
+      "imported": "CastleRelocateRuinDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleRelocateRuinDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleRelocateRuinDialogProperties",
+      "imported": "CastleRelocateRuinDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleRelocateRuinDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

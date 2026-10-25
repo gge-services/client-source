@@ -1,0 +1,73 @@
+{
+  "sourceHash": "9b319b3bb343ca381474bab5cd5affb22ba6aeb5504a16cb9a9b9b9687b19a82",
+  "generatedHash": "b62c9c0c6ae52c3df6b98cb72df68c9642247a1f26c8446bcd8ec02e005fb2c0",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand",
+    "buildInstanceVO"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "ERROR",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleServerMessageArrivedEvent",
+      "imported": "CastleServerMessageArrivedEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleServerMessageArrivedEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_6a641b3c8260d260",
+      "imported": "NetworkInstance",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/NetworkInstance.js",
+      "moduleId": "55",
+      "moduleIdentity": "ggs.dll:export:NetworkInstance",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

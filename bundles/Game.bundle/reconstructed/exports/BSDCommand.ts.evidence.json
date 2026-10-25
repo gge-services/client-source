@@ -1,0 +1,97 @@
+{
+  "sourceHash": "e81df656fcdf4b50f4a030c210e444b66d1ef46786dc8395822ef6ad56f5549d",
+  "generatedHash": "5cf81ef4a0151d98bf2f749cdb4cc8d8964779bdffecda4a1e036534c45d9718",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "ERROR",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleSpyDataEvent",
+      "imported": "CastleSpyDataEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSpyDataEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleStandardOkDialog",
+      "imported": "CastleStandardOkDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleStandardOkDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicStandardOkDialogProperties",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicStandardOkDialogProperties.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicStandardOkDialogProperties",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "Localize",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/Localize.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:Localize",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

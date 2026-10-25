@@ -1,0 +1,155 @@
+{
+  "sourceHash": "94136b8192ae07060d97277146cb61b5d772b3b330b584184f587abed9754fd6",
+  "generatedHash": "e2292cc112bc9c3bcefd745aa6becf17efd4fdf2a440116c3dbe802349f2313e",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:env"
+  ],
+  "methods": [
+    "execute",
+    "sendWithRecaptcha"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "debug",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/debug.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:debug",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_C2SRegisterWithNameVO",
+      "imported": "C2SRegisterWithNameVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SRegisterWithNameVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "GGSCountryController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/GGSCountryController__webpack_29__ec1fcfab.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:GGSCountryController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicModel",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicModel.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicModel",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicTrackingStringComposer",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicTrackingStringComposer.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicTrackingStringComposer",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "TimezoneUtil",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/TimezoneUtil.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:TimezoneUtil",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleFacebookModule",
+      "imported": "CastleFacebookModule",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/CastleFacebookModule.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstReCaptcha",
+      "imported": "ClientConstReCaptcha",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstReCaptcha.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleStandardOkDialog",
+      "imported": "CastleStandardOkDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleStandardOkDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicStandardOkDialogProperties",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicStandardOkDialogProperties.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicStandardOkDialogProperties",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "Localize",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/Localize.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:Localize",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "EnvGlobalsHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EnvGlobalsHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:EnvGlobalsHandler",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

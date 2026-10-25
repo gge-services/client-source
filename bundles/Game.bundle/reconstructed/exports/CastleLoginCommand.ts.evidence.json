@@ -1,0 +1,41 @@
+{
+  "sourceHash": "a999dcd9d25d77bf883c533683dc509b839e3542dcbbf99a0a9db3689e96489e",
+  "generatedHash": "7386caa68e1503bd4a024288bbb3ec4eeafb173d12d67390f732f59b60f2426c",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicController.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicModel",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicModel.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicModel",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

@@ -1,0 +1,39 @@
+{
+  "sourceHash": "f7c421b37953d216276d6cf297bd87b1035a98c6fe7a3d7e2cd6e3e154050dc4",
+  "generatedHash": "50b68e9af950c1336fd524b7642fb99e4086e9169e111547d2ef201bcf36eb29",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleJudgementChooseOptionDialog",
+      "imported": "CastleJudgementChooseOptionDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleJudgementChooseOptionDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

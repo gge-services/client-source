@@ -1,0 +1,88 @@
+{
+  "sourceHash": "240622ab8ae0951f6fbafad3f42bde829fc30f9a2b9ee2212d6b3808d77d9c36",
+  "generatedHash": "b13d5812055694cc3bfe3fe9e330eb55087a5d9e0061939a72385fa710d477ab",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "destroyGameSpecificObjects"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicDestroyGameCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicDestroyGameCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicDestroyGameCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_cxfResetCommandCache",
+      "imported": "cxfResetCommandCache",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/cxfResetCommandCache.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDataHolder",
+      "imported": "CastleDataHolder",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDataHolder.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleIngameMessageHandler",
+      "imported": "CastleIngameMessageHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleIngameMessageHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LordEffectHelper",
+      "imported": "LordEffectHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/LordEffectHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenTipDialogCommand",
+      "imported": "OpenTipDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenTipDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_608de47b6498f9b0",
+      "imported": "TweenMax",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_0ec7932a6ae28c1d.js",
+      "moduleId": "989",
+      "moduleIdentity": "ggs.dll:export:TweenMax",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:export_Iso",
+      "imported": "Iso",
+      "bundle": "Game.bundle",
+      "path": "exports/Iso.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

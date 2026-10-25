@@ -1,0 +1,41 @@
+{
+  "sourceHash": "c8fdd5d6a61a65c0a7d964fdfbfdc5a9a28ef6754c1983fe3fe89f2cc1ba1e11",
+  "generatedHash": "7098bb2ac35b1592ee0a8730e93eff0228938603e8236e6cb72a06adb4305cba",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicAddExtraCurrencyCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicAddExtraCurrencyCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicAddExtraCurrencyCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "AddExtraCurrencyVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/AddExtraCurrencyVO.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:AddExtraCurrencyVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicController.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicController",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

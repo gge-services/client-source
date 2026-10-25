@@ -1,0 +1,66 @@
+{
+  "sourceHash": "58fb6119decf77052085ffd396af028b0ae9e43ddf68f269754a0d7c352c76a1",
+  "generatedHash": "d05e593f196c1848fd682d384248b4a3112fa936810555e382b6d02d84bafb69",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "TrackingCache",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/TrackingCache.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:TrackingCache",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstTracking",
+      "imported": "ClientConstTracking",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstTracking.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AttackScreenWaveTrackingEvent",
+      "imported": "AttackScreenWaveTrackingEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/AttackScreenWaveTrackingEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "EnvGlobalsHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EnvGlobalsHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:EnvGlobalsHandler",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicModel",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicModel.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicModel",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 0,
+  "fullRuntimeEquivalent": false
+}

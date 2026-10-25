@@ -1,0 +1,87 @@
+{
+  "sourceHash": "c6e88f5f6dd55c822123a41f22307dad40a653f2b94347ca15c30d66c08eaef7",
+  "generatedHash": "042bce8c1c6ea268ad2b30c3974642f4d76de3b66d9c60aaa7839e3f4a352df3",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "ERROR",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "CommKeys",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/CommKeys.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:CommKeys",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "PlayerConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/PlayerConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:PlayerConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_DarkOkDialog",
+      "imported": "DarkOkDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/DarkOkDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicStandardOkDialogProperties",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicStandardOkDialogProperties.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicStandardOkDialogProperties",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [
+    "value"
+  ],
+  "removedRuntimeInterfaceCalls": 0,
+  "fullRuntimeEquivalent": false
+}

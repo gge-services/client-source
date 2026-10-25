@@ -1,0 +1,135 @@
+{
+  "sourceHash": "240d85084ad832a3fbe3b991dd11c2bac12b35f5f6278cc067ea19b257066fa6",
+  "generatedHash": "8446b3e59e82d98d40229868d0b1090b29ac4f32dd01148649692bce78332fcd",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:registrationVOClass",
+    "set:registrationVOClass"
+  ],
+  "methods": [
+    "parseCommandVariables",
+    "sendRegisterUserCommand",
+    "isSteamDesktopBuild",
+    "fetchSteamAuthTicket",
+    "sendRegisterUserCommandWithRecaptcha",
+    "saveGameDataInCookie"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicRegisterUserCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicRegisterUserCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicRegisterUserCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_C2SRegisterWithNameVO",
+      "imported": "C2SRegisterWithNameVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SRegisterWithNameVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicRequiredRegistrationFieldsVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicRequiredRegistrationFieldsVO.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicRequiredRegistrationFieldsVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "instanceOfClass",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/instanceOfClass.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:instanceOfClass",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "EnvGlobalsHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EnvGlobalsHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:EnvGlobalsHandler",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleEnvironmentGlobals",
+      "imported": "CastleEnvironmentGlobals",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleEnvironmentGlobals.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "ExternalInterface",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ExternalInterface.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:ExternalInterface",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstReCaptcha",
+      "imported": "ClientConstReCaptcha",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstReCaptcha.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleStandardOkDialog",
+      "imported": "CastleStandardOkDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleStandardOkDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicStandardOkDialogProperties",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicStandardOkDialogProperties.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicStandardOkDialogProperties",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "Localize",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/Localize.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:Localize",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [
+    "value"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

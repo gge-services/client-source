@@ -1,0 +1,39 @@
+{
+  "sourceHash": "cf4121a04cd371f6224f9adee9fe7a0b37e67a90739053f4f896aae13288b031",
+  "generatedHash": "2f72822969a8207d4db3c954e8cb83ce252a1e8cd3613cbd916bc819e06df047",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "internalExecute",
+    "onDialog"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_TutorialBasicActionCommand",
+      "imported": "TutorialBasicActionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialBasicActionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleChooseHeroDialog",
+      "imported": "CastleChooseHeroDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleChooseHeroDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

@@ -1,0 +1,123 @@
+{
+  "sourceHash": "c5ca8a20436e7b5e6db66274a7325c289e32759a5f24eeb64b68ef8b005d59a6",
+  "generatedHash": "c6d46fce27db1d0581412d5baa0d1e4c41ee64852b56598a185e04165a034e97",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:layoutManager"
+  ],
+  "methods": [
+    "executeCommand",
+    "handleVersionToLow",
+    "handleVersionToHigh",
+    "handleVersionError",
+    "openWorldSelectionDialog"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "VCKCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/VCKCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:VCKCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicErrorConstants",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicErrorConstants.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicErrorConstants",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "CommandController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/CommandController__webpack_29__620faaa3.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:CommandController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicController.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "ServerErrorVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ServerErrorVO.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:ServerErrorVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleStandardOkDialog",
+      "imported": "CastleStandardOkDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleStandardOkDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicStandardOkDialogProperties",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicStandardOkDialogProperties.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicStandardOkDialogProperties",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "Localize",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/Localize.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:Localize",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleWorldSelectionDialog",
+      "imported": "CastleWorldSelectionDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleWorldSelectionDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 0,
+  "fullRuntimeEquivalent": false
+}

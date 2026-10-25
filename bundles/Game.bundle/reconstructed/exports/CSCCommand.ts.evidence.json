@@ -12,24 +12,36 @@
   "dependencies": [
     {
       "specifier": "gge-module:export_CastleCommand",
-      "source": "exports/CastleCommand.js",
-      "imported": "CastleCommand"
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_ClientConstSF",
-      "source": "exports/ClientConstSF.js",
-      "imported": "ClientConstSF"
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
-      "specifier": "ggs.dll:export:ERROR",
-      "source": "ggs.dll/modules/exports/ERROR.js",
+      "specifier": "gge-module:exact_26a421b704832cff",
       "imported": "ERROR",
-      "confidence": "unique-member-and-export"
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
     },
     {
       "specifier": "gge-module:export_PrebuiltCastleResponseEvent",
-      "source": "exports/PrebuiltCastleResponseEvent.js",
-      "imported": "PrebuiltCastleResponseEvent"
+      "imported": "PrebuiltCastleResponseEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/PrebuiltCastleResponseEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     }
   ],
   "renamed": [

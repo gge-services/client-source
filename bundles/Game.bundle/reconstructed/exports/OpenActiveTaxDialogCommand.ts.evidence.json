@@ -1,0 +1,121 @@
+{
+  "sourceHash": "42829a9753d68d04dcb96a570a026b225b494a4fcf6fca97c6c676d041263d84",
+  "generatedHash": "f30049062f0fffc303e5ea1a56c6adb8a9ebd9c0f18a36df1674b448b8dd6f3e",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute",
+    "onTXIArrivedForTaxStatusNone"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_TaxInfoVO",
+      "imported": "TaxInfoVO",
+      "bundle": "Game.bundle",
+      "path": "exports/TaxInfoVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBasicController",
+      "imported": "CastleBasicController",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBasicController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleServerMessageArrivedEvent",
+      "imported": "CastleServerMessageArrivedEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleServerMessageArrivedEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SGetTaxInfoVO",
+      "imported": "C2SGetTaxInfoVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SGetTaxInfoVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleCollectTaxProgressDialog",
+      "imported": "CastleCollectTaxProgressDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCollectTaxProgressDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleCollectTaxStartDialog",
+      "imported": "CastleCollectTaxStartDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCollectTaxStartDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleCollectTaxStartDialogProperties",
+      "imported": "CastleCollectTaxStartDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCollectTaxStartDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleCharacterYesNoOKDialog",
+      "imported": "CastleCharacterYesNoOKDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCharacterYesNoOKDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleCharacterYesNoOKDialogProperties",
+      "imported": "CastleCharacterYesNoOKDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCharacterYesNoOKDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "Localize",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/Localize.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:Localize",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

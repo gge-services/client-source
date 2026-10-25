@@ -1,0 +1,55 @@
+{
+  "sourceHash": "06b3c295ef8c4a5b498bd7999c48f51e2829bcd008e84175d0ee1142f4be28de",
+  "generatedHash": "9b09a9028b246179580869c65f82fff1c24efb0edeaf3139c23dcbaf4b277588",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleSeasonUpgradePortDialog",
+      "imported": "CastleSeasonUpgradePortDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSeasonUpgradePortDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleSeasonBaseRepairDialogProperties",
+      "imported": "CastleSeasonBaseRepairDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSeasonBaseRepairDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

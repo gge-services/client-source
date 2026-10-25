@@ -1,0 +1,130 @@
+{
+  "sourceHash": "891e49224d766b5bd4ab2eee211f30bff657c2a93ff3a6b81abf3cf982e96248",
+  "generatedHash": "ba4d9b9c482d7dd0f5d177eb453b26f610db6f354cc0e4911ede0d36d71ed166",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "ERROR",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "castAs",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/castAs.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:castAs",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "EventConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EventConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:EventConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CollectableManager",
+      "imported": "CollectableManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTieredPrimeDayRewardProperties",
+      "imported": "CastleTieredPrimeDayRewardProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleTieredPrimeDayRewardProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTieredPrimeDayRewardDialog",
+      "imported": "CastleTieredPrimeDayRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleTieredPrimeDayRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicDialogHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicDialogHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicDialogHandler",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastlePaymentRewardSpecialOfferFinishDialog",
+      "imported": "CastlePaymentRewardSpecialOfferFinishDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePaymentRewardSpecialOfferFinishDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePaymentRewardSpecialOfferFinishDialogProperties",
+      "imported": "CastlePaymentRewardSpecialOfferFinishDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePaymentRewardSpecialOfferFinishDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

@@ -1,15 +1,58 @@
-import { readFile, writeFile, mkdir } from 'node:fs/promises'
+import { readFile, writeFile, mkdir, unlink } from 'node:fs/promises'
 import { join, resolve } from 'node:path'
+import { createHash } from 'node:crypto'
 import { reconstructEs5Class } from './reverse-ts-es5.mjs'
 import ts from 'typescript'
+import { createDllResolver } from './resolve-imports.mjs'
+import parser from '@babel/parser'
+import traverseModule from '@babel/traverse'
+import * as t from '@babel/types'
+const traverse=traverseModule.default??traverseModule
 
 export async function reconstructCommands(root, emit=true) {
   const directory=join(root,'bundles/Game.bundle')
   const manifest=JSON.parse(await readFile(join(directory,'manifest.json'),'utf8'))
   const dll=JSON.parse(await readFile(join(root,'bundles/ggs.dll/manifest.json'),'utf8'))
-  const options={specifiers:manifest.specifiers,errorExportAvailable:dll.symbolViews?.filter(v=>v.name==='ERROR').length===1}
+  const dllResolver = await createDllResolver(root)
+  const readonlyBaseAccessors=new Set()
+  const passThroughConstructors=new Set()
+  for(const item of manifest.modules.filter(m=>m.path.endsWith('Command.js'))) {
+    const source=await readFile(join(directory,item.path),'utf8')
+    const ast=parser.parse(source,{sourceType:'unambiguous',allowReturnOutsideFunction:true})
+    for(const statement of ast.program.body.filter(t.isVariableDeclaration)){
+      for(const dec of statement.declarations){
+        if(!t.isCallExpression(dec.init)||!t.isFunctionExpression(dec.init.callee))continue
+        const base=dec.init.arguments[0]
+        if(!t.isMemberExpression(base)||!t.isIdentifier(base.property))continue
+        const ctor=dec.init.callee.body.body.find(t.isFunctionDeclaration)
+        if(!ctor||ctor.body.body.length<3)continue
+        const first=ctor.body.body[0],last=ctor.body.body.at(-1)
+        if(!t.isVariableDeclaration(first)||first.declarations.length!==1||!t.isIdentifier(first.declarations[0].id)||
+          !t.isReturnStatement(last)||!t.isIdentifier(last.argument,{name:first.declarations[0].id.name}))continue
+        const init=first.declarations[0].init
+        if(!t.isLogicalExpression(init,{operator:'||'})||!t.isLogicalExpression(init.left,{operator:'&&'})||
+          !t.isCallExpression(init.left.right)||!t.isMemberExpression(init.left.right.callee)||
+          !t.isIdentifier(init.left.right.callee.property,{name:'apply'}))continue
+        passThroughConstructors.add(base.property.name)
+      }
+    }
+    traverse(ast,{CallExpression(path) {
+      const n=path.node
+      if(!t.isMemberExpression(n.callee)||!t.isIdentifier(n.callee.object,{name:'Object'})||
+        !t.isIdentifier(n.callee.property,{name:'defineProperty'})||n.arguments.length!==3)return
+      const target=n.arguments[0],key=n.arguments[1],descriptor=n.arguments[2]
+      if(!t.isMemberExpression(target)||!t.isIdentifier(target.property,{name:'prototype'})||
+        !t.isIdentifier(target.object)||!t.isStringLiteral(key)||!t.isObjectExpression(descriptor))return
+      const props=descriptor.properties.filter(t.isObjectProperty)
+      const get=props.some(p=>t.isIdentifier(p.key,{name:'get'}))
+      const set=props.some(p=>t.isIdentifier(p.key,{name:'set'}))
+      if(get&&!set)readonlyBaseAccessors.add(target.object.name+':'+key.value)
+    }})
+  }
+  const options={specifiers:manifest.specifiers,errorExportAvailable:dll.symbolViews?.filter(v=>v.name==='ERROR').length===1,resolveMember:dllResolver.resolve,dllImportFileName:dllResolver.importFileName,readonlyBaseAccessors,passThroughConstructors}
   const output=join(directory,'reconstructed/exports')
   if(emit)await mkdir(output,{recursive:true})
+  const previous=JSON.parse(await readFile(join(directory,'reconstructed/coverage.json'),'utf8').catch(()=>'{"succeeded":[]}'))
   const succeeded=[],skipped=[]
   const candidates=manifest.modules.filter(m=>m.path.startsWith('modules/exports/') && m.path.endsWith('Command.js'))
     .sort((a,b)=>a.path.localeCompare(b.path))
@@ -29,6 +72,21 @@ export async function reconstructCommands(root, emit=true) {
       }
       succeeded.push({name,originalPath:item.path,outputPath:'reconstructed/exports/'+name+'.ts',sourceHash:result.metadata.sourceHash})
     }catch(error){skipped.push({path:item.path,reason:error.message})}
+  }
+  if(emit) {
+    const current=new Set(succeeded.map(x=>x.name))
+    for(const old of previous.succeeded ?? []) {
+      if(current.has(old.name))continue
+      const target=join(output,old.name+'.ts')
+      const [oldCode,evidence]=await Promise.all([
+        readFile(target,'utf8'),
+        readFile(target+'.evidence.json','utf8').then(JSON.parse)
+      ])
+      const actual=createHash('sha256').update(oldCode).digest('hex')
+      if(actual!==evidence.generatedHash||evidence.sourceHash!==old.sourceHash)throw Error('Refusing to remove changed generated view: '+target)
+      await unlink(target)
+      await unlink(target+'.evidence.json')
+    }
   }
   const report={schemaVersion:1,snapshot:'2026-10-16',examined:candidates.length,reconstructed:succeeded.length,rejected:skipped.length,succeeded,skipped}
   if(emit)await writeFile(join(directory,'reconstructed/coverage.json'),JSON.stringify(report,null,2)+'\n')

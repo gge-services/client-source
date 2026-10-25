@@ -1,0 +1,73 @@
+{
+  "sourceHash": "60196de5fad6f9994af83d13140028364a68a175691b4b47553e36b53bc442c6",
+  "generatedHash": "0f3364244a194fb1c118c0ba9cc9266a0f1fa74893dccfb56e48972427ece24b",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "castAs",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/castAs.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:castAs",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleArtifactFoundTreasureDialog",
+      "imported": "CastleArtifactFoundTreasureDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleArtifactFoundTreasureDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleArtifactEventDialogProperties",
+      "imported": "CastleArtifactEventDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleArtifactEventDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicDialogHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicDialogHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicDialogHandler",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleArtifactFoundPieceDialog",
+      "imported": "CastleArtifactFoundPieceDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleArtifactFoundPieceDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

@@ -1,0 +1,26 @@
+{
+  "sourceHash": "74eb7eb3187e3e036ed24f1891f780e884d424f0417e447ceff04a481e41b4d3",
+  "generatedHash": "58f5a8e67a4e0a8788ea03edb38cdab04eccb8cdb970c387e4a41344e97ae4e9",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "internalExecute",
+    "onQuestConfirmPre",
+    "onQuestConfirm",
+    "getDialogClass",
+    "getTrackOnQuestConfirmID"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_TutorialBasicActionCommand",
+      "imported": "TutorialBasicActionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialBasicActionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

@@ -1,0 +1,72 @@
+{
+  "sourceHash": "7071b8ca1e15d1f71ae8841e13a20cf726985eb69e35048c9c9f2b4732464dc2",
+  "generatedHash": "8385b32b52fe1c56296b328543824e9bdacb1d33bd7ec981e810166a5e739566",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:arrows",
+    "get:controller",
+    "get:layoutManager"
+  ],
+  "methods": [
+    "execute",
+    "internalExecute",
+    "showGuidance",
+    "removeGuidance",
+    "waitForExternalDialog",
+    "waitForExternalDialogClose"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_2f3215726cfc30d4",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/classes/SimpleCommand.js",
+      "moduleId": "6",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManagerEvent",
+      "imported": "CastleLayoutManagerEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManagerEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTutorialArrowController",
+      "imported": "CastleTutorialArrowController",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/CastleTutorialArrowController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBasicController",
+      "imported": "CastleBasicController",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBasicController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 0,
+  "fullRuntimeEquivalent": false
+}

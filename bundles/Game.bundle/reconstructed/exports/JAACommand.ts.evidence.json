@@ -1,0 +1,224 @@
+{
+  "sourceHash": "ff1d408e18d34abfac0b4440eb225cdf38c87ecd1ad9ddb247351c30192023ba",
+  "generatedHash": "91d0570375c01957232be60f767743ff518f72333c727d50c64a8cd213a7c9ea",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand",
+    "sentPingTracking",
+    "checkTipText"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "ERROR",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "CommandController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/CommandController__webpack_29__620faaa3.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:CommandController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_IngameClientCommands",
+      "imported": "IngameClientCommands",
+      "bundle": "Game.bundle",
+      "path": "exports/IngameClientCommands.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AreaFactory",
+      "imported": "AreaFactory",
+      "bundle": "Game.bundle",
+      "path": "exports/AreaFactory.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_Iso",
+      "imported": "Iso",
+      "bundle": "Game.bundle",
+      "path": "exports/Iso.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_IsoConst",
+      "imported": "IsoConst",
+      "bundle": "Game.bundle",
+      "path": "exports/IsoConst.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "EnvGlobalsHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EnvGlobalsHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:EnvGlobalsHandler",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SessionTypes",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SessionTypes.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SessionTypes",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicProfilingTrackingCommandVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicProfilingTrackingCommandVO.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicProfilingTrackingCommandVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicController.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "ClientFunnelTrackingController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ClientFunnelTrackingController.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:ClientFunnelTrackingController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "ClientFunnelGameStates",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ClientFunnelGameStates.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:ClientFunnelGameStates",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_GZPTrackingController",
+      "imported": "GZPTrackingController",
+      "bundle": "Game.bundle",
+      "path": "exports/GZPTrackingController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_renderScheduler",
+      "imported": "renderScheduler",
+      "bundle": "Game.bundle",
+      "path": "exports/renderScheduler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SGetDetailedCastleListVO",
+      "imported": "C2SGetDetailedCastleListVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SGetDetailedCastleListVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleServerMessageArrivedEvent",
+      "imported": "CastleServerMessageArrivedEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleServerMessageArrivedEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstTime",
+      "imported": "ClientConstTime",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstTime.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCastle",
+      "imported": "ClientConstCastle",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCastle.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AreaDataEvent",
+      "imported": "AreaDataEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/AreaDataEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

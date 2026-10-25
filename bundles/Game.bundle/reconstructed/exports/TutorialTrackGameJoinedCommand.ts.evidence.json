@@ -1,0 +1,40 @@
+{
+  "sourceHash": "211e30ca48e885871a23f499c604ad0691da7630f62227ba5bcd5d71e263b823",
+  "generatedHash": "c6660874cec185b582ed9086fbafb68751f40504464f611cac8f46cffedaaf80",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "internalExecute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_TutorialBasicActionCommand",
+      "imported": "TutorialBasicActionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialBasicActionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "ClientFunnelGameStates",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ClientFunnelGameStates.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:ClientFunnelGameStates",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "ClientFunnelTrackingController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ClientFunnelTrackingController.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:ClientFunnelTrackingController",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

@@ -1,0 +1,63 @@
+{
+  "sourceHash": "a3ba79e08d94f556e8f92c8a77751f6ca70be0540f70b04f0ce781f036744c11",
+  "generatedHash": "45549795d695d7dc0d2677919de260bf1e5e439c4c76719769f17420cfc3f341",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_ABotCommand",
+      "imported": "ABotCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/ABotCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientCheatsHelper",
+      "imported": "ClientCheatsHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientCheatsHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDataHolder",
+      "imported": "CastleDataHolder",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDataHolder.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_DarkOkDialog",
+      "imported": "DarkOkDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/DarkOkDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicStandardOkDialogProperties",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicStandardOkDialogProperties.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicStandardOkDialogProperties",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 0,
+  "fullRuntimeEquivalent": false
+}

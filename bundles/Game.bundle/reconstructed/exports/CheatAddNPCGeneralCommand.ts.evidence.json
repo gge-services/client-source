@@ -1,0 +1,30 @@
+{
+  "sourceHash": "1f742fb27867cb60536547bcb3b20191f8234d94b3aef6192ebea0d94e9f84d5",
+  "generatedHash": "4a54fce50f7042235ae76d9fa2fdff949e20a1bef8784a64391002c82a2de5f4",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_ABotCommand",
+      "imported": "ABotCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/ABotCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientCheatsHelper",
+      "imported": "ClientCheatsHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientCheatsHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 0,
+  "fullRuntimeEquivalent": false
+}

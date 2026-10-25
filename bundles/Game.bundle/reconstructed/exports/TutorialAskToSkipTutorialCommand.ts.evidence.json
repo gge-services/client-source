@@ -1,0 +1,64 @@
+{
+  "sourceHash": "507da069ee2f544e401bab2f74184bf8fc55e79c7fc826a21d98d610d56f47fa",
+  "generatedHash": "469f98ddb39b31d2c0b5872762a657a527fc0b0204858a578a4006aeb0c94a4c",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "internalExecute",
+    "doSkip"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_TutorialBasicActionCommand",
+      "imported": "TutorialBasicActionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialBasicActionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "EnvGlobalsHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EnvGlobalsHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:EnvGlobalsHandler",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAutoTutorialBlockerDialog",
+      "imported": "CastleAutoTutorialBlockerDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAutoTutorialBlockerDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2STemporaryServerTutorialSkipVO",
+      "imported": "C2STemporaryServerTutorialSkipVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2STemporaryServerTutorialSkipVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

@@ -1,0 +1,20 @@
+import { BasicDialogHandler } from "../../../ggs.dll/reconstructed/exports/BasicDialogHandler";
+import { CastleDialogHandler } from "./CastleDialogHandler";
+import { CastleSeasonEventWinDialog } from "./CastleSeasonEventWinDialog";
+import { CastleSeasonEventWinDialogProperties } from "./CastleSeasonEventWinDialogProperties";
+import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { TreasureMapsConst } from "../../../ggs.dll/reconstructed/exports/TreasureMapsConst";
+export class OpenSeasonInfoDialogCommand extends SimpleCommand {
+  execute(__s5param0 = null) {
+    var __s5local0 = __s5param0[0];
+    var __s5local1 = int(__s5param0[1]);
+    var __s5local2 = __s5param0[2];
+    switch (__s5local0.progressType) {
+      case TreasureMapsConst.PROGRESS_FOUND_MAP_PIECE:
+        break;
+      case TreasureMapsConst.PROGRESS_DESTROYED_END_NODE:
+        CastleDialogHandler.getInstance().registerDefaultDialogs(CastleSeasonEventWinDialog, new CastleSeasonEventWinDialogProperties(__s5local1, __s5local2), true, BasicDialogHandler.PRIORITY_LOW);
+    }
+  }
+}

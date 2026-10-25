@@ -1,0 +1,56 @@
+{
+  "sourceHash": "2d916daeb4e62fd1763e26f1af5df6e3a651e48a4f38b30561f5086c865c3f85",
+  "generatedHash": "cb548d3a372c65b60aea218f6cc0369a1c05df92a09d320c42848fa8e66c9a4c",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleStartQuestDialog",
+      "imported": "CastleStartQuestDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleStartQuestDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleStartQuestDialogProperties",
+      "imported": "CastleStartQuestDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleStartQuestDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicDialogHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicDialogHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicDialogHandler",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

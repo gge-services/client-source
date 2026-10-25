@@ -99,3 +99,41 @@ test('constructs a durable graph with distinct stable public identities',async()
   assert.ok(graph.edges.some(e=>e.from===id&&e.to?.includes('export:ClientConstSF')))
   assert.equal(resolveNode(graph,'Game.bundle','gge-module:does_not_exist'),null)
 })
+
+test('reconstructs a getter-only superclass dispatch without changing its observable failure',async()=>{
+  const source=await readFile(join(game,'modules/exports/CICCommand.js'),'utf8')
+  const reconstructed=reconstructEs5Class(source,{
+    ...options,
+    readonlyBaseAccessors:new Set(['CastleDispatchingCommand:eventType'])
+  })
+  assert.ok(reconstructed)
+  assert.match(reconstructed.code,/Reflect\.set\(Object\.getPrototypeOf\(CICCommand\.prototype\)/)
+  assert.doesNotMatch(reconstructed.code,/getOwnPropertyDescriptor|Object\.defineProperty/)
+  const evaluate=(code,compiled)=>{
+    function CastleDispatchingCommand(){}
+    Object.defineProperty(CastleDispatchingCommand.prototype,'cmdId',{configurable:true,get(){return this.commandId},set(value){this.commandId=value}})
+    Object.defineProperty(CastleDispatchingCommand.prototype,'eventType',{configurable:true,get(){return 'readOnlyEvent'}})
+    const modules={
+      'gge-module:exact_6fd0a7f85c69b366':{__extends(C,D){Object.setPrototypeOf(C,D);C.prototype=Object.create(D.prototype);C.prototype.constructor=C}},
+      'gge-module:exact_81dacdf05bd32292':{classImplementsInterfaces(){}},
+      'gge-module:export_ClientConstSF':{ClientConstSF:{S2C_CRAFT_CONSTRUCTION_ITEM:42}},
+      'gge-module:export_CastleServerMessageArrivedEvent':{CastleServerMessageArrivedEvent:{CIC_ARRIVED:'CIC'}},
+      'gge-module:export_CastleDispatchingCommand':{CastleDispatchingCommand},
+      './ClientConstSF':{ClientConstSF:{S2C_CRAFT_CONSTRUCTION_ITEM:42}},
+      './CastleServerMessageArrivedEvent':{CastleServerMessageArrivedEvent:{CIC_ARRIVED:'CIC'}},
+      './CastleDispatchingCommand':{CastleDispatchingCommand}
+    }
+    const exports={}
+    const js=compiled?typescript.transpileModule(code,{compilerOptions:{module:typescript.ModuleKind.CommonJS,target:typescript.ScriptTarget.ES2015}}).outputText:code
+    vm.runInNewContext(js,{exports,require(name){if(!(name in modules))throw Error('Missing dependency '+name);return modules[name]},Object,Reflect,JSON})
+    const instance=new exports.CICCommand()
+    instance.cmdId=11
+    const commandId=instance.cmdId
+    const eventType=instance.eventType
+    let error=null
+    try { instance.eventType='changed' } catch(e){error=e.name}
+    return {commandId,eventType,error}
+  }
+  assert.deepEqual(evaluate(source,false),evaluate(reconstructed.code,true))
+  assert.deepEqual(evaluate(source,false),{commandId:42,eventType:'CIC',error:'TypeError'})
+})

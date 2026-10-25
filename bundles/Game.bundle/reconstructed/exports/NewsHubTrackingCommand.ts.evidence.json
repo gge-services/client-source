@@ -1,0 +1,66 @@
+{
+  "sourceHash": "35a1a2a5f863d18275570c909e3079337f8a16aff5b6a145e5ffb79666f1d8c9",
+  "generatedHash": "5b1d5415307f08036eb2b7b153d69aaf22552cfbcd9e166e677c8c26150f6a5e",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "TrackingCache",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/TrackingCache.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:TrackingCache",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstTracking",
+      "imported": "ClientConstTracking",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstTracking.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_NewsHubTrackingEvent",
+      "imported": "NewsHubTrackingEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/NewsHubTrackingEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "EnvGlobalsHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EnvGlobalsHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:EnvGlobalsHandler",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicModel",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicModel.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicModel",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 0,
+  "fullRuntimeEquivalent": false
+}

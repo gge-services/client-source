@@ -1,0 +1,22 @@
+{
+  "sourceHash": "7db50200eea4f7971a483e8a3d914f8ec0fc643e448011069ee7d1427a4807ea",
+  "generatedHash": "17734e33226abc4aed2d41080abec521481041a0c2e326598b3dddfd0d5f2880",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "getTrackOnQuestConfirmID"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_TutorialBasicQuestFinisherActionCommand",
+      "imported": "TutorialBasicQuestFinisherActionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialBasicQuestFinisherActionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

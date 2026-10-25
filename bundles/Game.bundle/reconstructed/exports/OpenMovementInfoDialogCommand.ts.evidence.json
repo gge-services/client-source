@@ -1,0 +1,161 @@
+{
+  "sourceHash": "1e5ef0cfffaf8f33191158d12f4a4279baf42a00418f4418112de84f86eed36d",
+  "generatedHash": "67341dd788508ae38b5a75f0afd36c77f27a05a8da489442e8d683ef969bd1d9",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "castAs",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/castAs.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:castAs",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "instanceOfClass",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/instanceOfClass.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:instanceOfClass",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleCompactArmyDialog",
+      "imported": "CastleCompactArmyDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCompactArmyDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleCompactArmyDialogProperties",
+      "imported": "CastleCompactArmyDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCompactArmyDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleMarketMovmentDialog",
+      "imported": "CastleMarketMovmentDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleMarketMovmentDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleMarketMovmentDialogProperties",
+      "imported": "CastleMarketMovmentDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleMarketMovmentDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleArmyListDialog",
+      "imported": "CastleArmyListDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleArmyListDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleArmyListDialogProperties",
+      "imported": "CastleArmyListDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleArmyListDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ArmyAttackMapmovementVO",
+      "imported": "ArmyAttackMapmovementVO",
+      "bundle": "Game.bundle",
+      "path": "exports/ArmyAttackMapmovementVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleShortArmyDialog",
+      "imported": "CastleShortArmyDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleShortArmyDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleShortArmyDialogProperties",
+      "imported": "CastleShortArmyDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleShortArmyDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleArmyListWithLootDialog",
+      "imported": "CastleArmyListWithLootDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleArmyListWithLootDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleArmyListWithLootDialogProperties",
+      "imported": "CastleArmyListWithLootDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleArmyListWithLootDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleSpyInfoDialog",
+      "imported": "CastleSpyInfoDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSpyInfoDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleSpyInfoDialogProperties",
+      "imported": "CastleSpyInfoDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSpyInfoDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePlaguemonkInfoDialog",
+      "imported": "CastlePlaguemonkInfoDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePlaguemonkInfoDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

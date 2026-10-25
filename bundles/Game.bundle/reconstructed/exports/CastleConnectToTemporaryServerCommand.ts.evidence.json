@@ -1,0 +1,47 @@
+{
+  "sourceHash": "bb3fe4e3f4ff8bc80545f38a25203d2748c27eabf832ec7af3e37163172813c9",
+  "generatedHash": "f857d91ce28b819b0586959131953a895dadadbdef61abe2597b0a42a8da9c73",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:externalServerID",
+    "set:externalServerID",
+    "get:blockerTextID",
+    "set:blockerTextID"
+  ],
+  "methods": [
+    "setConnectFlag"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleConnectToSpecialServerCommand",
+      "imported": "CastleConnectToSpecialServerCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleConnectToSpecialServerCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "GlobalServerConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/GlobalServerConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:GlobalServerConst",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [
+    "value",
+    "value"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

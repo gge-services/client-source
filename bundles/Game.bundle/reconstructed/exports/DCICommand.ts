@@ -12,6 +12,8 @@ export class DCICommand extends CastleDispatchingCommand {
     return CastleServerMessageArrivedEvent.DCI_ARRIVED;
   }
   set eventType(value) {
-    super.eventType = value;
+    if (!Reflect.set(Object.getPrototypeOf(DCICommand.prototype), "eventType", value, this)) {
+      throw new TypeError("Inherited accessor is not writable");
+    }
   }
 }

@@ -1,0 +1,50 @@
+{
+  "sourceHash": "97ca9c69628f23d60b1974cf51f9ba5a08eb4832972140ba1c65f70c9b74a40f",
+  "generatedHash": "15439afe950f8a3189ee706c74ffd58b7f50d1b07e14d17268f1d30c9d98cbb9",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:eventType"
+  ],
+  "methods": [
+    "executeCommand",
+    "dispatchArrivedEvent"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "ERROR",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleServerMessageArrivedEvent",
+      "imported": "CastleServerMessageArrivedEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleServerMessageArrivedEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AbstractMethodError",
+      "imported": "AbstractMethodError",
+      "bundle": "Game.bundle",
+      "path": "exports/AbstractMethodError.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

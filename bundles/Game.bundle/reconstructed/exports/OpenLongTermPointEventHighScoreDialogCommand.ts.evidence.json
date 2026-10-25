@@ -1,0 +1,65 @@
+{
+  "sourceHash": "e430ebe8ce6a4ff81e96cb48d8099165d504f0e1d0a3636b9e8f7cee5e14f613",
+  "generatedHash": "11bc75e6ada94c0a6648da514e935c9ad630f675d49c39ee98beb00b7032db5f",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "addAssets",
+    "openDialog",
+    "loadSeasonAssets"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_OpenDialogWithAdditionalExternalAssetsCommand",
+      "imported": "OpenDialogWithAdditionalExternalAssetsCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenDialogWithAdditionalExternalAssetsCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "EventConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EventConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:EventConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LongTermPointEventHighScoreDialog",
+      "imported": "LongTermPointEventHighScoreDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/LongTermPointEventHighScoreDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LongTermPointEventHighScoreDialogProperties",
+      "imported": "LongTermPointEventHighScoreDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/LongTermPointEventHighScoreDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

@@ -1,0 +1,74 @@
+{
+  "sourceHash": "8692f4036ae5867bf0c0d24cbe842cd4c89fe42c2b456c62e8996d42bc6b244f",
+  "generatedHash": "48767191a3e03ac4e135c7823a73077d6cf967308d4aad7f988c3cf8ae8020b0",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "TreasureMapsConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/TreasureMapsConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:TreasureMapsConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleSeasonEventWinDialog",
+      "imported": "CastleSeasonEventWinDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSeasonEventWinDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleSeasonEventWinDialogProperties",
+      "imported": "CastleSeasonEventWinDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSeasonEventWinDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicDialogHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicDialogHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicDialogHandler",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

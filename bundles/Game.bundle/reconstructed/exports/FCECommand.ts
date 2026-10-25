@@ -12,6 +12,8 @@ export class FCECommand extends CastleDispatchingCommand {
     return CastleServerMessageArrivedEvent.FCE_ARRIVED;
   }
   set eventType(value) {
-    super.eventType = value;
+    if (!Reflect.set(Object.getPrototypeOf(FCECommand.prototype), "eventType", value, this)) {
+      throw new TypeError("Inherited accessor is not writable");
+    }
   }
 }

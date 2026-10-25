@@ -1,0 +1,99 @@
+{
+  "sourceHash": "8264bd63ce958155fe7bbce062990110f70d4d2694e9c3bbe5a0301d0bfb5f53",
+  "generatedHash": "2757588eeceb641c5b9b20f542870dfcc89288b6a3aaa459637b211d9a8d354b",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "openDialog",
+    "addAssets",
+    "loadPointEventAssets",
+    "loadSeasonAssets"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_OpenDialogWithAdditionalExternalAssetsCommand",
+      "imported": "OpenDialogWithAdditionalExternalAssetsCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenDialogWithAdditionalExternalAssetsCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_UpdateDynamicTopXDataService",
+      "imported": "UpdateDynamicTopXDataService",
+      "bundle": "Game.bundle",
+      "path": "exports/UpdateDynamicTopXDataService.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LongTermPointEventDialog",
+      "imported": "LongTermPointEventDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/LongTermPointEventDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "EventConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EventConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:EventConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_C2SPointEventGetPointsVO",
+      "imported": "C2SPointEventGetPointsVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SPointEventGetPointsVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LongTermPointEventProperties",
+      "imported": "LongTermPointEventProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/LongTermPointEventProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:export_LongTermPointEventClientConst",
+      "imported": "LongTermPointEventClientConst",
+      "bundle": "Game.bundle",
+      "path": "exports/LongTermPointEventClientConst.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

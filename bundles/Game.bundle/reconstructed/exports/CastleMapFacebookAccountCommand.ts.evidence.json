@@ -1,0 +1,108 @@
+{
+  "sourceHash": "681b8226a5b627316c8b32ea53cc3cc3a34660a1d3a349fd78ebecdfbe1b0563",
+  "generatedHash": "0740e5c51111c047c04ce63eac18b0226c9538eecf67d26836a677a057233d66",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:controller"
+  ],
+  "methods": [
+    "execute",
+    "onFbCancel",
+    "onFBLoggedIn",
+    "map",
+    "onLogout",
+    "unmap",
+    "onUnmapFailed",
+    "addMappingListeners",
+    "removeMappingListeners",
+    "onMappingUpdated",
+    "removeListeners"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleFacebookSDKEvent",
+      "imported": "CastleFacebookSDKEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleFacebookSDKEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleFacebookModule",
+      "imported": "CastleFacebookModule",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/CastleFacebookModule.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleFacebookEvent",
+      "imported": "CastleFacebookEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleFacebookEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLogoutEvent",
+      "imported": "CastleLogoutEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLogoutEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SMapFacebookVO",
+      "imported": "C2SMapFacebookVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SMapFacebookVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "CommandController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/CommandController__webpack_29__620faaa3.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:CommandController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_IngameClientCommands",
+      "imported": "IngameClientCommands",
+      "bundle": "Game.bundle",
+      "path": "exports/IngameClientCommands.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBasicController",
+      "imported": "CastleBasicController",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBasicController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}
