@@ -12,64 +12,100 @@
   "dependencies": [
     {
       "specifier": "gge-module:export_CastleCommand",
-      "source": "exports/CastleCommand.js",
-      "imported": "CastleCommand"
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_ClientConstSF",
-      "source": "exports/ClientConstSF.js",
-      "imported": "ClientConstSF"
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
-      "specifier": "ggs.dll:export:ERROR",
-      "source": "ggs.dll/modules/exports/ERROR.js",
+      "specifier": "gge-module:exact_26a421b704832cff",
       "imported": "ERROR",
-      "confidence": "unique-member-and-export"
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
     },
     {
       "specifier": "gge-module:export_CastleModel",
-      "source": "exports/CastleModel.js",
-      "imported": "CastleModel"
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_CollectableManager",
-      "source": "exports/CollectableManager.js",
-      "imported": "CollectableManager"
+      "imported": "CollectableManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_CollectableList",
-      "source": "exports/CollectableList.js",
-      "imported": "CollectableList"
+      "imported": "CollectableList",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableList.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_CollectableHelper",
-      "source": "exports/CollectableHelper.js",
-      "imported": "CollectableHelper"
+      "imported": "CollectableHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_CollectableEnum",
-      "source": "exports/CollectableEnum.js",
-      "imported": "CollectableEnum"
+      "imported": "CollectableEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_MysteryBoxOpeningDialogProperties",
-      "source": "exports/MysteryBoxOpeningDialogProperties.js",
-      "imported": "MysteryBoxOpeningDialogProperties"
+      "imported": "MysteryBoxOpeningDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/MysteryBoxOpeningDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_CastleDialogHandler",
-      "source": "exports/CastleDialogHandler.js",
-      "imported": "CastleDialogHandler"
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_MysteryBoxOpeningDialog",
-      "source": "exports/MysteryBoxOpeningDialog.js",
-      "imported": "MysteryBoxOpeningDialog"
+      "imported": "MysteryBoxOpeningDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/MysteryBoxOpeningDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_CastleServerMessageArrivedEvent",
-      "source": "exports/CastleServerMessageArrivedEvent.js",
-      "imported": "CastleServerMessageArrivedEvent"
+      "imported": "CastleServerMessageArrivedEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleServerMessageArrivedEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     }
   ],
   "renamed": [

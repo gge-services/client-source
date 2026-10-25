@@ -1,0 +1,90 @@
+{
+  "sourceHash": "832475d625368287138e97051cc34fabef4f8104310ef25aac9a1c7045fa47a0",
+  "generatedHash": "04c678f01eab057fec22529d4dbce970cbd646408ca0a7ed6135b59881403714",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleFacebookModule",
+      "imported": "CastleFacebookModule",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/CastleFacebookModule.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleStringHelper",
+      "imported": "CastleStringHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleStringHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OptionsDialog",
+      "imported": "OptionsDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/OptionsDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "TrackingCache",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/TrackingCache.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:TrackingCache",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "TrackingEventIds",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/TrackingEventIds.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:TrackingEventIds",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "debug",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/debug.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:debug",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

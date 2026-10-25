@@ -1,0 +1,50 @@
+{
+  "sourceHash": "ec8076da4e923e0d2ab196292df6fc84280381eae18365f0a53ac35c51530d2f",
+  "generatedHash": "fb4328de90f1b690e699907e593636554833fa57f73538c99df681027af5a9a4",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicJoinedRoomCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicJoinedRoomCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicJoinedRoomCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicSmartfoxClient",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicSmartfoxClient.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicSmartfoxClient",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "ClientFunnelTrackingController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ClientFunnelTrackingController.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:ClientFunnelTrackingController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "ClientFunnelGameStates",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ClientFunnelGameStates.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:ClientFunnelGameStates",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

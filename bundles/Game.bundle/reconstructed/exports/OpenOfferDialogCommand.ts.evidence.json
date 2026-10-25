@@ -1,0 +1,163 @@
+{
+  "sourceHash": "79580ae6e7d9ed889fdd855bffd62bffee63f72d023d430b1ced9a4d0441b89e",
+  "generatedHash": "e466dcf3604d1b462ec3fec6f1c2641339fc0d0b7cb359e67c55b35c7ce94f9d",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "castAs",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/castAs.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:castAs",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicModel",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicModel.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicModel",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleOfferDialogProperties",
+      "imported": "CastleOfferDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleOfferDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleGlobalOfferData",
+      "imported": "CastleGlobalOfferData",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleGlobalOfferData.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleSpecialIngameOfferDialog",
+      "imported": "CastleSpecialIngameOfferDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSpecialIngameOfferDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicDialogHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicDialogHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicDialogHandler",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstLevelRestrictions",
+      "imported": "ClientConstLevelRestrictions",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstLevelRestrictions.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_PaymentPopupDialogInfoVO",
+      "imported": "PaymentPopupDialogInfoVO",
+      "bundle": "Game.bundle",
+      "path": "exports/PaymentPopupDialogInfoVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTimelessSpecialOfferDialog",
+      "imported": "CastleTimelessSpecialOfferDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleTimelessSpecialOfferDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogConsts",
+      "imported": "CastleDialogConsts",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogConsts.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "EventConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EventConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:EventConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_PrimeTimeSkinDialog",
+      "imported": "PrimeTimeSkinDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/PrimeTimeSkinDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ModernPrimeTimeDialog",
+      "imported": "ModernPrimeTimeDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/ModernPrimeTimeDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrivatePrimeTimeOfferDialog",
+      "imported": "CastlePrivatePrimeTimeOfferDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrivatePrimeTimeOfferDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

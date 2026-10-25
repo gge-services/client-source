@@ -1,6 +1,6 @@
 {
   "sourceHash": "92394f0532e0d8cad55ae3fef627f7c4a37bd8cf3e7f570593c566b89584a4fb",
-  "generatedHash": "4a68e677329815c340483f180784ddba9113720f91f65f9b23bb4bd349c0143e",
+  "generatedHash": "31d09a9e9b216d500ced7d36fd62dd0f4f12d40d2212b16864c7de6858a5ebee",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -14,34 +14,52 @@
   "dependencies": [
     {
       "specifier": "gge-module:export_CastleDispatchingCommand",
-      "source": "exports/CastleDispatchingCommand.js",
-      "imported": "CastleDispatchingCommand"
+      "imported": "CastleDispatchingCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDispatchingCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_ClientConstSF",
-      "source": "exports/ClientConstSF.js",
-      "imported": "ClientConstSF"
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
-      "specifier": "ggs.dll:export:ERROR",
-      "source": "ggs.dll/modules/exports/ERROR.js",
+      "specifier": "gge-module:exact_26a421b704832cff",
       "imported": "ERROR",
-      "confidence": "unique-member-and-export"
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
     },
     {
       "specifier": "gge-module:export_CastleModel",
-      "source": "exports/CastleModel.js",
-      "imported": "CastleModel"
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_CastleCraftingMaterialEvent",
-      "source": "exports/CastleCraftingMaterialEvent.js",
-      "imported": "CastleCraftingMaterialEvent"
+      "imported": "CastleCraftingMaterialEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCraftingMaterialEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_CastleServerMessageArrivedEvent",
-      "source": "exports/CastleServerMessageArrivedEvent.js",
-      "imported": "CastleServerMessageArrivedEvent"
+      "imported": "CastleServerMessageArrivedEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleServerMessageArrivedEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     }
   ],
   "renamed": [

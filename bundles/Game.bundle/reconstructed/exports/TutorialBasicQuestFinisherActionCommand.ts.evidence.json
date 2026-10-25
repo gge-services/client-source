@@ -1,0 +1,31 @@
+{
+  "sourceHash": "e4cf0099208702b0f3379c54d9341af833be9493b013b894cf22ff4ce95b0b99",
+  "generatedHash": "3f72074ee339fc55f5acf637ed0530e2c5a6b27fcb0ecb0d4ce04cae06708260",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "onQuestConfirmPre",
+    "getDialogClass"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_TutorialBasicQuestActionCommand",
+      "imported": "TutorialBasicQuestActionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialBasicQuestActionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleQuestCompletedDialog",
+      "imported": "CastleQuestCompletedDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleQuestCompletedDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

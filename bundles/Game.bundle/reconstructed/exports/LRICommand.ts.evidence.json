@@ -1,0 +1,89 @@
+{
+  "sourceHash": "ecc9aceb6eb150720d9c9ef5edfdca8e7e0348ed94102530d25e277a17259e74",
+  "generatedHash": "ef26a4b0daf444006227d611dac9db956572ad00572eb80210c67f877adde40e",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand",
+    "getDialogClassByListId"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "ERROR",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_AutoRecruitmentPurchaseDialogProperties",
+      "imported": "AutoRecruitmentPurchaseDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/AutoRecruitmentPurchaseDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "UnitProductionConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/UnitProductionConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:UnitProductionConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_AutoRecruitmentPurchaseToolsDialog",
+      "imported": "AutoRecruitmentPurchaseToolsDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/AutoRecruitmentPurchaseToolsDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AutoRecruitmentPurchaseUnitsDialog",
+      "imported": "AutoRecruitmentPurchaseUnitsDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/AutoRecruitmentPurchaseUnitsDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

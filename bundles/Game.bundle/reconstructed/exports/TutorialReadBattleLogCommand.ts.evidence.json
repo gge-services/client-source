@@ -1,0 +1,101 @@
+{
+  "sourceHash": "a1e778d7dd9817fa675d4b6a4c320b36e20f85598bb82681edeb024a7783bdba",
+  "generatedHash": "93d3f2b65b35803da892a502b6c976dd066a2177348f6b0ae5074355715d018f",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "internalExecute",
+    "onInbox",
+    "onBattleLog",
+    "waitForInboxHide",
+    "goToMainCastle",
+    "arrivedAtCastle"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_TutorialBasicActionCommand",
+      "imported": "TutorialBasicActionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialBasicActionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleMessageInboxDialog",
+      "imported": "CastleMessageInboxDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleMessageInboxDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleMultiInfoPanel",
+      "imported": "CastleMultiInfoPanel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleMultiInfoPanel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_MessagePanelButton",
+      "imported": "MessagePanelButton",
+      "bundle": "Game.bundle",
+      "path": "exports/MessagePanelButton.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCharacter",
+      "imported": "ClientConstCharacter",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCharacter.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "instanceOfClass",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/instanceOfClass.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:instanceOfClass",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleBattleLogMessageAdvanced",
+      "imported": "CastleBattleLogMessageAdvanced",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBattleLogMessageAdvanced.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "castAs",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/castAs.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:castAs",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastlePanelButton",
+      "imported": "CastlePanelButton",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePanelButton.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleServerMessageArrivedEvent",
+      "imported": "CastleServerMessageArrivedEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleServerMessageArrivedEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

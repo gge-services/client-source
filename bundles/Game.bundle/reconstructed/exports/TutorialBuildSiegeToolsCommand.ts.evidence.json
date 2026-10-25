@@ -1,0 +1,29 @@
+{
+  "sourceHash": "f4d350fd2c852e7b41333fc3f841fdf8d299e8e7148f4ac22977d4c4426ee2e2",
+  "generatedHash": "9c39c23e4560e00c6feb1806fe5ef539852219362566135ceade624a42e611d3",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "getSelectUnitText",
+    "getOpenMilitaryMenuText",
+    "getClickMilitarySubMenuText",
+    "getClickOnRecruitDialogCloseText",
+    "getConfirmUnitSelectionText",
+    "getOpenMilitaryMenuTrackingID",
+    "getRecruitDialogOpenedTrackingID",
+    "getUnitRecruitmentConfirmedTrackingID"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_TutorialBuildToolsCommand",
+      "imported": "TutorialBuildToolsCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialBuildToolsCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

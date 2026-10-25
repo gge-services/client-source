@@ -1,0 +1,22 @@
+{
+  "sourceHash": "ace922a775e08cb60358f3466800062fe0e7e57713b5c8a47b77f1dd8452f1b5",
+  "generatedHash": "6e9ea970b93146375aa3da6eb652a29d90fa4f02062d5b90ef00640d451329fd",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "getTrackOnQuestConfirmID"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_TutorialBasicQuestStarterActionCommand",
+      "imported": "TutorialBasicQuestStarterActionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialBasicQuestStarterActionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

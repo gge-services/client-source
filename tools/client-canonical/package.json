@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "compare": "node compare.mjs",
-    "test": "node --test test.mjs fetch-client.test.mjs refine-modules.test.mjs semantic-view.test.mjs reverse-ts-es5.test.mjs",
+    "test": "node --test test.mjs fetch-client.test.mjs refine-modules.test.mjs semantic-view.test.mjs reverse-ts-es5.test.mjs resolve-imports.test.mjs",
     "verify": "node verify.mjs ../..",
     "audit": "node audit-symbol-views.mjs ../..",
-    "reconstruct": "node build-semantic-graph.mjs ../.. ../../graphs/2026-10-16.jsonl && node reconstruct-commands.mjs ../.."
+    "reconstruct": "npm run graph && node reconstruct-commands.mjs ../..",
+    "graph": "node build-semantic-graph.mjs ../.. ../../graphs/2026-10-16.jsonl && node audit-dll-edges.mjs ../.. ../../graphs/2026-10-16-dll-edges.jsonl",
+    "typecheck:compat": "node audit-ts-project.mjs ../.. /tmp/gge-client-ts-typecheck --emit",
+    "typecheck:complete": "node audit-ts-project.mjs ../.. /tmp/gge-client-ts-typecheck-complete --emit --strict"
   },
   "dependencies": {
     "@babel/generator": "7.29.0",

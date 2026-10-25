@@ -24,6 +24,8 @@ export class RFICommand extends CastleDispatchingCommand {
     return CastleServerMessageArrivedEvent.RFI_ARRIVED;
   }
   set eventType(value) {
-    super.eventType = value;
+    if (!Reflect.set(Object.getPrototypeOf(RFICommand.prototype), "eventType", value, this)) {
+      throw new TypeError("Inherited accessor is not writable");
+    }
   }
 }

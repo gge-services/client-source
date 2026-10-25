@@ -1,0 +1,89 @@
+{
+  "sourceHash": "718d50e33841f5a4f93c8a0f18ba47aa2446c46089f7bfa8e69fc205387ad9a7",
+  "generatedHash": "d9f05e1ad333606e939bc459578fbd8a291aa9c6b3dfc2f0da5e24a977d632ad",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "getButtonClass",
+    "waitForDialog"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_TutorialAbstractMilitaryCommand",
+      "imported": "TutorialAbstractMilitaryCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialAbstractMilitaryCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_BuildToolsPanelButton",
+      "imported": "BuildToolsPanelButton",
+      "bundle": "Game.bundle",
+      "path": "exports/BuildToolsPanelButton.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleRecruitDialog",
+      "imported": "CastleRecruitDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleRecruitDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCastle",
+      "imported": "ClientConstCastle",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCastle.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "instanceOfClass",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/instanceOfClass.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:instanceOfClass",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:export_TutorialBasicActionCommand",
+      "imported": "TutorialBasicActionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialBasicActionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleRecruitDialogUnits",
+      "imported": "CastleRecruitDialogUnits",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleRecruitDialogUnits.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

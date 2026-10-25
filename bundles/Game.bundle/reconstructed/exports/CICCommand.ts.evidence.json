@@ -1,6 +1,6 @@
 {
   "sourceHash": "601c87e85585a3254ac39848daea8e2dadfb891debf888f8bf69ff059d990e0c",
-  "generatedHash": "a66e1855f662a7cdfda528bfd9f38ce6492dbbd58ea570c00b8b852dd6f09161",
+  "generatedHash": "fe1a203aea58e15c871ef201152e6a6cce230262e89a5616fce8164cb60b85e6",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -12,18 +12,27 @@
   "dependencies": [
     {
       "specifier": "gge-module:export_CastleDispatchingCommand",
-      "source": "exports/CastleDispatchingCommand.js",
-      "imported": "CastleDispatchingCommand"
+      "imported": "CastleDispatchingCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDispatchingCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_ClientConstSF",
-      "source": "exports/ClientConstSF.js",
-      "imported": "ClientConstSF"
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_CastleServerMessageArrivedEvent",
-      "source": "exports/CastleServerMessageArrivedEvent.js",
-      "imported": "CastleServerMessageArrivedEvent"
+      "imported": "CastleServerMessageArrivedEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleServerMessageArrivedEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     }
   ],
   "renamed": [

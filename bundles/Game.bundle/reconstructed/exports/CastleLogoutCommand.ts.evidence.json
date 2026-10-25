@@ -1,0 +1,150 @@
+{
+  "sourceHash": "3a7465b47a92f189ff0fb7fad15dcaab441adbd501b03504c2b294b17011ccfd",
+  "generatedHash": "29a9d424d5162ab3aaa7edf30020703ac81e19c2f2bf7961b2bac5670c17e50b",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute",
+    "changeInstanceFromTempToHome"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicLogoutCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicLogoutCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicLogoutCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleBasicController",
+      "imported": "CastleBasicController",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBasicController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLogoutEvent",
+      "imported": "CastleLogoutEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLogoutEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "EnvGlobalsHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EnvGlobalsHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:EnvGlobalsHandler",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_cxfResetCommandCache",
+      "imported": "cxfResetCommandCache",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/cxfResetCommandCache.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDataHolder",
+      "imported": "CastleDataHolder",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDataHolder.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleEquipmentFavoritesMicroservice",
+      "imported": "CastleEquipmentFavoritesMicroservice",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleEquipmentFavoritesMicroservice.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDeleteAccountMicroservice",
+      "imported": "CastleDeleteAccountMicroservice",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDeleteAccountMicroservice.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleWebShopAccountIDMicroservice",
+      "imported": "CastleWebShopAccountIDMicroservice",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleWebShopAccountIDMicroservice.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleFacebookModule",
+      "imported": "CastleFacebookModule",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/CastleFacebookModule.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicModel",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicModel.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicModel",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "ExternalInterface",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ExternalInterface.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:ExternalInterface",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicContextMenuController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicContextMenuController.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicContextMenuController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "CommandController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/CommandController__webpack_29__620faaa3.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:CommandController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicController.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicController",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

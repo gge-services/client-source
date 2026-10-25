@@ -12,6 +12,8 @@ export class SURCommand extends CastleDispatchingCommand {
     return CastleServerMessageArrivedEvent.SUR_ARRIVED;
   }
   set eventType(value) {
-    super.eventType = value;
+    if (!Reflect.set(Object.getPrototypeOf(SURCommand.prototype), "eventType", value, this)) {
+      throw new TypeError("Inherited accessor is not writable");
+    }
   }
 }

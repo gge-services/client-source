@@ -12,6 +12,8 @@ export class CICCommand extends CastleDispatchingCommand {
     return CastleServerMessageArrivedEvent.CIC_ARRIVED;
   }
   set eventType(value) {
-    super.eventType = value;
+    if (!Reflect.set(Object.getPrototypeOf(CICCommand.prototype), "eventType", value, this)) {
+      throw new TypeError("Inherited accessor is not writable");
+    }
   }
 }

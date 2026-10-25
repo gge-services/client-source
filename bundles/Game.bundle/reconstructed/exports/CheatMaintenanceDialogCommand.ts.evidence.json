@@ -1,0 +1,30 @@
+{
+  "sourceHash": "d7d9b133a396b905d72ff1ddd3402eabaabdadf7e1974d2e491892a380552b48",
+  "generatedHash": "467172c68f95a9aa4c0061c75ac44e39f49e7090b0a0af4d218695a012926625",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_ABotCommand",
+      "imported": "ABotCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/ABotCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleNewsHubOverlay",
+      "imported": "CastleNewsHubOverlay",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleNewsHubOverlay.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 0,
+  "fullRuntimeEquivalent": false
+}

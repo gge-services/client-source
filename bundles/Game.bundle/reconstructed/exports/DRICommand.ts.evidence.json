@@ -1,0 +1,89 @@
+{
+  "sourceHash": "33d88b325f74d70c92be3d900ea299788f6a9293e57fcbc836e8cb78756ec51d",
+  "generatedHash": "cdfd73e08b13fc9dd41c8e246baf05b798aa82fcf1ce0666c41c63d020488d90",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand",
+    "getDialogClassByListId"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "ERROR",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleBasicController",
+      "imported": "CastleBasicController",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBasicController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AutoRecruitmentInfoEvent",
+      "imported": "AutoRecruitmentInfoEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/AutoRecruitmentInfoEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "UnitProductionConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/UnitProductionConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:UnitProductionConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_AutoRecruitmentCopyToolsDialog",
+      "imported": "AutoRecruitmentCopyToolsDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/AutoRecruitmentCopyToolsDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AutoRecruitmentCopyUnitsDialog",
+      "imported": "AutoRecruitmentCopyUnitsDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/AutoRecruitmentCopyUnitsDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

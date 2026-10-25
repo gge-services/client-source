@@ -12,34 +12,52 @@
   "dependencies": [
     {
       "specifier": "gge-module:export_CastleCommand",
-      "source": "exports/CastleCommand.js",
-      "imported": "CastleCommand"
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_ClientConstSF",
-      "source": "exports/ClientConstSF.js",
-      "imported": "ClientConstSF"
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
-      "specifier": "ggs.dll:export:ERROR",
-      "source": "ggs.dll/modules/exports/ERROR.js",
+      "specifier": "gge-module:exact_26a421b704832cff",
       "imported": "ERROR",
-      "confidence": "unique-member-and-export"
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
     },
     {
       "specifier": "gge-module:export_WorldmapObjectFactory",
-      "source": "exports/WorldmapObjectFactory.js",
-      "imported": "WorldmapObjectFactory"
+      "imported": "WorldmapObjectFactory",
+      "bundle": "Game.bundle",
+      "path": "exports/WorldmapObjectFactory.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_SkipCooldownEvent",
-      "source": "exports/SkipCooldownEvent.js",
-      "imported": "SkipCooldownEvent"
+      "imported": "SkipCooldownEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/SkipCooldownEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_CastleMinuteSkipEvent",
-      "source": "exports/CastleMinuteSkipEvent.js",
-      "imported": "CastleMinuteSkipEvent"
+      "imported": "CastleMinuteSkipEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleMinuteSkipEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     }
   ],
   "renamed": [

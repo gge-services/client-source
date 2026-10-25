@@ -12,39 +12,60 @@
   "dependencies": [
     {
       "specifier": "gge-module:export_CastleCommand",
-      "source": "exports/CastleCommand.js",
-      "imported": "CastleCommand"
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_ClientConstSF",
-      "source": "exports/ClientConstSF.js",
-      "imported": "ClientConstSF"
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
-      "specifier": "ggs.dll:export:ERROR",
-      "source": "ggs.dll/modules/exports/ERROR.js",
+      "specifier": "gge-module:exact_26a421b704832cff",
       "imported": "ERROR",
-      "confidence": "unique-member-and-export"
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
     },
     {
       "specifier": "gge-module:export_AutoRecruitmentEvent",
-      "source": "exports/AutoRecruitmentEvent.js",
-      "imported": "AutoRecruitmentEvent"
+      "imported": "AutoRecruitmentEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/AutoRecruitmentEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_CastleDialogHandler",
-      "source": "exports/CastleDialogHandler.js",
-      "imported": "CastleDialogHandler"
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_AutoRecruitmentBuyRecruitmentSlots",
-      "source": "exports/AutoRecruitmentBuyRecruitmentSlots.js",
-      "imported": "AutoRecruitmentBuyRecruitmentSlots"
+      "imported": "AutoRecruitmentBuyRecruitmentSlots",
+      "bundle": "Game.bundle",
+      "path": "exports/AutoRecruitmentBuyRecruitmentSlots.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_AutoRecruitmentBuyRecruitmentSlotsProperties",
-      "source": "exports/AutoRecruitmentBuyRecruitmentSlotsProperties.js",
-      "imported": "AutoRecruitmentBuyRecruitmentSlotsProperties"
+      "imported": "AutoRecruitmentBuyRecruitmentSlotsProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/AutoRecruitmentBuyRecruitmentSlotsProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     }
   ],
   "renamed": [

@@ -10,13 +10,19 @@
   "dependencies": [
     {
       "specifier": "gge-module:export_FNMCommand",
-      "source": "exports/FNMCommand.js",
-      "imported": "FNMCommand"
+      "imported": "FNMCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/FNMCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     },
     {
       "specifier": "gge-module:export_ClientConstSF",
-      "source": "exports/ClientConstSF.js",
-      "imported": "ClientConstSF"
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
     }
   ],
   "renamed": [

@@ -22,6 +22,8 @@ export class GCCCommand extends CastleDispatchingCommand {
     return CastleServerMessageArrivedEvent.GCC_ARRIVED;
   }
   set eventType(value) {
-    super.eventType = value;
+    if (!Reflect.set(Object.getPrototypeOf(GCCCommand.prototype), "eventType", value, this)) {
+      throw new TypeError("Inherited accessor is not writable");
+    }
   }
 }

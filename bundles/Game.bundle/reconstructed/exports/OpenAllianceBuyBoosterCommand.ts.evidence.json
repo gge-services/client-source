@@ -1,0 +1,150 @@
+{
+  "sourceHash": "fcbb84773978b7eb9549bcc53ca139335f754f022a047e2312c694c1346a9633",
+  "generatedHash": "161b477ce1bcfa60e00745efbedf04533d8bc3eba7d6d760c6d3688c9e55d48c",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:layoutManager"
+  ],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "TimeStringHelper",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/TimeStringHelper.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:TimeStringHelper",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "Localize",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/Localize.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:Localize",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_AllianceBuffData",
+      "imported": "AllianceBuffData",
+      "bundle": "Game.bundle",
+      "path": "exports/AllianceBuffData.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "GenericTextIds",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/GenericTextIds.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:GenericTextIds",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "AllianceConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/AllianceConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:AllianceConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_AllianceRaidConst",
+      "imported": "AllianceRaidConst",
+      "bundle": "Game.bundle",
+      "path": "exports/AllianceRaidConst.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAllianceBuyCustomizableBoostDialog",
+      "imported": "CastleAllianceBuyCustomizableBoostDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAllianceBuyCustomizableBoostDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAllianceBuyCustomizableBoostDialogProperties",
+      "imported": "CastleAllianceBuyCustomizableBoostDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAllianceBuyCustomizableBoostDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAllianceBuyTemporaryBoostExternalDialog",
+      "imported": "CastleAllianceBuyTemporaryBoostExternalDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAllianceBuyTemporaryBoostExternalDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAllianceBuyTemporaryBoostDialogProperties",
+      "imported": "CastleAllianceBuyTemporaryBoostDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAllianceBuyTemporaryBoostDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAllianceBuyStandardBoostDialog",
+      "imported": "CastleAllianceBuyStandardBoostDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAllianceBuyStandardBoostDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAllianceBuyBoostDialogProperties",
+      "imported": "CastleAllianceBuyBoostDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAllianceBuyBoostDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

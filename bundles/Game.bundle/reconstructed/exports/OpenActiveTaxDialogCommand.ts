@@ -1,0 +1,34 @@
+import { C2SGetTaxInfoVO } from "./C2SGetTaxInfoVO";
+import { CastleBasicController } from "./CastleBasicController";
+import { CastleCharacterYesNoOKDialog } from "./CastleCharacterYesNoOKDialog";
+import { CastleCharacterYesNoOKDialogProperties } from "./CastleCharacterYesNoOKDialogProperties";
+import { CastleCollectTaxProgressDialog } from "./CastleCollectTaxProgressDialog";
+import { CastleCollectTaxStartDialog } from "./CastleCollectTaxStartDialog";
+import { CastleCollectTaxStartDialogProperties } from "./CastleCollectTaxStartDialogProperties";
+import { CastleDialogHandler } from "./CastleDialogHandler";
+import { CastleModel } from "./CastleModel";
+import { CastleServerMessageArrivedEvent } from "./CastleServerMessageArrivedEvent";
+import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { TaxInfoVO } from "./TaxInfoVO";
+export class OpenActiveTaxDialogCommand extends SimpleCommand {
+  execute(__s5param0 = null) {
+    switch (CastleModel.taxData.taxInfoVO.taxState) {
+      case TaxInfoVO.TAXSTATUS_NONE:
+        CastleBasicController.getInstance().addEventListener(CastleServerMessageArrivedEvent.TXI_ARRIVED, this.bindFunction(this.onTXIArrivedForTaxStatusNone));
+        CastleModel.smartfoxClient.sendCommandVO(new C2SGetTaxInfoVO());
+        break;
+      case TaxInfoVO.TAXSTATUS_COLLECTING:
+      case TaxInfoVO.TAXSTATUS_WAIT_FOR_COLLECT:
+        CastleDialogHandler.getInstance().registerDefaultDialogs(CastleCollectTaxProgressDialog);
+    }
+  }
+  onTXIArrivedForTaxStatusNone(__s8param0) {
+    CastleBasicController.getInstance().removeEventListener(CastleServerMessageArrivedEvent.TXI_ARRIVED, this.bindFunction(this.onTXIArrivedForTaxStatusNone));
+    if (CastleModel.taxData.taxInfoVO.population > 0) {
+      CastleDialogHandler.getInstance().registerDefaultDialogs(CastleCollectTaxStartDialog, new CastleCollectTaxStartDialogProperties());
+    } else {
+      CastleDialogHandler.getInstance().registerDefaultDialogs(CastleCharacterYesNoOKDialog, new CastleCharacterYesNoOKDialogProperties(Localize.text("generic_alert_warning"), Localize.text("alert_nofolk_copy"), 2, null, null, false));
+    }
+  }
+}

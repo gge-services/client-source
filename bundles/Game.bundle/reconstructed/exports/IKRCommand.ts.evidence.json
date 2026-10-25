@@ -1,0 +1,85 @@
+{
+  "sourceHash": "03f199a53ecc5f62daaed7d6383933ed2388c8102f9fb750a746537f2199764d",
+  "generatedHash": "759dfdc3429ed9df579d93d15857c7b869e47bc2d8220e7edcedef83dab8a612",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "ERROR",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldIsland",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldIsland.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldIsland",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_C2SKingdomPayInfoVO",
+      "imported": "C2SKingdomPayInfoVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SKingdomPayInfoVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SGetBookmarkList",
+      "imported": "C2SGetBookmarkList",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SGetBookmarkList.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleEilandEvent",
+      "imported": "CastleEilandEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleEilandEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [
+    "value"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

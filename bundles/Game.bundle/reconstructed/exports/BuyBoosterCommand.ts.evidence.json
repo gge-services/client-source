@@ -1,0 +1,130 @@
+{
+  "sourceHash": "1bbfc2ddf9a6f644cd714fcee14e6e3efcc43142ec2e3914d0893d041c0aa27c",
+  "generatedHash": "b74b68a679a048c2a4bae1256051c93cf16169732276ea1d2037afa494dca818",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleNoMoneyC2Dialog",
+      "imported": "CastleNoMoneyC2Dialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleNoMoneyC2Dialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleNoMoneyC2DialogProperties",
+      "imported": "CastleNoMoneyC2DialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleNoMoneyC2DialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "BoosterConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BoosterConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:BoosterConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_C2SInstructorStartVO",
+      "imported": "C2SInstructorStartVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SInstructorStartVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SMarauderStartVO",
+      "imported": "C2SMarauderStartVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SMarauderStartVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SOverseerStartVO",
+      "imported": "C2SOverseerStartVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SOverseerStartVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePremiumBoostData",
+      "imported": "CastlePremiumBoostData",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePremiumBoostData.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicController.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SCaravanOverloaderStartVO",
+      "imported": "C2SCaravanOverloaderStartVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SCaravanOverloaderStartVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

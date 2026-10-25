@@ -1,0 +1,33 @@
+{
+  "sourceHash": "270e5bc81f1bc2ab8fd04fc464db5c7ebdb8b8be8bc929dd986c0dda3a270af5",
+  "generatedHash": "a048fa975d7852caa863e4342e9e99c28506440e8679ef76a0e7003ca70e091a",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "initAdditionalServer",
+    "createInstanceVO_EM"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicClientCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicClientCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicClientCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "TestInstanceVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/TestInstanceVO.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:TestInstanceVO",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

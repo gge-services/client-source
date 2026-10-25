@@ -1,0 +1,23 @@
+{
+  "sourceHash": "1a96ebe14b4c8632b660a4f2204c6a73dfa5131a6d0e8e90933aca5097853c1a",
+  "generatedHash": "f215a0c223c0f36b5cff4bc8db65c35382089fd0b7cecd24c741d921c23ccda7",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicCommand",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 0,
+  "fullRuntimeEquivalent": false
+}

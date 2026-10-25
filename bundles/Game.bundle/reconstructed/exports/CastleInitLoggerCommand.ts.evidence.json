@@ -1,0 +1,23 @@
+{
+  "sourceHash": "da877f4f059b3436d2f3345ebf08363ded90987c02fe6c9951e1167455bf6508",
+  "generatedHash": "cc582160b0744c4c349a1da0add32ff19b42df79d69c51114ac5333fbd087799",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "configureLogger"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicInitLoggerCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicInitLoggerCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicInitLoggerCommand",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

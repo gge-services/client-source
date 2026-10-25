@@ -1,0 +1,104 @@
+{
+  "sourceHash": "f59e78b3491b279dcd4e8a4874ed9ca6bf8a94146c141c3289aec204849c32fc",
+  "generatedHash": "df4b61403c17b9e3973b77f03c2edad6021e02cb47e3b32de9eca2d42f2ccf62",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "imported": "CastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "ERROR",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ERROR.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ERROR",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_SpecialServerHelper",
+      "imported": "SpecialServerHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/SpecialServerHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_UserSocialLoginMigrationHelper",
+      "imported": "UserSocialLoginMigrationHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/UserSocialLoginMigrationHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "EnvGlobalsHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EnvGlobalsHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:EnvGlobalsHandler",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleChangePasswordForSocialMigrationConfirmedDialog",
+      "imported": "CastleChangePasswordForSocialMigrationConfirmedDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleChangePasswordForSocialMigrationConfirmedDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTutorialSpotlight",
+      "imported": "CastleTutorialSpotlight",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/CastleTutorialSpotlight.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleChangePasswordForSocialMigrationDialog",
+      "imported": "CastleChangePasswordForSocialMigrationDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleChangePasswordForSocialMigrationDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}
