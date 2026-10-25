@@ -3,6 +3,7 @@ import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { LinkReceivedEvent } from "./LinkReceivedEvent";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GILCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_INSTANCE_LINK;
@@ -25,3 +26,4 @@ export class GILCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(GILCommand, "IExecCommand");

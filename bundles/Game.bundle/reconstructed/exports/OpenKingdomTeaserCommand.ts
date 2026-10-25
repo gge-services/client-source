@@ -5,6 +5,7 @@ import { CastleKingdomTeaserDialog } from "./CastleKingdomTeaserDialog";
 import { CastleModel } from "./CastleModel";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenKingdomTeaserCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     var __s5local0;
@@ -24,3 +25,4 @@ export class OpenKingdomTeaserCommand extends SimpleCommand {
     CastleDialogHandler.getInstance().registerDefaultDialogs(CastleKingdomTeaserDialog, __s5local2);
   }
 }
+classImplementsInterfaces(OpenKingdomTeaserCommand, "ISimpleCommand");

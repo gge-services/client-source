@@ -1,6 +1,6 @@
 {
   "sourceHash": "1716d2c2fdfbae5af8747ef5e91f4dc2eb63c5419fde55503b8ccc53e3295340",
-  "generatedHash": "3db1b68887e2976ef7e85163c93209b9537a516e4dd4ef9a5e2010f52bbbadab",
+  "generatedHash": "5576febdb8371ccfe9aff9588d9c9f0ce08f6e97e3bc3332c4119039332c8b88",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -50,6 +50,15 @@
       "path": "exports/CastleAllianceDataEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -58,6 +67,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

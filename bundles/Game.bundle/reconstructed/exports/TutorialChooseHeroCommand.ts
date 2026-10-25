@@ -1,6 +1,7 @@
 import { CastleChooseHeroDialog } from "./CastleChooseHeroDialog";
 import { CastleDialogHandler } from "./CastleDialogHandler";
 import { TutorialBasicActionCommand } from "./TutorialBasicActionCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TutorialChooseHeroCommand extends TutorialBasicActionCommand {
   internalExecute() {
     this.filter.replace(CastleChooseHeroDialog);
@@ -11,3 +12,4 @@ export class TutorialChooseHeroCommand extends TutorialBasicActionCommand {
     this.tutorialController.waitForDialogHide(CastleChooseHeroDialog, this.bindFunction(this.finishStep));
   }
 }
+classImplementsInterfaces(TutorialChooseHeroCommand, "ISimpleCommand");

@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GRCCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_CASTLE_RESOURCES;
@@ -28,3 +29,4 @@ export class GRCCommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(GRCCommand, "IExecCommand");

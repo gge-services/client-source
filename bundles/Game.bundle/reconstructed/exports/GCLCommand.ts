@@ -3,6 +3,7 @@ import { CastleDataHolder } from "./CastleDataHolder";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GCLCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_CASTLELIST;
@@ -24,3 +25,4 @@ export class GCLCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(GCLCommand, "IExecCommand");

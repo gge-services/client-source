@@ -8,6 +8,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { EnvGlobalsHandler } from "../../../ggs.dll/reconstructed/exports/EnvGlobalsHandler";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TGTCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_TREASUREMAP_GOODS_TRANSFER;
@@ -33,3 +34,4 @@ export class TGTCommand extends CastleCommand {
     return true;
   }
 }
+classImplementsInterfaces(TGTCommand, "IExecCommand");

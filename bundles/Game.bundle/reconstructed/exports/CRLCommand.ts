@@ -1,5 +1,6 @@
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CRLCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.C2S_CANCEL_RECRUITMENT_LOOP;
@@ -11,3 +12,4 @@ export class CRLCommand extends CastleCommand {
     return true;
   }
 }
+classImplementsInterfaces(CRLCommand, "IExecCommand");

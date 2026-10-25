@@ -10,6 +10,7 @@ import { instanceOfClass } from "../../../ggs.dll/reconstructed/exports/instance
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenEventAnnouncementDialogCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     if (!__s5param0 || !instanceOfClass(__s5param0, "MessageEventAnnouncementVO")) {
@@ -33,3 +34,4 @@ export class OpenEventAnnouncementDialogCommand extends SimpleCommand {
     }
   }
 }
+classImplementsInterfaces(OpenEventAnnouncementDialogCommand, "ISimpleCommand");

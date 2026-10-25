@@ -5,6 +5,7 @@ import { EnvGlobalsHandler } from "../../../ggs.dll/reconstructed/exports/EnvGlo
 import { info } from "../../../ggs.dll/reconstructed/exports/info";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { TimezoneUtil } from "../../../ggs.dll/reconstructed/exports/TimezoneUtil";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleSocialLoginCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     BasicController.getInstance().onLogIn();
@@ -26,3 +27,4 @@ export class CastleSocialLoginCommand extends SimpleCommand {
     BasicModel.smartfoxClient.sendMessage(BasicSmartfoxConstants.C2S_NEW_LOGIN_SOCIAL, __s5local0);
   }
 }
+classImplementsInterfaces(CastleSocialLoginCommand, "ISimpleCommand");

@@ -1,6 +1,6 @@
 {
   "sourceHash": "5bd998fd1cd369f9ef365bbf0a646e32feadec55ecdf4d4ebda6fa479e2e0ea6",
-  "generatedHash": "203854325ddb37090953487b59d62db461df58725b8e1ffc15d8d19951774435",
+  "generatedHash": "e469b1ef22cc3d130687af825af21e4b0cb13fd65b6e0750f124559e33d79267",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -50,11 +50,22 @@
       "path": "exports/CastleMilitaryDataEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

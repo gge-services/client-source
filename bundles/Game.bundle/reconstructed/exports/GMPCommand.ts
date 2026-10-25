@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { CastleMonumentProgressEvent } from "./CastleMonumentProgressEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GMPCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_MONUMENT_PROGRESS;
@@ -23,3 +24,4 @@ export class GMPCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(GMPCommand, "IExecCommand");

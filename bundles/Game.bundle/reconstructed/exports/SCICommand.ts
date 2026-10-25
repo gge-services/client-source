@@ -3,6 +3,7 @@ import { CastleMinuteSkipEvent } from "./CastleMinuteSkipEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { debug } from "../../../ggs.dll/reconstructed/exports/debug";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SCICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_MINUTE_SKIP_CRAFTING;
@@ -24,3 +25,4 @@ export class SCICommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(SCICommand, "IExecCommand");

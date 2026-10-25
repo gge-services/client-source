@@ -1,6 +1,6 @@
 {
   "sourceHash": "f06b19883473084376ede3400496bf3d9997730fbbf913b7da69a196539eeef4",
-  "generatedHash": "15f7d79aa5fc1ba39eefb1846ac68eef65c987ec89a7b11bef8a6f750018782b",
+  "generatedHash": "c068b387dc261148ec14da37c1d11afc457db135db1dd16a3aef1288763fb83e",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -50,6 +50,15 @@
       "path": "exports/CastleResourceMerchantEventBuyDialog.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -58,6 +67,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

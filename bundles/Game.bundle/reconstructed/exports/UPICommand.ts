@@ -9,6 +9,7 @@ import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { ExternalInterface } from "../../../ggs.dll/reconstructed/exports/ExternalInterface";
 import { GamesightEventConstants } from "./GamesightEventConstants";
 import { GameSightPayloadVO } from "./GameSightPayloadVO";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class UPICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_PAYMENT_INFO;
@@ -49,3 +50,4 @@ export class UPICommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(UPICommand, "IExecCommand");

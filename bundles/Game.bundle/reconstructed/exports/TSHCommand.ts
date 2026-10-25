@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { TempServerHelper } from "./TempServerHelper";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TSHCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_TEMPORARY_SERVER_HIGHSCORE;
@@ -23,3 +24,4 @@ export class TSHCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(TSHCommand, "IExecCommand");

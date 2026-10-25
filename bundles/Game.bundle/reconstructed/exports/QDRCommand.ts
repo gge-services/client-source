@@ -1,6 +1,7 @@
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class QDRCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_QUEST_DONATE_RESOURCES;
@@ -18,3 +19,4 @@ export class QDRCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(QDRCommand, "IExecCommand");

@@ -1,6 +1,6 @@
 {
   "sourceHash": "e543a405cd3199f7d856cf35f1555053b0c385c4b9ffcdd7615806b6cb9b4843",
-  "generatedHash": "7d553e368dc5058627476cf458fa870ef8ebe9a460d724d9cead7be80a536f47",
+  "generatedHash": "05b7294314774d0b57e5780f129767456df08222ed473c5f4a9821d30ea40b59",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -175,6 +175,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 0,
   "removedRuntimeInterfaceCalls": 0,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

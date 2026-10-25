@@ -4,6 +4,7 @@ import { CastleMailGiftDialog } from "./CastleMailGiftDialog";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class LVBCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_EMAIL_VERIFIED_POPUP;
@@ -23,3 +24,4 @@ export class LVBCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(LVBCommand, "IExecCommand");

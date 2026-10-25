@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleServerMessageArrivedEvent } from "./CastleServerMessageArrivedEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CPECommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_ALLIANCE_CENTERS_OF_POWER;
@@ -21,3 +22,4 @@ export class CPECommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(CPECommand, "IExecCommand");

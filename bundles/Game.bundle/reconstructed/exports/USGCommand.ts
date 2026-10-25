@@ -4,6 +4,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { EventConst } from "../../../ggs.dll/reconstructed/exports/EventConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class USGCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SEEN_GLOBAL_EFFECTS;
@@ -26,3 +27,4 @@ export class USGCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(USGCommand, "IExecCommand");

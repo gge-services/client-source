@@ -4,6 +4,7 @@ import { CastleServerMessageArrivedEvent } from "./CastleServerMessageArrivedEve
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { NetworkInstance } from "../../../ggs.dll/reconstructed/exports/NetworkInstance";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GLTCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_TEMPORARY_SERVER_LOGIN_TOKEN;
@@ -40,3 +41,4 @@ export class GLTCommand extends CastleCommand {
     return __s12local0;
   }
 }
+classImplementsInterfaces(GLTCommand, "IExecCommand");

@@ -14,6 +14,7 @@ import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { TimeStringHelper } from "../../../ggs.dll/reconstructed/exports/TimeStringHelper";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenAllianceBuyBoosterCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     var __s5local0;
@@ -122,3 +123,4 @@ export class OpenAllianceBuyBoosterCommand extends SimpleCommand {
     return CastleLayoutManager.getInstance();
   }
 }
+classImplementsInterfaces(OpenAllianceBuyBoosterCommand, "ISimpleCommand");

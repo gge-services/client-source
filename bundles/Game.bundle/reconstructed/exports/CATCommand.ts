@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CATCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_CREATE_ARMY_TRAVEL_MOVEMENT;
@@ -23,3 +24,4 @@ export class CATCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(CATCommand, "IExecCommand");

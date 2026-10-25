@@ -11,6 +11,7 @@ import { CommKeys } from "../../../ggs.dll/reconstructed/exports/CommKeys";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { EventConst } from "../../../ggs.dll/reconstructed/exports/EventConst";
 import { ShoppingCartConst } from "../../../ggs.dll/reconstructed/exports/ShoppingCartConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SPRCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SHOPPING_CART_REWARD;
@@ -46,3 +47,4 @@ export class SPRCommand extends CastleCommand {
     return true;
   }
 }
+classImplementsInterfaces(SPRCommand, "IExecCommand");

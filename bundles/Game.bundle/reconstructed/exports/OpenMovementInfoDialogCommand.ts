@@ -16,6 +16,7 @@ import { CastleSpyInfoDialog } from "./CastleSpyInfoDialog";
 import { CastleSpyInfoDialogProperties } from "./CastleSpyInfoDialogProperties";
 import { instanceOfClass } from "../../../ggs.dll/reconstructed/exports/instanceOfClass";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenMovementInfoDialogCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     var __s5local0 = castAs(__s5param0, "IMapMovementVO");
@@ -50,3 +51,4 @@ export class OpenMovementInfoDialogCommand extends SimpleCommand {
     }
   }
 }
+classImplementsInterfaces(OpenMovementInfoDialogCommand, "ISimpleCommand");

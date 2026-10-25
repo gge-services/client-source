@@ -10,6 +10,7 @@ import { CollectableHelper } from "./CollectableHelper";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { ModernYesNoDialog } from "./ModernYesNoDialog";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class DonateForQuestCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     this.questVO = __s5param0[0];
@@ -88,3 +89,4 @@ export class DonateForQuestCommand extends SimpleCommand {
     return BasicController.getInstance();
   }
 }
+classImplementsInterfaces(DonateForQuestCommand, "ISimpleCommand");

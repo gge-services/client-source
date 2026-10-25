@@ -28,6 +28,7 @@ import { ModernPackageShopResourceTipEnum } from "./ModernPackageShopResourceTip
 import { OutpostConst } from "../../../ggs.dll/reconstructed/exports/OutpostConst";
 import { SpecialServerHelper } from "./SpecialServerHelper";
 import { TimeStringHelper } from "../../../ggs.dll/reconstructed/exports/TimeStringHelper";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleHandleServerErrorCommand extends BasicHandleServerErrorCommand {
   handleGameSpecificServerError(__s5param0) {
     var __s5local0 = int(__s5param0.error);
@@ -141,3 +142,4 @@ export class CastleHandleServerErrorCommand extends BasicHandleServerErrorComman
     }
   }
 }
+classImplementsInterfaces(CastleHandleServerErrorCommand, "ISimpleCommand");

@@ -11,7 +11,7 @@ export async function auditTsProject(root,target) {
   const game=JSON.parse(await readFile(join(root,'bundles/Game.bundle/manifest.json'),'utf8'))
   const dll=JSON.parse(await readFile(join(root,'bundles/ggs.dll/manifest.json'),'utf8'))
   const recovered=new Set(coverage.succeeded.map(x=>x.name))
-  const gameSource=new Map(game.modules.map(x=>[x.path,x]))
+  const gameSource=new Map([...game.modules,...(game.symbolViews??[])].map(x=>[x.path,x]))
   const dllSource=new Map([...dll.modules,...(dll.symbolViews??[])].map(x=>[x.path,x]))
   const filenames=[],missing=new Map(),unknown=[]
   const compiled=new Map()
@@ -49,7 +49,7 @@ export async function auditTsProject(root,target) {
     await writeFile(destination+'.d.ts','export declare const '+entry.name+': any;\n')
   }
   const globals=join(target,'compatibility-globals.d.ts')
-  await writeFile(globals,'interface Date { time: number }\ninterface Window { grecaptcha: any; ggs: any }\ninterface ArrayConstructor { NUMERIC: number; DESCENDING: number }\n')
+  await writeFile(globals,'interface Date { time: number; day: number }\ninterface Window { grecaptcha: any; ggs: any; bugsnagClient: any }\ninterface ArrayConstructor { NUMERIC: number; DESCENDING: number }\ndeclare const createjs: any\ndeclare const CONSTRUCTOR_HACK: any\n')
   const emit=process.argv.includes('--emit')
   const program=ts.createProgram([...filenames,globals],{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2015,noEmit:!emit,skipLibCheck:true,strict:false,noEmitOnError:true,...(emit?{outDir:join(target,'compiled')}:{})})
   const errors=ts.getPreEmitDiagnostics(program)

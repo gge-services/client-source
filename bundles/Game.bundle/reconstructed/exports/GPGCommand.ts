@@ -9,6 +9,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { PackageConst } from "../../../ggs.dll/reconstructed/exports/PackageConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GPGCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GRANT_PLAYERGIFT;
@@ -30,3 +31,4 @@ export class GPGCommand extends CastleCommand {
     return true;
   }
 }
+classImplementsInterfaces(GPGCommand, "IExecCommand");

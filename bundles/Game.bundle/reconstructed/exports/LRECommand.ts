@@ -16,6 +16,7 @@ import { GGSCountryController } from "../../../ggs.dll/reconstructed/exports/GGS
 import { IdentityManagementConstants } from "../../../ggs.dll/reconstructed/exports/IdentityManagementConstants";
 import { IngameClientCommands } from "./IngameClientCommands";
 import { JavascriptCallOnRegisterCompleteFactory } from "../../../ggs.dll/reconstructed/exports/JavascriptCallOnRegisterCompleteFactory";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class LRECommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_REGISTER;
@@ -110,3 +111,4 @@ export class LRECommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(LRECommand, "IExecCommand");

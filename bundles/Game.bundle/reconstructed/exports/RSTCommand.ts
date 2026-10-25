@@ -8,6 +8,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { TimeStringHelper } from "../../../ggs.dll/reconstructed/exports/TimeStringHelper";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class RSTCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.C2S_START_RELOCATION;
@@ -30,3 +31,4 @@ export class RSTCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(RSTCommand, "IExecCommand");

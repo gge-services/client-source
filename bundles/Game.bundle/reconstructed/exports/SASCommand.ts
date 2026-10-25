@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SASCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_UPDATE_PREDEFINED_ATTACK_SETUP;
@@ -20,3 +21,4 @@ export class SASCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(SASCommand, "IExecCommand");

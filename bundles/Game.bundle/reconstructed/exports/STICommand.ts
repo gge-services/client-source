@@ -10,6 +10,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ClientConstTextIds } from "./ClientConstTextIds";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class STICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_TROOP_SUPPORT_INFO;
@@ -34,3 +35,4 @@ export class STICommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(STICommand, "IExecCommand");

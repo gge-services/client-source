@@ -5,6 +5,7 @@ import { CastleArtifactFoundPieceDialog } from "./CastleArtifactFoundPieceDialog
 import { CastleArtifactFoundTreasureDialog } from "./CastleArtifactFoundTreasureDialog";
 import { CastleDialogHandler } from "./CastleDialogHandler";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenSpecialEventProgressCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     var __s5local0 = castAs(__s5param0[0], "ArtifactEventVO");
@@ -17,3 +18,4 @@ export class OpenSpecialEventProgressCommand extends SimpleCommand {
     }
   }
 }
+classImplementsInterfaces(OpenSpecialEventProgressCommand, "ISimpleCommand");

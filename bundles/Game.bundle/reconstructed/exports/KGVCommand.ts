@@ -3,6 +3,7 @@ import { CastleDataHolder } from "./CastleDataHolder";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class KGVCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_KINGDOM_GET_VILLAGE_LIST;
@@ -24,3 +25,4 @@ export class KGVCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(KGVCommand, "IExecCommand");

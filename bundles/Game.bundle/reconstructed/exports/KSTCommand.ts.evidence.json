@@ -1,6 +1,6 @@
 {
   "sourceHash": "0dadef833d357815160910d715e0612ab948125e8952974b69c3a01f2c1fe5fa",
-  "generatedHash": "dbe556b6a7fe386cc0c99a555a79f1e335a4ec8b05ca7992934d0643d5ba825d",
+  "generatedHash": "3b9de9c0ad5b461b85259b92d16ccd8556a7f96855154e092d7b9a791001ca11",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -50,6 +50,15 @@
       "path": "exports/CastleKingdomEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -58,6 +67,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

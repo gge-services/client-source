@@ -3,6 +3,7 @@ import { AdvisorAttackOverviewVO } from "./AdvisorAttackOverviewVO";
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class AAOCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ATTACK_ADVISOR_OVERVIEW_EVENT;
@@ -24,3 +25,4 @@ export class AAOCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(AAOCommand, "IExecCommand");

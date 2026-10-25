@@ -1,4 +1,5 @@
 import { TutorialBasicActionCommand } from "./TutorialBasicActionCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TutorialBasicQuestActionCommand extends TutorialBasicActionCommand {
   internalExecute() {
     this.filter.replace(this.getDialogClass());
@@ -21,3 +22,4 @@ export class TutorialBasicQuestActionCommand extends TutorialBasicActionCommand 
     return null;
   }
 }
+classImplementsInterfaces(TutorialBasicQuestActionCommand, "ISimpleCommand");

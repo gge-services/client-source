@@ -1,6 +1,6 @@
 {
   "sourceHash": "e54a90ed29a90736e7c3c4725eeb93b4fe0470d5d08581ed833ab71bd5f5e082",
-  "generatedHash": "8a463fe1a0e7731cd47478a054d8b99fa8cf1ffd5e06eea74343a42ceadbdf71",
+  "generatedHash": "f7948a0614953db8ed50330f02fab911a30dce0d6f24c6d834cb1700f2458e48",
   "constructor": "implicit-super",
   "accessors": [],
   "methods": [
@@ -69,9 +69,20 @@
       "moduleId": "29",
       "moduleIdentity": "ggs.dll:export:BasicSmartfoxConstants",
       "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

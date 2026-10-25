@@ -10,6 +10,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { TeaserVO } from "./TeaserVO";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class FWDCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SHOW_WELCOMEDATA;
@@ -50,3 +51,4 @@ export class FWDCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(FWDCommand, "IExecCommand");

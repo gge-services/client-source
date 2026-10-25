@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { CastleTreasureMapEvent } from "./CastleTreasureMapEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TUTCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_TREASUREMAP_UNIT_TRANSFER;
@@ -23,3 +24,4 @@ export class TUTCommand extends CastleCommand {
     return true;
   }
 }
+classImplementsInterfaces(TUTCommand, "IExecCommand");

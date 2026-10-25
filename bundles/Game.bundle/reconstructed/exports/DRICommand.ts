@@ -6,6 +6,7 @@ import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { UnitProductionConst } from "../../../ggs.dll/reconstructed/exports/UnitProductionConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class DRICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_DUPLICATE_RECRUITMENT_INFO;
@@ -34,3 +35,4 @@ export class DRICommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(DRICommand, "IExecCommand");

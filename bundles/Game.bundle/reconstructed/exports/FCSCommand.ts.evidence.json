@@ -1,6 +1,6 @@
 {
   "sourceHash": "fb8a0414440311f74c783a23bef61bfb73a2144a6f6e59076d4b46048a81a5e1",
-  "generatedHash": "e06caf13758b1ffeab7e3abf24449cfdd65c419604aa5b73006edebed675777f",
+  "generatedHash": "d5a45724ac5e932d85b8e7c6fa2dfb6aed0ad6037b91ba626e7fe2fdaf3d139e",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -130,6 +130,15 @@
       "moduleId": "29",
       "moduleIdentity": "ggs.dll:export:BasicStandardOkDialogProperties",
       "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -138,6 +147,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

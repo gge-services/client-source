@@ -12,6 +12,7 @@ import { CastlePremiumBoostData } from "./CastlePremiumBoostData";
 import { ClientConstSF } from "./ClientConstSF";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class BuyBoosterCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     var __s5local0 = __s5param0;
@@ -56,3 +57,4 @@ export class BuyBoosterCommand extends SimpleCommand {
     }
   }
 }
+classImplementsInterfaces(BuyBoosterCommand, "ISimpleCommand");

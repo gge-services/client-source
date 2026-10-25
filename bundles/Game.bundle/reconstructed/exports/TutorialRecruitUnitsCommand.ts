@@ -6,6 +6,7 @@ import { ClientConstCastle } from "./ClientConstCastle";
 import { RecruitPanelButton } from "./RecruitPanelButton";
 import { TutorialAbstractMilitaryCommand } from "./TutorialAbstractMilitaryCommand";
 import { WorldClassic } from "../../../ggs.dll/reconstructed/exports/WorldClassic";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TutorialRecruitUnitsCommand extends TutorialAbstractMilitaryCommand {
   getButtonClass() {
     return RecruitPanelButton;
@@ -58,3 +59,4 @@ export class TutorialRecruitUnitsCommand extends TutorialAbstractMilitaryCommand
     return "s_060_050_unit_recruitment_confirmed";
   }
 }
+classImplementsInterfaces(TutorialRecruitUnitsCommand, "ISimpleCommand");

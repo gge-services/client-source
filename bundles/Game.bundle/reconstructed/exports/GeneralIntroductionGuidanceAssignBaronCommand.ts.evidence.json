@@ -1,6 +1,6 @@
 {
   "sourceHash": "2659ef71317345e9df8de3245bf95dc23879b88702fc0f1dc576262ba0e3efd9",
-  "generatedHash": "25132a689aa0fe17afec3657871e00cd6121a7607f6143e5a75454185beac0bb",
+  "generatedHash": "d451456887ef314859df617df00c65b668751bf4366c7736a9677a990287e4d0",
   "constructor": "implicit-super",
   "accessors": [
     "get:targetGeneralID",
@@ -60,6 +60,8 @@
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 0,
   "removedRuntimeInterfaceCalls": 0,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

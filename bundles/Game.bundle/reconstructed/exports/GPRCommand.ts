@@ -4,6 +4,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { GlobalServerPreviousRunInfoEvent } from "./GlobalServerPreviousRunInfoEvent";
 import { GlobalServerPreviousRunInfoVO } from "./GlobalServerPreviousRunInfoVO";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GPRCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GLOBAL_SERVER_PREVIOUS_RUN_INFO;
@@ -25,3 +26,4 @@ export class GPRCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(GPRCommand, "IExecCommand");

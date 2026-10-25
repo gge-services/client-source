@@ -16,6 +16,7 @@ import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { UnitProductionConst } from "../../../ggs.dll/reconstructed/exports/UnitProductionConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class BUPCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_BUY_UNIT_PACKAGE;
@@ -67,3 +68,4 @@ export class BUPCommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(BUPCommand, "IExecCommand");

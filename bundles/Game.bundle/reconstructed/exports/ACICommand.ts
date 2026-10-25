@@ -8,6 +8,7 @@ import { CastleStandardOkDialog } from "./CastleStandardOkDialog";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class ACICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_ATTACK_CASTLE_INFOS;
@@ -36,3 +37,4 @@ export class ACICommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(ACICommand, "IExecCommand");

@@ -1,6 +1,7 @@
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class ATDCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ALLIANCE_TOPIC_DELETE;
@@ -19,3 +20,4 @@ export class ATDCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(ATDCommand, "IExecCommand");

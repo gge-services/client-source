@@ -1,6 +1,6 @@
 {
   "sourceHash": "edafbe7e9c8122b7b2a112feae59fa6c9cf40d90c13b26cb28f63ff80d6c1d4c",
-  "generatedHash": "ab7a6d501653aeb17ae143390e51ca102baa2573a135d986f4487fe40cba810b",
+  "generatedHash": "094a8448f3a85b88728664dea398b2c16f01408138fa489bccbb2c8c7e6de0b9",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -50,6 +50,15 @@
       "path": "exports/AdvisorAttackOverviewEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -58,6 +67,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

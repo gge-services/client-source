@@ -3,6 +3,7 @@ import { CastleLuckyWheelGuaranteedJackpotDialog } from "./CastleLuckyWheelGuara
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class LWJCommand extends CastleCommand {
   executeCommand(statusCode, responseFields) {
     switch (statusCode) {
@@ -25,3 +26,4 @@ export class LWJCommand extends CastleCommand {
     super.cmdId = value;
   }
 }
+classImplementsInterfaces(LWJCommand, "IExecCommand");

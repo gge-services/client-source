@@ -4,6 +4,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ClientFunnelTrackingController } from "../../../ggs.dll/reconstructed/exports/ClientFunnelTrackingController";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class QSTCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_QUEST_START;
@@ -29,3 +30,4 @@ export class QSTCommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(QSTCommand, "IExecCommand");

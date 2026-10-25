@@ -1,6 +1,6 @@
 {
   "sourceHash": "9c8a1e55248a388f60f2aaac99d74b425a4879b10553363deb3578698be9e39f",
-  "generatedHash": "0895648d748b1035eb28a4b4220c260045689fc2c7ecdffcffb46831df9f6d30",
+  "generatedHash": "24fa9524ec3a124c95c8069871c9133029ca17557b2356b210b60409cc041081",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -50,11 +50,22 @@
       "path": "exports/CastleRerollAlienSuccessDialog.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

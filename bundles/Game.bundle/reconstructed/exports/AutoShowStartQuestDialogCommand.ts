@@ -3,6 +3,7 @@ import { CastleDialogHandler } from "./CastleDialogHandler";
 import { CastleStartQuestDialog } from "./CastleStartQuestDialog";
 import { CastleStartQuestDialogProperties } from "./CastleStartQuestDialogProperties";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class AutoShowStartQuestDialogCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     var __s5local0 = __s5param0;
@@ -12,3 +13,4 @@ export class AutoShowStartQuestDialogCommand extends SimpleCommand {
     __s5local0.registered = true;
   }
 }
+classImplementsInterfaces(AutoShowStartQuestDialogCommand, "ISimpleCommand");

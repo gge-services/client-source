@@ -1,6 +1,6 @@
 {
   "sourceHash": "33eeefb7448857ee3db79fc6a71d9e9771e0e832721b1114a0118bde93eb0c2c",
-  "generatedHash": "58704aa8ae11307c6c359044e4da62c202b219ffd3f46ca45292f57e3a299cc0",
+  "generatedHash": "b5da40322498f6dfd1ae394ca552daf64abacbb269b0c8ed572f032c010fb838",
   "constructor": "implicit-super",
   "accessors": [],
   "methods": [
@@ -112,9 +112,20 @@
       "path": "exports/CastleLevelUpDialog.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

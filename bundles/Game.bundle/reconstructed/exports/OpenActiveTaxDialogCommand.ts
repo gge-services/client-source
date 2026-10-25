@@ -11,6 +11,7 @@ import { CastleServerMessageArrivedEvent } from "./CastleServerMessageArrivedEve
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { TaxInfoVO } from "./TaxInfoVO";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenActiveTaxDialogCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     switch (CastleModel.taxData.taxInfoVO.taxState) {
@@ -32,3 +33,4 @@ export class OpenActiveTaxDialogCommand extends SimpleCommand {
     }
   }
 }
+classImplementsInterfaces(OpenActiveTaxDialogCommand, "ISimpleCommand");

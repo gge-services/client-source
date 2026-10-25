@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class ABPICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_AREA_BUILDING_PRODUCTION_INFO;
@@ -21,3 +22,4 @@ export class ABPICommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(ABPICommand, "IExecCommand");

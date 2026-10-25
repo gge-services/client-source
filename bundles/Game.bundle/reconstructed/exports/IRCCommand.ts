@@ -4,6 +4,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Iso } from "./Iso";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class IRCCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_RESOURCE_CITIZEN;
@@ -30,3 +31,4 @@ export class IRCCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(IRCCommand, "IExecCommand");

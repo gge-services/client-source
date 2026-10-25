@@ -1,6 +1,7 @@
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class MFBCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_FORWARD_BATTLE_LOG;
@@ -18,3 +19,4 @@ export class MFBCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(MFBCommand, "IExecCommand");

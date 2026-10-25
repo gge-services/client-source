@@ -1,6 +1,6 @@
 {
   "sourceHash": "91b0fdc604f049f0bd117b72225b717d9cfc943cf3737776af61230a5c59d6ae",
-  "generatedHash": "93f0b027bbc7cad9a0b317abdfc268d1861092d5125f201c575d80e3cea06176",
+  "generatedHash": "8dbda627aae5e9fc4fbc0c738f78498f85354e364c78404ace25d6640e8020b9",
   "constructor": "implicit-super",
   "accessors": [],
   "methods": [
@@ -31,9 +31,20 @@
       "path": "exports/CastleQuestConditionEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

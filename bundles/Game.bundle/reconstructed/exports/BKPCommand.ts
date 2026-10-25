@@ -4,6 +4,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { EventConst } from "../../../ggs.dll/reconstructed/exports/EventConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class BKPCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_BUY_BEGGINGKNIGHTS_POINT;
@@ -22,3 +23,4 @@ export class BKPCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(BKPCommand, "IExecCommand");

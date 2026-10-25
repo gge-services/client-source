@@ -5,6 +5,7 @@ import { EnvGlobalsHandler } from "../../../ggs.dll/reconstructed/exports/EnvGlo
 import { IngameClientCommands } from "./IngameClientCommands";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { SpecialServerHelper } from "./SpecialServerHelper";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleFacebookLoginRegistrationCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     CastleModel.localData.saveLoginData("", "");
@@ -14,3 +15,4 @@ export class CastleFacebookLoginRegistrationCommand extends SimpleCommand {
     }
   }
 }
+classImplementsInterfaces(CastleFacebookLoginRegistrationCommand, "ISimpleCommand");

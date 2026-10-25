@@ -1,6 +1,6 @@
 {
   "sourceHash": "54291564fa94b56755db984d2d37bb5d48d3b83605bc8ea7d2a26a08e5fda791",
-  "generatedHash": "20c6262c7cb9a1ea96796b8efcae1a8f9c17982806a7dd0badbc14cdbbedad0c",
+  "generatedHash": "42ffe7d3a70d9c462bc8b30b262f5cc4403ebb7939a61eea52d5da77d20dcc09",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -92,6 +92,15 @@
       "path": "exports/CastleMysteryBoxResultDialogProperties.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -100,6 +109,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

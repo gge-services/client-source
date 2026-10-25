@@ -1,6 +1,7 @@
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class AESCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SET_AUTO_SELL_EQUIPMENT_CONDITIONS;
@@ -18,3 +19,4 @@ export class AESCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(AESCommand, "IExecCommand");

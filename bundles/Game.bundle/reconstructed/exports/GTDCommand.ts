@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GTDCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_TARGET_DECOS_IN_AREA;
@@ -21,3 +22,4 @@ export class GTDCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(GTDCommand, "IExecCommand");

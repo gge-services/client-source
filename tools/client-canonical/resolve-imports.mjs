@@ -12,6 +12,13 @@ export async function createDllResolver(root) {
     readFile(join(root,'bundles/Game.bundle/manifest.json'),'utf8').then(JSON.parse),
     readFile(join(root,'bundles/ggs.dll/manifest.json'),'utf8').then(JSON.parse)
   ])
+  const gameBySpecifier = new Map(game.modules.map(x=>[x.specifier,x]))
+  const gameExports = new Map()
+  for(const item of game.symbolViews??[]){
+    const key=String(item.webpackId)+':'+item.name
+    if(gameExports.has(key))gameExports.set(key,null)
+    else gameExports.set(key,item)
+  }
   const byId = new Map()
   for(const entry of dll.modules) {
     const id = String(entry.webpackId)
@@ -85,8 +92,16 @@ export async function createDllResolver(root) {
 
   const resolve=(specifier,member)=>{
     const named=/^gge-module:export_(.+)$/.exec(specifier)
-    if(named && named[1]===member && game.specifiers[specifier]) {
-      return {specifier,imported:member,bundle:'Game.bundle',path:game.specifiers[specifier],moduleId:null,confidence:'unique-public-export'}
+    if(named){
+      const owner=gameBySpecifier.get(specifier)
+      if(!owner)return null
+      if(named[1]===member && game.specifiers[specifier]){
+        return {specifier,imported:member,bundle:'Game.bundle',path:game.specifiers[specifier],moduleId:null,confidence:'unique-public-export'}
+      }
+      const sibling=gameExports.get(String(owner.webpackId)+':'+member)
+      if(sibling&&sibling.ownerPath===owner.path){
+        return {specifier,imported:member,bundle:'Game.bundle',path:sibling.path.replace(/^modules\//,''),moduleId:owner.webpackId,confidence:'verified-sibling-export'}
+      }
     }
     const wrapper=wrappers.get(specifier)
     if(!wrapper)return null

@@ -8,6 +8,7 @@ import { CastleStandardOkDialog } from "./CastleStandardOkDialog";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class ABGCAMCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_CREATE_ARMY_ATTACK_MOVEMENT_ALLIANCE_BATTLE_GROUND;
@@ -47,3 +48,4 @@ export class ABGCAMCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(ABGCAMCommand, "IExecCommand");

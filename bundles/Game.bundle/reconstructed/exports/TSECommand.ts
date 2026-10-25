@@ -3,6 +3,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { CommKeys } from "../../../ggs.dll/reconstructed/exports/CommKeys";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { GlobalServerConst } from "../../../ggs.dll/reconstructed/exports/GlobalServerConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TSECommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_IS_TEMPORARY_SERVER;
@@ -25,3 +26,4 @@ export class TSECommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(TSECommand, "IExecCommand");

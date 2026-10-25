@@ -6,6 +6,7 @@ import { CastleModel } from "./CastleModel";
 import { CommandController } from "../../../ggs.dll/reconstructed/exports/CommandController";
 import { IngameClientCommands } from "./IngameClientCommands";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleFacebookSwitchToCachedAccountCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     CommandController.instance.executeCommand(BasicController.COMMAND_LOGOUT);
@@ -20,3 +21,4 @@ export class CastleFacebookSwitchToCachedAccountCommand extends SimpleCommand {
     CommandController.instance.executeCommand(IngameClientCommands.INIT_EQUIPMENT_FAVORITES);
   }
 }
+classImplementsInterfaces(CastleFacebookSwitchToCachedAccountCommand, "ISimpleCommand");

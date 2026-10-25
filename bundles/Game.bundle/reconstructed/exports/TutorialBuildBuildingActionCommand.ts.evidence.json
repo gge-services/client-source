@@ -1,0 +1,156 @@
+{
+  "sourceHash": "97ffbe855c752fc4fec3a4ce0f020d9d015853cd6863fed8789592cc670096f7",
+  "generatedHash": "77ef52b549ea98f67822372d466b8e3b54dbd4ea7d95901450c5149dfe8e517b",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "internalExecute",
+    "actionConditionValid",
+    "waitUntilPlayerSwitchToMainCastle",
+    "highlightBuildMenuButtonOnPanel",
+    "onPlayerOpenedBuildMenu",
+    "onDecoShopPanelClose",
+    "waitUntilPlayerDragBuilding",
+    "onPlayerSelectBuildingInBuildMenu",
+    "onPlayerPlacedBuilding",
+    "onCategoryChanged",
+    "onBuildingLost",
+    "onBuildingPositionInvalid",
+    "onBuildingPlacedOnValidPosition",
+    "onRingMenuOpen",
+    "onBuildBuildingComplete",
+    "getMCByBuildingVO",
+    "showTutorialMarker",
+    "removeTutorialMarker",
+    "getBuildingCategory"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_TutorialBasicActionCommand",
+      "imported": "TutorialBasicActionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialBasicActionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_Iso",
+      "imported": "Iso",
+      "bundle": "Game.bundle",
+      "path": "exports/Iso.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_IsoObjectGroupEnum",
+      "imported": "IsoObjectGroupEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/IsoObjectGroupEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_BuildMenuPanelButton",
+      "imported": "BuildMenuPanelButton",
+      "bundle": "Game.bundle",
+      "path": "exports/BuildMenuPanelButton.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCharacter",
+      "imported": "ClientConstCharacter",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCharacter.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_IsoRenderStrategyEnum",
+      "imported": "IsoRenderStrategyEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/IsoRenderStrategyEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDecoShopPanel",
+      "imported": "CastleDecoShopPanel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDecoShopPanel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_WoodcutterBuildingVO",
+      "imported": "WoodcutterBuildingVO",
+      "bundle": "Game.bundle",
+      "path": "exports/WoodcutterBuildingVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_IsoEvent",
+      "imported": "IsoEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/IsoEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDecoShopPanelEvent",
+      "imported": "CastleDecoShopPanelEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDecoShopPanelEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_IsoHelper",
+      "imported": "IsoHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/IsoHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "instanceOfClass",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/instanceOfClass.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:instanceOfClass",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
+  "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
+  "fullRuntimeEquivalent": false
+}

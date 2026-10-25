@@ -4,6 +4,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class VIPCommand extends CastleCommand {
   executeCommand(statusCode, responseFields) {
     return super.executeCommand(statusCode, responseFields);
@@ -31,3 +32,4 @@ export class VIPCommand extends CastleCommand {
     super.cmdId = value;
   }
 }
+classImplementsInterfaces(VIPCommand, "IExecCommand");

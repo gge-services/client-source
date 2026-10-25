@@ -4,6 +4,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { CommandController } from "../../../ggs.dll/reconstructed/exports/CommandController";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TSCCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_TEMPORARY_SERVER_SELECT_CASTLE_COMPLETE;
@@ -27,3 +28,4 @@ export class TSCCommand extends CastleCommand {
     return true;
   }
 }
+classImplementsInterfaces(TSCCommand, "IExecCommand");

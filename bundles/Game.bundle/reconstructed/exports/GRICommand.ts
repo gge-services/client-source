@@ -5,6 +5,8 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
+const __s0local0 = createjs.Point;
 export class GRICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_RELOCATION_INFO;
@@ -38,3 +40,4 @@ export class GRICommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(GRICommand, "IExecCommand");

@@ -6,6 +6,7 @@ import { CastleStandardOkDialog } from "./CastleStandardOkDialog";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class HDUCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_DISMISS_HOSPITAL_UNITS;
@@ -28,3 +29,4 @@ export class HDUCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(HDUCommand, "IExecCommand");

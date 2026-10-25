@@ -1,6 +1,6 @@
 {
   "sourceHash": "1bbfc2ddf9a6f644cd714fcee14e6e3efcc43142ec2e3914d0893d041c0aa27c",
-  "generatedHash": "b74b68a679a048c2a4bae1256051c93cf16169732276ea1d2037afa494dca818",
+  "generatedHash": "d73bfeb4cbcf688f374c2ea73f24d2f4ba32a00083d07950eac85281cecd5416",
   "constructor": "implicit-super",
   "accessors": [],
   "methods": [
@@ -122,9 +122,20 @@
       "path": "exports/C2SCaravanOverloaderStartVO.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

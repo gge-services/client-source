@@ -3,6 +3,7 @@ import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { CollectableManager } from "./CollectableManager";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GPNCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_PATCH_NOTE_REWARDS;
@@ -23,3 +24,4 @@ export class GPNCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(GPNCommand, "IExecCommand");

@@ -8,6 +8,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class ADPCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ALLIANCE_CHANGE_DIPLOMACY;
@@ -108,3 +109,4 @@ export class ADPCommand extends CastleCommand {
     return __s24local0;
   }
 }
+classImplementsInterfaces(ADPCommand, "IExecCommand");

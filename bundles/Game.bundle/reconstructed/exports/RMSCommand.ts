@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleMessageDataEvent } from "./CastleMessageDataEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class RMSCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_READ_MESSAGES;
@@ -24,3 +25,4 @@ export class RMSCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(RMSCommand, "IExecCommand");

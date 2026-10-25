@@ -1,5 +1,6 @@
 import { BasicClientCommand } from "../../../ggs.dll/reconstructed/exports/BasicClientCommand";
 import { TestInstanceVO } from "../../../ggs.dll/reconstructed/exports/TestInstanceVO";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleInitServerListCommand extends BasicClientCommand {
   initAdditionalServer() {}
   createInstanceVO_EM(__s7param0, __s7param1, __s7param2, __s7param3, __s7param4, __s7param5 = 4) {
@@ -13,3 +14,4 @@ export class CastleInitServerListCommand extends BasicClientCommand {
     return __s7local0;
   }
 }
+classImplementsInterfaces(CastleInitServerListCommand, "ISimpleCommand");

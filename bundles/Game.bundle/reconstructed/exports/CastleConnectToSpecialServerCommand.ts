@@ -20,6 +20,7 @@ import { ExternalInterface } from "../../../ggs.dll/reconstructed/exports/Extern
 import { FlashBlockHelper } from "./FlashBlockHelper";
 import { info } from "../../../ggs.dll/reconstructed/exports/info";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleConnectToSpecialServerCommand extends SimpleCommand {
   constructor(...args) {
     super(...args);
@@ -98,3 +99,4 @@ export class CastleConnectToSpecialServerCommand extends SimpleCommand {
     return CastleBasicController.getInstance();
   }
 }
+classImplementsInterfaces(CastleConnectToSpecialServerCommand, "ISimpleCommand");

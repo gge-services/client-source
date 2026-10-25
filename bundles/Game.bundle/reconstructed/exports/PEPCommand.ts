@@ -4,6 +4,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class PEPCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_POINT_EVENT_POINTS;
@@ -33,3 +34,4 @@ export class PEPCommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(PEPCommand, "IExecCommand");

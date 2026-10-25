@@ -1,6 +1,6 @@
 {
   "sourceHash": "fb461e2d76c36850f99cba1d5857e8cbc6cdc652606d00759aa483364d77cf81",
-  "generatedHash": "b8d76b99bd2967a2a8ffa1293ab9e3e5bf3eef5829562df6f53aa9006d6db468",
+  "generatedHash": "45d427441ca23e74a1cfe6fc262177c0c6003a334953fb3cf3d5f7b8fc9cea3a",
   "constructor": "implicit-super",
   "accessors": [],
   "methods": [
@@ -14,9 +14,20 @@
       "path": "exports/TutorialBasicQuestStarterActionCommand.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

@@ -1,6 +1,6 @@
 {
   "sourceHash": "8a778e1ad40c98cc328be2e117719ef38005a08059dc2949d81637a2a44262dd",
-  "generatedHash": "7be530b6ebfeff95d58a1d48aa8180543e26d0359b786a068a0e82f7aaadea25",
+  "generatedHash": "d561834386f01eddd81b024d943c0ac75076aaac190eb2b6d06f23ff31a32069",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -108,11 +108,22 @@
       "path": "exports/CastleLoginEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

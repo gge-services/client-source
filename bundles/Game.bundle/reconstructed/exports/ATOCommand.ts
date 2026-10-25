@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class ATOCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SET_API_TOKEN;
@@ -18,3 +19,4 @@ export class ATOCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(ATOCommand, "IExecCommand");

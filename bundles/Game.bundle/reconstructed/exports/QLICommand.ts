@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class QLICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_QUEST_LIST;
@@ -24,3 +25,4 @@ export class QLICommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(QLICommand, "IExecCommand");

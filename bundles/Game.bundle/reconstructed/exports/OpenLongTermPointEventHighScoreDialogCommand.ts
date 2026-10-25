@@ -4,6 +4,7 @@ import { EventConst } from "../../../ggs.dll/reconstructed/exports/EventConst";
 import { LongTermPointEventHighScoreDialog } from "./LongTermPointEventHighScoreDialog";
 import { LongTermPointEventHighScoreDialogProperties } from "./LongTermPointEventHighScoreDialogProperties";
 import { OpenDialogWithAdditionalExternalAssetsCommand } from "./OpenDialogWithAdditionalExternalAssetsCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenLongTermPointEventHighScoreDialogCommand extends OpenDialogWithAdditionalExternalAssetsCommand {
   addAssets(__s5param0) {
     var __s5local0 = CastleModel.specialEventData.getActiveEventByEventId(EventConst.EVENTTYPE_LONGTERM_POINT_EVENT);
@@ -17,3 +18,4 @@ export class OpenLongTermPointEventHighScoreDialogCommand extends OpenDialogWith
     this.loadAsset(__s9local0, __s9local0);
   }
 }
+classImplementsInterfaces(OpenLongTermPointEventHighScoreDialogCommand, "ISimpleCommand");

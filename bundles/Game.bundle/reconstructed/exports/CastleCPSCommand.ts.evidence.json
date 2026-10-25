@@ -86,6 +86,8 @@
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 0,
   "removedRuntimeInterfaceCalls": 0,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

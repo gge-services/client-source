@@ -1,6 +1,6 @@
 {
   "sourceHash": "ea3d431b5c37184b2fc02d61468a9cb1cdec1c2fb699265d8f424e4e703b7fb8",
-  "generatedHash": "a9c5260915000407224a60b252f0849fda42d21a72227b8416327bc93830e997",
+  "generatedHash": "2315636a67c454feedaa12f076b1b4edb061894e6e69d707f9a83007d184fef4",
   "constructor": "implicit-super",
   "accessors": [
     "get:env",
@@ -100,11 +100,22 @@
       "path": "webpack/exports/CommandDelayController.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

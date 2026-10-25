@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class FRCCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_REQUEST_FORGE_CRAFT;
@@ -28,3 +29,4 @@ export class FRCCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(FRCCommand, "IExecCommand");

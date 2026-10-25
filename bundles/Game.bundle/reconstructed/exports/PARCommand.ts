@@ -11,6 +11,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { CollectableManager } from "./CollectableManager";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { EventConst } from "../../../ggs.dll/reconstructed/exports/EventConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class PARCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_PAYMENT_REWARD;
@@ -48,3 +49,4 @@ export class PARCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(PARCommand, "IExecCommand");

@@ -5,8 +5,9 @@ import { ClientFunnelGameStates } from "../../../ggs.dll/reconstructed/exports/C
 import { ClientFunnelTrackingController } from "../../../ggs.dll/reconstructed/exports/ClientFunnelTrackingController";
 import { CommandController } from "../../../ggs.dll/reconstructed/exports/CommandController";
 import { IngameClientCommands } from "./IngameClientCommands";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleNetworkUpdateCommand extends BasicNetworkUpdateCommand {
-  constructor(...args) {
+  constructor() {
     super();
   }
   execute(__s5param0 = null) {
@@ -17,3 +18,4 @@ export class CastleNetworkUpdateCommand extends BasicNetworkUpdateCommand {
     }
   }
 }
+classImplementsInterfaces(CastleNetworkUpdateCommand, "ISimpleCommand");

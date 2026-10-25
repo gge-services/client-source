@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class QPGCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_QUEST_PROGRES;
@@ -23,3 +24,4 @@ export class QPGCommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(QPGCommand, "IExecCommand");

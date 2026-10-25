@@ -1,6 +1,6 @@
 {
   "sourceHash": "3cbc2288244b53403c6935b698958c729c6b855ede789a1c94c460ea0fb42880",
-  "generatedHash": "791d018b8c06c2af591cde138eb136d3e6f04ed6b965928c10502ab58b23e09c",
+  "generatedHash": "8b66d2c4e716ae42d5c85807e16fec91b4979cd585fc268cdf8ac9a191091bb9",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -74,11 +74,22 @@
       "path": "exports/C2SIsoRepairBuildingVO.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

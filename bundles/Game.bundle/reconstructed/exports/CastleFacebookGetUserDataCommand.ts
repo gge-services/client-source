@@ -7,6 +7,9 @@ import { OptionsDialog } from "./OptionsDialog";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { TrackingCache } from "../../../ggs.dll/reconstructed/exports/TrackingCache";
 import { TrackingEventIds } from "../../../ggs.dll/reconstructed/exports/TrackingEventIds";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
+class FacebookUserData {}
+const __s0local1 = FacebookUserData;
 export class CastleFacebookGetUserDataCommand extends SimpleCommand {
   execute(__s5param0) {
     CastleFacebookModule.getUserData(function (__s7param0) {
@@ -27,3 +30,4 @@ export class CastleFacebookGetUserDataCommand extends SimpleCommand {
     });
   }
 }
+classImplementsInterfaces(CastleFacebookGetUserDataCommand, "ISimpleCommand");

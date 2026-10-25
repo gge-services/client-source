@@ -1,6 +1,6 @@
 {
   "sourceHash": "2b612d70574e584ba95b3faf0d503ba8e1b7d510e72407e500436413f21ea469",
-  "generatedHash": "2cdcf1e741a8b84d0e786b20c681658ef524917d8324b4ae7c82710fd8dd4be4",
+  "generatedHash": "af1a6d24568eb74cb8e9832f917e4ec96f7e3951776b40ead0b097dd7cad2f6f",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -58,6 +58,15 @@
       "path": "exports/CastleDailyLoginBonusDialog.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -66,6 +75,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

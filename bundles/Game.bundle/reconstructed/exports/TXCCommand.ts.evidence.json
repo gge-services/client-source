@@ -1,6 +1,6 @@
 {
   "sourceHash": "47241a7cb3e562377904bd2d9baa473cd3cf6d218c62116aa15dec6a9379a4ae",
-  "generatedHash": "a1bab8ef6bb728e07c7a38f58333ccb31ffcb0a43718716d56c053c03ff9617e",
+  "generatedHash": "cbb58bbdc7f6ced904aa789d1223fb567493c1baa637a1000a9893606feb3646",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -75,6 +75,15 @@
       "path": "exports/CastleGetTaxDialogProperties.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -83,6 +92,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

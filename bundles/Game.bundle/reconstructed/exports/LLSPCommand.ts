@@ -3,6 +3,7 @@ import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { LeaderBoardEvent } from "./LeaderBoardEvent";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class LLSPCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_LIST_LEADERBOARD_SCORE_PAGE;
@@ -23,3 +24,4 @@ export class LLSPCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(LLSPCommand, "IExecCommand");

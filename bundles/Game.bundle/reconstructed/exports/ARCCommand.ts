@@ -16,6 +16,7 @@ import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { TextVO } from "../../../ggs.dll/reconstructed/exports/TextVO";
 import { WorldConst } from "../../../ggs.dll/reconstructed/exports/WorldConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class ARCCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_RENAME_CASTLE;
@@ -88,3 +89,4 @@ export class ARCCommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(ARCCommand, "IExecCommand");

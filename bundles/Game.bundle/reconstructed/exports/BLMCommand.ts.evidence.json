@@ -1,6 +1,6 @@
 {
   "sourceHash": "4030250955da93359d1f8e71cdc498f82498b7f9bb3a658c57ef1fbb46603bd6",
-  "generatedHash": "c65a767a398a9a7464f454f9107ed442214ed79a6f764fd3d75bef11889de66a",
+  "generatedHash": "0958ea165c05425fbf1466e912bcf3685e30e70593309138c202bf8f910af46d",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -59,6 +59,15 @@
       "path": "exports/CastleLogDataEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -67,6 +76,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

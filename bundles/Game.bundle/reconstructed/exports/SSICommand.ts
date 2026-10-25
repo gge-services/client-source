@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { CastleSpyDataEvent } from "./CastleSpyDataEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SSICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_SPY_INFO;
@@ -23,3 +24,4 @@ export class SSICommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(SSICommand, "IExecCommand");

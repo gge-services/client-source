@@ -9,6 +9,7 @@ import { EnvGlobalsHandler } from "../../../ggs.dll/reconstructed/exports/EnvGlo
 import { info } from "../../../ggs.dll/reconstructed/exports/info";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleChooseLoginMethodCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     var __s5local0 = BasicModel.smartfoxClient.userForcedDisconnect;
@@ -100,3 +101,4 @@ export class CastleChooseLoginMethodCommand extends SimpleCommand {
     CommandController.instance.executeCommand(__s28local0);
   }
 }
+classImplementsInterfaces(CastleChooseLoginMethodCommand, "ISimpleCommand");

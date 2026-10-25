@@ -1,6 +1,6 @@
 {
   "sourceHash": "a93e3e605100f6c214ca02d883f8cb03b7ebda6a3de4c9395491229cb345ee6f",
-  "generatedHash": "05349f7fb59adb4084a4772fa21718ca3b578198190ea51aad53623240b6a1b5",
+  "generatedHash": "6b30663425d372f82e7062f7d4b9b57f8a5f26683187500edc785d0b0528429d",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -60,11 +60,22 @@
       "moduleId": "3",
       "moduleIdentity": "ggs.dll:export:castAs",
       "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

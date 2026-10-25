@@ -1,6 +1,7 @@
 import { CastleConnectToSpecialServerCommand } from "./CastleConnectToSpecialServerCommand";
 import { CastleModel } from "./CastleModel";
 import { GlobalServerConst } from "../../../ggs.dll/reconstructed/exports/GlobalServerConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleConnectToTemporaryServerCommand extends CastleConnectToSpecialServerCommand {
   setConnectFlag() {
     CastleModel.userData.connectToTempServer = true;
@@ -22,3 +23,4 @@ export class CastleConnectToTemporaryServerCommand extends CastleConnectToSpecia
     }
   }
 }
+classImplementsInterfaces(CastleConnectToTemporaryServerCommand, "ISimpleCommand");

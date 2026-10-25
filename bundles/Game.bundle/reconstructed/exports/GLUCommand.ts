@@ -14,6 +14,7 @@ import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { GamesightEventConstants } from "./GamesightEventConstants";
 import { GameSightPayloadVO } from "./GameSightPayloadVO";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GLUCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_LEVEL_UP;
@@ -46,3 +47,4 @@ export class GLUCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(GLUCommand, "IExecCommand");

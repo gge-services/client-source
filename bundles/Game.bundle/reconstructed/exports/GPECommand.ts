@@ -3,6 +3,7 @@ import { CastleServerMessageArrivedEvent } from "./CastleServerMessageArrivedEve
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { PlayerPerformanceVO } from "./PlayerPerformanceVO";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GPECommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_PLAYER_EVENT_STATISTICS;
@@ -24,3 +25,4 @@ export class GPECommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(GPECommand, "IExecCommand");

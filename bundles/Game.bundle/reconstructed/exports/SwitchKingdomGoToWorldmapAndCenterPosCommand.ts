@@ -5,6 +5,8 @@ import { FlashBlockHelper } from "./FlashBlockHelper";
 import { IngameClientCommands } from "./IngameClientCommands";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
+const __s0local0 = createjs.Point;
 export class SwitchKingdomGoToWorldmapAndCenterPosCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     if (__s5param0) {
@@ -31,3 +33,4 @@ export class SwitchKingdomGoToWorldmapAndCenterPosCommand extends SimpleCommand 
     return CastleLayoutManager.getInstance();
   }
 }
+classImplementsInterfaces(SwitchKingdomGoToWorldmapAndCenterPosCommand, "ISimpleCommand");

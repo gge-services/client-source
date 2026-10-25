@@ -9,6 +9,7 @@ import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { ExternalInterfaceController } from "../../../ggs.dll/reconstructed/exports/ExternalInterfaceController";
 import { GGSCountryController } from "../../../ggs.dll/reconstructed/exports/GGSCountryController";
 import { JavascriptCallOnRegisterCompleteFactory } from "../../../ggs.dll/reconstructed/exports/JavascriptCallOnRegisterCompleteFactory";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class LCACommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_CREATE_AVATAR;
@@ -54,3 +55,4 @@ export class LCACommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(LCACommand, "IExecCommand");

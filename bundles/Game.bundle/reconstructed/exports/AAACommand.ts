@@ -1,5 +1,6 @@
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class AAACommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ALLIANCE_ANSWER_APPLICATION;
@@ -12,3 +13,4 @@ export class AAACommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(AAACommand, "IExecCommand");

@@ -2,6 +2,7 @@ import { BasicDialogHandler } from "../../../ggs.dll/reconstructed/exports/Basic
 import { CastleLayoutManager } from "./CastleLayoutManager";
 import { CastleLevelUpDialog } from "./CastleLevelUpDialog";
 import { TutorialBasicQuestFinisherActionCommand } from "./TutorialBasicQuestFinisherActionCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TutorialFinishedAttackRobberBaronCommand extends TutorialBasicQuestFinisherActionCommand {
   onQuestConfirm() {
     this.clearBlockers();
@@ -24,3 +25,4 @@ export class TutorialFinishedAttackRobberBaronCommand extends TutorialBasicQuest
     return "s_080_140_quest_finished_confirmed";
   }
 }
+classImplementsInterfaces(TutorialFinishedAttackRobberBaronCommand, "ISimpleCommand");

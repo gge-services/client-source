@@ -1,0 +1,106 @@
+{
+  "sourceHash": "f4c8de5f4d7e0eb434d00401db4320e47ac378da649f9822572cf199449eb900",
+  "generatedHash": "3c2351e6ed5bd1d20e0f50037f636798c6eaaa431d227e1e1cd7dea7cc64f0e3",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:assignedGeneralVO",
+    "get:targetGeneralID",
+    "get:attackInfoVO",
+    "get:attackDialog"
+  ],
+  "methods": [
+    "internalExecute",
+    "onOpenAttackDialog",
+    "hintOpenPlayerInfo",
+    "hintOpenGeneralSelection",
+    "hintSelectGeneral",
+    "hintAttack",
+    "waitForOpenPlayerInfo",
+    "waitForClosePlayerInfo",
+    "waitForOpenGeneralsSelection",
+    "waitForCloseGeneralsSelection",
+    "waitForGeneralAssigned",
+    "waitForLordChanged",
+    "onCloseDialog"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_GeneralIntroductionGuidanceBasicCommand",
+      "imported": "GeneralIntroductionGuidanceBasicCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/GeneralIntroductionGuidanceBasicCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AttackDialog",
+      "imported": "AttackDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/AttackDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_ButtonHelper",
+      "imported": "ButtonHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/ButtonHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCharacter",
+      "imported": "ClientConstCharacter",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCharacter.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogEvent",
+      "imported": "CastleDialogEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleEquipmentEvent",
+      "imported": "CastleEquipmentEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleEquipmentEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AttackDialogController",
+      "imported": "AttackDialogController",
+      "bundle": "Game.bundle",
+      "path": "exports/AttackDialogController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "runtimeInterfaceCallsPreserved": 0,
+  "removedRuntimeInterfaceCalls": 0,
+  "staticInitializationPreserved": false,
+  "fullRuntimeEquivalent": false
+}

@@ -22,6 +22,7 @@ import { Iso } from "./Iso";
 import { IsoConst } from "./IsoConst";
 import { renderScheduler } from "./renderScheduler";
 import { SessionTypes } from "../../../ggs.dll/reconstructed/exports/SessionTypes";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class JAACommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_JOIN_AREA;
@@ -120,3 +121,4 @@ export class JAACommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(JAACommand, "IExecCommand");

@@ -10,6 +10,7 @@ import { EventConst } from "../../../ggs.dll/reconstructed/exports/EventConst";
 import { FactionConst } from "../../../ggs.dll/reconstructed/exports/FactionConst";
 import { IngameClientCommands } from "./IngameClientCommands";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GAACommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_AREAS;
@@ -63,3 +64,4 @@ export class GAACommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(GAACommand, "IExecCommand");

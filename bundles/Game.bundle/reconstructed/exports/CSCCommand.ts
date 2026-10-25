@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { PrebuiltCastleResponseEvent } from "./PrebuiltCastleResponseEvent";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CSCCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SELECT_PREBUILT_CAMP_ID;
@@ -21,3 +22,4 @@ export class CSCCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(CSCCommand, "IExecCommand");

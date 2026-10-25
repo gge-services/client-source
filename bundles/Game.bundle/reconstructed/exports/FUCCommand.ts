@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleUnitCapacityEvent } from "./CastleUnitCapacityEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class FUCCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_CAMP_UNIT_CAPACITY;
@@ -21,3 +22,4 @@ export class FUCCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(FUCCommand, "IExecCommand");

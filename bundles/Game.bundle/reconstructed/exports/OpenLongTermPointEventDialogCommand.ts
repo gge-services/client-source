@@ -8,6 +8,7 @@ import { LongTermPointEventDialog } from "./LongTermPointEventDialog";
 import { LongTermPointEventProperties } from "./LongTermPointEventProperties";
 import { OpenDialogWithAdditionalExternalAssetsCommand } from "./OpenDialogWithAdditionalExternalAssetsCommand";
 import { UpdateDynamicTopXDataService } from "./UpdateDynamicTopXDataService";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenLongTermPointEventDialogCommand extends OpenDialogWithAdditionalExternalAssetsCommand {
   openDialog() {
     new UpdateDynamicTopXDataService().updateDynamicTopXForVO(this._eventVO);
@@ -52,3 +53,4 @@ export class OpenLongTermPointEventDialogCommand extends OpenDialogWithAdditiona
     this.loadAsset(__s15local0, __s15local1);
   }
 }
+classImplementsInterfaces(OpenLongTermPointEventDialogCommand, "ISimpleCommand");

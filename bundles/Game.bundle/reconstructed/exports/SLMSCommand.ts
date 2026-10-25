@@ -8,6 +8,7 @@ import { EnvGlobalsHandler } from "../../../ggs.dll/reconstructed/exports/EnvGlo
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { SpecialServerHelper } from "./SpecialServerHelper";
 import { UserSocialLoginMigrationHelper } from "./UserSocialLoginMigrationHelper";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SLMSCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SOCIAL_LOGIN_MIGRATION_STATUS;
@@ -36,3 +37,4 @@ export class SLMSCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(SLMSCommand, "IExecCommand");

@@ -8,6 +8,7 @@ import { CastleStandardOkDialog } from "./CastleStandardOkDialog";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SSPCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_SOCIAL_PID;
@@ -30,3 +31,4 @@ export class SSPCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(SSPCommand, "IExecCommand");

@@ -2,6 +2,7 @@ import { CastleDispatchingCommand } from "./CastleDispatchingCommand";
 import { CastleServerMessageArrivedEvent } from "./CastleServerMessageArrivedEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class RFICommand extends CastleDispatchingCommand {
   get cmdId() {
     return ClientConstSF.S2C_RESEARCH_FINISH_INSTANT;
@@ -29,3 +30,4 @@ export class RFICommand extends CastleDispatchingCommand {
     }
   }
 }
+classImplementsInterfaces(RFICommand, "IExecCommand");

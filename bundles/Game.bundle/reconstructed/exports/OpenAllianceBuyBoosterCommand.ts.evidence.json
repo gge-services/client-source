@@ -1,6 +1,6 @@
 {
   "sourceHash": "fcbb84773978b7eb9549bcc53ca139335f754f022a047e2312c694c1346a9633",
-  "generatedHash": "161b477ce1bcfa60e00745efbedf04533d8bc3eba7d6d760c6d3688c9e55d48c",
+  "generatedHash": "cb549bb07dedf935868a468199ba52fd9cb7084500badda934d14ef5f87971c5",
   "constructor": "implicit-super",
   "accessors": [
     "get:layoutManager"
@@ -142,9 +142,20 @@
       "path": "exports/CastleLayoutManager.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CARCommand extends CastleCommand {
   executeCommand(__s5param0, __s5param1) {
     switch (__s5param0) {
@@ -20,3 +21,4 @@ export class CARCommand extends CastleCommand {
     super.cmdId = value;
   }
 }
+classImplementsInterfaces(CARCommand, "IExecCommand");

@@ -1,6 +1,6 @@
 {
   "sourceHash": "8218009070ea3f0dc0aeccf95a720186897851548da08c03fc90eeaee825a527",
-  "generatedHash": "791ee8547fc16821a89f306a9a938a29bb30b7b9de1714557222e38ce019952d",
+  "generatedHash": "faec4eafe6ccfe7c20af150371c03aad158cc6fb25cc1b67b4b5d3dcc5404339",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -50,6 +50,15 @@
       "path": "exports/CastleEquipmentEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -58,6 +67,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

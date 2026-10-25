@@ -1,6 +1,6 @@
 {
   "sourceHash": "821f9973ef454209113ddb36efcb9101b667b1b1fd3a9d8ac5c1449548089a5d",
-  "generatedHash": "8a432c679e49dbe2a90c7e3414d99194663523dd68d5f7f98e6fd02dd80df3b1",
+  "generatedHash": "f320d0a3c233bdc7e472e53b5bfd021709c0fdfbd8da6f4a0b4b5bd2b352bed1",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -59,6 +59,15 @@
       "path": "exports/OpenGateEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -67,6 +76,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

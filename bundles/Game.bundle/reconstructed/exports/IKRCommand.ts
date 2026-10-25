@@ -6,6 +6,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { WorldIsland } from "../../../ggs.dll/reconstructed/exports/WorldIsland";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class IKRCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ISLAND_KINGDOM_RESET;
@@ -32,3 +33,4 @@ export class IKRCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(IKRCommand, "IExecCommand");

@@ -1,6 +1,6 @@
 {
   "sourceHash": "2838e47c101dfb4f58775e7aa8851ed9c67c92206077994cec78cf0dc2bbb8d9",
-  "generatedHash": "2ac17e10881fcfd4ae39af4a3518f792cdfda0052598e3059182ed114eabd842",
+  "generatedHash": "3c6b2ee2953a43ee34cd9aa19375e59cc557bb0e8485ebe63e6c5cc589c68271",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -159,11 +159,22 @@
       "path": "exports/CastleNoMoneyC2DialogProperties.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

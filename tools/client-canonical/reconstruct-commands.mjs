@@ -49,7 +49,7 @@ export async function reconstructCommands(root, emit=true) {
       if(get&&!set)readonlyBaseAccessors.add(target.object.name+':'+key.value)
     }})
   }
-  const options={specifiers:manifest.specifiers,errorExportAvailable:dll.symbolViews?.filter(v=>v.name==='ERROR').length===1,resolveMember:dllResolver.resolve,dllImportFileName:dllResolver.importFileName,readonlyBaseAccessors,passThroughConstructors}
+  const options={specifiers:manifest.specifiers,errorExportAvailable:dll.symbolViews?.filter(v=>v.name==='ERROR').length===1,resolveMember:dllResolver.resolve,dllImportFileName:dllResolver.importFileName,readonlyBaseAccessors,passThroughConstructors,preserveRuntimeInterfaces:true}
   const output=join(directory,'reconstructed/exports')
   if(emit)await mkdir(output,{recursive:true})
   const previous=JSON.parse(await readFile(join(directory,'reconstructed/coverage.json'),'utf8').catch(()=>'{"succeeded":[]}'))
@@ -62,7 +62,7 @@ export async function reconstructCommands(root, emit=true) {
       const result=reconstructEs5Class(source,options)
       if(!result){skipped.push({path:item.path,reason:'unsupported-class-shape'});continue}
       const transpiled=ts.transpileModule(result.code,{compilerOptions:{target:ts.ScriptTarget.ES2015,module:ts.ModuleKind.CommonJS},reportDiagnostics:true})
-      if(transpiled.diagnostics?.length)throw Error('TypeScript syntax diagnostics: '+transpiled.diagnostics.length)
+      if(transpiled.diagnostics?.length)throw Error('TypeScript syntax diagnostics: '+transpiled.diagnostics.map(d=>d.code+':'+ts.flattenDiagnosticMessageText(d.messageText,' ')).join('; ').slice(0,500))
       const name=result.className
       if(name+'.js'!==item.path.split('/').at(-1))throw Error('Exported class filename differs from AST constructor')
       const target=join(output,name+'.ts')

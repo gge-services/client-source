@@ -3,6 +3,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CSMCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_CREATE_SPY_MOVEMENT;
@@ -25,3 +26,4 @@ export class CSMCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(CSMCommand, "IExecCommand");

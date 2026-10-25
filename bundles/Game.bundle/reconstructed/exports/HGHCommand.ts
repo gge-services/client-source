@@ -8,6 +8,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class HGHCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_HIGHSCORE;
@@ -40,3 +41,4 @@ export class HGHCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(HGHCommand, "IExecCommand");

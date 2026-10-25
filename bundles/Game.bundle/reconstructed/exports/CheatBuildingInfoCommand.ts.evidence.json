@@ -1,0 +1,40 @@
+{
+  "sourceHash": "65485bbed967f26a8284af3dfd6435e45ecc5db70dc2483d83e387b79e4332b0",
+  "generatedHash": "1c6ccaa15cc893fe0d0548cf3d7219d62915e7c74fe6589a212982505c91e450",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_ABotCommand",
+      "imported": "ABotCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/ABotCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientCheatsHelper",
+      "imported": "ClientCheatsHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientCheatsHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "renamed": [],
+  "runtimeInterfaceCallsPreserved": 0,
+  "removedRuntimeInterfaceCalls": 0,
+  "staticInitializationPreserved": false,
+  "fullRuntimeEquivalent": false
+}

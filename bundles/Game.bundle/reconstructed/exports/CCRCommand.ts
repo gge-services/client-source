@@ -1,6 +1,7 @@
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CCRCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_TEMP_SERVER_CHARGE_CHAMP_EFFECTS_REROLL;
@@ -18,3 +19,4 @@ export class CCRCommand extends CastleCommand {
     return true;
   }
 }
+classImplementsInterfaces(CCRCommand, "IExecCommand");

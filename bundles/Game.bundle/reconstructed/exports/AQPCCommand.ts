@@ -3,6 +3,7 @@ import { CastleBasicController } from "./CastleBasicController";
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class AQPCCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ALLIANCE_DIVISION_PLAYER_CONTRIBUTION;
@@ -22,3 +23,4 @@ export class AQPCCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(AQPCCommand, "IExecCommand");

@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "sourceSnapshot": "2026-10-16",
+  "liveSnapshot": "2026-10-25",
+  "evidence": "official-bundle-raw-AST-and-unique-named-exports",
+  "fullSemanticParityProven": false,
+  "bundles": [
+    {
+      "bundle": "Game.bundle",
+      "originalModuleCount": 5826,
+      "liveModuleCount": 5827,
+      "liveRawSha256": "2842063c093e044acd86fba16f9a39abbc3ef3341956a3a10e5e75017555e7d8",
+      "uniqueExportAnchors": 5776,
+      "sameModuleIndex": 5603,
+      "relocatedAnchors": 173,
+      "unanchored": 49
+    },
+    {
+      "bundle": "ggs.dll",
+      "originalModuleCount": 1008,
+      "liveModuleCount": 1009,
+      "liveRawSha256": "519b5a687a0d18e3982abe53c6a291b1e51093ce70263949d323ced052a45063",
+      "uniqueExportAnchors": 110,
+      "sameModuleIndex": 110,
+      "relocatedAnchors": 0,
+      "unanchored": 101
+    }
+  ]
+}

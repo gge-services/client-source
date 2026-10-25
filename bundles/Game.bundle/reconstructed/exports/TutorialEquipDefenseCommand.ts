@@ -15,6 +15,9 @@ import { IsoRenderStrategyEnum } from "./IsoRenderStrategyEnum";
 import { RecruitPanelButton } from "./RecruitPanelButton";
 import { TutorialBasicActionCommand } from "./TutorialBasicActionCommand";
 import { WorldClassic } from "../../../ggs.dll/reconstructed/exports/WorldClassic";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
+const __s0local1 = createjs.Point;
+const __s0local0 = createjs.MouseEvent;
 export class TutorialEquipDefenseCommand extends TutorialBasicActionCommand {
   internalExecute() {
     if (this.layoutManager.isInMyCastle) {
@@ -167,3 +170,4 @@ export class TutorialEquipDefenseCommand extends TutorialBasicActionCommand {
     return true;
   }
 }
+classImplementsInterfaces(TutorialEquipDefenseCommand, "ISimpleCommand");

@@ -1,6 +1,6 @@
 {
   "sourceHash": "78dd985ed1fdf40a5b20e36652f343fb4b114f56301bc8586a2485521fba32f7",
-  "generatedHash": "6b6ccd442221e8f24e7b674c796a7c53c27979823cde6b9e2e6a57d07d8a7a37",
+  "generatedHash": "8e31af712a5ef6224ef4adf737adbc1aa8620b74f1e3f5735aa1d2d314acefca",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -42,6 +42,15 @@
       "path": "exports/TempServerHelper.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -50,6 +59,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

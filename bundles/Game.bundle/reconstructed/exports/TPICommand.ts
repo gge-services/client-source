@@ -5,6 +5,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { CommKeys } from "../../../ggs.dll/reconstructed/exports/CommKeys";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { WorldmapObjectFactory } from "./WorldmapObjectFactory";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TPICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ALLIANCE_TOWER_CASTLES_INFO;
@@ -42,3 +43,4 @@ export class TPICommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(TPICommand, "IExecCommand");

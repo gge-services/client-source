@@ -1,6 +1,6 @@
 {
   "sourceHash": "0cc5076af40edc28fbc051f219cb6ef677e654c22a03c81f34690744aa0758c9",
-  "generatedHash": "cde4364bd1bda91ee1195d908830e02c2fb4a5e5967731d374b4f5304bdc4db7",
+  "generatedHash": "0cf2ecc4b65a4d6f7e82ce8d247ddf4694ab82ef9fc12de220966521b780e634",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -52,6 +52,15 @@
       "path": "exports/CastlePopUpHelper.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -59,6 +68,8 @@
     "statusCode",
     "responseFields"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

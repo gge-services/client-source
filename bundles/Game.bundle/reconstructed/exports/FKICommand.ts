@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { EventConst } from "../../../ggs.dll/reconstructed/exports/EventConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class FKICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_FACTIONKINGDOM_INFO;
@@ -27,3 +28,4 @@ export class FKICommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(FKICommand, "IExecCommand");

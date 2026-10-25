@@ -1,6 +1,7 @@
 import { CastleDispatchingCommand } from "./CastleDispatchingCommand";
 import { CastleServerMessageArrivedEvent } from "./CastleServerMessageArrivedEvent";
 import { ClientConstSF } from "./ClientConstSF";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class DCICommand extends CastleDispatchingCommand {
   get cmdId() {
     return ClientConstSF.S2C_DISASSEMBLE_CONSTRUCTION_ITEM;
@@ -17,3 +18,4 @@ export class DCICommand extends CastleDispatchingCommand {
     }
   }
 }
+classImplementsInterfaces(DCICommand, "IExecCommand");

@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { CastleVoucherEvent } from "./CastleVoucherEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class RVECommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_REDEEM_VOUCHER;
@@ -21,3 +22,4 @@ export class RVECommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(RVECommand, "IExecCommand");

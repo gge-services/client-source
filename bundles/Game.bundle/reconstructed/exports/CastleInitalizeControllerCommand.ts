@@ -3,6 +3,7 @@ import { BasicInitalizeControllerCommand } from "../../../ggs.dll/reconstructed/
 import { CastleLayoutManager } from "./CastleLayoutManager";
 import { CastleSoundController } from "./CastleSoundController";
 import { info } from "../../../ggs.dll/reconstructed/exports/info";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleInitalizeControllerCommand extends BasicInitalizeControllerCommand {
   initializeGameControllers() {
     info("Initialize controllers");
@@ -15,3 +16,4 @@ export class CastleInitalizeControllerCommand extends BasicInitalizeControllerCo
     return CastleLayoutManager.getInstance();
   }
 }
+classImplementsInterfaces(CastleInitalizeControllerCommand, "ISimpleCommand");

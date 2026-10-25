@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class HCSCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_CANCEL_HOSPITAL_SLOT;
@@ -24,3 +25,4 @@ export class HCSCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(HCSCommand, "IExecCommand");

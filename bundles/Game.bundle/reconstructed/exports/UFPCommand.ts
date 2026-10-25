@@ -6,8 +6,9 @@ import { CastleTitleAchievedDialogProperties } from "./CastleTitleAchievedDialog
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class UFPCommand extends CastleCommand {
-  constructor(...args) {
+  constructor() {
     super();
   }
   get cmdId() {
@@ -38,3 +39,4 @@ export class UFPCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(UFPCommand, "IExecCommand");

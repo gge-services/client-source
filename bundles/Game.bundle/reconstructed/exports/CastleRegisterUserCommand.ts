@@ -11,6 +11,7 @@ import { EnvGlobalsHandler } from "../../../ggs.dll/reconstructed/exports/EnvGlo
 import { ExternalInterface } from "../../../ggs.dll/reconstructed/exports/ExternalInterface";
 import { instanceOfClass } from "../../../ggs.dll/reconstructed/exports/instanceOfClass";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleRegisterUserCommand extends BasicRegisterUserCommand {
   get registrationVOClass() {
     return C2SRegisterWithNameVO;
@@ -128,3 +129,4 @@ export class CastleRegisterUserCommand extends BasicRegisterUserCommand {
     CastleModel.localData.saveFacebookID("");
   }
 }
+classImplementsInterfaces(CastleRegisterUserCommand, "ISimpleCommand");

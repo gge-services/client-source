@@ -5,6 +5,7 @@ import { CommKeys } from "../../../ggs.dll/reconstructed/exports/CommKeys";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { TempServerHelper } from "./TempServerHelper";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TCCCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SET_BOUGHT_SPECIAL_SERVER_CASTLES;
@@ -31,3 +32,4 @@ export class TCCCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(TCCCommand, "IExecCommand");

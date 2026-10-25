@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SCECommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_SPECIAL_CURRENCY;
@@ -23,3 +24,4 @@ export class SCECommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(SCECommand, "IExecCommand");

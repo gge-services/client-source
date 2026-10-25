@@ -1,6 +1,7 @@
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class RCACommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ROYAL_CAPITAL_ALLIANCE;
@@ -16,3 +17,4 @@ export class RCACommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(RCACommand, "IExecCommand");

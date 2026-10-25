@@ -2,6 +2,7 @@ import { AbstractMethodError } from "./AbstractMethodError";
 import { CastleCommand } from "./CastleCommand";
 import { CastleServerMessageArrivedEvent } from "./CastleServerMessageArrivedEvent";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleDispatchingCommand extends CastleCommand {
   executeCommand(__s5param0, __s5param1) {
     switch (__s5param0) {
@@ -20,3 +21,4 @@ export class CastleDispatchingCommand extends CastleCommand {
     throw new AbstractMethodError();
   }
 }
+classImplementsInterfaces(CastleDispatchingCommand, "IExecCommand");

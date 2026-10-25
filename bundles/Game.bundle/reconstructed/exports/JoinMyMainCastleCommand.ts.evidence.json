@@ -1,6 +1,6 @@
 {
   "sourceHash": "9e8010a1d3ef5ca0558c4589c1592b28d2f5f218b696adefc8632bb3ca3d217e",
-  "generatedHash": "67ee8bbc00b53aa0801ceee1d0996753247c5a67d803359d4e2bd02d1017b7b1",
+  "generatedHash": "184684ca195c194cad8e98e57a3119e0b1a659717bfcabe3345cfac2c13772ec",
   "constructor": "implicit-super",
   "accessors": [],
   "methods": [
@@ -40,9 +40,20 @@
       "path": "exports/C2SJoinCastleVO.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

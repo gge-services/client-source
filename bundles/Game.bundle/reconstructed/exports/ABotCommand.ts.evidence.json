@@ -1,0 +1,15 @@
+{
+  "sourceHash": "a93b2c350a8fdc6933d7e2568328759f1ab8096316b2226a1351c775e1c932ec",
+  "generatedHash": "839419da986983550b2ad58612be451a75cc1cb75b15bad234319e3b33cc1bb8",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [],
+  "renamed": [],
+  "runtimeInterfaceCallsPreserved": 0,
+  "removedRuntimeInterfaceCalls": 0,
+  "staticInitializationPreserved": false,
+  "fullRuntimeEquivalent": false
+}

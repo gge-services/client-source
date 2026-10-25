@@ -1,6 +1,7 @@
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class BRTCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_BOUNTY_HUNTER_VALIDATE_OR_RESET_TARGET;
@@ -18,3 +19,4 @@ export class BRTCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(BRTCommand, "IExecCommand");

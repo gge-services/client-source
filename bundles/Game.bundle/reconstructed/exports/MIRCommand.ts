@@ -1,6 +1,7 @@
 import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class MIRCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_RENAME_CASTLE_INVITATION;
@@ -15,3 +16,4 @@ export class MIRCommand extends CastleCommand {
     return true;
   }
 }
+classImplementsInterfaces(MIRCommand, "IExecCommand");

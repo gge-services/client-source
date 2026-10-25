@@ -12,6 +12,7 @@ import { EnvGlobalsHandler } from "../../../ggs.dll/reconstructed/exports/EnvGlo
 import { GZPTrackingController } from "./GZPTrackingController";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleConnectionLostCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     if (this.layoutManager.currentState != BasicLayoutManager.STATE_STARTSCREEN) {
@@ -56,3 +57,4 @@ export class CastleConnectionLostCommand extends SimpleCommand {
     return EnvGlobalsHandler.globals;
   }
 }
+classImplementsInterfaces(CastleConnectionLostCommand, "ISimpleCommand");

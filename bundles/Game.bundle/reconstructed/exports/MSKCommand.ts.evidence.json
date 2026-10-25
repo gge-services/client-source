@@ -1,6 +1,6 @@
 {
   "sourceHash": "d3ab5e37fba4a1e15fbc067a179560a1834f25c34407b1291e1ee8822d2deff6",
-  "generatedHash": "6449db271f41d0d07a36741da0f6fef56a1818ce091fe9f9d9c2ae649827c206",
+  "generatedHash": "c7803623321a108908b3672fac24fa2087ad21f6f26cfaaed9568ee606886483",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -50,6 +50,15 @@
       "path": "exports/CastleMinuteSkipEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -58,6 +67,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

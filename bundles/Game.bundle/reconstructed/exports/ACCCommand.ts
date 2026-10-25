@@ -5,6 +5,7 @@ import { CastleDialogHandler } from "./CastleDialogHandler";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class ACCCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_COLLECTOR_ATTACK_INFO;
@@ -25,3 +26,4 @@ export class ACCCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(ACCCommand, "IExecCommand");

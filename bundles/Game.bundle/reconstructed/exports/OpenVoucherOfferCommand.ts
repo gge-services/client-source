@@ -6,6 +6,7 @@ import { CommandController } from "../../../ggs.dll/reconstructed/exports/Comman
 import { IngameClientCommands } from "./IngameClientCommands";
 import { PrivateOfferFailedStandardDialog } from "./PrivateOfferFailedStandardDialog";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenVoucherOfferCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     super.execute(__s5param0);
@@ -18,3 +19,4 @@ export class OpenVoucherOfferCommand extends SimpleCommand {
     }
   }
 }
+classImplementsInterfaces(OpenVoucherOfferCommand, "ISimpleCommand");

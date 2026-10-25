@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { CastleServerMessageArrivedEvent } from "./CastleServerMessageArrivedEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SCPCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_CHANGE_PASSWORD;
@@ -33,3 +34,4 @@ export class SCPCommand extends CastleCommand {
     this.controller.dispatchEvent(new CastleServerMessageArrivedEvent(CastleServerMessageArrivedEvent.SCP_ARRIVED, [__s14param0]));
   }
 }
+classImplementsInterfaces(SCPCommand, "IExecCommand");

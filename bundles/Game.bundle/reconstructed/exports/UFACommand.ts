@@ -6,6 +6,7 @@ import { CastleTitleAchievedDialogProperties } from "./CastleTitleAchievedDialog
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class UFACommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_FAME;
@@ -29,3 +30,4 @@ export class UFACommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(UFACommand, "IExecCommand");

@@ -6,6 +6,7 @@ import { CastleStandardOkDialog } from "./CastleStandardOkDialog";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class MOSCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_OPEN_GATE_START;
@@ -29,3 +30,4 @@ export class MOSCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(MOSCommand, "IExecCommand");

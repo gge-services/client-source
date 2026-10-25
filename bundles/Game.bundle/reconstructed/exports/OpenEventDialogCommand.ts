@@ -1,5 +1,6 @@
 import { instanceOfClass } from "../../../ggs.dll/reconstructed/exports/instanceOfClass";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenEventDialogCommand extends SimpleCommand {
   execute(__s5param0?: any) {
     var __s5local0;
@@ -22,3 +23,4 @@ export class OpenEventDialogCommand extends SimpleCommand {
     }
   }
 }
+classImplementsInterfaces(OpenEventDialogCommand, "ISimpleCommand");

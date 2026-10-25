@@ -1,6 +1,6 @@
 {
   "sourceHash": "72ceb7bbbcc71bc9f953af8afb4223f7bd50507d092b21cc9e0a0e90a1aac512",
-  "generatedHash": "a5d39867872cf288fb53c0508320e1db87ff1b5c5192ac7eb627b99699078519",
+  "generatedHash": "f08779c2b1691f57aee9d8e21d7eb85566cc635590f6854b91d4c3d4cdd97d0b",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -68,6 +68,15 @@
       "path": "exports/ABGHelper.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -76,6 +85,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

@@ -10,7 +10,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 export class AJACommand extends BasicCommand {
-  constructor(...args) {
+  constructor() {
     super();
   }
   get cmdId() {

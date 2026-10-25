@@ -4,6 +4,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { instanceOfClass } from "../../../ggs.dll/reconstructed/exports/instanceOfClass";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class DMSCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_DELETE_MESSAGE;
@@ -36,3 +37,4 @@ export class DMSCommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(DMSCommand, "IExecCommand");

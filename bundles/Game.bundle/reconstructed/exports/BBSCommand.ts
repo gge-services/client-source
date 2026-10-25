@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { EventConst } from "../../../ggs.dll/reconstructed/exports/EventConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class BBSCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_BOSS_BROADCAST_STATUS_EVENT;
@@ -25,3 +26,4 @@ export class BBSCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(BBSCommand, "IExecCommand");

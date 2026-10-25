@@ -1,6 +1,6 @@
 {
   "sourceHash": "a5a40757bba01b2758bc65f4e902c2d62e43ad302c28f6c98ec543a55b47091b",
-  "generatedHash": "02eb679c391961fed60ae9c7044e022461d907acc44208df386849a76a3f2703",
+  "generatedHash": "a29f75357731ac4fb9454ab315971c27ade29aa35ff050dc3b3dfb628f03720f",
   "constructor": "implicit-super",
   "accessors": [],
   "methods": [
@@ -67,9 +67,20 @@
       "path": "exports/IngameClientCommands.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }
