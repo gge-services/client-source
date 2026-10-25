@@ -1,0 +1,35 @@
+{
+  "sourceHash": "00841b594de70d2e118d27443eda07010cd5f1e4bf0cf7cdcc64c5c59bb65009",
+  "generatedHash": "4e9227f75efca87109c622863e40efee09159af4611ff1041dc060912be34190",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId",
+    "get:eventType",
+    "set:eventType"
+  ],
+  "methods": [],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleDispatchingCommand",
+      "source": "exports/CastleDispatchingCommand.js",
+      "imported": "CastleDispatchingCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "gge-module:export_CastleServerMessageArrivedEvent",
+      "source": "exports/CastleServerMessageArrivedEvent.js",
+      "imported": "CastleServerMessageArrivedEvent"
+    }
+  ],
+  "renamed": [
+    "value",
+    "value"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

@@ -1,0 +1,23 @@
+import { CastleCommand } from "./CastleCommand";
+import { CastleServerMessageArrivedEvent } from "./CastleServerMessageArrivedEvent";
+import { ClientConstSF } from "./ClientConstSF";
+import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+export class CPDCommand extends CastleCommand {
+  get cmdId() {
+    return ClientConstSF.S2C_GET_ALLIANCE_CENTERS_OF_POWER_DETAIL;
+  }
+  set cmdId(value) {
+    super.cmdId = value;
+  }
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
+      case ERROR.ALL_OK:
+        var parsedResponse = JSON.parse(responseFields[1]);
+        this.controller.dispatchEvent(new CastleServerMessageArrivedEvent(CastleServerMessageArrivedEvent.CPD_ARRIVED, [parsedResponse]));
+        break;
+      default:
+        this.showErrorDialog(statusCode, responseFields);
+    }
+    return false;
+  }
+}

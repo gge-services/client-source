@@ -1,0 +1,53 @@
+{
+  "sourceHash": "87a4499d1ba83653d24a77ca75b9ab79f4323f97a2e4abf70446f96e4b16ba83",
+  "generatedHash": "0aa752ff5aa4547774f83e54a7248d6acbdd9e6fca6aff07d6c5b3c6c3c8298d",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_GlobalServerPreviousRunInfoVO",
+      "source": "exports/GlobalServerPreviousRunInfoVO.js",
+      "imported": "GlobalServerPreviousRunInfoVO"
+    },
+    {
+      "specifier": "gge-module:export_CastleBasicController",
+      "source": "exports/CastleBasicController.js",
+      "imported": "CastleBasicController"
+    },
+    {
+      "specifier": "gge-module:export_GlobalServerPreviousRunInfoEvent",
+      "source": "exports/GlobalServerPreviousRunInfoEvent.js",
+      "imported": "GlobalServerPreviousRunInfoEvent"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

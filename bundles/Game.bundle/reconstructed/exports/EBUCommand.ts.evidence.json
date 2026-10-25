@@ -1,0 +1,65 @@
+{
+  "sourceHash": "38f40d3c5dd387088b09bf4907396a7ebc788382a8742b6a8b2f2f67454ceae3",
+  "generatedHash": "eb2bb56d62b5b8224d6e546956ee98103f9d0590aa7446a44637f4a53b905a77",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "source": "exports/CastleModel.js",
+      "imported": "CastleModel"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "source": "exports/CastleDialogHandler.js",
+      "imported": "CastleDialogHandler"
+    },
+    {
+      "specifier": "gge-module:export_CastleSkipBuildingDialog",
+      "source": "exports/CastleSkipBuildingDialog.js",
+      "imported": "CastleSkipBuildingDialog"
+    },
+    {
+      "specifier": "gge-module:export_CastleSkipBuildingDialogProperties",
+      "source": "exports/CastleSkipBuildingDialogProperties.js",
+      "imported": "CastleSkipBuildingDialogProperties"
+    },
+    {
+      "specifier": "gge-module:export_C2SIsoBuyObjectVO",
+      "source": "exports/C2SIsoBuyObjectVO.js",
+      "imported": "C2SIsoBuyObjectVO"
+    },
+    {
+      "specifier": "gge-module:export_IsoEvent",
+      "source": "exports/IsoEvent.js",
+      "imported": "IsoEvent"
+    }
+  ],
+  "renamed": [
+    "value"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

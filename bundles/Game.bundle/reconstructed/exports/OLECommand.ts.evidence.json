@@ -1,0 +1,83 @@
+{
+  "sourceHash": "48b419ac8712a44a4f053226537bf27615611fbaed711db7b02dc01649b0110d",
+  "generatedHash": "1114bd1582c43d46f62b043ea742b4740a47e51f7e2fa1f8c7861cd02b3de961",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "source": "exports/CastleModel.js",
+      "imported": "CastleModel"
+    },
+    {
+      "specifier": "gge-module:export_CollectableManager",
+      "source": "exports/CollectableManager.js",
+      "imported": "CollectableManager"
+    },
+    {
+      "specifier": "gge-module:export_CollectableList",
+      "source": "exports/CollectableList.js",
+      "imported": "CollectableList"
+    },
+    {
+      "specifier": "gge-module:export_CollectableHelper",
+      "source": "exports/CollectableHelper.js",
+      "imported": "CollectableHelper"
+    },
+    {
+      "specifier": "gge-module:export_CollectableEnum",
+      "source": "exports/CollectableEnum.js",
+      "imported": "CollectableEnum"
+    },
+    {
+      "specifier": "gge-module:export_MysteryBoxOpeningDialogProperties",
+      "source": "exports/MysteryBoxOpeningDialogProperties.js",
+      "imported": "MysteryBoxOpeningDialogProperties"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "source": "exports/CastleDialogHandler.js",
+      "imported": "CastleDialogHandler"
+    },
+    {
+      "specifier": "gge-module:export_MysteryBoxOpeningDialog",
+      "source": "exports/MysteryBoxOpeningDialog.js",
+      "imported": "MysteryBoxOpeningDialog"
+    },
+    {
+      "specifier": "gge-module:export_CastleServerMessageArrivedEvent",
+      "source": "exports/CastleServerMessageArrivedEvent.js",
+      "imported": "CastleServerMessageArrivedEvent"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

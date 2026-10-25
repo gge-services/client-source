@@ -1,0 +1,43 @@
+{
+  "sourceHash": "0165660d599aa548c7a4d9cf3fd2d3e7c3646a63e755f6db3033d214fa28c64c",
+  "generatedHash": "0a1faa5d4d2b34b8c936c5c0c7b5ffe4ede29e5a48d1f69df182ae5b836f207c",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_AllianceMobilizationEventEventVO",
+      "source": "exports/AllianceMobilizationEventEventVO.js",
+      "imported": "AllianceMobilizationEventEventVO"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

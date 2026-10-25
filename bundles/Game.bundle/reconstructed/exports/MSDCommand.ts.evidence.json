@@ -1,0 +1,53 @@
+{
+  "sourceHash": "d91e1bf68ced011c2fe5226e2bb893fab690b7104642c8dc13c0fd9253c5ce5a",
+  "generatedHash": "6db518c272f813f5686d0ddd5811f37fd6e93cab4945256b2311b36a54916ed7",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_WorldmapObjectFactory",
+      "source": "exports/WorldmapObjectFactory.js",
+      "imported": "WorldmapObjectFactory"
+    },
+    {
+      "specifier": "gge-module:export_SkipCooldownEvent",
+      "source": "exports/SkipCooldownEvent.js",
+      "imported": "SkipCooldownEvent"
+    },
+    {
+      "specifier": "gge-module:export_CastleMinuteSkipEvent",
+      "source": "exports/CastleMinuteSkipEvent.js",
+      "imported": "CastleMinuteSkipEvent"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

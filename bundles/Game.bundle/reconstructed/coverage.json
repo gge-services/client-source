@@ -1,0 +1,3593 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "examined": 701,
+  "reconstructed": 389,
+  "rejected": 312,
+  "succeeded": [
+    {
+      "name": "AAACommand",
+      "originalPath": "modules/exports/AAACommand.js",
+      "outputPath": "reconstructed/exports/AAACommand.ts",
+      "sourceHash": "add76e7988be0060dc6ec7660b726ae8773deecada22202a2c1522f19833600b"
+    },
+    {
+      "name": "AAICommand",
+      "originalPath": "modules/exports/AAICommand.js",
+      "outputPath": "reconstructed/exports/AAICommand.ts",
+      "sourceHash": "482dee7568f595686b6aad9ba84d58ccaf07036a72ab41cc47862a7318b42b46"
+    },
+    {
+      "name": "AALCommand",
+      "originalPath": "modules/exports/AALCommand.js",
+      "outputPath": "reconstructed/exports/AALCommand.ts",
+      "sourceHash": "dc1387703373918aa846af8d2a01567cac61b2e7d517f468f441b340ca3d1660"
+    },
+    {
+      "name": "AAOCommand",
+      "originalPath": "modules/exports/AAOCommand.js",
+      "outputPath": "reconstructed/exports/AAOCommand.ts",
+      "sourceHash": "edafbe7e9c8122b7b2a112feae59fa6c9cf40d90c13b26cb28f63ff80d6c1d4c"
+    },
+    {
+      "name": "AATBCommand",
+      "originalPath": "modules/exports/AATBCommand.js",
+      "outputPath": "reconstructed/exports/AATBCommand.ts",
+      "sourceHash": "c9d036c465a9d9bea08b75279fb82ff97f6a921909ab12cb2c14d23b7125a78f"
+    },
+    {
+      "name": "AATCommand",
+      "originalPath": "modules/exports/AATCommand.js",
+      "outputPath": "reconstructed/exports/AATCommand.ts",
+      "sourceHash": "8c7dd74e5e236c2a414303b839cf1d1a710e27b60701eb5faea8007393477295"
+    },
+    {
+      "name": "ABDCommand",
+      "originalPath": "modules/exports/ABDCommand.js",
+      "outputPath": "reconstructed/exports/ABDCommand.ts",
+      "sourceHash": "b81762193118198de6250e7e91dc2cdbe136fdaccf4335a9f982d39b3e38846e"
+    },
+    {
+      "name": "ABGPHCommand",
+      "originalPath": "modules/exports/ABGPHCommand.js",
+      "outputPath": "reconstructed/exports/ABGPHCommand.ts",
+      "sourceHash": "df04f47865b6f8406f3f778d37efd9518a246838e635313000f5de6ab036cbfd"
+    },
+    {
+      "name": "ABICommand",
+      "originalPath": "modules/exports/ABICommand.js",
+      "outputPath": "reconstructed/exports/ABICommand.ts",
+      "sourceHash": "ade1e32742c93ba1a2b59a953b689c1427da0fc5d3ef92cfbb30311a893d7aba"
+    },
+    {
+      "name": "ABLCommand",
+      "originalPath": "modules/exports/ABLCommand.js",
+      "outputPath": "reconstructed/exports/ABLCommand.ts",
+      "sourceHash": "1716d2c2fdfbae5af8747ef5e91f4dc2eb63c5419fde55503b8ccc53e3295340"
+    },
+    {
+      "name": "ABPICommand",
+      "originalPath": "modules/exports/ABPICommand.js",
+      "outputPath": "reconstructed/exports/ABPICommand.ts",
+      "sourceHash": "98612899a0fe70ca8ed40143025ee41f9f599de72c6d61f137ca28c2ad5b32aa"
+    },
+    {
+      "name": "ABRCommand",
+      "originalPath": "modules/exports/ABRCommand.js",
+      "outputPath": "reconstructed/exports/ABRCommand.ts",
+      "sourceHash": "d562635a37d4404e096d6a7c43c05f3d5d85e3c7d05aa43d2e1d24c8efcef5bf"
+    },
+    {
+      "name": "ACCCommand",
+      "originalPath": "modules/exports/ACCCommand.js",
+      "outputPath": "reconstructed/exports/ACCCommand.ts",
+      "sourceHash": "2d32a2724e6be1912d5649692e5360fda19476fc58fa51149e8e955091d6f08f"
+    },
+    {
+      "name": "ACECommand",
+      "originalPath": "modules/exports/ACECommand.js",
+      "outputPath": "reconstructed/exports/ACECommand.ts",
+      "sourceHash": "5c8dc4f84fea6798d8b39fe853c383eb5846c8da4d6ffe25655837adfc97f18f"
+    },
+    {
+      "name": "ACLCommand",
+      "originalPath": "modules/exports/ACLCommand.js",
+      "outputPath": "reconstructed/exports/ACLCommand.ts",
+      "sourceHash": "8d253521fa348aafc5b05904a210b26aef48112889184016968ec9f216915a53"
+    },
+    {
+      "name": "ACMCommand",
+      "originalPath": "modules/exports/ACMCommand.js",
+      "outputPath": "reconstructed/exports/ACMCommand.ts",
+      "sourceHash": "b9b053438f31c3ae118181d3fe8c6d54ffee449dc5478d90f9054a73676a6627"
+    },
+    {
+      "name": "ACNCommand",
+      "originalPath": "modules/exports/ACNCommand.js",
+      "outputPath": "reconstructed/exports/ACNCommand.ts",
+      "sourceHash": "d8123b7a19ffac1e0d54ac17ef67575046e2601071d04aab20b5ca83a991b7c9"
+    },
+    {
+      "name": "ACRCommand",
+      "originalPath": "modules/exports/ACRCommand.js",
+      "outputPath": "reconstructed/exports/ACRCommand.ts",
+      "sourceHash": "e6f65acfe68b505774d33fdbaca29d7ba670fb9469265096ecceae348160379e"
+    },
+    {
+      "name": "ADACommand",
+      "originalPath": "modules/exports/ADACommand.js",
+      "outputPath": "reconstructed/exports/ADACommand.ts",
+      "sourceHash": "d84b31fdac243e05a0fe6f206b219183d339f17e913fd79b0ee2ac95405bbc8e"
+    },
+    {
+      "name": "ADICommand",
+      "originalPath": "modules/exports/ADICommand.js",
+      "outputPath": "reconstructed/exports/ADICommand.ts",
+      "sourceHash": "a974857252865a19cf03b2e776dc85c23c76d1018d8f9fd83e71eedc7710e94d"
+    },
+    {
+      "name": "ADOCommand",
+      "originalPath": "modules/exports/ADOCommand.js",
+      "outputPath": "reconstructed/exports/ADOCommand.ts",
+      "sourceHash": "705096f38e0694732bce034fdb1971c87c7d2c5d59c0e54bd56eb577aacfe7c8"
+    },
+    {
+      "name": "AECCommand",
+      "originalPath": "modules/exports/AECCommand.js",
+      "outputPath": "reconstructed/exports/AECCommand.ts",
+      "sourceHash": "67135126d25f88c40388917801dc678355f79ba618b6c39162f1a47551725d2e"
+    },
+    {
+      "name": "AEECommand",
+      "originalPath": "modules/exports/AEECommand.js",
+      "outputPath": "reconstructed/exports/AEECommand.ts",
+      "sourceHash": "4337ed7051bc5439689e91b00378b4f2f019bcae2e8d1b36f4d418a97d1c880a"
+    },
+    {
+      "name": "AESCommand",
+      "originalPath": "modules/exports/AESCommand.js",
+      "outputPath": "reconstructed/exports/AESCommand.ts",
+      "sourceHash": "72848eda93764ba258129f2bdb26846070e6105da6f6d11792d212b126a04626"
+    },
+    {
+      "name": "AFACommand",
+      "originalPath": "modules/exports/AFACommand.js",
+      "outputPath": "reconstructed/exports/AFACommand.ts",
+      "sourceHash": "b278febba5d647c286a55b01fb986728c1acab91910d3272f691ef6738c55ef4"
+    },
+    {
+      "name": "AGBCommand",
+      "originalPath": "modules/exports/AGBCommand.js",
+      "outputPath": "reconstructed/exports/AGBCommand.ts",
+      "sourceHash": "698a6bacef2f4ff8466a2653d98965f1e8ebdc71cac6d8a96becfb35a3617025"
+    },
+    {
+      "name": "AGCCommand",
+      "originalPath": "modules/exports/AGCCommand.js",
+      "outputPath": "reconstructed/exports/AGCCommand.ts",
+      "sourceHash": "971e9784369c7ac6b9254a436c4de2c2ddfc754293fda9634030ea2b98beb590"
+    },
+    {
+      "name": "AGRCommand",
+      "originalPath": "modules/exports/AGRCommand.js",
+      "outputPath": "reconstructed/exports/AGRCommand.ts",
+      "sourceHash": "fb80abe4c8526bd03c99a2404a4e50ae117fe37cb721f47e5330a37aa2a9a92d"
+    },
+    {
+      "name": "AGSCommand",
+      "originalPath": "modules/exports/AGSCommand.js",
+      "outputPath": "reconstructed/exports/AGSCommand.ts",
+      "sourceHash": "ebc455fdaff9d46f7366395ba97a324166b529b80ea0b67c22202c5b4dc9601e"
+    },
+    {
+      "name": "AHDCommand",
+      "originalPath": "modules/exports/AHDCommand.js",
+      "outputPath": "reconstructed/exports/AHDCommand.ts",
+      "sourceHash": "71c2483c57b0baca079cf8f6c349d61980e1c9ec160d5820b806b778033f972e"
+    },
+    {
+      "name": "AHFCommand",
+      "originalPath": "modules/exports/AHFCommand.js",
+      "outputPath": "reconstructed/exports/AHFCommand.ts",
+      "sourceHash": "201331f335298ebfb16a64c39b1afa691f5a18ccba549e1a61c9fe4f03429986"
+    },
+    {
+      "name": "AHHCommand",
+      "originalPath": "modules/exports/AHHCommand.js",
+      "outputPath": "reconstructed/exports/AHHCommand.ts",
+      "sourceHash": "251d37bed4b535ee93a8f619d7cdab714cd8ec5584506399fa18c50d66af0987"
+    },
+    {
+      "name": "AHLCommand",
+      "originalPath": "modules/exports/AHLCommand.js",
+      "outputPath": "reconstructed/exports/AHLCommand.ts",
+      "sourceHash": "98a70fac6ea8f04b72048b0d922adb09954fcedf503dc051b64bc9c887742ab2"
+    },
+    {
+      "name": "AHRCommand",
+      "originalPath": "modules/exports/AHRCommand.js",
+      "outputPath": "reconstructed/exports/AHRCommand.ts",
+      "sourceHash": "df9bc88fbf3e795f0be903800a889e94a70af635468708466d9d27a1710c6ec8"
+    },
+    {
+      "name": "AIICommand",
+      "originalPath": "modules/exports/AIICommand.js",
+      "outputPath": "reconstructed/exports/AIICommand.ts",
+      "sourceHash": "755b57a6d060ae4dcafd9d319ee59d11b583b1529857f4a7166823682bbc4cbc"
+    },
+    {
+      "name": "AINCommand",
+      "originalPath": "modules/exports/AINCommand.js",
+      "outputPath": "reconstructed/exports/AINCommand.ts",
+      "sourceHash": "fd567f55dacd150c3675adde51fdc1f2b2d752d46b1d287357371c1050078a7c"
+    },
+    {
+      "name": "AJPCommand",
+      "originalPath": "modules/exports/AJPCommand.js",
+      "outputPath": "reconstructed/exports/AJPCommand.ts",
+      "sourceHash": "a2c4c47b75a06e9d2a1f77277bd5da336a1a24d3f785cffd255ad88f8b7b9bad"
+    },
+    {
+      "name": "AKMCommand",
+      "originalPath": "modules/exports/AKMCommand.js",
+      "outputPath": "reconstructed/exports/AKMCommand.ts",
+      "sourceHash": "9e22920f099a186837bae988023309c150619508b73d5e561c1cae59e9a3b355"
+    },
+    {
+      "name": "ALBCommand",
+      "originalPath": "modules/exports/ALBCommand.js",
+      "outputPath": "reconstructed/exports/ALBCommand.ts",
+      "sourceHash": "2b612d70574e584ba95b3faf0d503ba8e1b7d510e72407e500436413f21ea469"
+    },
+    {
+      "name": "ALICommand",
+      "originalPath": "modules/exports/ALICommand.js",
+      "outputPath": "reconstructed/exports/ALICommand.ts",
+      "sourceHash": "0aab5c2773ae194fac2b3b0f92a021ce6d4edfebfd270c642f89e10b0234f2a7"
+    },
+    {
+      "name": "ALLCommand",
+      "originalPath": "modules/exports/ALLCommand.js",
+      "outputPath": "reconstructed/exports/ALLCommand.ts",
+      "sourceHash": "bb1869796d2c8f3b18c810dc3a4e03b094257ff9e8f366cd037c3ef0977b4b95"
+    },
+    {
+      "name": "AMACommand",
+      "originalPath": "modules/exports/AMACommand.js",
+      "outputPath": "reconstructed/exports/AMACommand.ts",
+      "sourceHash": "201c1323281222f101b7eff8fdc38b0df8aa0a5edeb8dc0c05394e65fd537449"
+    },
+    {
+      "name": "AMSCommand",
+      "originalPath": "modules/exports/AMSCommand.js",
+      "outputPath": "reconstructed/exports/AMSCommand.ts",
+      "sourceHash": "f9131e5ef1dc036f8021eb0c73b7be7a408fe44c393905a689f6adbefa807597"
+    },
+    {
+      "name": "ANLCommand",
+      "originalPath": "modules/exports/ANLCommand.js",
+      "outputPath": "reconstructed/exports/ANLCommand.ts",
+      "sourceHash": "88c7818e39d2d75d9106c419fb717164b4b1a11e30a7c73dcc278df5ab20e91f"
+    },
+    {
+      "name": "AQICommand",
+      "originalPath": "modules/exports/AQICommand.js",
+      "outputPath": "reconstructed/exports/AQICommand.ts",
+      "sourceHash": "4709c03b3dd24a44f17df5c5b3a43cb3ab43f3b2816b64c32e88c4fd10949cf4"
+    },
+    {
+      "name": "AQPCCommand",
+      "originalPath": "modules/exports/AQPCCommand.js",
+      "outputPath": "reconstructed/exports/AQPCCommand.ts",
+      "sourceHash": "cbf1b7fda0a66f12b1c9d7b55d217481a28da48352d82f840a4b6f7b0c29b7c0"
+    },
+    {
+      "name": "AQSCommand",
+      "originalPath": "modules/exports/AQSCommand.js",
+      "outputPath": "reconstructed/exports/AQSCommand.ts",
+      "sourceHash": "7dc44e54d95d21b99c2dff2d10cae42079049745e4751c04421a8caf8492a1cc"
+    },
+    {
+      "name": "ARBCommand",
+      "originalPath": "modules/exports/ARBCommand.js",
+      "outputPath": "reconstructed/exports/ARBCommand.ts",
+      "sourceHash": "2400d2bd275f29f8f1bb881d50e548b70da39ac6a9771bd023f8f9f97fb2e046"
+    },
+    {
+      "name": "ARDCommand",
+      "originalPath": "modules/exports/ARDCommand.js",
+      "outputPath": "reconstructed/exports/ARDCommand.ts",
+      "sourceHash": "1638889c7fed24299c1c55b8d5b3eabf851979f4cf925bb6dccecb71b60056c6"
+    },
+    {
+      "name": "ARLCommand",
+      "originalPath": "modules/exports/ARLCommand.js",
+      "outputPath": "reconstructed/exports/ARLCommand.ts",
+      "sourceHash": "f58b87c2adb8b2a1cebde5de23ac08ce9e3baddcd7f3e842f50fda2b08e602aa"
+    },
+    {
+      "name": "ASACommand",
+      "originalPath": "modules/exports/ASACommand.js",
+      "outputPath": "reconstructed/exports/ASACommand.ts",
+      "sourceHash": "2d570e9781bb2c5fbc1c583f36358dc33d8505960cdf080df8b45c4deaf3f53c"
+    },
+    {
+      "name": "ASCCommand",
+      "originalPath": "modules/exports/ASCCommand.js",
+      "outputPath": "reconstructed/exports/ASCCommand.ts",
+      "sourceHash": "2122cf0af2a2b89fb7c1cdf176ad34132818de747c1a47d797ac3218cb5e3237"
+    },
+    {
+      "name": "ASGCommand",
+      "originalPath": "modules/exports/ASGCommand.js",
+      "outputPath": "reconstructed/exports/ASGCommand.ts",
+      "sourceHash": "6985942a40623376f81cccf42adc30d06afdebb933e423946ef7b86f490c1962"
+    },
+    {
+      "name": "ASMCommand",
+      "originalPath": "modules/exports/ASMCommand.js",
+      "outputPath": "reconstructed/exports/ASMCommand.ts",
+      "sourceHash": "70256791e000ff1e3fdd779a3583d22df5cc520199f32e6baa634e9d3b6cdb18"
+    },
+    {
+      "name": "ASRCommand",
+      "originalPath": "modules/exports/ASRCommand.js",
+      "outputPath": "reconstructed/exports/ASRCommand.ts",
+      "sourceHash": "31a0ecfe6edbf5c1f01d2dbdabf02ff4e8514914b5f9b8b0fb2fb06fbcefb702"
+    },
+    {
+      "name": "ATCCommand",
+      "originalPath": "modules/exports/ATCCommand.js",
+      "outputPath": "reconstructed/exports/ATCCommand.ts",
+      "sourceHash": "a01402449d91c03f6385659554587a3ded97f99d26c00f211c50f84c606be5af"
+    },
+    {
+      "name": "ATDCommand",
+      "originalPath": "modules/exports/ATDCommand.js",
+      "outputPath": "reconstructed/exports/ATDCommand.ts",
+      "sourceHash": "b85cda62e90d718fffdd3107022aee17ec4bc7a6d322df3ab8e9b49971e06957"
+    },
+    {
+      "name": "ATLCommand",
+      "originalPath": "modules/exports/ATLCommand.js",
+      "outputPath": "reconstructed/exports/ATLCommand.ts",
+      "sourceHash": "cd649d075386b6867481acf6f41858e89d34c59db8f9bff2fc13de7d7229de7e"
+    },
+    {
+      "name": "ATPCommand",
+      "originalPath": "modules/exports/ATPCommand.js",
+      "outputPath": "reconstructed/exports/ATPCommand.ts",
+      "sourceHash": "f41af55a6c134013b2e062134331cf9f26a7bc9a9cf0bc26d310ae467f5ed008"
+    },
+    {
+      "name": "AUGCommand",
+      "originalPath": "modules/exports/AUGCommand.js",
+      "outputPath": "reconstructed/exports/AUGCommand.ts",
+      "sourceHash": "ac2932ad8be354e0db5dede6e91ab790fde3d23dbeb17efb6b74dc84129d2659"
+    },
+    {
+      "name": "AVICommand",
+      "originalPath": "modules/exports/AVICommand.js",
+      "outputPath": "reconstructed/exports/AVICommand.ts",
+      "sourceHash": "bdbf493db824c27c326e54033b614e34f9d3779a324af7c3b5c724ab4f44d8a8"
+    },
+    {
+      "name": "BAICommand",
+      "originalPath": "modules/exports/BAICommand.js",
+      "outputPath": "reconstructed/exports/BAICommand.ts",
+      "sourceHash": "e8c58258985d53e7cd901e0069e1a64d96ae3b097e5f4bc22dfcbc25e0249868"
+    },
+    {
+      "name": "BCHCommand",
+      "originalPath": "modules/exports/BCHCommand.js",
+      "outputPath": "reconstructed/exports/BCHCommand.ts",
+      "sourceHash": "34d417a727e619ed38b56783d4b8c239e8707c51dd2d4841901745ffb9d8a00b"
+    },
+    {
+      "name": "BCSCommand",
+      "originalPath": "modules/exports/BCSCommand.js",
+      "outputPath": "reconstructed/exports/BCSCommand.ts",
+      "sourceHash": "6eef059f207ef21dc041f111430b7814e3346cde993b45c5b695dc135e9f57f5"
+    },
+    {
+      "name": "BDECommand",
+      "originalPath": "modules/exports/BDECommand.js",
+      "outputPath": "reconstructed/exports/BDECommand.ts",
+      "sourceHash": "8842373d59d06564acd9f5f5c82191050dece435f8b4f00242a215128e462a03"
+    },
+    {
+      "name": "BDSCommand",
+      "originalPath": "modules/exports/BDSCommand.js",
+      "outputPath": "reconstructed/exports/BDSCommand.ts",
+      "sourceHash": "37168082c1e11458a96671a49c14ffd73c7712c58e76e5b765dc98508dd8c2f2"
+    },
+    {
+      "name": "BEPCommand",
+      "originalPath": "modules/exports/BEPCommand.js",
+      "outputPath": "reconstructed/exports/BEPCommand.ts",
+      "sourceHash": "a893900edbb751967cc43f34a693311c854cf5ed2fa6d324e8d456b4c37342ee"
+    },
+    {
+      "name": "BFLCommand",
+      "originalPath": "modules/exports/BFLCommand.js",
+      "outputPath": "reconstructed/exports/BFLCommand.ts",
+      "sourceHash": "acd50123231a8f70a7c85d2b8330628688a9c6c4072320e3ef329a47cd4dd593"
+    },
+    {
+      "name": "BFSCommand",
+      "originalPath": "modules/exports/BFSCommand.js",
+      "outputPath": "reconstructed/exports/BFSCommand.ts",
+      "sourceHash": "2b744df6a1f3cd54a1c32b5dab4aa7673c998e065e68cb2d2c3e76548926df25"
+    },
+    {
+      "name": "BGECommand",
+      "originalPath": "modules/exports/BGECommand.js",
+      "outputPath": "reconstructed/exports/BGECommand.ts",
+      "sourceHash": "c0b7312d916cae804b62f5a6606e0dbe8dd78debe5b6dd505126c4d23a49d141"
+    },
+    {
+      "name": "BIECommand",
+      "originalPath": "modules/exports/BIECommand.js",
+      "outputPath": "reconstructed/exports/BIECommand.ts",
+      "sourceHash": "cf9562263e8c8fa4746aeb02cb5b2bcfd7ce5ee42e67c0064291c6f7a4599638"
+    },
+    {
+      "name": "BISCommand",
+      "originalPath": "modules/exports/BISCommand.js",
+      "outputPath": "reconstructed/exports/BISCommand.ts",
+      "sourceHash": "2ec2d788638c1e37bae7b192afe0f46da41d773da853a552cc9250180e866ac3"
+    },
+    {
+      "name": "BLVCommand",
+      "originalPath": "modules/exports/BLVCommand.js",
+      "outputPath": "reconstructed/exports/BLVCommand.ts",
+      "sourceHash": "4f89c77738e78897b6ea8b9869bdccf1a6c8d74e550e4463fc654ca0c711961c"
+    },
+    {
+      "name": "BMSCommand",
+      "originalPath": "modules/exports/BMSCommand.js",
+      "outputPath": "reconstructed/exports/BMSCommand.ts",
+      "sourceHash": "2bfd8bb8636ae3e8c3f65695bfc6f613737ee5c1de87dbad620bcdabfabda910"
+    },
+    {
+      "name": "BOICommand",
+      "originalPath": "modules/exports/BOICommand.js",
+      "outputPath": "reconstructed/exports/BOICommand.ts",
+      "sourceHash": "97543a738b3580807c5ca671c700e87607c1b5af66534a692a051d4694805986"
+    },
+    {
+      "name": "BOUCommand",
+      "originalPath": "modules/exports/BOUCommand.js",
+      "outputPath": "reconstructed/exports/BOUCommand.ts",
+      "sourceHash": "b0d8b765e3f907fc8ce97d2534aa06ce7d6a36cc929ead1906d6d4d6f822e220"
+    },
+    {
+      "name": "BRPCommand",
+      "originalPath": "modules/exports/BRPCommand.js",
+      "outputPath": "reconstructed/exports/BRPCommand.ts",
+      "sourceHash": "9ceceab3d9e3cd76cde252ea51a0105d2ff15a5e19242b30602d55d3d6856e67"
+    },
+    {
+      "name": "BRSCommand",
+      "originalPath": "modules/exports/BRSCommand.js",
+      "outputPath": "reconstructed/exports/BRSCommand.ts",
+      "sourceHash": "1a5e884b52ac14f91168444e88805e1254363a372fd09d9c0b34b4b13f62d4b4"
+    },
+    {
+      "name": "BRTCommand",
+      "originalPath": "modules/exports/BRTCommand.js",
+      "outputPath": "reconstructed/exports/BRTCommand.ts",
+      "sourceHash": "0d443444565074fcb970caefa51724073f154713e9b85902ab847d5a3291558d"
+    },
+    {
+      "name": "BSOCommand",
+      "originalPath": "modules/exports/BSOCommand.js",
+      "outputPath": "reconstructed/exports/BSOCommand.ts",
+      "sourceHash": "e5c0359c90e77a89d1fd928bae33860d126cb7c06ff4e6d1b3eb3af11ef4c9a3"
+    },
+    {
+      "name": "BSPCommand",
+      "originalPath": "modules/exports/BSPCommand.js",
+      "outputPath": "reconstructed/exports/BSPCommand.ts",
+      "sourceHash": "c4a7bffbee10d61916daf79e0486ef373710abe38afbd2d23b4aeed6bd48bc48"
+    },
+    {
+      "name": "BSSCommand",
+      "originalPath": "modules/exports/BSSCommand.js",
+      "outputPath": "reconstructed/exports/BSSCommand.ts",
+      "sourceHash": "5009f5128fadae028ee0fad6f50c19c44835ac5a097c63f06a4b50d0a8f50ff3"
+    },
+    {
+      "name": "BSTCommand",
+      "originalPath": "modules/exports/BSTCommand.js",
+      "outputPath": "reconstructed/exports/BSTCommand.ts",
+      "sourceHash": "aec1333dba97b0d8f58780dc5b0cabb67c3fdcb54a753167e411c22d3dee9cab"
+    },
+    {
+      "name": "BTXCommand",
+      "originalPath": "modules/exports/BTXCommand.js",
+      "outputPath": "reconstructed/exports/BTXCommand.ts",
+      "sourceHash": "3d0a4f138b7bd62f4f19cc3361e9314366f1d4b7c6b54b18a3a7678ce1064923"
+    },
+    {
+      "name": "BUSCommand",
+      "originalPath": "modules/exports/BUSCommand.js",
+      "outputPath": "reconstructed/exports/BUSCommand.ts",
+      "sourceHash": "d68e342992c42fc0c800dc8fd6aa2f31c9c61be803ce4eb277c33c7f78758e4a"
+    },
+    {
+      "name": "CAAQCommand",
+      "originalPath": "modules/exports/CAAQCommand.js",
+      "outputPath": "reconstructed/exports/CAAQCommand.ts",
+      "sourceHash": "ac89353ebabb28d2e32b8364b4fe3b8bf9330a01ccfaac6dcd0d0e184f3730e5"
+    },
+    {
+      "name": "CALCommand",
+      "originalPath": "modules/exports/CALCommand.js",
+      "outputPath": "reconstructed/exports/CALCommand.ts",
+      "sourceHash": "f1af49207b4e1fc68c53b9001486d1b63ceb73ed5f61326d75f30cf9c3d3708b"
+    },
+    {
+      "name": "CAQCommand",
+      "originalPath": "modules/exports/CAQCommand.js",
+      "outputPath": "reconstructed/exports/CAQCommand.ts",
+      "sourceHash": "2a75b807e220c9d94612c579975b921e40bb97ed407285f43995850135564e93"
+    },
+    {
+      "name": "CARCommand",
+      "originalPath": "modules/exports/CARCommand.js",
+      "outputPath": "reconstructed/exports/CARCommand.ts",
+      "sourceHash": "8412260207ac596e6f37c01b8ccbe0064e03e9670bebb710250be14523e5fc83"
+    },
+    {
+      "name": "CATCommand",
+      "originalPath": "modules/exports/CATCommand.js",
+      "outputPath": "reconstructed/exports/CATCommand.ts",
+      "sourceHash": "d99df32520cf57fc8b589b196489084569017f99d241b1b97c6551f1bade774c"
+    },
+    {
+      "name": "CBXCommand",
+      "originalPath": "modules/exports/CBXCommand.js",
+      "outputPath": "reconstructed/exports/CBXCommand.ts",
+      "sourceHash": "53eddf1907f247a6496eb86918ac206181d3b5f4d640ebf0ed6837f88ffcac9a"
+    },
+    {
+      "name": "CCDCommand",
+      "originalPath": "modules/exports/CCDCommand.js",
+      "outputPath": "reconstructed/exports/CCDCommand.ts",
+      "sourceHash": "39f2e8bdc31d1ff7cb7c38cd435d10eb1601bebc3c053f0377ee66864bb08519"
+    },
+    {
+      "name": "CCICommand",
+      "originalPath": "modules/exports/CCICommand.js",
+      "outputPath": "reconstructed/exports/CCICommand.ts",
+      "sourceHash": "99243274644c4b42f6314b089bae7436254e21ca686a490ca00262e180d50b11"
+    },
+    {
+      "name": "CCRCommand",
+      "originalPath": "modules/exports/CCRCommand.js",
+      "outputPath": "reconstructed/exports/CCRCommand.ts",
+      "sourceHash": "91be6330909447e2bd3c16a0d273e5f129126bfcc5f551c1a657d0b90f580a16"
+    },
+    {
+      "name": "CDDCommand",
+      "originalPath": "modules/exports/CDDCommand.js",
+      "outputPath": "reconstructed/exports/CDDCommand.ts",
+      "sourceHash": "b438e82b68f2d910a38cae6ef6ac3641bdb9451d365c2d1d0f2417f2b0c621aa"
+    },
+    {
+      "name": "CDECommand",
+      "originalPath": "modules/exports/CDECommand.js",
+      "outputPath": "reconstructed/exports/CDECommand.ts",
+      "sourceHash": "aad1c8722f7a0b7d77414ec3fdceb20d01d08b9a19932fff46eea638ec7d312e"
+    },
+    {
+      "name": "CDSCommand",
+      "originalPath": "modules/exports/CDSCommand.js",
+      "outputPath": "reconstructed/exports/CDSCommand.ts",
+      "sourceHash": "028c826a67e6fd439a1689b6798b08464a813b10cae0a44002241e2273b10acf"
+    },
+    {
+      "name": "CEMCommand",
+      "originalPath": "modules/exports/CEMCommand.js",
+      "outputPath": "reconstructed/exports/CEMCommand.ts",
+      "sourceHash": "d31790392d68390e1e8fe4a950b89281ef05a2a833c96682a89074b8b6da3066"
+    },
+    {
+      "name": "CEQCommand",
+      "originalPath": "modules/exports/CEQCommand.js",
+      "outputPath": "reconstructed/exports/CEQCommand.ts",
+      "sourceHash": "12390720bdf95442ec52e0169971013d2a8472ac20d7fa776d179b43d945fab6"
+    },
+    {
+      "name": "CFICommand",
+      "originalPath": "modules/exports/CFICommand.js",
+      "outputPath": "reconstructed/exports/CFICommand.ts",
+      "sourceHash": "3da88238af1d47b2d369e59f2af63bad48c87180e23606977578c36ebb2aef92"
+    },
+    {
+      "name": "CGECommand",
+      "originalPath": "modules/exports/CGECommand.js",
+      "outputPath": "reconstructed/exports/CGECommand.ts",
+      "sourceHash": "5c047a29f7f4ac6b20a03df4d3a4820f7eaa13d48cde82c97e688c4362c07422"
+    },
+    {
+      "name": "CHECommand",
+      "originalPath": "modules/exports/CHECommand.js",
+      "outputPath": "reconstructed/exports/CHECommand.ts",
+      "sourceHash": "2efaca1610f84d16f5e6e5e1999c2b8ce73e7b0289c0b8218875517593772c70"
+    },
+    {
+      "name": "CICCommand",
+      "originalPath": "modules/exports/CICCommand.js",
+      "outputPath": "reconstructed/exports/CICCommand.ts",
+      "sourceHash": "601c87e85585a3254ac39848daea8e2dadfb891debf888f8bf69ff059d990e0c"
+    },
+    {
+      "name": "CLBCommand",
+      "originalPath": "modules/exports/CLBCommand.js",
+      "outputPath": "reconstructed/exports/CLBCommand.ts",
+      "sourceHash": "4dbe27307f421bd76366457867d0efa33a8eff440928fae433b62b14698db394"
+    },
+    {
+      "name": "CLFCommand",
+      "originalPath": "modules/exports/CLFCommand.js",
+      "outputPath": "reconstructed/exports/CLFCommand.ts",
+      "sourceHash": "24ceca02ec363e2241f4353c463940423d501abb93063c8ab75558a8de86900f"
+    },
+    {
+      "name": "CMCCommand",
+      "originalPath": "modules/exports/CMCCommand.js",
+      "outputPath": "reconstructed/exports/CMCCommand.ts",
+      "sourceHash": "c962d2d722618e93ac0bc57d860aeb98ea1f015397a5b12bb7a28fbccbf10fd5"
+    },
+    {
+      "name": "CMICommand",
+      "originalPath": "modules/exports/CMICommand.js",
+      "outputPath": "reconstructed/exports/CMICommand.ts",
+      "sourceHash": "dcb40c831821b5e5715477f93139f7e24104a27ea4d2dbd2d6e5f52dd547c37b"
+    },
+    {
+      "name": "CMRCommand",
+      "originalPath": "modules/exports/CMRCommand.js",
+      "outputPath": "reconstructed/exports/CMRCommand.ts",
+      "sourceHash": "d1ecd385820d45f017311635c2401e78a68216cea6960040c020a229a414caba"
+    },
+    {
+      "name": "COICommand",
+      "originalPath": "modules/exports/COICommand.js",
+      "outputPath": "reconstructed/exports/COICommand.ts",
+      "sourceHash": "a3eb1b9097a3dc4e17cbb8ed7249156a04b97dd73a74dfe69fa202ba72855f95"
+    },
+    {
+      "name": "CPDCommand",
+      "originalPath": "modules/exports/CPDCommand.js",
+      "outputPath": "reconstructed/exports/CPDCommand.ts",
+      "sourceHash": "bcabc1163da1bb301986472e7ff8d7fe045a8afdce659411e342efee4bc70604"
+    },
+    {
+      "name": "CPECommand",
+      "originalPath": "modules/exports/CPECommand.js",
+      "outputPath": "reconstructed/exports/CPECommand.ts",
+      "sourceHash": "f387e3693509287b869debde159415f7b4bd1e4ccc930de77287d3c78ba375a9"
+    },
+    {
+      "name": "CPICommand",
+      "originalPath": "modules/exports/CPICommand.js",
+      "outputPath": "reconstructed/exports/CPICommand.ts",
+      "sourceHash": "b8746ef019c232d67c0b95d7174e7218af44aaed1004ba9c4fb7a1e5226d022c"
+    },
+    {
+      "name": "CPMCommand",
+      "originalPath": "modules/exports/CPMCommand.js",
+      "outputPath": "reconstructed/exports/CPMCommand.ts",
+      "sourceHash": "9e5a1db7818471bb553e75c123cec78a5bcb770827c496ceaa3dd817bfe71515"
+    },
+    {
+      "name": "CPNCommand",
+      "originalPath": "modules/exports/CPNCommand.js",
+      "outputPath": "reconstructed/exports/CPNCommand.ts",
+      "sourceHash": "56e8a201c3bcdc7192e1dbaaac3dcb81d25591295c03b0fa1735073b4cae65b5"
+    },
+    {
+      "name": "CPNECommand",
+      "originalPath": "modules/exports/CPNECommand.js",
+      "outputPath": "reconstructed/exports/CPNECommand.ts",
+      "sourceHash": "014239ecdc18be23ce6a07a91a63d959b78e8301f0451ae024ce2ab28cf716e7"
+    },
+    {
+      "name": "CRCACommand",
+      "originalPath": "modules/exports/CRCACommand.js",
+      "outputPath": "reconstructed/exports/CRCACommand.ts",
+      "sourceHash": "9dbbe232efdae6f53d59d50c6d7e88998b03d11caf1cf1cc4a579217f57bb747"
+    },
+    {
+      "name": "CRICommand",
+      "originalPath": "modules/exports/CRICommand.js",
+      "outputPath": "reconstructed/exports/CRICommand.ts",
+      "sourceHash": "46a497da1b6ac3d69b48fb387a5c86d9dc614d74bcc47d0f8a0b145b5eeb3566"
+    },
+    {
+      "name": "CRLCommand",
+      "originalPath": "modules/exports/CRLCommand.js",
+      "outputPath": "reconstructed/exports/CRLCommand.ts",
+      "sourceHash": "937a560c4d992c8fb2742ba3b9f86da2628d900a875dbd850239e51c974a2d6e"
+    },
+    {
+      "name": "CRMCommand",
+      "originalPath": "modules/exports/CRMCommand.js",
+      "outputPath": "reconstructed/exports/CRMCommand.ts",
+      "sourceHash": "2e8d3f94588888c55c5338ecf34af90dd03c7d3b8e077548f17e6d504f4af986"
+    },
+    {
+      "name": "CRQMCommand",
+      "originalPath": "modules/exports/CRQMCommand.js",
+      "outputPath": "reconstructed/exports/CRQMCommand.ts",
+      "sourceHash": "d91d787d38ff78fdf036592ad7621b7c688f5ce8b88812df5129aa9853d994c0"
+    },
+    {
+      "name": "CRSKCommand",
+      "originalPath": "modules/exports/CRSKCommand.js",
+      "outputPath": "reconstructed/exports/CRSKCommand.ts",
+      "sourceHash": "4c0aa774e1df221d35fa7dead729e5a68597d773c85ec52563d243dc6dbbf0ca"
+    },
+    {
+      "name": "CRSTCommand",
+      "originalPath": "modules/exports/CRSTCommand.js",
+      "outputPath": "reconstructed/exports/CRSTCommand.ts",
+      "sourceHash": "0a58875ea0434d18bd6712b1fa06f14e40c87cd868a29d04dd68e81354a840ce"
+    },
+    {
+      "name": "CRUNCommand",
+      "originalPath": "modules/exports/CRUNCommand.js",
+      "outputPath": "reconstructed/exports/CRUNCommand.ts",
+      "sourceHash": "79cbad79d6ac030557ef202fe789d6808a54fc535e320b09b43926144ba2aac3"
+    },
+    {
+      "name": "CSCCommand",
+      "originalPath": "modules/exports/CSCCommand.js",
+      "outputPath": "reconstructed/exports/CSCCommand.ts",
+      "sourceHash": "bc589eead454ceab645636f6f889de9eb0d68792fdf8b5b1fd63b2324767ffcc"
+    },
+    {
+      "name": "CSLCommand",
+      "originalPath": "modules/exports/CSLCommand.js",
+      "outputPath": "reconstructed/exports/CSLCommand.ts",
+      "sourceHash": "d2a8116faa5ada736ecfbaa379d14db5a19223b42ba794ed6da8e159fcd58932"
+    },
+    {
+      "name": "CSMCommand",
+      "originalPath": "modules/exports/CSMCommand.js",
+      "outputPath": "reconstructed/exports/CSMCommand.ts",
+      "sourceHash": "3e763ff099b1f887516bdbae06815353565ae26e885bdb97b8ef1e8f7e3eac3c"
+    },
+    {
+      "name": "CSSCommand",
+      "originalPath": "modules/exports/CSSCommand.js",
+      "outputPath": "reconstructed/exports/CSSCommand.ts",
+      "sourceHash": "7d1f7d93e6b39bfe2feaa8145c7e1f3376ecae6dee11baca7772ad5c1b32b9fb"
+    },
+    {
+      "name": "CTICommand",
+      "originalPath": "modules/exports/CTICommand.js",
+      "outputPath": "reconstructed/exports/CTICommand.ts",
+      "sourceHash": "464469a24e3c04972461149385b0d6484b97704bf3eaa0532db10abda6cf1ada"
+    },
+    {
+      "name": "DCICommand",
+      "originalPath": "modules/exports/DCICommand.js",
+      "outputPath": "reconstructed/exports/DCICommand.ts",
+      "sourceHash": "c44b81f8476e066e2480473e5a5ec148cd1128cb9e239d30f6bc0cacd5000047"
+    },
+    {
+      "name": "DCLCommand",
+      "originalPath": "modules/exports/DCLCommand.js",
+      "outputPath": "reconstructed/exports/DCLCommand.ts",
+      "sourceHash": "25842a242675ef8ad3fc831f254d3e549159ed3095a8bd68ea6a25d9de5073ec"
+    },
+    {
+      "name": "DFCCommand",
+      "originalPath": "modules/exports/DFCCommand.js",
+      "outputPath": "reconstructed/exports/DFCCommand.ts",
+      "sourceHash": "342d5f6bcc6ab1760aa21e71896b24cc904753a2b339dbf4f45d16d5be1ebb62"
+    },
+    {
+      "name": "DFFCommand",
+      "originalPath": "modules/exports/DFFCommand.js",
+      "outputPath": "reconstructed/exports/DFFCommand.ts",
+      "sourceHash": "d24004e457b581d9038b63b468d4930e3be84358b02791ca57fc3c93023e8594"
+    },
+    {
+      "name": "DFKCommand",
+      "originalPath": "modules/exports/DFKCommand.js",
+      "outputPath": "reconstructed/exports/DFKCommand.ts",
+      "sourceHash": "5f44a316c741a9a4e2f9973fdaa3cad7e7053d806fe1c76d2d5d3e622620bd1b"
+    },
+    {
+      "name": "DFMCommand",
+      "originalPath": "modules/exports/DFMCommand.js",
+      "outputPath": "reconstructed/exports/DFMCommand.ts",
+      "sourceHash": "2785c1e44476ea534e07b22f6e40a56b5ad7a46ac7b65ca7fa79e11ddcebeb1a"
+    },
+    {
+      "name": "DFWCommand",
+      "originalPath": "modules/exports/DFWCommand.js",
+      "outputPath": "reconstructed/exports/DFWCommand.ts",
+      "sourceHash": "da5cdc35422f27d60bb01ff1bc5e074abcfd00da5fe2b26bd82e5fd6cc19204b"
+    },
+    {
+      "name": "DIOCommand",
+      "originalPath": "modules/exports/DIOCommand.js",
+      "outputPath": "reconstructed/exports/DIOCommand.ts",
+      "sourceHash": "4f72eb4a2018f31de10543ca794927c29d108dc9a35adb4ede3ede4a7c294bd3"
+    },
+    {
+      "name": "DTSCommand",
+      "originalPath": "modules/exports/DTSCommand.js",
+      "outputPath": "reconstructed/exports/DTSCommand.ts",
+      "sourceHash": "9f9aab4aa922cec9fd4233035adecc69221de333c7b588cb3edda46996d11268"
+    },
+    {
+      "name": "DUPCommand",
+      "originalPath": "modules/exports/DUPCommand.js",
+      "outputPath": "reconstructed/exports/DUPCommand.ts",
+      "sourceHash": "0b91b242cb945e5a9e42adfd213fb26561a2d69b7111280eeaa56b18e02564ed"
+    },
+    {
+      "name": "EBECommand",
+      "originalPath": "modules/exports/EBECommand.js",
+      "outputPath": "reconstructed/exports/EBECommand.ts",
+      "sourceHash": "e07707e5c8b89bb5e5d553abcfdfd62520ccd1a44cc530186c71464624fe2a68"
+    },
+    {
+      "name": "EBUCommand",
+      "originalPath": "modules/exports/EBUCommand.js",
+      "outputPath": "reconstructed/exports/EBUCommand.ts",
+      "sourceHash": "38f40d3c5dd387088b09bf4907396a7ebc788382a8742b6a8b2f2f67454ceae3"
+    },
+    {
+      "name": "EDOCommand",
+      "originalPath": "modules/exports/EDOCommand.js",
+      "outputPath": "reconstructed/exports/EDOCommand.ts",
+      "sourceHash": "55102404997d5a3ed3e2005b4741b0e4a89dfaafeb434b1574f91fd1b57960d7"
+    },
+    {
+      "name": "EEQCommand",
+      "originalPath": "modules/exports/EEQCommand.js",
+      "outputPath": "reconstructed/exports/EEQCommand.ts",
+      "sourceHash": "6e488564030553fdf8c8510d5889d4b828b84305adddf74bf768d0986d45087f"
+    },
+    {
+      "name": "EGECommand",
+      "originalPath": "modules/exports/EGECommand.js",
+      "outputPath": "reconstructed/exports/EGECommand.ts",
+      "sourceHash": "25a9d1a9cf81eb0b53aadaa6df1caa6845d298f1ec5d071a1d01281ffe2bcb9d"
+    },
+    {
+      "name": "EGOCommand",
+      "originalPath": "modules/exports/EGOCommand.js",
+      "outputPath": "reconstructed/exports/EGOCommand.ts",
+      "sourceHash": "52e5aec4d959cf6ca5f9e7d1644e2018ad99fa1cbf0b4ac31696189cd754cf1d"
+    },
+    {
+      "name": "EMOCommand",
+      "originalPath": "modules/exports/EMOCommand.js",
+      "outputPath": "reconstructed/exports/EMOCommand.ts",
+      "sourceHash": "baab04bd8f1d745aeab65415ba54316b0d0ad82a7c33007c7d4277bf96021e1f"
+    },
+    {
+      "name": "EQECommand",
+      "originalPath": "modules/exports/EQECommand.js",
+      "outputPath": "reconstructed/exports/EQECommand.ts",
+      "sourceHash": "797b63a7fbcbcf07f4662bf8a9c06a3544c153984ea3b54c2853c4d103eea1b6"
+    },
+    {
+      "name": "ERECommand",
+      "originalPath": "modules/exports/ERECommand.js",
+      "outputPath": "reconstructed/exports/ERECommand.ts",
+      "sourceHash": "8218009070ea3f0dc0aeccf95a720186897851548da08c03fc90eeaee825a527"
+    },
+    {
+      "name": "ETCCommand",
+      "originalPath": "modules/exports/ETCCommand.js",
+      "outputPath": "reconstructed/exports/ETCCommand.ts",
+      "sourceHash": "8407ee6de1133274262395d7f4749ca199162ad25283c94fa92ba2c200c3b0c2"
+    },
+    {
+      "name": "EUDCommand",
+      "originalPath": "modules/exports/EUDCommand.js",
+      "outputPath": "reconstructed/exports/EUDCommand.ts",
+      "sourceHash": "a467eece97d9e93d07d9fd5400fd670d2f2ef6c47347cae68f8bca288d0fcee9"
+    },
+    {
+      "name": "EUPCommand",
+      "originalPath": "modules/exports/EUPCommand.js",
+      "outputPath": "reconstructed/exports/EUPCommand.ts",
+      "sourceHash": "f8ff17fbd7ff9b0aa0ff35400ddf3e5ef9adeb8b2af703696f66c2e6ed230b1d"
+    },
+    {
+      "name": "FCCCommand",
+      "originalPath": "modules/exports/FCCCommand.js",
+      "outputPath": "reconstructed/exports/FCCCommand.ts",
+      "sourceHash": "1f4be60cc7323555925f8cf865174ba9cf0ab7f6b509100569503c6b2c0e23e2"
+    },
+    {
+      "name": "FCECommand",
+      "originalPath": "modules/exports/FCECommand.js",
+      "outputPath": "reconstructed/exports/FCECommand.ts",
+      "sourceHash": "00841b594de70d2e118d27443eda07010cd5f1e4bf0cf7cdcc64c5c59bb65009"
+    },
+    {
+      "name": "FCOCommand",
+      "originalPath": "modules/exports/FCOCommand.js",
+      "outputPath": "reconstructed/exports/FCOCommand.ts",
+      "sourceHash": "b2256802686bf9e4d9929191896f98d5beb458b39295e1fa930c29630bcb6e2e"
+    },
+    {
+      "name": "FECCommand",
+      "originalPath": "modules/exports/FECCommand.js",
+      "outputPath": "reconstructed/exports/FECCommand.ts",
+      "sourceHash": "b5f2739f0eb107dc431b37a329f45eb32bbf92da1c054146f5d15d3cd757d841"
+    },
+    {
+      "name": "FFICommand",
+      "originalPath": "modules/exports/FFICommand.js",
+      "outputPath": "reconstructed/exports/FFICommand.ts",
+      "sourceHash": "a647643682dda9e3ffd4fe5ad1f81749df36c3b2b36b09ae48ab1b0883f57258"
+    },
+    {
+      "name": "FFLCommand",
+      "originalPath": "modules/exports/FFLCommand.js",
+      "outputPath": "reconstructed/exports/FFLCommand.ts",
+      "sourceHash": "2b13a2f5a48d26a9033072a4997551e84e938783fd7933eb8ca75f13394bbede"
+    },
+    {
+      "name": "FFPCommand",
+      "originalPath": "modules/exports/FFPCommand.js",
+      "outputPath": "reconstructed/exports/FFPCommand.ts",
+      "sourceHash": "471ffc12f429dabd17ee847935a06534ef72d4b511bf6a67c128cbf406177247"
+    },
+    {
+      "name": "FNTCommand",
+      "originalPath": "modules/exports/FNTCommand.js",
+      "outputPath": "reconstructed/exports/FNTCommand.ts",
+      "sourceHash": "d2c4cde29fda2032bf3acc3186a48a6efbd167438c8c2058d882ffd76cc6f793"
+    },
+    {
+      "name": "FRCCommand",
+      "originalPath": "modules/exports/FRCCommand.js",
+      "outputPath": "reconstructed/exports/FRCCommand.ts",
+      "sourceHash": "285d6f0ded154c7fed5707de9cad893fc88454144ba579d15775ce9a094d5b54"
+    },
+    {
+      "name": "FSRCommand",
+      "originalPath": "modules/exports/FSRCommand.js",
+      "outputPath": "reconstructed/exports/FSRCommand.ts",
+      "sourceHash": "db75c46d53915a58d78b64f3a8cc8063d2e71e92db4872a2c937ae462cd97211"
+    },
+    {
+      "name": "FTFCommand",
+      "originalPath": "modules/exports/FTFCommand.js",
+      "outputPath": "reconstructed/exports/FTFCommand.ts",
+      "sourceHash": "ea1a46685fdcb01f9a484f66ad5d9a77101903691868889298fc861fe781955d"
+    },
+    {
+      "name": "FTLCommand",
+      "originalPath": "modules/exports/FTLCommand.js",
+      "outputPath": "reconstructed/exports/FTLCommand.ts",
+      "sourceHash": "3402bb3ccf5eb015d1902ec6469115ce6285addc06224ae6189a1e295b3de342"
+    },
+    {
+      "name": "FUCCommand",
+      "originalPath": "modules/exports/FUCCommand.js",
+      "outputPath": "reconstructed/exports/FUCCommand.ts",
+      "sourceHash": "f94fcdd9113d59bfd1f2c45b3cee8f06957fb9ef6d1ea0733e8978f854e71702"
+    },
+    {
+      "name": "GABCommand",
+      "originalPath": "modules/exports/GABCommand.js",
+      "outputPath": "reconstructed/exports/GABCommand.ts",
+      "sourceHash": "e98a40e97cf107e666c9918566f2c981454c4e8feb7bc30ba474426f283e4f03"
+    },
+    {
+      "name": "GABGAPCommand",
+      "originalPath": "modules/exports/GABGAPCommand.js",
+      "outputPath": "reconstructed/exports/GABGAPCommand.ts",
+      "sourceHash": "3d40f243434881f2fcade95d39d43ec7242978664cdcf9a372ea1f6aba5ad581"
+    },
+    {
+      "name": "GABGPPCommand",
+      "originalPath": "modules/exports/GABGPPCommand.js",
+      "outputPath": "reconstructed/exports/GABGPPCommand.ts",
+      "sourceHash": "573014d9f852e73986adc1be619f37060583620440aeb18ec21409ad2edc1f1d"
+    },
+    {
+      "name": "GAECommand",
+      "originalPath": "modules/exports/GAECommand.js",
+      "outputPath": "reconstructed/exports/GAECommand.ts",
+      "sourceHash": "3d49a6398bafee297b1d8f012af795a6e46cac27ceb63eaf9006754612d28ecc"
+    },
+    {
+      "name": "GAICommand",
+      "originalPath": "modules/exports/GAICommand.js",
+      "outputPath": "reconstructed/exports/GAICommand.ts",
+      "sourceHash": "2afd06e4a61f6a977d87553a96dea40fae04c698d6c894aa2b4821cd0a0c889c"
+    },
+    {
+      "name": "GALCommand",
+      "originalPath": "modules/exports/GALCommand.js",
+      "outputPath": "reconstructed/exports/GALCommand.ts",
+      "sourceHash": "09c6b67468e89ef7240ad588214fa47ea16018cd1cfb325b0ab585efa79dffa5"
+    },
+    {
+      "name": "GAMCommand",
+      "originalPath": "modules/exports/GAMCommand.js",
+      "outputPath": "reconstructed/exports/GAMCommand.ts",
+      "sourceHash": "220b9ff3d5267c773d7c16faf851474f14731848e243e9379e86eb1ce233dff8"
+    },
+    {
+      "name": "GAPCommand",
+      "originalPath": "modules/exports/GAPCommand.js",
+      "outputPath": "reconstructed/exports/GAPCommand.ts",
+      "sourceHash": "8fcf0f3ee08c3825ca2f4a321907d5508bb7237abe8915aea26d9f94c83a22b8"
+    },
+    {
+      "name": "GASCommand",
+      "originalPath": "modules/exports/GASCommand.js",
+      "outputPath": "reconstructed/exports/GASCommand.ts",
+      "sourceHash": "6638587c912868c96dd5c4fa40a213d595b1e594bb557b83893ebed38483bae7"
+    },
+    {
+      "name": "GATCommand",
+      "originalPath": "modules/exports/GATCommand.js",
+      "outputPath": "reconstructed/exports/GATCommand.ts",
+      "sourceHash": "717b4796cd3da3d1ca5a602f57031385468fc5e8cf568ccf3a09476180318a97"
+    },
+    {
+      "name": "GATPCommand",
+      "originalPath": "modules/exports/GATPCommand.js",
+      "outputPath": "reconstructed/exports/GATPCommand.ts",
+      "sourceHash": "f5aeedf46bbe00f7c80231ad0004a474144cea41a035c9588a52dcf0803811fa"
+    },
+    {
+      "name": "GBCCommand",
+      "originalPath": "modules/exports/GBCCommand.js",
+      "outputPath": "reconstructed/exports/GBCCommand.ts",
+      "sourceHash": "17176ca815552f631dfd321320c2fb663b121eba0d0cf14b404821193ef0cae8"
+    },
+    {
+      "name": "GBPCommand",
+      "originalPath": "modules/exports/GBPCommand.js",
+      "outputPath": "reconstructed/exports/GBPCommand.ts",
+      "sourceHash": "e95c115f02348fe53cbba010d17270cd815e66f15ad62dc53ea2bb362a203668"
+    },
+    {
+      "name": "GCACommand",
+      "originalPath": "modules/exports/GCACommand.js",
+      "outputPath": "reconstructed/exports/GCACommand.ts",
+      "sourceHash": "5d7286ccd15bbff612663dba026136b35ae87fc45bf1bc273f6f4594fca3912d"
+    },
+    {
+      "name": "GCBCommand",
+      "originalPath": "modules/exports/GCBCommand.js",
+      "outputPath": "reconstructed/exports/GCBCommand.ts",
+      "sourceHash": "8b2d6d6c4845e5cf84e06f6dbb465f6460126b7fd7fa17bbff87f2d15b11b4c9"
+    },
+    {
+      "name": "GCCCommand",
+      "originalPath": "modules/exports/GCCCommand.js",
+      "outputPath": "reconstructed/exports/GCCCommand.ts",
+      "sourceHash": "92394f0532e0d8cad55ae3fef627f7c4a37bd8cf3e7f570593c566b89584a4fb"
+    },
+    {
+      "name": "GCECommand",
+      "originalPath": "modules/exports/GCECommand.js",
+      "outputPath": "reconstructed/exports/GCECommand.ts",
+      "sourceHash": "3b2acbd5cb5ac0328af6231eef12b44049fff22d40728fdd425eb9ad6f11ea6c"
+    },
+    {
+      "name": "GCLCommand",
+      "originalPath": "modules/exports/GCLCommand.js",
+      "outputPath": "reconstructed/exports/GCLCommand.ts",
+      "sourceHash": "feccd283ea5c6b8c01fa7aadd81d4e928786d0f237b0a699f9ef4dc99c874f76"
+    },
+    {
+      "name": "GCTBCommand",
+      "originalPath": "modules/exports/GCTBCommand.js",
+      "outputPath": "reconstructed/exports/GCTBCommand.ts",
+      "sourceHash": "aa30ff4ac76691c2f687aa23f8d9d8efc9a5a61f76751c48349fb5aa8e35f247"
+    },
+    {
+      "name": "GDACommand",
+      "originalPath": "modules/exports/GDACommand.js",
+      "outputPath": "reconstructed/exports/GDACommand.ts",
+      "sourceHash": "14c40ce6549b783879566c733a9efa88965afdcf21075a909bb49aadd3ff3216"
+    },
+    {
+      "name": "GDBCommand",
+      "originalPath": "modules/exports/GDBCommand.js",
+      "outputPath": "reconstructed/exports/GDBCommand.ts",
+      "sourceHash": "146f5a863a6f2e380850c6c1027a7cf56a28fceca5775dde569a10d120bf68a5"
+    },
+    {
+      "name": "GDCCommand",
+      "originalPath": "modules/exports/GDCCommand.js",
+      "outputPath": "reconstructed/exports/GDCCommand.ts",
+      "sourceHash": "0f9a78e3e852df968f967d5df23e5459ba402a88bc3fe2c6142d8626ed4af604"
+    },
+    {
+      "name": "GDWCommand",
+      "originalPath": "modules/exports/GDWCommand.js",
+      "outputPath": "reconstructed/exports/GDWCommand.ts",
+      "sourceHash": "82f59041f13b8b2c9b777b4b744d478e1c79ea7ca7f1fd71fa699f77120a1ace"
+    },
+    {
+      "name": "GECCommand",
+      "originalPath": "modules/exports/GECCommand.js",
+      "outputPath": "reconstructed/exports/GECCommand.ts",
+      "sourceHash": "bb5e0a56cc8ec30dd19038df0cf77e34152c4e6c2b0ec932e70defe70914e586"
+    },
+    {
+      "name": "GEICommand",
+      "originalPath": "modules/exports/GEICommand.js",
+      "outputPath": "reconstructed/exports/GEICommand.ts",
+      "sourceHash": "55e4274fcd8966311b78aafc894e0c30f9a01d5db5073d6856ab6960e6aa9bdc"
+    },
+    {
+      "name": "GEMCommand",
+      "originalPath": "modules/exports/GEMCommand.js",
+      "outputPath": "reconstructed/exports/GEMCommand.ts",
+      "sourceHash": "ef0ce2255d6af2b88455d32382b247c3bbbd2a6a7868ed997e2ec03d166b6bd0"
+    },
+    {
+      "name": "GeneralIntroductionGuidanceAssignBaronCommand",
+      "originalPath": "modules/exports/GeneralIntroductionGuidanceAssignBaronCommand.js",
+      "outputPath": "reconstructed/exports/GeneralIntroductionGuidanceAssignBaronCommand.ts",
+      "sourceHash": "2659ef71317345e9df8de3245bf95dc23879b88702fc0f1dc576262ba0e3efd9"
+    },
+    {
+      "name": "GGCCommand",
+      "originalPath": "modules/exports/GGCCommand.js",
+      "outputPath": "reconstructed/exports/GGCCommand.ts",
+      "sourceHash": "cf856275f438b6ab395a00fab030e916d5ceb61676332b1b58289cb74e77ddc6"
+    },
+    {
+      "name": "GGMCommand",
+      "originalPath": "modules/exports/GGMCommand.js",
+      "outputPath": "reconstructed/exports/GGMCommand.ts",
+      "sourceHash": "32e0c4ea6f74923e7d876942d01fb6cc3a9cf2574dc7417d6b41ff259440a7ad"
+    },
+    {
+      "name": "GHOCommand",
+      "originalPath": "modules/exports/GHOCommand.js",
+      "outputPath": "reconstructed/exports/GHOCommand.ts",
+      "sourceHash": "c8da999d156b5899189eab3e4739bea93ea50f88a6e16e6b24f3f349b3442543"
+    },
+    {
+      "name": "GHWCommand",
+      "originalPath": "modules/exports/GHWCommand.js",
+      "outputPath": "reconstructed/exports/GHWCommand.ts",
+      "sourceHash": "2416f254de66062ca358095c68294cf4b2b51a82e84bea9c9c51442aeb98ee23"
+    },
+    {
+      "name": "GIICommand",
+      "originalPath": "modules/exports/GIICommand.js",
+      "outputPath": "reconstructed/exports/GIICommand.ts",
+      "sourceHash": "abce6b047decfc0885ffbbfa1f049768e91f35368dd56e139d811e0418ec4ed3"
+    },
+    {
+      "name": "GILCommand",
+      "originalPath": "modules/exports/GILCommand.js",
+      "outputPath": "reconstructed/exports/GILCommand.ts",
+      "sourceHash": "7a5277c2f2446a6cf7a87938f9821439a1ca7b94c9059679e7806d61bf43f0b8"
+    },
+    {
+      "name": "GKLCommand",
+      "originalPath": "modules/exports/GKLCommand.js",
+      "outputPath": "reconstructed/exports/GKLCommand.ts",
+      "sourceHash": "a4d59b13396df04792dc798e8618e6709eb06b344cc433dab6d8be7f9f30a9ff"
+    },
+    {
+      "name": "GLICommand",
+      "originalPath": "modules/exports/GLICommand.js",
+      "outputPath": "reconstructed/exports/GLICommand.ts",
+      "sourceHash": "b9bd2f1050e118f2bc1c7ebe87ec94fad9f7ee247d0d990c2c72aa04440c58f6"
+    },
+    {
+      "name": "GLLCommand",
+      "originalPath": "modules/exports/GLLCommand.js",
+      "outputPath": "reconstructed/exports/GLLCommand.ts",
+      "sourceHash": "dd23d5a3971acf476f6dcb696be3fb670cab3f16d92b7ec50c289c19e943ef13"
+    },
+    {
+      "name": "GLPCommand",
+      "originalPath": "modules/exports/GLPCommand.js",
+      "outputPath": "reconstructed/exports/GLPCommand.ts",
+      "sourceHash": "8296d079f1d50ca39f02f5042492a35db2d693bf809805b72b84bc88eea3cfa2"
+    },
+    {
+      "name": "GLSCommand",
+      "originalPath": "modules/exports/GLSCommand.js",
+      "outputPath": "reconstructed/exports/GLSCommand.ts",
+      "sourceHash": "84b235772c443f6e42b08095b439c6a8a27d037d331fb9e63f014b4995166169"
+    },
+    {
+      "name": "GMLCommand",
+      "originalPath": "modules/exports/GMLCommand.js",
+      "outputPath": "reconstructed/exports/GMLCommand.ts",
+      "sourceHash": "8a3f802f42a24df33a4ef3c8b4c1b22345222157c2a08f6ebeae7f18fd5ec93c"
+    },
+    {
+      "name": "GMPCommand",
+      "originalPath": "modules/exports/GMPCommand.js",
+      "outputPath": "reconstructed/exports/GMPCommand.ts",
+      "sourceHash": "3b7a8752749a66b4ec40f8d06ce19feab3c816f63ba9af584005e84af8be328e"
+    },
+    {
+      "name": "GMSCommand",
+      "originalPath": "modules/exports/GMSCommand.js",
+      "outputPath": "reconstructed/exports/GMSCommand.ts",
+      "sourceHash": "364400ac6e877d2a749b054853edfe149a86110e70de4614282ae7e63ec3b708"
+    },
+    {
+      "name": "GMUCommand",
+      "originalPath": "modules/exports/GMUCommand.js",
+      "outputPath": "reconstructed/exports/GMUCommand.ts",
+      "sourceHash": "de5a24a633ce3f9c601dece2b92e5c834d1cd7afeab3cd5fe8609c244afb18b7"
+    },
+    {
+      "name": "GNCICommand",
+      "originalPath": "modules/exports/GNCICommand.js",
+      "outputPath": "reconstructed/exports/GNCICommand.ts",
+      "sourceHash": "d430e0aeb6bbf9370b20a01c2b3a0f5869137566aa46a450cf3bcd34c16c8aca"
+    },
+    {
+      "name": "GNRCommand",
+      "originalPath": "modules/exports/GNRCommand.js",
+      "outputPath": "reconstructed/exports/GNRCommand.ts",
+      "sourceHash": "877c99f256679d5518d1701b4ba1444040eac226134578f063e9ea2ca808a237"
+    },
+    {
+      "name": "GPCCommand",
+      "originalPath": "modules/exports/GPCCommand.js",
+      "outputPath": "reconstructed/exports/GPCCommand.ts",
+      "sourceHash": "b361454a8d626394076083c3a2ae2f73645f7979cf663b018284867061dce0e4"
+    },
+    {
+      "name": "GPECommand",
+      "originalPath": "modules/exports/GPECommand.js",
+      "outputPath": "reconstructed/exports/GPECommand.ts",
+      "sourceHash": "e458e53177ac43a6fdac781917ef522a3b0e0a0bb63ebced2ed0f4d8ef839cd2"
+    },
+    {
+      "name": "GPFCommand",
+      "originalPath": "modules/exports/GPFCommand.js",
+      "outputPath": "reconstructed/exports/GPFCommand.ts",
+      "sourceHash": "adf52a2a6d52247ccc4645c8c1b4d5bbfb9f077fe3aca93f1bbdbee538be51b1"
+    },
+    {
+      "name": "GPICommand",
+      "originalPath": "modules/exports/GPICommand.js",
+      "outputPath": "reconstructed/exports/GPICommand.ts",
+      "sourceHash": "f17131cba64bc3890306e31092bc0776bd6e9e361a62bd27297d0fba45c15397"
+    },
+    {
+      "name": "GPNCommand",
+      "originalPath": "modules/exports/GPNCommand.js",
+      "outputPath": "reconstructed/exports/GPNCommand.ts",
+      "sourceHash": "6a3def615d571377be00a2d0ace83a9c512f3cf1fe348c7b1eed14ad415caae3"
+    },
+    {
+      "name": "GPPCommand",
+      "originalPath": "modules/exports/GPPCommand.js",
+      "outputPath": "reconstructed/exports/GPPCommand.ts",
+      "sourceHash": "f06b19883473084376ede3400496bf3d9997730fbbf913b7da69a196539eeef4"
+    },
+    {
+      "name": "GPRCommand",
+      "originalPath": "modules/exports/GPRCommand.js",
+      "outputPath": "reconstructed/exports/GPRCommand.ts",
+      "sourceHash": "87a4499d1ba83653d24a77ca75b9ab79f4323f97a2e4abf70446f96e4b16ba83"
+    },
+    {
+      "name": "GSMCommand",
+      "originalPath": "modules/exports/GSMCommand.js",
+      "outputPath": "reconstructed/exports/GSMCommand.ts",
+      "sourceHash": "e2e7af60ca1aea5a934c6267176024597d2731d1971e144230e6847ce723cd68"
+    },
+    {
+      "name": "GTDCommand",
+      "originalPath": "modules/exports/GTDCommand.js",
+      "outputPath": "reconstructed/exports/GTDCommand.ts",
+      "sourceHash": "f0e5a01e768d1999a818309bdee12d343bb91a9e68b66e49c1c40c397b01a0b0"
+    },
+    {
+      "name": "GTPCommand",
+      "originalPath": "modules/exports/GTPCommand.js",
+      "outputPath": "reconstructed/exports/GTPCommand.ts",
+      "sourceHash": "5d86cdfe38f58978077bb9a89657609403bc67ef05b4fe4359da6f9c3a7b6103"
+    },
+    {
+      "name": "GTRCommand",
+      "originalPath": "modules/exports/GTRCommand.js",
+      "outputPath": "reconstructed/exports/GTRCommand.ts",
+      "sourceHash": "b62f7cb6e1cddc9b6a0732192e715c6f3ffc8136a0c3550c122a8113d88b2734"
+    },
+    {
+      "name": "GUSCommand",
+      "originalPath": "modules/exports/GUSCommand.js",
+      "outputPath": "reconstructed/exports/GUSCommand.ts",
+      "sourceHash": "2dba3a43e2d350d2ff83596bbb8ff615b56c5749c4dc5eaab64798f67195ddc5"
+    },
+    {
+      "name": "GWHCommand",
+      "originalPath": "modules/exports/GWHCommand.js",
+      "outputPath": "reconstructed/exports/GWHCommand.ts",
+      "sourceHash": "092167a2cb6562aec005fc5fc86422710453fee6b7cd91a6ac8299c319260cef"
+    },
+    {
+      "name": "GXPCommand",
+      "originalPath": "modules/exports/GXPCommand.js",
+      "outputPath": "reconstructed/exports/GXPCommand.ts",
+      "sourceHash": "efbbea189167c30272cf88a66b7df59608791d00ce2cc2531fba3bc4471ad2bc"
+    },
+    {
+      "name": "HCSCommand",
+      "originalPath": "modules/exports/HCSCommand.js",
+      "outputPath": "reconstructed/exports/HCSCommand.ts",
+      "sourceHash": "1fdb0c3cd60d955ab8baee72902f0059183fc5c3bd0e8e364834ca8dc8bb7e50"
+    },
+    {
+      "name": "HDCommand",
+      "originalPath": "modules/exports/HDCommand.js",
+      "outputPath": "reconstructed/exports/HDCommand.ts",
+      "sourceHash": "541b528103e9706961a6b60e234c65862ef834189051295135e9bab243b69e09"
+    },
+    {
+      "name": "HFLCommand",
+      "originalPath": "modules/exports/HFLCommand.js",
+      "outputPath": "reconstructed/exports/HFLCommand.ts",
+      "sourceHash": "69904b564b2194f04f9fcf1e903a29146ebd3bcb46ef62ec3cd124eec0fe177b"
+    },
+    {
+      "name": "HINCommand",
+      "originalPath": "modules/exports/HINCommand.js",
+      "outputPath": "reconstructed/exports/HINCommand.ts",
+      "sourceHash": "75eda81d97930e97ac842efbd94713f15ab46947a7636e04f614a7b605172eb0"
+    },
+    {
+      "name": "IATBCommand",
+      "originalPath": "modules/exports/IATBCommand.js",
+      "outputPath": "reconstructed/exports/IATBCommand.ts",
+      "sourceHash": "e18f39adc914e1e3e1f3fd73f035bdda4df94ab4a35e076dba74e1988ef73887"
+    },
+    {
+      "name": "IBTCommand",
+      "originalPath": "modules/exports/IBTCommand.js",
+      "outputPath": "reconstructed/exports/IBTCommand.ts",
+      "sourceHash": "a559b6c0053067c9056d65d6c54c1925b0af5a01a09be5af3f9bd7d2056f6964"
+    },
+    {
+      "name": "ILICommand",
+      "originalPath": "modules/exports/ILICommand.js",
+      "outputPath": "reconstructed/exports/ILICommand.ts",
+      "sourceHash": "755335ef6175e672c84cb6b644e6250805ec132c7c15a11c7ebe65854ed4d450"
+    },
+    {
+      "name": "IPLCommand",
+      "originalPath": "modules/exports/IPLCommand.js",
+      "outputPath": "reconstructed/exports/IPLCommand.ts",
+      "sourceHash": "983d20ed5b1bc7e3ab494c0b7f4ce9bcc036f924d0ec7974ccae77c0a7d201e5"
+    },
+    {
+      "name": "IRACommand",
+      "originalPath": "modules/exports/IRACommand.js",
+      "outputPath": "reconstructed/exports/IRACommand.ts",
+      "sourceHash": "d0040c458c783611e17ebc6f4bf6165fc4a3629c01f8a414fddce1c12d533b72"
+    },
+    {
+      "name": "JCACommand",
+      "originalPath": "modules/exports/JCACommand.js",
+      "outputPath": "reconstructed/exports/JCACommand.ts",
+      "sourceHash": "4bf8aa18998254f234c008d93d6575af980eddb220cc11ebd7a1905e7afd8f9e"
+    },
+    {
+      "name": "JEACommand",
+      "originalPath": "modules/exports/JEACommand.js",
+      "outputPath": "reconstructed/exports/JEACommand.ts",
+      "sourceHash": "063eed8c1711be2be7df60e355d38810beed93fb665f42bf22bd63acf10251cf"
+    },
+    {
+      "name": "JJCCommand",
+      "originalPath": "modules/exports/JJCCommand.js",
+      "outputPath": "reconstructed/exports/JJCCommand.ts",
+      "sourceHash": "36acca272e6382bf4aef5754df9b2f77d726190430ffa1f8c3977f594ed333f1"
+    },
+    {
+      "name": "KBPCommand",
+      "originalPath": "modules/exports/KBPCommand.js",
+      "outputPath": "reconstructed/exports/KBPCommand.ts",
+      "sourceHash": "62edbf18c7e421a25e06daaa5068196bd7cc4cda0ba6f5992edaf023431c2832"
+    },
+    {
+      "name": "KGTCommand",
+      "originalPath": "modules/exports/KGTCommand.js",
+      "outputPath": "reconstructed/exports/KGTCommand.ts",
+      "sourceHash": "a70124713fac4fa4f4c484c6051219bf77d758c5559a34fce0a11d2ec58c444f"
+    },
+    {
+      "name": "KGVCommand",
+      "originalPath": "modules/exports/KGVCommand.js",
+      "outputPath": "reconstructed/exports/KGVCommand.ts",
+      "sourceHash": "023ed5f895fd0572f5f78632525671a115b2dcf871c25ae7ba1c62f5aa914227"
+    },
+    {
+      "name": "KLHCommand",
+      "originalPath": "modules/exports/KLHCommand.js",
+      "outputPath": "reconstructed/exports/KLHCommand.ts",
+      "sourceHash": "9269c1943f5b642be2980c2c44a1dfa921832e89ed4ac37d83117ae9f6d7417f"
+    },
+    {
+      "name": "KLICommand",
+      "originalPath": "modules/exports/KLICommand.js",
+      "outputPath": "reconstructed/exports/KLICommand.ts",
+      "sourceHash": "4dd0f7b5a9d9dc92d2b5a7d6446d757e55de50f9e7662a2ffdce4381f351c680"
+    },
+    {
+      "name": "KPICommand",
+      "originalPath": "modules/exports/KPICommand.js",
+      "outputPath": "reconstructed/exports/KPICommand.ts",
+      "sourceHash": "1c693cb1178cc891098c1db299c69909985d3144c39a8b295eed378a69fd7d8f"
+    },
+    {
+      "name": "KSCCommand",
+      "originalPath": "modules/exports/KSCCommand.js",
+      "outputPath": "reconstructed/exports/KSCCommand.ts",
+      "sourceHash": "8fcd83de3d3d8e1fe213a436d99704b2f6123d206cd95c917425c1d934e3096f"
+    },
+    {
+      "name": "KSSCommand",
+      "originalPath": "modules/exports/KSSCommand.js",
+      "outputPath": "reconstructed/exports/KSSCommand.ts",
+      "sourceHash": "da9ebc588320be18ecd61ac6b7bc6ab0e17ccce90a7524fe1d025999e0000b89"
+    },
+    {
+      "name": "KSTCommand",
+      "originalPath": "modules/exports/KSTCommand.js",
+      "outputPath": "reconstructed/exports/KSTCommand.ts",
+      "sourceHash": "0dadef833d357815160910d715e0612ab948125e8952974b69c3a01f2c1fe5fa"
+    },
+    {
+      "name": "KUTCommand",
+      "originalPath": "modules/exports/KUTCommand.js",
+      "outputPath": "reconstructed/exports/KUTCommand.ts",
+      "sourceHash": "4b9f381251e01a8f32dcdff8bcf9f3e9c9541894540fe9e49877d78518cbd13e"
+    },
+    {
+      "name": "LDTCommand",
+      "originalPath": "modules/exports/LDTCommand.js",
+      "outputPath": "reconstructed/exports/LDTCommand.ts",
+      "sourceHash": "de92bf208fbe40f7e0ba0943ea8a5d432dd76dec33602feb73fc91a4493bb0e3"
+    },
+    {
+      "name": "LFECommand",
+      "originalPath": "modules/exports/LFECommand.js",
+      "outputPath": "reconstructed/exports/LFECommand.ts",
+      "sourceHash": "376b3f9efe542a213750f4d895fe1d695640f0e20439b92c5fda01fe0f4e8d88"
+    },
+    {
+      "name": "LLSPCommand",
+      "originalPath": "modules/exports/LLSPCommand.js",
+      "outputPath": "reconstructed/exports/LLSPCommand.ts",
+      "sourceHash": "45ac43329be0f78c4dbf07adab4dc2f80472587474678a076d55a5e80b23f21d"
+    },
+    {
+      "name": "LLSWCommand",
+      "originalPath": "modules/exports/LLSWCommand.js",
+      "outputPath": "reconstructed/exports/LLSWCommand.ts",
+      "sourceHash": "2b3f3dd02f9a710a10a77564ec75ba84f6becf3349953dfbac28bb12f6275e1f"
+    },
+    {
+      "name": "LPLCommand",
+      "originalPath": "modules/exports/LPLCommand.js",
+      "outputPath": "reconstructed/exports/LPLCommand.ts",
+      "sourceHash": "564153cd4a1c167089de86983ed36932fbc948dc079c64be6777350280a05a11"
+    },
+    {
+      "name": "LRRCommand",
+      "originalPath": "modules/exports/LRRCommand.js",
+      "outputPath": "reconstructed/exports/LRRCommand.ts",
+      "sourceHash": "cb7885d88f0978e86c836312760ba7a1b67d1e35e5dcc97ec036fed7f1fd971e"
+    },
+    {
+      "name": "LTACommand",
+      "originalPath": "modules/exports/LTACommand.js",
+      "outputPath": "reconstructed/exports/LTACommand.ts",
+      "sourceHash": "2c5530833b2957a50d94a4aa61ac1552794d420cb82f383a4bc5b5972dc383b2"
+    },
+    {
+      "name": "LVBCommand",
+      "originalPath": "modules/exports/LVBCommand.js",
+      "outputPath": "reconstructed/exports/LVBCommand.ts",
+      "sourceHash": "5a1e0b25a70647a95c0f497b096d1601fb58cd10b20e55cd26976daf32b33ff5"
+    },
+    {
+      "name": "LWCCommand",
+      "originalPath": "modules/exports/LWCCommand.js",
+      "outputPath": "reconstructed/exports/LWCCommand.ts",
+      "sourceHash": "b7e791427e98d70c377240412f5f61844293664a259c89d744502285c9f00572"
+    },
+    {
+      "name": "LWJCommand",
+      "originalPath": "modules/exports/LWJCommand.js",
+      "outputPath": "reconstructed/exports/LWJCommand.ts",
+      "sourceHash": "47471f20548725f6529cec2f2eed71844e41dfbc86b3c4393115c4bc6b7bd9d9"
+    },
+    {
+      "name": "LWMCommand",
+      "originalPath": "modules/exports/LWMCommand.js",
+      "outputPath": "reconstructed/exports/LWMCommand.ts",
+      "sourceHash": "23ce2e000cee6f9c01387749743a94e54cf399d8a7be8189c12678ebf4f798fc"
+    },
+    {
+      "name": "LWSCommand",
+      "originalPath": "modules/exports/LWSCommand.js",
+      "outputPath": "reconstructed/exports/LWSCommand.ts",
+      "sourceHash": "66347bc43af2afc726b69b2329964d5396e23548943225ed7b2524a3ecac6114"
+    },
+    {
+      "name": "MACCommand",
+      "originalPath": "modules/exports/MACCommand.js",
+      "outputPath": "reconstructed/exports/MACCommand.ts",
+      "sourceHash": "c1726b32f76c98eb40e98aaf635c3ea8417bee0965b831109c3ee2fd4db12d04"
+    },
+    {
+      "name": "MASCommand",
+      "originalPath": "modules/exports/MASCommand.js",
+      "outputPath": "reconstructed/exports/MASCommand.ts",
+      "sourceHash": "92e14299d91db40fdddc2b539995c780c2ee53f5438f83e9c227b82f48220cd8"
+    },
+    {
+      "name": "MBSCommand",
+      "originalPath": "modules/exports/MBSCommand.js",
+      "outputPath": "reconstructed/exports/MBSCommand.ts",
+      "sourceHash": "3223fe94719b64de95e762c783d8de5af80d5b2b97fc6e9e53c006adc70393ad"
+    },
+    {
+      "name": "MCDCommand",
+      "originalPath": "modules/exports/MCDCommand.js",
+      "outputPath": "reconstructed/exports/MCDCommand.ts",
+      "sourceHash": "32d5d3c3cb9629c6a28ce7a4bba4ce84e8ba1d93a67c672aec0cae205f93918c"
+    },
+    {
+      "name": "MCICommand",
+      "originalPath": "modules/exports/MCICommand.js",
+      "outputPath": "reconstructed/exports/MCICommand.ts",
+      "sourceHash": "a6a44bd5d91bd1baed4986d9fa2cb7791e02c619861c495ecba3567bd2006d00"
+    },
+    {
+      "name": "MCMCommand",
+      "originalPath": "modules/exports/MCMCommand.js",
+      "outputPath": "reconstructed/exports/MCMCommand.ts",
+      "sourceHash": "7366a6c005e1d54990fe1dd035a71d1d580983eb034941f0a7c160f662278d76"
+    },
+    {
+      "name": "MCUCommand",
+      "originalPath": "modules/exports/MCUCommand.js",
+      "outputPath": "reconstructed/exports/MCUCommand.ts",
+      "sourceHash": "1c0da700cc4774e46e3d2e7f93dd99ba30a171cba27eeef746c08ea0035a8064"
+    },
+    {
+      "name": "MDECommand",
+      "originalPath": "modules/exports/MDECommand.js",
+      "outputPath": "reconstructed/exports/MDECommand.ts",
+      "sourceHash": "40b2ed7cf43509338d0d769293ed6b8e1d992aeb13d60ed3cbf97b915a0a6ddf"
+    },
+    {
+      "name": "MECCommand",
+      "originalPath": "modules/exports/MECCommand.js",
+      "outputPath": "reconstructed/exports/MECCommand.ts",
+      "sourceHash": "a8282915974af6d7fe436bd8fb5c7612ae7f9717df3df4c84221c73d27a2cd39"
+    },
+    {
+      "name": "MFBCommand",
+      "originalPath": "modules/exports/MFBCommand.js",
+      "outputPath": "reconstructed/exports/MFBCommand.ts",
+      "sourceHash": "3e0b8e8d6f66b384bdce2b8fb60c46a9bd11beaa8346c05c3d55b5b6e42b18b5"
+    },
+    {
+      "name": "MFCCommand",
+      "originalPath": "modules/exports/MFCCommand.js",
+      "outputPath": "reconstructed/exports/MFCCommand.ts",
+      "sourceHash": "c41a5fcad5292b728e115a008eedfdae7317c6fe8099d8f6ce709ee1f3dcab33"
+    },
+    {
+      "name": "MFSCommand",
+      "originalPath": "modules/exports/MFSCommand.js",
+      "outputPath": "reconstructed/exports/MFSCommand.ts",
+      "sourceHash": "acb99686fc0ca4a5c477d9369f582ba57a2896c3c9190d1679c14c7f5e137c4d"
+    },
+    {
+      "name": "MIRCommand",
+      "originalPath": "modules/exports/MIRCommand.js",
+      "outputPath": "reconstructed/exports/MIRCommand.ts",
+      "sourceHash": "773d41054a403e630279a50b3785cd9ce3390e7cf530cd8759c9293775c468dd"
+    },
+    {
+      "name": "MMNCommand",
+      "originalPath": "modules/exports/MMNCommand.js",
+      "outputPath": "reconstructed/exports/MMNCommand.ts",
+      "sourceHash": "7135739b6ff35014cd1ea6d75017675fba6cadceb98d3678ad5f68fa59391c9a"
+    },
+    {
+      "name": "MNSCommand",
+      "originalPath": "modules/exports/MNSCommand.js",
+      "outputPath": "reconstructed/exports/MNSCommand.ts",
+      "sourceHash": "9c69e5d906300226567878dbd8c37a3aca935c4add2add37b73fe110ab539e3c"
+    },
+    {
+      "name": "MOTCommand",
+      "originalPath": "modules/exports/MOTCommand.js",
+      "outputPath": "reconstructed/exports/MOTCommand.ts",
+      "sourceHash": "1e405e681d7b22c4d1425778a954ef7e62ccf7ed3bc312a1b08517fe6daa7a0b"
+    },
+    {
+      "name": "MPECommand",
+      "originalPath": "modules/exports/MPECommand.js",
+      "outputPath": "reconstructed/exports/MPECommand.ts",
+      "sourceHash": "52273853f1c3b9a1f0d2ef2b5ee3257763db7bd20800bf544dafa764aeed9405"
+    },
+    {
+      "name": "MPSCommand",
+      "originalPath": "modules/exports/MPSCommand.js",
+      "outputPath": "reconstructed/exports/MPSCommand.ts",
+      "sourceHash": "1a0b9225a07f4e0146a4493d472a562ebe78fd3ef36b51076810c77dd9b7fc94"
+    },
+    {
+      "name": "MRECommand",
+      "originalPath": "modules/exports/MRECommand.js",
+      "outputPath": "reconstructed/exports/MRECommand.ts",
+      "sourceHash": "62b8bdd3ce09e31d168fd17d6e6ef61975217163eade5309a7c9edc46fbb062e"
+    },
+    {
+      "name": "MRMCommand",
+      "originalPath": "modules/exports/MRMCommand.js",
+      "outputPath": "reconstructed/exports/MRMCommand.ts",
+      "sourceHash": "8180f78fb76f7e7a9ce02362d00127f0cb745e4751b12a798fa1ec4f813307e2"
+    },
+    {
+      "name": "MSBCommand",
+      "originalPath": "modules/exports/MSBCommand.js",
+      "outputPath": "reconstructed/exports/MSBCommand.ts",
+      "sourceHash": "eee29200947d0f97583cf983cf48a0322328db809f9d71953da8fe2c4dcf6f22"
+    },
+    {
+      "name": "MSDCommand",
+      "originalPath": "modules/exports/MSDCommand.js",
+      "outputPath": "reconstructed/exports/MSDCommand.ts",
+      "sourceHash": "d91e1bf68ced011c2fe5226e2bb893fab690b7104642c8dc13c0fd9253c5ce5a"
+    },
+    {
+      "name": "MSKCommand",
+      "originalPath": "modules/exports/MSKCommand.js",
+      "outputPath": "reconstructed/exports/MSKCommand.ts",
+      "sourceHash": "d3ab5e37fba4a1e15fbc067a179560a1834f25c34407b1291e1ee8822d2deff6"
+    },
+    {
+      "name": "MSMCommand",
+      "originalPath": "modules/exports/MSMCommand.js",
+      "outputPath": "reconstructed/exports/MSMCommand.ts",
+      "sourceHash": "2dfd002cb571f55266ce9d64f45f661536b5953ebb6617c9ea5efeebce7b6237"
+    },
+    {
+      "name": "MSRCommand",
+      "originalPath": "modules/exports/MSRCommand.js",
+      "outputPath": "reconstructed/exports/MSRCommand.ts",
+      "sourceHash": "148cb7ead966ec2b29a87da55ed2a731d3ae8446ad557d8dc98c0e47fb92df69"
+    },
+    {
+      "name": "MUPCommand",
+      "originalPath": "modules/exports/MUPCommand.js",
+      "outputPath": "reconstructed/exports/MUPCommand.ts",
+      "sourceHash": "56ebb25a9806921b488ee71ce24fa90df756e9e2670ac894f263d0bb4fce6b9a"
+    },
+    {
+      "name": "NECCommand",
+      "originalPath": "modules/exports/NECCommand.js",
+      "outputPath": "reconstructed/exports/NECCommand.ts",
+      "sourceHash": "bba8bf5160aaca89dee224198010e6fdd36427ebd630161fc6524287a715dd58"
+    },
+    {
+      "name": "ODCCommand",
+      "originalPath": "modules/exports/ODCCommand.js",
+      "outputPath": "reconstructed/exports/ODCCommand.ts",
+      "sourceHash": "d2aceb219cf07e3eda3941969e0120a422d3b1794cd5a006a073fa26aa7d5868"
+    },
+    {
+      "name": "OLECommand",
+      "originalPath": "modules/exports/OLECommand.js",
+      "outputPath": "reconstructed/exports/OLECommand.ts",
+      "sourceHash": "48b419ac8712a44a4f053226537bf27615611fbaed711db7b02dc01649b0110d"
+    },
+    {
+      "name": "OOPCommand",
+      "originalPath": "modules/exports/OOPCommand.js",
+      "outputPath": "reconstructed/exports/OOPCommand.ts",
+      "sourceHash": "bd5e69372a737e4884d8f63b7898616c5ccec8c4229b44274daba91c4ca7317b"
+    },
+    {
+      "name": "OPTCommand",
+      "originalPath": "modules/exports/OPTCommand.js",
+      "outputPath": "reconstructed/exports/OPTCommand.ts",
+      "sourceHash": "0ada20cc2d699d2b98de888e5c95d1e384e51e0a4e8d4998f7baba0cd7b1330c"
+    },
+    {
+      "name": "OVSCommand",
+      "originalPath": "modules/exports/OVSCommand.js",
+      "outputPath": "reconstructed/exports/OVSCommand.ts",
+      "sourceHash": "d90946cf861ca4cc56244d4dd632d2646b1daa0aadf0cbc0b524725736b6d66c"
+    },
+    {
+      "name": "PCCCommand",
+      "originalPath": "modules/exports/PCCCommand.js",
+      "outputPath": "reconstructed/exports/PCCCommand.ts",
+      "sourceHash": "6ba823e7219b275a7e6a6ead1d25f7e785f2668a8300931cf15e12d3d993dd63"
+    },
+    {
+      "name": "PGLCommand",
+      "originalPath": "modules/exports/PGLCommand.js",
+      "outputPath": "reconstructed/exports/PGLCommand.ts",
+      "sourceHash": "fc31d4e6f351aaccc94108b491a25dfb54d3afe3ed2d5035e92fe844c43f6c23"
+    },
+    {
+      "name": "PIOCommand",
+      "originalPath": "modules/exports/PIOCommand.js",
+      "outputPath": "reconstructed/exports/PIOCommand.ts",
+      "sourceHash": "0e790650aac50252a0e83c09c1b29e02b980cf7f0d5eeaaeac1adf0872c85a44"
+    },
+    {
+      "name": "POECommand",
+      "originalPath": "modules/exports/POECommand.js",
+      "outputPath": "reconstructed/exports/POECommand.ts",
+      "sourceHash": "dd89b6065b4ee78ab335c88917375a4cdf76fc14dda4b32a0106d1f9d4794c59"
+    },
+    {
+      "name": "PSDCommand",
+      "originalPath": "modules/exports/PSDCommand.js",
+      "outputPath": "reconstructed/exports/PSDCommand.ts",
+      "sourceHash": "1df397e08deedc32453f72bd3715e09456343e9a52a6e462ae6a0b22e09f42dc"
+    },
+    {
+      "name": "PTPCommand",
+      "originalPath": "modules/exports/PTPCommand.js",
+      "outputPath": "reconstructed/exports/PTPCommand.ts",
+      "sourceHash": "26ae91809e4c38d875f014f82052bd3266a1b91d73f66ebab9ac176078c926f1"
+    },
+    {
+      "name": "QDCCommand",
+      "originalPath": "modules/exports/QDCCommand.js",
+      "outputPath": "reconstructed/exports/QDCCommand.ts",
+      "sourceHash": "3f5f32d26a00f6dc093470c9cc79db9e99c7ca36dc03e8cfe5f08e56f486094e"
+    },
+    {
+      "name": "QDRCommand",
+      "originalPath": "modules/exports/QDRCommand.js",
+      "outputPath": "reconstructed/exports/QDRCommand.ts",
+      "sourceHash": "414b4e9ff0c414e7c76bcbc4a3cb58d32dcd3ee640f6b031751760a46ebdc66a"
+    },
+    {
+      "name": "RAECommand",
+      "originalPath": "modules/exports/RAECommand.js",
+      "outputPath": "reconstructed/exports/RAECommand.ts",
+      "sourceHash": "9c8a1e55248a388f60f2aaac99d74b425a4879b10553363deb3578698be9e39f"
+    },
+    {
+      "name": "RAQCommand",
+      "originalPath": "modules/exports/RAQCommand.js",
+      "outputPath": "reconstructed/exports/RAQCommand.ts",
+      "sourceHash": "894ce72e2c1f0e8593fee7c82f199952214da7e4e4f96a725155bcd566822452"
+    },
+    {
+      "name": "RBUCommand",
+      "originalPath": "modules/exports/RBUCommand.js",
+      "outputPath": "reconstructed/exports/RBUCommand.ts",
+      "sourceHash": "3cbc2288244b53403c6935b698958c729c6b855ede789a1c94c460ea0fb42880"
+    },
+    {
+      "name": "RCACommand",
+      "originalPath": "modules/exports/RCACommand.js",
+      "outputPath": "reconstructed/exports/RCACommand.ts",
+      "sourceHash": "0c57e6005bf44d3d3e84f84bce4d5c2813bac82bbd1ee30a4cc79b421e807bba"
+    },
+    {
+      "name": "RCCCommand",
+      "originalPath": "modules/exports/RCCCommand.js",
+      "outputPath": "reconstructed/exports/RCCCommand.ts",
+      "sourceHash": "9fb8f26a6259e66d59b56f44663a15f1e4674ddd2101b0c3befff8ce87b18a8c"
+    },
+    {
+      "name": "RCECommand",
+      "originalPath": "modules/exports/RCECommand.js",
+      "outputPath": "reconstructed/exports/RCECommand.ts",
+      "sourceHash": "d896d31e816028686906cee1e11883e2b7762190fd2b095397d9728d9f459a9d"
+    },
+    {
+      "name": "RCICommand",
+      "originalPath": "modules/exports/RCICommand.js",
+      "outputPath": "reconstructed/exports/RCICommand.ts",
+      "sourceHash": "2ffde4817d6cdf361fea5f0e40632e209d2dfb8fb9a6ef4bfeb6afd83942c63c"
+    },
+    {
+      "name": "RDECommand",
+      "originalPath": "modules/exports/RDECommand.js",
+      "outputPath": "reconstructed/exports/RDECommand.ts",
+      "sourceHash": "7af22a8958f3a7a18045f5c67139be239312a4cb95c4b6a02eec889fef265695"
+    },
+    {
+      "name": "REICommand",
+      "originalPath": "modules/exports/REICommand.js",
+      "outputPath": "reconstructed/exports/REICommand.ts",
+      "sourceHash": "7dc090df060110619155a2a89899479ea4cba45446b61b3550d2ae58ae7a04c5"
+    },
+    {
+      "name": "RESCommand",
+      "originalPath": "modules/exports/RESCommand.js",
+      "outputPath": "reconstructed/exports/RESCommand.ts",
+      "sourceHash": "c20e2c99bcb9cb4444811ff8b7269d499e1ffebbcbeb9a723f623bfea01fbea2"
+    },
+    {
+      "name": "RFICommand",
+      "originalPath": "modules/exports/RFICommand.js",
+      "outputPath": "reconstructed/exports/RFICommand.ts",
+      "sourceHash": "e80722190c1124f7dc12d571ac0885a0cf58d9c7181f6770059c81ee75eda7df"
+    },
+    {
+      "name": "RMCCommand",
+      "originalPath": "modules/exports/RMCCommand.js",
+      "outputPath": "reconstructed/exports/RMCCommand.ts",
+      "sourceHash": "56d636f92f03d3ac0e3588a85f9bcf67336655e89c7329f23c9da57e55b9a270"
+    },
+    {
+      "name": "RMMCommand",
+      "originalPath": "modules/exports/RMMCommand.js",
+      "outputPath": "reconstructed/exports/RMMCommand.ts",
+      "sourceHash": "e25df6b734fa3bfeb2bed06c5baf7159cfd80f0f54e9b1b855d1144f4eab586b"
+    },
+    {
+      "name": "RMSCommand",
+      "originalPath": "modules/exports/RMSCommand.js",
+      "outputPath": "reconstructed/exports/RMSCommand.ts",
+      "sourceHash": "bdf62fd11869fc680e4464946d364cb4f50d2e3242f3eb725d59aa492b0d47bd"
+    },
+    {
+      "name": "RPCCommand",
+      "originalPath": "modules/exports/RPCCommand.js",
+      "outputPath": "reconstructed/exports/RPCCommand.ts",
+      "sourceHash": "58baaca363d7afba475ff189cdf6f1fb0d172b8f05e8d290b2e2b098966bb46f"
+    },
+    {
+      "name": "RTPCommand",
+      "originalPath": "modules/exports/RTPCommand.js",
+      "outputPath": "reconstructed/exports/RTPCommand.ts",
+      "sourceHash": "58d4dc4341abc23db2a5a4788c0225360b70c40cd9370331e7f59817b7910484"
+    },
+    {
+      "name": "RUECommand",
+      "originalPath": "modules/exports/RUECommand.js",
+      "outputPath": "reconstructed/exports/RUECommand.ts",
+      "sourceHash": "5bd998fd1cd369f9ef365bbf0a646e32feadec55ecdf4d4ebda6fa479e2e0ea6"
+    },
+    {
+      "name": "RVECommand",
+      "originalPath": "modules/exports/RVECommand.js",
+      "outputPath": "reconstructed/exports/RVECommand.ts",
+      "sourceHash": "8d149913e067fda39206e20c5757c734d45141a74a93ed50e644ae4dab60391c"
+    },
+    {
+      "name": "RWBCommand",
+      "originalPath": "modules/exports/RWBCommand.js",
+      "outputPath": "reconstructed/exports/RWBCommand.ts",
+      "sourceHash": "fdca6ea61c618b9ae572fc16c4eac1aa8dd96ee02bec61be5b6d3e4980a3dbc9"
+    },
+    {
+      "name": "RWWCommand",
+      "originalPath": "modules/exports/RWWCommand.js",
+      "outputPath": "reconstructed/exports/RWWCommand.ts",
+      "sourceHash": "cbfba0c0e3847b15e68c627e3e6ffe65781deaa220b25ee5cf4dcb4e07976d68"
+    },
+    {
+      "name": "SAECommand",
+      "originalPath": "modules/exports/SAECommand.js",
+      "outputPath": "reconstructed/exports/SAECommand.ts",
+      "sourceHash": "72ab39a0e6c6a437461febe9322a7c74156bfee8c75474f351d921877d6e78c9"
+    },
+    {
+      "name": "SAFCommand",
+      "originalPath": "modules/exports/SAFCommand.js",
+      "outputPath": "reconstructed/exports/SAFCommand.ts",
+      "sourceHash": "c0c605a8d5128602f10852f52fb28f7a5415a6288c1e5bc8d2c561ed42d0bb7c"
+    },
+    {
+      "name": "SALCommand",
+      "originalPath": "modules/exports/SALCommand.js",
+      "outputPath": "reconstructed/exports/SALCommand.ts",
+      "sourceHash": "776f04fd4594da3d116e2182fb032909bcc5c79d756d324a725a1327c9f683d1"
+    },
+    {
+      "name": "SAPCommand",
+      "originalPath": "modules/exports/SAPCommand.js",
+      "outputPath": "reconstructed/exports/SAPCommand.ts",
+      "sourceHash": "11d7441d077d101e72e91f24cef5512299fa9ea270a6d054eac54431d72a8fda"
+    },
+    {
+      "name": "SAQCommand",
+      "originalPath": "modules/exports/SAQCommand.js",
+      "outputPath": "reconstructed/exports/SAQCommand.ts",
+      "sourceHash": "3193f5b268d7aea4a291578d7777fba11c0a1c8af2096e25b93efd7fb786a813"
+    },
+    {
+      "name": "SASCommand",
+      "originalPath": "modules/exports/SASCommand.js",
+      "outputPath": "reconstructed/exports/SASCommand.ts",
+      "sourceHash": "9d19e6843242328400951aee5af480f14aade18f706fea092289297ab2c29e24"
+    },
+    {
+      "name": "SAWCommand",
+      "originalPath": "modules/exports/SAWCommand.js",
+      "outputPath": "reconstructed/exports/SAWCommand.ts",
+      "sourceHash": "85dcad546a0a0f09055ae851116909f962d8d2c88fd7e837942ab62bacd3771d"
+    },
+    {
+      "name": "SBDCommand",
+      "originalPath": "modules/exports/SBDCommand.js",
+      "outputPath": "reconstructed/exports/SBDCommand.ts",
+      "sourceHash": "f6d839a2d89303fd039f5a4838c8e8b4747c5ca0d759c8ba3c12f4f4d0364134"
+    },
+    {
+      "name": "SCDCommand",
+      "originalPath": "modules/exports/SCDCommand.js",
+      "outputPath": "reconstructed/exports/SCDCommand.ts",
+      "sourceHash": "c3096d1ce22fc2eecdf61bdcace8f1ab1471cfd40b2fc3a69edf4ec67faf6764"
+    },
+    {
+      "name": "SCLCommand",
+      "originalPath": "modules/exports/SCLCommand.js",
+      "outputPath": "reconstructed/exports/SCLCommand.ts",
+      "sourceHash": "6cc2cef345d06a6cada50fb06b6d2d8cb8cedd6a5e6e2bd65f27f8802c2e4eb6"
+    },
+    {
+      "name": "SCPCommand",
+      "originalPath": "modules/exports/SCPCommand.js",
+      "outputPath": "reconstructed/exports/SCPCommand.ts",
+      "sourceHash": "d7475624f5318e28754e969e2c1b60265ae63cf7e80c7bc887359001ffac71e3"
+    },
+    {
+      "name": "SCQCommand",
+      "originalPath": "modules/exports/SCQCommand.js",
+      "outputPath": "reconstructed/exports/SCQCommand.ts",
+      "sourceHash": "0165660d599aa548c7a4d9cf3fd2d3e7c3646a63e755f6db3033d214fa28c64c"
+    },
+    {
+      "name": "SDCCommand",
+      "originalPath": "modules/exports/SDCCommand.js",
+      "outputPath": "reconstructed/exports/SDCCommand.ts",
+      "sourceHash": "9c15c4fc196124d5a8be95015b4e5f55cb0870d51e4c4f8d0dd91ae0a0a68d3a"
+    },
+    {
+      "name": "SDECommand",
+      "originalPath": "modules/exports/SDECommand.js",
+      "outputPath": "reconstructed/exports/SDECommand.ts",
+      "sourceHash": "09a39f2e87e3add5ac3608dc730d523195a9eb7f8dab4756e702777ab589e2cd"
+    },
+    {
+      "name": "SDICommand",
+      "originalPath": "modules/exports/SDICommand.js",
+      "outputPath": "reconstructed/exports/SDICommand.ts",
+      "sourceHash": "4ee6a752daac798479da2e6599242b55d4ac16e33b56abe05c6e2ea48247f0b0"
+    },
+    {
+      "name": "SDSCommand",
+      "originalPath": "modules/exports/SDSCommand.js",
+      "outputPath": "reconstructed/exports/SDSCommand.ts",
+      "sourceHash": "2b997c61048d9b7225d8f853c90a4d1da8ce4b2b7d9d41ebabf428486696f6ca"
+    },
+    {
+      "name": "SEACommand",
+      "originalPath": "modules/exports/SEACommand.js",
+      "outputPath": "reconstructed/exports/SEACommand.ts",
+      "sourceHash": "34daf49594ad87544ce17be90b826fc3f3b8f9260344d1fbfa8ff486d1bd4b25"
+    },
+    {
+      "name": "SEDECommand",
+      "originalPath": "modules/exports/SEDECommand.js",
+      "outputPath": "reconstructed/exports/SEDECommand.ts",
+      "sourceHash": "5816c1b14fe7b08c9232b6b5ea74ee14dec630761f7aaf647af3f9b651da591f"
+    },
+    {
+      "name": "SEECommand",
+      "originalPath": "modules/exports/SEECommand.js",
+      "outputPath": "reconstructed/exports/SEECommand.ts",
+      "sourceHash": "00759ec2e22a4c0e59e46a04c2770a4e41d0457958f9058e404d010fb7d4fd72"
+    },
+    {
+      "name": "SEICommand",
+      "originalPath": "modules/exports/SEICommand.js",
+      "outputPath": "reconstructed/exports/SEICommand.ts",
+      "sourceHash": "58547636042e0a132f80f59295d05a5ca14eb73b380e9ea7c03e02a2edc1e513"
+    },
+    {
+      "name": "SEQCommand",
+      "originalPath": "modules/exports/SEQCommand.js",
+      "outputPath": "reconstructed/exports/SEQCommand.ts",
+      "sourceHash": "3663d66600aa55a2cba0c155a1c8f5dec11e815724189bb9854be433840c389e"
+    },
+    {
+      "name": "SGECommand",
+      "originalPath": "modules/exports/SGECommand.js",
+      "outputPath": "reconstructed/exports/SGECommand.ts",
+      "sourceHash": "c4a900bb9d683a7938159d11fcdabfa83be1747c863b5e49c4fd391de5b19215"
+    },
+    {
+      "name": "SIECommand",
+      "originalPath": "modules/exports/SIECommand.js",
+      "outputPath": "reconstructed/exports/SIECommand.ts",
+      "sourceHash": "f83f654ced5e14c07fb55c6625e032bcf8f17820e3f70a6fca4886273bc93e16"
+    },
+    {
+      "name": "SIICommand",
+      "originalPath": "modules/exports/SIICommand.js",
+      "outputPath": "reconstructed/exports/SIICommand.ts",
+      "sourceHash": "e1b9d195f4fcf2b35e9924ec09c2d82ff9143f1cab4f3296c290c81706d9282a"
+    },
+    {
+      "name": "SJCCommand",
+      "originalPath": "modules/exports/SJCCommand.js",
+      "outputPath": "reconstructed/exports/SJCCommand.ts",
+      "sourceHash": "563991c9090d4dede6e2e80d532c513b1b732e744acfd50efb1465f1d7da3a00"
+    },
+    {
+      "name": "SKLCommand",
+      "originalPath": "modules/exports/SKLCommand.js",
+      "outputPath": "reconstructed/exports/SKLCommand.ts",
+      "sourceHash": "49941f364aad496bf49226bf869a6fef77b7b431d48d2552037b6c032a170a5d"
+    },
+    {
+      "name": "SKPCommand",
+      "originalPath": "modules/exports/SKPCommand.js",
+      "outputPath": "reconstructed/exports/SKPCommand.ts",
+      "sourceHash": "79d25e62a96d9f5ce721e7f4c19fefbb490152838aa79a6f428b48c788a7285d"
+    },
+    {
+      "name": "SKRCommand",
+      "originalPath": "modules/exports/SKRCommand.js",
+      "outputPath": "reconstructed/exports/SKRCommand.ts",
+      "sourceHash": "173d4777e789687c39e6b99bf2dbef134b2a38864ece3132e3eeddfef55b1f58"
+    },
+    {
+      "name": "SLCCommand",
+      "originalPath": "modules/exports/SLCCommand.js",
+      "outputPath": "reconstructed/exports/SLCCommand.ts",
+      "sourceHash": "a3bc68d9e902614b301438d1ffd18984694be8422d33cf1d46f5030ee09d1da5"
+    },
+    {
+      "name": "SLICommand",
+      "originalPath": "modules/exports/SLICommand.js",
+      "outputPath": "reconstructed/exports/SLICommand.ts",
+      "sourceHash": "0aa9ac71ecab089dad26cdd046451f7d0b91aad2782bef17e20a412fdb787d60"
+    },
+    {
+      "name": "SLLCommand",
+      "originalPath": "modules/exports/SLLCommand.js",
+      "outputPath": "reconstructed/exports/SLLCommand.ts",
+      "sourceHash": "f92504b76bdd1b03d02a90afdb2eec21dff44ba41060be1f016b09308d80d1d9"
+    },
+    {
+      "name": "SLSECommand",
+      "originalPath": "modules/exports/SLSECommand.js",
+      "outputPath": "reconstructed/exports/SLSECommand.ts",
+      "sourceHash": "9e0dba357eb99515555cc2dc0f7707625a0b9ebec1b1f1cec9550ab9eb4a7595"
+    },
+    {
+      "name": "SMDCommand",
+      "originalPath": "modules/exports/SMDCommand.js",
+      "outputPath": "reconstructed/exports/SMDCommand.ts",
+      "sourceHash": "113f958391f5d9a0e41957d4e1e7a84565b697df72966ccad1b56ae1b2c65a66"
+    },
+    {
+      "name": "SMLCommand",
+      "originalPath": "modules/exports/SMLCommand.js",
+      "outputPath": "reconstructed/exports/SMLCommand.ts",
+      "sourceHash": "624694d2a7a613e31db1ce0e58c581068e79c79a8de6359293e11fb578378e5e"
+    },
+    {
+      "name": "SOBCommand",
+      "originalPath": "modules/exports/SOBCommand.js",
+      "outputPath": "reconstructed/exports/SOBCommand.ts",
+      "sourceHash": "449c1a9ec8f52e58e04c54fb44d21e25ef159ca9def9dc1be3a83b1e10cc8dc2"
+    },
+    {
+      "name": "SOUCommand",
+      "originalPath": "modules/exports/SOUCommand.js",
+      "outputPath": "reconstructed/exports/SOUCommand.ts",
+      "sourceHash": "9c70f0a06ed5a5e8030f6c4f98160e51ce500ccaa47618cc6e9b176e75664217"
+    },
+    {
+      "name": "SPLCommand",
+      "originalPath": "modules/exports/SPLCommand.js",
+      "outputPath": "reconstructed/exports/SPLCommand.ts",
+      "sourceHash": "f05e55af554ddde29b650139650a899d69c96cd4ebebd8c29317f48692f82c77"
+    },
+    {
+      "name": "SPPCommand",
+      "originalPath": "modules/exports/SPPCommand.js",
+      "outputPath": "reconstructed/exports/SPPCommand.ts",
+      "sourceHash": "1b118b39ce67e995b96d562c993f3d9438dd7bea246c0b031dec31f39bbeec6d"
+    },
+    {
+      "name": "SRBCommand",
+      "originalPath": "modules/exports/SRBCommand.js",
+      "outputPath": "reconstructed/exports/SRBCommand.ts",
+      "sourceHash": "12d6cdf4cde827da18dc5856cd53dec94c7b734003929017d70a6bfd8d6eb2c4"
+    },
+    {
+      "name": "SRMCommand",
+      "originalPath": "modules/exports/SRMCommand.js",
+      "outputPath": "reconstructed/exports/SRMCommand.ts",
+      "sourceHash": "d9b7ea057091f15a5287f62678bffb48dfe63b8599dc26aafba3399aeeca31bc"
+    },
+    {
+      "name": "SSACommand",
+      "originalPath": "modules/exports/SSACommand.js",
+      "outputPath": "reconstructed/exports/SSACommand.ts",
+      "sourceHash": "a027b3752556b707d51fc6c76c152e6f11fca73365cb8ba1654d69ef2c70d4e1"
+    },
+    {
+      "name": "SSICommand",
+      "originalPath": "modules/exports/SSICommand.js",
+      "outputPath": "reconstructed/exports/SSICommand.ts",
+      "sourceHash": "36eedea9608987526055a085714f2c14a6382c0f4ff3dc95ead3aa4c012088ae"
+    },
+    {
+      "name": "STECommand",
+      "originalPath": "modules/exports/STECommand.js",
+      "outputPath": "reconstructed/exports/STECommand.ts",
+      "sourceHash": "569ddddb467ba0e69acb151802352f878f55f3bb7b9f557efd5acdb37aad8b8a"
+    },
+    {
+      "name": "STSCommand",
+      "originalPath": "modules/exports/STSCommand.js",
+      "outputPath": "reconstructed/exports/STSCommand.ts",
+      "sourceHash": "e9ad6631fc796862b3ca487e4789579c1ad19a69411e4861c74a37f0a1893ba0"
+    },
+    {
+      "name": "SUBCommand",
+      "originalPath": "modules/exports/SUBCommand.js",
+      "outputPath": "reconstructed/exports/SUBCommand.ts",
+      "sourceHash": "5d922ed2d3403dbc174360037782ae789d4d51f5355ad6aec3ccbb9c5ebfc9df"
+    },
+    {
+      "name": "SURCommand",
+      "originalPath": "modules/exports/SURCommand.js",
+      "outputPath": "reconstructed/exports/SURCommand.ts",
+      "sourceHash": "f0776c65c2c444e6ceeb682537902bb56fc0e3ca45374e9bcd4602a60c2af158"
+    },
+    {
+      "name": "TAICommand",
+      "originalPath": "modules/exports/TAICommand.js",
+      "outputPath": "reconstructed/exports/TAICommand.ts",
+      "sourceHash": "975a1b60f5a15080c941464c24b371e327863b2ea69519de048806b3d2bae286"
+    },
+    {
+      "name": "TASCommand",
+      "originalPath": "modules/exports/TASCommand.js",
+      "outputPath": "reconstructed/exports/TASCommand.ts",
+      "sourceHash": "d738bb46ba0cd64f903bea223dd240171d7211bae4bfec69463ae9ac8cbe5ee2"
+    },
+    {
+      "name": "TBICommand",
+      "originalPath": "modules/exports/TBICommand.js",
+      "outputPath": "reconstructed/exports/TBICommand.ts",
+      "sourceHash": "d437a4d640078e9ed365427cf35c921fc9de3f83850889d398ba4b9b6fb5804f"
+    },
+    {
+      "name": "TBMCommand",
+      "originalPath": "modules/exports/TBMCommand.js",
+      "outputPath": "reconstructed/exports/TBMCommand.ts",
+      "sourceHash": "2ed9e2fc73d5ad292e3b1158c0e32c3346088b234e1cc3e0f29e5292cd866f61"
+    },
+    {
+      "name": "TCNCommand",
+      "originalPath": "modules/exports/TCNCommand.js",
+      "outputPath": "reconstructed/exports/TCNCommand.ts",
+      "sourceHash": "4182cce1e7d14d0f02464159f7151bf247f03127885d83fb0d167d7ad4d4ff34"
+    },
+    {
+      "name": "TDECommand",
+      "originalPath": "modules/exports/TDECommand.js",
+      "outputPath": "reconstructed/exports/TDECommand.ts",
+      "sourceHash": "d73427c54ce613c6da14b3631ff7bdcb3babb88a27ebd2d4d6a14bde3b667477"
+    },
+    {
+      "name": "TEECommand",
+      "originalPath": "modules/exports/TEECommand.js",
+      "outputPath": "reconstructed/exports/TEECommand.ts",
+      "sourceHash": "29eb519f36c7f5d92263f6799e646a7171134254eaef6caf55a222c687b4257c"
+    },
+    {
+      "name": "TEICommand",
+      "originalPath": "modules/exports/TEICommand.js",
+      "outputPath": "reconstructed/exports/TEICommand.ts",
+      "sourceHash": "04367e0e686fe9968351dd1701ef46c767f9d97f2d6a38b1aa33aa870a6a8464"
+    },
+    {
+      "name": "TFMCommand",
+      "originalPath": "modules/exports/TFMCommand.js",
+      "outputPath": "reconstructed/exports/TFMCommand.ts",
+      "sourceHash": "163cb95339749466318afac2262597cb4814a4189882aa842d33124f9406ace8"
+    },
+    {
+      "name": "THICommand",
+      "originalPath": "modules/exports/THICommand.js",
+      "outputPath": "reconstructed/exports/THICommand.ts",
+      "sourceHash": "98ec8913a43c33549ddda53b53d43c15db433fd850e9a691e71555c6876de32c"
+    },
+    {
+      "name": "THMCommand",
+      "originalPath": "modules/exports/THMCommand.js",
+      "outputPath": "reconstructed/exports/THMCommand.ts",
+      "sourceHash": "57969e21220c9447e5f27dc39e8cef4f6197f94e4adbce4d68600ada756bd204"
+    },
+    {
+      "name": "TKTCommand",
+      "originalPath": "modules/exports/TKTCommand.js",
+      "outputPath": "reconstructed/exports/TKTCommand.ts",
+      "sourceHash": "9e3af511bfab953d283a78988685b92596c90bbeea4a9b326a7720fc97aa8dfc"
+    },
+    {
+      "name": "TMPCommand",
+      "originalPath": "modules/exports/TMPCommand.js",
+      "outputPath": "reconstructed/exports/TMPCommand.ts",
+      "sourceHash": "ddd2a2c3dcc6769d697bd8af45e5208ac6fdbf34154aa9124e35c3ed6664e608"
+    },
+    {
+      "name": "TPCCommand",
+      "originalPath": "modules/exports/TPCCommand.js",
+      "outputPath": "reconstructed/exports/TPCCommand.ts",
+      "sourceHash": "c2ff20a5a54a6587c689ed2fc130efe2febfbd27904b48b692fcc803d69c5289"
+    },
+    {
+      "name": "TRTCommand",
+      "originalPath": "modules/exports/TRTCommand.js",
+      "outputPath": "reconstructed/exports/TRTCommand.ts",
+      "sourceHash": "8861cc891f323842f87de66a551d214ab26a009054a7e7395a7bdbe6469c4b29"
+    },
+    {
+      "name": "TSHCommand",
+      "originalPath": "modules/exports/TSHCommand.js",
+      "outputPath": "reconstructed/exports/TSHCommand.ts",
+      "sourceHash": "78dd985ed1fdf40a5b20e36652f343fb4b114f56301bc8586a2485521fba32f7"
+    },
+    {
+      "name": "TUTCommand",
+      "originalPath": "modules/exports/TUTCommand.js",
+      "outputPath": "reconstructed/exports/TUTCommand.ts",
+      "sourceHash": "477ec5cf327d59370bf66d2b1a8ae30d5f2d46a4bc8d9c177648bf8bb0ead932"
+    },
+    {
+      "name": "TXICommand",
+      "originalPath": "modules/exports/TXICommand.js",
+      "outputPath": "reconstructed/exports/TXICommand.ts",
+      "sourceHash": "b4a47cc9efa325e201c6ebdb9dbfb66faf2ce7a647ddef67cb28423d4afbe659"
+    },
+    {
+      "name": "TXSCommand",
+      "originalPath": "modules/exports/TXSCommand.js",
+      "outputPath": "reconstructed/exports/TXSCommand.ts",
+      "sourceHash": "6b220cf3aa0c3697bf753717eaf9a2d230cbee6e07dedf2b45063472cd5124da"
+    },
+    {
+      "name": "UACCommand",
+      "originalPath": "modules/exports/UACCommand.js",
+      "outputPath": "reconstructed/exports/UACCommand.ts",
+      "sourceHash": "37b7c165f0eb0731029b52a4e7b9087de88c1585f3b9b5bec353a47477032dad"
+    },
+    {
+      "name": "UAPCommand",
+      "originalPath": "modules/exports/UAPCommand.js",
+      "outputPath": "reconstructed/exports/UAPCommand.ts",
+      "sourceHash": "e7d484dd9ea5668fabada3cec5cb072940fba4c2744ae696621b35ad943c48a2"
+    },
+    {
+      "name": "UASCommand",
+      "originalPath": "modules/exports/UASCommand.js",
+      "outputPath": "reconstructed/exports/UASCommand.ts",
+      "sourceHash": "5bdcd2c965a466611b0db7f4571d7a71461283c4b78e539f86604a6b3d882b01"
+    },
+    {
+      "name": "UHTCommand",
+      "originalPath": "modules/exports/UHTCommand.js",
+      "outputPath": "reconstructed/exports/UHTCommand.ts",
+      "sourceHash": "f2e9baed69a8bb4720c1af93791ecaff3c89925b4f8a3f046119b938e1772e12"
+    },
+    {
+      "name": "ULECommand",
+      "originalPath": "modules/exports/ULECommand.js",
+      "outputPath": "reconstructed/exports/ULECommand.ts",
+      "sourceHash": "70ff7cfd2a17c9daae28298cfa8931e21cb11368b369365c6206df06aa790621"
+    },
+    {
+      "name": "UPANCommand",
+      "originalPath": "modules/exports/UPANCommand.js",
+      "outputPath": "reconstructed/exports/UPANCommand.ts",
+      "sourceHash": "ae718f29d902952a0bf893e7df12978a7aadde84e80e813dbd0d90a00be9d624"
+    },
+    {
+      "name": "UPSCommand",
+      "originalPath": "modules/exports/UPSCommand.js",
+      "outputPath": "reconstructed/exports/UPSCommand.ts",
+      "sourceHash": "4083229b6ccf4900f4267bd2e728f2ec39c140684a02edf1d23af78128266738"
+    },
+    {
+      "name": "URLCommand",
+      "originalPath": "modules/exports/URLCommand.js",
+      "outputPath": "reconstructed/exports/URLCommand.ts",
+      "sourceHash": "1ff4d7af772e22ac6fc0ed47ba2d3959f2924f11b732718c7d90f4ffb23feef8"
+    },
+    {
+      "name": "UTCCommand",
+      "originalPath": "modules/exports/UTCCommand.js",
+      "outputPath": "reconstructed/exports/UTCCommand.ts",
+      "sourceHash": "e1b81320f4537fc5a6bb401c5be062ec3dfcf0eaf9fbc82157bf3c447ff8f12e"
+    }
+  ],
+  "skipped": [
+    {
+      "path": "modules/exports/AACommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/AASCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/ABGCAMCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/ABotCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/AccountDeletionTrackingCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/ACDCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/ACICommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/ADPCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145, __dep_exact_9e901e8e2483a22f, __dep_exact_26a421b704832cff, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/AFDCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_81dacdf05bd32292, __dep_exact_26a421b704832cff_1"
+    },
+    {
+      "path": "modules/exports/AFOCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30, __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/AICCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff, __dep_exact_81dacdf05bd32292"
+    },
+    {
+      "path": "modules/exports/AIPCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/AIsoCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/AJACommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/APTCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/ARCCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff, __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30_1, __dep_exact_92d05af59ee2ff30, __dep_exact_9e901e8e2483a22f_1"
+    },
+    {
+      "path": "modules/exports/ARMCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/ATOCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/AttackScreenGeneralsTrackingCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/AttackScreenWaveTrackingCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/AutoShowStartQuestDialogCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/BADCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/BBSCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/BCQCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/BCRCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/BEQCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/BGMCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/BKPCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff_1"
+    },
+    {
+      "path": "modules/exports/BLDCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/BLMCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/BLSCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/BPVCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/BRICommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/BSDCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/BSECommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/BUPCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145, __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30, __dep_exact_26a421b704832cff_1"
+    },
+    {
+      "path": "modules/exports/BuyBoosterCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_1, __dep_exact_f855840627e6e145, __dep_exact_26a421b704832cff, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/CAMCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/CastleAddExtraCurrencyCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f, __dep_exact_9e901e8e2483a22f_2"
+    },
+    {
+      "path": "modules/exports/CastleCheckMaintenanceCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CastleChooseLoginMethodCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_5, __dep_exact_9e901e8e2483a22f_2, __dep_exact_9e901e8e2483a22f_6, __dep_exact_9e901e8e2483a22f_1, __dep_exact_f855840627e6e145, __dep_exact_9e901e8e2483a22f_3, __dep_exact_9e901e8e2483a22f_4, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/CastleCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_9e901e8e2483a22f_3, __dep_exact_9e901e8e2483a22f_2, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f_4"
+    },
+    {
+      "path": "modules/exports/CastleConnectionLostCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_7, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f_6, __dep_exact_9e901e8e2483a22f_2, __dep_exact_9e901e8e2483a22f_4, __dep_exact_9e901e8e2483a22f, __dep_exact_9e901e8e2483a22f_3, __dep_exact_92d05af59ee2ff30, __dep_exact_9e901e8e2483a22f_5"
+    },
+    {
+      "path": "modules/exports/CastleConnectToAllianceBattleGroundServerCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/CastleConnectToInstanceVOCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CastleConnectToSpecialServerCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CastleConnectToTemporaryServerCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/CastleCPSCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_2, __dep_exact_9e901e8e2483a22f_3, __dep_exact_9e901e8e2483a22f_4, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/CastleDestroyGameCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_608de47b6498f9b0"
+    },
+    {
+      "path": "modules/exports/CastleDispatchingCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CastleExtensionResponseCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_3, __dep_exact_f855840627e6e145, __dep_exact_9e901e8e2483a22f_2, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/CastleFacebookGetUserDataCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/CastleFacebookLoginRegistrationCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/CastleFacebookSwitchToCachedAccountCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_2, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/CastleHandleServerErrorCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_1, __dep_exact_f855840627e6e145, __dep_exact_9e901e8e2483a22f_2, __dep_exact_92d05af59ee2ff30, __dep_exact_9e901e8e2483a22f, __dep_exact_9e901e8e2483a22f_4, __dep_exact_26a421b704832cff_1, __dep_exact_26a421b704832cff, __dep_exact_81dacdf05bd32292, __dep_exact_9e901e8e2483a22f_5, __dep_exact_9e901e8e2483a22f_3"
+    },
+    {
+      "path": "modules/exports/CastleInitalizeControllerCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_9e901e8e2483a22f_1"
+    },
+    {
+      "path": "modules/exports/CastleInitEquipmentFavoritesServiceCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_2f3215726cfc30d4"
+    },
+    {
+      "path": "modules/exports/CastleInitLoggerCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/CastleInitServerListCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_9e901e8e2483a22f_1"
+    },
+    {
+      "path": "modules/exports/CastleJoinedRoomCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f_3, __dep_exact_9e901e8e2483a22f_2"
+    },
+    {
+      "path": "modules/exports/CastleLoginCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/CastleLogoutCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_5, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f_3, __dep_exact_81dacdf05bd32292, __dep_exact_9e901e8e2483a22f_4, __dep_exact_9e901e8e2483a22f_2, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/CastleLostPasswordCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CastleMapFacebookAccountCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/CastleNetworkUpdateCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CastleOpenDiscordCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CastleOpenForumCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CastleOpenMessageDialogCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_9e901e8e2483a22f_1"
+    },
+    {
+      "path": "modules/exports/CastleRegisterUserCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f_2, __dep_exact_81dacdf05bd32292_2, __dep_exact_9e901e8e2483a22f_3, __dep_exact_81dacdf05bd32292_1, __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/CastleRegisterUserWithFacebookCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_5, __dep_exact_9e901e8e2483a22f_7, __dep_exact_9e901e8e2483a22f_4, __dep_exact_f855840627e6e145, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f_2, __dep_exact_9e901e8e2483a22f_6, __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30, __dep_exact_9e901e8e2483a22f_3"
+    },
+    {
+      "path": "modules/exports/CastleSocialLoginCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_4, __dep_exact_9e901e8e2483a22f, __dep_exact_9e901e8e2483a22f_3, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f_5, __dep_exact_9e901e8e2483a22f_6, __dep_exact_9e901e8e2483a22f_2"
+    },
+    {
+      "path": "modules/exports/CastleSPLCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CastleVCKCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/CastleVerifyPlayerMailCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CFCCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatAddNPCGeneralCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatBuildingInfoCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatDialogNamesCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatEndOfTextPipesCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatLifetimeSpentC2Command.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatMaintenanceDialogCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatMysteryBoxChancesCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatOfferIDsInHeaderCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatQuestIDsCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatRelicIDsCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatShowResearchGridCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatShowResearchIDsCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatTextIDCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatToggleShowCIIDCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatToggleShowEffectTypeIDCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatUnitInfoCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatUnitWODCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CheatWelcomeCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/CQSCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145, __dep_exact_81dacdf05bd32292, __dep_exact_26a421b704832cff_1"
+    },
+    {
+      "path": "modules/exports/CRACommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/CRINCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/CSPCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/DDICommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/DGECommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/DMSCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145, __dep_exact_81dacdf05bd32292_1"
+    },
+    {
+      "path": "modules/exports/DonateForQuestCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f_2"
+    },
+    {
+      "path": "modules/exports/DonationEventTrackingCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/DQLCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/DRICommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff_1"
+    },
+    {
+      "path": "modules/exports/DRLCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/ESLCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/FBECommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/FCSCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_1, __dep_exact_92d05af59ee2ff30, __dep_exact_9e901e8e2483a22f_2, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/FGBCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff_1"
+    },
+    {
+      "path": "modules/exports/FJFCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff_1, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/FKICommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff_1"
+    },
+    {
+      "path": "modules/exports/FNMCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/FQCCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/FSCCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/FWDCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/GAACommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_f855840627e6e145, __dep_exact_26a421b704832cff_1, __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/GAAECommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/GAXPCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/GBDCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145, __dep_exact_9e901e8e2483a22f, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f_6, __dep_exact_9e901e8e2483a22f_7, __dep_exact_9e901e8e2483a22f_4, __dep_exact_9e901e8e2483a22f_5, __dep_exact_9e901e8e2483a22f_3, __dep_exact_9e901e8e2483a22f_2, __dep_exact_81dacdf05bd32292_1, __dep_exact_26a421b704832cff_1"
+    },
+    {
+      "path": "modules/exports/GBLCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/GCSCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/GCUCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/GDECommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/GDICommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/GDRCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/GDTICommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/GeneralIntroductionGuidanceAttackWolfkingCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/GeneralIntroductionGuidanceBasicCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_2f3215726cfc30d4"
+    },
+    {
+      "path": "modules/exports/GFPCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_81dacdf05bd32292, __dep_exact_26a421b704832cff_1"
+    },
+    {
+      "path": "modules/exports/GIECommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/GLACommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/GLTCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_6a641b3c8260d260"
+    },
+    {
+      "path": "modules/exports/GLUCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145, __dep_exact_9e901e8e2483a22f_2, __dep_exact_9e901e8e2483a22f, __dep_exact_9e901e8e2483a22f_1"
+    },
+    {
+      "path": "modules/exports/GotoMainCastleUniqueBuildingCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/GPACommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/GPGCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30, __dep_exact_26a421b704832cff_1"
+    },
+    {
+      "path": "modules/exports/GRCCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/GRFCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/GRICommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/GRSCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/GSUECommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/GTICommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/GTWARACommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/GUECommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/GUICommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/GUSECommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/HACCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_81dacdf05bd32292"
+    },
+    {
+      "path": "modules/exports/HandleDialogInfoCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_81dacdf05bd32292_1, __dep_exact_9e901e8e2483a22f_1"
+    },
+    {
+      "path": "modules/exports/HDUCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/HGHCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145, __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/HRACommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/HRUCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30, __dep_exact_26a421b704832cff_1"
+    },
+    {
+      "path": "modules/exports/HSSCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/IKRCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff_1"
+    },
+    {
+      "path": "modules/exports/IOTCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/IRCCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_81dacdf05bd32292"
+    },
+    {
+      "path": "modules/exports/JAACommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_6, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f, __dep_exact_9e901e8e2483a22f_3, __dep_exact_9e901e8e2483a22f_2, __dep_exact_9e901e8e2483a22f_5, __dep_exact_9e901e8e2483a22f_4"
+    },
+    {
+      "path": "modules/exports/JOACommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_92d05af59ee2ff30, __dep_exact_92d05af59ee2ff30_1, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/JoinAreaAndSavePositionCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_81dacdf05bd32292_1"
+    },
+    {
+      "path": "modules/exports/JoinCastleWithoutPositionSaveCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_81dacdf05bd32292_1"
+    },
+    {
+      "path": "modules/exports/JoinMyMainCastleCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/KIKCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff_1"
+    },
+    {
+      "path": "modules/exports/LCACommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_4, __dep_exact_9e901e8e2483a22f, __dep_exact_9e901e8e2483a22f_2, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f_3, __dep_exact_9e901e8e2483a22f_5"
+    },
+    {
+      "path": "modules/exports/LCBCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/LLICommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/LRECommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_6, __dep_exact_9e901e8e2483a22f_3, __dep_exact_9e901e8e2483a22f_2, __dep_exact_9e901e8e2483a22f_4, __dep_exact_9e901e8e2483a22f, __dep_exact_9e901e8e2483a22f_5, __dep_exact_9e901e8e2483a22f_8, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f_7"
+    },
+    {
+      "path": "modules/exports/LRICommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff_1"
+    },
+    {
+      "path": "modules/exports/LTSCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/LWTACommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/MOSCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/MSPCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/MVFCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/NewsHubTrackingCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/NFOCastleCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/NFOCoreDuplicateCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/NRFCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/OpenActiveTaxDialogCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/OpenAllianceBuyBoosterCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_f855840627e6e145, __dep_exact_9e901e8e2483a22f_1, __dep_exact_92d05af59ee2ff30, __dep_exact_9e901e8e2483a22f_2, __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/OpenAttackOrderCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/OpenDialogWithAdditionalExternalAssetsCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/OpenDungenTreasureChestOfferCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_3, __dep_exact_9e901e8e2483a22f_2, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/OpenEventAnnouncementDialogCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_2, __dep_exact_81dacdf05bd32292_1, __dep_exact_f855840627e6e145, __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30, __dep_exact_9e901e8e2483a22f_1"
+    },
+    {
+      "path": "modules/exports/OpenEventDialogCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_81dacdf05bd32292_1"
+    },
+    {
+      "path": "modules/exports/OpenFactionEventMainDialogCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/OpenFactionInvasionEventMainDialogCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/OpenGenericOfferCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_3, __dep_exact_9e901e8e2483a22f_2, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/OpenIngameHelpDialogCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/OpenJudgementSpotDialogCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/OpenKingdomTeaserCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_1, __dep_exact_f855840627e6e145, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/OpenLongTermPointEventDialogCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/OpenLongTermPointEventHighScoreDialogCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/OpenMovementInfoDialogCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_81dacdf05bd32292, __dep_exact_81dacdf05bd32292_2"
+    },
+    {
+      "path": "modules/exports/OpenNewServerAnnouncementCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/OpenOfferDialogCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_2, __dep_exact_81dacdf05bd32292, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f, __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/OpenPortUpgradeDialogCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/OpenPostAttackDialogCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_f855840627e6e145, __dep_exact_81dacdf05bd32292_1"
+    },
+    {
+      "path": "modules/exports/OpenPrivateOfferDialogCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_81dacdf05bd32292_1"
+    },
+    {
+      "path": "modules/exports/OpenSeasonInfoDialogCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_1, __dep_exact_f855840627e6e145, __dep_exact_26a421b704832cff, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/OpenSpecialEventProgressCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_1, __dep_exact_81dacdf05bd32292, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/OpenTipDialogCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/OpenTreasureHuntInfoDialogCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/OpenVoucherOfferCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_3, __dep_exact_9e901e8e2483a22f_2, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/OpenWhaleChestOfferCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_3, __dep_exact_9e901e8e2483a22f_2, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/PARCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_81dacdf05bd32292, __dep_exact_26a421b704832cff_1, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/PEPCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145, __dep_exact_81dacdf05bd32292"
+    },
+    {
+      "path": "modules/exports/POLCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/PRECommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/QFICommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145, __dep_exact_81dacdf05bd32292, __dep_exact_26a421b704832cff_1, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/QLICommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/QPGCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/QSTCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/RGGCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff_1, __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/RPRCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_81dacdf05bd32292"
+    },
+    {
+      "path": "modules/exports/RPVCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/RSMCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/RSTCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30, __dep_exact_9e901e8e2483a22f_1"
+    },
+    {
+      "path": "modules/exports/RUICommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/SAACommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/SBPCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff_1, __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/SCECommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/SCICommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/SCTCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/SetAddPipesAtEndOfTextCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/SGICommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/ShowHowToDoQuestconditionCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/SINCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/SLMSCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/SLTCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f_2"
+    },
+    {
+      "path": "modules/exports/SMGCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/SMSCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/SNECommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/SocialButtonTrackingCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/SPOCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/SPRCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_81dacdf05bd32292, __dep_exact_26a421b704832cff_2, __dep_exact_26a421b704832cff, __dep_exact_26a421b704832cff_3, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/SPSLMSCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/SSCCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/SSDCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30, __dep_exact_9e901e8e2483a22f_1"
+    },
+    {
+      "path": "modules/exports/SsoUserMoveTrackingCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/SSPCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/SSUCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_81dacdf05bd32292"
+    },
+    {
+      "path": "modules/exports/STICommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/SwitchKingdomCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_f855840627e6e145, __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/SwitchKingdomGoToWorldmapAndCenterPosCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_1, __dep_exact_f855840627e6e145, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/SwitchSeasonMapCenterAndHighlightDungeonsCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/SwitchToRelocateWorldmapCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/SwitchToWorldmapCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TCCCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145, __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/TGTCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_92d05af59ee2ff30, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/TIECommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/TLEPCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    },
+    {
+      "path": "modules/exports/TPICommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/TSCCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/TSECommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff_1, __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/TutorialAbstractMilitaryCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialAskToSkipTutorialCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialAttackRobberBaronCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialBasicActionCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialBasicQuestActionCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialBasicQuestFinisherActionCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialBasicQuestStarterActionCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialBuildBuildingActionCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialBuildDefenseToolsCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialBuildSiegeToolsCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialBuildToolsCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialChooseHeroCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialCollectTaxActionCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/TutorialConfirmAttackRobberBaronCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialConfirmBuildBuildingCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialConfirmBuildToolsCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialConfirmChooseHeroCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialConfirmCollectTaxCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialConfirmDecoAndPublicOrderCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialConfirmDefenceEquippedCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialConfirmEquipDefenseCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialConfirmExpandCastleCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialConfirmFoodReductionForUnitsCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialConfirmMainTutorialFinishedCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialConfirmRecruitUnitsCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialConfirmUpgradeBuildingCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialConfirmWelcomeCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialEquipDefenseCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff, __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/TutorialExpandCastleActionCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialFinishedAttackRobberBaronCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialFinishedBuildDefenseWorkshopCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialFinishedBuildWorkshopCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialFinishedDecoAndPublicOrderCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialFinishedExpandCastleCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialFinishedUpgradeBuildingActionCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialOpenQuestbookCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialReadBattleLogCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_81dacdf05bd32292_2, __dep_exact_81dacdf05bd32292"
+    },
+    {
+      "path": "modules/exports/TutorialRecruitUnitsCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/TutorialStartFromQuestBookActionCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialTrackGameJoinedCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TutorialUpgradeBuildingActionCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/TXCCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/UARCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/UBCCommand.js",
+      "reason": "Unsupported inherited accessor setter: cmdId"
+    },
+    {
+      "path": "modules/exports/UFACommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/UFPCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/UpdateDynamicTopXDataCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_26a421b704832cff"
+    },
+    {
+      "path": "modules/exports/UPICommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f, __dep_exact_81dacdf05bd32292"
+    },
+    {
+      "path": "modules/exports/UPTCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f, __dep_exact_81dacdf05bd32292"
+    },
+    {
+      "path": "modules/exports/UPVCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/USGCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_81dacdf05bd32292_1, __dep_exact_26a421b704832cff_1"
+    },
+    {
+      "path": "modules/exports/VCKLegacyCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f_3, __dep_exact_9e901e8e2483a22f, __dep_exact_9e901e8e2483a22f_1, __dep_exact_9e901e8e2483a22f_2, __dep_exact_92d05af59ee2ff30, __dep_exact_9e901e8e2483a22f_4, __dep_exact_9e901e8e2483a22f_5"
+    },
+    {
+      "path": "modules/exports/VFICommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145, __dep_exact_9e901e8e2483a22f"
+    },
+    {
+      "path": "modules/exports/VIPCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/VLICommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_f855840627e6e145"
+    },
+    {
+      "path": "modules/exports/VLNCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/VPNCommand.js",
+      "reason": "unsupported-class-shape"
+    },
+    {
+      "path": "modules/exports/VWCCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_26a421b704832cff_1"
+    },
+    {
+      "path": "modules/exports/WSPCommand.js",
+      "reason": "Unresolved generated dependencies: __dep_exact_9e901e8e2483a22f, __dep_exact_92d05af59ee2ff30"
+    }
+  ]
+}

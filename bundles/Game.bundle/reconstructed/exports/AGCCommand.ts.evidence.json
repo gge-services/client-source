@@ -1,0 +1,58 @@
+{
+  "sourceHash": "971e9784369c7ac6b9254a436c4de2c2ddfc754293fda9634030ea2b98beb590",
+  "generatedHash": "126bc5b2ca134f611b9cedafd0fa17fdcea36f2aed01a26ce00e71c8fe8f3516",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "source": "exports/CastleModel.js",
+      "imported": "CastleModel"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "source": "exports/CastleDialogHandler.js",
+      "imported": "CastleDialogHandler"
+    },
+    {
+      "specifier": "gge-module:export_CastleAllianceGiftCollectedDialog",
+      "source": "exports/CastleAllianceGiftCollectedDialog.js",
+      "imported": "CastleAllianceGiftCollectedDialog"
+    },
+    {
+      "specifier": "gge-module:export_CastleAllianceGiftCollectedDialogProperties",
+      "source": "exports/CastleAllianceGiftCollectedDialogProperties.js",
+      "imported": "CastleAllianceGiftCollectedDialogProperties"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

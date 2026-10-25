@@ -1,0 +1,26 @@
+import { CastleCommand } from "./CastleCommand";
+import { CastleModel } from "./CastleModel";
+import { ClientConstSF } from "./ClientConstSF";
+import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+export class SOBCommand extends CastleCommand {
+  get cmdId() {
+    return ClientConstSF.S2C_STORE_OBJECT;
+  }
+  set cmdId(value) {
+    super.cmdId = value;
+  }
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
+      case ERROR.ALL_OK:
+        var parsedResponse = JSON.parse(responseFields[1]);
+        if (CastleModel.areaData.activeArea) {
+          CastleModel.areaData.activeArea.updater.parseSOB(parsedResponse);
+        }
+        CastleModel.decoStorage.parseSIN(parsedResponse.sin);
+        break;
+      default:
+        this.showErrorDialog(statusCode, responseFields);
+    }
+    return false;
+  }
+}
