@@ -1,6 +1,6 @@
 {
   "sourceHash": "2b3f3dd02f9a710a10a77564ec75ba84f6becf3349953dfbac28bb12f6275e1f",
-  "generatedHash": "9d7b567c034ac474f2e0a372b6a72df7a012499077a9cb9d3ff78d310cf87aa0",
+  "generatedHash": "efe94c4dfe4ca752b22e9e3d06cd60516cd9aa4985cd66557d79ed625beea7ff",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -50,6 +50,15 @@
       "path": "exports/LeaderBoardEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -58,6 +67,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

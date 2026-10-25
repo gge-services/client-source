@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class BMSCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_MARAUDER_START;
@@ -22,3 +23,4 @@ export class BMSCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(BMSCommand, "IExecCommand");

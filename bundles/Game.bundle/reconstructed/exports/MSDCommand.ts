@@ -4,6 +4,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { SkipCooldownEvent } from "./SkipCooldownEvent";
 import { WorldmapObjectFactory } from "./WorldmapObjectFactory";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class MSDCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_MINUTE_SKIP_DUNGEON;
@@ -26,3 +27,4 @@ export class MSDCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(MSDCommand, "IExecCommand");

@@ -4,6 +4,7 @@ import { CastleModel } from "./CastleModel";
 import { CastleSpecialEventEvent } from "./CastleSpecialEventEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class RPRCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_RAGE_POINTS_RECEIVED;
@@ -30,3 +31,4 @@ export class RPRCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(RPRCommand, "IExecCommand");

@@ -1,6 +1,6 @@
 {
   "sourceHash": "a5b87c528b2b82cd0f6bee14545b56c76ac191fe860a3a7d368f70d6bdea927d",
-  "generatedHash": "f41f45cb45584d2792cdabeda415547c6e574948901d87674ea0ff49b5a4342b",
+  "generatedHash": "f176e9b3bdab76c5cabdc1b9c6003c806e83fa1d9eb3bc144dac382591457e84",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -83,6 +83,15 @@
       "path": "exports/CastleRelocateRuinDialogProperties.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -91,6 +100,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TKTCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_TREASUREMAP_SKIP_TRANSFER;
@@ -22,3 +23,4 @@ export class TKTCommand extends CastleCommand {
     return true;
   }
 }
+classImplementsInterfaces(TKTCommand, "IExecCommand");

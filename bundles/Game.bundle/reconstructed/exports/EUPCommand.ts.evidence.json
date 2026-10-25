@@ -1,6 +1,6 @@
 {
   "sourceHash": "f8ff17fbd7ff9b0aa0ff35400ddf3e5ef9adeb8b2af703696f66c2e6ed230b1d",
-  "generatedHash": "b7346fe9e5d39c8a28e1a3de2fd662d66ee1f0a04ac8b3555e1eef12222247c4",
+  "generatedHash": "ee5a0f2a6483430e3ec4e31a89407aadde228ba45a7ead618b0397915e44718b",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -74,11 +74,22 @@
       "path": "exports/C2SIsoUpgradeObjectVO.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

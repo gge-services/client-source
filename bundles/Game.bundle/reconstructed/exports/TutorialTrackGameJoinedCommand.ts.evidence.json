@@ -1,6 +1,6 @@
 {
   "sourceHash": "211e30ca48e885871a23f499c604ad0691da7630f62227ba5bcd5d71e263b823",
-  "generatedHash": "c6660874cec185b582ed9086fbafb68751f40504464f611cac8f46cffedaaf80",
+  "generatedHash": "18c0c2958e55fb4552ce253ac159d4ace29df2bf344857da676f3a49208adc52",
   "constructor": "implicit-super",
   "accessors": [],
   "methods": [
@@ -32,9 +32,20 @@
       "moduleId": "29",
       "moduleIdentity": "ggs.dll:export:ClientFunnelTrackingController",
       "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

@@ -1,6 +1,6 @@
 {
   "sourceHash": "5a1e0b25a70647a95c0f497b096d1601fb58cd10b20e55cd26976daf32b33ff5",
-  "generatedHash": "a7d84368a8bf9eab4b11e2a602b9974084a67bb6fd981a054b96e0e7e51a7348",
+  "generatedHash": "f8e4017821df73a3ddfb54bdac6e7759b322b856db6cd318b634739644951e3e",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -58,11 +58,22 @@
       "path": "exports/CastleMailGiftDialog.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

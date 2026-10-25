@@ -1,6 +1,6 @@
 {
   "sourceHash": "76933f9ca5131ba95cc88110448b116dcab6dfc75008e012cac31c36794e35b9",
-  "generatedHash": "07bce32ce55b2a9d0c7ac6f36a06b77743de936410535a8a2fcbefacf1825851",
+  "generatedHash": "52aa489fd560ac18ab2a1d23ebaf18b36c2f070e5cf460e1260e11f584edf756",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -77,11 +77,22 @@
       "path": "exports/TimeLimitedCampaignUpdateEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

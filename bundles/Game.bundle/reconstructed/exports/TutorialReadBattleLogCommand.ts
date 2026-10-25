@@ -8,6 +8,8 @@ import { ClientConstCharacter } from "./ClientConstCharacter";
 import { instanceOfClass } from "../../../ggs.dll/reconstructed/exports/instanceOfClass";
 import { MessagePanelButton } from "./MessagePanelButton";
 import { TutorialBasicActionCommand } from "./TutorialBasicActionCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
+const __s0local0 = createjs.Point;
 export class TutorialReadBattleLogCommand extends TutorialBasicActionCommand {
   internalExecute() {
     this.filter.replace(CastleMessageInboxDialog);
@@ -75,3 +77,4 @@ export class TutorialReadBattleLogCommand extends TutorialBasicActionCommand {
     this.finishStep();
   }
 }
+classImplementsInterfaces(TutorialReadBattleLogCommand, "ISimpleCommand");

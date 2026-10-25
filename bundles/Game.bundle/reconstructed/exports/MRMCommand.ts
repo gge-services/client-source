@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class MRMCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_REMOVE_MOVEMENT;
@@ -21,3 +22,4 @@ export class MRMCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(MRMCommand, "IExecCommand");

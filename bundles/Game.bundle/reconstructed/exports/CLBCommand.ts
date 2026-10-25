@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CLBCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_CATCH_LOGIN_BONUS;
@@ -22,3 +23,4 @@ export class CLBCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(CLBCommand, "IExecCommand");

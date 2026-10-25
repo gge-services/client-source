@@ -1,6 +1,6 @@
 {
   "sourceHash": "c7c6a67764420fdcc11f24e74758d6de1c1adc335263db8b66b8710255cce088",
-  "generatedHash": "b7e2cd861b3148bf61f62ff67fd3b69a9653648969a94c09029fce6b917719a1",
+  "generatedHash": "f65e10b3a14f9cf65e2f3b539b3d41747a2204e94fad505c9d5fe6fb77bb33d4",
   "constructor": "implicit-super",
   "accessors": [],
   "methods": [
@@ -33,9 +33,20 @@
       "moduleId": "29",
       "moduleIdentity": "ggs.dll:export:ClientFunnelGameStates",
       "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

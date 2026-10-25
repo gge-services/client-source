@@ -8,6 +8,7 @@ import { CastleStandardOkDialog } from "./CastleStandardOkDialog";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CRACommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_CREATE_ARMY_ATTACK_MOVEMENT;
@@ -46,3 +47,4 @@ export class CRACommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(CRACommand, "IExecCommand");

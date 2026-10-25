@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { CommKeys } from "../../../ggs.dll/reconstructed/exports/CommKeys";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CRINCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_CRAFTING_INFO;
@@ -26,3 +27,4 @@ export class CRINCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(CRINCommand, "IExecCommand");

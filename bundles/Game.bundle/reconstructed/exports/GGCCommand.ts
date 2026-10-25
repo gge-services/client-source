@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { ClientConstCastle } from "./ClientConstCastle";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GGCCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_GAME_CONSTANTS;
@@ -21,3 +22,4 @@ export class GGCCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(GGCCommand, "IExecCommand");

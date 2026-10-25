@@ -1,0 +1,115 @@
+{
+  "sourceHash": "6fddc8b985ff4d5d14047f5d8f182298d4f3d356d5b8005630cb734ea8796552",
+  "generatedHash": "126b4b22c12c19c3bf09dd91d7807bf11f44b97877c7d94424c2c8dba376dd73",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "execute",
+    "__initialize_static_members"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCastle",
+      "imported": "ClientConstCastle",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCastle.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleEfficiencyTipDialog",
+      "imported": "CastleEfficiencyTipDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleEfficiencyTipDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBarrackUnitTipDialog",
+      "imported": "CastleBarrackUnitTipDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBarrackUnitTipDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBuildListTipDialog",
+      "imported": "CastleBuildListTipDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBuildListTipDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleInstantBuildTipDialog",
+      "imported": "CastleInstantBuildTipDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleInstantBuildTipDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleOverseerTipDialog",
+      "imported": "CastleOverseerTipDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleOverseerTipDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleProductivityTipDialog",
+      "imported": "CastleProductivityTipDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleProductivityTipDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleRepairTipDialog",
+      "imported": "CastleRepairTipDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleRepairTipDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
+  "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": true,
+  "fullRuntimeEquivalent": false
+}

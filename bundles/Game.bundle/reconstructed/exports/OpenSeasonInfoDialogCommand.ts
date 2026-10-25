@@ -5,6 +5,7 @@ import { CastleSeasonEventWinDialogProperties } from "./CastleSeasonEventWinDial
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { TreasureMapsConst } from "../../../ggs.dll/reconstructed/exports/TreasureMapsConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenSeasonInfoDialogCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     var __s5local0 = __s5param0[0];
@@ -18,3 +19,4 @@ export class OpenSeasonInfoDialogCommand extends SimpleCommand {
     }
   }
 }
+classImplementsInterfaces(OpenSeasonInfoDialogCommand, "ISimpleCommand");

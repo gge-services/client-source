@@ -2,8 +2,9 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class IOTCommand extends CastleCommand {
-  constructor(...args) {
+  constructor() {
     super();
   }
   get cmdId() {
@@ -20,3 +21,4 @@ export class IOTCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(IOTCommand, "IExecCommand");

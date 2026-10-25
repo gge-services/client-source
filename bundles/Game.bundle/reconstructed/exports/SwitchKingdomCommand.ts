@@ -3,6 +3,7 @@ import { ClientConstCastle } from "./ClientConstCastle";
 import { FactionConst } from "../../../ggs.dll/reconstructed/exports/FactionConst";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SwitchKingdomCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     var __s5local0 = int(int(__s5param0));
@@ -20,3 +21,4 @@ export class SwitchKingdomCommand extends SimpleCommand {
     }
   }
 }
+classImplementsInterfaces(SwitchKingdomCommand, "ISimpleCommand");

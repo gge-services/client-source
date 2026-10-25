@@ -7,6 +7,7 @@ import { CastleSkipBuildingDialogProperties } from "./CastleSkipBuildingDialogPr
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { IsoEvent } from "./IsoEvent";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class EBUCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_BUY_OBJECT;
@@ -41,3 +42,4 @@ export class EBUCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(EBUCommand, "IExecCommand");

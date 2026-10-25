@@ -9,6 +9,7 @@ import { CommandController } from "../../../ggs.dll/reconstructed/exports/Comman
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { IngameClientCommands } from "./IngameClientCommands";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class FNMCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_FIND_NEXT_MAPOBJECT;
@@ -38,3 +39,4 @@ export class FNMCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(FNMCommand, "IExecCommand");

@@ -1,6 +1,6 @@
 {
   "sourceHash": "9bbae62bcdae6969b5d532ca5c288221d8113f5fc7bce83f84f9baaf281b6bea",
-  "generatedHash": "6b2bb2319dec6a0438cb66b8ea2431a07cae735dad557e06c3ccffbfe7778dd0",
+  "generatedHash": "af9b31aa8b8234ae2c6a1e0e4de1ef541032b74e8aae1240fc10baff1c073c92",
   "constructor": "implicit-super",
   "accessors": [],
   "methods": [
@@ -64,9 +64,20 @@
       "path": "exports/CastleTreasureFoundTreasureDialogProperties.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

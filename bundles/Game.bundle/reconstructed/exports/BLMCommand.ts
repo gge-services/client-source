@@ -4,6 +4,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class BLMCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_BATTLE_LOG_MIDDLE;
@@ -28,3 +29,4 @@ export class BLMCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(BLMCommand, "IExecCommand");

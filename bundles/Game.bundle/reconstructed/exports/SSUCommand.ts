@@ -8,6 +8,7 @@ import { CastleSpyinfoDetailsDialogProperties } from "./CastleSpyinfoDetailsDial
 import { CastleSpyLogVO } from "./CastleSpyLogVO";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SSUCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SPY_SPY_UNITS;
@@ -35,3 +36,4 @@ export class SSUCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(SSUCommand, "IExecCommand");

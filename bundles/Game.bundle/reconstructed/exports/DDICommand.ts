@@ -2,8 +2,9 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class DDICommand extends CastleCommand {
-  constructor(...args) {
+  constructor() {
     super();
   }
   get cmdId() {
@@ -24,3 +25,4 @@ export class DDICommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(DDICommand, "IExecCommand");

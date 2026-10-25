@@ -3,6 +3,7 @@ import { CastlePopUpHelper } from "./CastlePopUpHelper";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class MSPCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SHOW_POPUP;
@@ -24,3 +25,4 @@ export class MSPCommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(MSPCommand, "IExecCommand");

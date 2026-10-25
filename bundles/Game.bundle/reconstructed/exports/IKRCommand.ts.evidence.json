@@ -1,6 +1,6 @@
 {
   "sourceHash": "03f199a53ecc5f62daaed7d6383933ed2388c8102f9fb750a746537f2199764d",
-  "generatedHash": "759dfdc3429ed9df579d93d15857c7b869e47bc2d8220e7edcedef83dab8a612",
+  "generatedHash": "7e245731eff229b4f3473b26063c224cca8d1ecef4e66bcef4b50bca7a2e018f",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -75,11 +75,22 @@
       "path": "exports/CastleEilandEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

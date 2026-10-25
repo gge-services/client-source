@@ -12,6 +12,7 @@ import { CommandController } from "../../../ggs.dll/reconstructed/exports/Comman
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { IngameClientCommands } from "./IngameClientCommands";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class FCSCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_MAP_FACEBOOK;
@@ -54,3 +55,4 @@ export class FCSCommand extends CastleCommand {
     CastleDialogHandler.getInstance().registerDialogsWithType(CastleStandardOkDialog, new BasicStandardOkDialogProperties(Localize.text("dialog_fbAlreadyUsed_header"), Localize.text("dialog_facebookPlayerAccountAlreadyLinked_desc")), false, CastleDialogConsts.PRIORITY_LOW, 0, CastleDialogConsts.DIALOG_TYPE_MODAL);
   }
 }
+classImplementsInterfaces(FCSCommand, "IExecCommand");

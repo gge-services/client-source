@@ -3,6 +3,7 @@ import { CastleEquipmentEvent } from "./CastleEquipmentEvent";
 import { CastleEquipmentFactory } from "./CastleEquipmentFactory";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class EQECommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.C2S_ENCHANT_EQUIPMENT_EVENT;
@@ -35,3 +36,4 @@ export class EQECommand extends CastleCommand {
     return __s12local0;
   }
 }
+classImplementsInterfaces(EQECommand, "IExecCommand");

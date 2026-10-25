@@ -5,6 +5,7 @@ import { CastleDialogHandler } from "./CastleDialogHandler";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TAICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ATTACK_INFO_TREASUREDUNGEON;
@@ -25,3 +26,4 @@ export class TAICommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(TAICommand, "IExecCommand");

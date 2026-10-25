@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class ALLCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ALLIANCE_ACTION_LIST;
@@ -21,3 +22,4 @@ export class ALLCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(ALLCommand, "IExecCommand");

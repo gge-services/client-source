@@ -13,6 +13,7 @@ import { IngameClientCommands } from "./IngameClientCommands";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { VCKCommandOkEvent } from "./VCKCommandOkEvent";
 import { VersionErrorLOFactory } from "../../../ggs.dll/reconstructed/exports/VersionErrorLOFactory";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class VCKLegacyCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_VERSION_CHECK;
@@ -58,3 +59,4 @@ export class VCKLegacyCommand extends CastleCommand {
     ExternalLog.logger.log(new VersionErrorLOFactory(VersionErrorLOFactory.OLD_CLIENT_VERSION_ERROR, this.env.buildNumberServer));
   }
 }
+classImplementsInterfaces(VCKLegacyCommand, "IExecCommand");

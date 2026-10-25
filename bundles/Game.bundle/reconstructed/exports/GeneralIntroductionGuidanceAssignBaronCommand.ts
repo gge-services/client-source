@@ -3,6 +3,7 @@ import { CastleDialogEvent } from "./CastleDialogEvent";
 import { CastleModel } from "./CastleModel";
 import { ClientConstCharacter } from "./ClientConstCharacter";
 import { GeneralIntroductionGuidanceBasicCommand } from "./GeneralIntroductionGuidanceBasicCommand";
+const __s0local0 = createjs.Point;
 export class GeneralIntroductionGuidanceAssignBaronCommand extends GeneralIntroductionGuidanceBasicCommand {
   internalExecute() {
     this.waitForExternalDialog(CastleDefenceDialog, this.bindFunction(this.hintGeneralIcon));

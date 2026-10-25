@@ -4,6 +4,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { EventConst } from "../../../ggs.dll/reconstructed/exports/EventConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class AFDCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_ATTACKABLE_FACTION_DATA_EVENT;
@@ -26,3 +27,4 @@ export class AFDCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(AFDCommand, "IExecCommand");

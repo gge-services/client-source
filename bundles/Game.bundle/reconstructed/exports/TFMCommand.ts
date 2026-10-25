@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TFMCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_TREASURE_FINISH_MAP;
@@ -22,3 +23,4 @@ export class TFMCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(TFMCommand, "IExecCommand");

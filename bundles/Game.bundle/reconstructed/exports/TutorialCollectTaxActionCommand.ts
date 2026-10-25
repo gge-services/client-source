@@ -10,6 +10,8 @@ import { CastleModel } from "./CastleModel";
 import { CastleTutorialPanel } from "./CastleTutorialPanel";
 import { ClientConstCharacter } from "./ClientConstCharacter";
 import { TutorialBasicActionCommand } from "./TutorialBasicActionCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
+const __s0local0 = createjs.Point;
 export class TutorialCollectTaxActionCommand extends TutorialBasicActionCommand {
   actionConditionValid() {
     return CastleModel.userData.level < 2;
@@ -83,3 +85,4 @@ export class TutorialCollectTaxActionCommand extends TutorialBasicActionCommand 
     super.finishStep();
   }
 }
+classImplementsInterfaces(TutorialCollectTaxActionCommand, "ISimpleCommand");

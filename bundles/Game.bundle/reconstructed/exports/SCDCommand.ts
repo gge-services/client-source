@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { CastleServerMessageArrivedEvent } from "./CastleServerMessageArrivedEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SCDCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SET_CREDENTIALS;
@@ -29,3 +30,4 @@ export class SCDCommand extends CastleCommand {
     this.controller.dispatchEvent(new CastleServerMessageArrivedEvent(CastleServerMessageArrivedEvent.SDC_ARRIVED, [__s13param0, __s13param1]));
   }
 }
+classImplementsInterfaces(SCDCommand, "IExecCommand");

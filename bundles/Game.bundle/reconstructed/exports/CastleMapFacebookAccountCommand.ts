@@ -6,8 +6,11 @@ import { CastleFacebookSDKEvent } from "./CastleFacebookSDKEvent";
 import { CastleLogoutEvent } from "./CastleLogoutEvent";
 import { CastleModel } from "./CastleModel";
 import { CommandController } from "../../../ggs.dll/reconstructed/exports/CommandController";
+import { getLogger } from "../../../ggs.dll/reconstructed/exports/getLogger";
 import { IngameClientCommands } from "./IngameClientCommands";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
+const __s0local0 = getLogger("CastleMapFacebookAccountCommand");
 export class CastleMapFacebookAccountCommand extends SimpleCommand {
   execute(__s5param0) {
     this.removeListeners();
@@ -87,3 +90,4 @@ export class CastleMapFacebookAccountCommand extends SimpleCommand {
     return CastleBasicController.getInstance();
   }
 }
+classImplementsInterfaces(CastleMapFacebookAccountCommand, "ISimpleCommand");

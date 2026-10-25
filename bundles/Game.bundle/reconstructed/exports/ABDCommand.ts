@@ -1,6 +1,7 @@
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class ABDCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_DELETE_ALLIANCE_BOOKMARK;
@@ -18,3 +19,4 @@ export class ABDCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(ABDCommand, "IExecCommand");

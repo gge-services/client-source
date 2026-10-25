@@ -16,6 +16,7 @@ import { ModernPrimeTimeDialog } from "./ModernPrimeTimeDialog";
 import { PaymentPopupDialogInfoVO } from "./PaymentPopupDialogInfoVO";
 import { PrimeTimeSkinDialog } from "./PrimeTimeSkinDialog";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenOfferDialogCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     var __s5local0 = castAs(__s5param0, "GlobalOfferVO");
@@ -45,3 +46,4 @@ export class OpenOfferDialogCommand extends SimpleCommand {
     }
   }
 }
+classImplementsInterfaces(OpenOfferDialogCommand, "ISimpleCommand");

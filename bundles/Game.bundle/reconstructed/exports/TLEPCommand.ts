@@ -5,6 +5,7 @@ import { CastleStandardOkDialog } from "./CastleStandardOkDialog";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TLEPCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GLOBAL_SERVER_REGISTER_OR_LOGIN_EP;
@@ -25,3 +26,4 @@ export class TLEPCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(TLEPCommand, "IExecCommand");

@@ -9,6 +9,7 @@ import { CommandController } from "../../../ggs.dll/reconstructed/exports/Comman
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { FactionConst } from "../../../ggs.dll/reconstructed/exports/FactionConst";
 import { IngameClientCommands } from "./IngameClientCommands";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class FJFCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_JOIN_FACTION;
@@ -43,3 +44,4 @@ export class FJFCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(FJFCommand, "IExecCommand");

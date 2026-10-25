@@ -1,6 +1,6 @@
 {
   "sourceHash": "1b74bb1ecf84db59ef3208d56a60ef79cefe7f29a7ee148555909d51047775e7",
-  "generatedHash": "738b3b89319c53577a2f10088ac43cbbe348404b2237c32df354d416b9b5a9f5",
+  "generatedHash": "0391a403a3d308e4c3fdb2b3f9b5b4bd9b2a41ebf5ea2f8922804e1745fd6449",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -67,6 +67,15 @@
       "path": "exports/CastleStandardOkDialog.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -75,6 +84,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

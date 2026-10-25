@@ -6,6 +6,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { SkipCooldownEvent } from "./SkipCooldownEvent";
 import { WorldmapObjectFactory } from "./WorldmapObjectFactory";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SDCCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SKIP_DUNGEON_COOLDOWN;
@@ -29,3 +30,4 @@ export class SDCCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(SDCCommand, "IExecCommand");

@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { CastleResourceMerchantEventBuyDialog } from "./CastleResourceMerchantEventBuyDialog";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GPPCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_PACKAGE_PRICE;
@@ -23,3 +24,4 @@ export class GPPCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(GPPCommand, "IExecCommand");

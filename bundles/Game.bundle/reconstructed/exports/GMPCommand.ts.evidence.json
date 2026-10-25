@@ -1,6 +1,6 @@
 {
   "sourceHash": "3b7a8752749a66b4ec40f8d06ce19feab3c816f63ba9af584005e84af8be328e",
-  "generatedHash": "70ad95feb56ac050ac54c7cd5701fa547f06dfd708aca847c005570ea6a33163",
+  "generatedHash": "ef1d15aa4be7c5df8e60d8477724dcb702ed03cfd069df5f6c12a9fe552728f5",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -50,6 +50,15 @@
       "path": "exports/CastleMonumentProgressEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -58,6 +67,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

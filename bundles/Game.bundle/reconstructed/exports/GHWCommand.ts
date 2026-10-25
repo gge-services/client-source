@@ -2,6 +2,8 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
+const __s0local0 = createjs.Point;
 export class GHWCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_HELLO_WORLD;
@@ -26,3 +28,4 @@ export class GHWCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(GHWCommand, "IExecCommand");

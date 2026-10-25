@@ -3,6 +3,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { CommandController } from "../../../ggs.dll/reconstructed/exports/CommandController";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { IngameClientCommands } from "./IngameClientCommands";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GTWARACommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GO_TO_WORLD_MAP_AFTER_REMOVE_AREA;
@@ -21,3 +22,4 @@ export class GTWARACommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(GTWARACommand, "IExecCommand");

@@ -2,6 +2,7 @@ import { BasicClientCommand } from "../../../ggs.dll/reconstructed/exports/Basic
 import { CastleDialogHandler } from "./CastleDialogHandler";
 import { CommandController } from "../../../ggs.dll/reconstructed/exports/CommandController";
 import { instanceOfClass } from "../../../ggs.dll/reconstructed/exports/instanceOfClass";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class HandleDialogInfoCommand extends BasicClientCommand {
   execute(__s5param0 = null) {
     super.execute();
@@ -18,3 +19,4 @@ export class HandleDialogInfoCommand extends BasicClientCommand {
     }
   }
 }
+classImplementsInterfaces(HandleDialogInfoCommand, "ISimpleCommand");

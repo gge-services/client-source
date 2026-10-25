@@ -6,6 +6,7 @@ import { CastleSkipBuildingDialog } from "./CastleSkipBuildingDialog";
 import { CastleSkipBuildingDialogProperties } from "./CastleSkipBuildingDialogProperties";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class RBUCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_REPAIR_BUILDING;
@@ -33,3 +34,4 @@ export class RBUCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(RBUCommand, "IExecCommand");

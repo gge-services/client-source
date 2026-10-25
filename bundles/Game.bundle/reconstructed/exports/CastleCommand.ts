@@ -8,6 +8,7 @@ import { CommandDelayController } from "./CommandDelayController";
 import { EnvGlobalsHandler } from "../../../ggs.dll/reconstructed/exports/EnvGlobalsHandler";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { ServerErrorVO } from "../../../ggs.dll/reconstructed/exports/ServerErrorVO";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleCommand extends BasicCommand {
   constructor(...args) {
     super(...args);
@@ -49,3 +50,4 @@ export class CastleCommand extends BasicCommand {
     return CommandDelayController.getInstance();
   }
 }
+classImplementsInterfaces(CastleCommand, "IExecCommand");

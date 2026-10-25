@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CEMCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_CHANGE_EMBLEM;
@@ -22,3 +23,4 @@ export class CEMCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(CEMCommand, "IExecCommand");

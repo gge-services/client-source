@@ -14,6 +14,7 @@ import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { TimezoneUtil } from "../../../ggs.dll/reconstructed/exports/TimezoneUtil";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleRegisterUserWithFacebookCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     debug("-------------------- gonna register in with " + JSON.stringify(__s5param0));
@@ -75,3 +76,4 @@ export class CastleRegisterUserWithFacebookCommand extends SimpleCommand {
     return EnvGlobalsHandler.globals;
   }
 }
+classImplementsInterfaces(CastleRegisterUserWithFacebookCommand, "ISimpleCommand");

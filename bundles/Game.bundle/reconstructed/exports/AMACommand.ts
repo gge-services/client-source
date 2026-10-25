@@ -3,6 +3,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleHighscoreEvent } from "./CastleHighscoreEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class AMACommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ALLIANCE_MEMBER_AQUA_POINTS_EVENT;
@@ -22,3 +23,4 @@ export class AMACommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(AMACommand, "IExecCommand");

@@ -3,6 +3,7 @@ import { DictionaryUtil } from "../../../ggs.dll/reconstructed/exports/Dictionar
 import { EnvGlobalsHandler } from "../../../ggs.dll/reconstructed/exports/EnvGlobalsHandler";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleExtensionResponseCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     var __s5local0;
@@ -18,3 +19,4 @@ export class CastleExtensionResponseCommand extends SimpleCommand {
     }
   }
 }
+classImplementsInterfaces(CastleExtensionResponseCommand, "ISimpleCommand");

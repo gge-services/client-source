@@ -1,0 +1,59 @@
+{
+  "sourceHash": "fa186993475b2dd4c1ac38d878809348a92c7ba98a15cec0858f2cd51bf11b47",
+  "generatedHash": "375bba343fdeebca259ad2fadc18e71b63f810f1fc044b5fb41a18e1c5b539f6",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:controller"
+  ],
+  "methods": [
+    "all_ok",
+    "general_error",
+    "email_already_verified",
+    "email_already_in_use",
+    "email_blocked",
+    "email_invalid",
+    "email_too_long",
+    "email_domain_blocked"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicVerifyPlayerMailCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicVerifyPlayerMailCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicVerifyPlayerMailCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleMailVerificationAnswerEvent",
+      "imported": "CastleMailVerificationAnswerEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleMailVerificationAnswerEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBasicController",
+      "imported": "CastleBasicController",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBasicController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
+  "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
+  "fullRuntimeEquivalent": false
+}

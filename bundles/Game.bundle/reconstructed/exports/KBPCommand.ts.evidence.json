@@ -1,6 +1,6 @@
 {
   "sourceHash": "62edbf18c7e421a25e06daaa5068196bd7cc4cda0ba6f5992edaf023431c2832",
-  "generatedHash": "ac9cb0e2ef559a728c442617dcb5d7c03a03805572ae1017fc5d657ae9b563c6",
+  "generatedHash": "51351450d0fbf8facd19a5712664dd89cbd7783ae2c4683168c392a3be433c19",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -50,11 +50,22 @@
       "path": "exports/SeasonLeagueEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

@@ -1,6 +1,6 @@
 {
   "sourceHash": "6c4f32aa45f645a98dd9815c4b2e82b43e90798956344bb48682849d60c5cee7",
-  "generatedHash": "f7eb89d3df72bec5423ab418e3b6a03f802b01849b4c7881a1e8e4610e75f1bb",
+  "generatedHash": "ddb210eeab37bf4b604e1fde307cdb1eb5007ad379a644b52babc27e0025cc8a",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -93,6 +93,15 @@
       "path": "exports/CastleTreasureMapEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -101,6 +110,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

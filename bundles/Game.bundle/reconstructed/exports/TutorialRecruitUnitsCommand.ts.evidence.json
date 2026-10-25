@@ -1,6 +1,6 @@
 {
   "sourceHash": "61e7287fc2c74f30fbf9bafe4f02739005ee66c0e50ba3f6bcfec6d47c1129a6",
-  "generatedHash": "8d713d75ea0569764f5242f8379a699370acb21ec531458bf23c1396c06f260f",
+  "generatedHash": "c4e3764f9ca27a07afa3e891bb5f3695429c2ba9f72ce38a0eb50bf5991b3acd",
   "constructor": "implicit-super",
   "accessors": [
     "get:selectUnitManual",
@@ -84,11 +84,22 @@
       "path": "exports/CastleRecruitDialogUnits.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

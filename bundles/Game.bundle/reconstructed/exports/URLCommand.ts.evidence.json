@@ -1,6 +1,6 @@
 {
   "sourceHash": "1ff4d7af772e22ac6fc0ed47ba2d3959f2924f11b732718c7d90f4ffb23feef8",
-  "generatedHash": "73bab7418cb3a80cc697d0142c63341a72ccba9a44df74a4bef1ac7c429b65b0",
+  "generatedHash": "addb4c146db25696b1a7863c3cdcde395f9dd3c0b4f3b1b97fff429afaa43be2",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -66,6 +66,15 @@
       "path": "exports/AutoRecruitmentBuyRecruitmentSlotsProperties.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -74,6 +83,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

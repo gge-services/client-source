@@ -1,6 +1,6 @@
 {
   "sourceHash": "73ac7f8578df65852597c7429a1392be4d626e5e68e2b17e25019a219bab0330",
-  "generatedHash": "a99cafe44be59a9be13a2938b3d7df6de238d581fbe631aa5c861ba3c2c6479c",
+  "generatedHash": "a8d89dfaf50e978f3426a6d584504d64db21aa88881cbe9d0d3ba8676fbba7e5",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -59,6 +59,15 @@
       "path": "exports/C2SGetAllMovementsVO.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -67,6 +76,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

@@ -4,6 +4,7 @@ import { CastleServerMessageArrivedEvent } from "./CastleServerMessageArrivedEve
 import { ClientConstSF } from "./ClientConstSF";
 import { CommKeys } from "../../../ggs.dll/reconstructed/exports/CommKeys";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class PRECommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_PENDING_REWARDS;
@@ -25,3 +26,4 @@ export class PRECommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(PRECommand, "IExecCommand");

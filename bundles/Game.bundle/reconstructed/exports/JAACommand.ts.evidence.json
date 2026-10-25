@@ -1,6 +1,6 @@
 {
   "sourceHash": "ff1d408e18d34abfac0b4440eb225cdf38c87ecd1ad9ddb247351c30192023ba",
-  "generatedHash": "91d0570375c01957232be60f767743ff518f72333c727d50c64a8cd213a7c9ea",
+  "generatedHash": "726d363a7e6ed34ddbf9acca616dfa26e81ae8f674f8451e1bd51cc13e99ebc9",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -211,6 +211,15 @@
       "path": "exports/AreaDataEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -219,6 +228,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

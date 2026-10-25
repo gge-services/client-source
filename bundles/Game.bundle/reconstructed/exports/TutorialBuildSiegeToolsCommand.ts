@@ -1,4 +1,5 @@
 import { TutorialBuildToolsCommand } from "./TutorialBuildToolsCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TutorialBuildSiegeToolsCommand extends TutorialBuildToolsCommand {
   getSelectUnitText() {
     return "tut_produceSiegeTools_copy";
@@ -25,3 +26,4 @@ export class TutorialBuildSiegeToolsCommand extends TutorialBuildToolsCommand {
     return "s_080_040_tool_confirmed";
   }
 }
+classImplementsInterfaces(TutorialBuildSiegeToolsCommand, "ISimpleCommand");

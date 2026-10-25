@@ -2,6 +2,7 @@ import { AllianceMobilizationEventEventVO } from "./AllianceMobilizationEventEve
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CAQCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_COMPLETE_ALLIANCE_QUEST;
@@ -25,3 +26,4 @@ export class CAQCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(CAQCommand, "IExecCommand");

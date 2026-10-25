@@ -8,6 +8,7 @@ import { CastleStandardOkDialog } from "./CastleStandardOkDialog";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class DRLCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_DUPLICATE_RECRUITMENT_LOOP;
@@ -33,3 +34,4 @@ export class DRLCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(DRLCommand, "IExecCommand");

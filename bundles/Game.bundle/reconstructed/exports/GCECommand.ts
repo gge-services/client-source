@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GCECommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_TEMP_SERVER_CHARGE_CHAMP_EFFECTS;
@@ -21,3 +22,4 @@ export class GCECommand extends CastleCommand {
     return true;
   }
 }
+classImplementsInterfaces(GCECommand, "IExecCommand");

@@ -1,6 +1,7 @@
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class MCICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_MOVE_CONSTRUCTION_ITEM;
@@ -19,3 +20,4 @@ export class MCICommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(MCICommand, "IExecCommand");

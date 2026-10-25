@@ -6,6 +6,7 @@ import { FlashBlockHelper } from "./FlashBlockHelper";
 import { instanceOfClass } from "../../../ggs.dll/reconstructed/exports/instanceOfClass";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { TooltipManagerFacade } from "./TooltipManagerFacade";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class JoinAreaAndSavePositionCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     var __s5local0 = __s5param0 || __s5param0.worldmapObjectVO;
@@ -36,3 +37,4 @@ export class JoinAreaAndSavePositionCommand extends SimpleCommand {
     }
   }
 }
+classImplementsInterfaces(JoinAreaAndSavePositionCommand, "ISimpleCommand");

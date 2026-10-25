@@ -9,6 +9,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { EventConst } from "../../../ggs.dll/reconstructed/exports/EventConst";
 import { ModernYesNoDialog } from "./ModernYesNoDialog";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SSCCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SAVE_SHOPPING_CART;
@@ -43,3 +44,4 @@ export class SSCCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(SSCCommand, "IExecCommand");

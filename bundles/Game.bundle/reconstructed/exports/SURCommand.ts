@@ -1,6 +1,7 @@
 import { CastleDispatchingCommand } from "./CastleDispatchingCommand";
 import { CastleServerMessageArrivedEvent } from "./CastleServerMessageArrivedEvent";
 import { ClientConstSF } from "./ClientConstSF";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SURCommand extends CastleDispatchingCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_SURVEY_INFO;
@@ -17,3 +18,4 @@ export class SURCommand extends CastleDispatchingCommand {
     }
   }
 }
+classImplementsInterfaces(SURCommand, "IExecCommand");

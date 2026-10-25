@@ -1,6 +1,6 @@
 {
   "sourceHash": "894ce72e2c1f0e8593fee7c82f199952214da7e4e4f96a725155bcd566822452",
-  "generatedHash": "a9902a2433bc94a7541fe20ef312e971c559b09fc3abd739a79cafb38661b4ca",
+  "generatedHash": "7c65bd79a01a113dff4f096df64d89f1f38d0bff71b24319871ac1b085684b9f",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -42,6 +42,15 @@
       "path": "exports/AllianceMobilizationEventEventVO.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -50,6 +59,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

@@ -1,6 +1,6 @@
 {
   "sourceHash": "891e49224d766b5bd4ab2eee211f30bff657c2a93ff3a6b81abf3cf982e96248",
-  "generatedHash": "ba4d9b9c482d7dd0f5d177eb453b26f610db6f354cc0e4911ede0d36d71ed166",
+  "generatedHash": "c083144c0ff45e5d22efedeaf03916a8b630809eb5a14766e73553e733bf6eda",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -117,6 +117,15 @@
       "path": "exports/CastlePaymentRewardSpecialOfferFinishDialogProperties.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -125,6 +134,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class EUDCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_UPGRADE_DEFENCE;
@@ -24,3 +25,4 @@ export class EUDCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(EUDCommand, "IExecCommand");

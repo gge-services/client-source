@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class NECCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_NEXT_EXPIRING_CONSTRUCTION_ITEM_EVENT;
@@ -24,3 +25,4 @@ export class NECCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(NECCommand, "IExecCommand");

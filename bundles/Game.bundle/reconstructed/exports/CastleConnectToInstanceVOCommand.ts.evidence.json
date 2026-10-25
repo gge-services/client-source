@@ -1,0 +1,69 @@
+{
+  "sourceHash": "acf96e4fd8b95c32e85d2118e729e23a549bc952a0705ed2e1b1362d0184258f",
+  "generatedHash": "d8eaae05949989ed4994e1974894d6c78fc155542b7194eb4d399d97601f346b",
+  "constructor": "implicit-super",
+  "accessors": [],
+  "methods": [
+    "onConnectionEstablished"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicConnectToInstanceVOCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicConnectToInstanceVOCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicConnectToInstanceVOCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicModel",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicModel.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicModel",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "EnvGlobalsHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EnvGlobalsHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:EnvGlobalsHandler",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SmartfoxEvent",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SmartfoxEvent.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SmartfoxEvent",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
+  "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
+  "fullRuntimeEquivalent": false
+}

@@ -5,6 +5,7 @@ import { CastleSupportDefenceDialog } from "./CastleSupportDefenceDialog";
 import { CastleSupportDefenceDialogProperties } from "./CastleSupportDefenceDialogProperties";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SDICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SUPPORT_DEFENCE_INFO;
@@ -26,3 +27,4 @@ export class SDICommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(SDICommand, "IExecCommand");

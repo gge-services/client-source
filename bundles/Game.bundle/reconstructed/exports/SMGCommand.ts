@@ -5,6 +5,7 @@ import { CastleServerMessageBigDialog } from "./CastleServerMessageBigDialog";
 import { CastleStandardOkDialog } from "./CastleStandardOkDialog";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SMGCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SERVER_MESSAGE;
@@ -25,3 +26,4 @@ export class SMGCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(SMGCommand, "IExecCommand");

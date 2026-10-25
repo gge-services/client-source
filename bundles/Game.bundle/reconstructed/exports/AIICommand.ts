@@ -7,6 +7,7 @@ import { CastleModel } from "./CastleModel";
 import { CastlePlayerInfoEvent } from "./CastlePlayerInfoEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class AIICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ATTACK_INFO_ISLAND;
@@ -41,3 +42,4 @@ export class AIICommand extends CastleCommand {
     CastleDialogHandler.getInstance().registerDefaultDialogs(AttackDialog, new CastleAttackDialogProperties(__s15param0));
   }
 }
+classImplementsInterfaces(AIICommand, "IExecCommand");

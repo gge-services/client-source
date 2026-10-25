@@ -7,6 +7,7 @@ import { Iso } from "./Iso";
 import { LordEffectHelper } from "./LordEffectHelper";
 import { OpenTipDialogCommand } from "./OpenTipDialogCommand";
 import { TweenMax } from "../../../ggs.dll/reconstructed/exports/TweenMax";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleDestroyGameCommand extends BasicDestroyGameCommand {
   destroyGameSpecificObjects() {
     cxfResetCommandCache();
@@ -21,3 +22,4 @@ export class CastleDestroyGameCommand extends BasicDestroyGameCommand {
     CastleModel.resetModels();
   }
 }
+classImplementsInterfaces(CastleDestroyGameCommand, "ISimpleCommand");

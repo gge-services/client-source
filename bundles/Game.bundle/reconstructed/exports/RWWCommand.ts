@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { RubyWishingWellDialog } from "./RubyWishingWellDialog";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class RWWCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_RUBY_WISHING_WELL;
@@ -30,3 +31,4 @@ export class RWWCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(RWWCommand, "IExecCommand");

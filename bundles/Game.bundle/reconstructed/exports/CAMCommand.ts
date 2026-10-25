@@ -8,6 +8,7 @@ import { CastleStandardOkDialog } from "./CastleStandardOkDialog";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CAMCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_CREATE_ARMY_ATTACK_MOVEMENT_TEMP_SERVER;
@@ -47,3 +48,4 @@ export class CAMCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(CAMCommand, "IExecCommand");

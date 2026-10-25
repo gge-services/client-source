@@ -1,6 +1,6 @@
 {
   "sourceHash": "0ceca612061a9c3bfb922b54cd4a7dadb21f750536f0950f3975f2120b5b93b3",
-  "generatedHash": "570668b460530c759c585e5174c2011abd9e6c5857ad2c5b02c9768b7ecf4e55",
+  "generatedHash": "3b2b4e3e9a6de92ed63c357a0d82ea59ec37ec13eca979c96c0092fba8556bbb",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -67,11 +67,22 @@
       "path": "exports/SsoUserMoveTrackingEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

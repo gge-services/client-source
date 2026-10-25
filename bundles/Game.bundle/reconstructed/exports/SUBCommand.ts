@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleShowUpgradableBuildingsEvent } from "./CastleShowUpgradableBuildingsEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SUBCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SHOW_ME_UPGRADABLE_BUILDINGS;
@@ -21,3 +22,4 @@ export class SUBCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(SUBCommand, "IExecCommand");

@@ -3,6 +3,7 @@ import { CastleMessageDataEvent } from "./CastleMessageDataEvent";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class MMNCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_MARKET_CARRIAGE_NOTIFY;
@@ -24,3 +25,4 @@ export class MMNCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(MMNCommand, "IExecCommand");

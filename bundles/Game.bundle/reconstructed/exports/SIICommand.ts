@@ -3,6 +3,7 @@ import { CastleEilandEvent } from "./CastleEilandEvent";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SIICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_STORM_ISLANDS_INFO;
@@ -27,3 +28,4 @@ export class SIICommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(SIICommand, "IExecCommand");

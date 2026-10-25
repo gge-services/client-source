@@ -1,6 +1,6 @@
 {
   "sourceHash": "d4503088192d2d1c56a075ab0c9b8cf664169cab74d48954781240967a5cebe2",
-  "generatedHash": "d29fcb3b16bb184a15beb5b6d1d63c41c955f918be201e269b90a69fe53e9ffa",
+  "generatedHash": "d081b880d4eb908d91754817dafbba1be32ad0924ce7de70ceca4da49801ae84",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -142,6 +142,15 @@
       "path": "exports/C2SGetLoginBonusVO.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -150,6 +159,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

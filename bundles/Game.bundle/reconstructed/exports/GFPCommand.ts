@@ -4,6 +4,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { EventConst } from "../../../ggs.dll/reconstructed/exports/EventConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GFPCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.C2S_GET_FACTION_POINTS;
@@ -26,3 +27,4 @@ export class GFPCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(GFPCommand, "IExecCommand");

@@ -6,6 +6,7 @@ import { CastleStandardOkDialog } from "./CastleStandardOkDialog";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class WSPCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SEARCH_PLAYER;
@@ -33,3 +34,4 @@ export class WSPCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(WSPCommand, "IExecCommand");

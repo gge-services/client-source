@@ -1,6 +1,6 @@
 {
   "sourceHash": "4ee6a752daac798479da2e6599242b55d4ac16e33b56abe05c6e2ea48247f0b0",
-  "generatedHash": "b6d19bec211c70b3e4e4a160e9d0ad00d97e309f95511e81d386ccee241fb8a9",
+  "generatedHash": "2e5a78f24c68b9cf60286927a79457e6e0059a384341c2775acdb6f920057435",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -66,6 +66,15 @@
       "path": "exports/CastleSupportDefenceDialogProperties.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -74,6 +83,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

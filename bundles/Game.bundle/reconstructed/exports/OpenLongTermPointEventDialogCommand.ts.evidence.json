@@ -1,6 +1,6 @@
 {
   "sourceHash": "8264bd63ce958155fe7bbce062990110f70d4d2694e9c3bbe5a0301d0bfb5f53",
-  "generatedHash": "2757588eeceb641c5b9b20f542870dfcc89288b6a3aaa459637b211d9a8d354b",
+  "generatedHash": "944aa6bfe9a87649af1d99b955df1fe97cbbb44de869187ff4ec26c85aa7812f",
   "constructor": "implicit-super",
   "accessors": [],
   "methods": [
@@ -91,9 +91,20 @@
       "path": "exports/LongTermPointEventClientConst.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

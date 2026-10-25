@@ -3,6 +3,7 @@ import { CastleHighscoreEvent } from "./CastleHighscoreEvent";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class RWBCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_REDEEM_WEEKLY_HONOR_BONUS;
@@ -23,3 +24,4 @@ export class RWBCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(RWBCommand, "IExecCommand");

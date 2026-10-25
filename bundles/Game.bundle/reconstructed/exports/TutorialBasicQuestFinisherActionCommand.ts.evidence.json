@@ -1,6 +1,6 @@
 {
   "sourceHash": "e4cf0099208702b0f3379c54d9341af833be9493b013b894cf22ff4ce95b0b99",
-  "generatedHash": "3f72074ee339fc55f5acf637ed0530e2c5a6b27fcb0ecb0d4ce04cae06708260",
+  "generatedHash": "3f34326b4267b3719209fc3cfbe5b0a038f224aac97363b34da0da3cb6c18d8f",
   "constructor": "implicit-super",
   "accessors": [],
   "methods": [
@@ -23,9 +23,20 @@
       "path": "exports/CastleQuestCompletedDialog.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

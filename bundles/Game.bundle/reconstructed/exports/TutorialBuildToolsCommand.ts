@@ -7,6 +7,7 @@ import { instanceOfClass } from "../../../ggs.dll/reconstructed/exports/instance
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { TutorialAbstractMilitaryCommand } from "./TutorialAbstractMilitaryCommand";
 import { TutorialBasicActionCommand } from "./TutorialBasicActionCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TutorialBuildToolsCommand extends TutorialAbstractMilitaryCommand {
   getButtonClass() {
     return BuildToolsPanelButton;
@@ -27,3 +28,4 @@ export class TutorialBuildToolsCommand extends TutorialAbstractMilitaryCommand {
     this.waitForSelectUnit();
   }
 }
+classImplementsInterfaces(TutorialBuildToolsCommand, "ISimpleCommand");

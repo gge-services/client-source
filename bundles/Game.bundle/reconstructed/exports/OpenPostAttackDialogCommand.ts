@@ -22,6 +22,7 @@ import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { PostAttackSelectBoosterDialogProperties } from "./PostAttackSelectBoosterDialogProperties";
 import { SamuraiDaimyoBoosterSelectDialog } from "./SamuraiDaimyoBoosterSelectDialog";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenPostAttackDialogCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     var __s5local0 = int(int(__s5param0[0]));
@@ -79,3 +80,4 @@ export class OpenPostAttackDialogCommand extends SimpleCommand {
     return CastleLayoutManager.getInstance();
   }
 }
+classImplementsInterfaces(OpenPostAttackDialogCommand, "ISimpleCommand");

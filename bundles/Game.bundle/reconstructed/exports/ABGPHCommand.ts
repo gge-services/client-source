@@ -2,6 +2,7 @@ import { ABGHelper } from "./ABGHelper";
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class ABGPHCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ABG_GET_POINT_HIGHSCORE;
@@ -23,3 +24,4 @@ export class ABGPHCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(ABGPHCommand, "IExecCommand");

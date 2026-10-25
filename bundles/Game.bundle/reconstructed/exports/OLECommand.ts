@@ -10,6 +10,7 @@ import { CollectableManager } from "./CollectableManager";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { MysteryBoxOpeningDialog } from "./MysteryBoxOpeningDialog";
 import { MysteryBoxOpeningDialogProperties } from "./MysteryBoxOpeningDialogProperties";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OLECommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_OPEN_LOOT_BOX;
@@ -51,3 +52,4 @@ export class OLECommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(OLECommand, "IExecCommand");

@@ -5,6 +5,7 @@ import { CastleTreasureFoundTreasureDialogProperties } from "./CastleTreasureFou
 import { CollectableEnum } from "./CollectableEnum";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { TreasureMapsConst } from "../../../ggs.dll/reconstructed/exports/TreasureMapsConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenTreasureHuntInfoDialogCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     var __s5local0 = __s5param0;
@@ -21,3 +22,4 @@ export class OpenTreasureHuntInfoDialogCommand extends SimpleCommand {
     }
   }
 }
+classImplementsInterfaces(OpenTreasureHuntInfoDialogCommand, "ISimpleCommand");

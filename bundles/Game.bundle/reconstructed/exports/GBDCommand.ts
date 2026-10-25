@@ -28,7 +28,7 @@ import { CommandController } from "../../../ggs.dll/reconstructed/exports/Comman
 import { CommandDelayController } from "./CommandDelayController";
 import { debug } from "../../../ggs.dll/reconstructed/exports/debug";
 import { EnvGlobalsHandler } from "../../../ggs.dll/reconstructed/exports/EnvGlobalsHandler";
-import { error } from "../../../ggs.dll/reconstructed/exports/error";
+import { error } from "../../../ggs.dll/reconstructed/exports/error__case_ca00fc";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { ExceptionHelper } from "./ExceptionHelper";
 import { HelpshiftHelper } from "./HelpshiftHelper";
@@ -40,6 +40,8 @@ import { IsoEvent } from "./IsoEvent";
 import { IsoGridOriginEnum } from "./IsoGridOriginEnum";
 import { SpecialServerHelper } from "./SpecialServerHelper";
 import { WorldClassic } from "../../../ggs.dll/reconstructed/exports/WorldClassic";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
+const __s0local0 = createjs.Event;
 export class GBDCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_BASIC_DATA;
@@ -238,3 +240,4 @@ export class GBDCommand extends CastleCommand {
     CastleModel.smartfoxClient.sendCommandVO(new C2SGetLoginBonusVO());
   }
 }
+classImplementsInterfaces(GBDCommand, "IExecCommand");

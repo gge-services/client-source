@@ -3,6 +3,7 @@ import { CastleDialogHandler } from "./CastleDialogHandler";
 import { CastleRerollAlienSuccessDialog } from "./CastleRerollAlienSuccessDialog";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class RAECommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_REPLACE_ALIEN_CAMP;
@@ -21,3 +22,4 @@ export class RAECommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(RAECommand, "IExecCommand");

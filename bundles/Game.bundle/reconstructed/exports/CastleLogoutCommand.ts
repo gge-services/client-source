@@ -14,6 +14,7 @@ import { CommandController } from "../../../ggs.dll/reconstructed/exports/Comman
 import { cxfResetCommandCache } from "./cxfResetCommandCache";
 import { EnvGlobalsHandler } from "../../../ggs.dll/reconstructed/exports/EnvGlobalsHandler";
 import { ExternalInterface } from "../../../ggs.dll/reconstructed/exports/ExternalInterface";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleLogoutCommand extends BasicLogoutCommand {
   execute(__s5param0 = null) {
     CastleBasicController.getInstance().dispatchEvent(new CastleLogoutEvent(CastleLogoutEvent.LOGOUT_TRIGGERED));
@@ -49,3 +50,4 @@ export class CastleLogoutCommand extends BasicLogoutCommand {
     CommandController.instance.executeCommand(BasicController.COMMAND_CHECK_MAINTENANCE, BasicController.COMMAND_CONNECT_CLIENT);
   }
 }
+classImplementsInterfaces(CastleLogoutCommand, "ISimpleCommand");

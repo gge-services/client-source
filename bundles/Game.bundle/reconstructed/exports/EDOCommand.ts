@@ -6,6 +6,7 @@ import { CastleSkipBuildingDialog } from "./CastleSkipBuildingDialog";
 import { CastleSkipBuildingDialogProperties } from "./CastleSkipBuildingDialogProperties";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class EDOCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_DISASSEMBLE_OBJECT;
@@ -30,3 +31,4 @@ export class EDOCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(EDOCommand, "IExecCommand");

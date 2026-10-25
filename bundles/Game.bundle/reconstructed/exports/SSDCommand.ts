@@ -6,6 +6,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { TimeStringHelper } from "../../../ggs.dll/reconstructed/exports/TimeStringHelper";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SSDCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SERVER_SHUTDOWN;
@@ -24,3 +25,4 @@ export class SSDCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(SSDCommand, "IExecCommand");

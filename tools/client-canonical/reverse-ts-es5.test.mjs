@@ -6,6 +6,7 @@ import { fileURLToPath } from 'node:url'
 import vm from 'node:vm'
 import typescript from 'typescript'
 import { buildSemanticGraph, stableNodeId, resolveNode } from './build-semantic-graph.mjs'
+import {createDllResolver} from './resolve-imports.mjs'
 import { reconstructEs5Class } from './reverse-ts-es5.mjs'
 
 const root=join(dirname(fileURLToPath(import.meta.url)),'../..')
@@ -136,4 +137,95 @@ test('reconstructs a getter-only superclass dispatch without changing its observ
   }
   assert.deepEqual(evaluate(source,false),evaluate(reconstructed.code,true))
   assert.deepEqual(evaluate(source,false),{commandId:42,eventType:'CIC',error:'TypeError'})
+})
+
+test('restores a standalone command without fabricating a superclass',async()=>{
+  const source=await readFile(join(game,'modules/exports/ABotCommand.js'),'utf8')
+  const output=reconstructEs5Class(source,options)
+  assert.ok(output)
+  assert.match(output.code,/export class ABotCommand \{/)
+  assert.match(output.code,/execute\(__s5param0 = null\)/)
+  assert.doesNotMatch(output.code,/extends|\.prototype\.|__extends/)
+  assert.match(output.metadata.sourceHash,/^[0-9a-f]{64}$/)
+})
+
+test('restores statically assigned methods without converting them to instance methods',async()=>{
+  const source=await readFile(join(game,'modules/exports/BEQCommand.js'),'utf8')
+  const output=reconstructEs5Class(source,options)
+  assert.ok(output)
+  assert.match(output.code,/static parseEquipmentInventory\(/)
+  assert.match(output.code,/executeCommand\(/)
+  assert.doesNotMatch(output.code,/BEQCommand\.parseEquipmentInventory\s*=/)
+})
+
+test('preserves source module initializer identities for verified createjs aliases',async()=>{
+  const source=await readFile(join(game,'modules/exports/GHWCommand.js'),'utf8')
+  const output=reconstructEs5Class(source,options)
+  assert.ok(output)
+  assert.match(output.code,/const __s0local0 = createjs\.Point;/)
+  assert.match(output.code,/new __s0local0\(/)
+  assert.ok(output.code.indexOf('const __s0local0')<output.code.indexOf('export class GHWCommand'))
+})
+
+test('lowers logical property assignments with one property getter evaluation',async()=>{
+  const resolver=await createDllResolver(root)
+  for(const name of ['LLICommand','SwitchToRelocateWorldmapCommand']){
+    const source=await readFile(join(game,'modules/exports/'+name+'.js'),'utf8')
+    assert.match(source,/&&=|\|\|=/)
+    const output=reconstructEs5Class(source,{...options,resolveMember:resolver.resolve,dllImportFileName:resolver.importFileName})
+    assert.ok(output)
+    assert.doesNotMatch(output.code,/&&=|\|\|=|\?\?=/)
+    assert.match(output.code,/previousValue/)
+    assert.match(output.code,/sourceObject/)
+  }
+})
+
+test('preserves a real command static initializer and interface-registration order',async()=>{
+  const resolver=await createDllResolver(root)
+  const source=await readFile(join(game,'modules/exports/HSSCommand.js'),'utf8')
+  const recovered=reconstructEs5Class(source,{
+    ...options,resolveMember:resolver.resolve,dllImportFileName:resolver.importFileName,
+    preserveRuntimeInterfaces:true
+  })
+  assert.ok(recovered)
+  assert.equal(recovered.metadata.staticInitializationPreserved,true)
+  assert.equal(recovered.metadata.runtimeInterfaceCallsPreserved,1)
+  assert.match(recovered.code,/HSSCommand\.__initialize_static_members\(\)/)
+  const run=(code,compiled)=>{
+    const events=[]
+    function CastleCommand(){}
+    Object.defineProperty(CastleCommand.prototype,'cmdId',{configurable:true,get(){return this.value},set(value){this.value=value}})
+    const names={
+      CastleCommand,
+      CastleBasicController:{getInstance(){return {dispatchEvent(event){events.push(['dispatch',event])}}}},
+      CastleModel:{currencyData:{parseGCU(){}}},
+      ClientConstSF:{S2C_SKIP_HOSPITAL_SLOT:'HSS'},
+      ERROR:{ALL_OK:0},
+      classImplementsInterfaces(ctor,name){events.push(['interface',ctor.name,name])}
+    }
+    const lookup={
+      'gge-module:exact_6fd0a7f85c69b366':{__extends(C,D){Object.setPrototypeOf(C,D);C.prototype=Object.create(D.prototype);C.prototype.constructor=C}},
+      'gge-module:exact_81dacdf05bd32292':{classImplementsInterfaces:names.classImplementsInterfaces},
+      'gge-module:exact_26a421b704832cff':{ERROR:names.ERROR}
+    }
+    for(const [key,value]of Object.entries(names)){
+      lookup['gge-module:export_'+key]={[key]:value}
+      lookup['./'+key]={[key]:value}
+      lookup['../../../ggs.dll/reconstructed/exports/'+key]={[key]:value}
+    }
+    const exports={}
+    const executable=compiled?typescript.transpileModule(code,{
+      compilerOptions:{module:typescript.ModuleKind.CommonJS,target:typescript.ScriptTarget.ES2015}
+    }).outputText:code
+    vm.runInNewContext(executable,{
+      exports,require(id){if(!(id in lookup))throw Error('Missing verified runtime '+id);return lookup[id]},
+      createjs:{Event:class Event{}},Object,Reflect,JSON
+    })
+    return {staticValue:exports.HSSCommand.EVENT_SKIP_HOSPITAL_SLOT_FAILED,events}
+  }
+  assert.deepEqual(run(source,false),run(recovered.code,true))
+  assert.deepEqual(run(source,false),{
+    staticValue:'EVENT_SKIP_HOSPITAL_SLOT_FAILED',
+    events:[['interface','HSSCommand','IExecCommand']]
+  })
 })

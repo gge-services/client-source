@@ -1,6 +1,6 @@
 {
   "sourceHash": "40b2ed7cf43509338d0d769293ed6b8e1d992aeb13d60ed3cbf97b915a0a6ddf",
-  "generatedHash": "88c21d46e473b7b3818ef324aa377e8521334e4e232fb7acaa137e6e4ea42986",
+  "generatedHash": "e5b2bc03ea2e57d49a3b0808d46e717154cc61445cba3b43ddf0a0c6740131a5",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -42,6 +42,15 @@
       "path": "exports/CastleModel.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -50,6 +59,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

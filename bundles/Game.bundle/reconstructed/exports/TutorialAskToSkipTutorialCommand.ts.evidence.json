@@ -1,6 +1,6 @@
 {
   "sourceHash": "507da069ee2f544e401bab2f74184bf8fc55e79c7fc826a21d98d610d56f47fa",
-  "generatedHash": "469f98ddb39b31d2c0b5872762a657a527fc0b0204858a578a4006aeb0c94a4c",
+  "generatedHash": "e09e1deace4aa0f7bc0c6691b0f827167ecd88e0e755796ab82cde73c5f7c24f",
   "constructor": "implicit-super",
   "accessors": [],
   "methods": [
@@ -56,9 +56,20 @@
       "path": "exports/C2STemporaryServerTutorialSkipVO.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

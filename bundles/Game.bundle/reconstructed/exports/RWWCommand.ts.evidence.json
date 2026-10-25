@@ -1,6 +1,6 @@
 {
   "sourceHash": "cbfba0c0e3847b15e68c627e3e6ffe65781deaa220b25ee5cf4dcb4e07976d68",
-  "generatedHash": "8cd43b22502f693070d4066cfe1b5e1144806a50b0609aba98db2eb4481b4973",
+  "generatedHash": "b978542f81fabb51311fd23bc75db069a305557751a762cd5c20f75a1378fe0e",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -50,11 +50,22 @@
       "path": "exports/RubyWishingWellDialog.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

@@ -9,6 +9,7 @@ import { CastleLayoutManager } from "./CastleLayoutManager";
 import { CastleMessageDataEvent } from "./CastleMessageDataEvent";
 import { CastleModel } from "./CastleModel";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenAttackOrderCommand extends SimpleCommand {
   execute(__s5param0 = null) {
     CastleDialogHandler.getInstance().registerDialogsWithType(CastleExternalPreloaderDialog, new CastleExternalPreloaderDialogProperties(null), false, CastleDialogConsts.PRIORITY_TOP, 0, CastleDialogConsts.DIALOG_TYPE_PRELOADER);
@@ -30,3 +31,4 @@ export class OpenAttackOrderCommand extends SimpleCommand {
     CastleLayoutManager.getInstance().hideDialog(CastleExternalPreloaderDialog);
   }
 }
+classImplementsInterfaces(OpenAttackOrderCommand, "ISimpleCommand");

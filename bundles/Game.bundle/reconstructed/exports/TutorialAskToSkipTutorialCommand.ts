@@ -4,6 +4,7 @@ import { CastleLayoutManager } from "./CastleLayoutManager";
 import { CastleModel } from "./CastleModel";
 import { EnvGlobalsHandler } from "../../../ggs.dll/reconstructed/exports/EnvGlobalsHandler";
 import { TutorialBasicActionCommand } from "./TutorialBasicActionCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TutorialAskToSkipTutorialCommand extends TutorialBasicActionCommand {
   internalExecute() {
     if (EnvGlobalsHandler.globals.isOnSpecialServer) {
@@ -23,3 +24,4 @@ export class TutorialAskToSkipTutorialCommand extends TutorialBasicActionCommand
     CastleModel.smartfoxClient.sendCommandVO(new C2STemporaryServerTutorialSkipVO());
   }
 }
+classImplementsInterfaces(TutorialAskToSkipTutorialCommand, "ISimpleCommand");

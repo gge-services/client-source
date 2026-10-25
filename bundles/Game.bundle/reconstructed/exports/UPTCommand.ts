@@ -8,6 +8,7 @@ import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { ExternalInterface } from "../../../ggs.dll/reconstructed/exports/ExternalInterface";
 import { GamesightEventConstants } from "./GamesightEventConstants";
 import { GameSightPayloadVO } from "./GameSightPayloadVO";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class UPTCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_UNSENT_PRICE_TRACKING;
@@ -50,3 +51,4 @@ export class UPTCommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(UPTCommand, "IExecCommand");

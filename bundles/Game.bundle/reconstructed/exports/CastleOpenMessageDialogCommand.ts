@@ -5,6 +5,7 @@ import { CastleMessageDataEvent } from "./CastleMessageDataEvent";
 import { CastleModel } from "./CastleModel";
 import { CommandController } from "../../../ggs.dll/reconstructed/exports/CommandController";
 import { IngameClientCommands } from "./IngameClientCommands";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleOpenMessageDialogCommand extends BasicClientCommand {
   execute(__s5param0 = null) {
     var __s5local0 = __s5param0;
@@ -16,3 +17,4 @@ export class CastleOpenMessageDialogCommand extends BasicClientCommand {
     CastleBasicController.getInstance().dispatchEvent(new CastleMessageDataEvent(CastleMessageDataEvent.UPDATE_MESSAGELIST));
   }
 }
+classImplementsInterfaces(CastleOpenMessageDialogCommand, "ISimpleCommand");

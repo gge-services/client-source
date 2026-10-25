@@ -1,6 +1,6 @@
 {
   "sourceHash": "674ebddbb6a8294f1c9955c932b74dbca990a2d815f28397be7b7f87a6d6d0e0",
-  "generatedHash": "feb1242183e7d8c709fed63362c97f50f1593fb0fdc95c2b10c5ecd3e62e8a8b",
+  "generatedHash": "ef6330b7204167f389ca87d57286cb492ee9daa59bfeadb6b41b3c8a7315454d",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -92,11 +92,22 @@
       "path": "exports/CastlePostPostAttackFactionDialogProperties.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

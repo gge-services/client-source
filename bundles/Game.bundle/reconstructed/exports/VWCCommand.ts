@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { EventConst } from "../../../ggs.dll/reconstructed/exports/EventConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class VWCCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_VOTE_WORLD_CUP;
@@ -27,3 +28,4 @@ export class VWCCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(VWCCommand, "IExecCommand");

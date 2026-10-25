@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class BDECommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_DELETE_BOOKMARK;
@@ -21,3 +22,4 @@ export class BDECommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(BDECommand, "IExecCommand");

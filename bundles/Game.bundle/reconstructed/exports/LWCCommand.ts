@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class LWCCommand extends CastleCommand {
   executeCommand(statusCode, responseFields) {
     switch (statusCode) {
@@ -22,3 +23,4 @@ export class LWCCommand extends CastleCommand {
     super.cmdId = value;
   }
 }
+classImplementsInterfaces(LWCCommand, "IExecCommand");

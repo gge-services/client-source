@@ -1,6 +1,7 @@
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SEACommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SEASON_EVENT;
@@ -18,3 +19,4 @@ export class SEACommand extends CastleCommand {
     return true;
   }
 }
+classImplementsInterfaces(SEACommand, "IExecCommand");

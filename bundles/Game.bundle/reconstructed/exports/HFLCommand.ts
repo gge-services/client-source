@@ -3,6 +3,7 @@ import { CastleHospitalEvent } from "./CastleHospitalEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { HospitalFlagsVO } from "./HospitalFlagsVO";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class HFLCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_HOSPITAL_FLAGS;
@@ -24,3 +25,4 @@ export class HFLCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(HFLCommand, "IExecCommand");

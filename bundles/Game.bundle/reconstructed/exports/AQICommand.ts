@@ -3,6 +3,7 @@ import { CastleLayoutManager } from "./CastleLayoutManager";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class AQICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ALLIANCE_QUIT;
@@ -30,3 +31,4 @@ export class AQICommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(AQICommand, "IExecCommand");

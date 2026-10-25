@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastlePopUpHelper } from "./CastlePopUpHelper";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class LPLCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_LOGIN_POPUP_LIST;
@@ -22,3 +23,4 @@ export class LPLCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(LPLCommand, "IExecCommand");

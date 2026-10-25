@@ -1,6 +1,6 @@
 {
   "sourceHash": "6a3def615d571377be00a2d0ace83a9c512f3cf1fe348c7b1eed14ad415caae3",
-  "generatedHash": "67f0f35d03361734d64cbfde1fbdbfb701a1dc2ecff27077e48d30bb45521679",
+  "generatedHash": "8fa708086af0e01ebc28b5c0e5907cf54483ba0875368837f13c729bfd4a76f0",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -50,6 +50,15 @@
       "path": "exports/CastleChangelistRewardsEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -58,6 +67,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

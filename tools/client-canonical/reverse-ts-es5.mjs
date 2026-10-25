@@ -17,7 +17,8 @@ const fnBody = node => t.isFunctionExpression(node) ? node.body : null
 
 function getterDescriptor(stmt, className) {
   const call = stmt.expression
-  if (!objectCall(call, 'defineProperty') || call.arguments.length !== 3 || !isClassProto(call.arguments[0], className) ||
+  if (!objectCall(call, 'defineProperty') || call.arguments.length !== 3 ||
+    !(isClassProto(call.arguments[0], className)||t.isIdentifier(call.arguments[0],{name:className})) ||
     !t.isStringLiteral(call.arguments[1]) || !t.isObjectExpression(call.arguments[2])) return null
   const descriptor = Object.fromEntries(call.arguments[2].properties.filter(t.isObjectProperty).map(p => [nodeName(p.key), p.value]))
   if (!t.isBooleanLiteral(descriptor.enumerable, {value:true}) || !t.isBooleanLiteral(descriptor.configurable, {value:true})) return null
@@ -25,7 +26,9 @@ function getterDescriptor(stmt, className) {
   for (const kind of ['get','set']) {
     if (!descriptor[kind]) continue
     if (!t.isFunctionExpression(descriptor[kind])) return null
-    methods.push(t.classMethod(kind, t.identifier(call.arguments[1].value), descriptor[kind].params, t.cloneNode(descriptor[kind].body,true)))
+    const method=t.classMethod(kind, t.identifier(call.arguments[1].value), descriptor[kind].params, t.cloneNode(descriptor[kind].body,true))
+    method.static=t.isIdentifier(call.arguments[0],{name:className})
+    methods.push(method)
   }
   return methods.length ? methods : null
 }
@@ -45,27 +48,38 @@ function isDelegatingConstructor(fn, superName) {
 }
 
 function constructorFromCall(fn, superName) {
-  if (fn.params.length) return null
   const statements=fn.body.body
-  if (statements.length!==1||!t.isReturnStatement(statements[0]))return null
-  const expr=statements[0].argument
+  const hasHook=statements.length===2&&t.isExpressionStatement(statements[0])&&
+    t.isIdentifier(statements[0].expression,{name:'CONSTRUCTOR_HACK'})
+  if ((!hasHook&&statements.length!==1)||!t.isReturnStatement(statements.at(-1)))return null
+  const expr=statements.at(-1).argument
   if(!t.isLogicalExpression(expr,{operator:'||'})||!t.isThisExpression(expr.right)||
     !t.isCallExpression(expr.left)||!member(expr.left.callee,'call')||
-    !exactName(expr.left.callee.object,superName)||expr.left.arguments.length!==1||
+    !exactName(expr.left.callee.object,superName)||expr.left.arguments.length!==fn.params.length+1||
     !t.isThisExpression(expr.left.arguments[0]))return null
-  return t.classMethod('constructor',t.identifier('constructor'),[t.restElement(t.identifier('args'))],
-    t.blockStatement([t.expressionStatement(t.callExpression(t.super(),[]))]))
+  for(let i=0;i<fn.params.length;i++){
+    const param=fn.params[i],id=t.isAssignmentPattern(param)?param.left:param
+    if(!t.isIdentifier(id)||!t.isIdentifier(expr.left.arguments[i+1],{name:id.name}))return null
+  }
+  return t.classMethod('constructor',t.identifier('constructor'),fn.params.map(p=>t.cloneNode(p,true)),
+    t.blockStatement([
+      ...(hasHook?[t.expressionStatement(t.identifier('CONSTRUCTOR_HACK'))]:[]),
+      t.expressionStatement(t.callExpression(t.super(),
+        fn.params.map(p=>t.identifier(t.isAssignmentPattern(p)?p.left.name:p.name))))
+    ]))
 }
 
 function constructorWithProperties(fn, superName) {
   const statements=fn.body.body
-  if(fn.params.length||statements.length<3||!t.isVariableDeclaration(statements[0])||
+  if(statements.length<3||!t.isVariableDeclaration(statements[0])||
     statements[0].declarations.length!==1||!t.isReturnStatement(statements.at(-1)))return null
   const decl=statements[0].declarations[0]
   if(!t.isIdentifier(decl.id))return null
   const name=decl.id.name
-  const test=t.functionExpression(null,[],t.blockStatement([t.returnStatement(decl.init)]))
-  if(!isDelegatingConstructor(test,superName))return null
+  const test=t.functionExpression(null,fn.params.map(p=>t.cloneNode(p,true)),
+    t.blockStatement([t.returnStatement(t.cloneNode(decl.init,true))]))
+  const baseConstructor=isDelegatingConstructor(test,superName)?null:constructorFromCall(test,superName)
+  if(!isDelegatingConstructor(test,superName)&&!baseConstructor)return null
   if(!exactName(statements.at(-1).argument,name))return null
   const fields=[]
   for(const entry of statements.slice(1,-1)) {
@@ -76,8 +90,10 @@ function constructorWithProperties(fn, superName) {
       t.memberExpression(t.thisExpression(),t.cloneNode(entry.expression.left.property)),
       t.cloneNode(entry.expression.right,true))))
   }
-  return t.classMethod('constructor',t.identifier('constructor'),[t.restElement(t.identifier('args'))],
-    t.blockStatement([t.expressionStatement(t.callExpression(t.super(),[t.spreadElement(t.identifier('args'))])),...fields]))
+  const params=baseConstructor?baseConstructor.params:[t.restElement(t.identifier('args'))]
+  const parent=baseConstructor?baseConstructor.body.body[0]:
+    t.expressionStatement(t.callExpression(t.super(),[t.spreadElement(t.identifier('args'))]))
+  return t.classMethod('constructor',t.identifier('constructor'),params,t.blockStatement([parent,...fields]))
 }
 
 function accessorSuperCall(node, baseExpression, property, method, params) {
@@ -132,7 +148,74 @@ function rewriteSuperMethods(cls, superName) {
   return ast.program.body[0]
 }
 
-function resolveImports(sourceAst, cls, options) {
+function safeModuleBindings(ast, cls, options={}) {
+  const byName = new Map()
+  const imports = new Map()
+  for(const stmt of ast.program.body) {
+    if(t.isFunctionDeclaration(stmt)&&stmt.id)byName.set(stmt.id.name,{kind:'function',node:stmt})
+    if(!t.isVariableDeclaration(stmt))continue
+    for(const decl of stmt.declarations) {
+      if(!t.isIdentifier(decl.id))continue
+      byName.set(decl.id.name,{kind:'variable',node:decl})
+      if(t.isCallExpression(decl.init)&&t.isIdentifier(decl.init.callee,{name:'require'})&&
+        decl.init.arguments.length===1&&t.isStringLiteral(decl.init.arguments[0])){
+        imports.set(decl.id.name,decl.init.arguments[0].value)
+      }
+    }
+  }
+  const pending=[cls],seen=new Set(),included=new Map()
+  while(pending.length){
+    const element=pending.pop()
+    const container=t.file(t.program([t.cloneNode(element,true)]))
+    const referenced=new Set()
+    traverse(container,{Identifier(path) {
+      if(path.isReferencedIdentifier()&&/^__s0local[0-9]+$/.test(path.node.name)&&
+        !path.scope.hasBinding(path.node.name))referenced.add(path.node.name)
+    }})
+    for(const name of referenced){
+      if(seen.has(name))continue
+      seen.add(name)
+      const source=byName.get(name)
+      if(!source)continue
+      if(source.kind==='function'){
+        const entry=t.cloneNode(source.node,true)
+        included.set(name,entry)
+        pending.push(entry)
+        continue
+      }
+      const init=source.node.init
+      if(t.isCallExpression(init)&&init.arguments.length===0&&t.isFunctionExpression(init.callee)&&
+        init.callee.params.length===0&&init.callee.body.body.length===1&&
+        t.isReturnStatement(init.callee.body.body[0])&&
+        t.isFunctionExpression(init.callee.body.body[0].argument)){
+        const helper=init.callee.body.body[0].argument
+        if(helper.id&&t.isIdentifier(helper.id)&&helper.params.length===0&&helper.body.body.length===0){
+          included.set(name,t.variableDeclaration('const',[t.variableDeclarator(t.identifier(name),t.identifier(helper.id.name))]))
+          included.set(name+':class',t.classDeclaration(t.cloneNode(helper.id),null,t.classBody([])))
+          continue
+        }
+      }
+      const createjsAlias=t.isMemberExpression(init)&&!init.computed&&
+        t.isIdentifier(init.object,{name:'createjs'})&&t.isIdentifier(init.property)&&
+        ['Point','Event','Rectangle','MouseEvent'].includes(init.property.name)
+      const verifiedLogger=t.isCallExpression(init)&&
+        t.isMemberExpression(init.callee)&&!init.callee.computed&&
+        t.isIdentifier(init.callee.object)&&
+        t.isIdentifier(init.callee.property,{name:'getLogger'})&&
+        Boolean(options.resolveMember?.(imports.get(init.callee.object.name),'getLogger'))&&
+        init.arguments.length===1&&t.isStringLiteral(init.arguments[0])
+      if(!createjsAlias&&!verifiedLogger)continue
+      const entry=t.variableDeclaration('const',[t.variableDeclarator(t.identifier(name),t.cloneNode(init,true))])
+      included.set(name,entry)
+    }
+  }
+  const entries=[...included.values()]
+  const classes=entries.filter(t.isClassDeclaration)
+  const rest=entries.filter(x=>!t.isClassDeclaration(x))
+  return [...classes,...rest]
+}
+
+function resolveImports(sourceAst, cls, options, retained=[]) {
   const assignments = new Map()
   for (const statement of sourceAst.program.body) {
     if (!t.isVariableDeclaration(statement)) continue
@@ -144,7 +227,7 @@ function resolveImports(sourceAst, cls, options) {
     }
   }
   const modules = new Map()
-  const bodyAst = t.file(t.program([cls]))
+  const bodyAst = t.file(t.program([...retained,cls]))
   const existing = new Set()
   traverse(bodyAst, {
     MemberExpression(path) {
@@ -189,20 +272,76 @@ function resolveImports(sourceAst, cls, options) {
     const specifier = data.bundle === 'ggs.dll' ? '../../../ggs.dll/reconstructed/exports/'+(options.dllImportFileName?.(name)??name) : './' + name
     return t.importDeclaration([t.importSpecifier(t.identifier(name), t.identifier(name))], t.stringLiteral(specifier))
   })
-  return {imports, node:bodyAst.program.body[0], modules:[...modules.values()]}
+  return {imports, retained:bodyAst.program.body.slice(0,-1),node:bodyAst.program.body.at(-1),modules:[...modules.values()]}
+}
+
+function recoverInterfaceRegistrations(ast, className, wrapperId, options) {
+  if(!options.preserveRuntimeInterfaces)return {imports:[],statements:[],dependencies:[]}
+  const imports=new Map()
+  for(const stmt of ast.program.body){
+    if(!t.isVariableDeclaration(stmt))continue
+    for(const decl of stmt.declarations){
+      if(!t.isIdentifier(decl.id)||!t.isCallExpression(decl.init)||
+        !t.isIdentifier(decl.init.callee,{name:'require'})||
+        decl.init.arguments.length!==1||!t.isStringLiteral(decl.init.arguments[0]))continue
+      imports.set(decl.id.name,decl.init.arguments[0].value)
+    }
+  }
+  const registrations=[]
+  const dependencies=[]
+  for(const stmt of ast.program.body){
+    if(!t.isExpressionStatement(stmt)||!t.isCallExpression(stmt.expression))continue
+    const call=stmt.expression
+    if(!member(call.callee,'classImplementsInterfaces')||!t.isIdentifier(call.callee.object)||
+      call.arguments.length<2||!t.isIdentifier(call.arguments[0],{name:wrapperId}))continue
+    const spec=imports.get(call.callee.object.name)
+    const mapped=options.resolveMember?.(spec,'classImplementsInterfaces')
+    if(!mapped||mapped.bundle!=='ggs.dll')throw Error('Unverified runtime interface registration: '+className)
+    dependencies.push(mapped)
+    registrations.push(t.expressionStatement(t.callExpression(t.identifier('classImplementsInterfaces'),
+      [t.identifier(className),...call.arguments.slice(1).map(arg=>t.cloneNode(arg,true))])))
+  }
+  if(!registrations.length)return {imports:[],statements:[],dependencies:[]}
+  const imp=t.importDeclaration([
+    t.importSpecifier(t.identifier('classImplementsInterfaces'),t.identifier('classImplementsInterfaces'))
+  ],t.stringLiteral('../../../ggs.dll/reconstructed/exports/'+
+    (options.dllImportFileName?.('classImplementsInterfaces')??'classImplementsInterfaces')))
+  return {imports:[imp],statements:registrations,dependencies}
 }
 
 function preserveDynamicSourceTypes(cls) {
   const file=t.file(t.program([cls]))
   traverse(file,{
-    VariableDeclarator(path) {
-      if(t.isObjectExpression(path.node.init)&&path.node.init.properties.length===0){
-        path.node.init=t.tsAsExpression(path.node.init,t.tsAnyKeyword())
+    AssignmentExpression(path) {
+      const n=path.node
+      if(['&&=','||=','??='].includes(n.operator)&&t.isMemberExpression(n.left)){
+      const receiver=t.identifier('sourceObject'),key=t.identifier('sourceKey'),previous=t.identifier('previousValue')
+      const memberAccess=t.memberExpression(t.cloneNode(receiver),t.cloneNode(key),true)
+      const shouldAssign=n.operator==='&&='?t.cloneNode(previous):
+        n.operator==='||='?t.unaryExpression('!',t.cloneNode(previous)):
+          t.binaryExpression('==',t.cloneNode(previous),t.nullLiteral())
+      const next=t.assignmentExpression('=',t.cloneNode(memberAccess),t.cloneNode(n.right,true))
+      const body=t.blockStatement([
+        t.variableDeclaration('const',[t.variableDeclarator(t.cloneNode(receiver),t.cloneNode(n.left.object,true))]),
+        t.variableDeclaration('const',[t.variableDeclarator(t.cloneNode(key),
+          n.left.computed?t.cloneNode(n.left.property,true):t.stringLiteral(n.left.property.name))]),
+        t.variableDeclaration('const',[t.variableDeclarator(t.cloneNode(previous),t.cloneNode(memberAccess))]),
+        t.returnStatement(t.conditionalExpression(shouldAssign,next,t.cloneNode(previous)))
+      ])
+      path.replaceWith(t.callExpression(t.arrowFunctionExpression([],body),[]))
+      }else if(t.isObjectExpression(n.right)&&n.right.properties.length===0){
+        n.right=t.tsAsExpression(n.right,t.tsAnyKeyword())
       }
     },
-    AssignmentExpression(path) {
-      if(t.isObjectExpression(path.node.right)&&path.node.right.properties.length===0){
-        path.node.right=t.tsAsExpression(path.node.right,t.tsAnyKeyword())
+    VariableDeclarator(path) {
+      const init=path.node.init
+      if(t.isObjectExpression(init)&&init.properties.length===0){
+        path.node.init=t.tsAsExpression(init,t.tsAnyKeyword())
+      }else if(t.isMemberExpression(init)&&init.computed&&t.isIdentifier(init.object)){
+        const source=path.scope.getBinding(init.object.name)?.path.node.init
+        if(t.isCallExpression(source)&&member(source.callee,'from')&&t.isIdentifier(source.callee.object,{name:'Array'})){
+          path.node.init=t.tsAsExpression(init,t.tsAnyKeyword())
+        }
       }
     },
     ClassMethod(path) {
@@ -270,21 +409,24 @@ export function reconstructEs5Class(source, options={}) {
     if (!t.isVariableDeclaration(statement))continue
     for (const dec of statement.declarations) {
       if (!t.isIdentifier(dec.id) || !t.isCallExpression(dec.init) ||
-        !t.isFunctionExpression(dec.init.callee) || dec.init.arguments.length!==1 ||
-        !t.isIdentifier(dec.init.callee.params[0]))continue
+        !t.isFunctionExpression(dec.init.callee) ||
+        !((dec.init.arguments.length===1&&dec.init.callee.params.length===1&&t.isIdentifier(dec.init.callee.params[0]))||
+          (dec.init.arguments.length===0&&dec.init.callee.params.length===0)))continue
       const body=dec.init.callee.body.body
       const constructor=body.find(t.isFunctionDeclaration)
       if (!constructor)continue
-      const className=constructor.id?.name,superName=dec.init.callee.params[0].name
-      const generatedConstructor = isDelegatingConstructor(constructor,superName) ? null :
+      const className=constructor.id?.name,superName=dec.init.callee.params[0]?.name
+      const standalone=!superName&&dec.init.arguments.length===0&&constructor.params.length===0&&constructor.body.body.length===0
+      const delegating=superName&&isDelegatingConstructor(constructor,superName)
+      const generatedConstructor = delegating||standalone ? null :
         constructorFromCall(constructor,superName) ?? constructorWithProperties(constructor,superName)
-      if (!isDelegatingConstructor(constructor,superName) && !generatedConstructor)continue
+      if (!delegating&&!standalone&&!generatedConstructor)continue
       const extending=body.some(n=>t.isExpressionStatement(n) && t.isCallExpression(n.expression) &&
         member(n.expression.callee,'__extends') && exactName(n.expression.arguments[0],className) &&
         exactName(n.expression.arguments[1],superName))
-      if (!extending)continue
+      if (Boolean(superName)!==Boolean(extending))continue
       if (!body.some(n=>t.isReturnStatement(n)&&exactName(n.argument,className)))continue
-      const needsConstructor=Boolean(!generatedConstructor&&isDelegatingConstructor(constructor,superName)&&options.passThroughConstructors?.has(className))
+      const needsConstructor=Boolean(!generatedConstructor&&delegating&&options.passThroughConstructors?.has(className))
       const passThroughConstructor=needsConstructor?t.classMethod('constructor',t.identifier('constructor'),
         [t.restElement(t.identifier('args'))],
         t.blockStatement([t.expressionStatement(t.callExpression(t.super(),[t.spreadElement(t.identifier('args'))]))])):null
@@ -302,21 +444,61 @@ export function reconstructEs5Class(source, options={}) {
           continue
         }
         if(t.isAssignmentExpression(expr,{operator:'='}) && t.isMemberExpression(expr.left) &&
-          isClassProto(expr.left.object,className) && t.isIdentifier(expr.left.property) &&
-          t.isFunctionExpression(expr.right)) {
-          members.push(t.classMethod('method',t.cloneNode(expr.left.property),expr.right.params,t.cloneNode(expr.right.body,true)))
+          t.isIdentifier(expr.left.property) && t.isFunctionExpression(expr.right)) {
+          const instance=isClassProto(expr.left.object,className)
+          const staticMethod=t.isIdentifier(expr.left.object,{name:className})
+          if(instance||staticMethod){
+            const method=t.classMethod('method',t.cloneNode(expr.left.property),expr.right.params,t.cloneNode(expr.right.body,true))
+            method.static=staticMethod
+            members.push(method)
+            continue
+          }
+        }
+        if(t.isAssignmentExpression(expr,{operator:'='}) &&
+          t.isMemberExpression(expr.left) && !expr.left.computed &&
+          t.isIdentifier(expr.left.object,{name:className}) &&
+          t.isIdentifier(expr.left.property) &&
+          !t.isFunctionExpression(expr.right)) {
+          const field=t.classProperty(t.cloneNode(expr.left.property),t.cloneNode(expr.right,true))
+          field.static=true
+          members.push(field)
           continue
         }
         unsupported=true;break
       }
       if (unsupported || !members.length)continue
       const base=dec.init.arguments[0]
-      if (!t.isMemberExpression(base) || !t.isIdentifier(base.property))continue
-      const cls=t.classDeclaration(t.identifier(className),t.cloneNode(base,true),t.classBody(members))
-      const resolved=resolveImports(ast,rewriteSuperMethods(cls,superName),options)
+      if (!standalone&&(!t.isMemberExpression(base) || !t.isIdentifier(base.property)))continue
+      const staticInit=members.find(m=>t.isClassMethod(m)&&m.static&&t.isIdentifier(m.key,{name:'__initialize_static_members'}))
+      const staticNames=new Set()
+      if(staticInit){
+        const f=t.file(t.program([t.classDeclaration(t.identifier('Temporary'),null,t.classBody([t.cloneNode(staticInit,true)]))]))
+        traverse(f,{AssignmentExpression(path){
+          const left=path.node.left
+          if(!t.isMemberExpression(left)||left.computed||!t.isIdentifier(left.object,{name:className})||
+            !t.isIdentifier(left.property))return
+          staticNames.add(left.property.name)
+        }})
+      }
+      for(const name of [...staticNames].sort()){
+        if(members.some(m=>m.static&&t.isIdentifier(m.key,{name})))continue
+        const field=t.classProperty(t.identifier(name),null,t.tsTypeAnnotation(t.tsAnyKeyword()))
+        field.static=true
+        members.unshift(field)
+      }
+      const staticInvocation=ast.program.body.some(stmt=>t.isExpressionStatement(stmt)&&
+        t.isCallExpression(stmt.expression)&&member(stmt.expression.callee,'__initialize_static_members')&&
+        t.isIdentifier(stmt.expression.callee.object,{name:dec.id.name}))
+      if(staticInvocation&&!staticInit)throw Error('Unresolved static initializer: '+className)
+      const cls=t.classDeclaration(t.identifier(className),standalone?null:t.cloneNode(base,true),t.classBody(members))
+      const resolved=resolveImports(ast,rewriteSuperMethods(cls,superName),options,safeModuleBindings(ast,cls,options))
       const aliases=replaceParameterAliases(resolved.node)
       aliases.node=preserveDynamicSourceTypes(aliases.node)
-      const program=t.program([...resolved.imports,t.exportNamedDeclaration(aliases.node)])
+      const interfaces=recoverInterfaceRegistrations(ast,className,dec.id.name,options)
+      const postlude=staticInvocation?[t.expressionStatement(t.callExpression(
+        t.memberExpression(t.identifier(className),t.identifier('__initialize_static_members')),[]))]:[]
+      const program=t.program([...resolved.imports,...interfaces.imports,...resolved.retained,
+        t.exportNamedDeclaration(aliases.node),...interfaces.statements,...postlude])
       const generated=t.file(program)
       const unbound=new Set()
       traverse(generated,{Identifier(path) {
@@ -328,7 +510,7 @@ export function reconstructEs5Class(source, options={}) {
       const code=generate(generated,{jsescOption:{minimal:true}}).code+'\n'
       if (code.includes('Object.getOwnPropertyDescriptor') || code.includes('Object.defineProperty') || code.includes('.prototype.')) throw Error('Unreversed descriptor remains: ' + className)
       parser.parse(code,{sourceType:'module',plugins:['typescript']})
-      return {className,code,metadata:{sourceHash:sha(source),generatedHash:sha(code),constructor:'implicit-super',accessors:members.filter(m=>m.kind==='get'||m.kind==='set').map(m=>m.kind+':'+m.key.name),methods:members.filter(m=>m.kind==='method').map(m=>m.key.name),dependencies:resolved.modules,renamed:aliases.renamed,removedRuntimeInterfaceCalls:ast.program.body.filter(n => t.isExpressionStatement(n) && t.isCallExpression(n.expression) && member(n.expression.callee,'classImplementsInterfaces')).length,fullRuntimeEquivalent:false}}
+      return {className,code,metadata:{sourceHash:sha(source),generatedHash:sha(code),constructor:'implicit-super',accessors:members.filter(m=>m.kind==='get'||m.kind==='set').map(m=>m.kind+':'+m.key.name),methods:members.filter(m=>m.kind==='method').map(m=>m.key.name),dependencies:[...resolved.modules,...interfaces.dependencies],renamed:aliases.renamed,runtimeInterfaceCallsPreserved:interfaces.statements.length,removedRuntimeInterfaceCalls:ast.program.body.filter(n => t.isExpressionStatement(n) && t.isCallExpression(n.expression) && member(n.expression.callee,'classImplementsInterfaces')).length,staticInitializationPreserved:staticInvocation,fullRuntimeEquivalent:false}}
     }
   }
   return null

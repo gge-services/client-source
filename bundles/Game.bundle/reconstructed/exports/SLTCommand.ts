@@ -5,6 +5,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { debug } from "../../../ggs.dll/reconstructed/exports/debug";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { info } from "../../../ggs.dll/reconstructed/exports/info";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SLTCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SEND_LOGIN_TOKEN;
@@ -29,3 +30,4 @@ export class SLTCommand extends CastleCommand {
     info("Deprecrated login data removed ... for good!");
   }
 }
+classImplementsInterfaces(SLTCommand, "IExecCommand");

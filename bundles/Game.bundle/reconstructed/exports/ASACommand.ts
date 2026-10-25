@@ -1,6 +1,7 @@
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class ASACommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ALLIANCE_SET_SEARCH_ALLIANCE;
@@ -19,3 +20,4 @@ export class ASACommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(ASACommand, "IExecCommand");

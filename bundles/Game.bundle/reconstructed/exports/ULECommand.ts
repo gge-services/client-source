@@ -1,6 +1,7 @@
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class ULECommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.C2S_UNLOCK_EVENT;
@@ -20,3 +21,4 @@ export class ULECommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(ULECommand, "IExecCommand");

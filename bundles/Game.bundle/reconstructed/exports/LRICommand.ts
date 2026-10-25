@@ -6,6 +6,7 @@ import { CastleDialogHandler } from "./CastleDialogHandler";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { UnitProductionConst } from "../../../ggs.dll/reconstructed/exports/UnitProductionConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class LRICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_LOOP_RECRUITMENT_INFO;
@@ -34,3 +35,4 @@ export class LRICommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(LRICommand, "IExecCommand");

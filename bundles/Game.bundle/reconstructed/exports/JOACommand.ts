@@ -12,6 +12,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { TextVO } from "../../../ggs.dll/reconstructed/exports/TextVO";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class JOACommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_JOIN_OPEN_ALLIANCE;
@@ -46,3 +47,4 @@ export class JOACommand extends CastleCommand {
     CastleDialogHandler.getInstance().registerDefaultDialogs(CastleAllianceDialog, new CastleAllianceDialogProperties(ClientConstAlliance.CAT_COMMUNICATION));
   }
 }
+classImplementsInterfaces(JOACommand, "IExecCommand");

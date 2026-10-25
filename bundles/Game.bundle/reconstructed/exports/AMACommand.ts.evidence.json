@@ -1,6 +1,6 @@
 {
   "sourceHash": "201c1323281222f101b7eff8fdc38b0df8aa0a5edeb8dc0c05394e65fd537449",
-  "generatedHash": "c17b3d7e202a1d8dcc908e13e66507b9f8b731963c7c8590ac25d4e5ed07b9de",
+  "generatedHash": "5981e188d1331fdcee3f2268956101a01c6c08c681dae7d289c921abb4402a89",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -50,6 +50,15 @@
       "path": "exports/CastleHighscoreEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -58,6 +67,8 @@
     "responseFields",
     "parsedResponse"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

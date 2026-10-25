@@ -1,6 +1,6 @@
 {
   "sourceHash": "64e90aaa56e67470eb00a54d9dc512b280278900a0f38a2763b38dcbc11b15a4",
-  "generatedHash": "e09cf7a8b86f8bd8ae71f949770bc966c4c4d8d5d658bf0dee7c8611c91a70ef",
+  "generatedHash": "022b933682db3117bd758bebcbbaa0ee591187dfdbf076ed7735fa8adec63473",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -117,6 +117,15 @@
       "path": "exports/CastleAchievementPopupDialogProperties.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
@@ -124,6 +133,8 @@
     "statusCode",
     "responseFields"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

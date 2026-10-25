@@ -7,6 +7,7 @@ import { CastleStandardOkDialog } from "./CastleStandardOkDialog";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class ARMCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ALLIANCE_RERANK_MEMBER;
@@ -32,3 +33,4 @@ export class ARMCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(ARMCommand, "IExecCommand");

@@ -2,6 +2,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class ABRCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ARMY_REACHED_BIG_RADIUS;
@@ -22,3 +23,4 @@ export class ABRCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(ABRCommand, "IExecCommand");

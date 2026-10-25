@@ -9,6 +9,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { EventConst } from "../../../ggs.dll/reconstructed/exports/EventConst";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class QFICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_QUEST_FINISHED;
@@ -46,3 +47,4 @@ export class QFICommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(QFICommand, "IExecCommand");

@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class FBECommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_FINISHED_BUILDING;
@@ -25,3 +26,4 @@ export class FBECommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(FBECommand, "IExecCommand");

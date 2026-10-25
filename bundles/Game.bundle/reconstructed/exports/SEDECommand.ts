@@ -1,6 +1,7 @@
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SEDECommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SELECT_EVENT_AUTO_SCALING_DIFFICULTY_EVENT;
@@ -18,3 +19,4 @@ export class SEDECommand extends CastleCommand {
     return true;
   }
 }
+classImplementsInterfaces(SEDECommand, "IExecCommand");

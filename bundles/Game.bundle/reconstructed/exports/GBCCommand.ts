@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { CastlePackageEvent } from "./CastlePackageEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GBCCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_PACKAGE_BUY_COUNT;
@@ -25,3 +26,4 @@ export class GBCCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(GBCCommand, "IExecCommand");

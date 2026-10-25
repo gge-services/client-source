@@ -8,6 +8,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { CommKeys } from "../../../ggs.dll/reconstructed/exports/CommKeys";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { SubscriptionEvent } from "./SubscriptionEvent";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class AACommand extends CastleCommand {
   constructor(...args) {
     super(...args);
@@ -47,3 +48,4 @@ export class AACommand extends CastleCommand {
     CastleBasicController.getInstance().dispatchEvent(new AdvisorActivationEvent(AdvisorActivationEvent.ADVISOR_ACTIVATION_CHANGED, AttackAdvisorConst.ADVISOR_TYPE_BARON));
   }
 }
+classImplementsInterfaces(AACommand, "IExecCommand");

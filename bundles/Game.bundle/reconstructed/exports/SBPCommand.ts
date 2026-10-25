@@ -10,6 +10,7 @@ import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { ModernPackageShopResourceTipDialog } from "./ModernPackageShopResourceTipDialog";
 import { ModernPackageShopResourceTipDialogProperties } from "./ModernPackageShopResourceTipDialogProperties";
 import { PackageConst } from "../../../ggs.dll/reconstructed/exports/PackageConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SBPCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_BUY_EVENTPACKAGE;
@@ -71,3 +72,4 @@ export class SBPCommand extends CastleCommand {
     CastleDialogHandler.getInstance().registerDefaultDialogs(CastleStandardOkDialog, new BasicStandardOkDialogProperties(Localize.text("generic_alert_watchout"), Localize.text(__s18param0, __s18param1)));
   }
 }
+classImplementsInterfaces(SBPCommand, "IExecCommand");

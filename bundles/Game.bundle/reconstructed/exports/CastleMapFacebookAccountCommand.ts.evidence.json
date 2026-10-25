@@ -1,6 +1,6 @@
 {
   "sourceHash": "681b8226a5b627316c8b32ea53cc3cc3a34660a1d3a349fd78ebecdfbe1b0563",
-  "generatedHash": "0740e5c51111c047c04ce63eac18b0226c9538eecf67d26836a677a057233d66",
+  "generatedHash": "1033eeb7948db0376dba198e0181bc3cd6d98e6c39b81a91813d09cbfe1507ab",
   "constructor": "implicit-super",
   "accessors": [
     "get:controller"
@@ -19,6 +19,15 @@
     "removeListeners"
   ],
   "dependencies": [
+    {
+      "specifier": "gge-module:exact_c549e43d1112dfff",
+      "imported": "getLogger",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/getLogger__webpack_2__83c306c3.js",
+      "moduleId": "2",
+      "moduleIdentity": "ggs.dll:export:getLogger",
+      "confidence": "verified-dll-id-and-member"
+    },
     {
       "specifier": "gge-module:exact_9e901e8e2483a22f",
       "imported": "SimpleCommand",
@@ -100,9 +109,20 @@
       "path": "exports/CastleBasicController.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

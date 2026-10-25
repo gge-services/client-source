@@ -5,6 +5,7 @@ import { CastleDialogHandler } from "./CastleDialogHandler";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CCICommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_CONQUER_INFO_CAPITAL;
@@ -25,3 +26,4 @@ export class CCICommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(CCICommand, "IExecCommand");

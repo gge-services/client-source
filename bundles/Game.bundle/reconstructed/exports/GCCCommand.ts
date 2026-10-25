@@ -4,6 +4,7 @@ import { CastleModel } from "./CastleModel";
 import { CastleServerMessageArrivedEvent } from "./CastleServerMessageArrivedEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GCCCommand extends CastleDispatchingCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_CONSTRUCTION_CRAFTING_INFO;
@@ -27,3 +28,4 @@ export class GCCCommand extends CastleDispatchingCommand {
     }
   }
 }
+classImplementsInterfaces(GCCCommand, "IExecCommand");

@@ -1,6 +1,6 @@
 {
   "sourceHash": "38f40d3c5dd387088b09bf4907396a7ebc788382a8742b6a8b2f2f67454ceae3",
-  "generatedHash": "eb2bb56d62b5b8224d6e546956ee98103f9d0590aa7446a44637f4a53b905a77",
+  "generatedHash": "334801f325b94445c3e9908e4786a628a6d0a3c2e58c4a3e0466ae5e1a22ee77",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -82,11 +82,22 @@
       "path": "exports/IsoEvent.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

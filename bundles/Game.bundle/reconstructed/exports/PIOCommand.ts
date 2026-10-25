@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Iso } from "./Iso";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class PIOCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_PLACE_CUSTOM_INVENTORY_OBJECT;
@@ -30,3 +31,4 @@ export class PIOCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(PIOCommand, "IExecCommand");

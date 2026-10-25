@@ -4,6 +4,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { OpenGateEvent } from "./OpenGateEvent";
 import { TimeConst } from "../../../ggs.dll/reconstructed/exports/TimeConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class KIKCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_KIKERIKI;
@@ -26,3 +27,4 @@ export class KIKCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(KIKCommand, "IExecCommand");

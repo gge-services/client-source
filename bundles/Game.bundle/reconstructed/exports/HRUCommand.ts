@@ -7,6 +7,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { UnitProductionConst } from "../../../ggs.dll/reconstructed/exports/UnitProductionConst";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class HRUCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_REVIVE_HOSPITAL_UNITS;
@@ -38,3 +39,4 @@ export class HRUCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(HRUCommand, "IExecCommand");

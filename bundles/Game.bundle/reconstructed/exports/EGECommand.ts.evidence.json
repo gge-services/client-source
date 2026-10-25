@@ -1,6 +1,6 @@
 {
   "sourceHash": "25a9d1a9cf81eb0b53aadaa6df1caa6845d298f1ec5d071a1d01281ffe2bcb9d",
-  "generatedHash": "d24761aa2d9f66b7a4c309e3ec84918a9a4ab55f3fb97689fd8139719ec0ec71",
+  "generatedHash": "037a9d2d52e0504459c397bcd1a52e0830d9bd702754e12f15c866934b69b0f4",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -50,11 +50,22 @@
       "path": "exports/C2SGetEquipmentInventory.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [
     "value"
   ],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

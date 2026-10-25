@@ -7,6 +7,7 @@ import { CastleStandardOkDialog } from "./CastleStandardOkDialog";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class BSDCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SPY_LOG_DETAIL;
@@ -33,3 +34,4 @@ export class BSDCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(BSDCommand, "IExecCommand");

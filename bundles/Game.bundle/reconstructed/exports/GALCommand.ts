@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { CastleSearchAllianceDialog } from "./CastleSearchAllianceDialog";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GALCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GET_PLAYER_ALLIANCE;
@@ -23,3 +24,4 @@ export class GALCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(GALCommand, "IExecCommand");

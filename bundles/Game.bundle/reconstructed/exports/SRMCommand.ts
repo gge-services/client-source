@@ -1,5 +1,6 @@
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SRMCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.C2S_SET_RECRUITMENT_MODE;
@@ -11,3 +12,4 @@ export class SRMCommand extends CastleCommand {
     return true;
   }
 }
+classImplementsInterfaces(SRMCommand, "IExecCommand");

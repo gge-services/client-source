@@ -5,6 +5,7 @@ import { ClientConstSF } from "./ClientConstSF";
 import { CommandController } from "../../../ggs.dll/reconstructed/exports/CommandController";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { SsoUserMoveTrackingEvent } from "./SsoUserMoveTrackingEvent";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SPSLMSCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SET_PASSWORD_FOR_SOCIAL_LOGIN_MIGRATION;
@@ -24,3 +25,4 @@ export class SPSLMSCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(SPSLMSCommand, "IExecCommand");

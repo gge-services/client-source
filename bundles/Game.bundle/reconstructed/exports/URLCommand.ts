@@ -5,6 +5,7 @@ import { CastleCommand } from "./CastleCommand";
 import { CastleDialogHandler } from "./CastleDialogHandler";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class URLCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_UPDATE_RECRUITMENT_LOOP;
@@ -29,3 +30,4 @@ export class URLCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(URLCommand, "IExecCommand");

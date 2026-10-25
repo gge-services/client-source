@@ -3,6 +3,7 @@ import { CastleLayoutManager } from "./CastleLayoutManager";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class STECommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_SELECT_TITLE_EVENT;
@@ -28,3 +29,4 @@ export class STECommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(STECommand, "IExecCommand");

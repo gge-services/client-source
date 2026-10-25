@@ -3,6 +3,7 @@ import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { int } from "../../../ggs.dll/reconstructed/exports/int";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CSPCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_CONSTRUCTION_ITEM_INVENTORYS_SPACE_LEFT;
@@ -26,3 +27,4 @@ export class CSPCommand extends CastleCommand {
     }
   }
 }
+classImplementsInterfaces(CSPCommand, "IExecCommand");

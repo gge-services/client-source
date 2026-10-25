@@ -1,6 +1,7 @@
 import { ClientFunnelGameStates } from "../../../ggs.dll/reconstructed/exports/ClientFunnelGameStates";
 import { ClientFunnelTrackingController } from "../../../ggs.dll/reconstructed/exports/ClientFunnelTrackingController";
 import { TutorialBasicQuestStarterActionCommand } from "./TutorialBasicQuestStarterActionCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class TutorialConfirmMainTutorialFinishedCommand extends TutorialBasicQuestStarterActionCommand {
   internalExecute() {
     super.internalExecute();
@@ -10,3 +11,4 @@ export class TutorialConfirmMainTutorialFinishedCommand extends TutorialBasicQue
     return "050_020_tutorial_finished";
   }
 }
+classImplementsInterfaces(TutorialConfirmMainTutorialFinishedCommand, "ISimpleCommand");

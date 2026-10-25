@@ -5,6 +5,7 @@ import { CastleSpecialEventEvent } from "./CastleSpecialEventEvent";
 import { ClientConstSF } from "./ClientConstSF";
 import { CommKeys } from "../../../ggs.dll/reconstructed/exports/CommKeys";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class AICCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_ALLIANCE_INVASION_CAMP_INFO;
@@ -40,3 +41,4 @@ export class AICCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(AICCommand, "IExecCommand");

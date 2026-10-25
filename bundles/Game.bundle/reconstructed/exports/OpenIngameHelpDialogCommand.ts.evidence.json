@@ -1,6 +1,6 @@
 {
   "sourceHash": "b6439d82556a14bd6d9f8867c0d3d56a9c137be7d2e32e1581cdaae701c43777",
-  "generatedHash": "a9240d18cf6e32446122aef4191c1c4373b7848d0b5fa8dfd616e3d19bf1e364",
+  "generatedHash": "3b46f183b980c86218702320f4ba2b875190898df1d762865799dc0d09452591",
   "constructor": "implicit-super",
   "accessors": [],
   "methods": [
@@ -39,9 +39,20 @@
       "path": "exports/CastleIngameHelpDialog.js",
       "moduleId": null,
       "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
     }
   ],
   "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
   "fullRuntimeEquivalent": false
 }

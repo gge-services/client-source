@@ -18,7 +18,7 @@ import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { ModernYesNoDialog } from "./ModernYesNoDialog";
 import { SearchListAllianceItemVO } from "./SearchListAllianceItemVO";
 export class AASCommand extends BasicCommand {
-  constructor(...args) {
+  constructor() {
     super();
   }
   get cmdId() {

@@ -3,6 +3,7 @@ import { CastleFactionInvasionEventDialog } from "./CastleFactionInvasionEventDi
 import { FactionInvasionDialogProperties } from "./FactionInvasionDialogProperties";
 import { getDefinitionByName } from "../../../ggs.dll/reconstructed/exports/getDefinitionByName";
 import { OpenDialogWithAdditionalExternalAssetsCommand } from "./OpenDialogWithAdditionalExternalAssetsCommand";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenFactionInvasionEventMainDialogCommand extends OpenDialogWithAdditionalExternalAssetsCommand {
   addAssets(__s5param0) {
     this.loadAsset("GallantryTitlesSublayer", "GallantryTitlesSublayer");
@@ -20,3 +21,4 @@ export class OpenFactionInvasionEventMainDialogCommand extends OpenDialogWithAdd
     return new (getDefinitionByName("GallantryTitlesSublayer"))();
   }
 }
+classImplementsInterfaces(OpenFactionInvasionEventMainDialogCommand, "ISimpleCommand");

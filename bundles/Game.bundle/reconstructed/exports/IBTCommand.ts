@@ -3,6 +3,7 @@ import { CastleFightDataEvent } from "./CastleFightDataEvent";
 import { CastleModel } from "./CastleModel";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class IBTCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_INSTANT_BUY_TOOL;
@@ -23,3 +24,4 @@ export class IBTCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(IBTCommand, "IExecCommand");

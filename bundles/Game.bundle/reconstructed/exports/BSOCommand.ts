@@ -1,6 +1,7 @@
 import { CastleCommand } from "./CastleCommand";
 import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
+import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class BSOCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_BUY_BESTSELLER_OFFER;
@@ -18,3 +19,4 @@ export class BSOCommand extends CastleCommand {
     return false;
   }
 }
+classImplementsInterfaces(BSOCommand, "IExecCommand");
