@@ -1,0 +1,48 @@
+{
+  "sourceHash": "6a3def615d571377be00a2d0ace83a9c512f3cf1fe348c7b1eed14ad415caae3",
+  "generatedHash": "67f0f35d03361734d64cbfde1fbdbfb701a1dc2ecff27077e48d30bb45521679",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectableManager",
+      "source": "exports/CollectableManager.js",
+      "imported": "CollectableManager"
+    },
+    {
+      "specifier": "gge-module:export_CastleChangelistRewardsEvent",
+      "source": "exports/CastleChangelistRewardsEvent.js",
+      "imported": "CastleChangelistRewardsEvent"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

@@ -1,0 +1,45 @@
+{
+  "sourceHash": "cbf1b7fda0a66f12b1c9d7b55d217481a28da48352d82f840a4b6f7b0c29b7c0",
+  "generatedHash": "2604d98ef3803bffc2166b3dd249a2fbc434961a02d81da71c27899ec2989f16",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBasicController",
+      "source": "exports/CastleBasicController.js",
+      "imported": "CastleBasicController"
+    },
+    {
+      "specifier": "gge-module:export_AllianceDivisionContributionsEvent",
+      "source": "exports/AllianceDivisionContributionsEvent.js",
+      "imported": "AllianceDivisionContributionsEvent"
+    }
+  ],
+  "renamed": [
+    "value"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

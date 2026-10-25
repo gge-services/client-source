@@ -1,0 +1,63 @@
+{
+  "sourceHash": "9c15c4fc196124d5a8be95015b4e5f55cb0870d51e4c4f8d0dd91ae0a0a68d3a",
+  "generatedHash": "b8559e4895bbc3ca5934546212257d4ef730fe1a253a2a90a4eac5776f686e3f",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_WorldmapObjectFactory",
+      "source": "exports/WorldmapObjectFactory.js",
+      "imported": "WorldmapObjectFactory"
+    },
+    {
+      "specifier": "gge-module:export_SkipCooldownEvent",
+      "source": "exports/SkipCooldownEvent.js",
+      "imported": "SkipCooldownEvent"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "source": "exports/CastleDialogHandler.js",
+      "imported": "CastleDialogHandler"
+    },
+    {
+      "specifier": "gge-module:export_CastleNoMoneyC2Dialog",
+      "source": "exports/CastleNoMoneyC2Dialog.js",
+      "imported": "CastleNoMoneyC2Dialog"
+    },
+    {
+      "specifier": "gge-module:export_CastleNoMoneyC2DialogProperties",
+      "source": "exports/CastleNoMoneyC2DialogProperties.js",
+      "imported": "CastleNoMoneyC2DialogProperties"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

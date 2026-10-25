@@ -1,0 +1,58 @@
+{
+  "sourceHash": "1ff4d7af772e22ac6fc0ed47ba2d3959f2924f11b732718c7d90f4ffb23feef8",
+  "generatedHash": "73bab7418cb3a80cc697d0142c63341a72ccba9a44df74a4bef1ac7c429b65b0",
+  "constructor": "implicit-super",
+  "accessors": [
+    "get:cmdId",
+    "set:cmdId"
+  ],
+  "methods": [
+    "executeCommand"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleCommand",
+      "source": "exports/CastleCommand.js",
+      "imported": "CastleCommand"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "source": "exports/ClientConstSF.js",
+      "imported": "ClientConstSF"
+    },
+    {
+      "specifier": "ggs.dll:export:ERROR",
+      "source": "ggs.dll/modules/exports/ERROR.js",
+      "imported": "ERROR",
+      "confidence": "unique-member-and-export"
+    },
+    {
+      "specifier": "gge-module:export_AutoRecruitmentEvent",
+      "source": "exports/AutoRecruitmentEvent.js",
+      "imported": "AutoRecruitmentEvent"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "source": "exports/CastleDialogHandler.js",
+      "imported": "CastleDialogHandler"
+    },
+    {
+      "specifier": "gge-module:export_AutoRecruitmentBuyRecruitmentSlots",
+      "source": "exports/AutoRecruitmentBuyRecruitmentSlots.js",
+      "imported": "AutoRecruitmentBuyRecruitmentSlots"
+    },
+    {
+      "specifier": "gge-module:export_AutoRecruitmentBuyRecruitmentSlotsProperties",
+      "source": "exports/AutoRecruitmentBuyRecruitmentSlotsProperties.js",
+      "imported": "AutoRecruitmentBuyRecruitmentSlotsProperties"
+    }
+  ],
+  "renamed": [
+    "value",
+    "statusCode",
+    "responseFields",
+    "parsedResponse"
+  ],
+  "removedRuntimeInterfaceCalls": 1,
+  "fullRuntimeEquivalent": false
+}

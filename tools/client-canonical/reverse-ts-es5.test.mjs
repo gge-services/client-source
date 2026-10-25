@@ -1,0 +1,101 @@
+import { test } from 'node:test'
+import assert from 'node:assert/strict'
+import { readFile } from 'node:fs/promises'
+import { dirname, join } from 'node:path'
+import { fileURLToPath } from 'node:url'
+import vm from 'node:vm'
+import typescript from 'typescript'
+import { buildSemanticGraph, stableNodeId, resolveNode } from './build-semantic-graph.mjs'
+import { reconstructEs5Class } from './reverse-ts-es5.mjs'
+
+const root=join(dirname(fileURLToPath(import.meta.url)),'../..')
+const game=join(root,'bundles/Game.bundle')
+const manifest=JSON.parse(await readFile(join(game,'manifest.json'),'utf8'))
+const dllManifest=JSON.parse(await readFile(join(root,'bundles/ggs.dll/manifest.json'),'utf8'))
+const options={specifiers:manifest.specifiers,errorExportAvailable:dllManifest.symbolViews.filter(v=>v.name==='ERROR').length===1}
+
+function runtimeCase(source,compiled,number) {
+  const events=[]
+  function CastleCommand() {}
+  Object.defineProperty(CastleCommand.prototype,'cmdId',{configurable:true,get(){return this.setterResult},set(value){this.setterResult=value;events.push(['set',value])}})
+  CastleCommand.prototype.showErrorDialog=function(status,response){events.push(['error',status,response.length])}
+  const gameErrors={ERROR:{ALL_OK:0}}
+  const clientConst={ClientConstSF:{S2C_ALLIANCE_SEARCH_ALLIANCE_LIST:'AAL',S2C_GET_XP:'GXP',S2C_ABG_GET_ALLIANCE_EVENT_STATISTICS:'GAE'}}
+  const model={CastleModel:{
+    otherPlayerData:{parseOwnerInfoArray(value){events.push(['owner',value.id])}},
+    allianceData:{parse_AAL(value){events.push(['alliance',value.OI.id])}},
+    userData:{parse_GXP(value){events.push(['xp',value.xp])}}
+  }}
+  const importMap={
+    'gge-module:exact_6fd0a7f85c69b366':{__extends(C,D){Object.setPrototypeOf(C,D);C.prototype=Object.create(D.prototype);C.prototype.constructor=C}},
+    'gge-module:exact_81dacdf05bd32292':{classImplementsInterfaces(){}},
+    'gge-module:exact_26a421b704832cff':gameErrors,
+    'gge-module:export_CastleCommand':{CastleCommand},
+    'gge-module:export_ClientConstSF':clientConst,
+    'gge-module:export_CastleModel':model,
+    './CastleCommand':{CastleCommand},
+    './ClientConstSF':clientConst,
+    './CastleModel':model,
+    '../../../ggs.dll/reconstructed/exports/ERROR':gameErrors
+  }
+  const exports={}
+  vm.runInNewContext(compiled?typescript.transpileModule(source,{compilerOptions:{module:typescript.ModuleKind.CommonJS,target:typescript.ScriptTarget.ES2015}}).outputText:source,{
+    exports,require(specifier){if(!Object.hasOwn(importMap,specifier))throw Error('Unknown import '+specifier);return importMap[specifier]},Object,JSON
+  })
+  const Constructor=Object.values(exports)[0]
+  const instance=new Constructor()
+  instance.cmdId=123
+  const getter=instance.cmdId
+  if(number==='AALCommand')instance.executeCommand(0,['',JSON.stringify({OI:{id:7}})])
+  else if(number==='GXPCommand')instance.executeCommand(0,['',JSON.stringify({xp:5})])
+  instance.executeCommand(17,[''])
+  return {events,getter}
+}
+
+test('reverses real ES5 classes with getters, setters, named methods, inherited setter dispatch and stable imports',async()=>{
+  for(const name of ['AALCommand','GXPCommand','GAECommand']){
+    const source=await readFile(join(game,'modules/exports/'+name+'.js'),'utf8')
+    const result=reconstructEs5Class(source,options)
+    assert.ok(result,name)
+    assert.equal(result.className,name)
+    assert.match(result.code,new RegExp('export class '+name+' extends CastleCommand'))
+    assert.match(result.code,/get cmdId\(\)/)
+    assert.match(result.code,/set cmdId\(value\)/)
+    assert.match(result.code,/super\.cmdId = value/)
+    assert.match(result.code,/executeCommand\(statusCode, responseFields\)/)
+    assert.doesNotMatch(result.code,/\.prototype\.|getOwnPropertyDescriptor|Object\.defineProperty|gge-module:|__extends/)
+    assert.equal(result.metadata.fullRuntimeEquivalent,false)
+    assert.equal(result.metadata.removedRuntimeInterfaceCalls,1)
+    if (name!=='GAECommand') assert.deepEqual(runtimeCase(source,false,name),runtimeCase(result.code,true,name))
+  }
+})
+
+test('reconstructs identical readable source after generated identifiers and wrapper ids change',async()=>{
+  const source=await readFile(join(game,'modules/exports/AALCommand.js'),'utf8')
+  const baseline=reconstructEs5Class(source,options)
+  const varied=source.replaceAll('__dep_exact_26a421b704832cff','randomErrors')
+    .replaceAll('gge-module:exact_26a421b704832cff','gge-module:exact_changedWebpackHash')
+    .replaceAll('__s9param0','mangledOne').replaceAll('__s9param1','mangledTwo')
+    .replaceAll('__s9local0','newScopeLocal').replaceAll('__s7param0','setterParameter')
+  const altered=reconstructEs5Class(varied,options)
+  assert.equal(altered.code,baseline.code)
+  assert.notEqual(altered.metadata.sourceHash,baseline.metadata.sourceHash)
+})
+
+test('rejects a misleading superclass property descriptor',async()=>{
+  const source=await readFile(join(game,'modules/exports/AALCommand.js'),'utf8')
+  assert.throws(()=>reconstructEs5Class(source.replace('CastleCommand.CastleCommand.prototype, "cmdId"','CastleModel.CastleModel.prototype, "cmdId"'),options),/Unsupported inherited accessor/)
+})
+
+test('constructs a durable graph with distinct stable public identities',async()=>{
+  const graph=await buildSemanticGraph(root)
+  assert.equal(graph.moduleCount,6850)
+  assert.equal(graph.nodes.length,6850)
+  const aal=manifest.modules.find(m=>m.specifier==='gge-module:export_AALCommand')
+  const id=stableNodeId('Game.bundle',aal)
+  assert.ok(id.includes('export:AALCommand'))
+  assert.equal(resolveNode(graph,'Game.bundle',aal.specifier),id)
+  assert.ok(graph.edges.some(e=>e.from===id&&e.to?.includes('export:CastleCommand')))
+  assert.ok(graph.edges.some(e=>e.from===id&&e.to?.includes('export:ClientConstSF')))
+  assert.equal(resolveNode(graph,'Game.bundle','gge-module:does_not_exist'),null)
+})
