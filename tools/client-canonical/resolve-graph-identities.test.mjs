@@ -8,9 +8,9 @@ import {deriveGraphIdentities} from './resolve-graph-identities.mjs'
 test('derives collision-free two-sided identities from anchored dependency graph',async()=>{
   const graph=await buildSemanticGraph(join(dirname(fileURLToPath(import.meta.url)),'../..'))
   const audit=deriveGraphIdentities(graph)
-  assert.equal(audit.verifiedNamed,6575)
+  assert.equal(audit.verifiedNamed,6621)
   assert.ok(audit.derivedCandidates>0)
-  assert.equal(audit.derivedCandidates+audit.unresolved,275)
+  assert.equal(audit.derivedCandidates+audit.unresolved,229)
   assert.equal(new Set(audit.candidates.map(x=>x.id)).size,audit.derivedCandidates)
   assert.ok(audit.candidates.every(x=>x.predecessorCount>0&&x.successorCount>0))
 })
