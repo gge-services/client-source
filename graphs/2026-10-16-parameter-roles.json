@@ -1,0 +1,159 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "scope": "reconstructed-command-class-methods",
+  "reconstructedCommands": 687,
+  "totalParameters": 1848,
+  "positionalOnly": 232,
+  "semanticOrNonGeneric": 1616,
+  "additionalProvenRoles": 304,
+  "additionalRoles": {
+    "event-object": 1,
+    "protocol-fields": 1,
+    "protocol-payload": 135,
+    "protocol-status": 135,
+    "status-payload-pair": 32
+  },
+  "examples": [
+    {
+      "class": "AAACommand",
+      "method": "executeCommand",
+      "index": 0,
+      "name": "statusCode",
+      "reason": "status-branch-and-response-fields"
+    },
+    {
+      "class": "AAACommand",
+      "method": "executeCommand",
+      "index": 1,
+      "name": "responseFields",
+      "reason": "server-command-payload"
+    },
+    {
+      "class": "AATCommand",
+      "method": "executeCommand",
+      "index": 0,
+      "name": "statusCode",
+      "reason": "status-branch-and-response-fields"
+    },
+    {
+      "class": "AATCommand",
+      "method": "executeCommand",
+      "index": 1,
+      "name": "responseFields",
+      "reason": "server-command-payload"
+    },
+    {
+      "class": "ABDCommand",
+      "method": "executeCommand",
+      "index": 0,
+      "name": "statusCode",
+      "reason": "status-branch-and-response-fields"
+    },
+    {
+      "class": "ABDCommand",
+      "method": "executeCommand",
+      "index": 1,
+      "name": "responseFields",
+      "reason": "server-command-payload"
+    },
+    {
+      "class": "ABGCAMCommand",
+      "method": "executeCommand",
+      "index": 0,
+      "name": "statusCode",
+      "reason": "status-branch-and-response-fields"
+    },
+    {
+      "class": "ABGCAMCommand",
+      "method": "executeCommand",
+      "index": 1,
+      "name": "responseFields",
+      "reason": "server-command-payload"
+    },
+    {
+      "class": "ACDCommand",
+      "method": "executeCommand",
+      "index": 0,
+      "name": "statusCode",
+      "reason": "status-branch-and-response-fields"
+    },
+    {
+      "class": "ACDCommand",
+      "method": "executeCommand",
+      "index": 1,
+      "name": "responseFields",
+      "reason": "server-command-payload"
+    },
+    {
+      "class": "ACECommand",
+      "method": "executeCommand",
+      "index": 0,
+      "name": "statusCode",
+      "reason": "status-branch-and-response-fields"
+    },
+    {
+      "class": "ACECommand",
+      "method": "executeCommand",
+      "index": 1,
+      "name": "responseFields",
+      "reason": "server-command-payload"
+    },
+    {
+      "class": "ADACommand",
+      "method": "executeCommand",
+      "index": 0,
+      "name": "statusCode",
+      "reason": "status-branch-and-response-fields"
+    },
+    {
+      "class": "ADACommand",
+      "method": "executeCommand",
+      "index": 1,
+      "name": "responseFields",
+      "reason": "server-command-payload"
+    },
+    {
+      "class": "ADPCommand",
+      "method": "executeCommand",
+      "index": 0,
+      "name": "statusCode",
+      "reason": "status-branch-and-response-fields"
+    },
+    {
+      "class": "ADPCommand",
+      "method": "executeCommand",
+      "index": 1,
+      "name": "responseFields",
+      "reason": "server-command-payload"
+    },
+    {
+      "class": "AESCommand",
+      "method": "executeCommand",
+      "index": 0,
+      "name": "statusCode",
+      "reason": "status-branch-and-response-fields"
+    },
+    {
+      "class": "AESCommand",
+      "method": "executeCommand",
+      "index": 1,
+      "name": "responseFields",
+      "reason": "server-command-payload"
+    }
+  ],
+  "byName": {
+    "value": 540,
+    "responseFields": 522,
+    "statusCode": 521,
+    "argument0": 188,
+    "argument1": 33,
+    "commandResponse": 32,
+    "argument2": 5,
+    "args": 3,
+    "argument3": 1,
+    "argument4": 1,
+    "argument5": 1,
+    "event": 1
+  }
+}

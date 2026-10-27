@@ -8,9 +8,9 @@ import { PrivateOfferFailedStandardDialog } from "./PrivateOfferFailedStandardDi
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenVoucherOfferCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
-    super.execute(__s5param0);
-    var __s5local0 = __s5param0.offerID;
+  execute(argument0 = null) {
+    super.execute(argument0);
+    var __s5local0 = argument0.offerID;
     var __s5local1 = CastleModel.privateOfferData.getOfferById(__s5local0);
     if (__s5local1) {
       CommandController.instance.executeCommand(IngameClientCommands.OPEN_PRIVATE_OFFER_DIALOG_COMMAND, __s5local1);

@@ -13,14 +13,14 @@ export class SPSLMSCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    this.controller.dispatchEvent(new CastleServerMessageArrivedEvent(CastleServerMessageArrivedEvent.SPSLMS_ARRIVED, [__s9param0]));
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    this.controller.dispatchEvent(new CastleServerMessageArrivedEvent(CastleServerMessageArrivedEvent.SPSLMS_ARRIVED, [statusCode]));
+    switch (statusCode) {
       case ERROR.ALL_OK:
         CommandController.instance.executeCommand(CastleBasicController.TRACK_SSO_USER_MOVE_ACTION, [SsoUserMoveTrackingEvent.POPUP_CONFIRMED]);
         return true;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

@@ -11,7 +11,7 @@ import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleChooseLoginMethodCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     var __s5local0 = BasicModel.smartfoxClient.userForcedDisconnect;
     var __s5local1 = CastleCheatData.cheatLoginName != null && CastleCheatData.cheatLoginName != "";
     var __s5local2 = CastleModel.userData.connectToSpecialServer;
@@ -83,8 +83,8 @@ export class CastleChooseLoginMethodCommand extends SimpleCommand {
     var __s24local1 = CastleModel.localData.readLoginDataLoginToken();
     return !!this.hasAccountSavedInCookie(__s24local0, __s24local1) && (CastleModel.userData.userName = __s24local0, CastleModel.userData.loginToken = __s24local1, true);
   }
-  hasAccountSavedInCookie(__s26param0, __s26param1) {
-    return !!__s26param0 && __s26param0 != "" && !!__s26param1 && __s26param1 != "";
+  hasAccountSavedInCookie(argument0, argument1) {
+    return !!argument0 && argument0 != "" && !!argument1 && argument1 != "";
   }
   login() {
     var __s28local0;

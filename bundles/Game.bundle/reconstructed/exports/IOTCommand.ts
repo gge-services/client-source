@@ -13,9 +13,9 @@ export class IOTCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    if (__s9param0 == ERROR.ALL_OK) {
-      var __s9local0 = JSON.parse(__s9param1[1]);
+  executeCommand(argument0, argument1) {
+    if (argument0 == ERROR.ALL_OK) {
+      var __s9local0 = JSON.parse(argument1[1]);
       CastleModel.titleData.parseIOT(__s9local0);
     }
     return false;

@@ -144,7 +144,7 @@ test('restores a standalone command without fabricating a superclass',async()=>{
   const output=reconstructEs5Class(source,options)
   assert.ok(output)
   assert.match(output.code,/export class ABotCommand \{/)
-  assert.match(output.code,/execute\(__s5param0 = null\)/)
+  assert.match(output.code,/execute\(argument0 = null\)/)
   assert.doesNotMatch(output.code,/extends|\.prototype\.|__extends/)
   assert.match(output.metadata.sourceHash,/^[0-9a-f]{64}$/)
 })

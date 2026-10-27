@@ -5,36 +5,36 @@ import { CastleModel } from "./CastleModel";
 import { CastleTutorialArrowController } from "./CastleTutorialArrowController";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 export class GeneralIntroductionGuidanceBasicCommand extends SimpleCommand {
-  execute(__s5param0) {
-    super.execute(__s5param0);
-    this._questConditionVO = __s5param0;
+  execute(argument0) {
+    super.execute(argument0);
+    this._questConditionVO = argument0;
     this.internalExecute();
   }
   internalExecute() {}
-  showGuidance(__s9param0, __s9param1, __s9param2 = null) {
+  showGuidance(argument0, argument1, argument2 = null) {
     if (!this.layoutManager.guidancePanel) {
       this.layoutManager.addGuidancePanel();
     }
-    this.layoutManager.guidancePanel.showWithText(__s9param0, __s9param1, __s9param2);
+    this.layoutManager.guidancePanel.showWithText(argument0, argument1, argument2);
   }
   removeGuidance() {
     CastleModel.generalsIntroductionData.removeGeneralIntroductionGuidance();
   }
-  waitForExternalDialog(__s14param0, __s14param1) {
-    if (this.layoutManager.isDialogVisibleByName(__s14param0)) {
-      __s14param1();
+  waitForExternalDialog(argument0, argument1) {
+    if (this.layoutManager.isDialogVisibleByName(argument0)) {
+      argument1();
     } else {
       CastleModel.generalsIntroductionData.registerListener(this.controller, CastleLayoutManagerEvent.SHOW_EXTERNAL_DIALOG, function (__s18param0) {
-        if (__s18param0.params[0] && __s18param0.params[0] == __s14param0) {
-          __s14param1();
+        if (__s18param0.params[0] && __s18param0.params[0] == argument0) {
+          argument1();
         }
       });
     }
   }
-  waitForExternalDialogClose(__s21param0, __s21param1) {
+  waitForExternalDialogClose(argument0, argument1) {
     CastleModel.generalsIntroductionData.registerListener(this.controller, CastleLayoutManagerEvent.HIDE_EXTERNAL_DIALOG, function (__s23param0) {
-      if (__s23param0.params[0] && __s23param0.params[0] == __s21param0) {
-        __s21param1();
+      if (__s23param0.params[0] && __s23param0.params[0] == argument0) {
+        argument1();
       }
     });
   }

@@ -18,12 +18,12 @@ export class GAACommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
+  executeCommand(statusCode, responseFields) {
     var __s9local0 = [];
-    switch (__s9param0) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
         try {
-          var __s9local1 = JSON.parse(__s9param1[1]);
+          var __s9local1 = JSON.parse(responseFields[1]);
         } catch (__s13local0) {
           debug("Invalid Json String appears");
           debug(__s13local0.toString());

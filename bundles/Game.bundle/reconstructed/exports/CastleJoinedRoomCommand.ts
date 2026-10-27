@@ -4,11 +4,11 @@ import { ClientFunnelGameStates } from "../../../ggs.dll/reconstructed/exports/C
 import { ClientFunnelTrackingController } from "../../../ggs.dll/reconstructed/exports/ClientFunnelTrackingController";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleJoinedRoomCommand extends BasicJoinedRoomCommand {
-  execute(__s5param0 = null) {
-    if (__s5param0.params[0] == BasicSmartfoxClient.LOBBY_ROOM_NAME) {
+  execute(argument0 = null) {
+    if (argument0.params[0] == BasicSmartfoxClient.LOBBY_ROOM_NAME) {
       ClientFunnelTrackingController.getInstance().trackState(ClientFunnelGameStates.VERSION_CHECK_SEND);
     }
-    super.execute(__s5param0);
+    super.execute(argument0);
   }
 }
 classImplementsInterfaces(CastleJoinedRoomCommand, "ISimpleCommand");

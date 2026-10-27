@@ -11,8 +11,8 @@ export class RVECommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    switch (__s9param0) {
+  executeCommand(argument0, argument1) {
+    switch (argument0) {
       case ERROR.ALL_OK:
         CastleModel.privateOfferData.dispatchEvent(new CastleVoucherEvent(CastleVoucherEvent.VOUCHER_CODE_SUCCESS));
         break;

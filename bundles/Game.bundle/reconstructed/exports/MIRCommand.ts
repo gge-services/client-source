@@ -9,8 +9,8 @@ export class MIRCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    var __s9local0 = JSON.parse(__s9param1[1]);
+  executeCommand(argument0, argument1) {
+    var __s9local0 = JSON.parse(argument1[1]);
     CastleModel.userData.parse_MIR(__s9local0);
     CastleModel.userData.parse_MIR_openDialog(__s9local0);
     return true;

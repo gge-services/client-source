@@ -7,7 +7,7 @@ import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleComm
 import { SpecialServerHelper } from "./SpecialServerHelper";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleFacebookLoginRegistrationCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     CastleModel.localData.saveLoginData("", "");
     CastleModel.localData.saveFacebookID(CastleFacebookModule.userID);
     if (!!CastleFacebookModule.accessToken && CastleFacebookModule.accessToken != "" && !SpecialServerHelper.isOnSpecialServer && !EnvGlobalsHandler.globals.isSpecialServerConnectStarted && !CastleModel.userData.isConnectedToFacebook) {

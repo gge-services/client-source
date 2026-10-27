@@ -10,13 +10,13 @@ export class ANLCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
         this.controller.dispatchEvent(new CastleMessageDataEvent(CastleMessageDataEvent.SENT_OK));
         return true;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
         this.controller.dispatchEvent(new CastleMessageDataEvent(CastleMessageDataEvent.SENT_ERROR));
     }
     return false;

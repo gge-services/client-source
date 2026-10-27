@@ -15,11 +15,11 @@ export class AIICommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
         this.controller.removeEventListener(CastlePlayerInfoEvent.GET_PLAYERINFO, this.bindFunction(this.onPlayerInfoGained));
-        this.paramObj = JSON.parse(__s9param1[1]);
+        this.paramObj = JSON.parse(responseFields[1]);
         var __s9local0 = CastleModel.attackData.parse_AII(this.paramObj);
         if (__s9local0.targetArea && !__s9local0.targetArea.ownerInfo && __s9local0.targetArea.occupierPId > 0) {
           this.controller.addEventListener(CastlePlayerInfoEvent.GET_PLAYERINFO, this.bindFunction(this.onPlayerInfoGained));
@@ -29,7 +29,7 @@ export class AIICommand extends CastleCommand {
         this.openDialog(__s9local0);
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }
@@ -38,8 +38,8 @@ export class AIICommand extends CastleCommand {
     var __s13local0 = CastleModel.attackData.parse_AII(this.paramObj);
     this.openDialog(__s13local0);
   }
-  openDialog(__s15param0) {
-    CastleDialogHandler.getInstance().registerDefaultDialogs(AttackDialog, new CastleAttackDialogProperties(__s15param0));
+  openDialog(argument0) {
+    CastleDialogHandler.getInstance().registerDefaultDialogs(AttackDialog, new CastleAttackDialogProperties(argument0));
   }
 }
 classImplementsInterfaces(AIICommand, "IExecCommand");

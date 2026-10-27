@@ -1,6 +1,6 @@
 {
   "sourceHash": "92308ac550d11be99b5baed61dcb46846d57fa03d5db9cf391c3d41b341ea9fd",
-  "generatedHash": "1e0c65815402d2af6f7a09a93098aaedd7aa83ae9f39a4235988a7c517d4df42",
+  "generatedHash": "517f93662b3d8d890c254ce5c486086de8dba6da5f613ad5351c8406be1fe8d5",
   "constructor": "implicit-super",
   "accessors": [],
   "methods": [
@@ -173,6 +173,17 @@
     }
   ],
   "renamed": [],
+  "verifiedParameterRenames": [
+    {
+      "method": "onToolSelected",
+      "index": 0,
+      "original": "__s39param0",
+      "name": "event",
+      "meaning": "event-object",
+      "evidence": "observed-event-property",
+      "confidence": "high"
+    }
+  ],
   "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
   "staticInitializationPreserved": false,

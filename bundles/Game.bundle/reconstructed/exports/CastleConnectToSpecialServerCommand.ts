@@ -26,9 +26,9 @@ export class CastleConnectToSpecialServerCommand extends SimpleCommand {
     super(...args);
     this.BLOCK_ACCESS = false;
   }
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     CastleModel.userData.resetApiToken();
-    if (__s5param0 == "login") {
+    if (argument0 == "login") {
       this.doLogin();
     } else {
       this.connectToSpecialServer();
@@ -42,17 +42,17 @@ export class CastleConnectToSpecialServerCommand extends SimpleCommand {
       CastleDialogHandler.getInstance().registerDefaultDialogs(CastleDarkOkLabeledDialog, new BasicStandardOkDialogProperties("dialog_clientVersion_switch_confirmDialog_header", this.blockerTextID, this.bindFunction(this.onConfirmSwitch), "dialog_clientVersion_confirmSwitch", this.bindFunction(this.onClose)));
     }
   }
-  onClose(__s13param0 = null) {
+  onClose(argument0 = null) {
     CastleLayoutManager.getInstance().hideAllDialogs();
   }
   get blockerTextID() {
     return "";
   }
-  onConfirmSwitch(__s17param0 = null) {
+  onConfirmSwitch(argument0 = null) {
     ClientFunnelTrackingController.getInstance().trackState("SWITCH_TO_FLASH");
     ExternalInterface.call("ggsChangeGameClient");
   }
-  onTempServerInfoArrived(__s19param0) {
+  onTempServerInfoArrived(argument0) {
     this.controller.removeEventListener(CastleServerMessageArrivedEvent.SPECIAL_SEVER_INFO_ARRIVED, this.bindFunction(this.onTempServerInfoArrived));
     this.loginToken = CastleModel.userData.specialServerLoginToken;
     this.env.isSpecialServerConnectStarted = true;

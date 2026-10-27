@@ -14,9 +14,9 @@ export class MSPCommand extends CastleCommand {
   executeCommand(statusCode, responseFields) {
     return super.executeCommand(statusCode, responseFields);
   }
-  exec(__s11param0) {
-    var __s11local0 = int(__s11param0[0]);
-    var __s11local1 = __s11param0[1];
+  exec(commandResponse) {
+    var __s11local0 = int(commandResponse[0]);
+    var __s11local1 = commandResponse[1];
     if (__s11local0 == ERROR.ALL_OK) {
       var __s11local2 = JSON.parse(__s11local1[1]);
       CastlePopUpHelper.displayPopUps(__s11local2);

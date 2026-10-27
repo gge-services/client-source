@@ -13,8 +13,8 @@ import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleComm
 import { WorldClassic } from "../../../ggs.dll/reconstructed/exports/WorldClassic";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class GotoMainCastleUniqueBuildingCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
-    this.buildingType = __s5param0[0];
+  execute(argument0 = null) {
+    this.buildingType = argument0[0];
     var __s5local0 = CastleModel.userData.castleList.getMainCastleByKingdomID(WorldClassic.KINGDOM_ID);
     if (this.layoutManager.isInMyCastle && CastleModel.areaData.activeAreaInfo.equalsOtherWMO(__s5local0.objectId, __s5local0.kingdomID)) {
       this.showBuilding();
@@ -23,7 +23,7 @@ export class GotoMainCastleUniqueBuildingCommand extends SimpleCommand {
       GotoMainCastleUniqueBuildingCommand.controller.addEventListener(CastleServerMessageArrivedEvent.JAA_ARRIVED, this.bindFunction(this.oJAAArrived));
     }
   }
-  oJAAArrived(__s9param0) {
+  oJAAArrived(argument0) {
     GotoMainCastleUniqueBuildingCommand.controller.removeEventListener(CastleServerMessageArrivedEvent.JAA_ARRIVED, this.bindFunction(this.oJAAArrived));
     this.showBuilding();
   }

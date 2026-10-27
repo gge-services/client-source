@@ -42,7 +42,7 @@ export class AACommand extends CastleCommand {
     }
     return false;
   }
-  onSubscriptionRefreshed(__s15param0) {
+  onSubscriptionRefreshed(argument0) {
     this._isWaitingForSubscriptionRefresh = false;
     CastleBasicController.getInstance().removeEventListener(SubscriptionEvent.ON_SUBSCRIPTION_CHANGED, this.bindFunction(this.onSubscriptionRefreshed));
     CastleBasicController.getInstance().dispatchEvent(new AdvisorActivationEvent(AdvisorActivationEvent.ADVISOR_ACTIVATION_CHANGED, AttackAdvisorConst.ADVISOR_TYPE_BARON));

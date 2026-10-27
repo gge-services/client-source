@@ -4,7 +4,7 @@ import { CastleLayoutManager } from "./CastleLayoutManager";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenIngameHelpDialogCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     if (!CastleLayoutManager.getInstance().tutorialPanel.isVisible()) {
       CastleDialogHandler.getInstance().registerDefaultDialogs(CastleIngameHelpDialog);
     }

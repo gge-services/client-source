@@ -9,10 +9,10 @@ export class RCACommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
-        JSON.parse(__s9param1[1]);
+        JSON.parse(responseFields[1]);
     }
     return false;
   }

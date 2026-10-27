@@ -11,12 +11,12 @@ export class PIOCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
+  executeCommand(statusCode, responseFields) {
     var __s9local0;
     Iso.renderer.mouse.cancelDraggedTarget();
-    switch (__s9param0) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
-        var __s9local1 = (__s9local0 = JSON.parse(__s9param1[1])).NO[1];
+        var __s9local1 = (__s9local0 = JSON.parse(responseFields[1])).NO[1];
         CastleModel.areaData.activeArea.updater.parseNewIsoObject(__s9local0);
         CastleModel.decoStorage.parseSIN(__s9local0.sin);
         if (Iso.data.areaData.isoData) {
@@ -26,7 +26,7 @@ export class PIOCommand extends CastleCommand {
       case ERROR.INVALID_POSITION:
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

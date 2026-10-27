@@ -16,12 +16,12 @@ export class CAMCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
+  executeCommand(statusCode, responseFields) {
     var __s9local0;
-    if (__s9param1 && __s9param1.length > 1) {
-      __s9local0 = JSON.parse(__s9param1[1]);
+    if (responseFields && responseFields.length > 1) {
+      __s9local0 = JSON.parse(responseFields[1]);
     }
-    switch (__s9param0) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
         CastleModel.currencyData.parseGCU(__s9local0.gcu);
         CastleModel.otherPlayerData.parseOwnerInfoArray(__s9local0.O);
@@ -43,7 +43,7 @@ export class CAMCommand extends CastleCommand {
         CastleDialogHandler.getInstance().registerDefaultDialogs(CastleStandardOkDialog, new BasicStandardOkDialogProperties("", Localize.text("errorCode_313")));
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

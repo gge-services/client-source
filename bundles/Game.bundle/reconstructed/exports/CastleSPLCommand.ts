@@ -26,9 +26,9 @@ export class CastleSPLCommand extends SPLCommand {
     CONSTRUCTOR_HACK;
     super();
   }
-  handleGameSpecificErrors(__s5param0, __s5param1) {
-    info("error: " + __s5param0 + ", params: " + __s5param1);
-    switch (__s5param0) {
+  handleGameSpecificErrors(argument0, argument1) {
+    info("error: " + argument0 + ", params: " + argument1);
+    switch (argument0) {
       case ERROR.ALL_OK:
         CastleModel.userData.firstLogin = true;
         if (this.layoutManager.currentState == BasicLayoutManager.STATE_STARTSCREEN && (this.env.loginIsKeyBased || this.env.isFacebook)) {
@@ -37,47 +37,47 @@ export class CastleSPLCommand extends SPLCommand {
         }
         break;
       case ERROR.INVALID_NAME:
-        var __s5local0 = JSON.parse(__s5param1[1]);
+        var __s5local0 = JSON.parse(argument1[1]);
         this.controller.dispatchEvent(new CastleRegisterErrorEvent(CastleRegisterErrorEvent.REGISTER_ERROR, CastleRegisterErrorEvent.INVALID_NAME, __s5local0));
         break;
       case ERROR.NAME_ALREADY_IN_USE:
-        __s5local0 = JSON.parse(__s5param1[1]);
+        __s5local0 = JSON.parse(argument1[1]);
         this.controller.dispatchEvent(new CastleRegisterErrorEvent(CastleRegisterErrorEvent.REGISTER_ERROR, CastleRegisterErrorEvent.NAME_ALREADY_IN_USE, __s5local0));
         break;
       case ERROR.NAME_HAS_ONLY_NUMBERS:
-        __s5local0 = JSON.parse(__s5param1[1]);
+        __s5local0 = JSON.parse(argument1[1]);
         this.controller.dispatchEvent(new CastleRegisterErrorEvent(CastleRegisterErrorEvent.REGISTER_ERROR, CastleRegisterErrorEvent.NAME_HAS_ONLY_NUMBERS, __s5local0));
         break;
       case ERROR.USAGE_OF_BADWORDS:
-        __s5local0 = JSON.parse(__s5param1[1]);
+        __s5local0 = JSON.parse(argument1[1]);
         this.controller.dispatchEvent(new CastleRegisterErrorEvent(CastleRegisterErrorEvent.REGISTER_ERROR, CastleRegisterErrorEvent.USAGE_OF_BADWORDS, __s5local0));
         break;
       case ERROR.NO_FREE_RENAME:
         if (CastleModel.userData.userLevel > 1) {
-          CommandController.instance.executeCommand(BasicController.COMMAND_HANDLE_SERVER_ERROR, new ServerErrorVO(__s5param0, __s5param1));
+          CommandController.instance.executeCommand(BasicController.COMMAND_HANDLE_SERVER_ERROR, new ServerErrorVO(argument0, argument1));
         }
         break;
       case ERROR.IS_BANNED:
         if (!this.env.loginIsKeyBased) {
           this.layoutManager.state = BasicLayoutManager.STATE_STARTSCREEN;
         }
-        var __s5local1 = JSON.parse(__s5param1[1]);
+        var __s5local1 = JSON.parse(argument1[1]);
         this.handleBannedUser(__s5local1.RS);
         break;
       default:
-        CommandController.instance.executeCommand(BasicController.COMMAND_HANDLE_SERVER_ERROR, new ServerErrorVO(__s5param0, __s5param1));
+        CommandController.instance.executeCommand(BasicController.COMMAND_HANDLE_SERVER_ERROR, new ServerErrorVO(argument0, argument1));
     }
   }
-  handleBannedUser(__s11param0) {
-    if (__s11param0 >= ClientConstTime.SECONDS_PER_FOUR_WEEKS) {
+  handleBannedUser(argument0) {
+    if (argument0 >= ClientConstTime.SECONDS_PER_FOUR_WEEKS) {
       CastleDialogHandler.getInstance().registerDialogs(CastleTimedNoClickDialog, new BasicTimedNoClickProperties(Localize.text("generic_alert_watchout"), Localize.text("generic_login_banned"), -1));
     } else {
       var __s11local0;
       var __s11local1 = new Date();
       var __s11local2 = new Date();
-      __s11local2.setTime(__s11local2.getTime() + __s11param0 * ClientConstTime.SEC_2_MILLISEC);
+      __s11local2.setTime(__s11local2.getTime() + argument0 * ClientConstTime.SEC_2_MILLISEC);
       __s11local0 = __s11local1.getFullYear() == __s11local2.getFullYear() && __s11local1.getMonth() == __s11local2.getMonth() && __s11local1.day == __s11local2.day ? TimeStringHelper.getDateToString(__s11local2.getTime(), TimeStringHelper.DATE_TIMEOCLOCK_FORMAT_ADVANCED, CastleModel.languageData.getTextById) : TimeStringHelper.getDateStringFromDate(__s11local2, CastleModel.languageData.getTextById) + " " + TimeStringHelper.getDateToString(__s11local2.getTime(), TimeStringHelper.DATE_TIMEOCLOCK_FORMAT_ADVANCED, CastleModel.languageData.getTextById);
-      CastleDialogHandler.getInstance().registerDialogs(AccountBannedDialog, new BasicTimedNoClickProperties(Localize.text("generic_alert_watchout"), Localize.text("generic_login_banned_2", [__s11local0]), __s11param0));
+      CastleDialogHandler.getInstance().registerDialogs(AccountBannedDialog, new BasicTimedNoClickProperties(Localize.text("generic_alert_watchout"), Localize.text("generic_login_banned_2", [__s11local0]), argument0));
     }
   }
   get controller() {

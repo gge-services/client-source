@@ -1,6 +1,6 @@
 {
   "sourceHash": "7071b8ca1e15d1f71ae8841e13a20cf726985eb69e35048c9c9f2b4732464dc2",
-  "generatedHash": "8385b32b52fe1c56296b328543824e9bdacb1d33bd7ec981e810166a5e739566",
+  "generatedHash": "c66c7a17cacedc2f9213612f8dcb8c8162f98212009fc397d584d013a6ad74b8",
   "constructor": "implicit-super",
   "accessors": [
     "get:arrows",

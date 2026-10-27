@@ -3,11 +3,11 @@ import { Localization } from "../../../ggs.dll/reconstructed/exports/Localizatio
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SetAddPipesAtEndOfTextCommand extends SimpleCommand {
-  constructor(__s3param0 = false) {
-    super(__s3param0);
+  constructor(argument0 = false) {
+    super(argument0);
   }
-  execute(__s5param0 = null) {
-    super.execute(__s5param0);
+  execute(argument0 = null) {
+    super.execute(argument0);
     var __s5local0 = CastleModel.localData.readAddPipesOnEndOfText();
     CastleModel.languageData.addPipeToEndOfString = __s5local0;
     Localization.usePipe = __s5local0;

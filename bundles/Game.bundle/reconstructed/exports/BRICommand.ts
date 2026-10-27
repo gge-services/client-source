@@ -29,13 +29,13 @@ export class BRICommand extends CastleCommand {
     }
     return false;
   }
-  static parseEquipmentInventory(__s12param0) {
-    if (!__s12param0) {
+  static parseEquipmentInventory(argument0) {
+    if (!argument0) {
       return null;
     }
     var __s12local0 = [];
-    if (__s12param0 != null) {
-      for (var __s12local1 = 0, __s12local2 = __s12param0; __s12local1 < __s12local2.length; __s12local1++) {
+    if (argument0 != null) {
+      for (var __s12local1 = 0, __s12local2 = argument0; __s12local1 < __s12local2.length; __s12local1++) {
         var __s12local3 = __s12local2[__s12local1];
         if (__s12local3 !== undefined) {
           var __s12local4 = new CollectableItemRelicVO();

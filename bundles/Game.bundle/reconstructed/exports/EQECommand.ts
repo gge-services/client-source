@@ -26,12 +26,12 @@ export class EQECommand extends CastleCommand {
     }
     return false;
   }
-  parse_equipment(__s12param0) {
-    if (!__s12param0) {
+  parse_equipment(argument0) {
+    if (!argument0) {
       return null;
     }
     var __s12local0 = [];
-    var __s12local1 = CastleEquipmentFactory.createEquipmentVO(__s12param0);
+    var __s12local1 = CastleEquipmentFactory.createEquipmentVO(argument0);
     __s12local0.push(__s12local1);
     return __s12local0;
   }

@@ -11,12 +11,12 @@ import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/export
 class FacebookUserData {}
 const __s0local1 = FacebookUserData;
 export class CastleFacebookGetUserDataCommand extends SimpleCommand {
-  execute(__s5param0) {
+  execute(argument0) {
     CastleFacebookModule.getUserData(function (__s7param0) {
       if (__s7param0) {
         CastleModel.userData.facebookEmail = CastleStringHelper.parseToStringOrEmpty(__s7param0.email);
         new __s0local1();
-        if (!__s5param0 && !CastleLayoutManager.getInstance().isDialogVisibleByName(OptionsDialog)) {
+        if (!argument0 && !CastleLayoutManager.getInstance().isDialogVisibleByName(OptionsDialog)) {
           return;
         }
         var __s7local0 = TrackingCache.getInstance().getEvent(TrackingEventIds.FACEBOOK_USER_DATA);

@@ -5,12 +5,12 @@ export class GRFCommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.S2C_GENERAL_RESET_FLAGS;
   }
-  executeCommand(__s7param0, __s7param1) {
-    switch (__s7param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
         break;
       default:
-        this.showErrorDialog(__s7param0, __s7param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

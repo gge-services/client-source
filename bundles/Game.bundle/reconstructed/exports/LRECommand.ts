@@ -24,11 +24,11 @@ export class LRECommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
+  executeCommand(statusCode, responseFields) {
     var __s9local0;
-    switch (__s9param0) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
-        __s9local0 = JSON.parse(__s9param1[1]);
+        __s9local0 = JSON.parse(responseFields[1]);
         CastleModel.userData.playerID = __s9local0 && __s9local0.PID ? __s9local0.PID : CastleModel.userData.playerID;
         CastleModel.localData.saveCountryData(GGSCountryController.instance.currentCountry.ggsCountryCode);
         ClientFunnelTrackingController.getInstance().trackState(ClientFunnelGameStates.REGISTERED);
@@ -54,14 +54,14 @@ export class LRECommand extends CastleCommand {
         this.controller.dispatchEvent(new CastleRegisterErrorEvent(CastleRegisterErrorEvent.REGISTER_ERROR, CastleRegisterErrorEvent.INVALID_PASSWORD));
         break;
       case ERROR.INVALID_NAME:
-        if (__s9param1[1] !== undefined) {
-          __s9local0 = JSON.parse(__s9param1[1]);
+        if (responseFields[1] !== undefined) {
+          __s9local0 = JSON.parse(responseFields[1]);
           this.controller.dispatchEvent(new CastleRegisterErrorEvent(CastleRegisterErrorEvent.REGISTER_ERROR, CastleRegisterErrorEvent.INVALID_NAME, __s9local0));
         }
         break;
       case ERROR.NAME_ALREADY_IN_USE:
-        if (__s9param1[1] !== undefined) {
-          __s9local0 = JSON.parse(__s9param1[1]);
+        if (responseFields[1] !== undefined) {
+          __s9local0 = JSON.parse(responseFields[1]);
           this.controller.dispatchEvent(new CastleRegisterErrorEvent(CastleRegisterErrorEvent.REGISTER_ERROR, CastleRegisterErrorEvent.NAME_ALREADY_IN_USE, __s9local0));
         }
         break;
@@ -71,14 +71,14 @@ export class LRECommand extends CastleCommand {
       case ERROR.WRONG_MODE:
         break;
       case ERROR.NAME_HAS_ONLY_NUMBERS:
-        if (__s9param1[1] !== undefined) {
-          __s9local0 = JSON.parse(__s9param1[1]);
+        if (responseFields[1] !== undefined) {
+          __s9local0 = JSON.parse(responseFields[1]);
           this.controller.dispatchEvent(new CastleRegisterErrorEvent(CastleRegisterErrorEvent.REGISTER_ERROR, CastleRegisterErrorEvent.NAME_HAS_ONLY_NUMBERS, __s9local0));
         }
         break;
       case ERROR.USAGE_OF_BADWORDS:
-        if (__s9param1[1] !== undefined) {
-          __s9local0 = JSON.parse(__s9param1[1]);
+        if (responseFields[1] !== undefined) {
+          __s9local0 = JSON.parse(responseFields[1]);
           this.controller.dispatchEvent(new CastleRegisterErrorEvent(CastleRegisterErrorEvent.REGISTER_ERROR, CastleRegisterErrorEvent.USAGE_OF_BADWORDS, __s9local0));
         }
         break;
@@ -92,7 +92,7 @@ export class LRECommand extends CastleCommand {
         CommandController.instance.executeCommand(BasicController.COMMAND_HANDLE_IDENTITY_MANAGEMENT_ERROR, IdentityManagementConstants.ERROR_SERVER_KOREA_ID_ALREADY_REGISTERED);
         break;
       case IdentityManagementConstants.ERROR_SERVER_NO_KOREA_USER_DATA_AVAILABLE:
-        __s9local0 = JSON.parse(__s9param1[1]);
+        __s9local0 = JSON.parse(responseFields[1]);
         CastleModel.userData.playerID = __s9local0 && __s9local0.PID ? __s9local0.PID : CastleModel.userData.playerID;
         if (BasicModel.identityManagement) {
           BasicModel.identityManagement.authenticateViaJS();
@@ -106,7 +106,7 @@ export class LRECommand extends CastleCommand {
       case ERROR.UNEXPECTED_FACEBOOK_ERROR:
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

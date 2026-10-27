@@ -5,7 +5,7 @@ import { CastleDialogHandler } from "./CastleDialogHandler";
 import { ClientCheatsHelper } from "./ClientCheatsHelper";
 import { DarkOkDialog } from "./DarkOkDialog";
 export class CheatOfferIDsInHeaderCommand extends ABotCommand {
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     ClientCheatsHelper.performCommand("toggleOfferIDsInMessageSubject");
     if (AMessageVO.showOfferIDsInSubject) {
       CastleDialogHandler.getInstance().registerDefaultDialogs(DarkOkDialog, new BasicStandardOkDialogProperties("OfferIDs", "OfferIDs are shown now in the MessageHeader"));

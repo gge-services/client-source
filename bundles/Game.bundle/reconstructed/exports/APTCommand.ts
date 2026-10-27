@@ -17,11 +17,11 @@ export class APTCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
-        if (__s9param1.length > 1) {
-          var __s9local0 = JSON.parse(__s9param1[1]);
+        if (responseFields.length > 1) {
+          var __s9local0 = JSON.parse(responseFields[1]);
           if (!__s9local0.PN) {
             CastleModel.titleData.parseAPT(__s9local0);
           }
@@ -47,7 +47,7 @@ export class APTCommand extends CastleCommand {
         CastleDialogHandler.getInstance().registerDefaultDialogs(CastleEilandTitleErrorDialog, new CastleEilandTitleErrorProperties("dialog_eiland_titleMenu_error", ""));
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

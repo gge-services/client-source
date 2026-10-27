@@ -12,11 +12,11 @@ import { ModernYesNoDialog } from "./ModernYesNoDialog";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class DonateForQuestCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
-    this.questVO = __s5param0[0];
-    this.conditionVO = __s5param0[1];
-    this.onYesFunc = __s5param0.length > 1 ? __s5param0[2] : null;
-    this.onNoFunc = __s5param0.length > 2 ? __s5param0[3] : null;
+  execute(argument0 = null) {
+    this.questVO = argument0[0];
+    this.conditionVO = argument0[1];
+    this.onYesFunc = argument0.length > 1 ? argument0[2] : null;
+    this.onNoFunc = argument0.length > 2 ? argument0[3] : null;
     if (this.questVO && this.conditionVO) {
       var __s5local0 = this.conditionVO.conditionMaxCounter;
       var __s5local1 = Localize.text("dialog_questbook_donateCheck_copy", [__s5local0, this.getCollectableVO().getNameTextId()]);
@@ -48,7 +48,7 @@ export class DonateForQuestCommand extends SimpleCommand {
     }
     return null;
   }
-  performAction(__s11param0 = null) {
+  performAction(argument0 = null) {
     var __s11local0 = this.conditionVO.conditionMaxCounter;
     switch (this.conditionVO.conditionType) {
       case ClientConstQuestCondition.QUESTTYPE_DONATE_FOOD:
@@ -82,7 +82,7 @@ export class DonateForQuestCommand extends SimpleCommand {
         this.controller.sendCommandVOAndWait(new C2SQuestDonateCurrencyVO(this.questVO.questID, ClientConstCurrency.ID_SAMURAI_TOKEN, __s11local0));
     }
     if (this.onYesFunc) {
-      this.onYesFunc(__s11param0);
+      this.onYesFunc(argument0);
     }
   }
   get controller() {

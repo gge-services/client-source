@@ -15,18 +15,18 @@ export class FSCCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    if (__s9param0 == ERROR.ALL_OK) {
+  executeCommand(statusCode, responseFields) {
+    if (statusCode == ERROR.ALL_OK) {
       this.controller.dispatchEvent(new PrebuiltCastleResponseEvent(false));
       return false;
     }
     this.controller.dispatchEvent(new PrebuiltCastleResponseEvent(true));
-    switch (__s9param0) {
+    switch (statusCode) {
       case ERROR.FACTION_LAST_MAN_STANDING_ACTIVE:
         CastleDialogHandler.getInstance().registerDialogsWithType(CastleStandardOkDialog, new BasicStandardOkDialogProperties(Localize.text("generic_alert_information"), Localize.text("alert_factionJoin_lms_triggered ")), false, CastleDialogConsts.PRIORITY_LOW, 0, CastleDialogConsts.DIALOG_TYPE_MODAL);
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

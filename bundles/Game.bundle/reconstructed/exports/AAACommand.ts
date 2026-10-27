@@ -8,8 +8,8 @@ export class AAACommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    this.showErrorDialog(__s9param0, __s9param1);
+  executeCommand(statusCode, responseFields) {
+    this.showErrorDialog(statusCode, responseFields);
     return false;
   }
 }

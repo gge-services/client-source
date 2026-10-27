@@ -10,14 +10,14 @@ export class MNSCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    var __s9local0 = __s9param1 && __s9param1[1] ? JSON.parse(__s9param1[1]) : null;
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    var __s9local0 = responseFields && responseFields[1] ? JSON.parse(responseFields[1]) : null;
+    switch (statusCode) {
       case ERROR.ALL_OK:
         CastleModel.playerEmailData.parse_MNS(__s9local0);
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

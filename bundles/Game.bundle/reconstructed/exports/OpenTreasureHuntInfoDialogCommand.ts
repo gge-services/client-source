@@ -7,8 +7,8 @@ import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleComm
 import { TreasureMapsConst } from "../../../ggs.dll/reconstructed/exports/TreasureMapsConst";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenTreasureHuntInfoDialogCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
-    var __s5local0 = __s5param0;
+  execute(argument0 = null) {
+    var __s5local0 = argument0;
     switch (__s5local0.progressType) {
       case TreasureMapsConst.PROGRESS_FOUND_MAP_PIECE:
         if (__s5local0.hasAllPieces) {

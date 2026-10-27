@@ -5,16 +5,16 @@ import { getDefinitionByName } from "../../../ggs.dll/reconstructed/exports/getD
 import { OpenDialogWithAdditionalExternalAssetsCommand } from "./OpenDialogWithAdditionalExternalAssetsCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenFactionInvasionEventMainDialogCommand extends OpenDialogWithAdditionalExternalAssetsCommand {
-  addAssets(__s5param0) {
+  addAssets(argument0) {
     this.loadAsset("GallantryTitlesSublayer", "GallantryTitlesSublayer");
   }
   openDialog() {
     var __s7local0 = this.getSublayerMc();
     this.open(__s7local0);
   }
-  open(__s9param0) {
+  open(argument0) {
     var __s9local0 = new FactionInvasionDialogProperties();
-    __s9local0.titlesSublayer = __s9param0;
+    __s9local0.titlesSublayer = argument0;
     CastleDialogHandler.getInstance().registerDefaultDialogs(CastleFactionInvasionEventDialog, __s9local0);
   }
   getSublayerMc() {

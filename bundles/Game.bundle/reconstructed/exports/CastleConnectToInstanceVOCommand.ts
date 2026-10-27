@@ -5,7 +5,7 @@ import { EnvGlobalsHandler } from "../../../ggs.dll/reconstructed/exports/EnvGlo
 import { SmartfoxEvent } from "../../../ggs.dll/reconstructed/exports/SmartfoxEvent";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleConnectToInstanceVOCommand extends BasicConnectToInstanceVOCommand {
-  onConnectionEstablished(__s5param0) {
+  onConnectionEstablished(argument0) {
     if (BasicModel.localData) {
       if (EnvGlobalsHandler.globals.suk == "" && !CastleModel.userData.connectToSpecialServer) {
         BasicModel.localData.saveInstance(BasicModel.instanceProxy.selectedInstanceVO.instanceId, BasicModel.instanceProxy.selectedInstanceVO.zoneId);

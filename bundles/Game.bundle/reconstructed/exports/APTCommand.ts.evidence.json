@@ -1,6 +1,6 @@
 {
   "sourceHash": "b6b8b025b80c5dd781014d5fc8f5b8cfd297e7615e8abd6447fcfb86c52e5ca4",
-  "generatedHash": "b5c4049aa9ac49f3258263b719006dae4b30f0c97d59a57fe31b8b8ba54de9c5",
+  "generatedHash": "2a7b15cc727e78ac6883bc75ce33580c72312d1914361db5e1fce1ed21af2d25",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -87,6 +87,26 @@
   ],
   "renamed": [
     "value"
+  ],
+  "verifiedParameterRenames": [
+    {
+      "method": "executeCommand",
+      "index": 0,
+      "original": "__s9param0",
+      "name": "statusCode",
+      "meaning": "protocol-status",
+      "evidence": "status-branch-and-response-fields",
+      "confidence": "high"
+    },
+    {
+      "method": "executeCommand",
+      "index": 1,
+      "original": "__s9param1",
+      "name": "responseFields",
+      "meaning": "protocol-payload",
+      "evidence": "server-command-payload",
+      "confidence": "high"
+    }
   ],
   "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,

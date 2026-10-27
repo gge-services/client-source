@@ -5,8 +5,8 @@ import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SwitchKingdomCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
-    var __s5local0 = int(int(__s5param0));
+  execute(argument0 = null) {
+    var __s5local0 = int(int(argument0));
     if (__s5local0 == -1 || !CastleModel.kingdomData.kingdomVOs.has(__s5local0)) {
       __s5local0 = 0;
     }

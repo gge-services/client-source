@@ -10,14 +10,14 @@ import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { ServerErrorVO } from "../../../ggs.dll/reconstructed/exports/ServerErrorVO";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleLostPasswordCommand extends BasicLostPasswordCommand {
-  constructor(__s3param0 = false) {
-    super(__s3param0);
+  constructor(argument0 = false) {
+    super(argument0);
     this.ALL_OK1 = 0;
     this.GENERAL_ERROR1 = 1;
     this.PLAYER_NOT_FOUND1 = 2;
   }
-  execute(__s5param0 = null) {
-    this.errorCode1 = __s5param0;
+  execute(argument0 = null) {
+    this.errorCode1 = argument0;
     switch (this.errorCode1) {
       case this.ALL_OK1:
         this.all_ok();

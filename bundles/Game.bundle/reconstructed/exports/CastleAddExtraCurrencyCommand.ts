@@ -3,8 +3,8 @@ import { BasicAddExtraCurrencyCommand } from "../../../ggs.dll/reconstructed/exp
 import { BasicController } from "../../../ggs.dll/reconstructed/exports/BasicController";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleAddExtraCurrencyCommand extends BasicAddExtraCurrencyCommand {
-  execute(__s5param0 = null) {
-    var __s5local0 = __s5param0;
+  execute(argument0 = null) {
+    var __s5local0 = argument0;
     super.execute(new AddExtraCurrencyVO(BasicController.getInstance().paymentHash, __s5local0.sourceId, __s5local0.shopTab));
   }
 }

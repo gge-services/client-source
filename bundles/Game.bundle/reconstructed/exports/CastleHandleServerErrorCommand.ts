@@ -30,9 +30,9 @@ import { SpecialServerHelper } from "./SpecialServerHelper";
 import { TimeStringHelper } from "../../../ggs.dll/reconstructed/exports/TimeStringHelper";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleHandleServerErrorCommand extends BasicHandleServerErrorCommand {
-  handleGameSpecificServerError(__s5param0) {
-    var __s5local0 = int(__s5param0.error);
-    var __s5local1 = __s5param0.params;
+  handleGameSpecificServerError(argument0) {
+    var __s5local0 = int(argument0.error);
+    var __s5local1 = argument0.params;
     var __s5local2 = {} as any;
     switch (__s5local0) {
       case ERROR.NOT_ENOUGH_RESOURCES:
@@ -43,11 +43,11 @@ export class CastleHandleServerErrorCommand extends BasicHandleServerErrorComman
             ModernPackageShopResourceTipEnum.__initialize_static_members();
             CastleDialogHandler.getInstance().registerDefaultDialogs(ModernPackageShopResourceTipDialog, new ModernPackageShopResourceTipDialogProperties(null, [ModernPackageShopResourceTipEnum.AQUAMARINE.typeVO]));
           } else {
-            (__s5local3 = new CastleResourceWaitDialogProperties(__s5param0.commandId)).parseParams(__s5local2);
+            (__s5local3 = new CastleResourceWaitDialogProperties(argument0.commandId)).parseParams(__s5local2);
             CastleDialogHandler.getInstance().registerDefaultDialogs(CastleResourceWaitDialog, __s5local3);
           }
         } else {
-          this.performDefaultError(__s5param0);
+          this.performDefaultError(argument0);
         }
         break;
       case ERROR.NOT_ENOUGH_SPECIAL_CURRENCY:
@@ -58,7 +58,7 @@ export class CastleHandleServerErrorCommand extends BasicHandleServerErrorComman
         if (__s5local4 && __s5local4.length != 0) {
           CostHelper.showNotEnoughSpecialCurrencyDialog(__s5local4);
         } else {
-          this.performDefaultError(__s5param0);
+          this.performDefaultError(argument0);
         }
         break;
       case ERROR.USAGE_OF_BADWORDS:
@@ -76,7 +76,7 @@ export class CastleHandleServerErrorCommand extends BasicHandleServerErrorComman
         CastleDialogHandler.getInstance().registerDefaultDialogs(CastleNoMoneyC1Dialog, new CastleNoMoneyC1DialogProperties());
         break;
       case ERROR.NOT_ENOUGH_CURRENCY2:
-        if (__s5param0.commandId == ClientConstSF.S2C_REVIVE_HOSPITAL_UNITS || __s5param0.commandId == ClientConstSF.S2C_REVIVE_ALL_HOSPITAL_UNITS) {
+        if (argument0.commandId == ClientConstSF.S2C_REVIVE_HOSPITAL_UNITS || argument0.commandId == ClientConstSF.S2C_REVIVE_ALL_HOSPITAL_UNITS) {
           CastleDialogHandler.getInstance().registerDefaultDialogs(CastleNoMoneyC2Dialog, new CastleNoMoneyC2DialogProperties());
         } else {
           CastleDialogHandler.getInstance().registerDefaultDialogs(CastleNoMoneyC2Dialog, new CastleNoMoneyC2DialogProperties(), true, BasicDialogHandler.PRIORITY_TOP);
@@ -107,7 +107,7 @@ export class CastleHandleServerErrorCommand extends BasicHandleServerErrorComman
         if (CastleModel.areaData.activeArea.isFactionCamp) {
           CastleDialogHandler.getInstance().registerDefaultDialogs(CastleFactionUnitLimitDialog, new BasicStandardOkDialogProperties(Localize.text("generic_alert_information"), null));
         } else {
-          this.performDefaultError(__s5param0);
+          this.performDefaultError(argument0);
         }
         break;
       case ERROR.CONSTRUCTION_ITEM_INVENTORY_FULL:
@@ -118,13 +118,13 @@ export class CastleHandleServerErrorCommand extends BasicHandleServerErrorComman
         break;
       case ERROR.C2_CONFIRMATION_REQUIRED:
         __s5local2 = JSON.parse(__s5local1[1]);
-        CastleDialogHandler.getInstance().registerDialogs(ConfirmC2Dialog, new ConfirmC2DialogProperties(__s5local2[CommKeys.CONFIRM_C2_THRESHOLD], __s5param0));
+        CastleDialogHandler.getInstance().registerDialogs(ConfirmC2Dialog, new ConfirmC2DialogProperties(__s5local2[CommKeys.CONFIRM_C2_THRESHOLD], argument0));
         break;
       default:
-        this.performDefaultError(__s5param0);
+        this.performDefaultError(argument0);
     }
   }
-  reloadPage(__s22param0) {
+  reloadPage(argument0) {
     if (ExternalInterface.available) {
       try {
         ExternalInterface.call("function refresh(){location.reload();}");
@@ -133,12 +133,12 @@ export class CastleHandleServerErrorCommand extends BasicHandleServerErrorComman
       }
     }
   }
-  performDefaultError(__s28param0) {
-    var __s28local0 = int(__s28param0.error);
+  performDefaultError(argument0) {
+    var __s28local0 = int(argument0.error);
     if (Localize.text("errorCode_" + __s28local0) != "errorCode_" + __s28local0) {
-      CastleDialogHandler.getInstance().registerDialogs(CastleStandardOkDialog, new BasicStandardOkDialogProperties(Localize.text("generic_alert_information"), Localize.text(SpecialServerHelper.checkTextIDForSkinText("errorCode_" + __s28local0)) + (EnvGlobalsHandler.globals.isTest || EnvGlobalsHandler.globals.isLocal ? " (" + __s28param0.commandId + ")" : "")));
+      CastleDialogHandler.getInstance().registerDialogs(CastleStandardOkDialog, new BasicStandardOkDialogProperties(Localize.text("generic_alert_information"), Localize.text(SpecialServerHelper.checkTextIDForSkinText("errorCode_" + __s28local0)) + (EnvGlobalsHandler.globals.isTest || EnvGlobalsHandler.globals.isLocal ? " (" + argument0.commandId + ")" : "")));
     } else {
-      CastleDialogHandler.getInstance().registerDialogs(CastleStandardOkDialog, new BasicStandardOkDialogProperties(Localize.text("generic_alert_bug"), "errorCode: " + __s28local0 + ": " + ERROR.getErrorText(__s28local0) + (EnvGlobalsHandler.globals.isTest || EnvGlobalsHandler.globals.isLocal ? " (" + __s28param0.commandId + ")" : "")));
+      CastleDialogHandler.getInstance().registerDialogs(CastleStandardOkDialog, new BasicStandardOkDialogProperties(Localize.text("generic_alert_bug"), "errorCode: " + __s28local0 + ": " + ERROR.getErrorText(__s28local0) + (EnvGlobalsHandler.globals.isTest || EnvGlobalsHandler.globals.isLocal ? " (" + argument0.commandId + ")" : "")));
     }
   }
 }

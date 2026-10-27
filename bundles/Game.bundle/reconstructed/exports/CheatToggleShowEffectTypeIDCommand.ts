@@ -5,7 +5,7 @@ import { CastleDialogHandler } from "./CastleDialogHandler";
 import { ClientCheatsHelper } from "./ClientCheatsHelper";
 import { DarkOkDialog } from "./DarkOkDialog";
 export class CheatToggleShowEffectTypeIDCommand extends ABotCommand {
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     ClientCheatsHelper.performCommand("toggleShowEffectTypeIDs");
     if (CastleDataHolder.instance.showEffectTypeIDs) {
       CastleDialogHandler.getInstance().registerDefaultDialogs(DarkOkDialog, new BasicStandardOkDialogProperties("ShowEffectTypeIDs", "ON"));

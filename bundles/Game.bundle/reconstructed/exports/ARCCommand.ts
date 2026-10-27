@@ -24,11 +24,11 @@ export class ARCCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
+  executeCommand(statusCode, responseFields) {
     var __s9local0;
-    switch (__s9param0) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
-        __s9local0 = JSON.parse(__s9param1[1]);
+        __s9local0 = JSON.parse(responseFields[1]);
         var __s9local1 = CastleModel.userData.castleList.getCastleVOByID(__s9local0.CID, __s9local0.KID);
         if (!__s9local0.P && __s9local1 && __s9local1.areaType == WorldConst.AREA_TYPE_KINGDOM_CASTLE) {
           CastleModel.smartfoxClient.sendCommandVO(new C2SJoinAreaVO(__s9local1.absAreaPosX, __s9local1.absAreaPosY, __s9local0.KID));
@@ -36,14 +36,14 @@ export class ARCCommand extends CastleCommand {
         break;
       case ERROR.USAGE_OF_BADWORDS:
         var __s9local2 = "";
-        if ((__s9local0 = JSON.parse(__s9param1[1])).BW && __s9local0.BW[0]) {
+        if ((__s9local0 = JSON.parse(responseFields[1])).BW && __s9local0.BW[0]) {
           __s9local2 = __s9local0.BW[0];
         }
-        this.showNameOrRenameDialog(__s9param1);
+        this.showNameOrRenameDialog(responseFields);
         CastleDialogHandler.getInstance().registerDialogsWithType(CastleStandardOkDialog, new BasicStandardOkDialogProperties(Localize.text("generic_alert_watchout"), Localize.text("alert_badword_textReplacement", [new TextVO(__s9local2)])), false, BasicDialogHandler.PRIORITY_LOW, 0, CastleDialogConsts.DIALOG_TYPE_MODAL);
         break;
       case ERROR.TEXT_TOO_SHORT:
-        this.showNameOrRenameDialog(__s9param1);
+        this.showNameOrRenameDialog(responseFields);
         CastleDialogHandler.getInstance().registerDialogsWithType(CastleStandardOkDialog, new BasicStandardOkDialogProperties(Localize.text("generic_alert_watchout"), Localize.text("alert_castlenameTooShort")), false, BasicDialogHandler.PRIORITY_LOW, 0, CastleDialogConsts.DIALOG_TYPE_MODAL);
         break;
       case ERROR.NOT_IN_OWNED_CASTLE:
@@ -53,15 +53,15 @@ export class ARCCommand extends CastleCommand {
       case ERROR.NO_EVENT:
         break;
       default:
-        this.showNameOrRenameDialog(__s9param1);
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showNameOrRenameDialog(responseFields);
+        this.showErrorDialog(statusCode, responseFields);
     }
-    this.controller.dispatchEvent(new CastleServerMessageArrivedEvent(CastleServerMessageArrivedEvent.ARC_ARRIVED, __s9param1));
+    this.controller.dispatchEvent(new CastleServerMessageArrivedEvent(CastleServerMessageArrivedEvent.ARC_ARRIVED, responseFields));
     return false;
   }
-  showNameOrRenameDialog(__s14param0) {
-    if (__s14param0[1]) {
-      var __s14local0 = JSON.parse(__s14param0[1]);
+  showNameOrRenameDialog(responseFields) {
+    if (responseFields[1]) {
+      var __s14local0 = JSON.parse(responseFields[1]);
       var __s14local1 = CastleModel.userData.castleList.getCastleVOByID(__s14local0.CID, __s14local0.KID);
       if (!__s14local1) {
         if (__s14local1 = CastleModel.userData.kingstowerList.getVOByID(__s14local0.CID)) {

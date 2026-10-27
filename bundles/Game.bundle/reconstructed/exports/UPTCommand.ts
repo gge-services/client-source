@@ -27,8 +27,8 @@ export class UPTCommand extends CastleCommand {
     }
     return false;
   }
-  trackEvent(__s12param0, __s12param1) {
-    var __s12local0 = __s12param1.PD;
+  trackEvent(argument0, argument1) {
+    var __s12local0 = argument1.PD;
     if (__s12local0 && __s12local0 != null) {
       for (var __s12local1 = 0, __s12local2 = __s12local0; __s12local1 < __s12local2.length; __s12local1++) {
         var __s12local3 = __s12local2[__s12local1];
@@ -41,7 +41,7 @@ export class UPTCommand extends CastleCommand {
             currency: __s12local5
           };
           if (ExternalInterface.available) {
-            ExternalInterface.call("ggsTrackEvent", __s12param0, __s12local6);
+            ExternalInterface.call("ggsTrackEvent", argument0, __s12local6);
             var __s12local7 = new GameSightPayloadVO(GamesightEventConstants.PURCHASE);
             __s12local7.additionalInfo = __s12local6;
             CommandController.instance.executeCommand(BasicController.GAMESIGHT_CALL_GGS_TRACK_EVENT, __s12local7);

@@ -10,14 +10,14 @@ export class KSCCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
         this.controller.dispatchEvent(new PrebuiltCastleResponseEvent(false));
         break;
       default:
         this.controller.dispatchEvent(new PrebuiltCastleResponseEvent(true));
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

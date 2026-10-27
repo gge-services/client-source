@@ -7,7 +7,7 @@ import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleComm
 import { TimezoneUtil } from "../../../ggs.dll/reconstructed/exports/TimezoneUtil";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleSocialLoginCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     BasicController.getInstance().onLogIn();
     var __s5local0 = [];
     __s5local0[0] = EnvGlobalsHandler.globals.pln;

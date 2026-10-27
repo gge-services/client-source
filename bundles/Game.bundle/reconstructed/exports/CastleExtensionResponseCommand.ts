@@ -5,9 +5,9 @@ import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleExtensionResponseCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     var __s5local0;
-    var __s5local1 = __s5param0;
+    var __s5local1 = argument0;
     var __s5local2 = int(__s5local1.params[0]);
     if (DictionaryUtil.containsKey(BasicController.commandDict, __s5local1.cmdId)) {
       __s5local0 = BasicController.commandDict.get(__s5local1.cmdId);

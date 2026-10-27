@@ -3,8 +3,8 @@ import { CastleBasicController } from "./CastleBasicController";
 import { CastleMailVerificationAnswerEvent } from "./CastleMailVerificationAnswerEvent";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleVerifyPlayerMailCommand extends BasicVerifyPlayerMailCommand {
-  constructor(__s3param0 = false) {
-    super(__s3param0);
+  constructor(argument0 = false) {
+    super(argument0);
   }
   all_ok() {
     this.controller.dispatchEvent(new CastleMailVerificationAnswerEvent(CastleMailVerificationAnswerEvent.MAIL_VERIFICATION_ANSWER, CastleMailVerificationAnswerEvent.ALL_OK));

@@ -16,9 +16,9 @@ export class OpenTipDialogCommand extends SimpleCommand {
     CONSTRUCTOR_HACK;
     super();
   }
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     if (CastleModel.areaData.activeArea.isMyArea && !CastleModel.areaData.activeArea.isUnderConquerProcess) {
-      switch (__s5param0[0]) {
+      switch (argument0[0]) {
         case ClientConstCastle.TIP_EFFICIENCY:
           CastleDialogHandler.getInstance().registerDefaultDialogs(CastleEfficiencyTipDialog);
           break;
@@ -38,9 +38,9 @@ export class OpenTipDialogCommand extends SimpleCommand {
           CastleDialogHandler.getInstance().registerDefaultDialogs(CastleProductivityTipDialog);
           break;
         case ClientConstCastle.TIP_REPAIR:
-          if (__s5param0.length == 2 && __s5param0[1]) {
+          if (argument0.length == 2 && argument0[1]) {
             CastleDialogHandler.getInstance().registerDefaultDialogs(CastleRepairTipDialog);
-          } else if (__s5param0.length == 2 && !__s5param0[1]) {
+          } else if (argument0.length == 2 && !argument0[1]) {
             if (OpenTipDialogCommand.repairShown < 1) {
               OpenTipDialogCommand.repairShown++;
               CastleDialogHandler.getInstance().registerDefaultDialogs(CastleRepairTipDialog);

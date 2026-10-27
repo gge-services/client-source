@@ -33,16 +33,16 @@ export class UPICommand extends CastleCommand {
     }
     return false;
   }
-  trackEvent(__s14param0, __s14param1) {
-    if (__s14param1.A && __s14param1.CC) {
-      var __s14local0 = __s14param1.A / 100;
+  trackEvent(argument0, argument1) {
+    if (argument1.A && argument1.CC) {
+      var __s14local0 = argument1.A / 100;
       var __s14local1 = {
         userid: EnvGlobalsHandler.globals.gameId + "-" + EnvGlobalsHandler.globals.networkId + "-" + BasicModel.instanceProxy.selectedInstanceVO.instanceId + "-" + BasicModel.userData.playerID,
         value: __s14local0,
-        currency: __s14param1.CC
+        currency: argument1.CC
       };
       if (ExternalInterface.available) {
-        ExternalInterface.call("ggsTrackEvent", __s14param0, __s14local1);
+        ExternalInterface.call("ggsTrackEvent", argument0, __s14local1);
         var __s14local2 = new GameSightPayloadVO(GamesightEventConstants.PURCHASE);
         __s14local2.additionalInfo = __s14local1;
         CommandController.instance.executeCommand(BasicController.GAMESIGHT_CALL_GGS_TRACK_EVENT, __s14local2);

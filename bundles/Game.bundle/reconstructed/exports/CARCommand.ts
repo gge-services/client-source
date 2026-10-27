@@ -4,13 +4,13 @@ import { ClientConstSF } from "./ClientConstSF";
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CARCommand extends CastleCommand {
-  executeCommand(__s5param0, __s5param1) {
-    switch (__s5param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
         CastleModel.eventAnnouncementData.parseCAR(null);
         break;
       default:
-        this.showErrorDialog(__s5param0, __s5param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

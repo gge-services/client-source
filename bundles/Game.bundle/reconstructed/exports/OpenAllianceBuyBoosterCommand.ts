@@ -16,16 +16,16 @@ import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleComm
 import { TimeStringHelper } from "../../../ggs.dll/reconstructed/exports/TimeStringHelper";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenAllianceBuyBoosterCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     var __s5local0;
     var __s5local1;
     var __s5local2;
     var __s5local3;
-    var __s5local4 = __s5param0[0];
-    var __s5local5 = int(__s5param0[1]);
-    var __s5local6 = __s5param0[2];
-    if (__s5param0.length >= 4) {
-      __s5local0 = __s5param0[3];
+    var __s5local4 = argument0[0];
+    var __s5local5 = int(argument0[1]);
+    var __s5local6 = argument0[2];
+    if (argument0.length >= 4) {
+      __s5local0 = argument0[3];
     }
     var __s5local7 = TimeStringHelper.getTimeToString(__s5local4.getBoostDuration(__s5local5, __s5local4.getBoostLevel(__s5local5) + 1), TimeStringHelper.ONE_TIME_HOURS_FORMAT, Localize.text);
     var __s5local8 = __s5local4.isBoosterTemporary(__s5local5);

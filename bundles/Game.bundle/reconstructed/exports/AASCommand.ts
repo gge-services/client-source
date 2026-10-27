@@ -63,14 +63,14 @@ export class AASCommand extends BasicCommand {
     }
     return false;
   }
-  showOrUpdateSearchDialog(__s22param0) {
+  showOrUpdateSearchDialog(argument0) {
     if (CastleLayoutManager.getInstance().isDialogVisibleByName(CastleSearchAllianceDialog)) {
-      CastleBasicController.getInstance().dispatchEvent(new CastleAllianceSearchEvent(CastleAllianceSearchEvent.ALLIANCE_SEARCH_UPDATED, __s22param0));
+      CastleBasicController.getInstance().dispatchEvent(new CastleAllianceSearchEvent(CastleAllianceSearchEvent.ALLIANCE_SEARCH_UPDATED, argument0));
     } else {
-      CastleDialogHandler.getInstance().registerDefaultDialogs(CastleSearchAllianceDialog, new CastleSearchAllianceDialogProperties(__s22param0));
+      CastleDialogHandler.getInstance().registerDefaultDialogs(CastleSearchAllianceDialog, new CastleSearchAllianceDialogProperties(argument0));
     }
   }
-  showAllianceDialog(__s26param0) {
+  showAllianceDialog(argument0) {
     CastleDialogHandler.getInstance().registerDefaultDialogs(CastleAllianceDialog, new CastleAllianceDialogProperties());
   }
 }

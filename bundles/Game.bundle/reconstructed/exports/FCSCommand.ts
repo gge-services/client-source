@@ -41,14 +41,14 @@ export class FCSCommand extends CastleCommand {
     }
     return false;
   }
-  resetFacebookPlayerData(__s12param0 = null) {
+  resetFacebookPlayerData(argument0 = null) {
     CastleModel.userData.resetFacebookData();
     this.controller.dispatchEvent(new CastleFacebookEvent(CastleFacebookEvent.FACEBOOK_MAPPING_ERROR));
   }
   facebookAccMappedToDifferentPlayer() {
     CastleDialogHandler.getInstance().registerDialogsWithType(CastleStandardYesNoDialog, new BasicStandardYesNoDialogProperties(Localize.text("dialog_fbAlreadyUsed_header"), Localize.text("dialog_fbAlreadyUsed_desc"), this.bindFunction(this.onSwitchToFacebookAccount), this.bindFunction(this.resetFacebookPlayerData)), true, CastleDialogConsts.PRIORITY_TOP, 0, CastleDialogConsts.DIALOG_TYPE_MODAL);
   }
-  onSwitchToFacebookAccount(__s16param0 = null) {
+  onSwitchToFacebookAccount(argument0 = null) {
     CommandController.instance.executeCommand(IngameClientCommands.SWITCH_TO_CACHED_FACEBOOK_ACCOUNT);
   }
   couldNotMapPlayer() {

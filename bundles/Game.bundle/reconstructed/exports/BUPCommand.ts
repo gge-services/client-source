@@ -24,11 +24,11 @@ export class BUPCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
+  executeCommand(statusCode, responseFields) {
     var __s9local0;
-    switch (__s9param0) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
-        __s9local0 = JSON.parse(__s9param1[1]);
+        __s9local0 = JSON.parse(responseFields[1]);
         CastleModel.militaryData.parse_SPL(__s9local0.spl);
         if (CastleModel.areaData.activeArea) {
           CastleModel.areaData.activeArea.updater.parseGRC(__s9local0.grc);
@@ -40,7 +40,7 @@ export class BUPCommand extends CastleCommand {
         }
         break;
       case ERROR.NO_FREE_CONSTRUCTION_SLOT:
-        __s9local0 = JSON.parse(__s9param1[1]);
+        __s9local0 = JSON.parse(responseFields[1]);
         var __s9local1 = CastleModel.wodData.createVObyWOD(__s9local0.WID, CastleWodData.TYPE_UNIT);
         var __s9local2 = int(__s9local0.LID);
         var __s9local3 = int(__s9local0.AMT);
@@ -55,14 +55,14 @@ export class BUPCommand extends CastleCommand {
         }
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }
-  onBuyItem(__s17param0, __s17param1, __s17param2) {
-    if (CastleModel.militaryData.getPackageListById(__s17param1).playerCanBuyNextSlot()) {
-      CastleModel.smartfoxClient.sendCommandVO(new C2SUnlockPackageSlotVO(__s17param1));
-      CastleModel.smartfoxClient.sendCommandVO(new C2SBuyUnitPackageVO(__s17param1, __s17param0.wodId, __s17param2, CastleModel.kingdomData.activeKingdomID, CastleModel.permanentCastleData.getCurrentCastle().areaId));
+  onBuyItem(argument0, argument1, argument2) {
+    if (CastleModel.militaryData.getPackageListById(argument1).playerCanBuyNextSlot()) {
+      CastleModel.smartfoxClient.sendCommandVO(new C2SUnlockPackageSlotVO(argument1));
+      CastleModel.smartfoxClient.sendCommandVO(new C2SBuyUnitPackageVO(argument1, argument0.wodId, argument2, CastleModel.kingdomData.activeKingdomID, CastleModel.permanentCastleData.getCurrentCastle().areaId));
     } else {
       CastleDialogHandler.getInstance().registerDefaultDialogs(CastleNoMoneyC2Dialog, new CastleNoMoneyC2DialogProperties());
     }

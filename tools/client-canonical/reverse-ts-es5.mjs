@@ -5,6 +5,7 @@ import parser from '@babel/parser'
 import traverseModule from '@babel/traverse'
 import generateModule from '@babel/generator'
 import * as t from '@babel/types'
+import {renameVerifiedParameters} from './semantic-parameters.mjs'
 const traverse = traverseModule.default ?? traverseModule
 const generate = generateModule.default ?? generateModule
 const sha = input => createHash('sha256').update(input).digest('hex')
@@ -493,7 +494,8 @@ export function reconstructEs5Class(source, options={}) {
       const cls=t.classDeclaration(t.identifier(className),standalone?null:t.cloneNode(base,true),t.classBody(members))
       const resolved=resolveImports(ast,rewriteSuperMethods(cls,superName),options,safeModuleBindings(ast,cls,options))
       const aliases=replaceParameterAliases(resolved.node)
-      aliases.node=preserveDynamicSourceTypes(aliases.node)
+      const improved=renameVerifiedParameters(aliases.node)
+      aliases.node=preserveDynamicSourceTypes(improved.node)
       const interfaces=recoverInterfaceRegistrations(ast,className,dec.id.name,options)
       const postlude=staticInvocation?[t.expressionStatement(t.callExpression(
         t.memberExpression(t.identifier(className),t.identifier('__initialize_static_members')),[]))]:[]
@@ -510,7 +512,7 @@ export function reconstructEs5Class(source, options={}) {
       const code=generate(generated,{jsescOption:{minimal:true}}).code+'\n'
       if (code.includes('Object.getOwnPropertyDescriptor') || code.includes('Object.defineProperty') || code.includes('.prototype.')) throw Error('Unreversed descriptor remains: ' + className)
       parser.parse(code,{sourceType:'module',plugins:['typescript']})
-      return {className,code,metadata:{sourceHash:sha(source),generatedHash:sha(code),constructor:'implicit-super',accessors:members.filter(m=>m.kind==='get'||m.kind==='set').map(m=>m.kind+':'+m.key.name),methods:members.filter(m=>m.kind==='method').map(m=>m.key.name),dependencies:[...resolved.modules,...interfaces.dependencies],renamed:aliases.renamed,runtimeInterfaceCallsPreserved:interfaces.statements.length,removedRuntimeInterfaceCalls:ast.program.body.filter(n => t.isExpressionStatement(n) && t.isCallExpression(n.expression) && member(n.expression.callee,'classImplementsInterfaces')).length,staticInitializationPreserved:staticInvocation,fullRuntimeEquivalent:false}}
+      return {className,code,metadata:{sourceHash:sha(source),generatedHash:sha(code),constructor:'implicit-super',accessors:members.filter(m=>m.kind==='get'||m.kind==='set').map(m=>m.kind+':'+m.key.name),methods:members.filter(m=>m.kind==='method').map(m=>m.key.name),dependencies:[...resolved.modules,...interfaces.dependencies],renamed:aliases.renamed,...(improved.renamed.length?{verifiedParameterRenames:improved.renamed}:{}),runtimeInterfaceCallsPreserved:interfaces.statements.length,removedRuntimeInterfaceCalls:ast.program.body.filter(n => t.isExpressionStatement(n) && t.isCallExpression(n.expression) && member(n.expression.callee,'classImplementsInterfaces')).length,staticInitializationPreserved:staticInvocation,fullRuntimeEquivalent:false}}
     }
   }
   return null

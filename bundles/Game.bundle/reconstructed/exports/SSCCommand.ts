@@ -17,9 +17,9 @@ export class SSCCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
+  executeCommand(statusCode, responseFields) {
     var __s9local0 = CastleModel.specialEventData.getActiveEventByEventId(EventConst.EVENTTYPE_SHOPPING_CART_PRIMEDAY);
-    switch (__s9param0) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
         if (__s9local0) {
           var __s9local1 = __s9local0.shoppingCartOptionsIdsByCategory.reduce(function (__s13param0, __s13param1) {
@@ -38,9 +38,9 @@ export class SSCCommand extends CastleCommand {
         }
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
-    CastleBasicController.getInstance().dispatchEvent(new CastleServerMessageArrivedEvent(CastleServerMessageArrivedEvent.SSC_ARRIVED, [__s9param0]));
+    CastleBasicController.getInstance().dispatchEvent(new CastleServerMessageArrivedEvent(CastleServerMessageArrivedEvent.SSC_ARRIVED, [statusCode]));
     return false;
   }
 }

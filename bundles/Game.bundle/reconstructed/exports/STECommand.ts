@@ -11,11 +11,11 @@ export class STECommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
-        if (__s9param1.length > 0) {
-          var __s9local0 = JSON.parse(__s9param1[1]);
+        if (responseFields.length > 0) {
+          var __s9local0 = JSON.parse(responseFields[1]);
           CastleModel.titleData.parseSTE(__s9local0);
           if (CastleLayoutManager.getInstance().isInState(CastleLayoutManager.STATE_WORLDMAP)) {
             var __s9local1 = CastleLayoutManager.getInstance().worldmapScreen.renderer.camera.getAreaViewportRectangle();
@@ -24,7 +24,7 @@ export class STECommand extends CastleCommand {
         }
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

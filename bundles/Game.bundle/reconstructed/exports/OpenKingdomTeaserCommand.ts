@@ -7,10 +7,10 @@ import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenKingdomTeaserCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     var __s5local0;
     var __s5local1;
-    var __s5local2 = __s5param0;
+    var __s5local2 = argument0;
     if (__s5local2.kingdomVO) {
       __s5local2.titleTextID = "dialog_kingdomTeaser_header" + __s5local2.kingdomVO.kID;
       __s5local2.minLevel = int(__s5local2.kingdomVO.minLevel);

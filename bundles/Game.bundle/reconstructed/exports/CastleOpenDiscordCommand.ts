@@ -10,10 +10,10 @@ export class CastleOpenDiscordCommand extends SimpleCommand {
     CONSTRUCTOR_HACK;
     super();
   }
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     var __s5local0 = new URLRequest(CastleOpenDiscordCommand.DISCORD_URL);
     BrowserUtil.executeNavigateToURL(__s5local0, "_blank");
-    CommandController.instance.executeCommand(CastleBasicController.TRACK_SOCIAL_BUTTON, __s5param0 || [SocialButtonTrackingEvent.BUTTON_NAME_DISCORD]);
+    CommandController.instance.executeCommand(CastleBasicController.TRACK_SOCIAL_BUTTON, argument0 || [SocialButtonTrackingEvent.BUTTON_NAME_DISCORD]);
   }
   static DISCORD_URL = "https://www.discord.gg/goodgamestudios";
 }

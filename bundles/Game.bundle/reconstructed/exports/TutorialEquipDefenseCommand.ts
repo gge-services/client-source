@@ -30,7 +30,7 @@ export class TutorialEquipDefenseCommand extends TutorialBasicActionCommand {
       CastleModel.smartfoxClient.sendCommandVO(new C2SJoinCastleVO(C2SJoinCastleVO.MY_CASTLE, WorldClassic.KINGDOM_ID));
     }
   }
-  checkDefenceData(__s10param0 = null) {
+  checkDefenceData(argument0 = null) {
     if (CastleModel.defenceData.itemsKeep) {
       this.readyToExecute();
     } else {
@@ -39,7 +39,7 @@ export class TutorialEquipDefenseCommand extends TutorialBasicActionCommand {
       CastleModel.smartfoxClient.sendCommandVO(new C2SDefenceCompleteVO(__s10local0.absAreaPos, __s10local0.objectId));
     }
   }
-  onGetDefenceInfos(__s14param0) {
+  onGetDefenceInfos(argument0) {
     this.tutorialController.removeComplexListener(this.controller, CastleDefenceDataEvent.GET_DEFENCE_INFOS, this.bindFunction(this.onGetDefenceInfos));
     this.readyToExecute();
   }
@@ -85,7 +85,7 @@ export class TutorialEquipDefenseCommand extends TutorialBasicActionCommand {
     this.spotlight.clear();
     this.tutorialController.registerComplexListener(this.controller, CastleDialogEvent.FIGHT_SCREEN_SHOP_FILLED, this.bindFunction(this.checkWodWithCurrentDefenseCategory));
   }
-  checkWodWithCurrentDefenseCategory(__s29param0) {
+  checkWodWithCurrentDefenseCategory(argument0) {
     this.tutorialController.removeComplexListener(this.controller, CastleDialogEvent.FIGHT_SCREEN_SHOP_FILLED, this.bindFunction(this.checkWodWithCurrentDefenseCategory));
     var __s29local0 = parseInt(this._tutorialStepVO.attributes.get(TutorialBasicActionCommand.WODID));
     var __s29local1 = this.layoutManager.getDialog(CastleDefenceDialog);
@@ -116,8 +116,8 @@ export class TutorialEquipDefenseCommand extends TutorialBasicActionCommand {
       this.tutorialController.registerComplexListener(__s36local2, __s0local0.MOUSE_DOWN, this.bindFunction(this.onToolSelected));
     }
   }
-  onToolSelected(__s39param0) {
-    this.tutorialController.removeComplexListener(__s39param0.target, __s0local0.MOUSE_DOWN, this.bindFunction(this.onToolSelected));
+  onToolSelected(event) {
+    this.tutorialController.removeComplexListener(event.target, __s0local0.MOUSE_DOWN, this.bindFunction(this.onToolSelected));
     var __s39local0 = parseInt(this._tutorialStepVO.attributes.get(TutorialBasicActionCommand.WODID));
     var __s39local1 = this.layoutManager.getDialog(CastleDefenceDialog);
     this.targetSlot = __s39local1.getFittingDefenseSlotForTutorial(__s39local0);
@@ -130,12 +130,12 @@ export class TutorialEquipDefenseCommand extends TutorialBasicActionCommand {
       this.tutorialController.waitForExternalDialogShow(CastleDefenceAddUnitsDialog, this.bindFunction(this.waitForAmountConfirm));
     }
   }
-  onToolsMisplaced(__s42param0) {
+  onToolsMisplaced(argument0) {
     this.tutorialController.removeComplexListener(this.controller, CastleDialogEvent.DEFENCE_SCREEN_ITEMS_UPDATED, this.bindFunction(this.onToolsMisplaced));
     this.tutorialController.removeComplexListener(this.controller, CastleDialogEvent.DEFENCE_SCREEN_TOOLS_PLACED, this.bindFunction(this.onToolPlaced));
     this.showToolsInDefenseDialog();
   }
-  onToolPlaced(__s44param0) {
+  onToolPlaced(argument0) {
     this.tutorialController.removeComplexListener(this.controller, CastleDialogEvent.DEFENCE_SCREEN_ITEMS_UPDATED, this.bindFunction(this.onToolsMisplaced));
     this.tutorialController.removeComplexListener(this.controller, CastleDialogEvent.DEFENCE_SCREEN_TOOLS_PLACED, this.bindFunction(this.onToolPlaced));
     this.trackStep("s_090_100_slot_selected");

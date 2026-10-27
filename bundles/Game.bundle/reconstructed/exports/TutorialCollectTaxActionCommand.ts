@@ -35,7 +35,7 @@ export class TutorialCollectTaxActionCommand extends TutorialBasicActionCommand 
     this.tutorialController.registerComplexListener(this.controller, CastleDialogEvent.TAX_ITEMS_FILLED, this.bindFunction(this.onShowCollectTaxStartDialog));
     this.layoutManager.tutorialPanel.showWithText("tut_tax_openTaxDialog_copy_duplicate", ClientConstCharacter.CHAR_ID_FEMALE_TUTORIAL_CHARACTER);
   }
-  onShowCollectTaxStartDialog(__s15param0 = null) {
+  onShowCollectTaxStartDialog(argument0 = null) {
     this.tutorialController.removeComplexListener(this.controller, CastleDialogEvent.TAX_ITEMS_FILLED, this.bindFunction(this.onShowCollectTaxStartDialog));
     this.trackStep("040_020_taxmenu_opened");
     this.layoutManager.tutorialPanel.showWithText("tut_tax_selectTaxType_copy_duplicate", ClientConstCharacter.CHAR_ID_FEMALE_TUTORIAL_CHARACTER);

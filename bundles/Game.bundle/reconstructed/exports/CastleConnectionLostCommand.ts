@@ -14,7 +14,7 @@ import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleConnectionLostCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     if (this.layoutManager.currentState != BasicLayoutManager.STATE_STARTSCREEN) {
       var __s5local0 = EnvGlobalsHandler.globals;
       __s5local0.isFacebook;

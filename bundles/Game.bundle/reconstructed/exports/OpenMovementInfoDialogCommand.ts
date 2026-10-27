@@ -18,8 +18,8 @@ import { instanceOfClass } from "../../../ggs.dll/reconstructed/exports/instance
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenMovementInfoDialogCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
-    var __s5local0 = castAs(__s5param0, "IMapMovementVO");
+  execute(argument0 = null) {
+    var __s5local0 = castAs(argument0, "IMapMovementVO");
     if (__s5local0) {
       if (instanceOfClass(__s5local0, "TreasureHuntMovementVO")) {
         CastleDialogHandler.getInstance().registerDefaultDialogs(CastleCompactArmyDialog, new CastleCompactArmyDialogProperties(__s5local0, true));
