@@ -229,3 +229,61 @@ test('preserves a real command static initializer and interface-registration ord
     events:[['interface','HSSCommand','IExecCommand']]
   })
 })
+
+test('verifies an inherited cmdId setter through an intermediate class without an override',async()=>{
+  const resolver=await createDllResolver(root)
+  const source=await readFile(join(game,'modules/exports/UBCCommand.js'),'utf8')
+  const optionsWithAncestry={...options,resolveMember:resolver.resolve,dllImportFileName:resolver.importFileName,
+    trustedAncestors:new Map([['CastleDispatchingCommand:cmdId',new Set(['CastleCommand'])]]),
+    preserveRuntimeInterfaces:true}
+  const result=reconstructEs5Class(source,optionsWithAncestry)
+  assert.ok(result)
+  assert.match(result.code,/export class UBCCommand extends CastleDispatchingCommand/)
+  assert.match(result.code,/super\.cmdId = value/)
+  assert.doesNotMatch(result.code,/getOwnPropertyDescriptor|Object\.defineProperty/)
+  const run=(program,recompiled)=>{
+    const events=[]
+    function CastleCommand(){}
+    Object.defineProperty(CastleCommand.prototype,'cmdId',{configurable:true,
+      get(){return this._commandId},set(v){this._commandId=v;events.push(['set',v])}})
+    function CastleDispatchingCommand(){}
+    Object.setPrototypeOf(CastleDispatchingCommand,CastleCommand)
+    CastleDispatchingCommand.prototype=Object.create(CastleCommand.prototype)
+    CastleDispatchingCommand.prototype.constructor=CastleDispatchingCommand
+    CastleDispatchingCommand.prototype.showErrorDialog=function(status){events.push(['error',status])}
+    CastleDispatchingCommand.prototype.dispatchArrivedEvent=function(status){events.push(['arrived',status])}
+    const values={
+      CastleCommand,CastleDispatchingCommand,
+      CastleModel:{areaData:{activeArea:null}},
+      ClientConstSF:{S2C_USE_BOOSTER_CONSUMABLE_ON_CONSTRUCTION_ITEM_EVENT:81},
+      CastleServerMessageArrivedEvent:{UBC_ARRIVED:'UBC'},
+      ERROR:{ALL_OK:0},
+      classImplementsInterfaces(cls,iface){events.push(['interface',cls.name,iface])}
+    }
+    const modules={
+      'gge-module:exact_6fd0a7f85c69b366':{__extends(C,D){Object.setPrototypeOf(C,D);C.prototype=Object.create(D.prototype);C.prototype.constructor=C}},
+      'gge-module:exact_81dacdf05bd32292':{classImplementsInterfaces:values.classImplementsInterfaces},
+      'gge-module:exact_26a421b704832cff':{ERROR:values.ERROR}
+    }
+    for(const [name,value]of Object.entries(values)){
+      modules['gge-module:export_'+name]={[name]:value}
+      modules['./'+name]={[name]:value}
+      modules['../../../ggs.dll/reconstructed/exports/'+name]={[name]:value}
+    }
+    const exports={}
+    const executable=recompiled?typescript.transpileModule(program,{
+      compilerOptions:{target:typescript.ScriptTarget.ES2015,module:typescript.ModuleKind.CommonJS}
+    }).outputText:program
+    vm.runInNewContext(executable,{exports,require(spec){if(!modules[spec])throw Error('Unknown import '+spec);return modules[spec]},JSON,Object})
+    const command=new exports.UBCCommand()
+    command.cmdId=42
+    const stored=command._commandId
+    const code=command.cmdId
+    const event=command.eventType
+    command.executeCommand(0,['',JSON.stringify({CI:2})])
+    command.executeCommand(21,['','{}'])
+    return {stored,code,event,events}
+  }
+  assert.deepEqual(run(source,false),run(result.code,true))
+  assert.equal(result.metadata.fullRuntimeEquivalent,false)
+})

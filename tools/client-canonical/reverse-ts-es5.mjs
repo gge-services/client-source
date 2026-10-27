@@ -97,24 +97,28 @@ function constructorWithProperties(fn, superName) {
   return t.classMethod('constructor',t.identifier('constructor'),params,t.blockStatement([parent,...fields]))
 }
 
-function accessorSuperCall(node, baseExpression, property, method, params) {
+function accessorSuperCall(node, baseExpression, property, method, params, allowedAncestors) {
   if (!t.isCallExpression(node) || !member(node.callee, 'call') ||
     !member(node.callee.object, method) || node.arguments.length !== (method === 'set' ? 2 : 1) ||
     !t.isThisExpression(node.arguments[0])) return false
   const getter = node.callee.object.object
+  const ancestor=getter.arguments[0]?.object
+  const ancestryValid=t.isNodesEquivalent(ancestor,baseExpression) ||
+    t.isMemberExpression(ancestor) && !ancestor.computed && t.isIdentifier(ancestor.property) &&
+    allowedAncestors?.has(ancestor.property.name)
   if (!objectCall(getter, 'getOwnPropertyDescriptor') || getter.arguments.length !== 2 ||
-    !member(getter.arguments[0], 'prototype') || !t.isNodesEquivalent(getter.arguments[0].object, baseExpression) ||
+    !member(getter.arguments[0], 'prototype') || !ancestryValid ||
     !t.isStringLiteral(getter.arguments[1], {value: property})) return false
   if (method === 'set' && (!t.isIdentifier(params[0]) || !exactName(node.arguments[1], params[0].name))) return false
   return true
 }
 
-function rewriteSuperAccessor(method, property, baseExpression, className, readonlyBaseAccessors) {
+function rewriteSuperAccessor(method, property, baseExpression, className, readonlyBaseAccessors, trustedAncestors) {
   const file = t.file(t.program([t.classDeclaration(t.identifier('Temporary'), null, t.classBody([method]))]))
   let rewritten = 0
   traverse(file, {
     CallExpression(path) {
-      if (!accessorSuperCall(path.node, baseExpression, property, method.kind === 'set' ? 'set' : 'get', method.params)) return
+      if (!accessorSuperCall(path.node, baseExpression, property, method.kind === 'set' ? 'set' : 'get', method.params, trustedAncestors?.get((baseExpression?.property?.name??'')+':'+property))) return
       rewritten++
       const parentClass = t.isMemberExpression(baseExpression) && t.isIdentifier(baseExpression.property) ? baseExpression.property.name : null
       if (method.kind === 'set' && readonlyBaseAccessors?.has(parentClass+':'+property)) {
@@ -441,7 +445,7 @@ export function reconstructEs5Class(source, options={}) {
         if(t.isCallExpression(expr) && objectCall(expr,'defineProperty')) {
           const accessors=getterDescriptor(element,className)
           if(!accessors){unsupported=true;break}
-          members.push(...accessors.map(m=>rewriteSuperAccessor(m,m.key.name,dec.init.arguments[0],className,options.readonlyBaseAccessors)))
+          members.push(...accessors.map(m=>rewriteSuperAccessor(m,m.key.name,dec.init.arguments[0],className,options.readonlyBaseAccessors,options.trustedAncestors)))
           continue
         }
         if(t.isAssignmentExpression(expr,{operator:'='}) && t.isMemberExpression(expr.left) &&

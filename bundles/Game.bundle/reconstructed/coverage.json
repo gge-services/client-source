@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "snapshot": "2026-10-16",
   "examined": 701,
-  "reconstructed": 687,
-  "rejected": 14,
+  "reconstructed": 688,
+  "rejected": 13,
   "succeeded": [
     {
       "name": "AAACommand",
@@ -4002,6 +4002,12 @@
       "sourceHash": "5bdcd2c965a466611b0db7f4571d7a71461283c4b78e539f86604a6b3d882b01"
     },
     {
+      "name": "UBCCommand",
+      "originalPath": "modules/exports/UBCCommand.js",
+      "outputPath": "reconstructed/exports/UBCCommand.ts",
+      "sourceHash": "7e28d179f316b9014a07c50b71ea9c45d3cdb2c3964a5edfef7a2f57b88a0915"
+    },
+    {
       "name": "UFACommand",
       "originalPath": "modules/exports/UFACommand.js",
       "outputPath": "reconstructed/exports/UFACommand.ts",
@@ -4180,10 +4186,6 @@
     {
       "path": "modules/exports/TutorialUpgradeBuildingActionCommand.js",
       "reason": "unsupported-class-shape"
-    },
-    {
-      "path": "modules/exports/UBCCommand.js",
-      "reason": "Unsupported inherited accessor setter: cmdId"
     }
   ]
 }
