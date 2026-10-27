@@ -1,6 +1,6 @@
 {
   "sourceHash": "97ca9c69628f23d60b1974cf51f9ba5a08eb4832972140ba1c65f70c9b74a40f",
-  "generatedHash": "a64ff628fa5ab6b0c09340395aa84100fefc138adb31bfb9f3ecbaad09a141bb",
+  "generatedHash": "bffa656a1a41e6e28034c5f2280574751de678692450883d72412c5e7f3fdf7d",
   "constructor": "implicit-super",
   "accessors": [
     "get:eventType"
@@ -54,6 +54,26 @@
     }
   ],
   "renamed": [],
+  "verifiedParameterRenames": [
+    {
+      "method": "executeCommand",
+      "index": 0,
+      "original": "__s5param0",
+      "name": "statusCode",
+      "meaning": "protocol-status",
+      "evidence": "status-branch-and-response-fields",
+      "confidence": "high"
+    },
+    {
+      "method": "executeCommand",
+      "index": 1,
+      "original": "__s5param1",
+      "name": "responseFields",
+      "meaning": "protocol-payload",
+      "evidence": "server-command-payload",
+      "confidence": "high"
+    }
+  ],
   "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,
   "staticInitializationPreserved": false,

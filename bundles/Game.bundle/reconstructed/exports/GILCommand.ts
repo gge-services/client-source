@@ -11,17 +11,17 @@ export class GILCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
+  executeCommand(statusCode, responseFields) {
     var __s9local0;
-    if (__s9param1 && __s9param1.length > 0) {
-      __s9local0 = JSON.parse(__s9param1[1]);
+    if (responseFields && responseFields.length > 0) {
+      __s9local0 = JSON.parse(responseFields[1]);
     }
-    switch (__s9param0) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
         CastleBasicController.getInstance().dispatchEvent(new LinkReceivedEvent(__s9local0.L));
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

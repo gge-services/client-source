@@ -30,8 +30,8 @@ export class SCPCommand extends CastleCommand {
     }
     return false;
   }
-  dispatchArrivedEvent(__s14param0) {
-    this.controller.dispatchEvent(new CastleServerMessageArrivedEvent(CastleServerMessageArrivedEvent.SCP_ARRIVED, [__s14param0]));
+  dispatchArrivedEvent(argument0) {
+    this.controller.dispatchEvent(new CastleServerMessageArrivedEvent(CastleServerMessageArrivedEvent.SCP_ARRIVED, [argument0]));
   }
 }
 classImplementsInterfaces(SCPCommand, "IExecCommand");

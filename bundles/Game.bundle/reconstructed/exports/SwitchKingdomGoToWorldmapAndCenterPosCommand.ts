@@ -8,12 +8,12 @@ import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleComm
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 const __s0local0 = createjs.Point;
 export class SwitchKingdomGoToWorldmapAndCenterPosCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
-    if (__s5param0) {
-      var __s5local0 = int(__s5param0.shift());
-      var __s5local1 = int(__s5param0.shift());
-      var __s5local2 = int(__s5param0.shift());
-      var __s5local3 = int(__s5param0.shift());
+  execute(argument0 = null) {
+    if (argument0) {
+      var __s5local0 = int(argument0.shift());
+      var __s5local1 = int(argument0.shift());
+      var __s5local2 = int(argument0.shift());
+      var __s5local3 = int(argument0.shift());
       if (!CastleModel.kingdomData.getKingdomVOByID(__s5local0).isPaid) {
         return;
       }

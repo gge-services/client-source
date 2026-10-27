@@ -8,15 +8,15 @@ import { IngameClientCommands } from "./IngameClientCommands";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleFacebookSwitchToCachedAccountCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     CommandController.instance.executeCommand(BasicController.COMMAND_LOGOUT);
     CommandController.instance.executeCommand(BasicController.COMMAND_CONNECT_CLIENT);
     CastleBasicController.getInstance().addEventListener(CastleFacebookSDKEvent.CONNECTED, this.bindFunction(this.onGetFacebookStatus));
     CastleFacebookModule.checkLoginStatus();
   }
-  onGetFacebookStatus(__s7param0) {
+  onGetFacebookStatus(argument0) {
     CastleBasicController.getInstance().removeEventListener(CastleFacebookSDKEvent.CONNECTED, this.bindFunction(this.onGetFacebookStatus));
-    CastleModel.localData.saveFacebookID(__s7param0.authResponse.userID);
+    CastleModel.localData.saveFacebookID(argument0.authResponse.userID);
     CommandController.instance.executeCommand(BasicController.COMMAND_LOGIN);
     CommandController.instance.executeCommand(IngameClientCommands.INIT_EQUIPMENT_FAVORITES);
   }

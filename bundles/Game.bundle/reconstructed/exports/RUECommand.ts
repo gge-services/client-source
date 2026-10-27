@@ -11,17 +11,17 @@ export class RUECommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
+  executeCommand(statusCode, responseFields) {
     var __s9local0;
-    switch (__s9param0) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
-        __s9local0 = JSON.parse(__s9param1[1]);
+        __s9local0 = JSON.parse(responseFields[1]);
         CastleModel.militaryData.parse_rue(__s9local0);
         CastleModel.userCastleListDetailed.parse_rue(__s9local0);
         this.controller.dispatchEvent(new CastleMilitaryDataEvent(CastleMilitaryDataEvent.UNIT_UPDATED, [__s9local0]));
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

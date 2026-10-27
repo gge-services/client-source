@@ -12,9 +12,9 @@ export class QSTCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  exec(__s9param0) {
-    var __s9local0 = int(__s9param0[0]);
-    var __s9local1 = __s9param0[1];
+  exec(commandResponse) {
+    var __s9local0 = int(commandResponse[0]);
+    var __s9local1 = commandResponse[1];
     switch (__s9local0) {
       case ERROR.ALL_OK:
         for (var __s9local2 = 0, __s9local3 = JSON.parse(__s9local1[1]).QIDS; __s9local2 < __s9local3.length; __s9local2++) {

@@ -9,9 +9,9 @@ export class VIPCommand extends CastleCommand {
   executeCommand(statusCode, responseFields) {
     return super.executeCommand(statusCode, responseFields);
   }
-  exec(__s7param0) {
-    var __s7local0 = int(__s7param0[0]);
-    var __s7local1 = __s7param0[1];
+  exec(commandResponse) {
+    var __s7local0 = int(commandResponse[0]);
+    var __s7local1 = commandResponse[1];
     switch (__s7local0) {
       case ERROR.ALL_OK:
         var __s7local2 = JSON.parse(__s7local1[1]);

@@ -7,8 +7,8 @@ import { CommandController } from "../../../ggs.dll/reconstructed/exports/Comman
 import { IngameClientCommands } from "./IngameClientCommands";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleOpenMessageDialogCommand extends BasicClientCommand {
-  execute(__s5param0 = null) {
-    var __s5local0 = __s5param0;
+  execute(argument0 = null) {
+    var __s5local0 = argument0;
     CommandController.instance.executeCommand(IngameClientCommands.HANDLE_DIALOG_INFO, __s5local0.dialogInfo);
     if (!__s5local0.read) {
       CastleModel.smartfoxClient.sendCommandVO(new C2SMarkMessageReadVO(__s5local0.messageID));

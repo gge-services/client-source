@@ -11,16 +11,16 @@ export class SCICommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
         debug("===== minute skip answer!");
-        debug(__s9param1 ? __s9param1.join(", ") : "null");
+        debug(responseFields ? responseFields.join(", ") : "null");
         this.controller.dispatchEvent(new CastleMinuteSkipEvent(CastleMinuteSkipEvent.MINUTESKIP_USE_SUCESS));
         break;
       default:
         this.controller.dispatchEvent(new CastleMinuteSkipEvent(CastleMinuteSkipEvent.MINUTESKIP_USE_FAIL));
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

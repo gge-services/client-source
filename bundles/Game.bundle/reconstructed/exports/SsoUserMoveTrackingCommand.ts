@@ -5,14 +5,14 @@ import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleComm
 import { SsoUserMoveTrackingEvent } from "./SsoUserMoveTrackingEvent";
 import { TrackingCache } from "../../../ggs.dll/reconstructed/exports/TrackingCache";
 export class SsoUserMoveTrackingCommand extends SimpleCommand {
-  execute(__s5param0) {
+  execute(argument0) {
     if (!TrackingCache.getInstance().getEvent(ClientConstTracking.SSO_USER_MOVE_TRACKING_ID)) {
       TrackingCache.getInstance().cacheEvent(ClientConstTracking.SSO_USER_MOVE_TRACKING_ID, new SsoUserMoveTrackingEvent(EnvGlobalsHandler.globals.referrer));
     }
     var __s5local0 = TrackingCache.getInstance().getEvent(ClientConstTracking.SSO_USER_MOVE_TRACKING_ID);
     __s5local0.playerId = BasicModel.userData.playerID;
     __s5local0.date = Math.round(new Date().time / 1000);
-    __s5local0.actionType = __s5param0[0];
+    __s5local0.actionType = argument0[0];
     __s5local0.login_method = EnvGlobalsHandler.globals.loginIsKeyBased ? SsoUserMoveTrackingEvent.LOGIN_WITH_SSO : SsoUserMoveTrackingEvent.LOGIN_WITH_PASSWORD;
     TrackingCache.getInstance().sendEvent(ClientConstTracking.SSO_USER_MOVE_TRACKING_ID);
   }

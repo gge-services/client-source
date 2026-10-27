@@ -12,11 +12,11 @@ import { Localize } from "../../../ggs.dll/reconstructed/exports/Localize";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenEventAnnouncementDialogCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
-    if (!__s5param0 || !instanceOfClass(__s5param0, "MessageEventAnnouncementVO")) {
+  execute(argument0 = null) {
+    if (!argument0 || !instanceOfClass(argument0, "MessageEventAnnouncementVO")) {
       throw new Error("OpenEventAnnouncementDialogCommand expects a MessageEventAnnouncementVO as its commandVars");
     }
-    this.messageEventAnnouncementVO = __s5param0;
+    this.messageEventAnnouncementVO = argument0;
     var __s5local0 = this.messageEventAnnouncementVO.eventId;
     var __s5local1 = this.messageEventAnnouncementVO.durationTS;
     CastleModel.eventAnnouncementData.isClaimed(__s5local1);

@@ -42,7 +42,7 @@ export class TutorialBuildBuildingActionCommand extends TutorialBasicActionComma
     this.layoutManager.tutorialPanel.showWithText("tutorial_openBuildshop_copy_duplicate", ClientConstCharacter.CHAR_ID_FEMALE_TUTORIAL_CHARACTER);
     this.tutorialController.waitForLayoutStateChangeFinished(CastleLayoutManager.STATE_ISO, this.bindFunction(this.onPlayerOpenedBuildMenu));
   }
-  onPlayerOpenedBuildMenu(__s18param0 = null) {
+  onPlayerOpenedBuildMenu(argument0 = null) {
     if (Iso.renderer.strategies.currentStrategy.isActive(IsoRenderStrategyEnum.BUILD_MODE)) {
       this.trackStep("010_030_build_menu_opened");
       this.layoutManager.tutorialPanel.hide();
@@ -67,8 +67,8 @@ export class TutorialBuildBuildingActionCommand extends TutorialBasicActionComma
     this.tutorialController.waitForLayoutStateChangeFinished(CastleLayoutManager.STATE_ISO, this.bindFunction(this.onDecoShopPanelClose));
     this.tutorialController.registerComplexListener(this.controller, IsoEvent.ON_DECO_SHOP_DRAG_START, this.bindFunction(this.onPlayerSelectBuildingInBuildMenu));
   }
-  onPlayerSelectBuildingInBuildMenu(__s26param0) {
-    if (__s26param0.params[0].wodId == this._tutorialStepVO.attributes.get(TutorialBasicActionCommand.WODID)) {
+  onPlayerSelectBuildingInBuildMenu(argument0) {
+    if (argument0.params[0].wodId == this._tutorialStepVO.attributes.get(TutorialBasicActionCommand.WODID)) {
       this.showTutorialMarker();
       this.layoutManager.tutorialPanel.showWithText("tut_secondQuestConfirmPlacement_copy_duplicate", ClientConstCharacter.CHAR_ID_FEMALE_TUTORIAL_CHARACTER);
       this.trackStep("010_040_woodcutter_selected");
@@ -82,12 +82,12 @@ export class TutorialBuildBuildingActionCommand extends TutorialBasicActionComma
       this.filter.allowNoDialogs();
     }
   }
-  onPlayerPlacedBuilding(__s29param0) {
+  onPlayerPlacedBuilding(argument0) {
     this.tutorialController.removeComplexListener(this.controller, IsoEvent.ON_DECO_SHOP_DRAG_STOP, this.bindFunction(this.onBuildingLost));
   }
-  onCategoryChanged(__s31param0) {
+  onCategoryChanged(argument0) {
     if (this.tutorialData().isInTutorial()) {
-      if (__s31param0.newCategory != this.getBuildingCategory()) {
+      if (argument0.newCategory != this.getBuildingCategory()) {
         this.removeTutorialMarker();
         this.layoutManager.tutorialPanel.hide();
         var __s31local0 = this.getPanelDisp(CastleDecoShopPanel)["btn_" + this.getBuildingCategory().toLowerCase()];
@@ -99,24 +99,24 @@ export class TutorialBuildBuildingActionCommand extends TutorialBasicActionComma
       }
     }
   }
-  onBuildingLost(__s36param0) {
+  onBuildingLost(argument0) {
     this.tutorialController.removeComplexListener(this.controller, IsoEvent.ON_DECO_SHOP_DRAG_STOP, this.bindFunction(this.onBuildingLost));
-    if (__s36param0.params[0].vo.wodId == this._tutorialStepVO.attributes.get(TutorialBasicActionCommand.WODID)) {
+    if (argument0.params[0].vo.wodId == this._tutorialStepVO.attributes.get(TutorialBasicActionCommand.WODID)) {
       this.removeTutorialMarker();
       this.tutorialController.removeComplexListener(this.controller, IsoEvent.ON_DRAG_OF_NEW_OBJECT_DONE, this.bindFunction(this.onBuildingPlacedOnValidPosition));
       this.tutorialController.removeComplexListener(this.controller, IsoEvent.ON_DRAG_OF_NEW_OBJECT_DONE, this.bindFunction(this.onPlayerPlacedBuilding));
       this.waitUntilPlayerDragBuilding();
     }
   }
-  onBuildingPositionInvalid(__s39param0) {
+  onBuildingPositionInvalid(argument0) {
     this.removeTutorialMarker();
     this.tutorialController.removeComplexListener(this.controller, IsoEvent.ON_DRAG_INVALID, this.bindFunction(this.onBuildingPositionInvalid));
     this.tutorialController.removeComplexListener(this.controller, IsoEvent.ON_DECO_SHOP_DRAG_STOP, this.bindFunction(this.onBuildingLost));
     this.tutorialController.removeComplexListener(this.controller, IsoEvent.ON_DRAG_OF_NEW_OBJECT_DONE, this.bindFunction(this.onBuildingPlacedOnValidPosition));
     this.waitUntilPlayerDragBuilding();
   }
-  onBuildingPlacedOnValidPosition(__s41param0) {
-    if (__s41param0.params[0] == this._tutorialStepVO.attributes.get(TutorialBasicActionCommand.WODID)) {
+  onBuildingPlacedOnValidPosition(argument0) {
+    if (argument0.params[0] == this._tutorialStepVO.attributes.get(TutorialBasicActionCommand.WODID)) {
       this.filter.allowNoDialogs();
       this.blocker.allowNoClicks();
       this.tutorialController.removeListeners();
@@ -130,12 +130,12 @@ export class TutorialBuildBuildingActionCommand extends TutorialBasicActionComma
       this.tutorialController.registerComplexListener(this.controller, IsoEvent.ON_BUILDING_CONSTRUCTION_DONE, this.bindFunction(this.onBuildBuildingComplete));
     }
   }
-  onRingMenuOpen(__s45param0) {
+  onRingMenuOpen(argument0) {
     if (this.layoutManager) {
       IsoHelper.view.showRingMenu(false);
     }
   }
-  onBuildBuildingComplete(__s48param0) {
+  onBuildBuildingComplete(argument0) {
     this.onRingMenuOpen(null);
     this.tutorialController.removeComplexListener(this.controller, IsoEvent.ON_SHOW_RING_MENU, this.bindFunction(this.onRingMenuOpen));
     this.tutorialController.removeComplexListener(this.controller, IsoEvent.ON_BUILDING_CONSTRUCTION_DONE, this.bindFunction(this.onBuildBuildingComplete));
@@ -143,11 +143,11 @@ export class TutorialBuildBuildingActionCommand extends TutorialBasicActionComma
     this.trackStep("010_050_woodcutter_confirmed");
     this.finishStep();
   }
-  static getMCByBuildingVO(__s50param0, __s50param1) {
-    var __s50local0 = __s50param0.toString();
+  static getMCByBuildingVO(argument0, argument1) {
+    var __s50local0 = argument0.toString();
     __s50local0 = (__s50local0 = __s50local0.substr("function ".length)).substr(0, __s50local0.indexOf("("));
     for (var __s50local1 = 0; __s50local1 < 4; ++__s50local1) {
-      var __s50local2 = __s50param1["i" + __s50local1];
+      var __s50local2 = argument1["i" + __s50local1];
       if (__s50local2.shopVO && instanceOfClass(__s50local2.shopVO, __s50local0)) {
         return __s50local2;
       }

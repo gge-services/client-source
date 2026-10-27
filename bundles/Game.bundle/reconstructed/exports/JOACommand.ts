@@ -43,7 +43,7 @@ export class JOACommand extends CastleCommand {
     }
     return false;
   }
-  showAllianceDialog(__s12param0) {
+  showAllianceDialog(argument0) {
     CastleDialogHandler.getInstance().registerDefaultDialogs(CastleAllianceDialog, new CastleAllianceDialogProperties(ClientConstAlliance.CAT_COMMUNICATION));
   }
 }

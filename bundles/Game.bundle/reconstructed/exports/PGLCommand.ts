@@ -10,17 +10,17 @@ export class PGLCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
-        if (__s9param1.length > 0) {
-          var __s9local0 = __s9param1[1];
+        if (responseFields.length > 0) {
+          var __s9local0 = responseFields[1];
           var __s9local1 = JSON.parse(__s9local0.toString());
           CastleModel.playerGiftData.parse_PGL(__s9local1.G, __s9local1.RA);
         }
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return true;
   }

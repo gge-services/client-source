@@ -19,30 +19,30 @@ export class CastleRegisterUserCommand extends BasicRegisterUserCommand {
   set registrationVOClass(value) {
     super.registrationVOClass = value;
   }
-  parseCommandVariables(__s9param0 = null) {
-    var __s9local0 = __s9param0;
+  parseCommandVariables(argument0 = null) {
+    var __s9local0 = argument0;
     var __s9local1 = __s9local0[0];
     var __s9local2 = __s9local0[1];
     return new BasicRequiredRegistrationFieldsVO(__s9local2, null, __s9local1);
   }
-  sendRegisterUserCommand(__s11param0, __s11param1?: any) {
+  sendRegisterUserCommand(argument0, argument1?: any) {
     var __s11local0 = this;
-    if (__s11param1 === undefined) {
-      __s11param1 = 3;
+    if (argument1 === undefined) {
+      argument1 = 3;
     }
     if (this.isSteamDesktopBuild()) {
       this.fetchSteamAuthTicket().then(function (__s15param0) {
         try {
-          if (instanceOfClass(__s11param0, "C2SRegisterWithNameVO")) {
-            __s11param0.STK = __s15param0 || "";
+          if (instanceOfClass(argument0, "C2SRegisterWithNameVO")) {
+            argument0.STK = __s15param0 || "";
           }
         } catch (__s19local0) {
           console.warn(__s19local0);
         }
-        __s11local0.sendRegisterUserCommandWithRecaptcha(__s11param0, __s11param1);
+        __s11local0.sendRegisterUserCommandWithRecaptcha(argument0, argument1);
       });
     } else {
-      this.sendRegisterUserCommandWithRecaptcha(__s11param0, __s11param1);
+      this.sendRegisterUserCommandWithRecaptcha(argument0, argument1);
     }
   }
   isSteamDesktopBuild() {
@@ -78,10 +78,10 @@ export class CastleRegisterUserCommand extends BasicRegisterUserCommand {
       return Promise.resolve("");
     }
   }
-  sendRegisterUserCommandWithRecaptcha(__s44param0, __s44param1?: any) {
+  sendRegisterUserCommandWithRecaptcha(argument0, argument1?: any) {
     var __s44local0 = this;
-    if (__s44param1 === undefined) {
-      __s44param1 = 3;
+    if (argument1 === undefined) {
+      argument1 = 3;
     }
     try {
       window.grecaptcha.ready(function () {
@@ -90,24 +90,24 @@ export class CastleRegisterUserCommand extends BasicRegisterUserCommand {
           action: "submit"
         }).then(function (__s50param0) {
           try {
-            if (instanceOfClass(EnvGlobalsHandler.globals, "CastleEnvironmentGlobals") && instanceOfClass(__s44param0, "C2SRegisterWithNameVO")) {
-              __s44param0.IC = EnvGlobalsHandler.globals.inviterCode;
+            if (instanceOfClass(EnvGlobalsHandler.globals, "CastleEnvironmentGlobals") && instanceOfClass(argument0, "C2SRegisterWithNameVO")) {
+              argument0.IC = EnvGlobalsHandler.globals.inviterCode;
             }
           } catch (__s54local0) {
             console.warn(__s54local0);
           }
           try {
-            if (__s50param0 && instanceOfClass(__s44param0, "C2SRegisterWithNameVO")) {
-              __s44param0.RCT = __s50param0;
+            if (__s50param0 && instanceOfClass(argument0, "C2SRegisterWithNameVO")) {
+              argument0.RCT = __s50param0;
             }
           } catch (__s58local0) {
             console.warn(__s58local0);
           }
-          CastleModel.smartfoxClient.sendCommandVO(__s44param0);
+          CastleModel.smartfoxClient.sendCommandVO(argument0);
         }).catch(function (__s60param0) {
-          if (__s44param1 > 0) {
+          if (argument1 > 0) {
             window.setTimeout(function () {
-              __s44local0.sendRegisterUserCommandWithRecaptcha(__s44param0, __s44param1 - 1);
+              __s44local0.sendRegisterUserCommandWithRecaptcha(argument0, argument1 - 1);
             }, 250);
           } else {
             CastleDialogHandler.getInstance().registerDialogs(CastleStandardOkDialog, new BasicStandardOkDialogProperties(Localize.text("generic_alert_watchout"), Localize.text("errorCode_1")));
@@ -115,9 +115,9 @@ export class CastleRegisterUserCommand extends BasicRegisterUserCommand {
         });
       });
     } catch (__s66local0) {
-      if (__s44param1 > 0) {
+      if (argument1 > 0) {
         window.setTimeout(function () {
-          __s44local0.sendRegisterUserCommandWithRecaptcha(__s44param0, __s44param1 - 1);
+          __s44local0.sendRegisterUserCommandWithRecaptcha(argument0, argument1 - 1);
         }, 250);
       } else {
         CastleDialogHandler.getInstance().registerDialogs(CastleStandardOkDialog, new BasicStandardOkDialogProperties(Localize.text("generic_alert_watchout"), Localize.text("errorCode_1")));

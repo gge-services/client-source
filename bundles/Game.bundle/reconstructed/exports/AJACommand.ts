@@ -35,10 +35,10 @@ export class AJACommand extends BasicCommand {
     }
     return false;
   }
-  showAllianceDialog(__s12param0) {
+  showAllianceDialog(argument0) {
     CastleDialogHandler.getInstance().registerDefaultDialogs(CastleAllianceDialog, new CastleAllianceDialogProperties());
   }
-  showAllianceChat(__s14param0) {
+  showAllianceChat(argument0) {
     CastleDialogHandler.getInstance().registerDefaultDialogs(CastleAllianceDialog, new CastleAllianceDialogProperties(ClientConstAlliance.CAT_COMMUNICATION));
   }
 }

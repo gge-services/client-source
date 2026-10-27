@@ -1,6 +1,6 @@
 {
   "sourceHash": "7c8183082a8653c1d3e468ec5f612a8637bc1aefddc6642b7338abe539eba7f7",
-  "generatedHash": "b6def4b1de8fa28c4b300507d06b916eb7525cf48140f481bf75b2c4be695abc",
+  "generatedHash": "f0384f96feacdcfebd7dc456d4287c2b0c2ed8a04e00fe789edf01d983c555c3",
   "constructor": "implicit-super",
   "accessors": [
     "get:controller",

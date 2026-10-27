@@ -4,7 +4,7 @@ import { CastleDialogHandler } from "./CastleDialogHandler";
 import { ClientCheatsHelper } from "./ClientCheatsHelper";
 import { DarkOkDialog } from "./DarkOkDialog";
 export class CheatEndOfTextPipesCommand extends ABotCommand {
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     var __s5local0 = prompt("'on' or 'off' ", "on");
     if (__s5local0 == "on") {
       ClientCheatsHelper.performCommand("pipesOn");

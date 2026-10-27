@@ -13,15 +13,15 @@ export class TLEPCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
         break;
       case ERROR.NO_EVENT:
         CastleDialogHandler.getInstance().registerDialogs(CastleStandardOkDialog, new BasicStandardOkDialogProperties(Localize.text("generic_alert_information"), Localize.text("alert_tempServer_serverNotAvailable")));
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

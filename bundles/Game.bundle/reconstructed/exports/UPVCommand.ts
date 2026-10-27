@@ -13,9 +13,9 @@ export class UPVCommand extends CastleCommand {
   executeCommand(statusCode, responseFields) {
     return super.executeCommand(statusCode, responseFields);
   }
-  exec(__s11param0) {
-    var __s11local0 = int(__s11param0[0]);
-    var __s11local1 = __s11param0[1];
+  exec(commandResponse) {
+    var __s11local0 = int(commandResponse[0]);
+    var __s11local1 = commandResponse[1];
     switch (__s11local0) {
       case ERROR.ALL_OK:
         break;

@@ -11,18 +11,18 @@ import { CastleModel } from "./CastleModel";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenAttackOrderCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     CastleDialogHandler.getInstance().registerDialogsWithType(CastleExternalPreloaderDialog, new CastleExternalPreloaderDialogProperties(null), false, CastleDialogConsts.PRIORITY_TOP, 0, CastleDialogConsts.DIALOG_TYPE_PRELOADER);
     CastleBasicController.getInstance().addEventListener(CastleMessageDataEvent.NEW_MESSAGE_BODY, this.bindFunction(this.onMessageBodyAvailable));
     CastleBasicController.getInstance().addEventListener(CastleMessageDataEvent.MESSAGE_NO_EXIST, this.bindFunction(this.onMessageError));
-    CastleModel.messageData.getBodyForTextMessage(__s5param0.mid);
+    CastleModel.messageData.getBodyForTextMessage(argument0.mid);
   }
-  onMessageError(__s7param0) {
+  onMessageError(argument0) {
     this.removeEventListeners();
   }
-  onMessageBodyAvailable(__s9param0) {
+  onMessageBodyAvailable(argument0) {
     this.removeEventListeners();
-    var __s9local0 = CastleModel.bookmarkData.parseBookmarkObject(__s9param0.params[1]);
+    var __s9local0 = CastleModel.bookmarkData.parseBookmarkObject(argument0.params[1]);
     CastleDialogHandler.getInstance().registerDefaultDialogs(CastleAttackOrderReceivedDialog, new CastleBookmarkPasserProperties(__s9local0));
   }
   removeEventListeners() {

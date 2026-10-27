@@ -10,15 +10,15 @@ export class RFICommand extends CastleDispatchingCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
       case ERROR.NOTHING_TO_SKIP:
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
-    this.dispatchArrivedEvent(__s9param0, __s9param1);
+    this.dispatchArrivedEvent(statusCode, responseFields);
     return false;
   }
   get eventType() {

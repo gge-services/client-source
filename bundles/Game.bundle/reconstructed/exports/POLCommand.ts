@@ -19,9 +19,9 @@ export class POLCommand extends CastleCommand {
     }
     return super.executeCommand(statusCode, responseFields);
   }
-  exec(__s12param0) {
-    var __s12local0 = int(__s12param0[0]);
-    var __s12local1 = __s12param0[1];
+  exec(commandResponse) {
+    var __s12local0 = int(commandResponse[0]);
+    var __s12local1 = commandResponse[1];
     switch (__s12local0) {
       case ERROR.ALL_OK:
       case 10005:

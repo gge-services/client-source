@@ -4,18 +4,18 @@ import { CastleServerMessageArrivedEvent } from "./CastleServerMessageArrivedEve
 import { ERROR } from "../../../ggs.dll/reconstructed/exports/ERROR";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleDispatchingCommand extends CastleCommand {
-  executeCommand(__s5param0, __s5param1) {
-    switch (__s5param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
         break;
       default:
-        this.showErrorDialog(__s5param0, __s5param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
-    this.dispatchArrivedEvent(__s5param0, __s5param1);
+    this.dispatchArrivedEvent(statusCode, responseFields);
     return false;
   }
-  dispatchArrivedEvent(__s8param0, __s8param1) {
-    this.controller.dispatchEvent(new CastleServerMessageArrivedEvent(this.eventType, [__s8param0, __s8param1]));
+  dispatchArrivedEvent(argument0, argument1) {
+    this.controller.dispatchEvent(new CastleServerMessageArrivedEvent(this.eventType, [argument0, argument1]));
   }
   get eventType() {
     throw new AbstractMethodError();

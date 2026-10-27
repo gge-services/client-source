@@ -31,7 +31,7 @@ export class RMCCommand extends CastleCommand {
     }
     return false;
   }
-  dispatchForShowPopUp(__s12param0, __s12param1) {
-    this.controller.dispatchEvent(new CastleServerMessageArrivedEvent(CastleServerMessageArrivedEvent.RMC_ARRIVED, [__s12param0, __s12param1]));
+  dispatchForShowPopUp(argument0, argument1) {
+    this.controller.dispatchEvent(new CastleServerMessageArrivedEvent(CastleServerMessageArrivedEvent.RMC_ARRIVED, [argument0, argument1]));
   }
 }

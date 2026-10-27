@@ -21,9 +21,9 @@ export class VCKLegacyCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    this.env.buildNumberServer = __s9param1[1];
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    this.env.buildNumberServer = responseFields[1];
+    switch (statusCode) {
       case ERROR.ALL_OK:
         this.layoutManager.showServerAndClientVersion();
         this.controller.dispatchEvent(new VCKCommandOkEvent(VCKCommandOkEvent.VCK_OK));
@@ -47,15 +47,15 @@ export class VCKLegacyCommand extends CastleCommand {
       case ERROR.GENERAL_ERROR:
       case ERROR.INVALID_PARAMETER_VALUE:
         CastleDialogHandler.getInstance().registerDialogs(CastleStandardOkDialog, new BasicStandardOkDialogProperties(Localize.text("generic_versioncheck_error"), Localize.text("generic_versioncheck_errorcode_1")));
-        this.logError(__s9param0);
+        this.logError(statusCode);
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
-        this.logError(__s9param0);
+        this.showErrorDialog(statusCode, responseFields);
+        this.logError(statusCode);
     }
     return false;
   }
-  logError(__s17param0) {
+  logError(argument0) {
     ExternalLog.logger.log(new VersionErrorLOFactory(VersionErrorLOFactory.OLD_CLIENT_VERSION_ERROR, this.env.buildNumberServer));
   }
 }

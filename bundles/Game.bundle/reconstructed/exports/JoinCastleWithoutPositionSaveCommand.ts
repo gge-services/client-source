@@ -5,8 +5,8 @@ import { FlashBlockHelper } from "./FlashBlockHelper";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class JoinCastleWithoutPositionSaveCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
-    var __s5local0 = castAs(__s5param0, "IWorldmapObjectVO");
+  execute(argument0 = null) {
+    var __s5local0 = castAs(argument0, "IWorldmapObjectVO");
     if (__s5local0) {
       if (!FlashBlockHelper.checkFlashBlock(__s5local0.spaceID)) {
         CastleModel.worldmapCameraData.savedMapPosition = null;

@@ -8,7 +8,7 @@ export class CRLCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
+  executeCommand(argument0, argument1) {
     return true;
   }
 }

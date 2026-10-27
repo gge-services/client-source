@@ -7,10 +7,10 @@ import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleComm
 import { TreasureMapsConst } from "../../../ggs.dll/reconstructed/exports/TreasureMapsConst";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenSeasonInfoDialogCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
-    var __s5local0 = __s5param0[0];
-    var __s5local1 = int(__s5param0[1]);
-    var __s5local2 = __s5param0[2];
+  execute(argument0 = null) {
+    var __s5local0 = argument0[0];
+    var __s5local1 = int(argument0[1]);
+    var __s5local2 = argument0[2];
     switch (__s5local0.progressType) {
       case TreasureMapsConst.PROGRESS_FOUND_MAP_PIECE:
         break;

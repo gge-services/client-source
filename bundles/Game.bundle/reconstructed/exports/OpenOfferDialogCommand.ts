@@ -18,8 +18,8 @@ import { PrimeTimeSkinDialog } from "./PrimeTimeSkinDialog";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenOfferDialogCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
-    var __s5local0 = castAs(__s5param0, "GlobalOfferVO");
+  execute(argument0 = null) {
+    var __s5local0 = castAs(argument0, "GlobalOfferVO");
     if (__s5local0 && BasicModel.sessionData.loggedIn) {
       var __s5local1;
       var __s5local2 = new CastleOfferDialogProperties(__s5local0);

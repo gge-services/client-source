@@ -49,9 +49,9 @@ export class GBDCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  exec(__s9param0) {
-    var __s9local0 = int(__s9param0[0]);
-    var __s9local1 = __s9param0[1];
+  exec(commandResponse) {
+    var __s9local0 = int(commandResponse[0]);
+    var __s9local1 = commandResponse[1];
     switch (__s9local0) {
       case ERROR.ALL_OK:
         BasicController.getInstance().onLoggedIn();
@@ -195,7 +195,7 @@ export class GBDCommand extends CastleCommand {
         this.showErrorDialog(__s9local0, __s9local1);
     }
   }
-  focusViewOnEvent(__s30param0) {
+  focusViewOnEvent(argument0) {
     this.controller.removeEventListener(IsoEvent.ON_RENDERER_READY, this.bindFunction(this.focusViewOnEvent));
     if (CastleModel.tutorialData.isTutorialFinished()) {
       if (!(Iso.data.objects.eventBuildings.list.length <= 0)) {
@@ -203,7 +203,7 @@ export class GBDCommand extends CastleCommand {
       }
     }
   }
-  joinMyCastle(__s34param0 = null) {
+  joinMyCastle(argument0 = null) {
     try {
       BasicController.getInstance().soundController.playMusic(CastleSoundController.MUSIC_LOOP1, -1);
       BasicController.getInstance().soundController.setMusicVolume(0.3);

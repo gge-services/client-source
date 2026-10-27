@@ -18,11 +18,11 @@ export class SBPCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
+  executeCommand(statusCode, responseFields) {
     var __s9local0;
-    switch (__s9param0) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
-        __s9local0 = JSON.parse(__s9param1[1]);
+        __s9local0 = JSON.parse(responseFields[1]);
         CastleModel.currencyData.parseGCU(__s9local0.gcu);
         CastleModel.militaryData.parse_GUI(__s9local0.gui);
         if (CastleModel.areaData.activeArea) {
@@ -34,8 +34,8 @@ export class SBPCommand extends CastleCommand {
         CastleModel.eventPackageData.parseBoughtCount(__s9local0);
         break;
       case ERROR.NOT_ENOUGH_SPECIAL_CURRENCY:
-        if (__s9param1.length) {
-          __s9local0 = JSON.parse(__s9param1[1]);
+        if (responseFields.length) {
+          __s9local0 = JSON.parse(responseFields[1]);
           var __s9local1 = CastleModel.eventPackageData.getEventPackageByID(__s9local0.PID);
           var __s9local2 = new ModernPackageShopResourceTipDialogProperties(__s9local1);
           if (__s9local2.isHandledByTipDialog()) {
@@ -45,7 +45,7 @@ export class SBPCommand extends CastleCommand {
           }
           break;
         }
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
         break;
       case ERROR.STORAGE_CAPACITY_REACHED:
         this.showCustomErrorDialog("dialog_storageFull");
@@ -64,12 +64,12 @@ export class SBPCommand extends CastleCommand {
         this.showCustomErrorDialog("alert_ci_itemInventoryFull_copy");
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }
-  showCustomErrorDialog(__s18param0, __s18param1 = null) {
-    CastleDialogHandler.getInstance().registerDefaultDialogs(CastleStandardOkDialog, new BasicStandardOkDialogProperties(Localize.text("generic_alert_watchout"), Localize.text(__s18param0, __s18param1)));
+  showCustomErrorDialog(argument0, argument1 = null) {
+    CastleDialogHandler.getInstance().registerDefaultDialogs(CastleStandardOkDialog, new BasicStandardOkDialogProperties(Localize.text("generic_alert_watchout"), Localize.text(argument0, argument1)));
   }
 }
 classImplementsInterfaces(SBPCommand, "IExecCommand");

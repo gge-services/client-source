@@ -13,11 +13,11 @@ export class HACCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
         if (CastleModel.worldmapData) {
-          var __s9local0 = JSON.parse(__s9param1[1]).CP;
+          var __s9local0 = JSON.parse(responseFields[1]).CP;
           if (__s9local0 != null) {
             for (var __s9local1 = 0, __s9local2 = __s9local0; __s9local1 < __s9local2.length; __s9local1++) {
               var __s9local3 = __s9local2[__s9local1];
@@ -38,7 +38,7 @@ export class HACCommand extends CastleCommand {
         }
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

@@ -77,10 +77,10 @@ function __s0local7(__s18param0) {
   return __s18param0.userID !== undefined && __s18param0.accessToken !== undefined && __s18param0.expiresIn !== undefined && __s18param0.signedRequest !== undefined;
 }
 export class CastleLoginCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     BasicController.getInstance().onLogIn();
     BasicModel.sessionData.loggedIn = true;
-    if (!__s0local2() && !__s0local3(__s5param0) && !__s0local4()) {
+    if (!__s0local2() && !__s0local3(argument0) && !__s0local4()) {
       __s0local5();
     }
   }

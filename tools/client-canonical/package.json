@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "compare": "node compare.mjs",
-    "test": "node --test test.mjs fetch-client.test.mjs refine-modules.test.mjs semantic-view.test.mjs reverse-ts-es5.test.mjs resolve-imports.test.mjs resolve-graph-identities.test.mjs compare-official-raw.test.mjs",
+    "test": "node --test test.mjs fetch-client.test.mjs refine-modules.test.mjs semantic-view.test.mjs reverse-ts-es5.test.mjs resolve-imports.test.mjs resolve-graph-identities.test.mjs compare-official-raw.test.mjs semantic-parameters.test.mjs",
     "verify": "node verify.mjs ../..",
     "audit": "node audit-symbol-views.mjs ../..",
     "reconstruct": "npm run graph && node reconstruct-commands.mjs ../..",
@@ -13,7 +13,9 @@
     "typecheck:compat": "node audit-ts-project.mjs ../.. /tmp/gge-client-ts-typecheck --emit",
     "typecheck:complete": "node audit-ts-project.mjs ../.. /tmp/gge-client-ts-typecheck-complete --emit --strict",
     "audit:all-classes": "node audit-all-classes.mjs ../.. /tmp/gge-all-class-audit.json",
-    "compare:official": "node compare-official-raw.mjs ../.. /tmp/gge-official-20261025-live /tmp/gge-official-raw-compare.json"
+    "compare:official": "node compare-official-raw.mjs ../.. /tmp/gge-official-20261025-live /tmp/gge-official-raw-compare.json",
+    "parameter-audit": "node audit-parameter-roles.mjs ../.. ../../graphs/2026-10-16-parameter-roles.json",
+    "parameter-audit:check": "node audit-parameter-roles.mjs ../.. ../../graphs/2026-10-16-parameter-roles.json --check"
   },
   "dependencies": {
     "@babel/generator": "7.29.0",

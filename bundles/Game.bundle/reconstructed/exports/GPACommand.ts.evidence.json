@@ -1,6 +1,6 @@
 {
   "sourceHash": "2d569c196cbd2cd528017f5155cc1e928426bf9a8c374f6a65edc0bf5217ba95",
-  "generatedHash": "cf544f3a2f2ad750ebcf88bc347dd2c56901f1ab12dc6972394334a343952e1d",
+  "generatedHash": "c8277f65f83a78003b1005c39a69f832c9e43484564cd2632bf340693538a98f",
   "constructor": "implicit-super",
   "accessors": [
     "get:cmdId",
@@ -67,6 +67,17 @@
     "value",
     "statusCode",
     "responseFields"
+  ],
+  "verifiedParameterRenames": [
+    {
+      "method": "exec",
+      "index": 0,
+      "original": "__s11param0",
+      "name": "commandResponse",
+      "meaning": "status-payload-pair",
+      "evidence": "indexed-status-and-payload-error-handler",
+      "confidence": "high"
+    }
   ],
   "runtimeInterfaceCallsPreserved": 1,
   "removedRuntimeInterfaceCalls": 1,

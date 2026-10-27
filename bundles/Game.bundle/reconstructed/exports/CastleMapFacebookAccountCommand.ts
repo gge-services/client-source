@@ -12,9 +12,9 @@ import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleComm
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 const __s0local0 = getLogger("CastleMapFacebookAccountCommand");
 export class CastleMapFacebookAccountCommand extends SimpleCommand {
-  execute(__s5param0) {
+  execute(argument0) {
     this.removeListeners();
-    if (__s5param0) {
+    if (argument0) {
       this.controller.addEventListener(CastleFacebookSDKEvent.CONNECTED, this.bindFunction(this.onFBLoggedIn));
       this.controller.addEventListener(CastleFacebookSDKEvent.NOT_AUTHORIZED, this.bindFunction(this.onFbCancel));
       this.controller.addEventListener(CastleFacebookSDKEvent.NOT_CONNECTED, this.bindFunction(this.onFbCancel));
@@ -23,13 +23,13 @@ export class CastleMapFacebookAccountCommand extends SimpleCommand {
       this.unmap();
     }
   }
-  onFbCancel(__s9param0) {
+  onFbCancel(argument0) {
     this.controller.removeEventListener(CastleFacebookSDKEvent.CONNECTED, this.bindFunction(this.onFBLoggedIn));
     this.controller.removeEventListener(CastleFacebookSDKEvent.NOT_AUTHORIZED, this.bindFunction(this.onFbCancel));
     this.controller.removeEventListener(CastleFacebookSDKEvent.NOT_CONNECTED, this.bindFunction(this.onFbCancel));
     this.controller.dispatchEvent(new CastleFacebookEvent(CastleFacebookEvent.FACEBOOK_ACTION_CANCELED));
   }
-  onFBLoggedIn(__s11param0) {
+  onFBLoggedIn(argument0) {
     this.controller.removeEventListener(CastleFacebookSDKEvent.CONNECTED, this.bindFunction(this.onFBLoggedIn));
     this.controller.removeEventListener(CastleFacebookSDKEvent.NOT_AUTHORIZED, this.bindFunction(this.onFbCancel));
     this.controller.removeEventListener(CastleFacebookSDKEvent.NOT_CONNECTED, this.bindFunction(this.onFbCancel));
@@ -42,7 +42,7 @@ export class CastleMapFacebookAccountCommand extends SimpleCommand {
     CastleModel.localData.saveFacebookID(CastleFacebookModule.userID);
     CastleModel.smartfoxClient.sendCommandVO(new C2SMapFacebookVO(true, CastleFacebookModule.userID, CastleFacebookModule.accessToken, CastleFacebookModule.appID));
   }
-  onLogout(__s15param0) {
+  onLogout(argument0) {
     this.removeMappingListeners();
     this.controller.removeEventListener(CastleLogoutEvent.LOGOUT_TRIGGERED, this.bindFunction(this.onLogout));
   }
@@ -51,7 +51,7 @@ export class CastleMapFacebookAccountCommand extends SimpleCommand {
     this.controller.addEventListener(CastleFacebookEvent.FACEBOOK_MAPPING_ERROR, this.bindFunction(this.onUnmapFailed));
     CastleModel.smartfoxClient.sendCommandVO(new C2SMapFacebookVO(false, CastleFacebookModule.userID, CastleFacebookModule.accessToken, CastleFacebookModule.appID));
   }
-  onUnmapFailed(__s19param0) {
+  onUnmapFailed(argument0) {
     this.controller.removeEventListener(CastleFacebookEvent.FACEBOOK_MAPPING_ERROR, this.bindFunction(this.onUnmapFailed));
     CastleModel.userData.isConnectedToFacebook = true;
   }
@@ -63,7 +63,7 @@ export class CastleMapFacebookAccountCommand extends SimpleCommand {
     this.controller.removeEventListener(CastleFacebookEvent.FACEBOOK_MAPPING_UPDATED, this.bindFunction(this.onMappingUpdated));
     this.controller.removeEventListener(CastleFacebookEvent.FACEBOOK_MAPPING_ERROR, this.bindFunction(this.removeMappingListeners));
   }
-  onMappingUpdated(__s25param0) {
+  onMappingUpdated(argument0) {
     this.removeMappingListeners();
     if (CastleModel.userData.isConnectedToFacebook) {
       __s0local0.debug("Facebook_User <--> Player mapped successfully");

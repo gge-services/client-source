@@ -9,8 +9,8 @@ export class CPNECommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
         this.dispatchForShowPopUp("dialog_options_newName_success_desc", true);
         break;
@@ -30,11 +30,11 @@ export class CPNECommand extends CastleCommand {
         this.dispatchForShowPopUp("errorCode_95", false);
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }
-  dispatchForShowPopUp(__s12param0, __s12param1) {
-    this.controller.dispatchEvent(new CastleServerMessageArrivedEvent(CastleServerMessageArrivedEvent.CPNE_ARRIVED, [__s12param0, __s12param1]));
+  dispatchForShowPopUp(argument0, argument1) {
+    this.controller.dispatchEvent(new CastleServerMessageArrivedEvent(CastleServerMessageArrivedEvent.CPNE_ARRIVED, [argument0, argument1]));
   }
 }

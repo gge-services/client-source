@@ -12,8 +12,8 @@ export class TSCCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
         if (CastleModel.userData.connectToTempServer) {
           CommandController.instance.executeCommand(CastleBasicController.CONNECT_TO_TEMPORARY_SERVER);
@@ -23,7 +23,7 @@ export class TSCCommand extends CastleCommand {
         }
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return true;
   }

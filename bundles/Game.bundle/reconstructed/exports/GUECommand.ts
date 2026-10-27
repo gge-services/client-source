@@ -7,13 +7,13 @@ export class GUECommand extends CastleCommand {
   get cmdId() {
     return ClientConstSF.C2S_GENERAL_UNLOCK;
   }
-  executeCommand(__s7param0, __s7param1) {
-    switch (__s7param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
         CastleModel.generalsData.dispatchEvent(new GeneralsEvent(GeneralsEvent.GENERAL_UNLOCKED));
         break;
       default:
-        this.showErrorDialog(__s7param0, __s7param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

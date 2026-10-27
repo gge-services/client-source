@@ -13,7 +13,7 @@ import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleComm
 import { TaxInfoVO } from "./TaxInfoVO";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenActiveTaxDialogCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     switch (CastleModel.taxData.taxInfoVO.taxState) {
       case TaxInfoVO.TAXSTATUS_NONE:
         CastleBasicController.getInstance().addEventListener(CastleServerMessageArrivedEvent.TXI_ARRIVED, this.bindFunction(this.onTXIArrivedForTaxStatusNone));
@@ -24,7 +24,7 @@ export class OpenActiveTaxDialogCommand extends SimpleCommand {
         CastleDialogHandler.getInstance().registerDefaultDialogs(CastleCollectTaxProgressDialog);
     }
   }
-  onTXIArrivedForTaxStatusNone(__s8param0) {
+  onTXIArrivedForTaxStatusNone(argument0) {
     CastleBasicController.getInstance().removeEventListener(CastleServerMessageArrivedEvent.TXI_ARRIVED, this.bindFunction(this.onTXIArrivedForTaxStatusNone));
     if (CastleModel.taxData.taxInfoVO.population > 0) {
       CastleDialogHandler.getInstance().registerDefaultDialogs(CastleCollectTaxStartDialog, new CastleCollectTaxStartDialogProperties());

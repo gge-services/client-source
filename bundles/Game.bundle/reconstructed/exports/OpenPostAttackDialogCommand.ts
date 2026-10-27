@@ -24,11 +24,11 @@ import { SamuraiDaimyoBoosterSelectDialog } from "./SamuraiDaimyoBoosterSelectDi
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenPostAttackDialogCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
-    var __s5local0 = int(int(__s5param0[0]));
-    var __s5local1 = __s5param0[1];
-    var __s5local2 = __s5param0[2];
-    var __s5local3 = __s5param0[3];
+  execute(argument0 = null) {
+    var __s5local0 = int(int(argument0[0]));
+    var __s5local1 = argument0[1];
+    var __s5local2 = argument0[2];
+    var __s5local3 = argument0[3];
     if (!__s5local2) {
       throw new Error("Missing parameter in OpenPostAttackDialogCommand");
     }

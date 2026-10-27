@@ -8,8 +8,8 @@ import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleComm
 import { TooltipManagerFacade } from "./TooltipManagerFacade";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class JoinAreaAndSavePositionCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
-    var __s5local0 = __s5param0 || __s5param0.worldmapObjectVO;
+  execute(argument0 = null) {
+    var __s5local0 = argument0 || argument0.worldmapObjectVO;
     if (!FlashBlockHelper.checkFlashBlock(__s5local0.spaceID)) {
       var __s5local1;
       TooltipManagerFacade.hideAllTooltips();

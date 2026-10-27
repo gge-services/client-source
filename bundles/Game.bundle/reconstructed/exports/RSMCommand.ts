@@ -13,15 +13,15 @@ export class RSMCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
-        if (JSON.parse(__s9param1[1])[CommKeys.RESEND_MAIL_ACTION_TYPE] == PlayerConst.RESEND_MAIL_ACCOUNT_VERIFICATION) {
+        if (JSON.parse(responseFields[1])[CommKeys.RESEND_MAIL_ACTION_TYPE] == PlayerConst.RESEND_MAIL_ACCOUNT_VERIFICATION) {
           CastleDialogHandler.getInstance().registerDefaultDialogs(DarkOkDialog, new BasicStandardOkDialogProperties("attention", "dialog_options_newEmail_verificationSentAgain_desc"));
         }
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

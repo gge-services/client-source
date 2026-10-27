@@ -26,8 +26,8 @@ export class DRICommand extends CastleCommand {
     }
     return false;
   }
-  getDialogClassByListId(__s12param0) {
-    switch (__s12param0) {
+  getDialogClassByListId(argument0) {
+    switch (argument0) {
       case UnitProductionConst.TOOLS_LIST:
         return AutoRecruitmentCopyToolsDialog;
       default:

@@ -1,3 +1,3 @@
 export class ABotCommand {
-  execute(__s5param0 = null) {}
+  execute(argument0 = null) {}
 }

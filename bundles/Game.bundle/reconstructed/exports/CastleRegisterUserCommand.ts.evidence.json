@@ -1,6 +1,6 @@
 {
   "sourceHash": "240d85084ad832a3fbe3b991dd11c2bac12b35f5f6278cc067ea19b257066fa6",
-  "generatedHash": "d4cc85b8797775dabc3dfa0298b9d93cd64adb5e29f591fee9135ee329051118",
+  "generatedHash": "e1573e994df5599abb764329cc2cbbed8ac692ed9dd9f208327dbf8d02db068d",
   "constructor": "implicit-super",
   "accessors": [
     "get:registrationVOClass",

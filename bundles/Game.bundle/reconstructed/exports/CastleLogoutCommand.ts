@@ -16,10 +16,10 @@ import { EnvGlobalsHandler } from "../../../ggs.dll/reconstructed/exports/EnvGlo
 import { ExternalInterface } from "../../../ggs.dll/reconstructed/exports/ExternalInterface";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class CastleLogoutCommand extends BasicLogoutCommand {
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     CastleBasicController.getInstance().dispatchEvent(new CastleLogoutEvent(CastleLogoutEvent.LOGOUT_TRIGGERED));
     BasicLogoutCommand.DELETE_LOGIN_DATA_ON_LOGOUT = !EnvGlobalsHandler.globals.isOnSpecialServer;
-    super.execute(__s5param0);
+    super.execute(argument0);
     cxfResetCommandCache();
     CastleDataHolder.instance.gbdParsed = false;
     CastleDataHolder.instance.requestUptOnWorldmapSwitch = false;

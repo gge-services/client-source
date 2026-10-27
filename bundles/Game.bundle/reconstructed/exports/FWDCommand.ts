@@ -18,11 +18,11 @@ export class FWDCommand extends CastleCommand {
   set cmdId(value) {
     super.cmdId = value;
   }
-  executeCommand(__s9param0, __s9param1) {
-    switch (__s9param0) {
+  executeCommand(statusCode, responseFields) {
+    switch (statusCode) {
       case ERROR.ALL_OK:
         if (ClientConstCastle.WELCOME_FEATURE_ENABLED) {
-          var __s9local0 = JSON.parse(__s9param1[1]).FLT;
+          var __s9local0 = JSON.parse(responseFields[1]).FLT;
           __s9local0.sortOn("FTS", Array.NUMERIC | Array.DESCENDING);
           var __s9local1 = [];
           if (__s9local0 != null) {
@@ -46,7 +46,7 @@ export class FWDCommand extends CastleCommand {
         }
         break;
       default:
-        this.showErrorDialog(__s9param0, __s9param1);
+        this.showErrorDialog(statusCode, responseFields);
     }
     return false;
   }

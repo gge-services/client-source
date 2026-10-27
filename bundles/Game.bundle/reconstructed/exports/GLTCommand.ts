@@ -25,13 +25,13 @@ export class GLTCommand extends CastleCommand {
     }
     return false;
   }
-  buildInstanceVO(__s12param0) {
+  buildInstanceVO(argument0) {
     var __s12local0 = new NetworkInstance();
-    __s12local0.ip = __s12param0.TSIP;
-    __s12local0.port = __s12param0.TSP;
-    __s12local0.zone = __s12param0.TSZ;
-    __s12local0.zoneId = __s12param0.ZID;
-    __s12local0.instanceId = __s12param0.IID;
+    __s12local0.ip = argument0.TSIP;
+    __s12local0.port = argument0.TSP;
+    __s12local0.zone = argument0.TSZ;
+    __s12local0.zoneId = argument0.ZID;
+    __s12local0.instanceId = argument0.IID;
     if (CastleModel.userData.connectToABGServer) {
       __s12local0.instanceLocaId = "event_title_113";
     }

@@ -72,7 +72,7 @@ export class TutorialReadBattleLogCommand extends TutorialBasicActionCommand {
     this.layoutManager.tutorialPanel.showWithText("tut_dungeon_returntocastle_copy_duplicate", ClientConstCharacter.CHAR_ID_GENERAL);
     this.tutorialController.registerComplexListener(this.controller, CastleServerMessageArrivedEvent.JAA_ARRIVED, this.bindFunction(this.arrivedAtCastle));
   }
-  arrivedAtCastle(__s20param0) {
+  arrivedAtCastle(argument0) {
     this.trackStep("s_080_210_castle_entered");
     this.finishStep();
   }

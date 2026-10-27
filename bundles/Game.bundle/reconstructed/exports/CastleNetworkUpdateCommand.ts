@@ -10,7 +10,7 @@ export class CastleNetworkUpdateCommand extends BasicNetworkUpdateCommand {
   constructor() {
     super();
   }
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     if (this.env.useAutoLogin && CastleModel.localData.hasInstanceId) {
       ClientFunnelTrackingController.getInstance().trackState(ClientFunnelGameStates.LOGIN_COOKIE_READ);
       CommandController.instance.executeCommand(BasicController.COMMAND_LOGIN);

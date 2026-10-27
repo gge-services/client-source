@@ -52,33 +52,33 @@ export class GDICommand extends CastleCommand {
     }
     return false;
   }
-  addGKLToGC(__s20param0) {
+  addGKLToGC(argument0) {
     var __s20local0;
-    for (var __s20local1 = 0, __s20local2 = __s20param0.gkl.AI; __s20local1 < __s20local2.length; __s20local1++) {
+    for (var __s20local1 = 0, __s20local2 = argument0.gkl.AI; __s20local1 < __s20local2.length; __s20local1++) {
       var __s20local3 = __s20local2[__s20local1];
       if (__s20local3 !== undefined) {
         (__s20local0 = {} as any).AI = __s20local3[0];
-        __s20param0.gcl.C[0].AI.push(__s20local0);
+        argument0.gcl.C[0].AI.push(__s20local0);
       }
     }
   }
-  addGMLToGC(__s25param0) {
+  addGMLToGC(argument0) {
     var __s25local0;
-    for (var __s25local1 = 0, __s25local2 = __s25param0.gml.AI; __s25local1 < __s25local2.length; __s25local1++) {
+    for (var __s25local1 = 0, __s25local2 = argument0.gml.AI; __s25local1 < __s25local2.length; __s25local1++) {
       var __s25local3 = __s25local2[__s25local1];
       if (__s25local3 !== undefined) {
         (__s25local0 = {} as any).AI = __s25local3[0];
-        __s25param0.gcl.C[0].AI.push(__s25local0);
+        argument0.gcl.C[0].AI.push(__s25local0);
       }
     }
   }
-  addGLLToGC(__s30param0) {
+  addGLLToGC(argument0) {
     var __s30local0;
-    for (var __s30local1 = 0, __s30local2 = __s30param0.gll.AI; __s30local1 < __s30local2.length; __s30local1++) {
+    for (var __s30local1 = 0, __s30local2 = argument0.gll.AI; __s30local1 < __s30local2.length; __s30local1++) {
       var __s30local3 = __s30local2[__s30local1];
       if (__s30local3 !== undefined) {
         (__s30local0 = {} as any).AI = __s30local3[0];
-        __s30param0.gcl.C[0].AI.push(__s30local0);
+        argument0.gcl.C[0].AI.push(__s30local0);
       }
     }
   }

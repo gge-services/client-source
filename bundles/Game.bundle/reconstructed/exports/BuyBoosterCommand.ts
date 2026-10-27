@@ -14,8 +14,8 @@ import { int } from "../../../ggs.dll/reconstructed/exports/int";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class BuyBoosterCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
-    var __s5local0 = __s5param0;
+  execute(argument0 = null) {
+    var __s5local0 = argument0;
     var __s5local1 = int(__s5local0.finalCostsC2);
     if (CastleModel.currencyData.c2Amount < __s5local1) {
       CastleDialogHandler.getInstance().registerDefaultDialogs(CastleNoMoneyC2Dialog, new CastleNoMoneyC2DialogProperties());

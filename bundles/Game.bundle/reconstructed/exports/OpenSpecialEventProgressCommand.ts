@@ -7,8 +7,8 @@ import { CastleDialogHandler } from "./CastleDialogHandler";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class OpenSpecialEventProgressCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
-    var __s5local0 = castAs(__s5param0[0], "ArtifactEventVO");
+  execute(argument0 = null) {
+    var __s5local0 = castAs(argument0[0], "ArtifactEventVO");
     if (__s5local0) {
       if (__s5local0.hasAllParts) {
         CastleDialogHandler.getInstance().registerDefaultDialogs(CastleArtifactFoundTreasureDialog, new CastleArtifactEventDialogProperties(__s5local0), true, BasicDialogHandler.PRIORITY_LOW);

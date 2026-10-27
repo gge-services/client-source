@@ -6,11 +6,11 @@ import { IngameClientCommands } from "./IngameClientCommands";
 import { SimpleCommand } from "../../../ggs.dll/reconstructed/exports/SimpleCommand";
 import { classImplementsInterfaces } from "../../../ggs.dll/reconstructed/exports/classImplementsInterfaces";
 export class SwitchToRelocateWorldmapCommand extends SimpleCommand {
-  execute(__s5param0 = null) {
+  execute(argument0 = null) {
     var __s5local0 = CastleModel.userData.castleList.getHomeCastle();
-    var __s5local1 = !!__s5param0 && !!__s5param0.friendsPlace;
+    var __s5local1 = !!argument0 && !!argument0.friendsPlace;
     if (__s5local1) {
-      __s5local0 = __s5param0.friendsPlace;
+      __s5local0 = argument0.friendsPlace;
     }
     if (__s5local0) {
       if (this.layoutManager.currentState == CastleLayoutManager.STATE_WORLDMAP && CastleModel.kingdomData.activeKingdomID == 0) {
