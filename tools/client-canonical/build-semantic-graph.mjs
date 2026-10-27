@@ -20,18 +20,30 @@ export function resolveNode(graph, bundle, specifier) {
 }
 export async function buildSemanticGraph(root) {
   const nodes = [], edges = []
+  const literals=(await readFile(join(root,'graphs/2026-10-25-literal-identities.jsonl'),'utf8'))
+    .trim().split('\n').filter(Boolean).map(JSON.parse)
+  const literalMap=new Map()
+  for(const record of literals){
+    if(record.bundle!=='ggs.dll'||literalMap.has(record.sourcePath))throw Error('Conflicting literal export identity')
+    literalMap.set(record.sourcePath,record)
+  }
   for (const bundle of bundles) {
     const directory = join(root, 'bundles', bundle)
     const manifest = JSON.parse(await readFile(join(directory, 'manifest.json'), 'utf8'))
     const entries=[]
     for(const module of manifest.modules){
       const source=await readFile(join(directory,module.path),'utf8')
-      entries.push({module,source,id:stableNodeId(bundle,module,source)})
+      const ordinary=stableNodeId(bundle,module,source)
+      const literal=bundle==='ggs.dll'?literalMap.get(module.path):null
+      if(literal&&(ordinary||literal.sourceSha256!==digest(source)||
+        String(module.webpackId)!==literal.previousWebpackId))throw Error('Literal identity provenance conflict: '+module.path)
+      entries.push({module,source,id:ordinary??literal?.semanticId??null})
     }
     const index=new Map(entries.map(x=>[x.module.specifier,x]))
     for(const {module,source,id} of entries){
       nodes.push({bundle,id,specifier:module.specifier,path:module.path,
-        confidence:id? id.startsWith(bundle+':event:')?'verified-event-id':'verified-symbol':'unresolved-semantic',
+        confidence:id?id.startsWith(bundle+':event:')?'verified-event-id':
+          id.startsWith(bundle+':literal-export:')?'verified-literal-export':'verified-symbol':'unresolved-semantic',
         sourceSha256:module.canonicalSha256})
       for(const match of source.matchAll(/\brequire\(["'](gge-module:[^"'\n]+)["']\)/g)){
         const to=index.get(match[1])
