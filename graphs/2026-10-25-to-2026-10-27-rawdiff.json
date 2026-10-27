@@ -1,0 +1,618 @@
+{
+  "schemaVersion": 1,
+  "method": "direct-official-raw-AST-with-scoped-identifier-normalization",
+  "identityScope": "same-index-module-owners-with-over-95-percent-byte-identical-anchor-evidence",
+  "semanticBehavioralParityProven": false,
+  "results": [
+    {
+      "bundle": "Game.bundle",
+      "previousAsset": "Game.bundle.44dfdad29653dddea9cb.js",
+      "currentAsset": "Game.bundle.e2ca3c4ee155ea53c7c7.js",
+      "previousRawSha256": "2842063c093e044acd86fba16f9a39abbc3ef3341956a3a10e5e75017555e7d8",
+      "currentRawSha256": "1d91288bd31cbb7b17d7abe7a45255b19ce78ceb0a19c24c74bf228fe5006453",
+      "moduleArrayLength": 5832,
+      "presentModules": 5827,
+      "exactlyUnchangedModules": 5825,
+      "rawChangedModules": 2,
+      "classifications": {
+        "package-metadata-only": 2
+      },
+      "changes": [
+        {
+          "moduleIndex": 857,
+          "previousFactorySha256": "22788ffab46ff36c2808138408002bc3e1a8a5d0c3c641e7d2d2daa574fe02c2",
+          "currentFactorySha256": "50174c2aab3438cefdd3f60f057c29e1516457b5a35233fc1ce106dd5c4153b2",
+          "kind": "package-metadata-only",
+          "evidence": "nonmetadata-alpha-normalized-ast-identical",
+          "packageChanges": [
+            {
+              "name": "resolutions.encoding",
+              "kind": "added",
+              "current": "\"0.1.13\""
+            },
+            {
+              "name": "version",
+              "kind": "modified",
+              "previous": "\"1.2.1412\"",
+              "current": "\"1.2.1423\""
+            }
+          ]
+        },
+        {
+          "moduleIndex": 858,
+          "previousFactorySha256": "890483eae56d11d8e2b388bba015a78f8ac2680dc68107549b1437d76cea6503",
+          "currentFactorySha256": "cd07d32aaec4dec785629eaf762b365ea930740e95924b24dc650d278b81e8d6",
+          "kind": "package-metadata-only",
+          "evidence": "nonmetadata-alpha-normalized-ast-identical",
+          "packageChanges": [
+            {
+              "name": "version",
+              "kind": "modified",
+              "previous": "\"1.171.8\"",
+              "current": "\"1.171.9\""
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "bundle": "ggs.dll",
+      "previousAsset": "ggs.dll.375c3dca2ade50b26550.js",
+      "currentAsset": "ggs.dll.0062a820ff12c6e44e08.js",
+      "previousRawSha256": "519b5a687a0d18e3982abe53c6a291b1e51093ce70263949d323ced052a45063",
+      "currentRawSha256": "7dcf6ca6437788f524994a2ce49fbb0394a6c1d7792bd1e79b718d20d65c15cd",
+      "moduleArrayLength": 1009,
+      "presentModules": 1009,
+      "exactlyUnchangedModules": 990,
+      "rawChangedModules": 19,
+      "classifications": {
+        "binding-renames-only": 18,
+        "asset-catalog-only": 1
+      },
+      "changes": [
+        {
+          "moduleIndex": 1,
+          "previousFactorySha256": "ed04559c4afafa00f96f43908c964c2426910cae2edc33e1a5b005e9f86b6ae2",
+          "currentFactorySha256": "6b39e71353fb50eabbcf368b48a650837ca16954847ff0d6d24a9e5ab2ca6dac",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        },
+        {
+          "moduleIndex": 3,
+          "previousFactorySha256": "4519da91b4a5950d6e73820ce606665625e7c000ee119e9aeeb3327df9ff7a2d",
+          "currentFactorySha256": "68513d9f76ea26f2fbb7329e8f77327d6b95613d15d8e419aa2c57cdc7f4e6ee",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        },
+        {
+          "moduleIndex": 17,
+          "previousFactorySha256": "a1f1ff6453abd88d59d0451b1ee2c2179c94726414c53686bfa0d8214cfc35a4",
+          "currentFactorySha256": "5006d22b64da1a9b666ea1e600703c0e6980bfbe5424cd7fb984454e610d8a36",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        },
+        {
+          "moduleIndex": 29,
+          "previousFactorySha256": "52b03e6d3fd1441ef65d0e74ba84c58624771403f29bc5cccab82bb7352a06fc",
+          "currentFactorySha256": "82a3e4c9e09aa19e6ee4fb4c9aa1d15915a7a1225beba2ac08718215827df04e",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        },
+        {
+          "moduleIndex": 34,
+          "previousFactorySha256": "dece71f2b45ea2f480607c80503b91672eec720ac428c4953efbd586637838f1",
+          "currentFactorySha256": "df73d98a80b437416f8563a7ced68927f4cdddd4295eadd95f821f86fad1e9ee",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        },
+        {
+          "moduleIndex": 98,
+          "previousFactorySha256": "cf680b14c33d4d877cac539c48af628618d1a56da975cd8ebbb7cee7b319e6bd",
+          "currentFactorySha256": "de91779171d80ee2e8a4c39f63259425346581beb5ba235ee12c0c69cd3a834e",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        },
+        {
+          "moduleIndex": 106,
+          "previousFactorySha256": "c8220f69ecd66f26ebeaad696b5cec6a275f63266870bf2862a095adb7771484",
+          "currentFactorySha256": "03c64107059ff024d6df610e32ceca66a2d763494a7ecffef38f7e39c458e852",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        },
+        {
+          "moduleIndex": 136,
+          "previousFactorySha256": "88d501a4dbfdb06f8ee7cc462c0ee6b91149f3063e1692be4534843b33c8f361",
+          "currentFactorySha256": "268b7528a47fbb397413608233e84db9ab7c92f0e23fec848ba6ee5d8f8eafa5",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        },
+        {
+          "moduleIndex": 521,
+          "previousFactorySha256": "321c96591fd52a448cfc42f2472ac4f68c32168cf0c1e2ede88a6dbce8d531d8",
+          "currentFactorySha256": "99e414b6a9e96316b706ab2e3021315928764d916026808a0a25121c52f8e4a0",
+          "kind": "asset-catalog-only",
+          "evidence": "nonasset-alpha-normalized-ast-identical",
+          "previousAssets": 8159,
+          "currentAssets": 8230,
+          "previousAssetAssignments": 8162,
+          "currentAssetAssignments": 8233,
+          "assetChanges": [
+            {
+              "name": "Capital_Mapobject_Special_LuxuriousMarket",
+              "kind": "added",
+              "current": "[\"itemassets/Worldmap/WorldmapObjects/Landmarks/Capital_Mapobject_Special_LuxuriousMarket/Capital_Mapobject_Special_LuxuriousMarket--1792585970701\"]"
+            },
+            {
+              "name": "Castle_Mapobject_Special_LuxuriousMarket",
+              "kind": "added",
+              "current": "[\"itemassets/Worldmap/WorldmapObjects/Castles/Castle_Mapobject_Special_LuxuriousMarket/Castle_Mapobject_Special_LuxuriousMarket--1792585970701\"]"
+            },
+            {
+              "name": "CastleAllianceBattleGroundEvent_Blue",
+              "kind": "modified",
+              "previous": "[\"itemassets/Dialogs/AllianceBattleGrounds/CastleAllianceBattleGroundEvent_Blue/CastleAllianceBattleGroundEvent_Blue--1791819495818\"]",
+              "current": "[\"itemassets/Dialogs/AllianceBattleGrounds/CastleAllianceBattleGroundEvent_Blue/CastleAllianceBattleGroundEvent_Blue--1792749465951\"]"
+            },
+            {
+              "name": "CastleAllianceBattleGroundPreBuildCastleJade",
+              "kind": "modified",
+              "previous": "[\"itemassets/Dialogs/AllianceBattleGrounds/CastleAllianceBattleGroundPreBuildCastleJade/CastleAllianceBattleGroundPreBuildCastleJade--1789569247906\"]",
+              "current": "[\"itemassets/Dialogs/AllianceBattleGrounds/CastleAllianceBattleGroundPreBuildCastleJade/CastleAllianceBattleGroundPreBuildCastleJade--1792601551587\"]"
+            },
+            {
+              "name": "Citadel_Mapobject_Level2",
+              "kind": "modified",
+              "previous": "[\"itemassets/Worldmap/WorldmapObjects/Landmarks/Citadel_Mapobject_Level2/Citadel_Mapobject_Level2--1787837807533\"]",
+              "current": "[\"itemassets/Worldmap/WorldmapObjects/Landmarks/Citadel_Mapobject_Level2/Citadel_Mapobject_Level2--1792498123506\"]"
+            },
+            {
+              "name": "Citadel_Mapobject_Level3",
+              "kind": "modified",
+              "previous": "[\"itemassets/Worldmap/WorldmapObjects/Landmarks/Citadel_Mapobject_Level3/Citadel_Mapobject_Level3--1787837807533\"]",
+              "current": "[\"itemassets/Worldmap/WorldmapObjects/Landmarks/Citadel_Mapobject_Level3/Citadel_Mapobject_Level3--1792498123506\"]"
+            },
+            {
+              "name": "Collectable_Currency_CaravanIngot",
+              "kind": "modified",
+              "previous": "[\"itemassets/Collectables/Collectable_Currency_CaravanIngot/Collectable_Currency_CaravanIngot--1791464590995\"]",
+              "current": "[\"itemassets/Collectables/Collectable_Currency_CaravanIngot/Collectable_Currency_CaravanIngot--1792595990413\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedGreenFallenColossus",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedGreenFallenColossus/Deco_Building_ExaltedGreenFallenColossus--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedGreenKnightlyFeastCourt",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedGreenKnightlyFeastCourt/Deco_Building_ExaltedGreenKnightlyFeastCourt--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedGreenLuxuriousMarket",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedGreenLuxuriousMarket/Deco_Building_ExaltedGreenLuxuriousMarket--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedGreenShieldKnight",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedGreenShieldKnight/Deco_Building_ExaltedGreenShieldKnight--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedGreenSwordKnight",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedGreenSwordKnight/Deco_Building_ExaltedGreenSwordKnight--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedGreenWaterfallPavilion",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedGreenWaterfallPavilion/Deco_Building_ExaltedGreenWaterfallPavilion--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedPurpleFallenColossus",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedPurpleFallenColossus/Deco_Building_ExaltedPurpleFallenColossus--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedPurpleKnightlyFeastCourt",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedPurpleKnightlyFeastCourt/Deco_Building_ExaltedPurpleKnightlyFeastCourt--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedPurpleLuxuriousMarket",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedPurpleLuxuriousMarket/Deco_Building_ExaltedPurpleLuxuriousMarket--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedPurpleShieldKnight",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedPurpleShieldKnight/Deco_Building_ExaltedPurpleShieldKnight--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedPurpleSwordKnight",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedPurpleSwordKnight/Deco_Building_ExaltedPurpleSwordKnight--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedPurpleWaterfallPavilion",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedPurpleWaterfallPavilion/Deco_Building_ExaltedPurpleWaterfallPavilion--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedRedFallenColossus",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedRedFallenColossus/Deco_Building_ExaltedRedFallenColossus--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedRedKnightlyFeastCourt",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedRedKnightlyFeastCourt/Deco_Building_ExaltedRedKnightlyFeastCourt--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedRedLuxuriousMarket",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedRedLuxuriousMarket/Deco_Building_ExaltedRedLuxuriousMarket--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedRedShieldKnight",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedRedShieldKnight/Deco_Building_ExaltedRedShieldKnight--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedRedSwordKnight",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedRedSwordKnight/Deco_Building_ExaltedRedSwordKnight--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_ExaltedRedWaterfallPavilion",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedRedWaterfallPavilion/Deco_Building_ExaltedRedWaterfallPavilion--1792585970701\"]"
+            },
+            {
+              "name": "Deco_Building_FallenColossus",
+              "kind": "added",
+              "current": "[\"itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_FallenColossus/Deco_Building_FallenColossus--1792585970701\"]"
+            },
+            {
+              "name": "DetailView_EventSkin_Jade_Wall",
+              "kind": "modified",
+              "previous": "[\"itemassets/CastleDetailView/ABG_Maya/DetailView_EventSkin_Jade_Wall/DetailView_EventSkin_Jade_Wall--1788178003787\"]",
+              "current": "[\"itemassets/CastleDetailView/ABG_Maya/DetailView_EventSkin_Jade_Wall/DetailView_EventSkin_Jade_Wall--1792498123506\"]"
+            },
+            {
+              "name": "Eventunit_Unit_BtHGaterer",
+              "kind": "added",
+              "current": "[\"itemassets/Units/Eventunit/Eventunit_Unit_BtHGaterer/Eventunit_Unit_BtHGaterer--1792599504180\"]"
+            },
+            {
+              "name": "Eventunit_Unit_BthMeleeAttacker",
+              "kind": "added",
+              "current": "[\"itemassets/Units/Eventunit/Eventunit_Unit_BthMeleeAttacker/Eventunit_Unit_BthMeleeAttacker--1792599504180\"]"
+            },
+            {
+              "name": "Eventunit_Unit_BthMeleeDefender",
+              "kind": "added",
+              "current": "[\"itemassets/Units/Eventunit/Eventunit_Unit_BthMeleeDefender/Eventunit_Unit_BthMeleeDefender--1792600603566\"]"
+            },
+            {
+              "name": "Eventunit_Unit_BthRangeAttacker",
+              "kind": "added",
+              "current": "[\"itemassets/Units/Eventunit/Eventunit_Unit_BthRangeAttacker/Eventunit_Unit_BthRangeAttacker--1792599504180\"]"
+            },
+            {
+              "name": "Eventunit_Unit_BthRangeDefender",
+              "kind": "added",
+              "current": "[\"itemassets/Units/Eventunit/Eventunit_Unit_BthRangeDefender/Eventunit_Unit_BthRangeDefender--1792600603566\"]"
+            },
+            {
+              "name": "Hero_Unique_1599",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Heroes/Hero_Unique_1599/Hero_Unique_1599--1792585970701\"]"
+            },
+            {
+              "name": "Hero_Unique_1604",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Heroes/Hero_Unique_1604/Hero_Unique_1604--1792585970701\"]"
+            },
+            {
+              "name": "Hero_Unique_1609",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Heroes/Hero_Unique_1609/Hero_Unique_1609--1792585970701\"]"
+            },
+            {
+              "name": "Item_Gem_Unique_526",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/UniqueGems/Item_Gem_Unique_526/Item_Gem_Unique_526--1792585970701\"]"
+            },
+            {
+              "name": "Item_Gem_Unique_527",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/UniqueGems/Item_Gem_Unique_527/Item_Gem_Unique_527--1792585970701\"]"
+            },
+            {
+              "name": "Item_Gem_Unique_528",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/UniqueGems/Item_Gem_Unique_528/Item_Gem_Unique_528--1792585970701\"]"
+            },
+            {
+              "name": "Item_Gem_Unique_529",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/UniqueGems/Item_Gem_Unique_529/Item_Gem_Unique_529--1792585970701\"]"
+            },
+            {
+              "name": "Item_Gem_Unique_530",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/UniqueGems/Item_Gem_Unique_530/Item_Gem_Unique_530--1792585970701\"]"
+            },
+            {
+              "name": "Item_Gem_Unique_531",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/UniqueGems/Item_Gem_Unique_531/Item_Gem_Unique_531--1792585970701\"]"
+            },
+            {
+              "name": "Item_Gem_Unique_532",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/UniqueGems/Item_Gem_Unique_532/Item_Gem_Unique_532--1792585970701\"]"
+            },
+            {
+              "name": "Item_Gem_Unique_533",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/UniqueGems/Item_Gem_Unique_533/Item_Gem_Unique_533--1792585970701\"]"
+            },
+            {
+              "name": "Item_Gem_Unique_534",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/UniqueGems/Item_Gem_Unique_534/Item_Gem_Unique_534--1792585970701\"]"
+            },
+            {
+              "name": "Item_Gem_Unique_535",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/UniqueGems/Item_Gem_Unique_535/Item_Gem_Unique_535--1792585970701\"]"
+            },
+            {
+              "name": "Item_Gem_Unique_536",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/UniqueGems/Item_Gem_Unique_536/Item_Gem_Unique_536--1792585970701\"]"
+            },
+            {
+              "name": "Item_Gem_Unique_537",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/UniqueGems/Item_Gem_Unique_537/Item_Gem_Unique_537--1792585970701\"]"
+            },
+            {
+              "name": "Item_Gem_Unique_538",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/UniqueGems/Item_Gem_Unique_538/Item_Gem_Unique_538--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1593",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1593/Item_Unique_1593--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1594",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1594/Item_Unique_1594--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1595",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1595/Item_Unique_1595--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1596",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1596/Item_Unique_1596--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1597",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1597/Item_Unique_1597--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1598",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1598/Item_Unique_1598--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1599",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1599/Item_Unique_1599--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1600",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1600/Item_Unique_1600--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1601",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1601/Item_Unique_1601--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1602",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1602/Item_Unique_1602--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1603",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1603/Item_Unique_1603--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1604",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1604/Item_Unique_1604--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1605",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1605/Item_Unique_1605--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1606",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1606/Item_Unique_1606--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1607",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1607/Item_Unique_1607--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1608",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1608/Item_Unique_1608--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1609",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1609/Item_Unique_1609--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1612",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1612/Item_Unique_1612--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1613",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1613/Item_Unique_1613--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1614",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1614/Item_Unique_1614--1792585970701\"]"
+            },
+            {
+              "name": "Item_Unique_1615",
+              "kind": "added",
+              "current": "[\"itemassets/Equipment/Uniques/Item_Unique_1615/Item_Unique_1615--1792585970701\"]"
+            },
+            {
+              "name": "JadeOasisTradeExt",
+              "kind": "added",
+              "current": "[\"itemassets/Dialogs/AllianceBattleGrounds/JadeOasisTradeExt/JadeOasisTradeExt--1792749465951\"]"
+            },
+            {
+              "name": "JadeOasisTradeTroopSelectionExt",
+              "kind": "added",
+              "current": "[\"itemassets/Dialogs/AllianceBattleGrounds/JadeOasisTradeTroopSelectionExt/JadeOasisTradeTroopSelectionExt--1792510276769\"]"
+            },
+            {
+              "name": "KingdomCrestsSymbols",
+              "kind": "modified",
+              "previous": "[\"itemassets/KingdomOverview/KingdomCrestsSymbols/KingdomCrestsSymbols--1573584429307\"]",
+              "current": "[\"itemassets/KingdomOverview/KingdomCrestsSymbols/KingdomCrestsSymbols--1792498123506\"]"
+            },
+            {
+              "name": "Metropol_Mapobject_Special_LuxuriousMarket",
+              "kind": "added",
+              "current": "[\"itemassets/Worldmap/WorldmapObjects/Landmarks/Metropol_Mapobject_Special_LuxuriousMarket/Metropol_Mapobject_Special_LuxuriousMarket--1792585970701\"]"
+            },
+            {
+              "name": "ModernOkBigBlue",
+              "kind": "modified",
+              "previous": "[\"itemassets/Dialogs/ModernOkBigBlue/ModernOkBigBlue--1791464590995\"]",
+              "current": "[\"itemassets/Dialogs/ModernOkBigBlue/ModernOkBigBlue--1792688157156\"]"
+            },
+            {
+              "name": "Outpost_Mapobject_Special_LuxuriousMarket",
+              "kind": "added",
+              "current": "[\"itemassets/Worldmap/WorldmapObjects/Outposts/Outpost_Mapobject_Special_LuxuriousMarket/Outpost_Mapobject_Special_LuxuriousMarket--1792585970701\"]"
+            },
+            {
+              "name": "Skin_Mapmovement_AstrolabeKnight_Common",
+              "kind": "added",
+              "current": "[\"itemassets/Worldmap/WorldmapObjects/Movements/Skins/Skin_Mapmovement_AstrolabeKnight_Common/Skin_Mapmovement_AstrolabeKnight_Common--1792585970701\"]"
+            },
+            {
+              "name": "Skin_Mapmovement_AstrolabeKnight_Eiland",
+              "kind": "added",
+              "current": "[\"itemassets/Worldmap/WorldmapObjects/Movements/Skins/Skin_Mapmovement_AstrolabeKnight_Eiland/Skin_Mapmovement_AstrolabeKnight_Eiland--1792585970701\"]"
+            },
+            {
+              "name": "Skin_Mapmovement_TravellingStall_Common",
+              "kind": "added",
+              "current": "[\"itemassets/Worldmap/WorldmapObjects/Movements/Skins/Skin_Mapmovement_TravellingStall_Common/Skin_Mapmovement_TravellingStall_Common--1792585970701\"]"
+            },
+            {
+              "name": "Skin_Mapmovement_TravellingStall_Eiland",
+              "kind": "added",
+              "current": "[\"itemassets/Worldmap/WorldmapObjects/Movements/Skins/Skin_Mapmovement_TravellingStall_Eiland/Skin_Mapmovement_TravellingStall_Eiland--1792585970701\"]"
+            }
+          ]
+        },
+        {
+          "moduleIndex": 599,
+          "previousFactorySha256": "0d6ca6362d41fe9c97045ad241ae62d9172b6888bcfe56592181a878420a9b58",
+          "currentFactorySha256": "c69d88cf690f0384e44a57feeb649aa66942c286addf6246879b36a6a94810c5",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        },
+        {
+          "moduleIndex": 601,
+          "previousFactorySha256": "1e1c861f68b3a9a47847a05605a632a2a42855b45fc3550d844c46e998081d51",
+          "currentFactorySha256": "2ffca39bc41e9941c827c6cee9d5c8493c4b8cfaae20cc4b8b814903108c764f",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        },
+        {
+          "moduleIndex": 607,
+          "previousFactorySha256": "fe3440fca168d77ed09caa976b891bcf05bf1eeee8083c5faff9e64dd4882dfa",
+          "currentFactorySha256": "a64cf8fa10994a6090354bd606269b3d7b102806ac350e6c091c956de65cafb7",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        },
+        {
+          "moduleIndex": 617,
+          "previousFactorySha256": "24c79d349d7a805147c253e22d1972d83f2f7b856d65c7a1e44bc3869243ed12",
+          "currentFactorySha256": "ff743faddd5b50e6b0f2754b48948af5b8acb23320b235ef4159fa42587f71e1",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        },
+        {
+          "moduleIndex": 751,
+          "previousFactorySha256": "02183a61b3731c8938529ee9040c0864f3388318f9aebf1498df35dbe780e14b",
+          "currentFactorySha256": "2ac56962099dc68189061eddf5e5f08179024af46381793fb038bf1eba36a596",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        },
+        {
+          "moduleIndex": 753,
+          "previousFactorySha256": "9c803a01050e71ccabac02b9a40fd333b34841175c625758f6058aa86ee33bda",
+          "currentFactorySha256": "d8a2a529736d2d2349d16e62cdfdbf8ed4f0edbb7aa1263af526ac788665d7fe",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        },
+        {
+          "moduleIndex": 762,
+          "previousFactorySha256": "109c8b4f4389ad5f187df35df4e558037d4b67b171b17b94fdeda186031a2a75",
+          "currentFactorySha256": "6084fe4437ec3cc575fef772c3107354e1cdd4e08c076a0abd438cd0248b2fc4",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        },
+        {
+          "moduleIndex": 772,
+          "previousFactorySha256": "17fd7f55364bcfed9215dbe07a89ac510da4b7db68d01a4b1d9d0dc3e1c1e098",
+          "currentFactorySha256": "1df801d96d42d1515f670d1061476c885f659a2c87c1b2eb924dd32016e364de",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        },
+        {
+          "moduleIndex": 987,
+          "previousFactorySha256": "7f3238d3b4c67916b73c3afa55565b6f239e6f43ea59c5fa56cb7245eadf9546",
+          "currentFactorySha256": "ee2e12bd3364a45de8ad3f73315654eaf587f427198cdd86543b1fff9ed2975a",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        },
+        {
+          "moduleIndex": 1007,
+          "previousFactorySha256": "f6dee031ec3698b9a597f013c3590c7560ba9f44e53462c09f38b017cde6e3ac",
+          "currentFactorySha256": "bf86007c193507b4fc8f0071045c0e599663b7c6e48eb5511089aa32be17e7da",
+          "kind": "binding-renames-only",
+          "evidence": "alpha-normalized-ast-identical"
+        }
+      ]
+    }
+  ]
+}
