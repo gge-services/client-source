@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "baseline": "2026-10-16",
+  "current": "2026-10-25",
+  "recoveredCommands": 688,
+  "matchedOwners": 688,
+  "unmapped": [],
+  "unchangedMethodSignatures": 688,
+  "changedMethodSignatures": 0,
+  "unchangedConstructorArity": 688,
+  "totalMethodSignatures": 2075,
+  "changed": []
+}
