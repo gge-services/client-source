@@ -2,10 +2,10 @@
   "schemaVersion": 1,
   "snapshot": "2026-10-16",
   "scope": "reconstructed-command-class-methods",
-  "reconstructedCommands": 687,
-  "totalParameters": 1848,
+  "reconstructedCommands": 688,
+  "totalParameters": 1851,
   "positionalOnly": 232,
-  "semanticOrNonGeneric": 1616,
+  "semanticOrNonGeneric": 1619,
   "additionalProvenRoles": 304,
   "additionalRoles": {
     "event-object": 1,
@@ -143,9 +143,9 @@
     }
   ],
   "byName": {
-    "value": 540,
-    "responseFields": 522,
-    "statusCode": 521,
+    "value": 541,
+    "responseFields": 523,
+    "statusCode": 522,
     "argument0": 188,
     "argument1": 33,
     "commandResponse": 32,

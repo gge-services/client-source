@@ -49,7 +49,37 @@ export async function reconstructCommands(root, emit=true) {
       if(get&&!set)readonlyBaseAccessors.add(target.object.name+':'+key.value)
     }})
   }
-  const options={specifiers:manifest.specifiers,errorExportAvailable:dll.symbolViews?.filter(v=>v.name==='ERROR').length===1,resolveMember:dllResolver.resolve,dllImportFileName:dllResolver.importFileName,readonlyBaseAccessors,passThroughConstructors,preserveRuntimeInterfaces:true}
+  const trustedAncestors=new Map()
+  const sourceOfDispatch=await readFile(join(directory,'modules/exports/CastleDispatchingCommand.js'),'utf8')
+  const dispatchAst=parser.parse(sourceOfDispatch,{sourceType:'unambiguous',allowReturnOutsideFunction:true})
+  const dispatchWrappers=dispatchAst.program.body.filter(t.isVariableDeclaration).flatMap(x=>x.declarations)
+    .filter(x=>t.isCallExpression(x.init)&&t.isFunctionExpression(x.init.callee)&&
+      x.init.callee.body.body.some(y=>t.isFunctionDeclaration(y)&&t.isIdentifier(y.id,{name:'CastleDispatchingCommand'})))
+  if(dispatchWrappers.length===1){
+    const wrapper=dispatchWrappers[0].init
+    const base=wrapper.arguments[0]
+    const parentIsVerified=t.isMemberExpression(base)&&!base.computed&&
+      t.isIdentifier(base.property,{name:'CastleCommand'})&&
+      t.isCallExpression(base.object)&&t.isIdentifier(base.object.callee,{name:'require'})&&
+      t.isStringLiteral(base.object.arguments[0],{value:'gge-module:export_CastleCommand'})&&
+      manifest.specifiers['gge-module:export_CastleCommand']
+    const own=wrapper.callee.body.body
+    const overrides=own.some(stmt=>t.isExpressionStatement(stmt)&&(
+      t.isCallExpression(stmt.expression)&&t.isMemberExpression(stmt.expression.callee)&&
+        t.isIdentifier(stmt.expression.callee.object,{name:'Object'})&&
+        t.isIdentifier(stmt.expression.callee.property,{name:'defineProperty'})&&
+        t.isMemberExpression(stmt.expression.arguments[0])&&
+        t.isIdentifier(stmt.expression.arguments[0].object,{name:'CastleDispatchingCommand'})&&
+        t.isStringLiteral(stmt.expression.arguments[1],{value:'cmdId'})||
+      t.isAssignmentExpression(stmt.expression)&&t.isMemberExpression(stmt.expression.left)&&
+        t.isMemberExpression(stmt.expression.left.object)&&
+        t.isIdentifier(stmt.expression.left.object.object,{name:'CastleDispatchingCommand'})&&
+        t.isIdentifier(stmt.expression.left.object.property,{name:'prototype'})&&
+        t.isIdentifier(stmt.expression.left.property,{name:'cmdId'})
+    ))
+    if(parentIsVerified&&!overrides)trustedAncestors.set('CastleDispatchingCommand:cmdId',new Set(['CastleCommand']))
+  }
+  const options={specifiers:manifest.specifiers,errorExportAvailable:dll.symbolViews?.filter(v=>v.name==='ERROR').length===1,resolveMember:dllResolver.resolve,dllImportFileName:dllResolver.importFileName,readonlyBaseAccessors,passThroughConstructors,trustedAncestors,preserveRuntimeInterfaces:true}
   const output=join(directory,'reconstructed/exports')
   if(emit)await mkdir(output,{recursive:true})
   const previous=JSON.parse(await readFile(join(directory,'reconstructed/coverage.json'),'utf8').catch(()=>'{"succeeded":[]}'))
