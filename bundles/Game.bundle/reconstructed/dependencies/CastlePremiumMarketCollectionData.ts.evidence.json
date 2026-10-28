@@ -1,0 +1,104 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastlePremiumMarketCollectionData",
+  "canonicalSource": "modules/exports/CastlePremiumMarketCollectionData.js",
+  "canonicalSourceSha256": "53105ee3240683cdbea896fc47ff2e102c2b72a750729dada594dc02ace3af81",
+  "generatedHash": "06152b9494581802412f57361cd58ca41da5ce70de891d25908691c6e3151c56",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleBasicData",
+      "imported": "CastleBasicData",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBasicData.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePeaceProtectionPremiumShopVO",
+      "imported": "CastlePeaceProtectionPremiumShopVO",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePeaceProtectionPremiumShopVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleFactionProtectionPremiumShopVO",
+      "imported": "CastleFactionProtectionPremiumShopVO",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleFactionProtectionPremiumShopVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleUnitSlotPremiumShopVO",
+      "imported": "CastleUnitSlotPremiumShopVO",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleUnitSlotPremiumShopVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleToolSlotPremiumShopVO",
+      "imported": "CastleToolSlotPremiumShopVO",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleToolSlotPremiumShopVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleFlagPremiumShopVO",
+      "imported": "CastleFlagPremiumShopVO",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleFlagPremiumShopVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleOpenGatePremiumShopVO",
+      "imported": "CastleOpenGatePremiumShopVO",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleOpenGatePremiumShopVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleFestivalPremiumShopVO",
+      "imported": "CastleFestivalPremiumShopVO",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleFestivalPremiumShopVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleRelocateShopVO",
+      "imported": "CastleRelocateShopVO",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleRelocateShopVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_PremiumFestivalItemVO",
+      "imported": "PremiumFestivalItemVO",
+      "bundle": "Game.bundle",
+      "path": "exports/PremiumFestivalItemVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [
+    "_festivalItemVOs: any;",
+    "premiumShopVOs: any;"
+  ],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

@@ -2,13 +2,13 @@
   "schemaVersion": 1,
   "snapshot": "2026-10-16",
   "scope": "reconstructed-command-class-methods",
-  "reconstructedCommands": 688,
-  "totalParameters": 1851,
-  "positionalOnly": 232,
-  "semanticOrNonGeneric": 1619,
-  "additionalProvenRoles": 304,
+  "reconstructedCommands": 701,
+  "totalParameters": 1932,
+  "positionalOnly": 311,
+  "semanticOrNonGeneric": 1621,
+  "additionalProvenRoles": 305,
   "additionalRoles": {
-    "event-object": 1,
+    "event-object": 2,
     "protocol-fields": 1,
     "protocol-payload": 135,
     "protocol-status": 135,
@@ -143,17 +143,17 @@
     }
   ],
   "byName": {
-    "value": 541,
+    "value": 542,
     "responseFields": 523,
     "statusCode": 522,
-    "argument0": 188,
-    "argument1": 33,
+    "argument0": 252,
+    "argument1": 45,
     "commandResponse": 32,
-    "argument2": 5,
+    "argument2": 7,
     "args": 3,
-    "argument3": 1,
+    "argument3": 2,
+    "event": 2,
     "argument4": 1,
-    "argument5": 1,
-    "event": 1
+    "argument5": 1
   }
 }

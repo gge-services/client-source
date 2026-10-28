@@ -1,0 +1,34 @@
+export class CXFSourceTrackingConstants {
+  static CXF_SOURCE_WEB_SHOP_BUTTON = "webShopButton";
+  static CXF_SOURCE_ALLIANCE_SUBSCRIPTIONS_DIALOG = "allianceTreasurySubscriptionsDialog";
+  static CXF_SOURCE_SUBSCRIPTION_EXPIRED_DIALOG = "subscriptionExpiredDialog";
+  static CXF_SOURCE_TRAVEL_PLANNING_DIALOG_AUTOSKIP_PREVIEW = "travelPlanningDialogAutoskipPreview";
+  static CXF_SOURCE_COOLDOWN_SKIP_DIALOG_AUTOSKIP_PREVIEW = "cooldownSkipDialogAutoskipPreview";
+  static CXF_SOURCE_DISTRICT_GACHA = "districtGacha";
+  static CXF_SOURCE_ADVISOR_ACTIVATION = "advisorActivation";
+  static CXF_SHOP_TRACKING_CAP_TOOL_BUTTON = "CAPToolButton";
+  static SOURCE_UNKNOWN = "sourceUnknown";
+  static SOURCE_USER_STATE_PANEL = "userStatePanel";
+  static SOURCE_NO_MONEY_C2 = "noMoneyC2";
+  static SOURCE_FIGHTSCREEN = "fightScreen";
+  static SOURCE_SPECIAL_OFFER = "specialOffer";
+  static SOURCE_SPECIAL_OFFER_BETTER = "specialOfferBetter";
+  static SOURCE_PREMIUM_MARKET_PLACE = "premiumMarketPlace";
+  static SOURCE_PRIVATE_OFFER_DECORATION = "privateOfferDecoration";
+  static SOURCE_PRIVATE_PRIME_TIME_OFFER = "privatePrimeTimeOffer";
+  static SOURCE_ALLIANCE_PAYMENT_BONUS = "alliancePaymentBonus";
+  static SOURCE_PRIVATE_OFFER_COINMINE = "privateOfferCoinMine";
+  static SOURCE_PAYMENT_REWARD_SPECIAL_OFFER = "paymentRewardSpecialOffer";
+  static SOURCE_NETWORK_PANEL = "networkPanel";
+  static SOURCE_PRIME_TIME_WORLDCUP = "primeTimeWorldCup";
+  static SOURCE_QUEST_BUY_RUBIES = "questBuyRubies";
+  static SOURCE_TIMELESS_SPECIAL_OFFER = "timelessSpecialOffer";
+  static SOURCE_PAYMENT_REWARD_CURRENCY_SPECIAL_OFFER = "paymentRewardCurrencySpecialOffer";
+  static SOURCE_PRIVATE_PRIME_DAY_OFFER = "privatePrimeDayOffer";
+  static SOURCE_QUEST_VISIT_SHOP = "questVisitShop";
+  static SOURCE_RELIC_UPGRADE = "relicUpgrade";
+  static SOURCE_GENERALS_HUB = "generalsHub";
+  static SOURCE_SHOPPING_CART_PRIME_DAY_DIALOG = "shoppingCartPrimeDayDialog";
+  static SOURCE_TIERED_PRIME_DAY_DIALOG = "tieredPrimeDayDialog";
+  static SOURCE_MERCHANT_DIALOG = "merchantDialog";
+}

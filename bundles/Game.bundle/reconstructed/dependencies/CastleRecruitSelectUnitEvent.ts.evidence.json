@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleRecruitSelectUnitEvent",
+  "canonicalSource": "modules/exports/CastleRecruitSelectUnitEvent.js",
+  "canonicalSourceSha256": "6817056df71ac8f5065bb93a60b766a399a361a63b75ebeeee97d68ba0ebbeb3",
+  "generatedHash": "0c28d6ca036f407d83a31fa31b418103ae769334bcc30eb190fd909b4cc7fc1b",
+  "dependencies": [],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [
+    "createjs",
+    "CONSTRUCTOR_HACK"
+  ],
+  "runtimeReady": false
+}

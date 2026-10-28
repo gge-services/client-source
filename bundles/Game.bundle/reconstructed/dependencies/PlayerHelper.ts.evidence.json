@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "PlayerHelper",
+  "canonicalSource": "modules/exports/PlayerHelper.js",
+  "canonicalSourceSha256": "5c63d78b592dabe8b1886d572b2d6b4067f2ed9c987a1ceb5e9b73bbf2576f05",
+  "generatedHash": "e07242011b6d18b6156d894076ee483c699043b5bf7f4c511f4c06efd641b4eb",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_ClientConstNPCs",
+      "imported": "ClientConstNPCs",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstNPCs.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "OutpostConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/OutpostConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:OutpostConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "SpyConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SpyConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:SpyConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_SpecialServerHelper",
+      "imported": "SpecialServerHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/SpecialServerHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldIsland",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldIsland.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldIsland",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "VillageConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/VillageConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:VillageConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "DungeonConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/DungeonConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:DungeonConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "Localize",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/Localize.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:Localize",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

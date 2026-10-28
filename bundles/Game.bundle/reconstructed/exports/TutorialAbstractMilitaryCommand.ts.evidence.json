@@ -1,0 +1,224 @@
+{
+  "sourceHash": "536c062311dafc6bf35e5cfb471bd7b20e4eb5e7a7059f17d560bf3743e12e9b",
+  "generatedHash": "d21c9ef1b723b632f0b9ce2ac667e8fada1672510871e73caefb95216839b8f0",
+  "constructor": "presuper-fields-normalized",
+  "accessors": [
+    "get:selectUnitManual"
+  ],
+  "methods": [
+    "internalExecute",
+    "goToMainCastle",
+    "hintTowardsMilitaryMenu",
+    "showButton",
+    "waitForDialog",
+    "checkInternalDialogOpened",
+    "waitForSelectUnit",
+    "onUnitSelected",
+    "waitForUnitSelectOK",
+    "onRecruitmentStarted",
+    "onRecruitmentFinished",
+    "actionConditionValid",
+    "finishStep",
+    "getButtonClass",
+    "getSelectUnitText",
+    "getOpenMilitaryMenuText",
+    "getClickMilitarySubMenuText",
+    "getClickOnRecruitDialogCloseText",
+    "getConfirmUnitSelectionText",
+    "getOpenMilitaryMenuTrackingID",
+    "getRecruitDialogOpenedTrackingID",
+    "getUnitRecruitmentConfirmedTrackingID"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_TutorialBasicActionCommand",
+      "imported": "TutorialBasicActionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialBasicActionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleUnitAmountComponent",
+      "imported": "CastleUnitAmountComponent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleUnitAmountComponent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleMilitaryDataEvent",
+      "imported": "CastleMilitaryDataEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleMilitaryDataEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SJoinCastleVO",
+      "imported": "C2SJoinCastleVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SJoinCastleVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldClassic",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldClassic.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldClassic",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_Iso",
+      "imported": "Iso",
+      "bundle": "Game.bundle",
+      "path": "exports/Iso.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_IsoRenderStrategyEnum",
+      "imported": "IsoRenderStrategyEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/IsoRenderStrategyEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCharacter",
+      "imported": "ClientConstCharacter",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCharacter.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_RecruitPanelButton",
+      "imported": "RecruitPanelButton",
+      "bundle": "Game.bundle",
+      "path": "exports/RecruitPanelButton.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManagerEvent",
+      "imported": "CastleLayoutManagerEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManagerEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleRecruitDialog",
+      "imported": "CastleRecruitDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleRecruitDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "castAs",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/castAs.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:castAs",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleRecruitSelectUnitEvent",
+      "imported": "CastleRecruitSelectUnitEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleRecruitSelectUnitEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTutorialPanel",
+      "imported": "CastleTutorialPanel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleTutorialPanel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ButtonHelper",
+      "imported": "ButtonHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/ButtonHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "verifiedParameterRenames": [
+    {
+      "method": "onRecruitmentStarted",
+      "index": 0,
+      "original": "__s37param0",
+      "name": "event",
+      "meaning": "event-object",
+      "evidence": "observed-event-property",
+      "confidence": "high"
+    }
+  ],
+  "runtimeInterfaceCallsPreserved": 1,
+  "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
+  "fullRuntimeEquivalent": false,
+  "verifiedPreSuperAncestry": {
+    "className": "TutorialAbstractMilitaryCommand",
+    "root": "SimpleCommand",
+    "ancestors": [
+      {
+        "source": "modules/exports/TutorialBasicActionCommand.js",
+        "sha256": "0d0f65a660843fa34c1373e53311b0ab5bca1bb4cbaea47e5456a0708bb0e4ce"
+      },
+      {
+        "source": "modules/classes/SimpleCommand.js",
+        "sha256": "0fb99b4d187e5af0aac141c73fecce49f79da9cf9f3aef3dec9143a8671bcbe5"
+      }
+    ],
+    "preSuperFields": [
+      "_amountBeforeRecruitment"
+    ],
+    "fieldCollisionProvenAbsent": true
+  }
+}

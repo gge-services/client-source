@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleHandleSeasonDialog",
+  "canonicalSource": "modules/exports/CastleHandleSeasonDialog.js",
+  "canonicalSourceSha256": "6da4b54d29ba1b3ec3857dcb4fd5d1715aa683e83e4dcede33b468ad0135769d",
+  "generatedHash": "7e5fea90fe5f2319e3e0ea11065d74774d013a88d2fb91cf582de6b19d98716e",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_ACastleHandleSpaceDialog",
+      "imported": "ACastleHandleSpaceDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/ACastleHandleSpaceDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleStartSeasonEventDialogSupport",
+      "imported": "CastleStartSeasonEventDialogSupport",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleStartSeasonEventDialogSupport.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleSpecialEventEvent",
+      "imported": "CastleSpecialEventEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSpecialEventEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2STreasureMapsVO",
+      "imported": "C2STreasureMapsVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2STreasureMapsVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "LocalizedTextVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/LocalizedTextVO.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:LocalizedTextVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "instanceOfClass",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/instanceOfClass.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:instanceOfClass",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CollectableRenderOptions",
+      "imported": "CollectableRenderOptions",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableRenderOptions.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectableRenderHelper",
+      "imported": "CollectableRenderHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableRenderHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectableRenderClips",
+      "imported": "CollectableRenderClips",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableRenderClips.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [
+    "createjs"
+  ],
+  "runtimeReady": false
+}

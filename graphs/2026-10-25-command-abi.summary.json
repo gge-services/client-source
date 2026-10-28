@@ -2,12 +2,12 @@
   "schemaVersion": 1,
   "baseline": "2026-10-16",
   "current": "2026-10-25",
-  "recoveredCommands": 688,
-  "matchedOwners": 688,
+  "recoveredCommands": 701,
+  "matchedOwners": 701,
   "unmapped": [],
-  "unchangedMethodSignatures": 688,
+  "unchangedMethodSignatures": 701,
   "changedMethodSignatures": 0,
-  "unchangedConstructorArity": 688,
-  "totalMethodSignatures": 2075,
+  "unchangedConstructorArity": 701,
+  "totalMethodSignatures": 2237,
   "changed": []
 }

@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "NewsHubTrackingEvent",
+  "canonicalSource": "modules/exports/NewsHubTrackingEvent.js",
+  "canonicalSourceSha256": "ac16e2b9a8d0ccc455bb65b268cbadf8016e36579ea78c49692e0679fddbfefb",
+  "generatedHash": "b1791f7022a04bb49c249d05199dc18f46a95da3e9c89bdbbe5d23617d3ec8c6",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicTrackingEvent",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicTrackingEvent.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicTrackingEvent",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [
+    "_date: any;",
+    "_playerId: any;",
+    "_sourceName: any;"
+  ],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

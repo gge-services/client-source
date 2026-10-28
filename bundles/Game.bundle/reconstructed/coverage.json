@@ -2,8 +2,8 @@
   "schemaVersion": 1,
   "snapshot": "2026-10-16",
   "examined": 701,
-  "reconstructed": 688,
-  "rejected": 13,
+  "reconstructed": 701,
+  "rejected": 0,
   "succeeded": [
     {
       "name": "AAACommand",
@@ -292,6 +292,12 @@
       "originalPath": "modules/exports/AIPCommand.js",
       "outputPath": "reconstructed/exports/AIPCommand.ts",
       "sourceHash": "063fa7dad010b3f2dd1c984178d4a1143a7f0694fa9aae6a288e6109a80286e1"
+    },
+    {
+      "name": "AIsoCommand",
+      "originalPath": "modules/exports/AIsoCommand.js",
+      "outputPath": "reconstructed/exports/AIsoCommand.ts",
+      "sourceHash": "f20ec3111eea53c361c5eac3e334e43d1aa38e0c1896472077e1dbb8fc4fb43f"
     },
     {
       "name": "AJACommand",
@@ -928,6 +934,12 @@
       "originalPath": "modules/exports/CastleOpenDiscordCommand.js",
       "outputPath": "reconstructed/exports/CastleOpenDiscordCommand.ts",
       "sourceHash": "96fcce750d5bd783946e67d1f9b4bd201d940fb9f653a47ce244322ad7ee68c2"
+    },
+    {
+      "name": "CastleOpenForumCommand",
+      "originalPath": "modules/exports/CastleOpenForumCommand.js",
+      "outputPath": "reconstructed/exports/CastleOpenForumCommand.ts",
+      "sourceHash": "5da5e881a1ee2e62a41cf01439adecf37246a7022edef6cd2c072b6291e7bfa4"
     },
     {
       "name": "CastleOpenMessageDialogCommand",
@@ -2778,6 +2790,12 @@
       "sourceHash": "30dfedc85f5b6f8352703737c81848d70d75f39c6f297c2954ec30ba2de12b06"
     },
     {
+      "name": "OpenDialogWithAdditionalExternalAssetsCommand",
+      "originalPath": "modules/exports/OpenDialogWithAdditionalExternalAssetsCommand.js",
+      "outputPath": "reconstructed/exports/OpenDialogWithAdditionalExternalAssetsCommand.ts",
+      "sourceHash": "c47f50d5eaf8a42395d7207e5ea8a48c0236513e808a096531b3816d7f3a0181"
+    },
+    {
       "name": "OpenDungenTreasureChestOfferCommand",
       "originalPath": "modules/exports/OpenDungenTreasureChestOfferCommand.js",
       "outputPath": "reconstructed/exports/OpenDungenTreasureChestOfferCommand.ts",
@@ -2794,6 +2812,12 @@
       "originalPath": "modules/exports/OpenEventDialogCommand.js",
       "outputPath": "reconstructed/exports/OpenEventDialogCommand.ts",
       "sourceHash": "b8df24575cc9c8bbe7ae82c34ba1f499401ce144faccffec9c56696b764f1511"
+    },
+    {
+      "name": "OpenFactionEventMainDialogCommand",
+      "originalPath": "modules/exports/OpenFactionEventMainDialogCommand.js",
+      "outputPath": "reconstructed/exports/OpenFactionEventMainDialogCommand.ts",
+      "sourceHash": "2c1074cd34576c6cd2ce0c1900ca376db8270909ce0081dcaa084270073f6701"
     },
     {
       "name": "OpenFactionInvasionEventMainDialogCommand",
@@ -3348,6 +3372,12 @@
       "sourceHash": "bc129a53da599241131f567917a73675d27b5834cb63c198b76d927a42dd0635"
     },
     {
+      "name": "ShowHowToDoQuestconditionCommand",
+      "originalPath": "modules/exports/ShowHowToDoQuestconditionCommand.js",
+      "outputPath": "reconstructed/exports/ShowHowToDoQuestconditionCommand.ts",
+      "sourceHash": "159d4cf1ed9ca04be26b6b03d0a6e2e3d8d9c8ce3c06e6930594f17a42a2490e"
+    },
+    {
       "name": "SIECommand",
       "originalPath": "modules/exports/SIECommand.js",
       "outputPath": "reconstructed/exports/SIECommand.ts",
@@ -3612,6 +3642,12 @@
       "sourceHash": "be64a089401fde1a3c9d5cc189dcc48d1ed4b03819011eee779a9886344a1624"
     },
     {
+      "name": "SwitchToWorldmapCommand",
+      "originalPath": "modules/exports/SwitchToWorldmapCommand.js",
+      "outputPath": "reconstructed/exports/SwitchToWorldmapCommand.ts",
+      "sourceHash": "9bfb1418e3d5af9eadcc01eba8f7dc9bc6583555896dc816c103bc685dc062c1"
+    },
+    {
       "name": "TAICommand",
       "originalPath": "modules/exports/TAICommand.js",
       "outputPath": "reconstructed/exports/TAICommand.ts",
@@ -3756,10 +3792,28 @@
       "sourceHash": "477ec5cf327d59370bf66d2b1a8ae30d5f2d46a4bc8d9c177648bf8bb0ead932"
     },
     {
+      "name": "TutorialAbstractMilitaryCommand",
+      "originalPath": "modules/exports/TutorialAbstractMilitaryCommand.js",
+      "outputPath": "reconstructed/exports/TutorialAbstractMilitaryCommand.ts",
+      "sourceHash": "536c062311dafc6bf35e5cfb471bd7b20e4eb5e7a7059f17d560bf3743e12e9b"
+    },
+    {
       "name": "TutorialAskToSkipTutorialCommand",
       "originalPath": "modules/exports/TutorialAskToSkipTutorialCommand.js",
       "outputPath": "reconstructed/exports/TutorialAskToSkipTutorialCommand.ts",
       "sourceHash": "507da069ee2f544e401bab2f74184bf8fc55e79c7fc826a21d98d610d56f47fa"
+    },
+    {
+      "name": "TutorialAttackRobberBaronCommand",
+      "originalPath": "modules/exports/TutorialAttackRobberBaronCommand.js",
+      "outputPath": "reconstructed/exports/TutorialAttackRobberBaronCommand.ts",
+      "sourceHash": "462a884cc7b1c198151b2d8902475cc526f9a13ce5078261b7e1b3ffa2dec631"
+    },
+    {
+      "name": "TutorialBasicActionCommand",
+      "originalPath": "modules/exports/TutorialBasicActionCommand.js",
+      "outputPath": "reconstructed/exports/TutorialBasicActionCommand.ts",
+      "sourceHash": "0d0f65a660843fa34c1373e53311b0ab5bca1bb4cbaea47e5456a0708bb0e4ce"
     },
     {
       "name": "TutorialBasicQuestActionCommand",
@@ -3906,6 +3960,12 @@
       "sourceHash": "92308ac550d11be99b5baed61dcb46846d57fa03d5db9cf391c3d41b341ea9fd"
     },
     {
+      "name": "TutorialExpandCastleActionCommand",
+      "originalPath": "modules/exports/TutorialExpandCastleActionCommand.js",
+      "outputPath": "reconstructed/exports/TutorialExpandCastleActionCommand.ts",
+      "sourceHash": "e00a64a125dd8d01df0351601baf05a1c230d3ea0db35bde70e23188cffc09ea"
+    },
+    {
       "name": "TutorialFinishedAttackRobberBaronCommand",
       "originalPath": "modules/exports/TutorialFinishedAttackRobberBaronCommand.js",
       "outputPath": "reconstructed/exports/TutorialFinishedAttackRobberBaronCommand.ts",
@@ -3942,6 +4002,12 @@
       "sourceHash": "92d1f1b9d8487f137fbf87215faee8cdb901e045b632ca7720cd4640bb58993d"
     },
     {
+      "name": "TutorialOpenQuestbookCommand",
+      "originalPath": "modules/exports/TutorialOpenQuestbookCommand.js",
+      "outputPath": "reconstructed/exports/TutorialOpenQuestbookCommand.ts",
+      "sourceHash": "0b833c78caf18b8175450622a30952ae504ce3f9982473ea727f543b232c9fed"
+    },
+    {
       "name": "TutorialReadBattleLogCommand",
       "originalPath": "modules/exports/TutorialReadBattleLogCommand.js",
       "outputPath": "reconstructed/exports/TutorialReadBattleLogCommand.ts",
@@ -3954,10 +4020,22 @@
       "sourceHash": "61e7287fc2c74f30fbf9bafe4f02739005ee66c0e50ba3f6bcfec6d47c1129a6"
     },
     {
+      "name": "TutorialStartFromQuestBookActionCommand",
+      "originalPath": "modules/exports/TutorialStartFromQuestBookActionCommand.js",
+      "outputPath": "reconstructed/exports/TutorialStartFromQuestBookActionCommand.ts",
+      "sourceHash": "690ed6807904addf78041cc810f4d389e241341fb39ad6a37f4c178b4f831fbb"
+    },
+    {
       "name": "TutorialTrackGameJoinedCommand",
       "originalPath": "modules/exports/TutorialTrackGameJoinedCommand.js",
       "outputPath": "reconstructed/exports/TutorialTrackGameJoinedCommand.ts",
       "sourceHash": "211e30ca48e885871a23f499c604ad0691da7630f62227ba5bcd5d71e263b823"
+    },
+    {
+      "name": "TutorialUpgradeBuildingActionCommand",
+      "originalPath": "modules/exports/TutorialUpgradeBuildingActionCommand.js",
+      "outputPath": "reconstructed/exports/TutorialUpgradeBuildingActionCommand.ts",
+      "sourceHash": "b02024a2268980d91fb767669c6f883e25702850c5c226188b5cec34f9cf1ccc"
     },
     {
       "name": "TXCCommand",
@@ -4134,58 +4212,5 @@
       "sourceHash": "dc126eec9e47737c8eec844ac5a037104cf68bb40906ca0510d00d71303a331a"
     }
   ],
-  "skipped": [
-    {
-      "path": "modules/exports/AIsoCommand.js",
-      "reason": "unsupported-class-shape"
-    },
-    {
-      "path": "modules/exports/CastleOpenForumCommand.js",
-      "reason": "unsupported-class-shape"
-    },
-    {
-      "path": "modules/exports/OpenDialogWithAdditionalExternalAssetsCommand.js",
-      "reason": "unsupported-class-shape"
-    },
-    {
-      "path": "modules/exports/OpenFactionEventMainDialogCommand.js",
-      "reason": "unsupported-class-shape"
-    },
-    {
-      "path": "modules/exports/ShowHowToDoQuestconditionCommand.js",
-      "reason": "unsupported-class-shape"
-    },
-    {
-      "path": "modules/exports/SwitchToWorldmapCommand.js",
-      "reason": "unsupported-class-shape"
-    },
-    {
-      "path": "modules/exports/TutorialAbstractMilitaryCommand.js",
-      "reason": "unsupported-class-shape"
-    },
-    {
-      "path": "modules/exports/TutorialAttackRobberBaronCommand.js",
-      "reason": "unsupported-class-shape"
-    },
-    {
-      "path": "modules/exports/TutorialBasicActionCommand.js",
-      "reason": "unsupported-class-shape"
-    },
-    {
-      "path": "modules/exports/TutorialExpandCastleActionCommand.js",
-      "reason": "unsupported-class-shape"
-    },
-    {
-      "path": "modules/exports/TutorialOpenQuestbookCommand.js",
-      "reason": "unsupported-class-shape"
-    },
-    {
-      "path": "modules/exports/TutorialStartFromQuestBookActionCommand.js",
-      "reason": "unsupported-class-shape"
-    },
-    {
-      "path": "modules/exports/TutorialUpgradeBuildingActionCommand.js",
-      "reason": "unsupported-class-shape"
-    }
-  ]
+  "skipped": []
 }

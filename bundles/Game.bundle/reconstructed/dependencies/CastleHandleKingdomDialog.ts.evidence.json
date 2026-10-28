@@ -1,0 +1,120 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleHandleKingdomDialog",
+  "canonicalSource": "modules/exports/CastleHandleKingdomDialog.js",
+  "canonicalSourceSha256": "5e11cad0441d0ff7e5907bc5aa762f410b19798d090afa4e3aad44c47712cb55",
+  "generatedHash": "8af29d1348f8cc31fbd9604907e80dde652f2a22fb45683e267f68c9c8c20bc3",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_ACastleHandleSpaceDialog",
+      "imported": "ACastleHandleSpaceDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/ACastleHandleSpaceDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleHandleKingdomDialogSupport",
+      "imported": "CastleHandleKingdomDialogSupport",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleHandleKingdomDialogSupport.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleEilandEvent",
+      "imported": "CastleEilandEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleEilandEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleKingdomEvent",
+      "imported": "CastleKingdomEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleKingdomEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SKingdomPayInfoVO",
+      "imported": "C2SKingdomPayInfoVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SKingdomPayInfoVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "LocalizedTextVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/LocalizedTextVO.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:LocalizedTextVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_ButtonHelper",
+      "imported": "ButtonHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/ButtonHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "LocalizedNumberVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/LocalizedNumberVO.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:LocalizedNumberVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "TextVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/TextVO.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:TextVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleEilandRankingDialog",
+      "imported": "CastleEilandRankingDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleEilandRankingDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleEilandRankingDialogProperties",
+      "imported": "CastleEilandRankingDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleEilandRankingDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

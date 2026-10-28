@@ -1,0 +1,80 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleTransferTroopsToSeasonProperties",
+  "canonicalSource": "modules/exports/CastleTransferTroopsToSeasonProperties.js",
+  "canonicalSourceSha256": "88b5a3e27734c562d9cf19121118e92557cf88ed3dc22eb42156089d6947d053",
+  "generatedHash": "92c38167300889c0bc8889776664a29b7555bdca32af8d2812d946d410d0059a",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicProperties",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicProperties.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicProperties",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "FactionConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/FactionConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:FactionConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCastle",
+      "imported": "ClientConstCastle",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCastle.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleSendTroopsToSeasonAddUnitsDialog",
+      "imported": "CastleSendTroopsToSeasonAddUnitsDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSendTroopsToSeasonAddUnitsDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2STreasuremapUnitTransferVO",
+      "imported": "C2STreasuremapUnitTransferVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2STreasuremapUnitTransferVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_C2STreasureMapsVO",
+      "imported": "C2STreasureMapsVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2STreasureMapsVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}
