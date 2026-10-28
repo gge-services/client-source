@@ -1,0 +1,584 @@
+{
+  "added": 71,
+  "modified": 8,
+  "removed": 0,
+  "changes": [
+    {
+      "asset": "Capital_Mapobject_Special_LuxuriousMarket",
+      "change": "added",
+      "after": [
+        "itemassets/Worldmap/WorldmapObjects/Landmarks/Capital_Mapobject_Special_LuxuriousMarket/Capital_Mapobject_Special_LuxuriousMarket--1792585970701"
+      ]
+    },
+    {
+      "asset": "Castle_Mapobject_Special_LuxuriousMarket",
+      "change": "added",
+      "after": [
+        "itemassets/Worldmap/WorldmapObjects/Castles/Castle_Mapobject_Special_LuxuriousMarket/Castle_Mapobject_Special_LuxuriousMarket--1792585970701"
+      ]
+    },
+    {
+      "asset": "CastleAllianceBattleGroundEvent_Blue",
+      "change": "modified",
+      "before": [
+        "itemassets/Dialogs/AllianceBattleGrounds/CastleAllianceBattleGroundEvent_Blue/CastleAllianceBattleGroundEvent_Blue--1791819495818"
+      ],
+      "after": [
+        "itemassets/Dialogs/AllianceBattleGrounds/CastleAllianceBattleGroundEvent_Blue/CastleAllianceBattleGroundEvent_Blue--1792749465951"
+      ]
+    },
+    {
+      "asset": "CastleAllianceBattleGroundPreBuildCastleJade",
+      "change": "modified",
+      "before": [
+        "itemassets/Dialogs/AllianceBattleGrounds/CastleAllianceBattleGroundPreBuildCastleJade/CastleAllianceBattleGroundPreBuildCastleJade--1789569247906"
+      ],
+      "after": [
+        "itemassets/Dialogs/AllianceBattleGrounds/CastleAllianceBattleGroundPreBuildCastleJade/CastleAllianceBattleGroundPreBuildCastleJade--1792601551587"
+      ]
+    },
+    {
+      "asset": "Citadel_Mapobject_Level2",
+      "change": "modified",
+      "before": [
+        "itemassets/Worldmap/WorldmapObjects/Landmarks/Citadel_Mapobject_Level2/Citadel_Mapobject_Level2--1787837807533"
+      ],
+      "after": [
+        "itemassets/Worldmap/WorldmapObjects/Landmarks/Citadel_Mapobject_Level2/Citadel_Mapobject_Level2--1792498123506"
+      ]
+    },
+    {
+      "asset": "Citadel_Mapobject_Level3",
+      "change": "modified",
+      "before": [
+        "itemassets/Worldmap/WorldmapObjects/Landmarks/Citadel_Mapobject_Level3/Citadel_Mapobject_Level3--1787837807533"
+      ],
+      "after": [
+        "itemassets/Worldmap/WorldmapObjects/Landmarks/Citadel_Mapobject_Level3/Citadel_Mapobject_Level3--1792498123506"
+      ]
+    },
+    {
+      "asset": "Collectable_Currency_CaravanIngot",
+      "change": "modified",
+      "before": [
+        "itemassets/Collectables/Collectable_Currency_CaravanIngot/Collectable_Currency_CaravanIngot--1791464590995"
+      ],
+      "after": [
+        "itemassets/Collectables/Collectable_Currency_CaravanIngot/Collectable_Currency_CaravanIngot--1792595990413"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedGreenFallenColossus",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedGreenFallenColossus/Deco_Building_ExaltedGreenFallenColossus--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedGreenKnightlyFeastCourt",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedGreenKnightlyFeastCourt/Deco_Building_ExaltedGreenKnightlyFeastCourt--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedGreenLuxuriousMarket",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedGreenLuxuriousMarket/Deco_Building_ExaltedGreenLuxuriousMarket--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedGreenShieldKnight",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedGreenShieldKnight/Deco_Building_ExaltedGreenShieldKnight--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedGreenSwordKnight",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedGreenSwordKnight/Deco_Building_ExaltedGreenSwordKnight--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedGreenWaterfallPavilion",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedGreenWaterfallPavilion/Deco_Building_ExaltedGreenWaterfallPavilion--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedPurpleFallenColossus",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedPurpleFallenColossus/Deco_Building_ExaltedPurpleFallenColossus--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedPurpleKnightlyFeastCourt",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedPurpleKnightlyFeastCourt/Deco_Building_ExaltedPurpleKnightlyFeastCourt--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedPurpleLuxuriousMarket",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedPurpleLuxuriousMarket/Deco_Building_ExaltedPurpleLuxuriousMarket--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedPurpleShieldKnight",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedPurpleShieldKnight/Deco_Building_ExaltedPurpleShieldKnight--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedPurpleSwordKnight",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedPurpleSwordKnight/Deco_Building_ExaltedPurpleSwordKnight--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedPurpleWaterfallPavilion",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedPurpleWaterfallPavilion/Deco_Building_ExaltedPurpleWaterfallPavilion--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedRedFallenColossus",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedRedFallenColossus/Deco_Building_ExaltedRedFallenColossus--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedRedKnightlyFeastCourt",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedRedKnightlyFeastCourt/Deco_Building_ExaltedRedKnightlyFeastCourt--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedRedLuxuriousMarket",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedRedLuxuriousMarket/Deco_Building_ExaltedRedLuxuriousMarket--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedRedShieldKnight",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedRedShieldKnight/Deco_Building_ExaltedRedShieldKnight--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedRedSwordKnight",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedRedSwordKnight/Deco_Building_ExaltedRedSwordKnight--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_ExaltedRedWaterfallPavilion",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_ExaltedRedWaterfallPavilion/Deco_Building_ExaltedRedWaterfallPavilion--1792585970701"
+      ]
+    },
+    {
+      "asset": "Deco_Building_FallenColossus",
+      "change": "added",
+      "after": [
+        "itemassets/Building/Deco/EffectDecos/BlackFriday2026/Deco_Building_FallenColossus/Deco_Building_FallenColossus--1792585970701"
+      ]
+    },
+    {
+      "asset": "DetailView_EventSkin_Jade_Wall",
+      "change": "modified",
+      "before": [
+        "itemassets/CastleDetailView/ABG_Maya/DetailView_EventSkin_Jade_Wall/DetailView_EventSkin_Jade_Wall--1788178003787"
+      ],
+      "after": [
+        "itemassets/CastleDetailView/ABG_Maya/DetailView_EventSkin_Jade_Wall/DetailView_EventSkin_Jade_Wall--1792498123506"
+      ]
+    },
+    {
+      "asset": "Eventunit_Unit_BtHGaterer",
+      "change": "added",
+      "after": [
+        "itemassets/Units/Eventunit/Eventunit_Unit_BtHGaterer/Eventunit_Unit_BtHGaterer--1792599504180"
+      ]
+    },
+    {
+      "asset": "Eventunit_Unit_BthMeleeAttacker",
+      "change": "added",
+      "after": [
+        "itemassets/Units/Eventunit/Eventunit_Unit_BthMeleeAttacker/Eventunit_Unit_BthMeleeAttacker--1792599504180"
+      ]
+    },
+    {
+      "asset": "Eventunit_Unit_BthMeleeDefender",
+      "change": "added",
+      "after": [
+        "itemassets/Units/Eventunit/Eventunit_Unit_BthMeleeDefender/Eventunit_Unit_BthMeleeDefender--1792600603566"
+      ]
+    },
+    {
+      "asset": "Eventunit_Unit_BthRangeAttacker",
+      "change": "added",
+      "after": [
+        "itemassets/Units/Eventunit/Eventunit_Unit_BthRangeAttacker/Eventunit_Unit_BthRangeAttacker--1792599504180"
+      ]
+    },
+    {
+      "asset": "Eventunit_Unit_BthRangeDefender",
+      "change": "added",
+      "after": [
+        "itemassets/Units/Eventunit/Eventunit_Unit_BthRangeDefender/Eventunit_Unit_BthRangeDefender--1792600603566"
+      ]
+    },
+    {
+      "asset": "Hero_Unique_1599",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Heroes/Hero_Unique_1599/Hero_Unique_1599--1792585970701"
+      ]
+    },
+    {
+      "asset": "Hero_Unique_1604",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Heroes/Hero_Unique_1604/Hero_Unique_1604--1792585970701"
+      ]
+    },
+    {
+      "asset": "Hero_Unique_1609",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Heroes/Hero_Unique_1609/Hero_Unique_1609--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Gem_Unique_526",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/UniqueGems/Item_Gem_Unique_526/Item_Gem_Unique_526--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Gem_Unique_527",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/UniqueGems/Item_Gem_Unique_527/Item_Gem_Unique_527--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Gem_Unique_528",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/UniqueGems/Item_Gem_Unique_528/Item_Gem_Unique_528--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Gem_Unique_529",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/UniqueGems/Item_Gem_Unique_529/Item_Gem_Unique_529--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Gem_Unique_530",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/UniqueGems/Item_Gem_Unique_530/Item_Gem_Unique_530--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Gem_Unique_531",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/UniqueGems/Item_Gem_Unique_531/Item_Gem_Unique_531--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Gem_Unique_532",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/UniqueGems/Item_Gem_Unique_532/Item_Gem_Unique_532--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Gem_Unique_533",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/UniqueGems/Item_Gem_Unique_533/Item_Gem_Unique_533--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Gem_Unique_534",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/UniqueGems/Item_Gem_Unique_534/Item_Gem_Unique_534--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Gem_Unique_535",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/UniqueGems/Item_Gem_Unique_535/Item_Gem_Unique_535--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Gem_Unique_536",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/UniqueGems/Item_Gem_Unique_536/Item_Gem_Unique_536--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Gem_Unique_537",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/UniqueGems/Item_Gem_Unique_537/Item_Gem_Unique_537--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Gem_Unique_538",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/UniqueGems/Item_Gem_Unique_538/Item_Gem_Unique_538--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1593",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1593/Item_Unique_1593--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1594",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1594/Item_Unique_1594--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1595",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1595/Item_Unique_1595--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1596",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1596/Item_Unique_1596--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1597",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1597/Item_Unique_1597--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1598",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1598/Item_Unique_1598--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1599",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1599/Item_Unique_1599--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1600",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1600/Item_Unique_1600--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1601",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1601/Item_Unique_1601--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1602",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1602/Item_Unique_1602--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1603",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1603/Item_Unique_1603--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1604",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1604/Item_Unique_1604--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1605",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1605/Item_Unique_1605--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1606",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1606/Item_Unique_1606--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1607",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1607/Item_Unique_1607--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1608",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1608/Item_Unique_1608--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1609",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1609/Item_Unique_1609--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1612",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1612/Item_Unique_1612--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1613",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1613/Item_Unique_1613--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1614",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1614/Item_Unique_1614--1792585970701"
+      ]
+    },
+    {
+      "asset": "Item_Unique_1615",
+      "change": "added",
+      "after": [
+        "itemassets/Equipment/Uniques/Item_Unique_1615/Item_Unique_1615--1792585970701"
+      ]
+    },
+    {
+      "asset": "JadeOasisTradeExt",
+      "change": "added",
+      "after": [
+        "itemassets/Dialogs/AllianceBattleGrounds/JadeOasisTradeExt/JadeOasisTradeExt--1792749465951"
+      ]
+    },
+    {
+      "asset": "JadeOasisTradeTroopSelectionExt",
+      "change": "added",
+      "after": [
+        "itemassets/Dialogs/AllianceBattleGrounds/JadeOasisTradeTroopSelectionExt/JadeOasisTradeTroopSelectionExt--1792510276769"
+      ]
+    },
+    {
+      "asset": "KingdomCrestsSymbols",
+      "change": "modified",
+      "before": [
+        "itemassets/KingdomOverview/KingdomCrestsSymbols/KingdomCrestsSymbols--1573584429307"
+      ],
+      "after": [
+        "itemassets/KingdomOverview/KingdomCrestsSymbols/KingdomCrestsSymbols--1792498123506"
+      ]
+    },
+    {
+      "asset": "Metropol_Mapobject_Special_LuxuriousMarket",
+      "change": "added",
+      "after": [
+        "itemassets/Worldmap/WorldmapObjects/Landmarks/Metropol_Mapobject_Special_LuxuriousMarket/Metropol_Mapobject_Special_LuxuriousMarket--1792585970701"
+      ]
+    },
+    {
+      "asset": "ModernOkBigBlue",
+      "change": "modified",
+      "before": [
+        "itemassets/Dialogs/ModernOkBigBlue/ModernOkBigBlue--1791464590995"
+      ],
+      "after": [
+        "itemassets/Dialogs/ModernOkBigBlue/ModernOkBigBlue--1792688157156"
+      ]
+    },
+    {
+      "asset": "Outpost_Mapobject_Special_LuxuriousMarket",
+      "change": "added",
+      "after": [
+        "itemassets/Worldmap/WorldmapObjects/Outposts/Outpost_Mapobject_Special_LuxuriousMarket/Outpost_Mapobject_Special_LuxuriousMarket--1792585970701"
+      ]
+    },
+    {
+      "asset": "Skin_Mapmovement_AstrolabeKnight_Common",
+      "change": "added",
+      "after": [
+        "itemassets/Worldmap/WorldmapObjects/Movements/Skins/Skin_Mapmovement_AstrolabeKnight_Common/Skin_Mapmovement_AstrolabeKnight_Common--1792585970701"
+      ]
+    },
+    {
+      "asset": "Skin_Mapmovement_AstrolabeKnight_Eiland",
+      "change": "added",
+      "after": [
+        "itemassets/Worldmap/WorldmapObjects/Movements/Skins/Skin_Mapmovement_AstrolabeKnight_Eiland/Skin_Mapmovement_AstrolabeKnight_Eiland--1792585970701"
+      ]
+    },
+    {
+      "asset": "Skin_Mapmovement_TravellingStall_Common",
+      "change": "added",
+      "after": [
+        "itemassets/Worldmap/WorldmapObjects/Movements/Skins/Skin_Mapmovement_TravellingStall_Common/Skin_Mapmovement_TravellingStall_Common--1792585970701"
+      ]
+    },
+    {
+      "asset": "Skin_Mapmovement_TravellingStall_Eiland",
+      "change": "added",
+      "after": [
+        "itemassets/Worldmap/WorldmapObjects/Movements/Skins/Skin_Mapmovement_TravellingStall_Eiland/Skin_Mapmovement_TravellingStall_Eiland--1792585970701"
+      ]
+    }
+  ]
+}
