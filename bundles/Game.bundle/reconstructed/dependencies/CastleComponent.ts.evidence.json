@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleComponent",
+  "canonicalSource": "modules/exports/CastleComponent.js",
+  "canonicalSourceSha256": "64fbb077587ca17bb697a40243987e8bf63cdcb243f363738a58b44829e1af88",
+  "generatedHash": "9589bf2964a3f5c35ebae3078832022f36439eaf4d0ee292bb846ac75870b10d",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CollectableRendererList",
+      "imported": "CollectableRendererList",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableRendererList.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "GoodgameTextFieldManager",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/GoodgameTextFieldManager.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:GoodgameTextFieldManager",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBasicController",
+      "imported": "CastleBasicController",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBasicController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "EnvGlobalsHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EnvGlobalsHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:EnvGlobalsHandler",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

@@ -1,0 +1,98 @@
+{
+  "sourceHash": "690ed6807904addf78041cc810f4d389e241341fb39ad6a37f4c178b4f831fbb",
+  "generatedHash": "aea456b407fe8945c98523f2b7a42010436c6bc9027ed6a5902328d76b4b25cb",
+  "constructor": "presuper-fields-normalized",
+  "accessors": [],
+  "methods": [
+    "internalExecute",
+    "showArrowOnQuestBookButton",
+    "showQuestArrowInQuestBook",
+    "onShowQuestInfo",
+    "handleUntilPlayerClickedOnShowMe",
+    "getQuestInfoOpenedTrackingID",
+    "getQuestBookOpenedTrackingID"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_TutorialBasicActionCommand",
+      "imported": "TutorialBasicActionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialBasicActionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleQuestDialog",
+      "imported": "CastleQuestDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleQuestDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "MobileHelper",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/MobileHelper.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:MobileHelper",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleTutorialPanel",
+      "imported": "CastleTutorialPanel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleTutorialPanel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleQuestStartPanel",
+      "imported": "CastleQuestStartPanel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleQuestStartPanel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTutorialEvent",
+      "imported": "CastleTutorialEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleTutorialEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
+  "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
+  "fullRuntimeEquivalent": false,
+  "verifiedPreSuperAncestry": {
+    "className": "TutorialStartFromQuestBookActionCommand",
+    "root": "SimpleCommand",
+    "ancestors": [
+      {
+        "source": "modules/exports/TutorialBasicActionCommand.js",
+        "sha256": "0d0f65a660843fa34c1373e53311b0ab5bca1bb4cbaea47e5456a0708bb0e4ce"
+      },
+      {
+        "source": "modules/classes/SimpleCommand.js",
+        "sha256": "0fb99b4d187e5af0aac141c73fecce49f79da9cf9f3aef3dec9143a8671bcbe5"
+      }
+    ],
+    "preSuperFields": [
+      "_questGiverID"
+    ],
+    "fieldCollisionProvenAbsent": true
+  }
+}

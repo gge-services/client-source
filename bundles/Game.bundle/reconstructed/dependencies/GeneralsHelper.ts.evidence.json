@@ -1,0 +1,160 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "GeneralsHelper",
+  "canonicalSource": "modules/exports/GeneralsHelper.js",
+  "canonicalSourceSha256": "8f61441a8e204258b26065fd117a4dee2387549ae759decf85f55d868ce08011",
+  "generatedHash": "5f90d78ef4b3261677b27fdf18e3c3899ceb588b9805b1ed2529f0ad9dc9242a",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "MovieClipHelper",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/MovieClipHelper.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:MovieClipHelper",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleMovieClipHelper",
+      "imported": "CastleMovieClipHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleMovieClipHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "castAs",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/castAs.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:castAs",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "Localize",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/Localize.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:Localize",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleGoodgameExternalClip",
+      "imported": "CastleGoodgameExternalClip",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleGoodgameExternalClip.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicModel",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicModel.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicModel",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "ColorMatrix",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ColorMatrix.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:ColorMatrix",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "loadAssets",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/loadAssets__webpack_29__e13e72e3.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:loadAssets",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "AssetLoadingFlowType",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/AssetLoadingFlowType.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:AssetLoadingFlowType",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "warn",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/warn.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:warn",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_GeneralsHubDialog",
+      "imported": "GeneralsHubDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/GeneralsHubDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleExternalPreloaderDialog",
+      "imported": "CastleExternalPreloaderDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleExternalPreloaderDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleExternalPreloaderDialogProperties",
+      "imported": "CastleExternalPreloaderDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleExternalPreloaderDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogConsts",
+      "imported": "CastleDialogConsts",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogConsts.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [
+    "createjs",
+    "Library"
+  ],
+  "runtimeReady": false
+}

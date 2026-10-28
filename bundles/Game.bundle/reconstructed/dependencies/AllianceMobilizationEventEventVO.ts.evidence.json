@@ -1,0 +1,201 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "AllianceMobilizationEventEventVO",
+  "canonicalSource": "modules/exports/AllianceMobilizationEventEventVO.js",
+  "canonicalSourceSha256": "4265621da842db0cd57a2f0d81ae854b9b4237bf9f7095ecff704289969ad8b7",
+  "generatedHash": "ec0c3cc61e9889a408b81da87d9c9c929c2e07ae46de7566313c0863532e62d9",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_AScoreEventVO",
+      "imported": "AScoreEventVO",
+      "bundle": "Game.bundle",
+      "path": "exports/AScoreEventVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ALeagueTypeScoreEventVO",
+      "imported": "ALeagueTypeScoreEventVO",
+      "bundle": "Game.bundle",
+      "path": "exports/ALeagueTypeScoreEventVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_BuyPackagesEventVO",
+      "imported": "BuyPackagesEventVO",
+      "bundle": "Game.bundle",
+      "path": "exports/BuyPackagesEventVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AllianceMobilizationEventDialog",
+      "imported": "AllianceMobilizationEventDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/AllianceMobilizationEventDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AllianceMobilizationEventDialogProperties",
+      "imported": "AllianceMobilizationEventDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/AllianceMobilizationEventDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AllianceMobilizationEventStartDialog",
+      "imported": "AllianceMobilizationEventStartDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/AllianceMobilizationEventStartDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AllianceMobilizationEventStartDialogProperties",
+      "imported": "AllianceMobilizationEventStartDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/AllianceMobilizationEventStartDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AllianceQuestSlotVO",
+      "imported": "AllianceQuestSlotVO",
+      "bundle": "Game.bundle",
+      "path": "exports/AllianceQuestSlotVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBasicController",
+      "imported": "CastleBasicController",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBasicController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AllianceQuestEvent",
+      "imported": "AllianceQuestEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/AllianceQuestEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SStartAllianceQuestVO",
+      "imported": "C2SStartAllianceQuestVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SStartAllianceQuestVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SRerollAllianceQuestVO",
+      "imported": "C2SRerollAllianceQuestVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SRerollAllianceQuestVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SCompleteAllianceQuestVO",
+      "imported": "C2SCompleteAllianceQuestVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SCompleteAllianceQuestVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SSkipCooldownAllianceQuestVO",
+      "imported": "C2SSkipCooldownAllianceQuestVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SSkipCooldownAllianceQuestVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SAllianceQuestStatusVO",
+      "imported": "C2SAllianceQuestStatusVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SAllianceQuestStatusVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SCancelActiveAllianceQuestVO",
+      "imported": "C2SCancelActiveAllianceQuestVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SCancelActiveAllianceQuestVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectableEnum",
+      "imported": "CollectableEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleGoodgameExternalClip",
+      "imported": "CastleGoodgameExternalClip",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleGoodgameExternalClip.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicModel",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicModel.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicModel",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [
+    "_divisionRoundID: any;",
+    "_divisionRoundVO: any;",
+    "_leagueID: any;",
+    "_participants: any;",
+    "_questSlots: any;",
+    "_subDivisionId: any;",
+    "alliancescoreEventVO: any;",
+    "allianceScoreEventVOs: any;",
+    "scoreEventVO: any;"
+  ],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

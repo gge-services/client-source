@@ -1,0 +1,127 @@
+{
+  "sourceHash": "9bfb1418e3d5af9eadcc01eba8f7dc9bc6583555896dc816c103bc685dc062c1",
+  "generatedHash": "7caaca04c49eeb105a0b48717b9c349058c270c5b33365ad079bb6ad4e9f2950",
+  "constructor": "presuper-fields-normalized",
+  "accessors": [
+    "get:layoutManager"
+  ],
+  "methods": [
+    "execute",
+    "isReloadWorldMapNecessary",
+    "playerWasOnTheWorldMap"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleCommand",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleCommand.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleCommand",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "castAs",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/castAs.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:castAs",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:export_FlashBlockHelper",
+      "imported": "FlashBlockHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/FlashBlockHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "CommandController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/CommandController__webpack_29__620faaa3.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:CommandController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_IngameClientCommands",
+      "imported": "IngameClientCommands",
+      "bundle": "Game.bundle",
+      "path": "exports/IngameClientCommands.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleWorldmapData",
+      "imported": "CastleWorldmapData",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleWorldmapData.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_PlayerHelper",
+      "imported": "PlayerHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/PlayerHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
+  "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
+  "fullRuntimeEquivalent": false,
+  "verifiedPreSuperAncestry": {
+    "className": "SwitchToWorldmapCommand",
+    "root": "SimpleCommand",
+    "ancestors": [
+      {
+        "source": "modules/classes/SimpleCommand.js",
+        "sha256": "0fb99b4d187e5af0aac141c73fecce49f79da9cf9f3aef3dec9143a8671bcbe5"
+      }
+    ],
+    "preSuperFields": [
+      "_oldState"
+    ],
+    "fieldCollisionProvenAbsent": true
+  }
+}

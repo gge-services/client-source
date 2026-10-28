@@ -25,10 +25,10 @@ test('method parameter count and accessor removal are real ABI differences',()=>
 test('saved Command ABI evidence matches byte-verified canonical class sources',async()=>{
   const report=JSON.parse(await readFile(join(root,'graphs/2026-10-25-command-abi.summary.json'),'utf8'))
   const records=(await readFile(join(root,'graphs/2026-10-25-command-abi.jsonl'),'utf8')).trim().split('\n').map(JSON.parse)
-  assert.equal(records.length,688)
-  assert.equal(report.matchedOwners,688)
+  assert.equal(records.length,701)
+  assert.equal(report.matchedOwners,701)
   assert.equal(report.unmapped.length,0)
-  assert.equal(report.unchangedMethodSignatures,688)
+  assert.equal(report.unchangedMethodSignatures,701)
   assert.equal(report.changedMethodSignatures,0)
   assert.ok(report.totalMethodSignatures>2000)
   for(const row of records){
@@ -43,8 +43,8 @@ test('saved Command ABI evidence matches byte-verified canonical class sources',
 test('real official revision preserves all observed Command method signatures',async t=>{
   try{await readFile(join(capture,'raw/Game.bundle.js'),'utf8')}catch{t.skip('Live official capture is not available');return}
   const report=await auditCommandAbi(root,capture)
-  assert.equal(report.matchedOwners,688)
+  assert.equal(report.matchedOwners,701)
   assert.equal(report.changedMethodSignatures,0)
   assert.equal(report.unmapped.length,0)
-  assert.equal(report.unchangedConstructorArity,688)
+  assert.equal(report.unchangedConstructorArity,701)
 })

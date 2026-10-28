@@ -1,0 +1,123 @@
+{
+  "sourceHash": "e00a64a125dd8d01df0351601baf05a1c230d3ea0db35bde70e23188cffc09ea",
+  "generatedHash": "f2b19bd29dcb22ce60931cfff76fd61f7f3a1147eea47e62a34f15481d4baec8",
+  "constructor": "presuper-fields-normalized",
+  "accessors": [],
+  "methods": [
+    "handleUntilPlayerClickedOnShowMe",
+    "onCloseQuestBookDialog",
+    "onCastleSwitchedToBuildMode",
+    "onExpansionArrowAddedToCastle",
+    "onExpansionArrowRemovedFromCastle",
+    "removeArrowFromExpansion",
+    "addArrowsToExpansion",
+    "addArrowToSingleExpansion",
+    "onShowBuyExpansionDialog",
+    "onPlayerBoughtCastleExpansion",
+    "getQuestInfoOpenedTrackingID",
+    "getQuestBookOpenedTrackingID"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_TutorialStartFromQuestBookActionCommand",
+      "imported": "TutorialStartFromQuestBookActionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialStartFromQuestBookActionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCharacter",
+      "imported": "ClientConstCharacter",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCharacter.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleQuestDialog",
+      "imported": "CastleQuestDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleQuestDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleExpansionDialog",
+      "imported": "CastleExpansionDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleExpansionDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_IsoEvent",
+      "imported": "IsoEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/IsoEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_Iso",
+      "imported": "Iso",
+      "bundle": "Game.bundle",
+      "path": "exports/Iso.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_IsoRenderStrategyEnum",
+      "imported": "IsoRenderStrategyEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/IsoRenderStrategyEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
+  "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
+  "fullRuntimeEquivalent": false,
+  "verifiedPreSuperAncestry": {
+    "className": "TutorialExpandCastleActionCommand",
+    "root": "SimpleCommand",
+    "ancestors": [
+      {
+        "source": "modules/exports/TutorialStartFromQuestBookActionCommand.js",
+        "sha256": "690ed6807904addf78041cc810f4d389e241341fb39ad6a37f4c178b4f831fbb"
+      },
+      {
+        "source": "modules/exports/TutorialBasicActionCommand.js",
+        "sha256": "0d0f65a660843fa34c1373e53311b0ab5bca1bb4cbaea47e5456a0708bb0e4ce"
+      },
+      {
+        "source": "modules/classes/SimpleCommand.js",
+        "sha256": "0fb99b4d187e5af0aac141c73fecce49f79da9cf9f3aef3dec9143a8671bcbe5"
+      }
+    ],
+    "preSuperFields": [
+      "_addedExpansions"
+    ],
+    "fieldCollisionProvenAbsent": true
+  }
+}

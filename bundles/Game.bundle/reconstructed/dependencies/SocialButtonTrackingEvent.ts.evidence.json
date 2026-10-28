@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "SocialButtonTrackingEvent",
+  "canonicalSource": "modules/exports/SocialButtonTrackingEvent.js",
+  "canonicalSourceSha256": "b0e42b4735628ec26958adffcafcf81b130b8eb0af9ea5ab89a995eea1693914",
+  "generatedHash": "cf3bd761848bc1d51e8979b9847bb2356b18ad295ce5bf94d3e8270c3a58112f",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicTrackingEvent",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicTrackingEvent.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicTrackingEvent",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [
+    "_buttonName: any;",
+    "_date: any;",
+    "_playerId: any;"
+  ],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

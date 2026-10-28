@@ -1,0 +1,271 @@
+{
+  "sourceHash": "462a884cc7b1c198151b2d8902475cc526f9a13ce5078261b7e1b3ffa2dec631",
+  "generatedHash": "b7e3eda09f893a0f14c8bb2523b5debfd632fe898ccc9449d53b9ff24ff4ef94",
+  "constructor": "presuper-fields-normalized",
+  "accessors": [],
+  "methods": [
+    "internalExecute",
+    "goToWorldMap",
+    "arrivedAtWorldmap",
+    "onPlayernameSelected",
+    "findValidRobberBaron",
+    "waitUntilFoundValidRobberBaronMapObject",
+    "showRobberBaron",
+    "onShowSelectUsername",
+    "highlightDungeon",
+    "updateSpotlight",
+    "recheckRobberBaron",
+    "onRingMenu",
+    "confirmAttack",
+    "fillAttack",
+    "onAutoFill",
+    "onTravelPlanning",
+    "onAttackSelected"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_TutorialBasicActionCommand",
+      "imported": "TutorialBasicActionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialBasicActionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManagerEvent",
+      "imported": "CastleLayoutManagerEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManagerEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_Iso",
+      "imported": "Iso",
+      "bundle": "Game.bundle",
+      "path": "exports/Iso.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_WorldmapPanelButton",
+      "imported": "WorldmapPanelButton",
+      "bundle": "Game.bundle",
+      "path": "exports/WorldmapPanelButton.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleWorldmapScreenEvent",
+      "imported": "CastleWorldmapScreenEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleWorldmapScreenEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleUserDataEvent",
+      "imported": "CastleUserDataEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleUserDataEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SQuestStarterClickVO",
+      "imported": "C2SQuestStarterClickVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SQuestStarterClickVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleServerMessageArrivedEvent",
+      "imported": "CastleServerMessageArrivedEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleServerMessageArrivedEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SFindNextMapObjectVO",
+      "imported": "C2SFindNextMapObjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SFindNextMapObjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldClassic",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldClassic.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldClassic",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleTutorialDialogFilter",
+      "imported": "CastleTutorialDialogFilter",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/CastleTutorialDialogFilter.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleSelectUserName",
+      "imported": "CastleSelectUserName",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSelectUserName.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "debug",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/debug.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:debug",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleTutorialArrowController",
+      "imported": "CastleTutorialArrowController",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/CastleTutorialArrowController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTutorialClickBlocker",
+      "imported": "CastleTutorialClickBlocker",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/CastleTutorialClickBlocker.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTutorialSpotlight",
+      "imported": "CastleTutorialSpotlight",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/CastleTutorialSpotlight.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_IsoEvent",
+      "imported": "IsoEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/IsoEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "error",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/error__webpack_29__ca00fccf.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:error",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleStartAttackDialog",
+      "imported": "CastleStartAttackDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleStartAttackDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCharacter",
+      "imported": "ClientConstCharacter",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCharacter.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AttackDialog",
+      "imported": "AttackDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/AttackDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePostAttackDialog",
+      "imported": "CastlePostAttackDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePostAttackDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
+  "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
+  "fullRuntimeEquivalent": false,
+  "verifiedPreSuperAncestry": {
+    "className": "TutorialAttackRobberBaronCommand",
+    "root": "SimpleCommand",
+    "ancestors": [
+      {
+        "source": "modules/exports/TutorialBasicActionCommand.js",
+        "sha256": "0d0f65a660843fa34c1373e53311b0ab5bca1bb4cbaea47e5456a0708bb0e4ce"
+      },
+      {
+        "source": "modules/classes/SimpleCommand.js",
+        "sha256": "0fb99b4d187e5af0aac141c73fecce49f79da9cf9f3aef3dec9143a8671bcbe5"
+      }
+    ],
+    "preSuperFields": [
+      "_sideQuests"
+    ],
+    "fieldCollisionProvenAbsent": true
+  }
+}

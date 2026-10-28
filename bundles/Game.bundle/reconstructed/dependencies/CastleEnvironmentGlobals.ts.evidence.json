@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleEnvironmentGlobals",
+  "canonicalSource": "modules/exports/CastleEnvironmentGlobals.js",
+  "canonicalSourceSha256": "986a9a4f561311e0e83fad7c6fc6ee94b33d13200470d36463ed487f6ce14779",
+  "generatedHash": "49e114b187743faaa89759df14d3ae200dadf5610297ef288170dbf06a2a75c3",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicEnvironmentGlobals",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicEnvironmentGlobals__webpack_29__73413928.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicEnvironmentGlobals",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleVersionInformation",
+      "imported": "CastleVersionInformation",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/CastleVersionInformation.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "IdentitiyManagementLicenseTableRegistrationVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/IdentitiyManagementLicenseTableRegistrationVO.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:IdentitiyManagementLicenseTableRegistrationVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "AgeCheck",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/AgeCheck.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:AgeCheck",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicConstants",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicConstants.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicConstants",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [
+    "_invite_refer_method: any;",
+    "_inviterCode: any;",
+    "_isCrossplay: any;",
+    "_isOnAllianceBattleGroundServer: any;",
+    "_isOnTemporaryServer: any;",
+    "_isSpecialServerConnectStarted: any;",
+    "_isTemporaryServerTestRun: any;",
+    "_lastExternalClip: any;",
+    "_lastShownDialog: any;",
+    "_lastUsedCommandName: any;",
+    "_originalInstanceVOBeforeSpecialServer: any;",
+    "_specialServer: any;",
+    "static _firstLoaderURL: any;"
+  ],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

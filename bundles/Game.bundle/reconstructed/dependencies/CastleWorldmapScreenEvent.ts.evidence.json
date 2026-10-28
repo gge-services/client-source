@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleWorldmapScreenEvent",
+  "canonicalSource": "modules/exports/CastleWorldmapScreenEvent.js",
+  "canonicalSourceSha256": "54949cb7c111389e00613754c530a77f1dd5c19e7b431e5e41e2c74102055b78",
+  "generatedHash": "6b57cf81976f5d28a131f6b13f913fc5c884b2bdbf8aea0409ee816d70669024",
+  "dependencies": [],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [
+    "createjs",
+    "CONSTRUCTOR_HACK"
+  ],
+  "runtimeReady": false
+}

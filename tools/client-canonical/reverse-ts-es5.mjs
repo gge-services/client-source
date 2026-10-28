@@ -70,6 +70,62 @@ function constructorFromCall(fn, superName) {
     ]))
 }
 
+function constructorFromPreSuperFields(fn, superName) {
+  const statements=fn.body.body
+  if(fn.params.length||statements.length<4||!t.isVariableDeclaration(statements[0])||
+    statements[0].declarations.length!==1)return null
+  const local=statements[0].declarations[0]
+  if(!t.isIdentifier(local.id)||!t.isThisExpression(local.init))return null
+  const hook=statements.findIndex(x=>t.isExpressionStatement(x)&&
+    t.isIdentifier(x.expression,{name:'CONSTRUCTOR_HACK'}))
+  if(hook<2)return null
+  const fields=[]
+  for(const [index,statement] of statements.slice(1,hook).entries()){
+    if(!t.isExpressionStatement(statement)||!t.isAssignmentExpression(statement.expression,{operator:'='})||
+      !t.isMemberExpression(statement.expression.left)||statement.expression.left.computed||
+      !t.isIdentifier(statement.expression.left.object,{name:local.id.name})||
+      !t.isIdentifier(statement.expression.left.property))return null
+    const rhs=statement.expression.right
+    const check=t.file(t.program([t.expressionStatement(t.cloneNode(rhs,true))]))
+    let unsafe=false
+    traverse(check,{ThisExpression(){unsafe=true},Identifier(path){
+      if(path.isReferencedIdentifier()&&path.node.name===local.id.name)unsafe=true
+    }})
+    if(unsafe)return null
+    fields.push({name:statement.expression.left.property.name,value:rhs,index})
+  }
+  const superAssignment=expr=>t.isAssignmentExpression(expr,{operator:'='})&&
+    t.isIdentifier(expr.left,{name:local.id.name})&&
+    t.isLogicalExpression(expr.right,{operator:'||'})&&t.isThisExpression(expr.right.right)&&
+    t.isCallExpression(expr.right.left)&&member(expr.right.left.callee,'call')&&
+    t.isIdentifier(expr.right.left.callee.object,{name:superName})&&
+    expr.right.left.arguments.length===1&&t.isThisExpression(expr.right.left.arguments[0])
+  const tail=statements.slice(hook+1)
+  const first=tail[0]
+  const last=tail.at(-1)
+  let finalField=null
+  if(tail.length===1&&t.isReturnStatement(first)&&superAssignment(first.argument)){}
+  else if(tail.length===2&&t.isExpressionStatement(first)&&t.isReturnStatement(last)&&
+    t.isIdentifier(last.argument,{name:local.id.name})&&
+    t.isAssignmentExpression(first.expression,{operator:'='})&&
+    t.isMemberExpression(first.expression.left)&&!first.expression.left.computed&&
+    t.isIdentifier(first.expression.left.property)&&
+    superAssignment(first.expression.left.object)){
+    finalField={name:first.expression.left.property.name,value:first.expression.right}
+  }else return null
+  const before=fields.map(x=>t.variableDeclaration('const',[
+    t.variableDeclarator(t.identifier('__initial'+x.index),t.cloneNode(x.value,true))
+  ]))
+  const after=fields.map(x=>t.expressionStatement(t.assignmentExpression('=',
+    t.memberExpression(t.thisExpression(),t.identifier(x.name)),t.identifier('__initial'+x.index))))
+  if(finalField)after.push(t.expressionStatement(t.assignmentExpression('=',
+    t.memberExpression(t.thisExpression(),t.identifier(finalField.name)),t.cloneNode(finalField.value,true))))
+  return t.classMethod('constructor',t.identifier('constructor'),[],t.blockStatement([
+    ...before,t.expressionStatement(t.identifier('CONSTRUCTOR_HACK')),
+    t.expressionStatement(t.callExpression(t.super(),[])),...after
+  ]))
+}
+
 function constructorWithProperties(fn, superName) {
   const statements=fn.body.body
   if(statements.length<3||!t.isVariableDeclaration(statements[0])||
@@ -116,8 +172,10 @@ function accessorSuperCall(node, baseExpression, property, method, params, allow
 function rewriteSuperAccessor(method, property, baseExpression, className, readonlyBaseAccessors, trustedAncestors) {
   const file = t.file(t.program([t.classDeclaration(t.identifier('Temporary'), null, t.classBody([method]))]))
   let rewritten = 0
+  let descriptorLookups = 0
   traverse(file, {
     CallExpression(path) {
+      if(objectCall(path.node,'getOwnPropertyDescriptor'))descriptorLookups++
       if (!accessorSuperCall(path.node, baseExpression, property, method.kind === 'set' ? 'set' : 'get', method.params, trustedAncestors?.get((baseExpression?.property?.name??'')+':'+property))) return
       rewritten++
       const parentClass = t.isMemberExpression(baseExpression) && t.isIdentifier(baseExpression.property) ? baseExpression.property.name : null
@@ -135,7 +193,8 @@ function rewriteSuperAccessor(method, property, baseExpression, className, reado
       }
     }
   })
-  if (method.kind === 'set' && rewritten !== 1) throw Error('Unsupported inherited accessor setter: ' + property)
+  if (method.kind === 'set' && descriptorLookups && rewritten !== 1)
+    throw Error('Unsupported inherited accessor setter: ' + property)
   return file.program.body[0].body.body[0]
 }
 
@@ -319,7 +378,14 @@ function preserveDynamicSourceTypes(cls) {
   traverse(file,{
     AssignmentExpression(path) {
       const n=path.node
-      if(['&&=','||=','??='].includes(n.operator)&&t.isMemberExpression(n.left)){
+      if(['&&=','||=','??='].includes(n.operator)&&t.isIdentifier(n.left)){
+        const previous=t.cloneNode(n.left,true)
+        const next=t.assignmentExpression('=',t.cloneNode(n.left,true),t.cloneNode(n.right,true))
+        const normalized=n.operator==='??='?
+          t.conditionalExpression(t.binaryExpression('!=',previous,t.nullLiteral()),previous,next):
+          t.logicalExpression(n.operator==='&&='?'&&':'||',previous,next)
+        path.replaceWith(normalized)
+      }else if(['&&=','||=','??='].includes(n.operator)&&t.isMemberExpression(n.left)){
       const receiver=t.identifier('sourceObject'),key=t.identifier('sourceKey'),previous=t.identifier('previousValue')
       const memberAccess=t.memberExpression(t.cloneNode(receiver),t.cloneNode(key),true)
       const shouldAssign=n.operator==='&&='?t.cloneNode(previous):
@@ -424,7 +490,8 @@ export function reconstructEs5Class(source, options={}) {
       const standalone=!superName&&dec.init.arguments.length===0&&constructor.params.length===0&&constructor.body.body.length===0
       const delegating=superName&&isDelegatingConstructor(constructor,superName)
       const generatedConstructor = delegating||standalone ? null :
-        constructorFromCall(constructor,superName) ?? constructorWithProperties(constructor,superName)
+        constructorFromCall(constructor,superName) ?? constructorWithProperties(constructor,superName) ??
+          (options.safePreSuperConstructors?.has(className)?constructorFromPreSuperFields(constructor,superName):null)
       if (!delegating&&!standalone&&!generatedConstructor)continue
       const extending=body.some(n=>t.isExpressionStatement(n) && t.isCallExpression(n.expression) &&
         member(n.expression.callee,'__extends') && exactName(n.expression.arguments[0],className) &&
@@ -513,10 +580,15 @@ export function reconstructEs5Class(source, options={}) {
         if (!path.scope.hasBinding(path.node.name)) unbound.add(path.node.name)
       }})
       if (unbound.size) throw Error('Captured minifier bindings are not available outside the original module: '+[...unbound].sort().join(', '))
-      const code=generate(generated,{jsescOption:{minimal:true}}).code+'\n'
+      const overloaded=members.filter(m=>t.isClassMethod(m)&&m.kind==='method'&&
+        t.isIdentifier(m.key)&&m.params.length>0&&m.body.body.some(stmt=>
+          t.isForStatement(stmt)&&generate(stmt).code.includes('arguments.length')))
+      const typeOnlyOverloads=overloaded.length?('\nexport interface '+className+' {\n'+
+        overloaded.map(m=>'  '+m.key.name+'(first: any, ...args: any[]): any;').join('\n')+'\n}\n'):''
+      const code=generate(generated,{jsescOption:{minimal:true}}).code+'\n'+typeOnlyOverloads
       if (code.includes('Object.getOwnPropertyDescriptor') || code.includes('Object.defineProperty') || code.includes('.prototype.')) throw Error('Unreversed descriptor remains: ' + className)
       parser.parse(code,{sourceType:'module',plugins:['typescript']})
-      return {className,code,metadata:{sourceHash:sha(source),generatedHash:sha(code),constructor:'implicit-super',accessors:members.filter(m=>m.kind==='get'||m.kind==='set').map(m=>m.kind+':'+m.key.name),methods:members.filter(m=>m.kind==='method').map(m=>m.key.name),dependencies:[...resolved.modules,...interfaces.dependencies],renamed:aliases.renamed,...(improved.renamed.length?{verifiedParameterRenames:improved.renamed}:{}),runtimeInterfaceCallsPreserved:interfaces.statements.length,removedRuntimeInterfaceCalls:ast.program.body.filter(n => t.isExpressionStatement(n) && t.isCallExpression(n.expression) && member(n.expression.callee,'classImplementsInterfaces')).length,staticInitializationPreserved:staticInvocation,fullRuntimeEquivalent:false}}
+      return {className,code,metadata:{sourceHash:sha(source),generatedHash:sha(code),constructor:generatedConstructor&&options.safePreSuperConstructors?.has(className)?'presuper-fields-normalized':'implicit-super',accessors:members.filter(m=>m.kind==='get'||m.kind==='set').map(m=>m.kind+':'+m.key.name),methods:members.filter(m=>m.kind==='method').map(m=>m.key.name),dependencies:[...resolved.modules,...interfaces.dependencies],renamed:aliases.renamed,...(improved.renamed.length?{verifiedParameterRenames:improved.renamed}:{}),runtimeInterfaceCallsPreserved:interfaces.statements.length,removedRuntimeInterfaceCalls:ast.program.body.filter(n => t.isExpressionStatement(n) && t.isCallExpression(n.expression) && member(n.expression.callee,'classImplementsInterfaces')).length,staticInitializationPreserved:staticInvocation,fullRuntimeEquivalent:false}}
     }
   }
   return null

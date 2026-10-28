@@ -1,0 +1,168 @@
+{
+  "sourceHash": "0b833c78caf18b8175450622a30952ae504ce3f9982473ea727f543b232c9fed",
+  "generatedHash": "bf900979b69e0b87484de1e737f3cc507f550f201c9002b2ed45b002d0c36ae0",
+  "constructor": "presuper-fields-normalized",
+  "accessors": [],
+  "methods": [
+    "internalExecute",
+    "triggerQuestBookHint",
+    "hintAtQuestBook",
+    "removeQuestBookHintTimeout",
+    "finishStep"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_TutorialBasicActionCommand",
+      "imported": "TutorialBasicActionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialBasicActionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstLevelRestrictions",
+      "imported": "ClientConstLevelRestrictions",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstLevelRestrictions.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleChestDialog",
+      "imported": "CastleChestDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleChestDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTutorialController",
+      "imported": "CastleTutorialController",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/CastleTutorialController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrivateOfferDecorationDialog",
+      "imported": "CastlePrivateOfferDecorationDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrivateOfferDecorationDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleQuestStartPanel",
+      "imported": "CastleQuestStartPanel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleQuestStartPanel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTutorialDialogFilter",
+      "imported": "CastleTutorialDialogFilter",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/CastleTutorialDialogFilter.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleQuestDialog",
+      "imported": "CastleQuestDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleQuestDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleYesNoOrangeWarningDialog",
+      "imported": "CastleYesNoOrangeWarningDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleYesNoOrangeWarningDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTutorialArrowController",
+      "imported": "CastleTutorialArrowController",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/CastleTutorialArrowController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTutorialSpotlight",
+      "imported": "CastleTutorialSpotlight",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/CastleTutorialSpotlight.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTutorialClickBlocker",
+      "imported": "CastleTutorialClickBlocker",
+      "bundle": "Game.bundle",
+      "path": "webpack/exports/CastleTutorialClickBlocker.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "debug",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/debug.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:debug",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
+  "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
+  "fullRuntimeEquivalent": false,
+  "verifiedPreSuperAncestry": {
+    "className": "TutorialOpenQuestbookCommand",
+    "root": "SimpleCommand",
+    "ancestors": [
+      {
+        "source": "modules/exports/TutorialBasicActionCommand.js",
+        "sha256": "0d0f65a660843fa34c1373e53311b0ab5bca1bb4cbaea47e5456a0708bb0e4ce"
+      },
+      {
+        "source": "modules/classes/SimpleCommand.js",
+        "sha256": "0fb99b4d187e5af0aac141c73fecce49f79da9cf9f3aef3dec9143a8671bcbe5"
+      }
+    ],
+    "preSuperFields": [
+      "timeoutId"
+    ],
+    "fieldCollisionProvenAbsent": true
+  }
+}

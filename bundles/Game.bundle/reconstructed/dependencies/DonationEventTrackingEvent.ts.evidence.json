@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "DonationEventTrackingEvent",
+  "canonicalSource": "modules/exports/DonationEventTrackingEvent.js",
+  "canonicalSourceSha256": "fc8df068aa1aca5d29ed54d0227416b14bc53da985457a78108e0bbc6de75b18",
+  "generatedHash": "cad21056b93a2d4d7556b789da90de1b6684c56432e74a9dd26e72b404098563",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicTrackingEvent",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicTrackingEvent.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicTrackingEvent",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [
+    "_actionType: any;",
+    "_date: any;",
+    "_playerId: any;"
+  ],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "AttackScreenGeneralsTrackingEvent",
+  "canonicalSource": "modules/exports/AttackScreenGeneralsTrackingEvent.js",
+  "canonicalSourceSha256": "85614bda3a01fd7d47700a49c48a21d3e3be3f73a24684308670d0119bb39f31",
+  "generatedHash": "400aa26388fe3eb765482b26eeb35acdbbadd2328d3314a46ae4407cc8052e88",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicTrackingEvent",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicTrackingEvent.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicTrackingEvent",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [
+    "_attackLaunched: any;",
+    "_details: any;",
+    "_playerId: any;",
+    "_sessionEnd: any;",
+    "_sessionStart: any;"
+  ],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

@@ -1,0 +1,167 @@
+{
+  "sourceHash": "b02024a2268980d91fb767669c6f883e25702850c5c226188b5cec34f9cf1ccc",
+  "generatedHash": "b95a48570fc5a5f4350c4384557c873fe069af57613c7838689a39f33c125fd7",
+  "constructor": "presuper-fields-normalized",
+  "accessors": [],
+  "methods": [
+    "getBuilding",
+    "actionConditionValid",
+    "internalExecute",
+    "handleUntilPlayerClickedOnShowMe",
+    "clickOnBuilding",
+    "clickedOnBuilding",
+    "handleBuildingByBuildState",
+    "handleUpgradeBtn",
+    "handleSkipBtn",
+    "onUpgradeBtnClicked",
+    "onBuildingUpgradeComplete",
+    "finishStep",
+    "getBuildingName",
+    "getQuestInfoOpenedTrackingID",
+    "getQuestBookOpenedTrackingID"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_TutorialStartFromQuestBookActionCommand",
+      "imported": "TutorialStartFromQuestBookActionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialStartFromQuestBookActionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCharacter",
+      "imported": "ClientConstCharacter",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCharacter.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_Iso",
+      "imported": "Iso",
+      "bundle": "Game.bundle",
+      "path": "exports/Iso.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_IsoObjectGroupEnum",
+      "imported": "IsoObjectGroupEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/IsoObjectGroupEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "instanceOfClass",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/instanceOfClass.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:instanceOfClass",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_TutorialBasicActionCommand",
+      "imported": "TutorialBasicActionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/TutorialBasicActionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_IsoBuildingStateEnum",
+      "imported": "IsoBuildingStateEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/IsoBuildingStateEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_IsoEvent",
+      "imported": "IsoEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/IsoEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleQuestDialog",
+      "imported": "CastleQuestDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleQuestDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "MobileHelper",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/MobileHelper.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:MobileHelper",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleTutorialPanel",
+      "imported": "CastleTutorialPanel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleTutorialPanel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_RingMenuBuilding",
+      "imported": "RingMenuBuilding",
+      "bundle": "Game.bundle",
+      "path": "exports/RingMenuBuilding.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [],
+  "runtimeInterfaceCallsPreserved": 1,
+  "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
+  "fullRuntimeEquivalent": false,
+  "verifiedPreSuperAncestry": {
+    "className": "TutorialUpgradeBuildingActionCommand",
+    "root": "SimpleCommand",
+    "ancestors": [
+      {
+        "source": "modules/exports/TutorialStartFromQuestBookActionCommand.js",
+        "sha256": "690ed6807904addf78041cc810f4d389e241341fb39ad6a37f4c178b4f831fbb"
+      },
+      {
+        "source": "modules/exports/TutorialBasicActionCommand.js",
+        "sha256": "0d0f65a660843fa34c1373e53311b0ab5bca1bb4cbaea47e5456a0708bb0e4ce"
+      },
+      {
+        "source": "modules/classes/SimpleCommand.js",
+        "sha256": "0fb99b4d187e5af0aac141c73fecce49f79da9cf9f3aef3dec9143a8671bcbe5"
+      }
+    ],
+    "preSuperFields": [
+      "_startCommandWithSkipUpgrade"
+    ],
+    "fieldCollisionProvenAbsent": true
+  }
+}

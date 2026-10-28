@@ -1,0 +1,56 @@
+{
+  "sourceHash": "f20ec3111eea53c361c5eac3e334e43d1aa38e0c1896472077e1dbb8fc4fb43f",
+  "generatedHash": "3058bc8b096a5f93e176230df7a46f2890f653901e373bb3f70b61c824ddd82c",
+  "constructor": "presuper-fields-normalized",
+  "accessors": [
+    "get:isExecuted",
+    "set:isExecuted"
+  ],
+  "methods": [
+    "execute"
+  ],
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleComponent",
+      "imported": "CastleComponent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleComponent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "classImplementsInterfaces",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/classImplementsInterfaces__webpack_3__81c2a238.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:classImplementsInterfaces",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "renamed": [
+    "value"
+  ],
+  "runtimeInterfaceCallsPreserved": 1,
+  "removedRuntimeInterfaceCalls": 1,
+  "staticInitializationPreserved": false,
+  "fullRuntimeEquivalent": false,
+  "verifiedPreSuperAncestry": {
+    "className": "AIsoCommand",
+    "root": "CollectableRendererList",
+    "ancestors": [
+      {
+        "source": "modules/exports/CastleComponent.js",
+        "sha256": "64fbb077587ca17bb697a40243987e8bf63cdcb243f363738a58b44829e1af88"
+      },
+      {
+        "source": "modules/exports/CollectableRendererList.js",
+        "sha256": "ecc4553a37a4d61c1c1bbfb273435089c668dc049156ba34b4568589350eb11a"
+      }
+    ],
+    "preSuperFields": [
+      "_isExecuted"
+    ],
+    "fieldCollisionProvenAbsent": true
+  }
+}

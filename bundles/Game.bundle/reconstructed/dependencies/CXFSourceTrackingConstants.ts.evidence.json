@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CXFSourceTrackingConstants",
+  "canonicalSource": "modules/exports/CXFSourceTrackingConstants.js",
+  "canonicalSourceSha256": "33c2d0484ee14aa5442c244616dafb43f61f0c6f4f35d937011090ac4d4482b4",
+  "generatedHash": "eeaef3d624d9f57940b84e23fba675cf475c35edcd881328afe18966c9839251",
+  "dependencies": [],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": true
+}

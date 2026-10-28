@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "AccountDeletionTrackingEvent",
+  "canonicalSource": "modules/exports/AccountDeletionTrackingEvent.js",
+  "canonicalSourceSha256": "0e5823ab7b594ab51d8c02859f04c8354f166186952c3e82bfa9c7d9c885fddd",
+  "generatedHash": "e9fd59323ee075654be6be4f2aedf545ce08ab6d370657edd6b11792720d202d",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicTrackingEvent",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicTrackingEvent.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicTrackingEvent",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [
+    "_actionType: any;",
+    "_date: any;",
+    "_playerId: any;"
+  ],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

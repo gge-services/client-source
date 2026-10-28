@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "AttackScreenWaveTrackingEvent",
+  "canonicalSource": "modules/exports/AttackScreenWaveTrackingEvent.js",
+  "canonicalSourceSha256": "91683bf452533f4438043730004847657bcc84e36f42d6af65f82f20d40e23b7",
+  "generatedHash": "e797b4b0273abf7726bb44176817d1d117aed1b6288af80ce99102e6a0d41e90",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicTrackingEvent",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicTrackingEvent.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicTrackingEvent",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [
+    "_actionType: any;",
+    "_date: any;",
+    "_numberWaves: any;",
+    "_playerId: any;"
+  ],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}
