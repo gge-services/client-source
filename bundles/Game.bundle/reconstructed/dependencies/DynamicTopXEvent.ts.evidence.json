@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "DynamicTopXEvent",
+  "canonicalSource": "modules/exports/DynamicTopXEvent.js",
+  "canonicalSourceSha256": "f73e101668b95706c33532b8f04a0e10ba6812f45c9303308c37d698d5a5c281",
+  "generatedHash": "d531efb534dd208a521a244d3c450953f99925f0790daa4e96ec6773e7cf4bef",
+  "dependencies": [],
+  "globalRuntimeDependencies": [
+    "createjs",
+    "CONSTRUCTOR_HACK"
+  ],
+  "runtimeReady": false
+}

@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleNameValidationEvent",
+  "canonicalSource": "modules/exports/CastleNameValidationEvent.js",
+  "canonicalSourceSha256": "3319872703d4ad42b9aabc61771db2559dcad6d04f578071d884850868bbb58b",
+  "generatedHash": "8845f21fa409924427d81840660aee220a36c18cdc8a822c21171365b95e5852",
+  "dependencies": [],
+  "globalRuntimeDependencies": [
+    "createjs",
+    "CONSTRUCTOR_HACK"
+  ],
+  "runtimeReady": false
+}

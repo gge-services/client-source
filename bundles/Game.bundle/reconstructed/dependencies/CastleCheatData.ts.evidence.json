@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleCheatData",
+  "canonicalSource": "modules/exports/CastleCheatData.js",
+  "canonicalSourceSha256": "d1554f1c21acabeaa2440a8c3f619bc55ff2a98e8459f405c783263b9ad4ec0d",
+  "generatedHash": "c6920b019d968c1f2f986563f13a9aaa6b57d7b5ed4f2f1dc5d34574aaff049e",
+  "dependencies": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": true
+}

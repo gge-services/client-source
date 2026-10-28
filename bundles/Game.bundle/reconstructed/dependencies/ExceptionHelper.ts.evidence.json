@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "ExceptionHelper",
+  "canonicalSource": "modules/exports/ExceptionHelper.js",
+  "canonicalSourceSha256": "0d4391bbb6398172965901ec807107c47a41adb87d1fcb645fad1307343a470b",
+  "generatedHash": "45d8573525847c3fecbe402a3f81c07d5d1cd53e3f034c2e734b05dbeec1cb52",
+  "dependencies": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": true
+}

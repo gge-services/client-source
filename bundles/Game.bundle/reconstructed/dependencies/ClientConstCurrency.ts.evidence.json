@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "ClientConstCurrency",
+  "canonicalSource": "modules/exports/ClientConstCurrency.js",
+  "canonicalSourceSha256": "9acdbdcd424fd90e952e990742a6cb9aa1fa3540def1fab05928aad1233ecc1f",
+  "generatedHash": "6753ebd3c8f89591bd5d96df4a50dc5e42eaa57370d5ea6aa666dace3eeacca7",
+  "dependencies": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": true
+}

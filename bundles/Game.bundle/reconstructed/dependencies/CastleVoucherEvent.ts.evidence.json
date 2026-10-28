@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleVoucherEvent",
+  "canonicalSource": "modules/exports/CastleVoucherEvent.js",
+  "canonicalSourceSha256": "60cf5be52a5212825a7bf5af96baf728f1ddafc6b017a132cbddaff392fc9df2",
+  "generatedHash": "8291a2011b668c41890b77f9bcc849586c9805238d3016fe96a11822b4f1de1a",
+  "dependencies": [],
+  "globalRuntimeDependencies": [
+    "createjs"
+  ],
+  "runtimeReady": false
+}

@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleLoginEvent",
+  "canonicalSource": "modules/exports/CastleLoginEvent.js",
+  "canonicalSourceSha256": "c441953d12fee1fadd0f780fc89cdf228d86a6887bd78d8dcc524c50b93e0f3e",
+  "generatedHash": "72b4304cc117a2c7d51798db860141a913e88acf5a1217e4abe5c47509ec8546",
+  "dependencies": [],
+  "globalRuntimeDependencies": [
+    "createjs"
+  ],
+  "runtimeReady": false
+}

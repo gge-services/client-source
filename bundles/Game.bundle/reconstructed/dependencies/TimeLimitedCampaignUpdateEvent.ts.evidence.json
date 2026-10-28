@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "TimeLimitedCampaignUpdateEvent",
+  "canonicalSource": "modules/exports/TimeLimitedCampaignUpdateEvent.js",
+  "canonicalSourceSha256": "bb11ddb5004f45a1c580bfbe51316ddee718459ea6b5d7d2d878c5fae1267e1d",
+  "generatedHash": "f9c21af41294fdf5ba3c0a00fcf58760c09ec4654ff9eb733da7c2808b6a471a",
+  "dependencies": [],
+  "globalRuntimeDependencies": [
+    "createjs",
+    "CONSTRUCTOR_HACK"
+  ],
+  "runtimeReady": false
+}
