@@ -3,6 +3,7 @@ import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import { dirname, join, resolve } from 'node:path'
 import {extractEventDefinitionId} from './event-identities.mjs'
 import {resolveCrossBundleAliases} from './cross-bundle-aliases.mjs'
+import {applyVerifiedNeighborhoods} from './verified-neighborhoods.mjs'
 const bundles = ['Game.bundle', 'ggs.dll', 'CacheBreaker.bundle', 'CastleLoader.bundle', 'vendor.bundle']
 const digest = text => createHash('sha256').update(text).digest('hex')
 export function stableNodeId(bundle, item, source=null) {
@@ -19,7 +20,7 @@ export function resolveNode(graph, bundle, specifier) {
   const matching = graph.nodes.filter(n => n.bundle === bundle && n.specifier === specifier)
   return matching.length === 1 && matching[0].id ? matching[0].id : null
 }
-export async function buildSemanticGraph(root) {
+export async function buildSemanticGraph(root,{ignoreVerifiedNeighborhoods=false}={}) {
   const nodes = [], edges = []
   const literals=(await readFile(join(root,'graphs/2026-10-25-literal-identities.jsonl'),'utf8'))
     .trim().split('\n').filter(Boolean).map(JSON.parse)
@@ -62,6 +63,9 @@ export async function buildSemanticGraph(root) {
       }
     }
   }
+  const neighborhoods=(await readFile(join(root,'graphs/2026-10-25-to-2026-10-27-neighborhoods.jsonl'),'utf8'))
+    .trim().split('\n').filter(Boolean).map(JSON.parse)
+  if(!ignoreVerifiedNeighborhoods)applyVerifiedNeighborhoods(nodes,edges,allEntries,neighborhoods)
   const known = nodes.filter(n => n.id)
   const occurrences = new Map()
   for (const node of known) occurrences.set(node.id, (occurrences.get(node.id) ?? 0) + 1)

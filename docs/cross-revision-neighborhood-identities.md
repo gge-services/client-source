@@ -1,0 +1,9 @@
+# Cross-revision import-neighborhood identities
+
+An official dependency identity can sometimes be proved without a named module export. We start with immutable October 16 source modules and their original verified import graph, and identify the incoming and outgoing neighbors that already have source-backed semantic identities. We then parse the real October 25 DLL Webpack loader calls with lexical binding validation: a call counts only if it invokes the actual factory loader parameter with a numeric module ID. Incoming and outgoing known identities must uniquely select one module on both sides of the comparison.
+
+Five previously anonymous DLL modules satisfy this rule. Their corresponding October 25 and October 27 raw factory bodies are also byte-identical by SHA-256. Every result stores the baseline module source checksum, the confirmed source-local previous Webpack ID, the current loader ID, both official raw factory checksums, and the two exact sets of semantic neighbor anchors. The persistent evidence is graphs/2026-10-25-to-2026-10-27-neighborhoods.jsonl.
+
+The graph builder rechecks the baseline source hash and the uniqueness of every set of named neighbors before accepting a pinned three-revision identity. It rejects any conflicting, changed, or unprovable mapping. This adds five verified contextual identities, increasing the graph from 6,626 to 6,631 named nodes out of 6,850. The remaining 219 unnamed nodes and 31 graph-neighborhood candidates stay explicitly unresolved. A verified contextual identity is not a recovered original ActionScript developer-defined class or parameter name.
+
+Run npm run neighborhoods:compare from tools/client-canonical with the two separately captured raw official DLLs to regenerate evidence. Standard offline graph generation does not need those proprietary raw captures. The full TypeScript browser client is still not executable: 13 Command constructor shapes and 492 pure type dependencies remain.
