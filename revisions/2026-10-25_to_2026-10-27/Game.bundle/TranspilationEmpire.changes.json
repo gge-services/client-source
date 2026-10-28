@@ -1,0 +1,11 @@
+{
+  "module": "TranspilationEmpire",
+  "changes": [
+    {
+      "field": "version",
+      "change": "modified",
+      "before": "1.171.8",
+      "after": "1.171.9"
+    }
+  ]
+}

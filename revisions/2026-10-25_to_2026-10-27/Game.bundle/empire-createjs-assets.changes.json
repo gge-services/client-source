@@ -1,0 +1,16 @@
+{
+  "module": "empire-createjs-assets",
+  "changes": [
+    {
+      "field": "resolutions.encoding",
+      "change": "added",
+      "after": "0.1.13"
+    },
+    {
+      "field": "version",
+      "change": "modified",
+      "before": "1.2.1412",
+      "after": "1.2.1423"
+    }
+  ]
+}
