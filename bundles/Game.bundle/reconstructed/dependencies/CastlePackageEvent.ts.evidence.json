@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastlePackageEvent",
+  "canonicalSource": "modules/exports/CastlePackageEvent.js",
+  "canonicalSourceSha256": "58baa3ed59ded5ab02b364ee93b722dde04bf7db7457cc426f61a0b3b019b926",
+  "generatedHash": "6eeef887a14c5fec5a5bc5548ec2e8e395d5a74698bbf7d17dacbbcb06a08959",
+  "dependencies": [],
+  "globalRuntimeDependencies": [
+    "createjs",
+    "CONSTRUCTOR_HACK"
+  ],
+  "runtimeReady": false
+}

@@ -1,4 +1,4 @@
-import { readFile,writeFile,mkdir,copyFile } from 'node:fs/promises'
+import { readFile,writeFile,mkdir,copyFile,rm } from 'node:fs/promises'
 import { join,resolve,dirname } from 'node:path'
 import { createHash } from 'node:crypto'
 import ts from 'typescript'
@@ -44,8 +44,26 @@ export async function auditTsProject(root,target) {
     await copyFile(filename,output)
     filenames.push(output)
   }
+  const implemented=JSON.parse(await readFile(join(root,'bundles/Game.bundle/reconstructed/dependencies/coverage.json'),'utf8'))
+  const runtimeDependencyViews=new Set()
+  for(const evidence of implemented.sourceBackedClassViews){
+    const output=join(root,'bundles/Game.bundle/reconstructed/dependencies',evidence.filename)
+    const text=await readFile(output,'utf8')
+    if(checksum(text)!==evidence.generatedHash)throw Error('Generated dependency changed: '+evidence.className)
+    const canonical=await readFile(join(root,'bundles/Game.bundle',evidence.canonicalSource),'utf8')
+    if(checksum(canonical)!==evidence.canonicalSourceSha256)throw Error('Dependency provenance mismatch: '+evidence.className)
+    const dest=join(target,'bundles/Game.bundle/reconstructed/exports',evidence.className)
+    const requested=missing.get(dest)
+    if(!requested||requested.canonicalSha256!==evidence.canonicalSourceSha256)
+      throw Error('Unrequested or mismatched TypeScript dependency '+evidence.className)
+    await copyFile(output,dest+'.ts')
+    filenames.push(dest+'.ts')
+    runtimeDependencyViews.add(dest)
+    missing.delete(dest)
+  }
   for(const [destination,entry] of missing) {
     await mkdir(dirname(destination),{recursive:true})
+    await rm(destination+'.ts',{force:true})
     await writeFile(destination+'.d.ts','export declare const '+entry.name+': any;\n')
   }
   const globals=join(target,'compatibility-globals.d.ts')
@@ -65,7 +83,9 @@ export async function auditTsProject(root,target) {
   for(const d of diagnostics)byCode[d.code]=(byCode[d.code]??0)+1
   const report={
     schemaVersion:1,snapshot:'2026-10-16',mode:'type-only-canonical-compatibility',reconstructedClasses:coverage.reconstructed,unreconstructedCommands:coverage.rejected,
-    sourceBackedTypeOnlyDependencies:missing.size,originalSourceMissing:unknown.length,
+    sourceBackedTypeOnlyDependencies:missing.size,sourceBackedRuntimeViews:runtimeDependencyViews.size,
+    runtimeViewsWithExternalGlobals:implemented.sourceBackedClassViews.filter(x=>x.globalRuntimeDependencies.length).length,
+    originalSourceMissing:unknown.length,
     compiler:'typescript '+ts.version,compilerDiagnostics:diagnostics.length,byCode,
     canTypecheck:diagnostics.length===0,emittedJavaScript:emitted!==null&&!emitted.emitSkipped,canonicalModules:6850,unreconstructedCanonicalModules:6850-coverage.reconstructed,fullyReconstructed:coverage.reconstructed===6850&&missing.size===0&&coverage.rejected===0,runtimeReady:false,
     externallyBacked:[...missing.values()].sort((a,b)=>a.name.localeCompare(b.name)),
@@ -77,7 +97,9 @@ export async function auditTsProject(root,target) {
 
 if(process.argv[1]?.endsWith('/audit-ts-project.mjs')){
   auditTsProject(resolve(process.argv[2]??'../..'),resolve(process.argv[3]??'/tmp/gge-client-ts-project-audit')).then(r=>{
-    console.log(JSON.stringify({classes:r.reconstructedClasses,externalTypes:r.sourceBackedTypeOnlyDependencies,missingCanonical:r.originalSourceMissing,compilerDiagnostics:r.compilerDiagnostics,byCode:r.byCode,compiler:r.compiler,full:r.fullyReconstructed}))
+    console.log(JSON.stringify({classes:r.reconstructedClasses,externalTypes:r.sourceBackedTypeOnlyDependencies,
+      runtimeViews:r.sourceBackedRuntimeViews,missingCanonical:r.originalSourceMissing,
+      compilerDiagnostics:r.compilerDiagnostics,byCode:r.byCode,compiler:r.compiler,full:r.fullyReconstructed}))
     if(r.compilerDiagnostics||r.originalSourceMissing)process.exitCode=2
     if(process.argv.includes('--strict')&&(!r.canTypecheck||!r.fullyReconstructed))process.exitCode=2
   }).catch(e=>{console.error(e);process.exitCode=1})

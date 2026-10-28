@@ -1,0 +1,2291 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "generated": 23,
+  "remainingTypeOnly": 492,
+  "sourceBackedClassViews": [
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "AllianceRaidConst",
+      "canonicalSource": "modules/exports/AllianceRaidConst.js",
+      "canonicalSourceSha256": "d621a9fa6b2e643082e044d186be1036aa708f66698771dbc6449f99a7057703",
+      "generatedHash": "03a9ea4e9b2acb9747899c5e8d926c5db5c092b35a8f7612cf03b9eed0ee9d4d",
+      "dependencies": [],
+      "globalRuntimeDependencies": [],
+      "runtimeReady": true,
+      "filename": "AllianceRaidConst.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "AutoRecruitmentEvent",
+      "canonicalSource": "modules/exports/AutoRecruitmentEvent.js",
+      "canonicalSourceSha256": "9fac584f218897039a09fce51aed30ecf486e35948f05d9732703fd8f1b7038b",
+      "generatedHash": "28d1d7a156b36f2f05d2bfbc7e06ee1ee78e360d8d5cc82377f0fbf6479430c9",
+      "dependencies": [],
+      "globalRuntimeDependencies": [
+        "createjs",
+        "CONSTRUCTOR_HACK"
+      ],
+      "runtimeReady": false,
+      "filename": "AutoRecruitmentEvent.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "CastleCraftingMaterialEvent",
+      "canonicalSource": "modules/exports/CastleCraftingMaterialEvent.js",
+      "canonicalSourceSha256": "dcf6d13ca138e1a648233e89783f4de8472848dc54a163bd95ef0ad6587de6d3",
+      "generatedHash": "efa915f266a17468cbf14c8d9227ec427b096496efc696918c35daa2ea17ff20",
+      "dependencies": [],
+      "globalRuntimeDependencies": [
+        "createjs",
+        "CONSTRUCTOR_HACK"
+      ],
+      "runtimeReady": false,
+      "filename": "CastleCraftingMaterialEvent.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "CastleDialogConsts",
+      "canonicalSource": "modules/exports/CastleDialogConsts.js",
+      "canonicalSourceSha256": "d37a412cc3b3c06c06f6782e119b68b60f4ca25282fe0f2985f5933f728e4995",
+      "generatedHash": "91ef827bd019cb826a9fe6e27abe6d29b15c369722c8fa0fea820891a8f557bc",
+      "dependencies": [],
+      "globalRuntimeDependencies": [],
+      "runtimeReady": true,
+      "filename": "CastleDialogConsts.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "CastleEilandEvent",
+      "canonicalSource": "modules/exports/CastleEilandEvent.js",
+      "canonicalSourceSha256": "ce7439982dcf0d77228cc1f410ee62439b4aee4b93c0ea2371440fe30ac48cf0",
+      "generatedHash": "78a2c931d9f564d83725d5e184633a37d727b81d1a2ced7f781ae0e88fffd275",
+      "dependencies": [],
+      "globalRuntimeDependencies": [
+        "createjs",
+        "CONSTRUCTOR_HACK"
+      ],
+      "runtimeReady": false,
+      "filename": "CastleEilandEvent.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "CastleFacebookEvent",
+      "canonicalSource": "modules/exports/CastleFacebookEvent.js",
+      "canonicalSourceSha256": "4bc874f1b22bd8a5c0384123b0ad902c4f635c31b88192265f92941ae4ae7fef",
+      "generatedHash": "79f2646ad5d1ecae83afd7af9c283750edbc73c03f8d24b95338cab54e07e3a1",
+      "dependencies": [],
+      "globalRuntimeDependencies": [
+        "createjs",
+        "CONSTRUCTOR_HACK"
+      ],
+      "runtimeReady": false,
+      "filename": "CastleFacebookEvent.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "CastleLoginEvent",
+      "canonicalSource": "modules/exports/CastleLoginEvent.js",
+      "canonicalSourceSha256": "c441953d12fee1fadd0f780fc89cdf228d86a6887bd78d8dcc524c50b93e0f3e",
+      "generatedHash": "72b4304cc117a2c7d51798db860141a913e88acf5a1217e4abe5c47509ec8546",
+      "dependencies": [],
+      "globalRuntimeDependencies": [
+        "createjs"
+      ],
+      "runtimeReady": false,
+      "filename": "CastleLoginEvent.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "CastleLogoutEvent",
+      "canonicalSource": "modules/exports/CastleLogoutEvent.js",
+      "canonicalSourceSha256": "0f671e89f6504ad84d7a3bf3e00cfe6321c22bc35c3c5fd6b94cede6eecce64d",
+      "generatedHash": "dc36d01ed2d932a759fbc758b234861de9d5c91ea2f0db019fb7d6e57f4fea17",
+      "dependencies": [],
+      "globalRuntimeDependencies": [
+        "createjs",
+        "CONSTRUCTOR_HACK"
+      ],
+      "runtimeReady": false,
+      "filename": "CastleLogoutEvent.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "CastleMinuteSkipEvent",
+      "canonicalSource": "modules/exports/CastleMinuteSkipEvent.js",
+      "canonicalSourceSha256": "3a927f2c69d22e50ea12683f1128c71679d644f6f408f70ee6c632396ef9c7e6",
+      "generatedHash": "dcb1fdcf14c9f0b12636f5c36c80d19bb097a64e164c4c099dfe3e985d7ffe0a",
+      "dependencies": [],
+      "globalRuntimeDependencies": [
+        "createjs",
+        "CONSTRUCTOR_HACK"
+      ],
+      "runtimeReady": false,
+      "filename": "CastleMinuteSkipEvent.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "CastleNameValidationEvent",
+      "canonicalSource": "modules/exports/CastleNameValidationEvent.js",
+      "canonicalSourceSha256": "3319872703d4ad42b9aabc61771db2559dcad6d04f578071d884850868bbb58b",
+      "generatedHash": "8845f21fa409924427d81840660aee220a36c18cdc8a822c21171365b95e5852",
+      "dependencies": [],
+      "globalRuntimeDependencies": [
+        "createjs",
+        "CONSTRUCTOR_HACK"
+      ],
+      "runtimeReady": false,
+      "filename": "CastleNameValidationEvent.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "CastlePackageEvent",
+      "canonicalSource": "modules/exports/CastlePackageEvent.js",
+      "canonicalSourceSha256": "58baa3ed59ded5ab02b364ee93b722dde04bf7db7457cc426f61a0b3b019b926",
+      "generatedHash": "6eeef887a14c5fec5a5bc5548ec2e8e395d5a74698bbf7d17dacbbcb06a08959",
+      "dependencies": [],
+      "globalRuntimeDependencies": [
+        "createjs",
+        "CONSTRUCTOR_HACK"
+      ],
+      "runtimeReady": false,
+      "filename": "CastlePackageEvent.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "CastleStringHelper",
+      "canonicalSource": "modules/exports/CastleStringHelper.js",
+      "canonicalSourceSha256": "4a5a9983e0e41c2c148d19cf981fc0e98a223f881395e7ec53448f59afbae4a7",
+      "generatedHash": "391169cad6778b4bfad065e0d0ace0654760a6f3115cf1ace5a0a08829353de2",
+      "dependencies": [],
+      "globalRuntimeDependencies": [],
+      "runtimeReady": true,
+      "filename": "CastleStringHelper.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "CastleVoucherEvent",
+      "canonicalSource": "modules/exports/CastleVoucherEvent.js",
+      "canonicalSourceSha256": "60cf5be52a5212825a7bf5af96baf728f1ddafc6b017a132cbddaff392fc9df2",
+      "generatedHash": "8291a2011b668c41890b77f9bcc849586c9805238d3016fe96a11822b4f1de1a",
+      "dependencies": [],
+      "globalRuntimeDependencies": [
+        "createjs"
+      ],
+      "runtimeReady": false,
+      "filename": "CastleVoucherEvent.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "ClientConstCurrency",
+      "canonicalSource": "modules/exports/ClientConstCurrency.js",
+      "canonicalSourceSha256": "9acdbdcd424fd90e952e990742a6cb9aa1fa3540def1fab05928aad1233ecc1f",
+      "generatedHash": "6753ebd3c8f89591bd5d96df4a50dc5e42eaa57370d5ea6aa666dace3eeacca7",
+      "dependencies": [],
+      "globalRuntimeDependencies": [],
+      "runtimeReady": true,
+      "filename": "ClientConstCurrency.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "ClientConstQuestCondition",
+      "canonicalSource": "modules/exports/ClientConstQuestCondition.js",
+      "canonicalSourceSha256": "b1681ccb99851c669ce7b2ccef9b669ce4d077c227f2fb8efa4e2674cb194206",
+      "generatedHash": "24ed20c95083657d57c8ef533d8cc417ae2e9acf0926a7db76755c3a62b99c5a",
+      "dependencies": [],
+      "globalRuntimeDependencies": [],
+      "runtimeReady": true,
+      "filename": "ClientConstQuestCondition.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "ClientConstSF",
+      "canonicalSource": "modules/exports/ClientConstSF.js",
+      "canonicalSourceSha256": "0ddcd6f9eefcd53d812695d84784d392b07a154b412f67cb2fbd24884ab622ed",
+      "generatedHash": "f5d01b124390313968e73a575e2ee7988d00ed8620223b8051735c23842b9c53",
+      "dependencies": [],
+      "globalRuntimeDependencies": [],
+      "runtimeReady": true,
+      "filename": "ClientConstSF.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "ClientConstTextIds",
+      "canonicalSource": "modules/exports/ClientConstTextIds.js",
+      "canonicalSourceSha256": "43e840e9c7f978eba64f23ed053762ffc93e5997934aa8f49491a8cc12275ed3",
+      "generatedHash": "e1063d59726e924a420cdfd7b930a4023fc120e546f31ae5ddb537abc326f6c7",
+      "dependencies": [],
+      "globalRuntimeDependencies": [],
+      "runtimeReady": true,
+      "filename": "ClientConstTextIds.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "ClientConstTracking",
+      "canonicalSource": "modules/exports/ClientConstTracking.js",
+      "canonicalSourceSha256": "feee170d61ab8cb6ad84dca64c22911b8cf0258ae19419c53c36e4e5d4533a9f",
+      "generatedHash": "1eb9dc4358bf28e1677e297f3887a6a01002900d7bfe1e287a9b5b70feed47bf",
+      "dependencies": [],
+      "globalRuntimeDependencies": [],
+      "runtimeReady": true,
+      "filename": "ClientConstTracking.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "DynamicTopXEvent",
+      "canonicalSource": "modules/exports/DynamicTopXEvent.js",
+      "canonicalSourceSha256": "f73e101668b95706c33532b8f04a0e10ba6812f45c9303308c37d698d5a5c281",
+      "generatedHash": "d531efb534dd208a521a244d3c450953f99925f0790daa4e96ec6773e7cf4bef",
+      "dependencies": [],
+      "globalRuntimeDependencies": [
+        "createjs",
+        "CONSTRUCTOR_HACK"
+      ],
+      "runtimeReady": false,
+      "filename": "DynamicTopXEvent.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "ExceptionHelper",
+      "canonicalSource": "modules/exports/ExceptionHelper.js",
+      "canonicalSourceSha256": "0d4391bbb6398172965901ec807107c47a41adb87d1fcb645fad1307343a470b",
+      "generatedHash": "45d8573525847c3fecbe402a3f81c07d5d1cd53e3f034c2e734b05dbeec1cb52",
+      "dependencies": [],
+      "globalRuntimeDependencies": [],
+      "runtimeReady": true,
+      "filename": "ExceptionHelper.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "GamesightEventConstants",
+      "canonicalSource": "modules/exports/GamesightEventConstants.js",
+      "canonicalSourceSha256": "cd11f520adbbb8d1a6842d92af9b3607a8d1ae29e2a839603bf87f953cc81dff",
+      "generatedHash": "3df83d7856e71e38ad06a5d27b6171b94d3880f1ea39347ca3597261164efb69",
+      "dependencies": [],
+      "globalRuntimeDependencies": [],
+      "runtimeReady": true,
+      "filename": "GamesightEventConstants.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "TimeLimitedCampaignUpdateEvent",
+      "canonicalSource": "modules/exports/TimeLimitedCampaignUpdateEvent.js",
+      "canonicalSourceSha256": "bb11ddb5004f45a1c580bfbe51316ddee718459ea6b5d7d2d878c5fae1267e1d",
+      "generatedHash": "f9c21af41294fdf5ba3c0a00fcf58760c09ec4654ff9eb733da7c2808b6a471a",
+      "dependencies": [],
+      "globalRuntimeDependencies": [
+        "createjs",
+        "CONSTRUCTOR_HACK"
+      ],
+      "runtimeReady": false,
+      "filename": "TimeLimitedCampaignUpdateEvent.ts"
+    },
+    {
+      "schemaVersion": 1,
+      "snapshot": "2026-10-16",
+      "className": "VCKCommandOkEvent",
+      "canonicalSource": "modules/exports/VCKCommandOkEvent.js",
+      "canonicalSourceSha256": "8822a34707814dc3766b9d76d2ca2936febd3e6e4137e6701c38e86bcbcbaf53",
+      "generatedHash": "371a4b3b275f9fc6f9ee3c47f53e3cb7e02b2ba341388d4fc47cba3014f963be",
+      "dependencies": [],
+      "globalRuntimeDependencies": [
+        "createjs",
+        "CONSTRUCTOR_HACK"
+      ],
+      "runtimeReady": false,
+      "filename": "VCKCommandOkEvent.ts"
+    }
+  ],
+  "skipped": [
+    {
+      "name": "ABasicBuildingVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "ABGHelper",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "AbstractMethodError",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AccountBannedDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AccountDeletionTrackingEvent",
+      "reason": "AST verification failed: Unsupported inherited accessor setter: playerId"
+    },
+    {
+      "name": "AddExtraCurrencyVO",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "AdvisorActivationEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AdvisorAttackHelper",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "AdvisorAttackOverviewEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AdvisorAttackOverviewVO",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "AllianceBattleGroundPlayerCollectorEventBoosterSelectDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AllianceBattleGroundTowerCollectorEventBoosterSelectDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AllianceBuffData",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AllianceConst",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "AllianceDivisionContributionsEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AllianceMobilizationEventEventVO",
+      "reason": "AST verification failed: Unsupported inherited accessor setter: participants"
+    },
+    {
+      "name": "AMessageSpyVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AMessageVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AreaDataEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AreaFactory",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "ArmyAttackMapmovementVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AttackAdvisorConst",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "AttackDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AttackDialogController",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AttackScreenGeneralsTrackingEvent",
+      "reason": "AST verification failed: Unsupported inherited accessor setter: playerId"
+    },
+    {
+      "name": "AttackScreenWaveTrackingEvent",
+      "reason": "AST verification failed: Unsupported inherited accessor setter: playerId"
+    },
+    {
+      "name": "AutoRecruitmentBuyRecruitmentSlots",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AutoRecruitmentBuyRecruitmentSlotsProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AutoRecruitmentCopyToolsDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AutoRecruitmentCopyUnitsDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AutoRecruitmentInfoEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AutoRecruitmentPurchaseDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AutoRecruitmentPurchaseToolsDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "AutoRecruitmentPurchaseUnitsDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "BasicAddExtraCurrencyCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicCheckMaintenanceCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicClientCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicConnectToInstanceVOCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicContextMenuController",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicController",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicDestroyGameCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicDialogHandler",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicErrorConstants",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicHandleServerErrorCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicInitalizeControllerCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicInitLoggerCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicJoinedRoomCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicLayoutManager",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicLogoutCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicLostPasswordCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicModel",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicNetworkUpdateCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicProfilingTrackingCommandVO",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicReconnectDialogProperties",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicRegisterUserCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicRequiredRegistrationFieldsVO",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicSmartfoxClient",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicSmartfoxConstants",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicStandardOkDialogProperties",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicStandardYesNoDialogProperties",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicTimedNoClickProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "BasicTrackingStringComposer",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BasicVerifyPlayerMailCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BoosterConst",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BrowserUtil",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "BuildMenuPanelButton",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "BuildToolsPanelButton",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "ButtonHelper",
+      "reason": "AST verification failed: Captured minifier bindings are not available outside the original module: __s0local0, __s0local1, __s0local2"
+    },
+    {
+      "name": "C2SBuyUnitPackageVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SCaravanOverloaderStartVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SCreateDaimyoDefenseMovementVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SDefenceCompleteVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SGetAllianceInfoVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SGetAllMovementsVO",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "C2SGetBookmarkList",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "C2SGetCastleListVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SGetCastleResourcesVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SGetDetailedCastleListVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SGetDetailPlayerInfo",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SGetEquipmentInventory",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "C2SGetGeneralsInfoVO",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "C2SGetLoginBonusVO",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "C2SGetSLI",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "C2SGetTaxInfoVO",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "C2SGetTemporaryServerLoginTokenVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SInstructorStartVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SIsoBuyObjectVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SIsoDisassembleObjectVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SIsoRepairBuildingVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SIsoUpgradeObjectVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SJoinAreaVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SJoinCastleVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SKingdomPayInfoVO",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "C2SLoginVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SMapFacebookVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SMarauderStartVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SMarkMessageReadVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SOverseerStartVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SPointEventGetPointsVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SQuestDonateCurrencyVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SQuestDonateRessourcesVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SRegisterWithNameVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SSaveShoppingCartVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SShowWelcomeDataVO",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "C2STemporaryServerLoginVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2STemporaryServerTutorialSkipVO",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "C2SUnlockPackageSlotVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "C2SUserAchievedRanksVO",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "castAs",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "CastleAchievementData",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAchievementLevelUpDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAchievementLevelUpDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAchievementPopupDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAchievementPopupDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleActionPanel",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAllianceBuyBoostDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAllianceBuyCustomizableBoostDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAllianceBuyCustomizableBoostDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAllianceBuyStandardBoostDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAllianceBuyTemporaryBoostDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAllianceBuyTemporaryBoostExternalDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAllianceDataEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAllianceDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAllianceDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAllianceForumEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAllianceGiftCollectedDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAllianceGiftCollectedDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAllianceInfoDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAllianceSearchEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleArmyListDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleArmyListDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleArmyListWithLootDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleArmyListWithLootDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleArtifactEventDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleArtifactFoundPieceDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleArtifactFoundTreasureDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAttackDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleAttackOrderReceivedDialog",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "CastleAutoTutorialBlockerDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleBarrackUnitTipDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleBasicController",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleBattleLogMessageAdvanced",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleBookmarkPasserProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleBuildListTipDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleBuySlotAndUnitDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleBuySlotAndUnitDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleChangelistRewardsEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleChangePasswordForSocialMigrationConfirmedDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleChangePasswordForSocialMigrationDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleCharacterYesNoOKDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleCharacterYesNoOKDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleCheatData",
+      "reason": "Unverified static members used by commands: cheatLoginName"
+    },
+    {
+      "name": "CastleChooseHeroDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleCoinColossusDonateDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleCollectTaxProgressDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleCollectTaxStartDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleCollectTaxStartDialogProperties",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "CastleColossusDonateDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleCompactArmyDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleCompactArmyDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleDailyLoginBonusDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleDarkOkLabeledDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleDataHolder",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleDecoShopPanel",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleDecoShopPanelEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleDefenceAddUnitsDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleDefenceDataEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleDefenceDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleDeleteAccountDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleDeleteAccountMicroservice",
+      "reason": "AST verification failed: Unresolved generated dependencies: __dep_exact_951b78d9b55b391b"
+    },
+    {
+      "name": "CastleDialogEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleDialogHandler",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleEfficiencyTipDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleEilandTitleErrorDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleEilandTitleErrorProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleEnvironmentGlobals",
+      "reason": "AST verification failed: Unsupported inherited accessor setter: inviterCode"
+    },
+    {
+      "name": "CastleEquipmentEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleEquipmentFactory",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "CastleEquipmentFavoritesMicroservice",
+      "reason": "AST verification failed: Unresolved generated dependencies: __dep_exact_951b78d9b55b391b"
+    },
+    {
+      "name": "CastleEquipmentMerchantEventIncomingDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleEquipmentMerchantEventIncomingDialogProperties",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "CastleEventTeaserDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleExternalDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleExternalPreloaderDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleExternalPreloaderDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleFacebookModule",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "CastleFacebookSDKEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleFactionChooseFactionBlueDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleFactionChooseFactionRedDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleFactionInvasionEventDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleFactionUnitLimitDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleFightDataEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleGetTaxDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleGetTaxDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleGGSGiftDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleGlobalOfferData",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleGoodgameExternalClip",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleHighscoreEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleHospitalEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleIngameHelpDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleIngameMessageHandler",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleInstantBuildTipDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleJudgementChooseOptionDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleKingdomEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleKingdomTeaserDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleLargeYesNoDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleLargeYesNoDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleLayoutManager",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleLayoutManagerEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleLevelUpDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleLevelUpDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleListVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleLogDataEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleLoginBonusData",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleLuckyWheelGuaranteedJackpotDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleMailGiftDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleMailVerificationAnswerEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleMarketMovmentDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleMarketMovmentDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleMessageDataEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleMessageInboxDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleMilitaryDataEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleModel",
+      "reason": "AST verification failed: Unsupported inherited accessor setter: smartfoxClient"
+    },
+    {
+      "name": "CastleMonumentProgressEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleMultiInfoPanel",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleMysteryBoxResultDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleNameCastleDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleNameCastleDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleNewAllianceDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleNewsHubOverlay",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "CastleNoConnectionDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleNoMoneyC1Dialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleNoMoneyC1DialogProperties",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "CastleNoMoneyC2Dialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleNoMoneyC2DialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleNotifyDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleOfferDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleOverseerTipDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePanelButton",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "CastlePaymentRewardSpecialOfferFinishDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePaymentRewardSpecialOfferFinishDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePlaguemonkInfoDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePlayerGiftSentDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePlayerGiftSentDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePlayerInfoDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePlayerInfoDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePlayerInfoEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePopUpHelper",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "CastlePostAttackDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePostAttackDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePostAttackHorseDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePostAttackTreasureDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePostPostAttackFactionDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePostPostAttackFactionDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePostSendGoodsDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePostSendGoodsDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePostSendGoodsHorseDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePostSpyDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePostSpyDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePostSpyHorseDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePremiumBoostData",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePrivateOfferDialogCreator",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "CastlePrivateOfferDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastlePrivatePrimeTimeOfferDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleProductivityTipDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleQuestCompletedDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleQuestCompletedDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleQuestConditionEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleReconnectDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleRecruitDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleRecruitDialogUnits",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleRegisterErrorEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleRelocateRuinDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleRelocateRuinDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleRenameCastleDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleRenameCastleDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleRepairTipDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleRerollAlienSuccessDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleResourceMerchantEventBuyDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleResourceWaitDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleResourceWaitDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSearchAllianceDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSearchAllianceDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSeasonBaseRepairDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSeasonEventWinDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSeasonEventWinDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSeasonUpgradePortDialog",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "CastleServerMessageArrivedEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleServerMessageBigDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleShoppingCartPrimeDayFinishDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleShortArmyDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleShortArmyDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleShowUpgradableBuildingsEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSkipBuildingDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSkipBuildingDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSoundController",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSpecialEventEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSpecialIngameOfferDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSpyDataEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSpyinfoDetailsDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSpyinfoDetailsDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSpyInfoDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSpyInfoDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSpyLogVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleStandardOkDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleStandardYesNoDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleStartQuestDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleStartQuestDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleStartscreenPanel",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSupportDefenceDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleSupportDefenceDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleTieredPrimeDayRewardDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleTieredPrimeDayRewardProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleTimedNoClickDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleTimelessSpecialOfferDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleTimerOkDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleTimerOKDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleTitleAchievedDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleTitleAchievedDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleTreasureCompleteDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleTreasureFoundTreasureDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleTreasureFoundTreasureDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleTreasureMapEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleTroopSupportData",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "CastleTroopSupportDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleTroopSupportDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleTutorialArrowController",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "CastleTutorialPanel",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleTutorialSpotlight",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "CastleUnitCapacityEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleUserDataEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleVersionInformation",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "CastleWebShopAccountIDMicroservice",
+      "reason": "AST verification failed: Unresolved generated dependencies: __dep_exact_951b78d9b55b391b"
+    },
+    {
+      "name": "CastleWelcomebackDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleWelcomebackDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleWelcomeBetaTestDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleWelcomeBetaTestDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleWelcomeDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleWelcomeDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleWodData",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleWorldmapData",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleWorldmapEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CastleWorldSelectionDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "classImplementsInterfaces",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "ClientBetaHelper",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "ClientCheatsHelper",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "ClientConstAlliance",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "ClientConstCastle",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "ClientConstCharacter",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "ClientConstInstanceIDs",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "ClientConstLevelRestrictions",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "ClientConstReCaptcha",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "ClientConstTime",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "ClientFunnelGameStates",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "ClientFunnelTrackingController",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "CollectableEnum",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CollectableHelper",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "CollectableItemRelicVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CollectableList",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CollectableManager",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "CollectorEventBoosterSelectDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CollectorTempServerEventBoosterSelectDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CommandController",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "CommandDelayController",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "CommKeys",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "CommonDialogNames",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "ConfirmC2Dialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "ConfirmC2DialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "CostHelper",
+      "reason": "AST verification failed: Captured minifier bindings are not available outside the original module: __s0local0"
+    },
+    {
+      "name": "CPSCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "cxfResetCommandCache",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "DarkOkDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "debug",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "DefencePanelButton",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "DictionaryUtil",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "DonationEventTrackingEvent",
+      "reason": "AST verification failed: Unsupported inherited accessor setter: playerId"
+    },
+    {
+      "name": "EnvGlobalsHandler",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "error",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "ERROR",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "EventAnnouncementDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "EventConst",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "ExternalInterface",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "ExternalInterfaceController",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "ExternalLog",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "facebookAuthResponse",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "FactionConst",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "FactionInvasionDialogProperties",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "FlashBlockHelper",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "GachaEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "GameSightPayloadVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "GeneralsEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "GenericTextIds",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "getDefinitionByName",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "getLogger",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "GGSCountryController",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "GlobalServerConst",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "GlobalServerPreviousRunInfoEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "GlobalServerPreviousRunInfoVO",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "GZPTrackingController",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "HelpshiftHelper",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "HospitalFlagsVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "IdentityManagementConstants",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "info",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "IngameClientCommands",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "instanceOfClass",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "int",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "Iso",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "IsoConst",
+      "reason": "AST verification failed: Captured minifier bindings are not available outside the original module: __s0local0"
+    },
+    {
+      "name": "IsoEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "IsoGridOriginEnum",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "IsoHelper",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "IsoObjectGroupEnum",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "IsoRenderStrategyEnum",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "JavascriptCallOnRegisterCompleteFactory",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "LeaderBoardEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "LinkReceivedEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "Localization",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "Localize",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "LongTermPointEventClientConst",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "LongTermPointEventDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "LongTermPointEventHighScoreDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "LongTermPointEventHighScoreDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "LongTermPointEventProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "LordEffectHelper",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "MessagePanelButton",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "ModernPackageShopResourceTipDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "ModernPackageShopResourceTipDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "ModernPackageShopResourceTipEnum",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "ModernPrimeTimeDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "ModernYesNoDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "MysteryBoxOpeningDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "MysteryBoxOpeningDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "NetworkInstance",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "NewsHubTrackingEvent",
+      "reason": "AST verification failed: Unsupported inherited accessor setter: playerId"
+    },
+    {
+      "name": "NFOCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "OpenDialogWithAdditionalExternalAssetsCommand",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "OpenGateEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "OptionsDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "OutpostConst",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "PackageConst",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "PaymentPopupDialogInfoVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "PlayerConst",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "PlayerPerformanceVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "PostAttackSelectBoosterDialogProperties",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "PrebuiltCastleResponseEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "PrimeTimeSkinDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "PrivateOfferFailedStandardDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "RecruitPanelButton",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "renderScheduler",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "RubyWishingWellDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "SamuraiDaimyoBoosterSelectDialog",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "SearchListAllianceItemVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "SeasonLeagueEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "ServerErrorVO",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "SessionTypes",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "ShoppingCartConst",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "ShutDownControlTimer",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "SimpleCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "SkipCooldownEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "SmartfoxEvent",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "SocialButtonTrackingEvent",
+      "reason": "AST verification failed: Unsupported inherited accessor setter: playerId"
+    },
+    {
+      "name": "SpecialServerHelper",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "SPLCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "SsoUserMoveTrackingEvent",
+      "reason": "AST verification failed: Unsupported inherited accessor setter: playerId"
+    },
+    {
+      "name": "SubscriptionEvent",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "TaxInfoVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "TeaserVO",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "TempServerHelper",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "TestInstanceVO",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "TextVO",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "TimeConst",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "TimeStringHelper",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "TimezoneUtil",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "TooltipManagerFacade",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "TrackingCache",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "TrackingEventIds",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "TreasureMapsConst",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "TutorialAbstractMilitaryCommand",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "TutorialBasicActionCommand",
+      "reason": "not a verified reconstructed class"
+    },
+    {
+      "name": "TweenMax",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "UnitProductionConst",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "UpdateDynamicTopXDataService",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "URLRequest",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "UserSocialLoginMigrationHelper",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "VCKCommand",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "VersionErrorLOFactory",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "WoodcutterBuildingVO",
+      "reason": "additional runtime module imports"
+    },
+    {
+      "name": "WorldClassic",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "WorldConst",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "WorldIsland",
+      "reason": "requires-complex-source-linkage"
+    },
+    {
+      "name": "WorldmapObjectFactory",
+      "reason": "additional runtime module imports"
+    }
+  ]
+}

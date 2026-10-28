@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "ClientConstSF",
+  "canonicalSource": "modules/exports/ClientConstSF.js",
+  "canonicalSourceSha256": "0ddcd6f9eefcd53d812695d84784d392b07a154b412f67cb2fbd24884ab622ed",
+  "generatedHash": "f5d01b124390313968e73a575e2ee7988d00ed8620223b8051735c23842b9c53",
+  "dependencies": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": true
+}

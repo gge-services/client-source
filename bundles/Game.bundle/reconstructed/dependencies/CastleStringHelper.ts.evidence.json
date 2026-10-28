@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleStringHelper",
+  "canonicalSource": "modules/exports/CastleStringHelper.js",
+  "canonicalSourceSha256": "4a5a9983e0e41c2c148d19cf981fc0e98a223f881395e7ec53448f59afbae4a7",
+  "generatedHash": "391169cad6778b4bfad065e0d0ace0654760a6f3115cf1ace5a0a08829353de2",
+  "dependencies": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": true
+}

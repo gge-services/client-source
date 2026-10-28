@@ -1,0 +1,11 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "ClientConstTracking",
+  "canonicalSource": "modules/exports/ClientConstTracking.js",
+  "canonicalSourceSha256": "feee170d61ab8cb6ad84dca64c22911b8cf0258ae19419c53c36e4e5d4533a9f",
+  "generatedHash": "1eb9dc4358bf28e1677e297f3887a6a01002900d7bfe1e287a9b5b70feed47bf",
+  "dependencies": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": true
+}

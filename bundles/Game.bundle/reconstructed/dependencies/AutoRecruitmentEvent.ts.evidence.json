@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "AutoRecruitmentEvent",
+  "canonicalSource": "modules/exports/AutoRecruitmentEvent.js",
+  "canonicalSourceSha256": "9fac584f218897039a09fce51aed30ecf486e35948f05d9732703fd8f1b7038b",
+  "generatedHash": "28d1d7a156b36f2f05d2bfbc7e06ee1ee78e360d8d5cc82377f0fbf6479430c9",
+  "dependencies": [],
+  "globalRuntimeDependencies": [
+    "createjs",
+    "CONSTRUCTOR_HACK"
+  ],
+  "runtimeReady": false
+}
