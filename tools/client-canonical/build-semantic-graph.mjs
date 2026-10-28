@@ -2,6 +2,7 @@ import { createHash } from 'node:crypto'
 import { readFile, writeFile, mkdir } from 'node:fs/promises'
 import { dirname, join, resolve } from 'node:path'
 import {extractEventDefinitionId} from './event-identities.mjs'
+import {resolveCrossBundleAliases} from './cross-bundle-aliases.mjs'
 const bundles = ['Game.bundle', 'ggs.dll', 'CacheBreaker.bundle', 'CastleLoader.bundle', 'vendor.bundle']
 const digest = text => createHash('sha256').update(text).digest('hex')
 export function stableNodeId(bundle, item, source=null) {
@@ -27,6 +28,8 @@ export async function buildSemanticGraph(root) {
     if(record.bundle!=='ggs.dll'||literalMap.has(record.sourcePath))throw Error('Conflicting literal export identity')
     literalMap.set(record.sourcePath,record)
   }
+  const allEntries=[]
+  const manifests=[]
   for (const bundle of bundles) {
     const directory = join(root, 'bundles', bundle)
     const manifest = JSON.parse(await readFile(join(directory, 'manifest.json'), 'utf8'))
@@ -37,13 +40,20 @@ export async function buildSemanticGraph(root) {
       const literal=bundle==='ggs.dll'?literalMap.get(module.path):null
       if(literal&&(ordinary||literal.sourceSha256!==digest(source)||
         String(module.webpackId)!==literal.previousWebpackId))throw Error('Literal identity provenance conflict: '+module.path)
-      entries.push({module,source,id:ordinary??literal?.semanticId??null})
+      entries.push({bundle,module,source,id:ordinary??literal?.semanticId??null})
     }
+    manifests.push({bundle,entries})
+    allEntries.push(...entries)
+  }
+  resolveCrossBundleAliases(allEntries)
+  for(const {bundle,entries} of manifests){
     const index=new Map(entries.map(x=>[x.module.specifier,x]))
     for(const {module,source,id} of entries){
       nodes.push({bundle,id,specifier:module.specifier,path:module.path,
         confidence:id?id.startsWith(bundle+':event:')?'verified-event-id':
-          id.startsWith(bundle+':literal-export:')?'verified-literal-export':'verified-symbol':'unresolved-semantic',
+          id.startsWith(bundle+':literal-export:')?'verified-literal-export':
+          id.startsWith(bundle+':exact-source-alias:')?'verified-exact-source-alias':
+          'verified-symbol':'unresolved-semantic',
         sourceSha256:module.canonicalSha256})
       for(const match of source.matchAll(/\brequire\(["'](gge-module:[^"'\n]+)["']\)/g)){
         const to=index.get(match[1])
