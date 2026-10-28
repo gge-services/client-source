@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "C2SGetEquipmentInventory",
+  "canonicalSource": "modules/exports/C2SGetEquipmentInventory.js",
+  "canonicalSourceSha256": "114a6849e62c2cdd0a0a66032df0d5682b0121cec1cfe445879f0b8c464435a1",
+  "generatedHash": "1032267af00445b097507b0c18e2d18d97994ac7b5512617a10572625a23ba55",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicCommandVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicCommandVO.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicCommandVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

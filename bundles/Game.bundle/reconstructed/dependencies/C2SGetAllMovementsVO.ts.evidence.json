@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "C2SGetAllMovementsVO",
+  "canonicalSource": "modules/exports/C2SGetAllMovementsVO.js",
+  "canonicalSourceSha256": "2b81766a30b3507ca7154358fedebdf4f134b7b044918f4e2924d1d55d020b68",
+  "generatedHash": "3849643d4d7de45301e038ceb72084eaa2664142c3537dbb13710e031a09be60",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicCommandVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicCommandVO.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicCommandVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

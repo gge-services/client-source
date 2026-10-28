@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CollectableManager",
+  "canonicalSource": "modules/exports/CollectableManager.js",
+  "canonicalSourceSha256": "7885e005633ba8dbb07b1d7f240072e2f06dd7738b8899953104f8aad4866662",
+  "generatedHash": "6874bd0aa65baab11951ac8a4f28b957f6bafc91d556c12a04ae128f8be98552",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CollectableList",
+      "imported": "CollectableList",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableList.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectableEnum",
+      "imported": "CollectableEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectableSorter",
+      "imported": "CollectableSorter",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableSorter.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectableParser",
+      "imported": "CollectableParser",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableParser.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

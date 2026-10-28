@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "ClientCheatsHelper",
+  "canonicalSource": "modules/exports/ClientCheatsHelper.js",
+  "canonicalSourceSha256": "3b0a96309d0d4e8087a8f5ae849a5832eddbb54031067fd62f094da37504ed80",
+  "generatedHash": "284e74741ff11faf49013707ed202e765e9fff2a4d5ac408304e5d129513373d",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_ClientCheats",
+      "imported": "ClientCheats",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientCheats.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SBugReportVO",
+      "imported": "C2SBugReportVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SBugReportVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [
+    "static cheatObject: any;"
+  ],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

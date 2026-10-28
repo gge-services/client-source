@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "ABGHelper",
+  "canonicalSource": "modules/exports/ABGHelper.js",
+  "canonicalSourceSha256": "c423248375a16ed38f7024a5b3bb501670c148ed82208f44c1ed8f25405a1a6f",
+  "generatedHash": "2c3030c7bb9ba05d39338157331da0fc6c9549d4c5a2565773cb03e07fc0a99f",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "EventConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EventConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:EventConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "EnvGlobalsHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EnvGlobalsHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:EnvGlobalsHandler",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_AllianceBattleGroundScoringVO",
+      "imported": "AllianceBattleGroundScoringVO",
+      "bundle": "Game.bundle",
+      "path": "exports/AllianceBattleGroundScoringVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

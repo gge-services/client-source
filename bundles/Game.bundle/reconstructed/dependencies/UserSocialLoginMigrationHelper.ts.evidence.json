@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "UserSocialLoginMigrationHelper",
+  "canonicalSource": "modules/exports/UserSocialLoginMigrationHelper.js",
+  "canonicalSourceSha256": "4ca01915986732697177dfdfd3d65d9df352b10da2dbc8f55d320e40077bea25",
+  "generatedHash": "dc6b5f7101db212e953ec41d0c8bbd8ae0182020d194714d8c49678fb4e4d0e6",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "EnvGlobalsHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EnvGlobalsHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:EnvGlobalsHandler",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

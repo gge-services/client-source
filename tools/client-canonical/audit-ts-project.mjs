@@ -44,6 +44,7 @@ export async function auditTsProject(root,target) {
     await copyFile(filename,output)
     filenames.push(output)
   }
+  const directDestinations=new Set(missing.keys())
   const implemented=JSON.parse(await readFile(join(root,'bundles/Game.bundle/reconstructed/dependencies/coverage.json'),'utf8'))
   const runtimeDependencyViews=new Set()
   for(const evidence of implemented.sourceBackedClassViews){
@@ -54,12 +55,42 @@ export async function auditTsProject(root,target) {
     if(checksum(canonical)!==evidence.canonicalSourceSha256)throw Error('Dependency provenance mismatch: '+evidence.className)
     const dest=join(target,'bundles/Game.bundle/reconstructed/exports',evidence.className)
     const requested=missing.get(dest)
-    if(!requested||requested.canonicalSha256!==evidence.canonicalSourceSha256)
+    const transitiveRequested=implemented.sourceBackedClassViews.some(view=>
+      view.dependencies?.some(dep=>dep.bundle==='Game.bundle'&&
+        dep.imported===evidence.className&&'modules/'+dep.path===evidence.canonicalSource))
+    if(!requested&&!transitiveRequested||
+      requested&&requested.canonicalSha256!==evidence.canonicalSourceSha256)
       throw Error('Unrequested or mismatched TypeScript dependency '+evidence.className)
     await copyFile(output,dest+'.ts')
     filenames.push(dest+'.ts')
     runtimeDependencyViews.add(dest)
     missing.delete(dest)
+  }
+  for(const view of implemented.sourceBackedClassViews){
+    const viewSource=await readFile(join(root,'bundles/Game.bundle/reconstructed/dependencies',view.filename),'utf8')
+    const syntax=ts.createSourceFile(view.filename,viewSource,ts.ScriptTarget.Latest,true,ts.ScriptKind.TS)
+    const importPaths=new Map()
+    for(const statement of syntax.statements){
+      if(!ts.isImportDeclaration(statement)||!ts.isNamedImports(statement.importClause?.namedBindings))continue
+      for(const item of statement.importClause.namedBindings.elements)
+        importPaths.set(item.propertyName?.text??item.name.text,statement.moduleSpecifier.text.split('/').at(-1))
+    }
+    for(const meta of view.dependencies??[]){
+      const canonicalPath=meta.bundle==='Game.bundle'?'modules/'+meta.path:meta.path
+      const catalogue=meta.bundle==='Game.bundle'?gameSource:dllSource
+      const item=catalogue.get(canonicalPath)
+      if(!item)throw Error('Unverified transitive import '+view.className+' -> '+meta.imported)
+      const original=await readFile(join(root,'bundles',meta.bundle,canonicalPath),'utf8')
+      if(checksum(original)!==item.canonicalSha256)throw Error('Transitive import source changed '+meta.imported)
+      const filename=importPaths.get(meta.imported)
+      if(!filename)throw Error('No verified source import for '+view.className+' -> '+meta.imported)
+      const destination=meta.bundle==='ggs.dll'?
+        join(target,'bundles/ggs.dll/reconstructed/exports',filename):
+        join(target,'bundles/Game.bundle/reconstructed/exports',filename)
+      if(meta.bundle==='Game.bundle'&&(recovered.has(meta.imported)||runtimeDependencyViews.has(destination)))continue
+      missing.set(destination,{name:meta.imported,source:meta.path,bundle:meta.bundle,
+        confidence:meta.confidence??'verified-transitive-import',canonicalSha256:item.canonicalSha256})
+    }
   }
   for(const [destination,entry] of missing) {
     await mkdir(dirname(destination),{recursive:true})
@@ -67,7 +98,7 @@ export async function auditTsProject(root,target) {
     await writeFile(destination+'.d.ts','export declare const '+entry.name+': any;\n')
   }
   const globals=join(target,'compatibility-globals.d.ts')
-  await writeFile(globals,'interface Date { time: number; day: number }\ninterface Window { grecaptcha: any; ggs: any; bugsnagClient: any }\ninterface ArrayConstructor { NUMERIC: number; DESCENDING: number }\ndeclare const createjs: any\ndeclare const CONSTRUCTOR_HACK: any\n')
+  await writeFile(globals,'interface Date { time: number; day: number }\ninterface Window { grecaptcha: any; ggs: any; bugsnagClient: any }\ninterface ArrayConstructor { NUMERIC: number; DESCENDING: number }\ndeclare const createjs: any\ndeclare const CONSTRUCTOR_HACK: any\ndeclare const Library: any\n')
   const emit=process.argv.includes('--emit')
   const program=ts.createProgram([...filenames,globals],{module:ts.ModuleKind.CommonJS,target:ts.ScriptTarget.ES2015,noEmit:!emit,skipLibCheck:true,strict:false,noEmitOnError:true,...(emit?{outDir:join(target,'compiled')}:{})})
   const errors=ts.getPreEmitDiagnostics(program)
@@ -83,8 +114,11 @@ export async function auditTsProject(root,target) {
   for(const d of diagnostics)byCode[d.code]=(byCode[d.code]??0)+1
   const report={
     schemaVersion:1,snapshot:'2026-10-16',mode:'type-only-canonical-compatibility',reconstructedClasses:coverage.reconstructed,unreconstructedCommands:coverage.rejected,
-    sourceBackedTypeOnlyDependencies:missing.size,sourceBackedRuntimeViews:runtimeDependencyViews.size,
+    sourceBackedTypeOnlyDependencies:missing.size,
+    directTypeOnlyDependencies:[...directDestinations].filter(x=>missing.has(x)).length,
+    sourceBackedRuntimeViews:runtimeDependencyViews.size,
     runtimeViewsWithExternalGlobals:implemented.sourceBackedClassViews.filter(x=>x.globalRuntimeDependencies.length).length,
+    typeOnlyTransitiveImports:[...missing.keys()].filter(x=>!directDestinations.has(x)).length,
     originalSourceMissing:unknown.length,
     compiler:'typescript '+ts.version,compilerDiagnostics:diagnostics.length,byCode,
     canTypecheck:diagnostics.length===0,emittedJavaScript:emitted!==null&&!emitted.emitSkipped,canonicalModules:6850,unreconstructedCanonicalModules:6850-coverage.reconstructed,fullyReconstructed:coverage.reconstructed===6850&&missing.size===0&&coverage.rejected===0,runtimeReady:false,

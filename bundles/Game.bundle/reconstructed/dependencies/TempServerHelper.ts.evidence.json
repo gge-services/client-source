@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "TempServerHelper",
+  "canonicalSource": "modules/exports/TempServerHelper.js",
+  "canonicalSourceSha256": "cf549556207851c5bcfa92558ada5458914cb6b1a7602576750089adcf7ee617",
+  "generatedHash": "6dc6caec4111e4d2baef95f739d2f2c42ee1d0148a9b140c5692f8b594c28bb8",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "EventConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EventConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:EventConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "EnvGlobalsHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EnvGlobalsHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:EnvGlobalsHandler",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_TextHelper",
+      "imported": "TextHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/TextHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

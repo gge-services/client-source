@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "FactionInvasionDialogProperties",
+  "canonicalSource": "modules/exports/FactionInvasionDialogProperties.js",
+  "canonicalSourceSha256": "1829f3274a11aac8382b7730dd48f00abc16e17b1fe6196a5969614cb7c95a43",
+  "generatedHash": "5a1a704b6c46cf963031c2518825f73a7e824793bb57ceb443dc92b695bad446",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicProperties",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicProperties.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicProperties",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "C2SGetTaxInfoVO",
+  "canonicalSource": "modules/exports/C2SGetTaxInfoVO.js",
+  "canonicalSourceSha256": "2bee423c9524b7938f716ac4db70c02e2712c1635b5eb403fc5300f73ffad5c3",
+  "generatedHash": "f65f1924ef63dd48157eb9413b839c93d5d4e8b5ddfa84e2fd396287875009a8",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicCommandVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicCommandVO.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicCommandVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

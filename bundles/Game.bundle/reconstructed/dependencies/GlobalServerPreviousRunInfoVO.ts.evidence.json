@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "GlobalServerPreviousRunInfoVO",
+  "canonicalSource": "modules/exports/GlobalServerPreviousRunInfoVO.js",
+  "canonicalSourceSha256": "30f02e898ee2f851849c79e712a24f7d245ff5006da80592fe7a9d4f44217182",
+  "generatedHash": "92a99098f611dc7a0b18deabe495a4148a9173e52da7bf9ffba0f8e4ae1b1eba",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CachedTimer",
+      "imported": "CachedTimer",
+      "bundle": "Game.bundle",
+      "path": "exports/CachedTimer.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstTime",
+      "imported": "ClientConstTime",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstTime.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [
+    "abgServerSettingVO: any;",
+    "abgServerTimeStamp: any;",
+    "tempServerSettingVO: any;",
+    "tempServerTimeStamp: any;"
+  ],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

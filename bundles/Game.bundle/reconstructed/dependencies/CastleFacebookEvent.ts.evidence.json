@@ -6,6 +6,7 @@
   "canonicalSourceSha256": "4bc874f1b22bd8a5c0384123b0ad902c4f635c31b88192265f92941ae4ae7fef",
   "generatedHash": "79f2646ad5d1ecae83afd7af9c283750edbc73c03f8d24b95338cab54e07e3a1",
   "dependencies": [],
+  "declaredSourceFields": [],
   "globalRuntimeDependencies": [
     "createjs",
     "CONSTRUCTOR_HACK"

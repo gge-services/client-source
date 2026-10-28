@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "C2SKingdomPayInfoVO",
+  "canonicalSource": "modules/exports/C2SKingdomPayInfoVO.js",
+  "canonicalSourceSha256": "499e00239ef6d1adee70b48da9aa200b28c3877d087a410de221dc58fbce7a33",
+  "generatedHash": "3c9f473e86bd18e2ae0aa8ca4eb4f6260b66b28b984a4ec3f75f111cc3da6559",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicCommandVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicCommandVO.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicCommandVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

@@ -1,0 +1,362 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "WorldmapObjectFactory",
+  "canonicalSource": "modules/exports/WorldmapObjectFactory.js",
+  "canonicalSourceSha256": "60c4f2ada47ac4c28e3d058ab0316c8447b53616e420d71d7cb435f2e05b3ab8",
+  "generatedHash": "2d0da62bb19a5f33eab829627f6037d2af2bf13f070ec09093b9016866670a6d",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_BossdungeonMapobjectVO",
+      "imported": "BossdungeonMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/BossdungeonMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldClassic",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldClassic.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldClassic",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "SimpleRandom",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SimpleRandom.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:SimpleRandom",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstNPCs",
+      "imported": "ClientConstNPCs",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstNPCs.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "DungeonConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/DungeonConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:DungeonConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleMapobjectVO",
+      "imported": "CastleMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OutpostMapobjectVO",
+      "imported": "OutpostMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/OutpostMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_EventCampMapobjectVO",
+      "imported": "EventCampMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/EventCampMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_PlagueareaMapobjectVO",
+      "imported": "PlagueareaMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/PlagueareaMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_KingdomCastleMapobjectVO",
+      "imported": "KingdomCastleMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/KingdomCastleMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_VillageMapobjectVO",
+      "imported": "VillageMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/VillageMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_KingstowerMapobjectVO",
+      "imported": "KingstowerMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/KingstowerMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_DungeonMapobjectVO",
+      "imported": "DungeonMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/DungeonMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_EventdungeonMapobjectVO",
+      "imported": "EventdungeonMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/EventdungeonMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CapitalMapobjectVO",
+      "imported": "CapitalMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/CapitalMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_FactionCampMapobjectVO",
+      "imported": "FactionCampMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/FactionCampMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_FactionCapitalMapobjectVO",
+      "imported": "FactionCapitalMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/FactionCapitalMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_FactionTowerMapobjectVO",
+      "imported": "FactionTowerMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/FactionTowerMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_FactionVillageMapobjectVO",
+      "imported": "FactionVillageMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/FactionVillageMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_TreasureDungeonMapObjectVO",
+      "imported": "TreasureDungeonMapObjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/TreasureDungeonMapObjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AlienInvasionMapobjectVO",
+      "imported": "AlienInvasionMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/AlienInvasionMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_RedAlienInvasionMapobjectVO",
+      "imported": "RedAlienInvasionMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/RedAlienInvasionMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_MetropolMapobjectVO",
+      "imported": "MetropolMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/MetropolMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_DungeonIsleMapobjectVO",
+      "imported": "DungeonIsleMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/DungeonIsleMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ResourceIsleMapobjectVO",
+      "imported": "ResourceIsleMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/ResourceIsleMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_DummyMapobjectVO",
+      "imported": "DummyMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/DummyMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_MonumentMapobjectVO",
+      "imported": "MonumentMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/MonumentMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LaboratoryMapobjectVO",
+      "imported": "LaboratoryMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/LaboratoryMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_NomadCampMapObjectVO",
+      "imported": "NomadCampMapObjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/NomadCampMapObjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SamuraiCampMapObjectVO",
+      "imported": "SamuraiCampMapObjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/SamuraiCampMapObjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_FactionInvasionCampMapObjectVO",
+      "imported": "FactionInvasionCampMapObjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/FactionInvasionCampMapObjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_NomadKhanCampMapObjectVO",
+      "imported": "NomadKhanCampMapObjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/NomadKhanCampMapObjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_PlaceholderMapobjectVO",
+      "imported": "PlaceholderMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/PlaceholderMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_DaimyoCastleMapObjectVO",
+      "imported": "DaimyoCastleMapObjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/DaimyoCastleMapObjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_DaimyoTownshipMapObjectVO",
+      "imported": "DaimyoTownshipMapObjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/DaimyoTownshipMapObjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ABGAllianceTowerMapobjectVO",
+      "imported": "ABGAllianceTowerMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/ABGAllianceTowerMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ABGResourceTowerMapobjectVO",
+      "imported": "ABGResourceTowerMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/ABGResourceTowerMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_WolfkingCastleMapObjectVO",
+      "imported": "WolfkingCastleMapObjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/WolfkingCastleMapObjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ShadowareaMapobjectVO",
+      "imported": "ShadowareaMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/ShadowareaMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AllianceRaidEventPortalMapobjectVO",
+      "imported": "AllianceRaidEventPortalMapobjectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/AllianceRaidEventPortalMapobjectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

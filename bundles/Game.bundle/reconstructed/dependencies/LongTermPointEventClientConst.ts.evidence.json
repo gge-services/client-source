@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "LongTermPointEventClientConst",
+  "canonicalSource": "modules/exports/LongTermPointEventClientConst.js",
+  "canonicalSourceSha256": "8a69c0e03764993e2b249678e0878c9886672406a57237e4b2c439d63c6ccc55",
+  "generatedHash": "5d78eec9ccb00162195ee4928537d1ea290c3f5034437103ce71d0438af2cba6",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "EventConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EventConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:EventConst",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

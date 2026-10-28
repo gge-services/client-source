@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleNewsHubOverlay",
+  "canonicalSource": "modules/exports/CastleNewsHubOverlay.js",
+  "canonicalSourceSha256": "d958faf5d619d45ba898fea27e25bc7283f71ce61704972a262f2448e24f8d15",
+  "generatedHash": "3f65574f3d18989f5a4181dc21921f510418c5d4448e8e0cfb8c80c29a83bc2a",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicModel",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicModel.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicModel",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

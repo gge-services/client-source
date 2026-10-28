@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "LordEffectHelper",
+  "canonicalSource": "modules/exports/LordEffectHelper.js",
+  "canonicalSourceSha256": "bdec6f6536661c0700880d037aeb1ae6afc1e6811fde4514a8dfebe70f52a8f9",
+  "generatedHash": "3eab2238c2a6482bed932357b127ef65c229f2c0e12cb960bccf5a42a1427fc4",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:export_EffectVO",
+      "imported": "EffectVO",
+      "bundle": "Game.bundle",
+      "path": "exports/EffectVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LordEffectGroupItem",
+      "imported": "LordEffectGroupItem",
+      "bundle": "Game.bundle",
+      "path": "exports/LordEffectGroupItem.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "instanceOfClass",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/instanceOfClass.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:instanceOfClass",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_PlayerHelper",
+      "imported": "PlayerHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/PlayerHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LordEffectFilterStrategyFullActive",
+      "imported": "LordEffectFilterStrategyFullActive",
+      "bundle": "Game.bundle",
+      "path": "exports/LordEffectFilterStrategyFullActive.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LordEffectFilterStrategyFullPassive",
+      "imported": "LordEffectFilterStrategyFullPassive",
+      "bundle": "Game.bundle",
+      "path": "exports/LordEffectFilterStrategyFullPassive.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LordEffectFilterStrategyAttack",
+      "imported": "LordEffectFilterStrategyAttack",
+      "bundle": "Game.bundle",
+      "path": "exports/LordEffectFilterStrategyAttack.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LordEffectFilterStrategyAttackPVE",
+      "imported": "LordEffectFilterStrategyAttackPVE",
+      "bundle": "Game.bundle",
+      "path": "exports/LordEffectFilterStrategyAttackPVE.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LordEffectFilterStrategyDefencePVE",
+      "imported": "LordEffectFilterStrategyDefencePVE",
+      "bundle": "Game.bundle",
+      "path": "exports/LordEffectFilterStrategyDefencePVE.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LordEffectFilterStrategyDefencePVP",
+      "imported": "LordEffectFilterStrategyDefencePVP",
+      "bundle": "Game.bundle",
+      "path": "exports/LordEffectFilterStrategyDefencePVP.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LordEffectFilterStrategyStation",
+      "imported": "LordEffectFilterStrategyStation",
+      "bundle": "Game.bundle",
+      "path": "exports/LordEffectFilterStrategyStation.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LordEffectFilterStrategySupport",
+      "imported": "LordEffectFilterStrategySupport",
+      "bundle": "Game.bundle",
+      "path": "exports/LordEffectFilterStrategySupport.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LordEffectTooltip",
+      "imported": "LordEffectTooltip",
+      "bundle": "Game.bundle",
+      "path": "exports/LordEffectTooltip.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "UpdateDynamicTopXDataService",
+  "canonicalSource": "modules/exports/UpdateDynamicTopXDataService.js",
+  "canonicalSourceSha256": "b95e0e9c526db0aa0b638e128e611129620fe3228abdfbfe19d93d9ff2a3a4af",
+  "generatedHash": "37878dd62dfde801bf3fee2bfab9ccfea7e0d9dcb943b52edfc3784824ea3b7c",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicModel",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicModel.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicModel",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

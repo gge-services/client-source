@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleTroopSupportData",
+  "canonicalSource": "modules/exports/CastleTroopSupportData.js",
+  "canonicalSourceSha256": "e875f679a028a71960b6bc589adda67551587674a45d0136a8a8becd2dc975ab",
+  "generatedHash": "0e8cb6113119afa74e7afbc2fe9817bde5b938049a70b887a5bf2fe8660e484a",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleTroopSupportVO",
+      "imported": "CastleTroopSupportVO",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleTroopSupportVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCastle",
+      "imported": "ClientConstCastle",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCastle.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SCreateArmyTravelMovementVO",
+      "imported": "C2SCreateArmyTravelMovementVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SCreateArmyTravelMovementVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

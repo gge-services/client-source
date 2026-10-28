@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "C2SGetBookmarkList",
+  "canonicalSource": "modules/exports/C2SGetBookmarkList.js",
+  "canonicalSourceSha256": "162531726d2171b79c9d9d119cb6fecbd55f4785ca96c889e169d4b5349de671",
+  "generatedHash": "409fc2b9309eed264825c7143f9914493aed2f46dfd5da5452b020491768cbeb",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicCommandVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicCommandVO.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicCommandVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstSF",
+      "imported": "ClientConstSF",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstSF.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

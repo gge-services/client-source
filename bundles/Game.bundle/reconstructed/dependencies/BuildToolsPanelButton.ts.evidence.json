@@ -1,0 +1,121 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "BuildToolsPanelButton",
+  "canonicalSource": "modules/exports/BuildToolsPanelButton.js",
+  "canonicalSourceSha256": "ebe66b5fc2530855f69cac69b895ee8bb868ab0b76188e6436f7ae6d1d5117d8",
+  "generatedHash": "cc19993e32018f1868f2a9b1f788afbe58ce6bf843a0b71c470db69e63f32c84",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_APanelButton",
+      "imported": "APanelButton",
+      "bundle": "Game.bundle",
+      "path": "exports/APanelButton.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleComponent",
+      "imported": "CastleComponent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleComponent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_IsoEvent",
+      "imported": "IsoEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/IsoEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_Iso",
+      "imported": "Iso",
+      "bundle": "Game.bundle",
+      "path": "exports/Iso.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_IsoObjectEnum",
+      "imported": "IsoObjectEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/IsoObjectEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "FactionConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/FactionConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:FactionConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCastle",
+      "imported": "ClientConstCastle",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCastle.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleRecruitDialog",
+      "imported": "CastleRecruitDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleRecruitDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleRecruitDialogProperties",
+      "imported": "CastleRecruitDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleRecruitDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleCharacterYesNoOKDialog",
+      "imported": "CastleCharacterYesNoOKDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCharacterYesNoOKDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleCharacterYesNoOKDialogProperties",
+      "imported": "CastleCharacterYesNoOKDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCharacterYesNoOKDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "Localize",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/Localize.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:Localize",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [
+    "Library"
+  ],
+  "runtimeReady": false
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleSeasonUpgradePortDialog",
+  "canonicalSource": "modules/exports/CastleSeasonUpgradePortDialog.js",
+  "canonicalSourceSha256": "64e6fb8db33db60bb3d06cdcfda578f589795c880355b37f5d685c58e20d9592",
+  "generatedHash": "01200b00011f0dd0bec48eb4420ae037e8310924111ff6b0a470cbfc99fa0b0e",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleSeasonBaseRepairDialog",
+      "imported": "CastleSeasonBaseRepairDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSeasonBaseRepairDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "ClipColor",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ClipColor.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:ClipColor",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [
+    "CONSTRUCTOR_HACK"
+  ],
+  "runtimeReady": false
+}

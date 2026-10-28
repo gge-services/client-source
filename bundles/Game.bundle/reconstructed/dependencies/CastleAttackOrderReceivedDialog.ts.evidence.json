@@ -1,0 +1,84 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleAttackOrderReceivedDialog",
+  "canonicalSource": "modules/exports/CastleAttackOrderReceivedDialog.js",
+  "canonicalSourceSha256": "109c0a40e0dc822c1009577039ad71ecd9a3bc18787307e5336bfc10426c2a00",
+  "generatedHash": "8a5e13088bb2ad623ff67add69b282f41aae90e67c33bfd685518940853c3a14",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleAttackOrderCanceledDialog",
+      "imported": "CastleAttackOrderCanceledDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAttackOrderCanceledDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "TextVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/TextVO.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:TextVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "Localize",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/Localize.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:Localize",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "DateTimeStyle",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/DateTimeStyle.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:DateTimeStyle",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "LocalizedTextVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/LocalizedTextVO.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:LocalizedTextVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBookmarkShowAttackersDialog",
+      "imported": "CastleBookmarkShowAttackersDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBookmarkShowAttackersDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBookmarkPasserProperties",
+      "imported": "CastleBookmarkPasserProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBookmarkPasserProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [
+    "createjs",
+    "CONSTRUCTOR_HACK"
+  ],
+  "runtimeReady": false
+}

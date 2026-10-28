@@ -6,6 +6,7 @@
   "canonicalSourceSha256": "d621a9fa6b2e643082e044d186be1036aa708f66698771dbc6449f99a7057703",
   "generatedHash": "03a9ea4e9b2acb9747899c5e8d926c5db5c092b35a8f7612cf03b9eed0ee9d4d",
   "dependencies": [],
+  "declaredSourceFields": [],
   "globalRuntimeDependencies": [],
   "runtimeReady": true
 }

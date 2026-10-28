@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleCollectTaxStartDialogProperties",
+  "canonicalSource": "modules/exports/CastleCollectTaxStartDialogProperties.js",
+  "canonicalSourceSha256": "0867fa1142ff15062c855ceaf8a85694f6980cbb15ddbb538dd93c0b8fc69007",
+  "generatedHash": "467a68204ec2524d9ecf7597f605419aab53597ff6bccc976aa18c1f8c1c22e2",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicProperties",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicProperties.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicProperties",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

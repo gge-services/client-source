@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleEquipmentFactory",
+  "canonicalSource": "modules/exports/CastleEquipmentFactory.js",
+  "canonicalSourceSha256": "130cdc594bfb2582246ae508aa5d3c7fb848048673c864882629a97b1376d5f0",
+  "generatedHash": "f4bfccc8a73cd15bfa0bbb6c278deedac9bc85ae6f50d6b522ec78a8c7a5c28a",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "EquipmentConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EquipmentConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:EquipmentConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_RelicEquipmentVO",
+      "imported": "RelicEquipmentVO",
+      "bundle": "Game.bundle",
+      "path": "exports/RelicEquipmentVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleHeroVO",
+      "imported": "CastleHeroVO",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleHeroVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_BasicEquipmentVO",
+      "imported": "BasicEquipmentVO",
+      "bundle": "Game.bundle",
+      "path": "exports/BasicEquipmentVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}
