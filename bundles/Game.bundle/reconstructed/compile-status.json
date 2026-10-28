@@ -4,9 +4,11 @@
   "mode": "type-only-canonical-compatibility",
   "reconstructedClasses": 688,
   "unreconstructedCommands": 13,
-  "sourceBackedTypeOnlyDependencies": 492,
-  "sourceBackedRuntimeViews": 23,
-  "runtimeViewsWithExternalGlobals": 13,
+  "sourceBackedTypeOnlyDependencies": 698,
+  "directTypeOnlyDependencies": 437,
+  "sourceBackedRuntimeViews": 78,
+  "runtimeViewsWithExternalGlobals": 23,
+  "typeOnlyTransitiveImports": 261,
   "originalSourceMissing": 0,
   "compiler": "typescript 2.9.2",
   "compilerDiagnostics": 0,
@@ -26,11 +28,18 @@
       "canonicalSha256": "f87903cb696aab3a716e9fd769b8a66d4276be262993875060b7b8d26ffaeeee"
     },
     {
-      "name": "ABGHelper",
-      "source": "exports/ABGHelper.js",
+      "name": "ABGAllianceTowerMapobjectVO",
+      "source": "exports/ABGAllianceTowerMapobjectVO.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "c423248375a16ed38f7024a5b3bb501670c148ed82208f44c1ed8f25405a1a6f"
+      "canonicalSha256": "de2fbdf1fd8b7928edaf40e1dfa9426e9fa68096c16c6899c4f380a19b2c478a"
+    },
+    {
+      "name": "ABGResourceTowerMapobjectVO",
+      "source": "exports/ABGResourceTowerMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "0028b5fab4acbe748edff8e9cba1c97c7ced102ee9b45555243716285e0a4e9a"
     },
     {
       "name": "AbstractMethodError",
@@ -68,11 +77,11 @@
       "canonicalSha256": "6a46c1c29612d27e9a6ce29ddab05fa285d13345673608e1503e1b6698bd46e4"
     },
     {
-      "name": "AdvisorAttackHelper",
-      "source": "exports/AdvisorAttackHelper.js",
+      "name": "AdvisorActivationInfoVO",
+      "source": "exports/AdvisorActivationInfoVO.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "dcf6e65692774eb0a0c40cd862c049b7f97759951d29b07316292c94899bfeb1"
+      "canonicalSha256": "09697dcf995253233579e4186e26aa3681147e2a4a2ac93527d335b03bd326c6"
     },
     {
       "name": "AdvisorAttackOverviewEvent",
@@ -82,11 +91,11 @@
       "canonicalSha256": "4e6fbaa94649ce89d77f8f80770f038f1cc1da797eb9a51ce494b0c2e62e42b2"
     },
     {
-      "name": "AdvisorAttackOverviewVO",
-      "source": "exports/AdvisorAttackOverviewVO.js",
+      "name": "AlienInvasionMapobjectVO",
+      "source": "exports/AlienInvasionMapobjectVO.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "614a134f8936a1a0d853c542596da8e54053a5272ff0f3d51d48106539a2822d"
+      "canonicalSha256": "771462fd60f87dc4cd3343a56280ab55c151a822eeb922b01dba44622439d130"
     },
     {
       "name": "AllianceBattleGroundPlayerCollectorEventBoosterSelectDialog",
@@ -94,6 +103,13 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "d04ba2689ef38f884cdc5c6028ef51887ef2290d445e48dd3b2e04a9ca7dfe05"
+    },
+    {
+      "name": "AllianceBattleGroundScoringVO",
+      "source": "exports/AllianceBattleGroundScoringVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "3e561fd590efcc8c59b5b4a6715a14d40b9fbc92d7da155c465e9906fa084776"
     },
     {
       "name": "AllianceBattleGroundTowerCollectorEventBoosterSelectDialog",
@@ -131,6 +147,34 @@
       "canonicalSha256": "4265621da842db0cd57a2f0d81ae854b9b4237bf9f7095ecff704289969ad8b7"
     },
     {
+      "name": "AllianceRaidBossDefeatedDialog",
+      "source": "exports/AllianceRaidBossDefeatedDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "ee02bd83d8c0ebf9c6b4ba096e3aeb1469a803643f8e5f37a6639073cef59d46"
+    },
+    {
+      "name": "AllianceRaidBossDefeatedDialogProperties",
+      "source": "exports/AllianceRaidBossDefeatedDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "b9fc965fd4f0dcf837820ae3da4218286ffa09a53832ff339c0d02e3f7c1134d"
+    },
+    {
+      "name": "AllianceRaidEventEndDialog_NoRewards",
+      "source": "exports/AllianceRaidEventEndDialog_NoRewards.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "c5aa61611668a30e292fb013f7071162c309eb9040a6f44650df173b8bcada65"
+    },
+    {
+      "name": "AllianceRaidEventPortalMapobjectVO",
+      "source": "exports/AllianceRaidEventPortalMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "0e728aaa51e6c467454b45c6e4f2617df14205a890111a12101ce3650eb17373"
+    },
+    {
       "name": "AMessageSpyVO",
       "source": "exports/AMessageSpyVO.js",
       "bundle": "Game.bundle",
@@ -145,6 +189,27 @@
       "canonicalSha256": "51013e77b27af0f9f5fe82da80603badeedbd83333f48c6efc766ec3299feb33"
     },
     {
+      "name": "APanelButton",
+      "source": "exports/APanelButton.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "22d9d9d3aee03d3cf752567150b4002f50d9029b23677698e336da2bf99e2d08"
+    },
+    {
+      "name": "AreaData",
+      "source": "exports/AreaData.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "f7fa506e1fe2dfa92ddd655960172fe25c98a51d5f81c9721f810f75a143175d"
+    },
+    {
+      "name": "AreaDataEnum",
+      "source": "exports/AreaDataEnum.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "56ee272f3244a71e9f66fe71c6e4462643ee13375862b9786f0751df182b86ae"
+    },
+    {
       "name": "AreaDataEvent",
       "source": "exports/AreaDataEvent.js",
       "bundle": "Game.bundle",
@@ -152,11 +217,11 @@
       "canonicalSha256": "47b875cb57f6f0f74f71ec505eadc55cf68fddf3151d7df85dd7afa81bad0375"
     },
     {
-      "name": "AreaFactory",
-      "source": "exports/AreaFactory.js",
+      "name": "AResourceProductionBuildingVO",
+      "source": "exports/AResourceProductionBuildingVO.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "c5445ba87ef920b63a542d8b0a65c10943951314b623d7c13d2b7afdd3750891"
+      "canonicalSha256": "35adff9b225189cbbc6edbd26b675fd56f104cde6b74ae772b4f9569dd604ab0"
     },
     {
       "name": "ArmyAttackMapmovementVO",
@@ -285,6 +350,13 @@
       "canonicalSha256": "296cde7d4d4ec33a22ef8a36e82a77a2a70b01f6c6733e2f64098a4ddb775d11"
     },
     {
+      "name": "BasicCommandVO",
+      "source": "modules/exports/BasicCommandVO.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "b3b3900446b0709762f55b550f03af0fca2003ab21f3b63738e5b1c273f883d6"
+    },
+    {
       "name": "BasicConnectToInstanceVOCommand",
       "source": "modules/exports/BasicConnectToInstanceVOCommand.js",
       "bundle": "ggs.dll",
@@ -318,6 +390,13 @@
       "bundle": "ggs.dll",
       "confidence": "verified-dll-id-and-member",
       "canonicalSha256": "b2c24a5fbf3eb870716971dd50deda82afdcb5074bbdd009d0e55a760b123edb"
+    },
+    {
+      "name": "BasicEquipmentVO",
+      "source": "exports/BasicEquipmentVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "d3a557d3af81cfb7fdfe08412aec52313acba4add5a26d8d818368628d206feb"
     },
     {
       "name": "BasicErrorConstants",
@@ -397,6 +476,13 @@
       "canonicalSha256": "5828373d45a2bacb1f7a40c302cc1052b3f157c1acea9c87ba06b8e340f033ae"
     },
     {
+      "name": "BasicProperties",
+      "source": "modules/exports/BasicProperties.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "8847e2ca589eabdcb195da0cee46bc5a2363b7870520b8adabf286c8b97225f0"
+    },
+    {
       "name": "BasicReconnectDialogProperties",
       "source": "modules/exports/BasicReconnectDialogProperties.js",
       "bundle": "ggs.dll",
@@ -467,11 +553,25 @@
       "canonicalSha256": "e0f461650936f58b4b9a56c294ab4a23f53b43828f3e6061361d54f7b586afdb"
     },
     {
+      "name": "BeggingKnightsConst",
+      "source": "modules/exports/BeggingKnightsConst.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "435550627cb91337c71b465aa4a406131ddf48c97a6352c10baf0afd5b941d8b"
+    },
+    {
       "name": "BoosterConst",
       "source": "modules/exports/BoosterConst.js",
       "bundle": "ggs.dll",
       "confidence": "verified-dll-id-and-member",
       "canonicalSha256": "2418a39137f78b97b35144528c790ca1b98e4b7f018fd7e2a122c0f95d2f118e"
+    },
+    {
+      "name": "BossdungeonMapobjectVO",
+      "source": "exports/BossdungeonMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "d487703aef3d8d0c39b1cc62cf90d1146d0d69572dc63ea0b56ff77a3ac84afe"
     },
     {
       "name": "BrowserUtil",
@@ -481,25 +581,25 @@
       "canonicalSha256": "c7a89f96e18ea3f0f7750abaa120c61a988e7bda799790f455777be5e55d4b73"
     },
     {
-      "name": "BuildMenuPanelButton",
-      "source": "exports/BuildMenuPanelButton.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "989466b8cbc97254fcd0f76e4413cc0fc9c1854402c4161b25de245e1c096de5"
-    },
-    {
-      "name": "BuildToolsPanelButton",
-      "source": "exports/BuildToolsPanelButton.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "ebe66b5fc2530855f69cac69b895ee8bb868ab0b76188e6436f7ae6d1d5117d8"
-    },
-    {
       "name": "ButtonHelper",
       "source": "exports/ButtonHelper.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "c6fe2d634d795de65225912b77b79f4af7a1dece65586aabb2705b132319b8d2"
+    },
+    {
+      "name": "C2SAllianceBattleGroundGetTimersVO",
+      "source": "exports/C2SAllianceBattleGroundGetTimersVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "c862811a2a843ce41e868e2ccd4ce76ad41a65af6679f92d6ebe351d8c9f21fa"
+    },
+    {
+      "name": "C2SBugReportVO",
+      "source": "exports/C2SBugReportVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "9aca4da91261736c5447f87e247eeb97ae5f84dce74b73881e4a9cd8be874d46"
     },
     {
       "name": "C2SBuyUnitPackageVO",
@@ -514,6 +614,13 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "a93a79d4a203e4e20050505e92550243dfd2e5905db12dec8db08e578622f7a6"
+    },
+    {
+      "name": "C2SCreateArmyTravelMovementVO",
+      "source": "exports/C2SCreateArmyTravelMovementVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "ed213ae9bad120875313a7a34835463c845a645a966576b4ee1dd7e3674257f3"
     },
     {
       "name": "C2SCreateDaimyoDefenseMovementVO",
@@ -535,20 +642,6 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "68c5961cb7767be2db07abda04c2c38048966aa423093121d17e6089dca53b10"
-    },
-    {
-      "name": "C2SGetAllMovementsVO",
-      "source": "exports/C2SGetAllMovementsVO.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "2b81766a30b3507ca7154358fedebdf4f134b7b044918f4e2924d1d55d020b68"
-    },
-    {
-      "name": "C2SGetBookmarkList",
-      "source": "exports/C2SGetBookmarkList.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "162531726d2171b79c9d9d119cb6fecbd55f4785ca96c889e169d4b5349de671"
     },
     {
       "name": "C2SGetCastleListVO",
@@ -577,41 +670,6 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "9d601d050430f58968eadb636e3c705ed7fd7bf021f7578126476b138c09fc31"
-    },
-    {
-      "name": "C2SGetEquipmentInventory",
-      "source": "exports/C2SGetEquipmentInventory.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "114a6849e62c2cdd0a0a66032df0d5682b0121cec1cfe445879f0b8c464435a1"
-    },
-    {
-      "name": "C2SGetGeneralsInfoVO",
-      "source": "exports/C2SGetGeneralsInfoVO.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "ae137d82ef8a1c428a89e477bfd55540facc54c63fc01ad5a63280e2cd458a83"
-    },
-    {
-      "name": "C2SGetLoginBonusVO",
-      "source": "exports/C2SGetLoginBonusVO.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "00a2dbc4b69fba77483f6ef68cfe44a70b48cdef1582cb52f5b87aa95776d359"
-    },
-    {
-      "name": "C2SGetSLI",
-      "source": "exports/C2SGetSLI.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "702c167e4589719229a144922dfd687c994d65d0e1048c962be7c44b341ade28"
-    },
-    {
-      "name": "C2SGetTaxInfoVO",
-      "source": "exports/C2SGetTaxInfoVO.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "2bee423c9524b7938f716ac4db70c02e2712c1635b5eb403fc5300f73ffad5c3"
     },
     {
       "name": "C2SGetTemporaryServerLoginTokenVO",
@@ -668,13 +726,6 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "457995326e565b5d91b12db1da281388415ee704db7154fd53f660984657a459"
-    },
-    {
-      "name": "C2SKingdomPayInfoVO",
-      "source": "exports/C2SKingdomPayInfoVO.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "499e00239ef6d1adee70b48da9aa200b28c3877d087a410de221dc58fbce7a33"
     },
     {
       "name": "C2SLoginVO",
@@ -747,25 +798,11 @@
       "canonicalSha256": "2260a4fdc6a779699050632e5fd3054b15e68895631462607c05b214bbf2e334"
     },
     {
-      "name": "C2SShowWelcomeDataVO",
-      "source": "exports/C2SShowWelcomeDataVO.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "5f81e6a8c860084e78a34e4f88febdfd2eb6e6779347d8acfb4c21d426c6b0c2"
-    },
-    {
       "name": "C2STemporaryServerLoginVO",
       "source": "exports/C2STemporaryServerLoginVO.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "068122b422fd599323c7d296662ba5bfa8e23375924a995d38f28416cc9e336f"
-    },
-    {
-      "name": "C2STemporaryServerTutorialSkipVO",
-      "source": "exports/C2STemporaryServerTutorialSkipVO.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "947ef8c899c7a760393e764117712310795d676fe33d0ed9b68c7d347bdbd24d"
     },
     {
       "name": "C2SUnlockPackageSlotVO",
@@ -775,11 +812,18 @@
       "canonicalSha256": "0a81b44e6ffb16f65a3ba400e52662bb476b878cc1ffeee53d1e4ce15f5e98d1"
     },
     {
-      "name": "C2SUserAchievedRanksVO",
-      "source": "exports/C2SUserAchievedRanksVO.js",
+      "name": "CachedTimer",
+      "source": "exports/CachedTimer.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "a538ca7f9d5f04e25f02fd3dccf22523016718319a4d15638144480a02597e12"
+      "canonicalSha256": "2d708d4bc36ff7709d6ea5d90add62da8fe726b22c298420ccaa65412d65249d"
+    },
+    {
+      "name": "CapitalMapobjectVO",
+      "source": "exports/CapitalMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "5fb12f051b21e4c483fb10543cbb34a9bd1204cb33cf96391d684a6033f7695b"
     },
     {
       "name": "castAs",
@@ -787,6 +831,20 @@
       "bundle": "ggs.dll",
       "confidence": "verified-dll-id-and-member",
       "canonicalSha256": "c4f7ebd4650e5245548d4834fda12442709b727b07f89851ccb8bd994b949276"
+    },
+    {
+      "name": "CastleABGTowerInfoDialogProperties",
+      "source": "exports/CastleABGTowerInfoDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "cdc719a71c4ed70436986615f4432645859d5594b3915f353f626fa5571de4e4"
+    },
+    {
+      "name": "CastleABGTowerReassignmentDialog",
+      "source": "exports/CastleABGTowerReassignmentDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "4ffc0bc349b0e9ff0e42f9523b9950a40b5ed72f3fe08c38f8c593a739ee0d16"
     },
     {
       "name": "CastleAchievementData",
@@ -829,6 +887,41 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "4cd7ef40ac65805337cb8f6c17a76cdc447282bd99143ea0a01e9424cb430aaf"
+    },
+    {
+      "name": "CastleAllianceAlienInvasionRewardDialogAlliance",
+      "source": "exports/CastleAllianceAlienInvasionRewardDialogAlliance.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "51cead8303e137faf8256a293a7e406796a21b9567702de3181f638b452accf0"
+    },
+    {
+      "name": "CastleAllianceAlienInvasionRewardDialogPlayer",
+      "source": "exports/CastleAllianceAlienInvasionRewardDialogPlayer.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "ebe6adf1e034bfd9d5faa69606b1531b30e71d3d57cafe9851f411afcead4d09"
+    },
+    {
+      "name": "CastleAllianceBattleGroundEventEndDialog",
+      "source": "exports/CastleAllianceBattleGroundEventEndDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "5120e4252d18bc47924cff37b25b7178f17fa16e85a10ae297e6026af1b7154e"
+    },
+    {
+      "name": "CastleAllianceBattleGroundEventEndDialogProperties",
+      "source": "exports/CastleAllianceBattleGroundEventEndDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "df2dc4ccf2072cfdf5d001c7d5aaf0489f0618d0466d7a2acec1ba5c8e78aaca"
+    },
+    {
+      "name": "CastleAllianceBattlegroundStartDialog",
+      "source": "exports/CastleAllianceBattlegroundStartDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "a0443ece16beeaade9d1a82f2ccb1c1762dcbfb15c956d8cadd4cebcc71e49e5"
     },
     {
       "name": "CastleAllianceBuyBoostDialogProperties",
@@ -922,11 +1015,32 @@
       "canonicalSha256": "90ec70363c609cac63f3e9c872cc5a53577669c21be0fd232bf21dd532b7579f"
     },
     {
+      "name": "CastleAllianceNomadInvasionRewardDialogAlliance",
+      "source": "exports/CastleAllianceNomadInvasionRewardDialogAlliance.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "52ed59d423b3be0b934aa27205676360152f0114b7ba87ad639eb67fa7702faf"
+    },
+    {
+      "name": "CastleAllianceNomadInvasionRewardDialogPlayer",
+      "source": "exports/CastleAllianceNomadInvasionRewardDialogPlayer.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "4ee99ed2a51594e524cf9203b1d433a28f965c33696a6faee6f3a3b46ad82c4d"
+    },
+    {
       "name": "CastleAllianceSearchEvent",
       "source": "exports/CastleAllianceSearchEvent.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "06ad39c21af6b347d110df131dec5916b403dcf4fc49492442de2974f23cce7a"
+    },
+    {
+      "name": "CastleAllianceTournamentEventRewardDialog",
+      "source": "exports/CastleAllianceTournamentEventRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "4ba1b49a399a84f823f9c75356a943468730ebbfcea0f34ab9e0de81aae003ec"
     },
     {
       "name": "CastleArmyListDialog",
@@ -985,11 +1099,11 @@
       "canonicalSha256": "56b2f8691f52dc22a7657aa80fec529bd25dbcbcef6c9a00a2950bc883e47545"
     },
     {
-      "name": "CastleAttackOrderReceivedDialog",
-      "source": "exports/CastleAttackOrderReceivedDialog.js",
+      "name": "CastleAttackOrderCanceledDialog",
+      "source": "exports/CastleAttackOrderCanceledDialog.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "109c0a40e0dc822c1009577039ad71ecd9a3bc18787307e5336bfc10426c2a00"
+      "canonicalSha256": "ee6509973a3c3c0fd1a24bdb58d540e8e7ca1a57ec793b8420055625eb8b1592"
     },
     {
       "name": "CastleAutoTutorialBlockerDialog",
@@ -1020,11 +1134,53 @@
       "canonicalSha256": "2873044a0473bc2903147d0460de9bb97fbddae0fa9fe45649932aee99c49576"
     },
     {
+      "name": "CastleBeggingKnightsRewardDialog",
+      "source": "exports/CastleBeggingKnightsRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "061fd8979edf893d05139992dbcee7ea5e155e09990f9fa796fba71a80e88773"
+    },
+    {
       "name": "CastleBookmarkPasserProperties",
       "source": "exports/CastleBookmarkPasserProperties.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "341d5e2c6cf2b27b1efde367a7438f2ffa802835cfffefbcea796d75982edc9d"
+    },
+    {
+      "name": "CastleBookmarkRewardDialog",
+      "source": "exports/CastleBookmarkRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "7714600663c62df1a3352e5a4798af79225492f692812111a511cedf6cc0e75a"
+    },
+    {
+      "name": "CastleBookmarkRewardDialogProperties",
+      "source": "exports/CastleBookmarkRewardDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "b9a6aaa0353934918161f4ccc14d32f4890c6a08acc0f1ed1254943b0b2e7203"
+    },
+    {
+      "name": "CastleBookmarkShowAttackersDialog",
+      "source": "exports/CastleBookmarkShowAttackersDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "6068b851da71199c7a836764b0d7be6cee55434807ad7b945b3c2a19cc07195b"
+    },
+    {
+      "name": "CastleBountyhunterWinDialog",
+      "source": "exports/CastleBountyhunterWinDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "e789b12cbb3456b9e7f5a9b4c09f445ea418c69d1569565133ea15248305652d"
+    },
+    {
+      "name": "CastleBountyhunterWinDialogProperties",
+      "source": "exports/CastleBountyhunterWinDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "80c632542ac0b1bb36e7288050f2c579dbb0d6b66dac8bc1ad8452709538a382"
     },
     {
       "name": "CastleBuildListTipDialog",
@@ -1048,6 +1204,13 @@
       "canonicalSha256": "e047e4beaa8eae905bf9692fff28a740497bd8bea4ed120b75ebde1b75f9ab41"
     },
     {
+      "name": "CastleCampaignRewardDialogProperties",
+      "source": "exports/CastleCampaignRewardDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "c6ba7157f1772b46c976eecf01b3632bfc44ceda7683b55f7c49967bc26ecf3c"
+    },
+    {
       "name": "CastleChangelistRewardsEvent",
       "source": "exports/CastleChangelistRewardsEvent.js",
       "bundle": "Game.bundle",
@@ -1067,6 +1230,13 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "b0ec6d677000beef5a07ef8ce2281cfaa02f532e5ebc20771f8213f0ddee14c4"
+    },
+    {
+      "name": "CastleChangePlayerEmailCancelDoneDialog",
+      "source": "exports/CastleChangePlayerEmailCancelDoneDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "968f05e5dc09aff7980d6d9b36e2696d789baa9e34888a4e9d8c2990ab10cf5d"
     },
     {
       "name": "CastleCharacterYesNoOKDialog",
@@ -1090,6 +1260,13 @@
       "canonicalSha256": "d1554f1c21acabeaa2440a8c3f619bc55ff2a98e8459f405c783263b9ad4ec0d"
     },
     {
+      "name": "CastleChestDialog",
+      "source": "exports/CastleChestDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "60154e4779c0678fab70f8f6770a758bc89d2f401fc2dc53d469299bdfc59f29"
+    },
+    {
       "name": "CastleChooseHeroDialog",
       "source": "exports/CastleChooseHeroDialog.js",
       "bundle": "Game.bundle",
@@ -1102,6 +1279,13 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "0abbbe2788efb3e24fd554ce135a56df26f7168df314272cb4b9058db00c193a"
+    },
+    {
+      "name": "CastleCollectorEventRewardDialog",
+      "source": "exports/CastleCollectorEventRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "7c6b745932b3ac5f4b8c0ce73d88029723b91ec4b496ff020faf76d392d3417e"
     },
     {
       "name": "CastleCollectTaxProgressDialog",
@@ -1118,18 +1302,25 @@
       "canonicalSha256": "e2a602b3b59adb09bd0121963a64c19d221da2f77765aef6d62646deaf95c6b4"
     },
     {
-      "name": "CastleCollectTaxStartDialogProperties",
-      "source": "exports/CastleCollectTaxStartDialogProperties.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "0867fa1142ff15062c855ceaf8a85694f6980cbb15ddbb538dd93c0b8fc69007"
-    },
-    {
       "name": "CastleColossusDonateDialog",
       "source": "exports/CastleColossusDonateDialog.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "76b53b3eccc3a9e3dbd690059c566054a92157b9320b416a40498c54bc0aefc3"
+    },
+    {
+      "name": "CastleColossusEventFinishedDialog",
+      "source": "exports/CastleColossusEventFinishedDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "346d5f5da5f82813a6a09da8f2ccbc81ee8d2912a5649fe384a4aa0a7c4f4818"
+    },
+    {
+      "name": "CastleColossusEventFinishedDialogProperties",
+      "source": "exports/CastleColossusEventFinishedDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "50f51c6004aeb5754c89d8e098ea662a827498e08aae8e3ec4d36587ea02b0c2"
     },
     {
       "name": "CastleCompactArmyDialog",
@@ -1146,11 +1337,39 @@
       "canonicalSha256": "16bc3a3797e99c839cd3756e6ecbf6f99a2b7298b5c77865fa8badb009c0abd0"
     },
     {
+      "name": "CastleComponent",
+      "source": "exports/CastleComponent.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "64fbb077587ca17bb697a40243987e8bf63cdcb243f363738a58b44829e1af88"
+    },
+    {
       "name": "CastleDailyLoginBonusDialog",
       "source": "exports/CastleDailyLoginBonusDialog.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "a0ddb614cd1507a1915126a019e86787b109c2686657b34201e8208cf8cb31f8"
+    },
+    {
+      "name": "CastleDailyQuestThresholdRewardDialog",
+      "source": "exports/CastleDailyQuestThresholdRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "f6d7cfe2940825f96b8521502bb2200a7c6eed1f078368811c41f22b8137df24"
+    },
+    {
+      "name": "CastleDailyQuestThresholdRewardDialogProperties",
+      "source": "exports/CastleDailyQuestThresholdRewardDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "9ec9657eb28d1224c30dcf5693c2023bffeb4cd25fbf1c804005a1ecc4744dd3"
+    },
+    {
+      "name": "CastleDarkOkDialog",
+      "source": "exports/CastleDarkOkDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "6c5adf382ad020b8ce61ea39477ae3abe91c83b6e2119f6588601c54e2f3409b"
     },
     {
       "name": "CastleDarkOkLabeledDialog",
@@ -1202,6 +1421,13 @@
       "canonicalSha256": "eb26b0f1d65c09862968be2f31021396a561cfdf8099731364be7a71852e4cab"
     },
     {
+      "name": "CastleDefenceDialogProperties",
+      "source": "exports/CastleDefenceDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "e86666ef59b45b2607c1bdae179fdf0f001713f2428ba59433428a008719e692"
+    },
+    {
       "name": "CastleDeleteAccountDialog",
       "source": "exports/CastleDeleteAccountDialog.js",
       "bundle": "Game.bundle",
@@ -1228,6 +1454,27 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "bceacca438f4be99d2c941f4596c0927631d9859ef24814ae84cd6a30ba9f368"
+    },
+    {
+      "name": "CastleDungeonTreasureChestDialog",
+      "source": "exports/CastleDungeonTreasureChestDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "bc108778394b42670536448bac07a9b1eafa3ac25ae4730f532cb89c60fe5f9d"
+    },
+    {
+      "name": "CastleDungeonTreasureChestOpenDialog",
+      "source": "exports/CastleDungeonTreasureChestOpenDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "f3ad3ed96dbe5f28f10878ce15447c1733ff34a1cb454121223f7a74151f8109"
+    },
+    {
+      "name": "CastleEffectEnum",
+      "source": "exports/CastleEffectEnum.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "b8db65f785a63d676270ab00d1ed7b588ed61860a9d7c6110393a37cbea86bbc"
     },
     {
       "name": "CastleEfficiencyTipDialog",
@@ -1265,13 +1512,6 @@
       "canonicalSha256": "fdad9958301cbd1b5ce8858ae3cb1fd3d5d23119ec4a788945f3d653f2b3f5e6"
     },
     {
-      "name": "CastleEquipmentFactory",
-      "source": "exports/CastleEquipmentFactory.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "130cdc594bfb2582246ae508aa5d3c7fb848048673c864882629a97b1376d5f0"
-    },
-    {
       "name": "CastleEquipmentFavoritesMicroservice",
       "source": "exports/CastleEquipmentFavoritesMicroservice.js",
       "bundle": "Game.bundle",
@@ -1284,13 +1524,6 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "2220618a58abdb4a3fd56b61f9d54191cd498147acdab47736f54604dba94008"
-    },
-    {
-      "name": "CastleEquipmentMerchantEventIncomingDialogProperties",
-      "source": "exports/CastleEquipmentMerchantEventIncomingDialogProperties.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "75b29dec75c43d8b395abf2425a688909de4f57e43fef2ebf446eb4d446822a9"
     },
     {
       "name": "CastleEventTeaserDialog",
@@ -1349,11 +1582,46 @@
       "canonicalSha256": "a1864fbbe08815a6a45fbaff8dc554f272c3da3f783f90045a87664e7c7727c9"
     },
     {
+      "name": "CastleFactionEventWinBlueDialog",
+      "source": "exports/CastleFactionEventWinBlueDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "f87656855ea4c2fb2ce7597590e1efcd5038c3dd741a92ee0364a26ae200df7d"
+    },
+    {
+      "name": "CastleFactionEventWinDialogProperties",
+      "source": "exports/CastleFactionEventWinDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "05a9005ff000fb11b743ea4076e6c7c93dc36f5a490d6b8bc389c6cbdba43baa"
+    },
+    {
+      "name": "CastleFactionEventWinRedDialog",
+      "source": "exports/CastleFactionEventWinRedDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "dd6a7780e65aec9024ec82a306b36a146bc6c741023ab50f51b209c5a1c0e69a"
+    },
+    {
       "name": "CastleFactionInvasionEventDialog",
       "source": "exports/CastleFactionInvasionEventDialog.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "c55bd0fe0b84e6ca12e688f1db314226b7384ae46b33f0d79a2cc5a0efeb3b76"
+    },
+    {
+      "name": "CastleFactionRewardDialog",
+      "source": "exports/CastleFactionRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "b049da27dc911102bfd0001aa2ae754ea90e629c85116dd437054cdc98262e98"
+    },
+    {
+      "name": "CastleFactionRewardDialogProperties",
+      "source": "exports/CastleFactionRewardDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "0bd9f810158c70081b2f663e056f6c0f400714e5f8d2b119c49ec1dfbdf4a3f5"
     },
     {
       "name": "CastleFactionUnitLimitDialog",
@@ -1368,6 +1636,34 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "471ed66ca0bc05840389d74bdbff5d07ff0d20a0d9eb878e736924f4daa58dd4"
+    },
+    {
+      "name": "CastleFusionCompareToolTip",
+      "source": "exports/CastleFusionCompareToolTip.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "d267793a73e8a3f1e63ec0dd11228796d7dc5c8b9cb023bcccb629dc94540e0c"
+    },
+    {
+      "name": "CastleGenericRewardDialogProperties",
+      "source": "exports/CastleGenericRewardDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "0058d3f3330093e0d6825ebdabd8971e6106420c17cc43b92d4e72beb8aaa2c9"
+    },
+    {
+      "name": "CastleGenericRewardsDialog",
+      "source": "exports/CastleGenericRewardsDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "ac9a6af755a9b469fd69a1360cc51f1ef9ac0988166d4ebb8fc809a56bc85d4b"
+    },
+    {
+      "name": "CastleGenericRewardsDialogProperties",
+      "source": "exports/CastleGenericRewardsDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "9488f020eebb3c3cfae4d9329e471c089bfb978ca7514f8172250494771fd4b2"
     },
     {
       "name": "CastleGetTaxDialog",
@@ -1405,6 +1701,13 @@
       "canonicalSha256": "54aa080590a5cab93764ffe745c4825eaa6aa9b2bfca27371d4281ae0ad0944d"
     },
     {
+      "name": "CastleHeroVO",
+      "source": "exports/CastleHeroVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "fc69d5b69b7d0ad74f14a7a052847e4de6ab25271d2edad41c6dcc1b52d4e45d"
+    },
+    {
       "name": "CastleHighscoreEvent",
       "source": "exports/CastleHighscoreEvent.js",
       "bundle": "Game.bundle",
@@ -1417,6 +1720,13 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "30e583664f376395e63baf7c6cb63aea23c52d4937b3b41777c2188517d8fe28"
+    },
+    {
+      "name": "CastleInboxDialogProperties",
+      "source": "exports/CastleInboxDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "3d102cd3cb4e458e01dcc061e869fc8c503ccab965d6b8b44ff5eaecfd62fa75"
     },
     {
       "name": "CastleIngameHelpDialog",
@@ -1459,6 +1769,20 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "2fc88172223ccc5581d8cda684ffaba7f975702d5032a318e21fa5fa211094fa"
+    },
+    {
+      "name": "CastleKongregateNotificationDialog",
+      "source": "exports/CastleKongregateNotificationDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "332d8345097f056300f819e1d359828d14c7050f51edc7bd08e9729dc335d662"
+    },
+    {
+      "name": "CastleKongregateRatingDialog",
+      "source": "exports/CastleKongregateRatingDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "9dc4f0bb488e0bcee2bd8326cff2bd036144caa0fb519f7f6c2b47e574fa5558"
     },
     {
       "name": "CastleLargeYesNoDialog",
@@ -1524,6 +1848,20 @@
       "canonicalSha256": "daef796ff6be3348233cf19294797b0c5e0a59a29a8e68c27516dcda67a4353c"
     },
     {
+      "name": "CastleLuckyPointEventRewardDialog",
+      "source": "exports/CastleLuckyPointEventRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "efdbab1ddc3067bec8499a3c849c07b45a1f1aca77d500d3d0c148f305fc1151"
+    },
+    {
+      "name": "CastleLuckySaleDaysPointEventRewardDialog",
+      "source": "exports/CastleLuckySaleDaysPointEventRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "ce85c33b2badc97b2f9a06253e2c0205af1919403799ca5452694c5426247adf"
+    },
+    {
       "name": "CastleLuckyWheelGuaranteedJackpotDialog",
       "source": "exports/CastleLuckyWheelGuaranteedJackpotDialog.js",
       "bundle": "Game.bundle",
@@ -1538,11 +1876,53 @@
       "canonicalSha256": "c24659cdf956d7ae1cd8ebc9f2bf26e651c9a5af731ea5c9ed8f2acb7a234baa"
     },
     {
+      "name": "CastleMailGiftDialogProperties",
+      "source": "exports/CastleMailGiftDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "2ae36b8d007ee7a7c0a9da9e98e71f99ad694bc44940c3e85dd3c6caeda73d7c"
+    },
+    {
+      "name": "CastleMailSendWithNewsletterDialog",
+      "source": "exports/CastleMailSendWithNewsletterDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "0fa5a210a2201ef7ed71a2e46cf59324d011a89a3133ebfb14385682c796ca68"
+    },
+    {
+      "name": "CastleMailSendWithoutNewsletterDialog",
+      "source": "exports/CastleMailSendWithoutNewsletterDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "9691b058392a47c04d53e4b7bfcef053194f6e889949378f82dc6debd244f8a3"
+    },
+    {
       "name": "CastleMailVerificationAnswerEvent",
       "source": "exports/CastleMailVerificationAnswerEvent.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "b8c13e3cc5aa090cd14595401d720ee9c52f1c2680468cd974270a734802e5bb"
+    },
+    {
+      "name": "CastleMainQuestFinishedDialog",
+      "source": "exports/CastleMainQuestFinishedDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "b39e51cf3aed7b8994157f0af8146866ce264cc6ec0f3e0993af2a4d42fe7fb4"
+    },
+    {
+      "name": "CastleMainQuestFinishedDialogProperties",
+      "source": "exports/CastleMainQuestFinishedDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "e65b394793c585bcc2173c962583b93da7e44cf26e23b6d90ba42e9258375ec9"
+    },
+    {
+      "name": "CastleMapobjectVO",
+      "source": "exports/CastleMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "eb154c3d66ccce8631044ec7df24fb5b1653657df64813d7878ad83713a61c7d"
     },
     {
       "name": "CastleMarketMovmentDialog",
@@ -1594,6 +1974,20 @@
       "canonicalSha256": "ce6ddc7fe2a45a7fb859ec8edd22ab46f6f5410523b1a9111bb2743e39c4d3d1"
     },
     {
+      "name": "CastleMovieClipHelper",
+      "source": "exports/CastleMovieClipHelper.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "b2aa47af38225e17c9ca53cd331d95320a5432f8bc1a3ebc22400297a2203deb"
+    },
+    {
+      "name": "CastleMultiChestDialog",
+      "source": "exports/CastleMultiChestDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "aa1759a85da5d543b426b800041676a51652748b00dc92382376e2d745f81c10"
+    },
+    {
       "name": "CastleMultiInfoPanel",
       "source": "exports/CastleMultiInfoPanel.js",
       "bundle": "Game.bundle",
@@ -1629,13 +2023,6 @@
       "canonicalSha256": "a9d016796af98b711027b79298af45db16d33bfffc54ce4bd874d8513a7d1832"
     },
     {
-      "name": "CastleNewsHubOverlay",
-      "source": "exports/CastleNewsHubOverlay.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "d958faf5d619d45ba898fea27e25bc7283f71ce61704972a262f2448e24f8d15"
-    },
-    {
       "name": "CastleNoConnectionDialog",
       "source": "exports/CastleNoConnectionDialog.js",
       "bundle": "Game.bundle",
@@ -1643,18 +2030,32 @@
       "canonicalSha256": "186edcbe209059b6038b11952547324149ac285d86e51c7a0b1883fa8041a858"
     },
     {
+      "name": "CastleNomadInvasionAllianceCampRewardDialog",
+      "source": "exports/CastleNomadInvasionAllianceCampRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "fbec200ffb40dd5af86901a2d6616b0069f9a4c6383f19c7bd637f3c858fee08"
+    },
+    {
+      "name": "CastleNomadInvasionAllianceCampRewardDialogProperties",
+      "source": "exports/CastleNomadInvasionAllianceCampRewardDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "9393f3991aaf553c19af9c73e9d83a2dffabc486810a56c670d542df5f996563"
+    },
+    {
+      "name": "CastleNomadInvasionEventRewardDialog",
+      "source": "exports/CastleNomadInvasionEventRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "90c02bd95fb1b6ef4ae713c250253efb23c17accb25ece27bb694a3892027e15"
+    },
+    {
       "name": "CastleNoMoneyC1Dialog",
       "source": "exports/CastleNoMoneyC1Dialog.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "a905cd772f70925acfdda68bf54f021fc92079e91259affe569b5590364e988a"
-    },
-    {
-      "name": "CastleNoMoneyC1DialogProperties",
-      "source": "exports/CastleNoMoneyC1DialogProperties.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "0cb136115f672a645e104f5e50a737e77a4421fe8fb9c7513761fd033c76da05"
     },
     {
       "name": "CastleNoMoneyC2Dialog",
@@ -1690,13 +2091,6 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "7b7d32085779e8b7009ce8df408d2100907be7fc6234f9d68d8ff46fab684d43"
-    },
-    {
-      "name": "CastlePanelButton",
-      "source": "exports/CastlePanelButton.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "a6a6f5512699f4b2b0c9cc07294e5fc7592d3e4873f34b90e45cdc2a27bed21e"
     },
     {
       "name": "CastlePaymentRewardSpecialOfferFinishDialog",
@@ -1755,11 +2149,18 @@
       "canonicalSha256": "f41c166640a2203026da5660e97f17756a67d5356099c81a105b1f20866da44a"
     },
     {
-      "name": "CastlePopUpHelper",
-      "source": "exports/CastlePopUpHelper.js",
+      "name": "CastlePOFurysBladeMessageDialog",
+      "source": "exports/CastlePOFurysBladeMessageDialog.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "20adbcf60b36492a940b3728a880e10760d2f1a659b2480c45e37179fe78c2a4"
+      "canonicalSha256": "1044e55d420956c3ac530e7ff65389cb26efa1265a0f5fb071ffebdd041e59fb"
+    },
+    {
+      "name": "CastlePointEventRewardDialog",
+      "source": "exports/CastlePointEventRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "8bf3798d9522e620e6339cd25c5811672d05ae8ddd0d7f02fe3e8b7b64a13f79"
     },
     {
       "name": "CastlePostAttackDialog",
@@ -1853,11 +2254,67 @@
       "canonicalSha256": "c7c24dee22aa8a494acaaecdf76d76fe5bcff77a7f7c356366743eee670fc3e0"
     },
     {
-      "name": "CastlePrivateOfferDialogCreator",
-      "source": "exports/CastlePrivateOfferDialogCreator.js",
+      "name": "CastlePrimeDayPODialog",
+      "source": "exports/CastlePrimeDayPODialog.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "2048b6b563f9f6022cc9e7a461e9d59a5521628755d25750ef241041281d2555"
+      "canonicalSha256": "1b3fbd38cb93ddb42261d8dd23b7a87d5a0eec405aeb1c1ecfed1a12d67a8dff"
+    },
+    {
+      "name": "CastlePrimeDayPOSMSDialog",
+      "source": "exports/CastlePrimeDayPOSMSDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "786de2d2af5fe2401b344117bf3d04386b67ce0f33b2beaa2c919a79b4494fb7"
+    },
+    {
+      "name": "CastlePrimeSaleDialog",
+      "source": "exports/CastlePrimeSaleDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "b1418d8093599194152d2193173399fba0b4d8964a8157a7a7d9086f325e386c"
+    },
+    {
+      "name": "CastlePrivateBestsellerShopDialog",
+      "source": "exports/CastlePrivateBestsellerShopDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "5ac413a0583ec67c8f8000c9c1cb742c02c7e7be9c99cd9a893c1d7d9c32677e"
+    },
+    {
+      "name": "CastlePrivateOfferBrandDialog",
+      "source": "exports/CastlePrivateOfferBrandDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "fbb205776f25635adb6250802110b008b5c4360bda0ecb0e65231d4d11614e9e"
+    },
+    {
+      "name": "CastlePrivateOfferCoinmineDialog",
+      "source": "exports/CastlePrivateOfferCoinmineDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "90c1212023cff21f76efa154fec5638b20aed27c841563150c06cc4cd9251584"
+    },
+    {
+      "name": "CastlePrivateOfferCoinmineDoneDialog",
+      "source": "exports/CastlePrivateOfferCoinmineDoneDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "eed735378bd730882177345103fe8a7475ceb0f797a313041deec856cd805d64"
+    },
+    {
+      "name": "CastlePrivateOfferDecorationDialog",
+      "source": "exports/CastlePrivateOfferDecorationDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "8c3848755cbbf685beea74f39cde3dc3789fec37ea5b3bb88cb565364e18d0d5"
+    },
+    {
+      "name": "CastlePrivateOfferDecorationFinishDialog",
+      "source": "exports/CastlePrivateOfferDecorationFinishDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "f970d67d39a033bdb87f57795975d0ef398497aebc9e0217b708a81f09cd51bd"
     },
     {
       "name": "CastlePrivateOfferDialogProperties",
@@ -1865,6 +2322,55 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "4fc3abf74eba8e9c760f00eb88943a1f3a86d6faaf05ad2bc5ee35de991e6e6e"
+    },
+    {
+      "name": "CastlePrivateOfferPremiumSmsDialog",
+      "source": "exports/CastlePrivateOfferPremiumSmsDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "f5e50197154a9d172e15d1924840b8dc91384dc2c1cfa64b6ea124da6253da0f"
+    },
+    {
+      "name": "CastlePrivateOfferRubymineDialog",
+      "source": "exports/CastlePrivateOfferRubymineDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "b36018f9706c1e89bdc73c9900ef9395195fc9d2dd2e07fa2b91060412879f0a"
+    },
+    {
+      "name": "CastlePrivateOfferRubymineDoneDialog",
+      "source": "exports/CastlePrivateOfferRubymineDoneDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "a00596a462f466740c127251c2261644d03ef874a29b46db8b5bc1c864ef8525"
+    },
+    {
+      "name": "CastlePrivateOfferTimeChallengeDialog",
+      "source": "exports/CastlePrivateOfferTimeChallengeDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "93e72c64c76685e07d7d2bfe278fed2d3c793beb00d0e35ed5e7007d0c0e5c1f"
+    },
+    {
+      "name": "CastlePrivateOfferTimeChallengeFinishDialog",
+      "source": "exports/CastlePrivateOfferTimeChallengeFinishDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "7ca61ded09e4d5675286e2380b44497d313d76dff2e79ac99341da13e9c42926"
+    },
+    {
+      "name": "CastlePrivateOfferTutorialCompletedDialog",
+      "source": "exports/CastlePrivateOfferTutorialCompletedDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "4050208e816273720fcdc74e4eca9ad6070b872dc839d20aee25d2cffbed235a"
+    },
+    {
+      "name": "CastlePrivatePrimeDayOfferDynamicDialog",
+      "source": "exports/CastlePrivatePrimeDayOfferDynamicDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "3362335feb8f175a19c8dee144d0c53c378b1c98b34a2bba0efce93a480281db"
     },
     {
       "name": "CastlePrivatePrimeTimeOfferDialog",
@@ -1902,6 +2408,20 @@
       "canonicalSha256": "23f267f028113a978fe4f94bad59fc250b9cee935a382808c9ced773c028519f"
     },
     {
+      "name": "CastleRandomDungeonWinDialog",
+      "source": "exports/CastleRandomDungeonWinDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "aab7bd7c4a5e1536d198aecb9ca4dbcd813080192b81ebea7281c3ce619fa933"
+    },
+    {
+      "name": "CastleRandomDungeonWinDialogProperties",
+      "source": "exports/CastleRandomDungeonWinDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "48c356b787ccbb4de5e291fd46c11b47258d591abdbb8dfc48a0c54971d15d2e"
+    },
+    {
       "name": "CastleReconnectDialog",
       "source": "exports/CastleReconnectDialog.js",
       "bundle": "Game.bundle",
@@ -1916,11 +2436,32 @@
       "canonicalSha256": "8250ed3b9e1589a82d7d54afa90d6b097477df83ef2ad3506e32c7b55fd1c82d"
     },
     {
+      "name": "CastleRecruitDialogProperties",
+      "source": "exports/CastleRecruitDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "ef193e58948a25ecbb31dd5caa9409397afaec544bee59d5f273b271b8626977"
+    },
+    {
       "name": "CastleRecruitDialogUnits",
       "source": "exports/CastleRecruitDialogUnits.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "a09dd2b959b226f7237a4f1b48665715bca9148af2c67fdca6865cff3ed21f42"
+    },
+    {
+      "name": "CastleRedAllianceAlienInvasionRewardDialogAlliance",
+      "source": "exports/CastleRedAllianceAlienInvasionRewardDialogAlliance.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "9419b97cd1632ce098bc4233fcdc1abb7ce308ddc33fe90e1adcd63dbb53816b"
+    },
+    {
+      "name": "CastleRedAllianceAlienInvasionRewardDialogPlayer",
+      "source": "exports/CastleRedAllianceAlienInvasionRewardDialogPlayer.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "c01be9eda38ac70bbaab63d5810ff18dd12bbb738b1582fda2b4a50ba6d9a9f8"
     },
     {
       "name": "CastleRegisterErrorEvent",
@@ -1972,11 +2513,32 @@
       "canonicalSha256": "b458a32cf74a590a24e1f3dfd92ce47f3a58ec9f97c94de6d953041b4643f0ee"
     },
     {
+      "name": "CastleResearchCompleteDialog",
+      "source": "exports/CastleResearchCompleteDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "42f0a8b681e422f185fbba1eeda577621092e33ebec9bfbc34700311b7c17f7b"
+    },
+    {
+      "name": "CastleResearchCompleteDialogProperties",
+      "source": "exports/CastleResearchCompleteDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "9900ac96d3380205b57ea7e3d7e14bdb79bbc4e662532b94dd0419fc5882684f"
+    },
+    {
       "name": "CastleResourceMerchantEventBuyDialog",
       "source": "exports/CastleResourceMerchantEventBuyDialog.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "9f0a7754519868cb535c1e689a17a45ffc0e2e937b1625b55cda4846d44e4708"
+    },
+    {
+      "name": "CastleResourceMerchantEventDialog",
+      "source": "exports/CastleResourceMerchantEventDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "6ef2d062ebdf105fb17dc1f97cafc967f0619c9aa3f7e4a9879f95d4876159ce"
     },
     {
       "name": "CastleResourceWaitDialog",
@@ -1993,6 +2555,20 @@
       "canonicalSha256": "352288ef5ea8333662148e575e774a878e5e49dd274279b2ac76f9196cf3e380"
     },
     {
+      "name": "CastleSamuraiInvasionAllianceRewardDialog",
+      "source": "exports/CastleSamuraiInvasionAllianceRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "df5d00d5f168783725c90dcc6126dc4b3fb5a0a66d2b57a74afe7ad780894ece"
+    },
+    {
+      "name": "CastleSamuraiInvasionEventRewardDialog",
+      "source": "exports/CastleSamuraiInvasionEventRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "31fbdb337f53ce20ea2e3efe7e2f494e3bb0e0b5419cd4838871d6c1762c54b7"
+    },
+    {
       "name": "CastleSearchAllianceDialog",
       "source": "exports/CastleSearchAllianceDialog.js",
       "bundle": "Game.bundle",
@@ -2007,11 +2583,32 @@
       "canonicalSha256": "06a0487f145cbdb4e41e54967aef1d197ef07ab22c8c296d76aaf599ca05f180"
     },
     {
+      "name": "CastleSeasonBaseRepairDialog",
+      "source": "exports/CastleSeasonBaseRepairDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "235398cc0a2da8ca907fa15a8f3578402e82d995f2024e6193ac5857a706d69c"
+    },
+    {
       "name": "CastleSeasonBaseRepairDialogProperties",
       "source": "exports/CastleSeasonBaseRepairDialogProperties.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "a4f68ac720b43afd86f0a5c6002b5356e22552710bd2fcce375999984d36daa9"
+    },
+    {
+      "name": "CastleSeasonEventFailDialog",
+      "source": "exports/CastleSeasonEventFailDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "73a5fb94852e4c7b920b044a3acd16f5c622234aa1273c8409bba1d09a977a82"
+    },
+    {
+      "name": "CastleSeasonEventFailDialogProperties",
+      "source": "exports/CastleSeasonEventFailDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "454f6a40b840463f55b2428815795c17ff667dc6da831d9eace990a52bd5830b"
     },
     {
       "name": "CastleSeasonEventWinDialog",
@@ -2026,13 +2623,6 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "1fbe3dcc7a4c42586505dcad2e0ac3b4758196bb88ef4912b9e3e75fd8797ec8"
-    },
-    {
-      "name": "CastleSeasonUpgradePortDialog",
-      "source": "exports/CastleSeasonUpgradePortDialog.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "64e6fb8db33db60bb3d06cdcfda578f589795c880355b37f5d685c58e20d9592"
     },
     {
       "name": "CastleServerMessageArrivedEvent",
@@ -2089,6 +2679,20 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "ad092ec1e6c86a786b92aee14e7863c55657f7a76acdbbfb54be694360df41a0"
+    },
+    {
+      "name": "CastleSlotRewardEventDialog",
+      "source": "exports/CastleSlotRewardEventDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "c289590aaf3773641a08bb2eae9f6f9c4cf64049afb95d4a8a48c513b86f8b3f"
+    },
+    {
+      "name": "CastleSlotRewardEventDialogProperties",
+      "source": "exports/CastleSlotRewardEventDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "fd813c451335e6eb35eaaa0bf8095e87a826af7fc0da6672e2e845a9af431209"
     },
     {
       "name": "CastleSoundController",
@@ -2168,6 +2772,13 @@
       "canonicalSha256": "7507b46b58f33792ca5f08a5b175ad6d40164a66514ba9634d1b09301a8b2158"
     },
     {
+      "name": "CastleStandardYesNoDialogProperties",
+      "source": "exports/CastleStandardYesNoDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "076142e9eb9d65e6f2087b3411b07aa85f32ca9e911a99d6b440834912245720"
+    },
+    {
       "name": "CastleStartQuestDialog",
       "source": "exports/CastleStartQuestDialog.js",
       "bundle": "Game.bundle",
@@ -2189,6 +2800,20 @@
       "canonicalSha256": "52720fc214cbf82c4f7c6cc0e45d8b668325e45a4c8d039045f115969b2b57d8"
     },
     {
+      "name": "CastleStormIslandsEventEndDialog",
+      "source": "exports/CastleStormIslandsEventEndDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "a4ce4f4ecad378ca15f2a1261914e2d79c398d26ea0d39f39f6ab8da1ca3dad4"
+    },
+    {
+      "name": "CastleStormIslandsEventEndDialogProperties",
+      "source": "exports/CastleStormIslandsEventEndDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "1d594c95a66961845805b366b5bd9e26230ea6c525ff880d62f0429a8e2c72b0"
+    },
+    {
       "name": "CastleSupportDefenceDialog",
       "source": "exports/CastleSupportDefenceDialog.js",
       "bundle": "Game.bundle",
@@ -2201,6 +2826,20 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "f10397ce070c0e4bcb90858d93308ec1940d4101d96bba9e58850cf3c260a5a7"
+    },
+    {
+      "name": "CastleTempServerEventEndDialog",
+      "source": "exports/CastleTempServerEventEndDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "38cbf87552bad2c79228f9429959ead260e4942b96f58b878784e20a4a0ca356"
+    },
+    {
+      "name": "CastleTempServerWelcomeDialog",
+      "source": "exports/CastleTempServerWelcomeDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "9a51bf8eeaf24361ca84da6fe65c4bf94ac046d72929fcb91a9a1f03034fa4e1"
     },
     {
       "name": "CastleTieredPrimeDayRewardDialog",
@@ -2259,6 +2898,27 @@
       "canonicalSha256": "4a02aeb476b3c97386c9637c5b78d94bed1e091e1ee85047920d7df49cad4b35"
     },
     {
+      "name": "CastleTreasureChestDialog",
+      "source": "exports/CastleTreasureChestDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "45dd876073626b36576ecf742a783b81eac10fda5f2e8a0cac9f152cfb3e6f04"
+    },
+    {
+      "name": "CastleTreasureChestOpenDialog",
+      "source": "exports/CastleTreasureChestOpenDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "4331dd7c2206652546e9cd8f694ba9dd4e7f0f24ecd1b87831c49e343982ff3d"
+    },
+    {
+      "name": "CastleTreasureChestOpenDialogProperties",
+      "source": "exports/CastleTreasureChestOpenDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "b72ddfcba6d0a36bf7e26ee3c3229e0408d337ddd1e05eb0c2da6b2e1f0b42a4"
+    },
+    {
       "name": "CastleTreasureCompleteDialog",
       "source": "exports/CastleTreasureCompleteDialog.js",
       "bundle": "Game.bundle",
@@ -2287,13 +2947,6 @@
       "canonicalSha256": "b6306adba7a52bc4c2a904c0a2994949ede63489da1abd6ef3102a56b065c08b"
     },
     {
-      "name": "CastleTroopSupportData",
-      "source": "exports/CastleTroopSupportData.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "e875f679a028a71960b6bc589adda67551587674a45d0136a8a8becd2dc975ab"
-    },
-    {
       "name": "CastleTroopSupportDialog",
       "source": "exports/CastleTroopSupportDialog.js",
       "bundle": "Game.bundle",
@@ -2306,6 +2959,13 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "dd04f9e89b4f76f4b3244653783b9f7c97841fafa80f79d30bf1e59c980fdf73"
+    },
+    {
+      "name": "CastleTroopSupportVO",
+      "source": "exports/CastleTroopSupportVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "2e306edebc44f50987aceacf1cfcb9b56f88363858dfd8ef5139f53fac52386d"
     },
     {
       "name": "CastleTutorialArrowController",
@@ -2327,6 +2987,20 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "46e343eb935fe491b13a4e7c4bd8a04c66e21c9c50ff098aa13ee1c8aa421436"
+    },
+    {
+      "name": "CastleUnderworldMoraleBoosterRewardDialog",
+      "source": "exports/CastleUnderworldMoraleBoosterRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "0d6c450b60b70d4a99624b981ebcacdb126198f7be9433fedb5e55a2ae72b6a8"
+    },
+    {
+      "name": "CastleUnderworldMoraleBoosterRewardDialogProperties",
+      "source": "exports/CastleUnderworldMoraleBoosterRewardDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "17b32575ff4ad8a9c94c60b5798b90d4edaef2918f7688175edce7deaa60bc5f"
     },
     {
       "name": "CastleUnitCapacityEvent",
@@ -2399,6 +3073,13 @@
       "canonicalSha256": "68580b2fd2029759dca7c032f11d93a14f8896f47b60ddb2f7f301ef770df837"
     },
     {
+      "name": "CastleWhaleChestFinishDialog",
+      "source": "exports/CastleWhaleChestFinishDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "d79ee7a5b4fcc36caacd07c1fe4bcdc576cc36c0cfd8e4168b79444bc9e8116a"
+    },
+    {
       "name": "CastleWodData",
       "source": "exports/CastleWodData.js",
       "bundle": "Game.bundle",
@@ -2434,32 +3115,11 @@
       "canonicalSha256": "14a45fd1d89d029e5d30191d826aa4adf0adfc735545fa15e825691b12b53b53"
     },
     {
-      "name": "ClientBetaHelper",
-      "source": "exports/ClientBetaHelper.js",
+      "name": "ClientCheats",
+      "source": "exports/ClientCheats.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "454c6d40df6e7024f395189313a5d217d91f46a0f6ccf5ae1eba3669531a0c5f"
-    },
-    {
-      "name": "ClientCheatsHelper",
-      "source": "exports/ClientCheatsHelper.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "3b0a96309d0d4e8087a8f5ae849a5832eddbb54031067fd62f094da37504ed80"
-    },
-    {
-      "name": "ClientConstAlliance",
-      "source": "exports/ClientConstAlliance.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "a66a95c927ead043ce3556f28ad4007371cc389678b5445e7dd55d8df1ddf624"
-    },
-    {
-      "name": "ClientConstCastle",
-      "source": "exports/ClientConstCastle.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "3abfd11a1df7f698ea55e41b07c0f0aca19b0f52f60a0100524829a0081571c4"
+      "canonicalSha256": "f47a988bcf7cdfd07e1bddd8e348ca0e38846566f646ea0956857ebd52b66d55"
     },
     {
       "name": "ClientConstCharacter",
@@ -2469,32 +3129,32 @@
       "canonicalSha256": "5dcbca52220fa11a211297605eb7a47146ded25001f749596e44b761f5065f7c"
     },
     {
-      "name": "ClientConstInstanceIDs",
-      "source": "exports/ClientConstInstanceIDs.js",
+      "name": "ClientConstColor",
+      "source": "exports/ClientConstColor.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "3d71746be3e3b1f75cb8340247d8ffa5ec33439240e119c1e1083297d114c4ee"
+      "canonicalSha256": "728832b6ad346b0b76e16131c7bbeea6f1d2f87aa9ca32f4fc7880e3e3664123"
     },
     {
-      "name": "ClientConstLevelRestrictions",
-      "source": "exports/ClientConstLevelRestrictions.js",
+      "name": "ClientConstNPCs",
+      "source": "exports/ClientConstNPCs.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "13af7690de5db5e86a1e5eedf2831db131726930af66aa352fa8459521207237"
+      "canonicalSha256": "3db072f9feff6d0756399c77bd492959788655a851977d3aee0b32e2fcfd616a"
     },
     {
-      "name": "ClientConstReCaptcha",
-      "source": "exports/ClientConstReCaptcha.js",
+      "name": "ClientConstOffer",
+      "source": "exports/ClientConstOffer.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "99097d1a74224f59c25c11b94e2bd5b01798fc2f7777275d4db93bcc7a0e6d82"
+      "canonicalSha256": "5212e208bb701bc5bcb02b8e345aa23c7945a5e9108a735de1cbc6ca0a221d59"
     },
     {
-      "name": "ClientConstTime",
-      "source": "exports/ClientConstTime.js",
+      "name": "ClientConstUtils",
+      "source": "exports/ClientConstUtils.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "980cb8f0ad835de40b84a9219031def292f0ec505ec1bace67ec517ce3ac58da"
+      "canonicalSha256": "34226e3ae6968f856a226cf4fb03a21ed650237846f59215a2f3799f9e433a49"
     },
     {
       "name": "ClientFunnelGameStates",
@@ -2511,6 +3171,13 @@
       "canonicalSha256": "6c9c2797a016ba857bbc9fd2c68aecb4d89c1cd952d0836eac9bb82a088023d1"
     },
     {
+      "name": "ClipColor",
+      "source": "modules/exports/ClipColor.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "bab4752ce361f4285940d6ef10cb1a36328612ec5ffa324a419de6a655b94bc1"
+    },
+    {
       "name": "CollectableEnum",
       "source": "exports/CollectableEnum.js",
       "bundle": "Game.bundle",
@@ -2518,11 +3185,18 @@
       "canonicalSha256": "166690f78af7181d813fc7b1dff2019ebbcbbe59f4532ba8f2d920a0f4e45756"
     },
     {
-      "name": "CollectableHelper",
-      "source": "exports/CollectableHelper.js",
+      "name": "CollectableItemC1VO",
+      "source": "exports/CollectableItemC1VO.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "a0ad895868b9b1ddd7a0a24c869026ebc63df2c3617879a6be2895f57cbdc7f4"
+      "canonicalSha256": "83cfea89ad44dbcdee134f7b8da0b715a5577325fe0814eaac1ef39f5b84c94c"
+    },
+    {
+      "name": "CollectableItemGenericCurrencyVO",
+      "source": "exports/CollectableItemGenericCurrencyVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "c66a32949d0c650acaf735a28d91e27c11d45bba918870ff0602e11c898a59f6"
     },
     {
       "name": "CollectableItemRelicVO",
@@ -2539,11 +3213,39 @@
       "canonicalSha256": "7c95ec73e651a7c658ac63ac2652b19b21939ec8ab0f14c626d02454b04ab2dc"
     },
     {
-      "name": "CollectableManager",
-      "source": "exports/CollectableManager.js",
+      "name": "CollectableListTooltipHelper",
+      "source": "exports/CollectableListTooltipHelper.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "7885e005633ba8dbb07b1d7f240072e2f06dd7738b8899953104f8aad4866662"
+      "canonicalSha256": "0284baf67a46d2b2fc370dcfd63f68be558aedd114d03a64f2efc69e82804866"
+    },
+    {
+      "name": "CollectableParser",
+      "source": "exports/CollectableParser.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "473d41c951d4d81b86d22fcfad08acd5e50486ccef0020edd4a83afc4d3e47d9"
+    },
+    {
+      "name": "CollectablesCosts",
+      "source": "exports/CollectablesCosts.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "543e4a3357a0ef49228b22423f45ec148d248a4ed4520c08a6aa6599726909b5"
+    },
+    {
+      "name": "CollectableSorter",
+      "source": "exports/CollectableSorter.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "f60ed1c72cd393769d081d9022f85202c2775347db0e3acf3701862383b3abf6"
+    },
+    {
+      "name": "CollectableTypeVO",
+      "source": "exports/CollectableTypeVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "d00b388326e10dd643fd06c2f3aaf9c675246608e65f405232cd4a63a4961170"
     },
     {
       "name": "CollectorEventBoosterSelectDialog",
@@ -2558,6 +3260,13 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "55114ef21e0a5b5625ca1721913db0a523d4691bba150dc35ad78f3014ac2b87"
+    },
+    {
+      "name": "ColossusConst",
+      "source": "modules/exports/ColossusConst.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "7e1668373dc1f8fc83cb100f0652953f2d9c4f0a03392f701744d38b976fd5a5"
     },
     {
       "name": "CommandController",
@@ -2602,6 +3311,13 @@
       "canonicalSha256": "059ac55a1eeec2429368c9db0f847a090d53c8c818684a1bc7b4f0d6fa3081c2"
     },
     {
+      "name": "ConstructionItemTooltipHelper",
+      "source": "exports/ConstructionItemTooltipHelper.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "c1ef0333f291ae740a94a21e3ec220a2a5f8ea9a01dd82ef164721d10c730d8a"
+    },
+    {
       "name": "CostHelper",
       "source": "exports/CostHelper.js",
       "bundle": "Game.bundle",
@@ -2623,11 +3339,32 @@
       "canonicalSha256": "e1e3c4ed197739184eae8c740f5b35de38ea6efc618134e6f0008ccc16aaa261"
     },
     {
+      "name": "DaimyoCastleMapObjectVO",
+      "source": "exports/DaimyoCastleMapObjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "3327b1c561c5f01cdaa5325fd06d34b05c0d31d8c74d078fe9c96d7729a643e8"
+    },
+    {
+      "name": "DaimyoTownshipMapObjectVO",
+      "source": "exports/DaimyoTownshipMapObjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "2f2fc891d50ee07e4de1c0d536dedc910baefec476afbd35990d9e6ec5194aa8"
+    },
+    {
       "name": "DarkOkDialog",
       "source": "exports/DarkOkDialog.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "b9da87a7a2bf57b47c60f388139d9014787e8ea2b251c335fe411a8059a4bd01"
+    },
+    {
+      "name": "DateTimeStyle",
+      "source": "modules/exports/DateTimeStyle.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "fc22e02f166b9cc1f364860ed4133aafd4d30bdbc09097018b2382f326c9b629"
     },
     {
       "name": "debug",
@@ -2637,11 +3374,25 @@
       "canonicalSha256": "03604709b0fc9e7c42a45ce29b99332f5524c10c03455fea9c2c0553b1665e6e"
     },
     {
-      "name": "DefencePanelButton",
-      "source": "exports/DefencePanelButton.js",
+      "name": "DecoBuildingToolTipManager",
+      "source": "exports/DecoBuildingToolTipManager.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "ee57226b5ffe2c0c3e92f38979415228525dbb0ec1382c42adb3852f8b413fd9"
+      "canonicalSha256": "7a039a105daa35afff5494075227d83d4e1e26e9cb80130e971aaaf1789fb1d8"
+    },
+    {
+      "name": "DecoStorageEvent",
+      "source": "exports/DecoStorageEvent.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "25c43b0ead91c178910c69dc21369cee75addf066364765f7224553eff93b38f"
+    },
+    {
+      "name": "DefenseConst",
+      "source": "modules/exports/DefenseConst.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "3cbefa1eaa28e63ba6deadc0d579a67cabd47b2904caf5b001f30ee4f6231f54"
     },
     {
       "name": "DictionaryUtil",
@@ -2651,6 +3402,20 @@
       "canonicalSha256": "5acccdb9ba0dfe43311949be96a2aeb9835b6d56581a0d7c27df96842dbcbdb8"
     },
     {
+      "name": "DonationEventEndDialog",
+      "source": "exports/DonationEventEndDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "3ad90ccd2e8ab343b9c74653fa059540926357e7cca88f1049d727c8fc72bda7"
+    },
+    {
+      "name": "DonationEventEndDialogProperties",
+      "source": "exports/DonationEventEndDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "863aa9e2d9ea0d5b424c99b5a590650558d6f36cef01f07a7c6e8e17eb7035dc"
+    },
+    {
       "name": "DonationEventTrackingEvent",
       "source": "exports/DonationEventTrackingEvent.js",
       "bundle": "Game.bundle",
@@ -2658,11 +3423,95 @@
       "canonicalSha256": "fc8df068aa1aca5d29ed54d0227416b14bc53da985457a78108e0bbc6de75b18"
     },
     {
+      "name": "DummyMapobjectVO",
+      "source": "exports/DummyMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "7dd40741dab7400cfbdaea221798013af8e710db71793241b39127b08dc5f7c1"
+    },
+    {
+      "name": "DungeonConst",
+      "source": "modules/exports/DungeonConst.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "45072c4c6f45c2efde1cf470ea0244c2c81555b8750f50e7df93f6a0525a557b"
+    },
+    {
+      "name": "DungeonIsleMapobjectVO",
+      "source": "exports/DungeonIsleMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "ad5455674f5de53b904795a84bdb70f82434576ececd70487b7fb77daba8d0a4"
+    },
+    {
+      "name": "DungeonMapobjectVO",
+      "source": "exports/DungeonMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "9c9efaf24d2b59071411d1a9192fc98293e0cf6b4a8778c238d8d8fc128dda61"
+    },
+    {
+      "name": "DuplicatedEmailPopupDialog",
+      "source": "exports/DuplicatedEmailPopupDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "1e662db787ad99a30c0dff2247883fcb99c13aeaf1476d13b262070da35e30af"
+    },
+    {
+      "name": "EffectTypeEnum",
+      "source": "exports/EffectTypeEnum.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "59f77f2bd9164ca56287112c1e2dcae0a3b734ae9e398bf77afbf64381e960d6"
+    },
+    {
+      "name": "EffectVO",
+      "source": "exports/EffectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "624d65ecfa0611c26a6743acd07216f87e9780b8213f3a117366a3bd1a8a5694"
+    },
+    {
       "name": "EnvGlobalsHandler",
       "source": "modules/exports/EnvGlobalsHandler.js",
       "bundle": "ggs.dll",
       "confidence": "verified-dll-id-and-member",
       "canonicalSha256": "e594344391319b4d8725883c0c9c2dd675e2f6bad3d4b56a3f0ec8f7dda221b3"
+    },
+    {
+      "name": "EnvironmentProvider",
+      "source": "modules/exports/EnvironmentProvider.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "8a387f03901ea91215fe2cf6aefa4b3aca40366c92b9670a236b88d48c20cf40"
+    },
+    {
+      "name": "EquipmentConst",
+      "source": "modules/exports/EquipmentConst.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "cd9374771ab1cd4b1d068cd9b4e8649c0b357eefa6e189fea9a9c217487f149a"
+    },
+    {
+      "name": "EquipmentExpiredDialog",
+      "source": "exports/EquipmentExpiredDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "48e9e623c9da173cbd0f8bd8a9ec8664135b799e4c8a49492a76aece027cae75"
+    },
+    {
+      "name": "EquipmentExpiredDialogProperties",
+      "source": "exports/EquipmentExpiredDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "76cc8e4418e64a915cf9307e4adae9aa324ed5159ce4fe8e86a818c3fbc28166"
+    },
+    {
+      "name": "EquipmentIconHelper",
+      "source": "exports/EquipmentIconHelper.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "ae125b7e4fce35a6e8b1fc2a087bafe2952afcf8daf376e7cc6d4f42e64bb58a"
     },
     {
       "name": "error",
@@ -2686,11 +3535,53 @@
       "canonicalSha256": "816945b65830a77c39f6272d8d54296829381d1b736e909770bd475f49c9a9be"
     },
     {
+      "name": "EventCampMapobjectVO",
+      "source": "exports/EventCampMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "68092730366c6c5ddc137031ad7775bf21b3a5b76128be1da98e27730665f50f"
+    },
+    {
       "name": "EventConst",
       "source": "modules/exports/EventConst.js",
       "bundle": "ggs.dll",
       "confidence": "verified-dll-id-and-member",
       "canonicalSha256": "f35b73d2e8de0885eca6d760a900ac0fe42113d487336c5921a726e3a6eba96f"
+    },
+    {
+      "name": "EventdungeonMapobjectVO",
+      "source": "exports/EventdungeonMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "aa879876eaacb5bba5480ac94a80a87e8976208bb52855c66a9f32ae11a98806"
+    },
+    {
+      "name": "EventStarterAnnouncementDialog",
+      "source": "exports/EventStarterAnnouncementDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "b5c5acc046715d8e5c30abaf9d2d3dcd720a46fd49a6d03690840719b9b51e6d"
+    },
+    {
+      "name": "EventStarterAnnouncementDialogProperties",
+      "source": "exports/EventStarterAnnouncementDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "4782b20b9338bf3b5a36d71978ef7b794eeee200c847d296db3065a3d07e0d36"
+    },
+    {
+      "name": "ExtendedGenericRewardDialog",
+      "source": "exports/ExtendedGenericRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "e32def4bd58c6359b713335393d769c44aea9e0c7e3e1ccebd6c95f3b32a72b2"
+    },
+    {
+      "name": "ExtendedGenericRewardDialogProperties",
+      "source": "exports/ExtendedGenericRewardDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "0e0600ed48a75bfed98238698deda5c308bb59ef89a94ad5c5076f9adfef73ae"
     },
     {
       "name": "ExternalInterface",
@@ -2721,6 +3612,20 @@
       "canonicalSha256": "9c85396e83c94d541bc719a8ce4d38c9a9430d9f58a3960613b3182674279f3e"
     },
     {
+      "name": "FactionCampMapobjectVO",
+      "source": "exports/FactionCampMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "3ec5d6bca26714ba3603278acbfe7aeb2a8319d13b771c942345ee517b010318"
+    },
+    {
+      "name": "FactionCapitalMapobjectVO",
+      "source": "exports/FactionCapitalMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "142750ac15e6ad3a97f6db3e51446ce12818bca41c4d4c81ef8ff5e944c0c9ca"
+    },
+    {
       "name": "FactionConst",
       "source": "modules/exports/FactionConst.js",
       "bundle": "ggs.dll",
@@ -2728,18 +3633,32 @@
       "canonicalSha256": "34a79cebba96b63b97ae6ab622f16df2a759222d8aaba6b52746b7fdf33332a0"
     },
     {
-      "name": "FactionInvasionDialogProperties",
-      "source": "exports/FactionInvasionDialogProperties.js",
+      "name": "FactionInvasionCampMapObjectVO",
+      "source": "exports/FactionInvasionCampMapObjectVO.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "1829f3274a11aac8382b7730dd48f00abc16e17b1fe6196a5969614cb7c95a43"
+      "canonicalSha256": "29e37af7b12bb182c9c33e4466094525549665bf57d786d09088d107aca5356f"
     },
     {
-      "name": "FlashBlockHelper",
-      "source": "exports/FlashBlockHelper.js",
+      "name": "FactionTowerMapobjectVO",
+      "source": "exports/FactionTowerMapobjectVO.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "169e852e30422ce2b714aada75416bd7fcb9a4672d8ecb21b7358902273709e1"
+      "canonicalSha256": "cce4bc480d1e0922e7f612130d45fc7fd4f233f0a4705870bc998a53b484c483"
+    },
+    {
+      "name": "FactionVillageMapobjectVO",
+      "source": "exports/FactionVillageMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "98700d431de5a4be3c00af4d789e9534458d6b2536adf6f268861d5333364701"
+    },
+    {
+      "name": "FarhatBuildingSpawnController",
+      "source": "exports/FarhatBuildingSpawnController.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "a4611703a29224e6c9016e05637db6aca60580f129a9a8383eeaa7cfa1b4d9d5"
     },
     {
       "name": "GachaEvent",
@@ -2747,6 +3666,27 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "2bb4d48581ad2db9d2b80e2734eb5ac60be958cd9ead529e73d2eda0ee0ad29a"
+    },
+    {
+      "name": "GachaEventEndDialog",
+      "source": "exports/GachaEventEndDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "f7aa25ad529f87c85ad149cfbdf3676b57b96e7d0a9793fdc3524a6c8fe7129b"
+    },
+    {
+      "name": "GachaEventEndDialogProperties",
+      "source": "exports/GachaEventEndDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "d6cf3f363aa55b241b1481d733d7b299b59fea4e2c1cec6fd640a6d1cbafe57d"
+    },
+    {
+      "name": "GachaMilestoneTooltipHelper",
+      "source": "exports/GachaMilestoneTooltipHelper.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "07579dcc97bb8bda2fd05004416b55555341aef4b8167e6e224591749e1faa32"
     },
     {
       "name": "GameSightPayloadVO",
@@ -2761,6 +3701,27 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "90acc39f6cab72b5e3d4e867b3266342afc4afe640b849db570c94404c58fff2"
+    },
+    {
+      "name": "GeneralsSkillTooltipHelper",
+      "source": "exports/GeneralsSkillTooltipHelper.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "87505d9070d56797fd63e1bc026fe69d2458bfa958410fce12f1800dc1dc47db"
+    },
+    {
+      "name": "GenericRewardDialog",
+      "source": "exports/GenericRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "d63c642cf359492703c5345f4e629d730dcc9b0b745dc4a32764adc0852639b0"
+    },
+    {
+      "name": "GenericRewardDialogProperties",
+      "source": "exports/GenericRewardDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "741d197dacf36fc7d287d2ef116b5492ef84f316cdb26e103ddbdbcef0b5621a"
     },
     {
       "name": "GenericTextIds",
@@ -2805,11 +3766,11 @@
       "canonicalSha256": "f166b4b262c68be1e22ad1ff43e283377b5c2bee7760357c754affe09f17a9b1"
     },
     {
-      "name": "GlobalServerPreviousRunInfoVO",
-      "source": "exports/GlobalServerPreviousRunInfoVO.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "30f02e898ee2f851849c79e712a24f7d245ff5006da80592fe7a9d4f44217182"
+      "name": "GoodgamePartners",
+      "source": "modules/exports/GoodgamePartners__webpack_29__7d9b7b09.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "d345156c0198de933ff92fceb98625abad9bdbd5155e46bfcc09bd7d38db722f"
     },
     {
       "name": "GZPTrackingController",
@@ -2847,13 +3808,6 @@
       "canonicalSha256": "aa2f5cb7a802a75f8e69180f213c85b81f3608b77e4cb4fb805a331cb3650c2a"
     },
     {
-      "name": "IngameClientCommands",
-      "source": "exports/IngameClientCommands.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "f8e28abfe71bb2de223a7015802e671b31c306e371108988cc9543f9d12d0c43"
-    },
-    {
       "name": "instanceOfClass",
       "source": "modules/exports/instanceOfClass.js",
       "bundle": "ggs.dll",
@@ -2868,18 +3822,18 @@
       "canonicalSha256": "fe2698b97c156bb9ca24ed78cec6b0f1094210257bdb352f765920a649112274"
     },
     {
-      "name": "Iso",
-      "source": "exports/Iso.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "41f10a4bc5072c5c468b7416d0fe23d3ce10199433e12eaaae380071965cabf7"
-    },
-    {
       "name": "IsoConst",
       "source": "exports/IsoConst.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "8ffe40c65f02130bb03dd0b429439620e27b4fa07c515efc99a5a9adcf0ad7b4"
+    },
+    {
+      "name": "IsoController",
+      "source": "exports/IsoController.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "363e46be1db7f5d8418a97e270a5b4824a52ea3c2d00230c3903b40ae9915abb"
     },
     {
       "name": "IsoEvent",
@@ -2903,6 +3857,13 @@
       "canonicalSha256": "b6cfe3d827f50f1051b83c6549d7810413afff8daf67b605f5e46b49b2b8010e"
     },
     {
+      "name": "IsoObjectEnum",
+      "source": "exports/IsoObjectEnum.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "e7693de5477c26c524e207ccc5c59b09af895de387491676b2ee8e39b7e83d8e"
+    },
+    {
       "name": "IsoObjectGroupEnum",
       "source": "exports/IsoObjectGroupEnum.js",
       "bundle": "Game.bundle",
@@ -2917,6 +3878,20 @@
       "canonicalSha256": "0b9caf8dc1071c6596b4e7b2887eeea16b066ca064a0d55811b507f34c48a867"
     },
     {
+      "name": "IsoViewRenderer",
+      "source": "exports/IsoViewRenderer.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "0e0664f625a034d14d3e88861afa94cbd525175665cea12b01daeab42a373dff"
+    },
+    {
+      "name": "isUndefined",
+      "source": "modules/exports/isUndefined.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "f75103112c11f7dc3eb5ba4358f7e817d68fe4ad1ecd974b9a10123c427e669a"
+    },
+    {
       "name": "JavascriptCallOnRegisterCompleteFactory",
       "source": "modules/exports/JavascriptCallOnRegisterCompleteFactory.js",
       "bundle": "ggs.dll",
@@ -2924,11 +3899,46 @@
       "canonicalSha256": "774ef411812c1011a08d7f4306630055ae0b93c29ba158ab0c1f7db2b472aa7d"
     },
     {
+      "name": "KingdomCastleMapobjectVO",
+      "source": "exports/KingdomCastleMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "c5e85cc92fe475d0147ba73942602dfdd36dde8a31655254c3191969b3ccd39d"
+    },
+    {
+      "name": "KingdomEnum",
+      "source": "exports/KingdomEnum.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "4c7bac6ee504bebcbca3c13550ed6243f1a0f5b19cf274be713ed80ae87aa6ba"
+    },
+    {
+      "name": "KingstowerMapobjectVO",
+      "source": "exports/KingstowerMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "abe9b3170d28d263c3bc83eac45ccac153483ee02e9bdec62a5fa48edffe2d7d"
+    },
+    {
+      "name": "LaboratoryMapobjectVO",
+      "source": "exports/LaboratoryMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "cd239091d5834755241fffd8287d24cfd111e8572f6c36e62cfa702eee00c97b"
+    },
+    {
       "name": "LeaderBoardEvent",
       "source": "exports/LeaderBoardEvent.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "b77e7d2ffe73a2c423d74c5a03dcaa4534849f79aa79bdb091586af1189e8433"
+    },
+    {
+      "name": "LegendSkillIconHelper",
+      "source": "exports/LegendSkillIconHelper.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "456aaf2148ca5736d13db5ed9367bb9d1fe226ebaa53b41015030712389f380c"
     },
     {
       "name": "LinkReceivedEvent",
@@ -2952,11 +3962,18 @@
       "canonicalSha256": "f3c50458b9150fc5f71c1d194c2e34dccc1ad1507b766a313d4447fc2f78c9bc"
     },
     {
-      "name": "LongTermPointEventClientConst",
-      "source": "exports/LongTermPointEventClientConst.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "8a69c0e03764993e2b249678e0878c9886672406a57237e4b2c439d63c6ccc55"
+      "name": "LocalizedNumberVO",
+      "source": "modules/exports/LocalizedNumberVO.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "f9d73e6617245ea5acf5a36dd7d40b1d90f069e6a42d173d366567b88e02c3ed"
+    },
+    {
+      "name": "LocalizedTextVO",
+      "source": "modules/exports/LocalizedTextVO.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "a20826a751542e7a45241a4cd74f29c4e19ea88bd37493343e0c91d4fdb71ce2"
     },
     {
       "name": "LongTermPointEventDialog",
@@ -2964,6 +3981,13 @@
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "755e438be12c53987cd4fbc3145ba8a2f5fdff2f51d96826276bd6bbaf93c800"
+    },
+    {
+      "name": "LongTermPointEventHardModeDialog",
+      "source": "exports/LongTermPointEventHardModeDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "62e60c555f56673ea6daf461fc814a9c0abae7c5ccc832c1db9fa1c3cb325d04"
     },
     {
       "name": "LongTermPointEventHighScoreDialog",
@@ -2987,18 +4011,144 @@
       "canonicalSha256": "2b185338a48264fe9c5d962dca747df80750e9fe60a114acfb325557da404089"
     },
     {
-      "name": "LordEffectHelper",
-      "source": "exports/LordEffectHelper.js",
+      "name": "LongTermPointEventRewardDialog",
+      "source": "exports/LongTermPointEventRewardDialog.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "bdec6f6536661c0700880d037aeb1ae6afc1e6811fde4514a8dfebe70f52a8f9"
+      "canonicalSha256": "7947c3b492c8b5a4a8427c65a47c3032df533fc9705df0627aed8b0b08d3a6ed"
     },
     {
-      "name": "MessagePanelButton",
-      "source": "exports/MessagePanelButton.js",
+      "name": "LordEffectFilterStrategyAttack",
+      "source": "exports/LordEffectFilterStrategyAttack.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "7a5f636f022b6fd020bded01dfb4fdbb0197fc226cfa6440642106af398519c0"
+      "canonicalSha256": "507b86729655fc55f7535d09d2704bb3ff3e5d96f05295f4bdb028f6f296a36b"
+    },
+    {
+      "name": "LordEffectFilterStrategyAttackPVE",
+      "source": "exports/LordEffectFilterStrategyAttackPVE.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "725d0dd9cbaec613fb56ad2f3a9dba1fe1bb7747a82287e9545d70576a1ddc68"
+    },
+    {
+      "name": "LordEffectFilterStrategyDefencePVE",
+      "source": "exports/LordEffectFilterStrategyDefencePVE.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "2b74d7ff0c2b946a3580c04f72a3fde906a6dced657e6e96cc24fb954686b067"
+    },
+    {
+      "name": "LordEffectFilterStrategyDefencePVP",
+      "source": "exports/LordEffectFilterStrategyDefencePVP.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "0a32fc1bd170654353100a18c1caf2b8c924ef6175ffbd86211c0bd14473e4e9"
+    },
+    {
+      "name": "LordEffectFilterStrategyFullActive",
+      "source": "exports/LordEffectFilterStrategyFullActive.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "396831b2637b72c23480480a2b1397ef18e68a256f4d60a80e13ece88296aed9"
+    },
+    {
+      "name": "LordEffectFilterStrategyFullPassive",
+      "source": "exports/LordEffectFilterStrategyFullPassive.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "e57f0d12cbb172ef5ed249fd6488e274f068b2bffd6b7c90e46e7854741c8b1a"
+    },
+    {
+      "name": "LordEffectFilterStrategyStation",
+      "source": "exports/LordEffectFilterStrategyStation.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "d7833664e24dc825e64de6b53796e9f6cfa660448420d66d7a028fd58a608150"
+    },
+    {
+      "name": "LordEffectFilterStrategySupport",
+      "source": "exports/LordEffectFilterStrategySupport.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "02d11b4dd4c10b2da7948f35a42862b600cec86faade759af60f6349ad54cc38"
+    },
+    {
+      "name": "LordEffectGroupItem",
+      "source": "exports/LordEffectGroupItem.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "da13e994c6ac8da90623f2ceceb95c969c8ce46fcf0edc71a6bfe90532100114"
+    },
+    {
+      "name": "LordEffectTooltip",
+      "source": "exports/LordEffectTooltip.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "b75e7de2520d0705bd3bd6c6719bd3a284f6d0c345e572057d36bd867fbd854a"
+    },
+    {
+      "name": "MaterialBagOpenedDialog",
+      "source": "exports/MaterialBagOpenedDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "bfb6a259311a6a5629dcf332d8eafb4919dd84f2f92da37a2fd307cc85927256"
+    },
+    {
+      "name": "MaterialBagOpenedDialogProperties",
+      "source": "exports/MaterialBagOpenedDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "b761ae73371c84b8b9ef87dfc5a095f4e7def6a6f8b0139a488fa850e408d486"
+    },
+    {
+      "name": "MaterialBagTooltipHelper",
+      "source": "exports/MaterialBagTooltipHelper.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "51e56ed95a036e4cbe1c979158e99387a0fb5e37f10ff5b79506186f386a6f82"
+    },
+    {
+      "name": "MathBase",
+      "source": "modules/exports/MathBase.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "a64cb93519918350fd35c549c1165a034c4cd8eaf4aa212cfa0530deb6bd049e"
+    },
+    {
+      "name": "MetropolMapobjectVO",
+      "source": "exports/MetropolMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "3347bcf7f612b9a3a345e8331f6170af2d25af48508a89902180544209c9e0c4"
+    },
+    {
+      "name": "MightPointRewardDialog",
+      "source": "exports/MightPointRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "d3c31e5d63f35e914fef11c9150fb304bb1ec71c1b683195ca89af4aaceaa0e9"
+    },
+    {
+      "name": "MightPointRewardProperties",
+      "source": "exports/MightPointRewardProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "eaae2702777370d8d3b160c417cfb322b356786fe094b37d322b7ff74e747c5a"
+    },
+    {
+      "name": "ModernGenericRewardDialog",
+      "source": "exports/ModernGenericRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "0a1e095d7eb5f7aba6550cb459d29dd2eaa4a07c78c934921b72cd2485c5f785"
+    },
+    {
+      "name": "ModernGenericRewardDialogProperties",
+      "source": "exports/ModernGenericRewardDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "b260ce5ad578a22a4e57d3acf3225930be421bd8d2c8ce0ac1cae004479a4da0"
     },
     {
       "name": "ModernPackageShopResourceTipDialog",
@@ -3029,11 +4179,53 @@
       "canonicalSha256": "4204854d074b527dcfb469262d3cb32a2f65b22fd8602f34620b949dff38f09d"
     },
     {
+      "name": "ModernWelcomebackDialogBig",
+      "source": "exports/ModernWelcomebackDialogBig.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "b00935a37391cb08023ee207b86506b23693d4e3f7c0effaac5fe881f4416152"
+    },
+    {
+      "name": "ModernWelcomebackDialogProperties",
+      "source": "exports/ModernWelcomebackDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "0fd7424256623088c65fa87e623f515a0012e7f5bfe094ded4e5d801f04a2b00"
+    },
+    {
+      "name": "ModernWelcomebackDialogSmall",
+      "source": "exports/ModernWelcomebackDialogSmall.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "5442883fd6243d4cc87e766d6cd919ea7055c32df8ecb5791dfb0f0355dc0fc9"
+    },
+    {
       "name": "ModernYesNoDialog",
       "source": "exports/ModernYesNoDialog.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "08beabf7dc193dbc3f7816dd056764b919cf393fd89d02481f1170435e39e742"
+    },
+    {
+      "name": "MonumentMapobjectVO",
+      "source": "exports/MonumentMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "17b6d41bdf7d1c3fec9008177a353424771a98dc633abd34cbbfeff16f4b40a4"
+    },
+    {
+      "name": "MultiEventRewardsDialog",
+      "source": "exports/MultiEventRewardsDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "a8c37d6a67beda3a1f82678b1a423c15b9c34b62c1144cec7e9bbc3aab3e8079"
+    },
+    {
+      "name": "MultiEventRewardsProperties",
+      "source": "exports/MultiEventRewardsProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "906c3409927fd8a285d1fb4f408b0569308a8d7e7ce5af36a0b7b473e17a5752"
     },
     {
       "name": "MysteryBoxOpeningDialog",
@@ -3071,11 +4263,39 @@
       "canonicalSha256": "cdd2e8187339c680f4316cdb1de668252ead1930d8cafbed5ad335b20b324a25"
     },
     {
+      "name": "NomadCampMapObjectVO",
+      "source": "exports/NomadCampMapObjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "5db4b96cd5f3b3885184b0da7a8f73943912cdd80160014ce5c3667e12005ea7"
+    },
+    {
+      "name": "NomadKhanCampMapObjectVO",
+      "source": "exports/NomadKhanCampMapObjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "75819afe9b6ad795445daa63a9c265647798bdfe9d59a3b11ac575f2f8b8feee"
+    },
+    {
+      "name": "numericSort",
+      "source": "exports/numericSort.js",
+      "bundle": "Game.bundle",
+      "confidence": "verified-sibling-export",
+      "canonicalSha256": "a19b4af02bd33c9834a783411397cc526eec5cc9819e55e458ad00e1ec1d71b5"
+    },
+    {
       "name": "OpenDialogWithAdditionalExternalAssetsCommand",
       "source": "exports/OpenDialogWithAdditionalExternalAssetsCommand.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "c47f50d5eaf8a42395d7207e5ea8a48c0236513e808a096531b3816d7f3a0181"
+    },
+    {
+      "name": "OpenFactionEventMainDialogCommand",
+      "source": "exports/OpenFactionEventMainDialogCommand.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "2c1074cd34576c6cd2ce0c1900ca376db8270909ce0081dcaa084270073f6701"
     },
     {
       "name": "OpenGateEvent",
@@ -3099,6 +4319,13 @@
       "canonicalSha256": "2a7a05e1cd8b8b2f16fde3b66447d6a19267c05fa41a54218054214adeee0162"
     },
     {
+      "name": "OutpostMapobjectVO",
+      "source": "exports/OutpostMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "2636ac7127bd91b39b62235a8c475b82b9b8bdb12cb7ed045a697ee553eddcd2"
+    },
+    {
       "name": "PackageConst",
       "source": "modules/exports/PackageConst.js",
       "bundle": "ggs.dll",
@@ -3113,6 +4340,27 @@
       "canonicalSha256": "c64cdb800cecc6c42cc56bf003db0806144e103f72ae50723f8e92ea32105c90"
     },
     {
+      "name": "PlaceholderMapobjectVO",
+      "source": "exports/PlaceholderMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "f78eb473322fab0a8e3bd71c3e25c82c25d6167f626b8eb9f0f8f2cda4653fc7"
+    },
+    {
+      "name": "PlaceholderToolTip",
+      "source": "exports/PlaceholderToolTip.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "7dafa6a13f481bdd883cb69820b6da8ce6002815f30fa9094b668fce2965e350"
+    },
+    {
+      "name": "PlagueareaMapobjectVO",
+      "source": "exports/PlagueareaMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "db6805dc50511a0669a251112d5d824c756696b1680838d9efab654055b5b001"
+    },
+    {
       "name": "PlayerConst",
       "source": "modules/exports/PlayerConst.js",
       "bundle": "ggs.dll",
@@ -3120,11 +4368,25 @@
       "canonicalSha256": "181040b21ab1a57615f485b293323c09bf20b4aac39b1211c3a52f5e7901feea"
     },
     {
+      "name": "PlayerHelper",
+      "source": "exports/PlayerHelper.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "5c63d78b592dabe8b1886d572b2d6b4067f2ed9c987a1ceb5e9b73bbf2576f05"
+    },
+    {
       "name": "PlayerPerformanceVO",
       "source": "exports/PlayerPerformanceVO.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "3006c2fe361ebeeff93b75d213562ee51d7436ac4b3712b8dccf8da8c917ead6"
+    },
+    {
+      "name": "PopupConst",
+      "source": "modules/exports/PopupConst.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "4d0b70203042b16c20725dc79a20f9b69d6799488103923e2cda02157a5c4140"
     },
     {
       "name": "PostAttackSelectBoosterDialogProperties",
@@ -3155,11 +4417,32 @@
       "canonicalSha256": "301b0a835ff8fb1c6f8dd120afd2e195c0c16a452058b442ba940d997ffe5de7"
     },
     {
-      "name": "RecruitPanelButton",
-      "source": "exports/RecruitPanelButton.js",
+      "name": "PrivateOfferStateEnum",
+      "source": "exports/PrivateOfferStateEnum.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "61714cbc4b1c430171fa13663e71deb8b6b25884b12347872b2657a5766b2b24"
+      "canonicalSha256": "44fc7e7de2dfc8e3f54d45719df3bb38876378dbf59b1c473371f0e95bd0d5f5"
+    },
+    {
+      "name": "QuestMapTooltipHelper",
+      "source": "exports/QuestMapTooltipHelper.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "354b77e2322542a329e2d0a96a2acfec3326e4d54dfc51e335d9d5a1e0c09720"
+    },
+    {
+      "name": "RedAlienInvasionMapobjectVO",
+      "source": "exports/RedAlienInvasionMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "3298111cf991ce95efb052c20f0b5535f32c24672dbfde6071780e578f0e343f"
+    },
+    {
+      "name": "RelicEquipmentVO",
+      "source": "exports/RelicEquipmentVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "0e74cb93379559f2f689bfdee8b437b69e60a341dde82a0c3df41f0f27d6f887"
     },
     {
       "name": "renderScheduler",
@@ -3169,11 +4452,32 @@
       "canonicalSha256": "ff9c0e7f65261d474ebac99e81d2b335aa61c99910e16fda2d271b0f37a48727"
     },
     {
+      "name": "ResourceIsleMapobjectVO",
+      "source": "exports/ResourceIsleMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "219eadc74e6b734d23b9528a645e5107bcb4f482a999331c0911c09af06eb767"
+    },
+    {
+      "name": "ResourcePanelToolTipManager",
+      "source": "exports/ResourcePanelToolTipManager.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "104bc98e49e928594b5157eb9534dccc463402fbef199f56c77a120521563609"
+    },
+    {
       "name": "RubyWishingWellDialog",
       "source": "exports/RubyWishingWellDialog.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "f08780507ea7667c1cc0b0e765141be104f8a49c543863da5814b4dcde780ad5"
+    },
+    {
+      "name": "SamuraiCampMapObjectVO",
+      "source": "exports/SamuraiCampMapObjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "19c0f7ac4f8d48a35b89806cf230e29ab1688745e587fea25d88fd1b6fd40fed"
     },
     {
       "name": "SamuraiDaimyoBoosterSelectDialog",
@@ -3183,6 +4487,13 @@
       "canonicalSha256": "9b9f21d8057e5ebe138fb57b2371e76beeb314f0118aac926cbb7818cb5b6ee2"
     },
     {
+      "name": "SamuraiEventEndDialog",
+      "source": "exports/SamuraiEventEndDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "983d4b65783774a224c49f111a9bb26e224c551b40be0c11739ea809d8a250b6"
+    },
+    {
       "name": "SearchListAllianceItemVO",
       "source": "exports/SearchListAllianceItemVO.js",
       "bundle": "Game.bundle",
@@ -3190,11 +4501,74 @@
       "canonicalSha256": "c1c5145477710aa6bc458f0a7b0126ade9351b546cb9eac095eac14bea453018"
     },
     {
+      "name": "SeasonConst",
+      "source": "modules/exports/SeasonConst.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "dd77c10d91191684742f9255196849a2391ba16ccb883e22a21083fa85f104ad"
+    },
+    {
+      "name": "SeasonLeagueDailyRewardDialog",
+      "source": "exports/SeasonLeagueDailyRewardDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "51aac50e5e232a455c51f235985033c9b88098f2dcda894a66fe8bda00caf99f"
+    },
+    {
+      "name": "SeasonLeagueDailyRewardDialogProperties",
+      "source": "exports/SeasonLeagueDailyRewardDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "f8fee7b9e57f45e01650ef9a46f192c8f1ee07483707e8ca31b003cc898f729d"
+    },
+    {
+      "name": "SeasonLeagueEndDialog",
+      "source": "exports/SeasonLeagueEndDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "58807fcd42b5d8ce7beac2efc23c9c984586d0e89969e966a21038f35d0c13f6"
+    },
+    {
+      "name": "SeasonLeagueEndDialogProperties",
+      "source": "exports/SeasonLeagueEndDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "abead7d8b03468dbd6c78c22cc76dcb62991091c4bf2ce5a8423831079a365a5"
+    },
+    {
       "name": "SeasonLeagueEvent",
       "source": "exports/SeasonLeagueEvent.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
       "canonicalSha256": "dd95c7ca40673ed9420740e5801478d2a3d882cb73ee5fb35be2dac7f6d52cef"
+    },
+    {
+      "name": "SeasonLeaguePassGained",
+      "source": "exports/SeasonLeaguePassGained.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "4f80e54c9339f68bddbdb6b21ef7517051140208bc4d2e705ea1c1c15c746e64"
+    },
+    {
+      "name": "SeasonLeaguePromotionDialog",
+      "source": "exports/SeasonLeaguePromotionDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "b926c7ed3224cbedcf13282d513196cc4fd94632e46f8483dc04d742590d1e58"
+    },
+    {
+      "name": "SeasonLeaguePromotionDialogProperties",
+      "source": "exports/SeasonLeaguePromotionDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "70234bc08569caa20f02513397ccdb2c31c9bda3010f9b181c72017e8a009ecc"
+    },
+    {
+      "name": "SendMarkedBuildingsInStorage",
+      "source": "exports/SendMarkedBuildingsInStorage.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "a898b455848bcdb069a0f1705bc4bcc9e868aa178e5c86d37888eb4dc4746d33"
     },
     {
       "name": "ServerErrorVO",
@@ -3211,11 +4585,25 @@
       "canonicalSha256": "b4fc4b4f69aac8f5c55575b83120e992cc3fabe85b3460bf04ca693b7c56aeed"
     },
     {
+      "name": "ShadowareaMapobjectVO",
+      "source": "exports/ShadowareaMapobjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "384889f7560954913a65afe7b08963f109882290db15e6e49a99f156fb8a4339"
+    },
+    {
       "name": "ShoppingCartConst",
       "source": "modules/exports/ShoppingCartConst.js",
       "bundle": "ggs.dll",
       "confidence": "verified-dll-id-and-member",
       "canonicalSha256": "daaccbeece741db1fba5ffb421d3bd56c26b32dc8237bd1f20f0d147eee33d78"
+    },
+    {
+      "name": "ShowHowToDoQuestconditionCommand",
+      "source": "exports/ShowHowToDoQuestconditionCommand.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "159d4cf1ed9ca04be26b6b03d0a6e2e3d8d9c8ce3c06e6930594f17a42a2490e"
     },
     {
       "name": "ShutDownControlTimer",
@@ -3230,6 +4618,13 @@
       "bundle": "ggs.dll",
       "confidence": "verified-dll-id-and-member",
       "canonicalSha256": "0b952a188519eb01b35566355b2ba2ef89ef22924c8e8e38735c813648143a4b"
+    },
+    {
+      "name": "SimpleRandom",
+      "source": "modules/exports/SimpleRandom.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "f133ee260bc1fc7aef0aff777e6ee19e3b39dd5ecf5c08f254b25a1177d21697"
     },
     {
       "name": "SkipCooldownEvent",
@@ -3253,13 +4648,6 @@
       "canonicalSha256": "b0e42b4735628ec26958adffcafcf81b130b8eb0af9ea5ab89a995eea1693914"
     },
     {
-      "name": "SpecialServerHelper",
-      "source": "exports/SpecialServerHelper.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "8e1ab265d21beba0f1d37eaa1c94fbef4ee48877cc774887dd1b815117de9e9f"
-    },
-    {
       "name": "SPLCommand",
       "source": "modules/exports/SPLCommand.js",
       "bundle": "ggs.dll",
@@ -3281,6 +4669,34 @@
       "canonicalSha256": "4f92382a2cf3677c8010d6e17379183c98a1ce449463756942fa6c16fda3b2d2"
     },
     {
+      "name": "SubscriptionLoyaltyBonusGainDialog",
+      "source": "exports/SubscriptionLoyaltyBonusGainDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "3c39dcb7647c12682e9ceb5f3eb8e47759ec3a4beb616ea63bece906be3a79f8"
+    },
+    {
+      "name": "SubscriptionLoyaltyBonusGainDialogProperties",
+      "source": "exports/SubscriptionLoyaltyBonusGainDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "a761b7f36d32fe08c3ec1f6a34127db3111b00748c93e5d51721fb10fa19a984"
+    },
+    {
+      "name": "SubscriptionPackageEnum",
+      "source": "exports/SubscriptionPackageEnum.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "e795c44a41a4eea9d40f1dde52e6cfbab71971ab6a603614e84ba08a316776c8"
+    },
+    {
+      "name": "SwitchToWorldmapCommand",
+      "source": "exports/SwitchToWorldmapCommand.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "9bfb1418e3d5af9eadcc01eba8f7dc9bc6583555896dc816c103bc685dc062c1"
+    },
+    {
       "name": "TaxInfoVO",
       "source": "exports/TaxInfoVO.js",
       "bundle": "Game.bundle",
@@ -3295,18 +4711,25 @@
       "canonicalSha256": "3cf292890451059a094a191d0a0f6a8cf6e2ea39709c7a3c8930883cde82031c"
     },
     {
-      "name": "TempServerHelper",
-      "source": "exports/TempServerHelper.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "cf549556207851c5bcfa92558ada5458914cb6b1a7602576750089adcf7ee617"
-    },
-    {
       "name": "TestInstanceVO",
       "source": "modules/exports/TestInstanceVO.js",
       "bundle": "ggs.dll",
       "confidence": "verified-dll-id-and-member",
       "canonicalSha256": "2b15c2bd9ba807f5739896aca66dcd5f891c943c60e3ce8595b558ee6308dbc8"
+    },
+    {
+      "name": "TextDarkTooltip",
+      "source": "exports/TextDarkTooltip.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "1d7876fa204a2ca31b1fbeeef9a9891c351bc6688191fcc1fb504fbf02c8b839"
+    },
+    {
+      "name": "TextHelper",
+      "source": "exports/TextHelper.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "905b16284d1d172931234c9d9bde3209982075c3227fbc0b1ff031f2e16ec959"
     },
     {
       "name": "TextVO",
@@ -3337,13 +4760,6 @@
       "canonicalSha256": "c0d8cb66a0485301d6c3ed6a9f148b38f88d6e4608137030f417e25cc546b218"
     },
     {
-      "name": "TooltipManagerFacade",
-      "source": "exports/TooltipManagerFacade.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "0dd4517cf7fa726d86f8cb6fcd6fd0db8ede94dffc8cb9b02c1320ffc9cd22fa"
-    },
-    {
       "name": "TrackingCache",
       "source": "modules/exports/TrackingCache.js",
       "bundle": "ggs.dll",
@@ -3356,6 +4772,13 @@
       "bundle": "ggs.dll",
       "confidence": "verified-dll-id-and-member",
       "canonicalSha256": "e892c2faa33bb1f6a190b83d2d9f14d695eac8d10aed7b127e705a9f1c308117"
+    },
+    {
+      "name": "TreasureDungeonMapObjectVO",
+      "source": "exports/TreasureDungeonMapObjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "ef826db731768c11a753d022ad70ea6efaaf2e75e4e319558b5610f2a2ba9db7"
     },
     {
       "name": "TreasureMapsConst",
@@ -3393,25 +4816,11 @@
       "canonicalSha256": "a00024324e8c9ccf7c13ca0d5977669a267eac0de97a3d79f71d781426fa1f43"
     },
     {
-      "name": "UpdateDynamicTopXDataService",
-      "source": "exports/UpdateDynamicTopXDataService.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "b95e0e9c526db0aa0b638e128e611129620fe3228abdfbfe19d93d9ff2a3a4af"
-    },
-    {
       "name": "URLRequest",
       "source": "modules/exports/URLRequest.js",
       "bundle": "ggs.dll",
       "confidence": "verified-dll-id-and-member",
       "canonicalSha256": "6c43e07b3bef2cc998c3e87a2ccbc93138a835e10e16333f4c0c510d7a7a1dbf"
-    },
-    {
-      "name": "UserSocialLoginMigrationHelper",
-      "source": "exports/UserSocialLoginMigrationHelper.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "4ca01915986732697177dfdfd3d65d9df352b10da2dbc8f55d320e40077bea25"
     },
     {
       "name": "VCKCommand",
@@ -3428,11 +4837,32 @@
       "canonicalSha256": "24bc2c339f1527950a9e6f7d5a8bb88774189223d0c5f82cd987f8a72cb61a79"
     },
     {
-      "name": "WoodcutterBuildingVO",
-      "source": "exports/WoodcutterBuildingVO.js",
+      "name": "VillageMapobjectVO",
+      "source": "exports/VillageMapobjectVO.js",
       "bundle": "Game.bundle",
       "confidence": "unique-public-export",
-      "canonicalSha256": "a4d8181601d28e68c1b9b103d143a8ed898aa754d6c9f89d4c8bcaf66d8e9415"
+      "canonicalSha256": "e5db550ddc0c5b89680f580fc869a0d7f04866975ea01cdbfdd31e3ee1a2c213"
+    },
+    {
+      "name": "WmoCapturedLostDialog",
+      "source": "exports/WmoCapturedLostDialog.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "fa789c8b6081efd17deb8a6743e8a48634b581f696fdc31194ad811bd15fc679"
+    },
+    {
+      "name": "WmoCapturedLostDialogProperties",
+      "source": "exports/WmoCapturedLostDialogProperties.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "f79da1e503b443dc2d2da3e7a2e1ca39440c60840eae51878802a7a9477335cd"
+    },
+    {
+      "name": "WolfkingCastleMapObjectVO",
+      "source": "exports/WolfkingCastleMapObjectVO.js",
+      "bundle": "Game.bundle",
+      "confidence": "unique-public-export",
+      "canonicalSha256": "c00383da06f549d2a0051cbf6168c4719b76082ed12fcf2aa56dc40880d7c775"
     },
     {
       "name": "WorldClassic",
@@ -3449,6 +4879,20 @@
       "canonicalSha256": "e2ae875f45d536217d319dcf48e858646b5ae13454c49926c269fc47513010a8"
     },
     {
+      "name": "WorldDessert",
+      "source": "modules/exports/WorldDessert.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "f54be8e4fbddefe55d4667d720693d24dbe5fd6a72d2c7a59264de15b01a7fc0"
+    },
+    {
+      "name": "WorldIce",
+      "source": "modules/exports/WorldIce.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "5ef3b2d9802b8f376b6b2eedf8abcf46fd8f31584e09f46a0079906ac949c2c9"
+    },
+    {
       "name": "WorldIsland",
       "source": "modules/exports/WorldIsland.js",
       "bundle": "ggs.dll",
@@ -3456,11 +4900,11 @@
       "canonicalSha256": "f030f9e53d5f5afbeb04053d1260e44eade6ef2b4f999b4bbc094942af549b9a"
     },
     {
-      "name": "WorldmapObjectFactory",
-      "source": "exports/WorldmapObjectFactory.js",
-      "bundle": "Game.bundle",
-      "confidence": "unique-public-export",
-      "canonicalSha256": "60c4f2ada47ac4c28e3d058ab0316c8447b53616e420d71d7cb435f2e05b3ab8"
+      "name": "WorldVolcano",
+      "source": "modules/exports/WorldVolcano.js",
+      "bundle": "ggs.dll",
+      "confidence": "verified-dll-id-and-member",
+      "canonicalSha256": "177279d068e9e682583907ac520698c5fb091007f95f838606a14a0ae04af5fe"
     }
   ],
   "missing": [],

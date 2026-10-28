@@ -1,0 +1,1255 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastlePopUpHelper",
+  "canonicalSource": "modules/exports/CastlePopUpHelper.js",
+  "canonicalSourceSha256": "20adbcf60b36492a940b3728a880e10760d2f1a659b2480c45e37179fe78c2a4",
+  "generatedHash": "322748431ede1084a85ec7f715be893c73b16f90e0327c0fb7f9fe9ae311cf3c",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "PopupConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/PopupConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:PopupConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_MultiEventRewardsDialog",
+      "imported": "MultiEventRewardsDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/MultiEventRewardsDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_MultiEventRewardsProperties",
+      "imported": "MultiEventRewardsProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/MultiEventRewardsProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicDialogHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicDialogHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicDialogHandler",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_FarhatBuildingSpawnController",
+      "imported": "FarhatBuildingSpawnController",
+      "bundle": "Game.bundle",
+      "path": "exports/FarhatBuildingSpawnController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ModernGenericRewardDialog",
+      "imported": "ModernGenericRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/ModernGenericRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ModernGenericRewardDialogProperties",
+      "imported": "ModernGenericRewardDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/ModernGenericRewardDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "CommKeys",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/CommKeys.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:CommKeys",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_GenericRewardDialog",
+      "imported": "GenericRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/GenericRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_GenericRewardDialogProperties",
+      "imported": "GenericRewardDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/GenericRewardDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_GachaEventEndDialog",
+      "imported": "GachaEventEndDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/GachaEventEndDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_GachaEventEndDialogProperties",
+      "imported": "GachaEventEndDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/GachaEventEndDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LongTermPointEventRewardDialog",
+      "imported": "LongTermPointEventRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/LongTermPointEventRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleGenericRewardDialogProperties",
+      "imported": "CastleGenericRewardDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleGenericRewardDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LongTermPointEventHardModeDialog",
+      "imported": "LongTermPointEventHardModeDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/LongTermPointEventHardModeDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePointEventRewardDialog",
+      "imported": "CastlePointEventRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePointEventRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLuckyPointEventRewardDialog",
+      "imported": "CastleLuckyPointEventRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLuckyPointEventRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLuckySaleDaysPointEventRewardDialog",
+      "imported": "CastleLuckySaleDaysPointEventRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLuckySaleDaysPointEventRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBeggingKnightsRewardDialog",
+      "imported": "CastleBeggingKnightsRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBeggingKnightsRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAllianceAlienInvasionRewardDialogPlayer",
+      "imported": "CastleAllianceAlienInvasionRewardDialogPlayer",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAllianceAlienInvasionRewardDialogPlayer.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAllianceAlienInvasionRewardDialogAlliance",
+      "imported": "CastleAllianceAlienInvasionRewardDialogAlliance",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAllianceAlienInvasionRewardDialogAlliance.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleGenericRewardsDialog",
+      "imported": "CastleGenericRewardsDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleGenericRewardsDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleGenericRewardsDialogProperties",
+      "imported": "CastleGenericRewardsDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleGenericRewardsDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectableManager",
+      "imported": "CollectableManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleRedAllianceAlienInvasionRewardDialogPlayer",
+      "imported": "CastleRedAllianceAlienInvasionRewardDialogPlayer",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleRedAllianceAlienInvasionRewardDialogPlayer.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleRedAllianceAlienInvasionRewardDialogAlliance",
+      "imported": "CastleRedAllianceAlienInvasionRewardDialogAlliance",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleRedAllianceAlienInvasionRewardDialogAlliance.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAllianceNomadInvasionRewardDialogPlayer",
+      "imported": "CastleAllianceNomadInvasionRewardDialogPlayer",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAllianceNomadInvasionRewardDialogPlayer.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAllianceNomadInvasionRewardDialogAlliance",
+      "imported": "CastleAllianceNomadInvasionRewardDialogAlliance",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAllianceNomadInvasionRewardDialogAlliance.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleCollectorEventRewardDialog",
+      "imported": "CastleCollectorEventRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCollectorEventRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleNomadInvasionAllianceCampRewardDialog",
+      "imported": "CastleNomadInvasionAllianceCampRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleNomadInvasionAllianceCampRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleNomadInvasionAllianceCampRewardDialogProperties",
+      "imported": "CastleNomadInvasionAllianceCampRewardDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleNomadInvasionAllianceCampRewardDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleUnderworldMoraleBoosterRewardDialog",
+      "imported": "CastleUnderworldMoraleBoosterRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleUnderworldMoraleBoosterRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleUnderworldMoraleBoosterRewardDialogProperties",
+      "imported": "CastleUnderworldMoraleBoosterRewardDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleUnderworldMoraleBoosterRewardDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBountyhunterWinDialog",
+      "imported": "CastleBountyhunterWinDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBountyhunterWinDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBountyhunterWinDialogProperties",
+      "imported": "CastleBountyhunterWinDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBountyhunterWinDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleRandomDungeonWinDialog",
+      "imported": "CastleRandomDungeonWinDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleRandomDungeonWinDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleRandomDungeonWinDialogProperties",
+      "imported": "CastleRandomDungeonWinDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleRandomDungeonWinDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleQuestCompletedDialog",
+      "imported": "CastleQuestCompletedDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleQuestCompletedDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleQuestCompletedDialogProperties",
+      "imported": "CastleQuestCompletedDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleQuestCompletedDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAchievementData",
+      "imported": "CastleAchievementData",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAchievementData.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAchievementLevelUpDialog",
+      "imported": "CastleAchievementLevelUpDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAchievementLevelUpDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAchievementLevelUpDialogProperties",
+      "imported": "CastleAchievementLevelUpDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAchievementLevelUpDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleIngameMessageHandler",
+      "imported": "CastleIngameMessageHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleIngameMessageHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAchievementPopupDialog",
+      "imported": "CastleAchievementPopupDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAchievementPopupDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAchievementPopupDialogProperties",
+      "imported": "CastleAchievementPopupDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAchievementPopupDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleMailGiftDialog",
+      "imported": "CastleMailGiftDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleMailGiftDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleMailGiftDialogProperties",
+      "imported": "CastleMailGiftDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleMailGiftDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDarkOkDialog",
+      "imported": "CastleDarkOkDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDarkOkDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicStandardOkDialogProperties",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicStandardOkDialogProperties.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicStandardOkDialogProperties",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleMailSendWithNewsletterDialog",
+      "imported": "CastleMailSendWithNewsletterDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleMailSendWithNewsletterDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleMailSendWithoutNewsletterDialog",
+      "imported": "CastleMailSendWithoutNewsletterDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleMailSendWithoutNewsletterDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleMainQuestFinishedDialog",
+      "imported": "CastleMainQuestFinishedDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleMainQuestFinishedDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleMainQuestFinishedDialogProperties",
+      "imported": "CastleMainQuestFinishedDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleMainQuestFinishedDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "FactionConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/FactionConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:FactionConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleFactionEventWinBlueDialog",
+      "imported": "CastleFactionEventWinBlueDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleFactionEventWinBlueDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleFactionEventWinDialogProperties",
+      "imported": "CastleFactionEventWinDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleFactionEventWinDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleFactionEventWinRedDialog",
+      "imported": "CastleFactionEventWinRedDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleFactionEventWinRedDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleColossusEventFinishedDialog",
+      "imported": "CastleColossusEventFinishedDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleColossusEventFinishedDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleColossusEventFinishedDialogProperties",
+      "imported": "CastleColossusEventFinishedDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleColossusEventFinishedDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "ColossusConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ColossusConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:ColossusConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_MightPointRewardProperties",
+      "imported": "MightPointRewardProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/MightPointRewardProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleArrayHelper",
+      "imported": "numericSort",
+      "bundle": "Game.bundle",
+      "path": "exports/numericSort.js",
+      "moduleId": "559",
+      "confidence": "verified-sibling-export"
+    },
+    {
+      "specifier": "gge-module:export_MightPointRewardDialog",
+      "imported": "MightPointRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/MightPointRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_C2SGetSLI",
+      "imported": "C2SGetSLI",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SGetSLI.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCastle",
+      "imported": "ClientConstCastle",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCastle.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleNameCastleDialog",
+      "imported": "CastleNameCastleDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleNameCastleDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleNameCastleDialogProperties",
+      "imported": "CastleNameCastleDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleNameCastleDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldClassic",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldClassic.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldClassic",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "PlayerConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/PlayerConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:PlayerConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "CommandController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/CommandController__webpack_29__620faaa3.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:CommandController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicController.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_GameSightPayloadVO",
+      "imported": "GameSightPayloadVO",
+      "bundle": "Game.bundle",
+      "path": "exports/GameSightPayloadVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_GamesightEventConstants",
+      "imported": "GamesightEventConstants",
+      "bundle": "Game.bundle",
+      "path": "exports/GamesightEventConstants.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLevelUpDialog",
+      "imported": "CastleLevelUpDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLevelUpDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLevelUpDialogProperties",
+      "imported": "CastleLevelUpDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLevelUpDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleSeasonEventFailDialog",
+      "imported": "CastleSeasonEventFailDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSeasonEventFailDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleSeasonEventFailDialogProperties",
+      "imported": "CastleSeasonEventFailDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSeasonEventFailDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "EventConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EventConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:EventConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "TreasureMapsConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/TreasureMapsConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:TreasureMapsConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleTreasureFoundTreasureDialog",
+      "imported": "CastleTreasureFoundTreasureDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleTreasureFoundTreasureDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTreasureFoundTreasureDialogProperties",
+      "imported": "CastleTreasureFoundTreasureDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleTreasureFoundTreasureDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTreasureChestOpenDialog",
+      "imported": "CastleTreasureChestOpenDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleTreasureChestOpenDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTreasureChestOpenDialogProperties",
+      "imported": "CastleTreasureChestOpenDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleTreasureChestOpenDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBookmarkRewardDialog",
+      "imported": "CastleBookmarkRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBookmarkRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleBookmarkRewardDialogProperties",
+      "imported": "CastleBookmarkRewardDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleBookmarkRewardDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleStormIslandsEventEndDialogProperties",
+      "imported": "CastleStormIslandsEventEndDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleStormIslandsEventEndDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleStormIslandsEventEndDialog",
+      "imported": "CastleStormIslandsEventEndDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleStormIslandsEventEndDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleNomadInvasionEventRewardDialog",
+      "imported": "CastleNomadInvasionEventRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleNomadInvasionEventRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDailyQuestThresholdRewardDialog",
+      "imported": "CastleDailyQuestThresholdRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDailyQuestThresholdRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDailyQuestThresholdRewardDialogProperties",
+      "imported": "CastleDailyQuestThresholdRewardDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDailyQuestThresholdRewardDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleFactionRewardDialog",
+      "imported": "CastleFactionRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleFactionRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleFactionRewardDialogProperties",
+      "imported": "CastleFactionRewardDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleFactionRewardDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleSlotRewardEventDialog",
+      "imported": "CastleSlotRewardEventDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSlotRewardEventDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleSlotRewardEventDialogProperties",
+      "imported": "CastleSlotRewardEventDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSlotRewardEventDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleSamuraiInvasionAllianceRewardDialog",
+      "imported": "CastleSamuraiInvasionAllianceRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSamuraiInvasionAllianceRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleSamuraiInvasionEventRewardDialog",
+      "imported": "CastleSamuraiInvasionEventRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleSamuraiInvasionEventRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAllianceTournamentEventRewardDialog",
+      "imported": "CastleAllianceTournamentEventRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAllianceTournamentEventRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleResearchCompleteDialog",
+      "imported": "CastleResearchCompleteDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleResearchCompleteDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleResearchCompleteDialogProperties",
+      "imported": "CastleResearchCompleteDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleResearchCompleteDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleCampaignRewardDialogProperties",
+      "imported": "CastleCampaignRewardDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCampaignRewardDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_EquipmentExpiredDialog",
+      "imported": "EquipmentExpiredDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/EquipmentExpiredDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_EquipmentExpiredDialogProperties",
+      "imported": "EquipmentExpiredDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/EquipmentExpiredDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SeasonLeagueDailyRewardDialog",
+      "imported": "SeasonLeagueDailyRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/SeasonLeagueDailyRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SeasonLeagueDailyRewardDialogProperties",
+      "imported": "SeasonLeagueDailyRewardDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/SeasonLeagueDailyRewardDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SeasonLeaguePromotionDialog",
+      "imported": "SeasonLeaguePromotionDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/SeasonLeaguePromotionDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SeasonLeaguePromotionDialogProperties",
+      "imported": "SeasonLeaguePromotionDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/SeasonLeaguePromotionDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "SeasonConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/SeasonConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:SeasonConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_SeasonLeaguePassGained",
+      "imported": "SeasonLeaguePassGained",
+      "bundle": "Game.bundle",
+      "path": "exports/SeasonLeaguePassGained.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SeasonLeagueEndDialog",
+      "imported": "SeasonLeagueEndDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/SeasonLeagueEndDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SeasonLeagueEndDialogProperties",
+      "imported": "SeasonLeagueEndDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/SeasonLeagueEndDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTempServerWelcomeDialog",
+      "imported": "CastleTempServerWelcomeDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleTempServerWelcomeDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAllianceBattlegroundStartDialog",
+      "imported": "CastleAllianceBattlegroundStartDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAllianceBattlegroundStartDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SubscriptionLoyaltyBonusGainDialog",
+      "imported": "SubscriptionLoyaltyBonusGainDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/SubscriptionLoyaltyBonusGainDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SubscriptionLoyaltyBonusGainDialogProperties",
+      "imported": "SubscriptionLoyaltyBonusGainDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/SubscriptionLoyaltyBonusGainDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAllianceBattleGroundEventEndDialogProperties",
+      "imported": "CastleAllianceBattleGroundEventEndDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAllianceBattleGroundEventEndDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleAllianceBattleGroundEventEndDialog",
+      "imported": "CastleAllianceBattleGroundEventEndDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleAllianceBattleGroundEventEndDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTempServerEventEndDialog",
+      "imported": "CastleTempServerEventEndDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleTempServerEventEndDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleABGTowerReassignmentDialog",
+      "imported": "CastleABGTowerReassignmentDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleABGTowerReassignmentDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleABGTowerInfoDialogProperties",
+      "imported": "CastleABGTowerInfoDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleABGTowerInfoDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_WorldmapObjectFactory",
+      "imported": "WorldmapObjectFactory",
+      "bundle": "Game.bundle",
+      "path": "exports/WorldmapObjectFactory.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_DarkOkDialog",
+      "imported": "DarkOkDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/DarkOkDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_WmoCapturedLostDialog",
+      "imported": "WmoCapturedLostDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/WmoCapturedLostDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_WmoCapturedLostDialogProperties",
+      "imported": "WmoCapturedLostDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/WmoCapturedLostDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleStandardYesNoDialogProperties",
+      "imported": "CastleStandardYesNoDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleStandardYesNoDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "Localize",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/Localize.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:Localize",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleChangePlayerEmailCancelDoneDialog",
+      "imported": "CastleChangePlayerEmailCancelDoneDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleChangePlayerEmailCancelDoneDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ModernWelcomebackDialogBig",
+      "imported": "ModernWelcomebackDialogBig",
+      "bundle": "Game.bundle",
+      "path": "exports/ModernWelcomebackDialogBig.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ModernWelcomebackDialogProperties",
+      "imported": "ModernWelcomebackDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/ModernWelcomebackDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ModernWelcomebackDialogSmall",
+      "imported": "ModernWelcomebackDialogSmall",
+      "bundle": "Game.bundle",
+      "path": "exports/ModernWelcomebackDialogSmall.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_DuplicatedEmailPopupDialog",
+      "imported": "DuplicatedEmailPopupDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/DuplicatedEmailPopupDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_EventStarterAnnouncementDialog",
+      "imported": "EventStarterAnnouncementDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/EventStarterAnnouncementDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_EventStarterAnnouncementDialogProperties",
+      "imported": "EventStarterAnnouncementDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/EventStarterAnnouncementDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_DonationEventEndDialog",
+      "imported": "DonationEventEndDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/DonationEventEndDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_DonationEventEndDialogProperties",
+      "imported": "DonationEventEndDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/DonationEventEndDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AllianceRaidEventEndDialog_NoRewards",
+      "imported": "AllianceRaidEventEndDialog_NoRewards",
+      "bundle": "Game.bundle",
+      "path": "exports/AllianceRaidEventEndDialog_NoRewards.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicModel",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicModel.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicModel",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_C2SAllianceBattleGroundGetTimersVO",
+      "imported": "C2SAllianceBattleGroundGetTimersVO",
+      "bundle": "Game.bundle",
+      "path": "exports/C2SAllianceBattleGroundGetTimersVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectableList",
+      "imported": "CollectableList",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableList.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectableEnum",
+      "imported": "CollectableEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "BeggingKnightsConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BeggingKnightsConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:BeggingKnightsConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_MaterialBagOpenedDialog",
+      "imported": "MaterialBagOpenedDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/MaterialBagOpenedDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_MaterialBagOpenedDialogProperties",
+      "imported": "MaterialBagOpenedDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/MaterialBagOpenedDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_SpecialServerHelper",
+      "imported": "SpecialServerHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/SpecialServerHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SamuraiEventEndDialog",
+      "imported": "SamuraiEventEndDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/SamuraiEventEndDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ExtendedGenericRewardDialogProperties",
+      "imported": "ExtendedGenericRewardDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/ExtendedGenericRewardDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ExtendedGenericRewardDialog",
+      "imported": "ExtendedGenericRewardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/ExtendedGenericRewardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AllianceRaidBossDefeatedDialog",
+      "imported": "AllianceRaidBossDefeatedDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/AllianceRaidBossDefeatedDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AllianceRaidBossDefeatedDialogProperties",
+      "imported": "AllianceRaidBossDefeatedDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/AllianceRaidBossDefeatedDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

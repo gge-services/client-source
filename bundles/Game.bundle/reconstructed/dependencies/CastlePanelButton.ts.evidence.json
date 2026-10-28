@@ -1,0 +1,107 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastlePanelButton",
+  "canonicalSource": "modules/exports/CastlePanelButton.js",
+  "canonicalSourceSha256": "a6a6f5512699f4b2b0c9cc07294e5fc7592d3e4873f34b90e45cdc2a27bed21e",
+  "generatedHash": "a359454deeccf56fc5862220c9052696248b9045731a6c0d3db5143f8522f4fa",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_APanelButton",
+      "imported": "APanelButton",
+      "bundle": "Game.bundle",
+      "path": "exports/APanelButton.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleComponent",
+      "imported": "CastleComponent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleComponent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleUserDataEvent",
+      "imported": "CastleUserDataEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleUserDataEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "FactionConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/FactionConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:FactionConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "castAs",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/castAs.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:castAs",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "EventConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EventConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:EventConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_IsoEvent",
+      "imported": "IsoEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/IsoEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "CommandController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/CommandController__webpack_29__620faaa3.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:CommandController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_IngameClientCommands",
+      "imported": "IngameClientCommands",
+      "bundle": "Game.bundle",
+      "path": "exports/IngameClientCommands.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [
+    "Library"
+  ],
+  "runtimeReady": false
+}

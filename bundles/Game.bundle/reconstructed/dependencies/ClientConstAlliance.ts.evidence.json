@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "ClientConstAlliance",
+  "canonicalSource": "modules/exports/ClientConstAlliance.js",
+  "canonicalSourceSha256": "a66a95c927ead043ce3556f28ad4007371cc389678b5445e7dd55d8df1ddf624",
+  "generatedHash": "5de13fc8fbcb418fde413cf2c40190d681e9496f89dd991590215a3c85dd1323",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "AllianceConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/AllianceConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:AllianceConst",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

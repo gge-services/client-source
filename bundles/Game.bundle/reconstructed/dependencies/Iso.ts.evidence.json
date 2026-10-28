@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "Iso",
+  "canonicalSource": "modules/exports/Iso.js",
+  "canonicalSourceSha256": "41f10a4bc5072c5c468b7416d0fe23d3ce10199433e12eaaae380071965cabf7",
+  "generatedHash": "479f3ef277d4d3131fdb4619b6af7e00ace078a47c7a7b9db1e0559941c8e89e",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_IsoViewRenderer",
+      "imported": "IsoViewRenderer",
+      "bundle": "Game.bundle",
+      "path": "exports/IsoViewRenderer.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_IsoController",
+      "imported": "IsoController",
+      "bundle": "Game.bundle",
+      "path": "exports/IsoController.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [
+    "static _controller: any;",
+    "static _renderer: any;"
+  ],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

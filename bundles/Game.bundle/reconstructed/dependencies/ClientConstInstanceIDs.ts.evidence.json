@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "ClientConstInstanceIDs",
+  "canonicalSource": "modules/exports/ClientConstInstanceIDs.js",
+  "canonicalSourceSha256": "3d71746be3e3b1f75cb8340247d8ffa5ec33439240e119c1e1083297d114c4ee",
+  "generatedHash": "ef7453488bf27c431b38c890c768646915f8adf2a6601dc570ff0daadad9c228",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicModel",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicModel.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicModel",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

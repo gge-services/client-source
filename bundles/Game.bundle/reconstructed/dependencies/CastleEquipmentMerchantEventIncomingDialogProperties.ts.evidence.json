@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleEquipmentMerchantEventIncomingDialogProperties",
+  "canonicalSource": "modules/exports/CastleEquipmentMerchantEventIncomingDialogProperties.js",
+  "canonicalSourceSha256": "75b29dec75c43d8b395abf2425a688909de4f57e43fef2ebf446eb4d446822a9",
+  "generatedHash": "5964bcb04e31347c42e03aeb61077388c274a78fb3e523f76c838e42836633b4",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicProperties",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicProperties.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicProperties",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

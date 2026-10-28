@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "FlashBlockHelper",
+  "canonicalSource": "modules/exports/FlashBlockHelper.js",
+  "canonicalSourceSha256": "169e852e30422ce2b714aada75416bd7fcb9a4672d8ecb21b7358902273709e1",
+  "generatedHash": "3c5981b5c2c55122b4c0921acae8914917bf34713933dda8581f6832f3eff50d",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "EnvGlobalsHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EnvGlobalsHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:EnvGlobalsHandler",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "TreasureMapsConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/TreasureMapsConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:TreasureMapsConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleDialogHandler",
+      "imported": "CastleDialogHandler",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDialogHandler.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDarkOkLabeledDialog",
+      "imported": "CastleDarkOkLabeledDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDarkOkLabeledDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicStandardOkDialogProperties",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicStandardOkDialogProperties.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicStandardOkDialogProperties",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "FactionConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/FactionConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:FactionConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "Localize",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/Localize.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:Localize",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldIsland",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldIsland.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldIsland",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldIce",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldIce.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldIce",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldDessert",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldDessert.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldDessert",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldVolcano",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldVolcano.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldVolcano",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "ExternalInterface",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/ExternalInterface.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:ExternalInterface",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

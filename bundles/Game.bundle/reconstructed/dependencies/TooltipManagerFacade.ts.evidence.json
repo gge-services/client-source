@@ -1,0 +1,133 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "TooltipManagerFacade",
+  "canonicalSource": "modules/exports/TooltipManagerFacade.js",
+  "canonicalSourceSha256": "0dd4517cf7fa726d86f8cb6fcd6fd0db8ede94dffc8cb9b02c1320ffc9cd22fa",
+  "generatedHash": "482f5c5ac127bb63f90c2daba83afb5e75f4325bac4e11db816a6592a7117213",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_EquipmentIconHelper",
+      "imported": "EquipmentIconHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/EquipmentIconHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_DecoBuildingToolTipManager",
+      "imported": "DecoBuildingToolTipManager",
+      "bundle": "Game.bundle",
+      "path": "exports/DecoBuildingToolTipManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ResourcePanelToolTipManager",
+      "imported": "ResourcePanelToolTipManager",
+      "bundle": "Game.bundle",
+      "path": "exports/ResourcePanelToolTipManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ConstructionItemTooltipHelper",
+      "imported": "ConstructionItemTooltipHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/ConstructionItemTooltipHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_MaterialBagTooltipHelper",
+      "imported": "MaterialBagTooltipHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/MaterialBagTooltipHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LordEffectHelper",
+      "imported": "LordEffectHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/LordEffectHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_QuestMapTooltipHelper",
+      "imported": "QuestMapTooltipHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/QuestMapTooltipHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleFusionCompareToolTip",
+      "imported": "CastleFusionCompareToolTip",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleFusionCompareToolTip.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_LegendSkillIconHelper",
+      "imported": "LegendSkillIconHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/LegendSkillIconHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_GeneralsSkillTooltipHelper",
+      "imported": "GeneralsSkillTooltipHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/GeneralsSkillTooltipHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectableListTooltipHelper",
+      "imported": "CollectableListTooltipHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableListTooltipHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_TextDarkTooltip",
+      "imported": "TextDarkTooltip",
+      "bundle": "Game.bundle",
+      "path": "exports/TextDarkTooltip.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_PlaceholderToolTip",
+      "imported": "PlaceholderToolTip",
+      "bundle": "Game.bundle",
+      "path": "exports/PlaceholderToolTip.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_GachaMilestoneTooltipHelper",
+      "imported": "GachaMilestoneTooltipHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/GachaMilestoneTooltipHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

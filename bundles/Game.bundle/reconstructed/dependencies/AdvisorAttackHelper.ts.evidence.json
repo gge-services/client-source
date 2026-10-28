@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "AdvisorAttackHelper",
+  "canonicalSource": "modules/exports/AdvisorAttackHelper.js",
+  "canonicalSourceSha256": "dcf6e65692774eb0a0c40cd862c049b7f97759951d29b07316292c94899bfeb1",
+  "generatedHash": "8f36fce21c56fccb4a12e45eac6a5916b420c9927bcd062f33177ea9fea20a94",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "AttackAdvisorConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/AttackAdvisorConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:AttackAdvisorConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "EventConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EventConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:EventConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_AdvisorActivationInfoVO",
+      "imported": "AdvisorActivationInfoVO",
+      "bundle": "Game.bundle",
+      "path": "exports/AdvisorActivationInfoVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCurrency",
+      "imported": "ClientConstCurrency",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCurrency.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SubscriptionPackageEnum",
+      "imported": "SubscriptionPackageEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/SubscriptionPackageEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCharacter",
+      "imported": "ClientConstCharacter",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCharacter.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "DungeonConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/DungeonConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:DungeonConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "FactionConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/FactionConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:FactionConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldClassic",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldClassic.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldClassic",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldDessert",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldDessert.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldDessert",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldIce",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldIce.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldIce",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "WorldVolcano",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/WorldVolcano.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:WorldVolcano",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

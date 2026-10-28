@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastleNoMoneyC1DialogProperties",
+  "canonicalSource": "modules/exports/CastleNoMoneyC1DialogProperties.js",
+  "canonicalSourceSha256": "0cb136115f672a645e104f5e50a737e77a4421fe8fb9c7513761fd033c76da05",
+  "generatedHash": "32bb66399bdc56ba522fa133dc95be65805cdeff93d3e058b725165b2e89bce8",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicProperties",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicProperties.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicProperties",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

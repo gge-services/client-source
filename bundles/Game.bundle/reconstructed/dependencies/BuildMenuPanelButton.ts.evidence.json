@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "BuildMenuPanelButton",
+  "canonicalSource": "modules/exports/BuildMenuPanelButton.js",
+  "canonicalSourceSha256": "989466b8cbc97254fcd0f76e4413cc0fc9c1854402c4161b25de245e1c096de5",
+  "generatedHash": "a49e3e11054ca09046366673824683ceb761f48daaa2261addf5e0805bba958a",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_APanelButton",
+      "imported": "APanelButton",
+      "bundle": "Game.bundle",
+      "path": "exports/APanelButton.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleComponent",
+      "imported": "CastleComponent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleComponent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_DecoStorageEvent",
+      "imported": "DecoStorageEvent",
+      "bundle": "Game.bundle",
+      "path": "exports/DecoStorageEvent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleLayoutManager",
+      "imported": "CastleLayoutManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleLayoutManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_Iso",
+      "imported": "Iso",
+      "bundle": "Game.bundle",
+      "path": "exports/Iso.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [
+    "createjs",
+    "Library"
+  ],
+  "runtimeReady": false
+}

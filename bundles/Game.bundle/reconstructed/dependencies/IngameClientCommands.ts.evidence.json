@@ -1,0 +1,455 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "IngameClientCommands",
+  "canonicalSource": "modules/exports/IngameClientCommands.js",
+  "canonicalSourceSha256": "f8e28abfe71bb2de223a7015802e671b31c306e371108988cc9543f9d12d0c43",
+  "generatedHash": "06fae202da7a130bdc0bebcdb6ed58bfd6eec5de8c0e8b541ccb98f76325a08e",
+  "dependencies": [
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "CommandController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/CommandController__webpack_29__620faaa3.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:CommandController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_OpenPostAttackDialogCommand",
+      "imported": "OpenPostAttackDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenPostAttackDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenMovementInfoDialogCommand",
+      "imported": "OpenMovementInfoDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenMovementInfoDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenActiveTaxDialogCommand",
+      "imported": "OpenActiveTaxDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenActiveTaxDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenTipDialogCommand",
+      "imported": "OpenTipDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenTipDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenTreasureHuntInfoDialogCommand",
+      "imported": "OpenTreasureHuntInfoDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenTreasureHuntInfoDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenSeasonInfoDialogCommand",
+      "imported": "OpenSeasonInfoDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenSeasonInfoDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenOfferDialogCommand",
+      "imported": "OpenOfferDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenOfferDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenEventDialogCommand",
+      "imported": "OpenEventDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenEventDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenSpecialEventProgressCommand",
+      "imported": "OpenSpecialEventProgressCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenSpecialEventProgressCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenIngameHelpDialogCommand",
+      "imported": "OpenIngameHelpDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenIngameHelpDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SwitchKingdomCommand",
+      "imported": "SwitchKingdomCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/SwitchKingdomCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenAllianceBuyBoosterCommand",
+      "imported": "OpenAllianceBuyBoosterCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenAllianceBuyBoosterCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_BuyBoosterCommand",
+      "imported": "BuyBoosterCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/BuyBoosterCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_JoinMyMainCastleCommand",
+      "imported": "JoinMyMainCastleCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/JoinMyMainCastleCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_JoinCastleWithoutPositionSaveCommand",
+      "imported": "JoinCastleWithoutPositionSaveCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/JoinCastleWithoutPositionSaveCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_JoinAreaAndSavePositionCommand",
+      "imported": "JoinAreaAndSavePositionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/JoinAreaAndSavePositionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SwitchToWorldmapCommand",
+      "imported": "SwitchToWorldmapCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/SwitchToWorldmapCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SwitchToRelocateWorldmapCommand",
+      "imported": "SwitchToRelocateWorldmapCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/SwitchToRelocateWorldmapCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SwitchKingdomGoToWorldmapAndCenterPosCommand",
+      "imported": "SwitchKingdomGoToWorldmapAndCenterPosCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/SwitchKingdomGoToWorldmapAndCenterPosCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SwitchSeasonMapCenterAndHighlightDungeonsCommand",
+      "imported": "SwitchSeasonMapCenterAndHighlightDungeonsCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/SwitchSeasonMapCenterAndHighlightDungeonsCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleOpenMessageDialogCommand",
+      "imported": "CastleOpenMessageDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleOpenMessageDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenJudgementSpotDialogCommand",
+      "imported": "OpenJudgementSpotDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenJudgementSpotDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenPortUpgradeDialogCommand",
+      "imported": "OpenPortUpgradeDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenPortUpgradeDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ShowHowToDoQuestconditionCommand",
+      "imported": "ShowHowToDoQuestconditionCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/ShowHowToDoQuestconditionCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_DonateForQuestCommand",
+      "imported": "DonateForQuestCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/DonateForQuestCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenPrivateOfferDialogCommand",
+      "imported": "OpenPrivateOfferDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenPrivateOfferDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SetAddPipesAtEndOfTextCommand",
+      "imported": "SetAddPipesAtEndOfTextCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/SetAddPipesAtEndOfTextCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenDungenTreasureChestOfferCommand",
+      "imported": "OpenDungenTreasureChestOfferCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenDungenTreasureChestOfferCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenWhaleChestOfferCommand",
+      "imported": "OpenWhaleChestOfferCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenWhaleChestOfferCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenVoucherOfferCommand",
+      "imported": "OpenVoucherOfferCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenVoucherOfferCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenGenericOfferCommand",
+      "imported": "OpenGenericOfferCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenGenericOfferCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenAttackOrderCommand",
+      "imported": "OpenAttackOrderCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenAttackOrderCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenKingdomTeaserCommand",
+      "imported": "OpenKingdomTeaserCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenKingdomTeaserCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_SendMarkedBuildingsInStorage",
+      "imported": "SendMarkedBuildingsInStorage",
+      "bundle": "Game.bundle",
+      "path": "exports/SendMarkedBuildingsInStorage.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenEventAnnouncementDialogCommand",
+      "imported": "OpenEventAnnouncementDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenEventAnnouncementDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_AutoShowStartQuestDialogCommand",
+      "imported": "AutoShowStartQuestDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/AutoShowStartQuestDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_HandleDialogInfoCommand",
+      "imported": "HandleDialogInfoCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/HandleDialogInfoCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenLongTermPointEventDialogCommand",
+      "imported": "OpenLongTermPointEventDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenLongTermPointEventDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenLongTermPointEventHighScoreDialogCommand",
+      "imported": "OpenLongTermPointEventHighScoreDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenLongTermPointEventHighScoreDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenFactionEventMainDialogCommand",
+      "imported": "OpenFactionEventMainDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenFactionEventMainDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenFactionInvasionEventMainDialogCommand",
+      "imported": "OpenFactionInvasionEventMainDialogCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenFactionInvasionEventMainDialogCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleRegisterUserWithFacebookCommand",
+      "imported": "CastleRegisterUserWithFacebookCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleRegisterUserWithFacebookCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleMapFacebookAccountCommand",
+      "imported": "CastleMapFacebookAccountCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleMapFacebookAccountCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleFacebookSwitchToCachedAccountCommand",
+      "imported": "CastleFacebookSwitchToCachedAccountCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleFacebookSwitchToCachedAccountCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleFacebookGetUserDataCommand",
+      "imported": "CastleFacebookGetUserDataCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleFacebookGetUserDataCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleFacebookLoginRegistrationCommand",
+      "imported": "CastleFacebookLoginRegistrationCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleFacebookLoginRegistrationCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_OpenNewServerAnnouncementCommand",
+      "imported": "OpenNewServerAnnouncementCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/OpenNewServerAnnouncementCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_GotoMainCastleUniqueBuildingCommand",
+      "imported": "GotoMainCastleUniqueBuildingCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/GotoMainCastleUniqueBuildingCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicController.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleChooseLoginMethodCommand",
+      "imported": "CastleChooseLoginMethodCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleChooseLoginMethodCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleInitEquipmentFavoritesServiceCommand",
+      "imported": "CastleInitEquipmentFavoritesServiceCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleInitEquipmentFavoritesServiceCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_UpdateDynamicTopXDataCommand",
+      "imported": "UpdateDynamicTopXDataCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/UpdateDynamicTopXDataCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_GeneralIntroductionGuidanceAssignBaronCommand",
+      "imported": "GeneralIntroductionGuidanceAssignBaronCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/GeneralIntroductionGuidanceAssignBaronCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_GeneralIntroductionGuidanceAttackWolfkingCommand",
+      "imported": "GeneralIntroductionGuidanceAttackWolfkingCommand",
+      "bundle": "Game.bundle",
+      "path": "exports/GeneralIntroductionGuidanceAttackWolfkingCommand.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

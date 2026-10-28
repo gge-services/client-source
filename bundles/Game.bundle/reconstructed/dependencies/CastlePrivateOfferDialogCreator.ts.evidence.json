@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CastlePrivateOfferDialogCreator",
+  "canonicalSource": "modules/exports/CastlePrivateOfferDialogCreator.js",
+  "canonicalSourceSha256": "2048b6b563f9f6022cc9e7a461e9d59a5521628755d25750ef241041281d2555",
+  "generatedHash": "b94b8b6f3e3b27d28f7cd2ee8b52724970f6ca14127efdda54340e209ca274c7",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CastleDungeonTreasureChestDialog",
+      "imported": "CastleDungeonTreasureChestDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDungeonTreasureChestDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDungeonTreasureChestOpenDialog",
+      "imported": "CastleDungeonTreasureChestOpenDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDungeonTreasureChestOpenDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleKongregateNotificationDialog",
+      "imported": "CastleKongregateNotificationDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleKongregateNotificationDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleKongregateRatingDialog",
+      "imported": "CastleKongregateRatingDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleKongregateRatingDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleMultiChestDialog",
+      "imported": "CastleMultiChestDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleMultiChestDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrivateOfferBrandDialog",
+      "imported": "CastlePrivateOfferBrandDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrivateOfferBrandDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrivateOfferCoinmineDialog",
+      "imported": "CastlePrivateOfferCoinmineDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrivateOfferCoinmineDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrivateOfferCoinmineDoneDialog",
+      "imported": "CastlePrivateOfferCoinmineDoneDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrivateOfferCoinmineDoneDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrivateOfferDecorationDialog",
+      "imported": "CastlePrivateOfferDecorationDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrivateOfferDecorationDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrivateOfferDecorationFinishDialog",
+      "imported": "CastlePrivateOfferDecorationFinishDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrivateOfferDecorationFinishDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrivateOfferPremiumSmsDialog",
+      "imported": "CastlePrivateOfferPremiumSmsDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrivateOfferPremiumSmsDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrivateOfferRubymineDialog",
+      "imported": "CastlePrivateOfferRubymineDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrivateOfferRubymineDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrivateOfferRubymineDoneDialog",
+      "imported": "CastlePrivateOfferRubymineDoneDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrivateOfferRubymineDoneDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrivateOfferTimeChallengeDialog",
+      "imported": "CastlePrivateOfferTimeChallengeDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrivateOfferTimeChallengeDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrivateOfferTimeChallengeFinishDialog",
+      "imported": "CastlePrivateOfferTimeChallengeFinishDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrivateOfferTimeChallengeFinishDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrivateOfferTutorialCompletedDialog",
+      "imported": "CastlePrivateOfferTutorialCompletedDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrivateOfferTutorialCompletedDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_PrivateOfferFailedStandardDialog",
+      "imported": "PrivateOfferFailedStandardDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/PrivateOfferFailedStandardDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrivatePrimeTimeOfferDialog",
+      "imported": "CastlePrivatePrimeTimeOfferDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrivatePrimeTimeOfferDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleWhaleChestFinishDialog",
+      "imported": "CastleWhaleChestFinishDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleWhaleChestFinishDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrimeDayPODialog",
+      "imported": "CastlePrimeDayPODialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrimeDayPODialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrimeDayPOSMSDialog",
+      "imported": "CastlePrimeDayPOSMSDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrimeDayPOSMSDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrimeSaleDialog",
+      "imported": "CastlePrimeSaleDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrimeSaleDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleChestDialog",
+      "imported": "CastleChestDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleChestDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTreasureChestDialog",
+      "imported": "CastleTreasureChestDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleTreasureChestDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleTreasureChestOpenDialog",
+      "imported": "CastleTreasureChestOpenDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleTreasureChestOpenDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePaymentRewardSpecialOfferFinishDialog",
+      "imported": "CastlePaymentRewardSpecialOfferFinishDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePaymentRewardSpecialOfferFinishDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleResourceMerchantEventDialog",
+      "imported": "CastleResourceMerchantEventDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleResourceMerchantEventDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrivatePrimeDayOfferDynamicDialog",
+      "imported": "CastlePrivatePrimeDayOfferDynamicDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrivatePrimeDayOfferDynamicDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePOFurysBladeMessageDialog",
+      "imported": "CastlePOFurysBladeMessageDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePOFurysBladeMessageDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastlePrivateBestsellerShopDialog",
+      "imported": "CastlePrivateBestsellerShopDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastlePrivateBestsellerShopDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstOffer",
+      "imported": "ClientConstOffer",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstOffer.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_PrivateOfferStateEnum",
+      "imported": "PrivateOfferStateEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/PrivateOfferStateEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

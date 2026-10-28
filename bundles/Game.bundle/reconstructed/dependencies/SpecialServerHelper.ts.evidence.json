@@ -1,0 +1,71 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "SpecialServerHelper",
+  "canonicalSource": "modules/exports/SpecialServerHelper.js",
+  "canonicalSourceSha256": "8e1ab265d21beba0f1d37eaa1c94fbef4ee48877cc774887dd1b815117de9e9f",
+  "generatedHash": "e92bd9deafe95b4b6beb45ecc80f6641d13197a859f5d51f3c11842f351400bc",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_ABGHelper",
+      "imported": "ABGHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/ABGHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_TempServerHelper",
+      "imported": "TempServerHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/TempServerHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_KingdomEnum",
+      "imported": "KingdomEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/KingdomEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_TextHelper",
+      "imported": "TextHelper",
+      "bundle": "Game.bundle",
+      "path": "exports/TextHelper.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "EnvGlobalsHandler",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EnvGlobalsHandler.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:EnvGlobalsHandler",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "GoodgamePartners",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/GoodgamePartners__webpack_29__7d9b7b09.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:GoodgamePartners",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

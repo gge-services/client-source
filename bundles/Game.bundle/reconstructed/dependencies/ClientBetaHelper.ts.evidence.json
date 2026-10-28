@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "ClientBetaHelper",
+  "canonicalSource": "modules/exports/ClientBetaHelper.js",
+  "canonicalSourceSha256": "454c6d40df6e7024f395189313a5d217d91f46a0f6ccf5ae1eba3669531a0c5f",
+  "generatedHash": "33e76e65ff0bc9fe06dc07d367e5acbb5b1c726a163ba3d04031006be1d9e4fd",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_ClientConstInstanceIDs",
+      "imported": "ClientConstInstanceIDs",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstInstanceIDs.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_81dacdf05bd32292",
+      "imported": "instanceOfClass",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/instanceOfClass.js",
+      "moduleId": "3",
+      "moduleIdentity": "ggs.dll:export:instanceOfClass",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "EnvironmentProvider",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EnvironmentProvider.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:EnvironmentProvider",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicContextMenuController",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicContextMenuController.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicContextMenuController",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "BasicModel",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BasicModel.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:BasicModel",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

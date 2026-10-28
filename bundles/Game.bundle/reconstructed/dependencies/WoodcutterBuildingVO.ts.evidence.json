@@ -1,0 +1,108 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "WoodcutterBuildingVO",
+  "canonicalSource": "modules/exports/WoodcutterBuildingVO.js",
+  "canonicalSourceSha256": "a4d8181601d28e68c1b9b103d143a8ed898aa754d6c9f89d4c8bcaf66d8e9415",
+  "generatedHash": "2e8109b206bbda729fa1b5b88694e994b642571526de9eb9bfc8624c77f38ace",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_AResourceProductionBuildingVO",
+      "imported": "AResourceProductionBuildingVO",
+      "bundle": "Game.bundle",
+      "path": "exports/AResourceProductionBuildingVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectableEnum",
+      "imported": "CollectableEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_EffectTypeEnum",
+      "imported": "EffectTypeEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/EffectTypeEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "LocalizedNumberVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/LocalizedNumberVO.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:LocalizedNumberVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "MathBase",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/MathBase.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:MathBase",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleEffectEnum",
+      "imported": "CastleEffectEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleEffectEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "LocalizedTextVO",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/LocalizedTextVO.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:LocalizedTextVO",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_9e901e8e2483a22f",
+      "imported": "GenericTextIds",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/GenericTextIds.js",
+      "moduleId": "29",
+      "moduleIdentity": "ggs.dll:export:GenericTextIds",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstColor",
+      "imported": "ClientConstColor",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstColor.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "Localize",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/Localize.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:Localize",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [
+    "Library"
+  ],
+  "runtimeReady": false
+}

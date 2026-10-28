@@ -1,0 +1,96 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "CollectableHelper",
+  "canonicalSource": "modules/exports/CollectableHelper.js",
+  "canonicalSourceSha256": "a0ad895868b9b1ddd7a0a24c869026ebc63df2c3617879a6be2895f57cbdc7f4",
+  "generatedHash": "18e15fba67753c04c46eb9efcd76cd85475eced817f3695cfa9283019a353826",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CollectableTypeVO",
+      "imported": "CollectableTypeVO",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableTypeVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectableEnum",
+      "imported": "CollectableEnum",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableEnum.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCurrency",
+      "imported": "ClientConstCurrency",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCurrency.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "BoosterConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/BoosterConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:BoosterConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "EquipmentConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/EquipmentConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:EquipmentConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_f855840627e6e145",
+      "imported": "int",
+      "bundle": "ggs.dll",
+      "path": "modules/internal/exact_6fa490d8c1ec56fc.js",
+      "moduleId": "60",
+      "moduleIdentity": "ggs.dll:export:int",
+      "confidence": "explicit-owner-module-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstUtils",
+      "imported": "ClientConstUtils",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstUtils.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectableList",
+      "imported": "CollectableList",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableList.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectablesCosts",
+      "imported": "CollectablesCosts",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectablesCosts.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}

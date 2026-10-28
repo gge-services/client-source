@@ -1,0 +1,97 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "DefencePanelButton",
+  "canonicalSource": "modules/exports/DefencePanelButton.js",
+  "canonicalSourceSha256": "ee57226b5ffe2c0c3e92f38979415228525dbb0ec1382c42adb3852f8b413fd9",
+  "generatedHash": "471da4795d445b6044197dc0a9e3d11570bebfbf64dfb5c5c0d680dafbe86a7a",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_APanelButton",
+      "imported": "APanelButton",
+      "bundle": "Game.bundle",
+      "path": "exports/APanelButton.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleComponent",
+      "imported": "CastleComponent",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleComponent.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleModel",
+      "imported": "CastleModel",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleModel.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstLevelRestrictions",
+      "imported": "ClientConstLevelRestrictions",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstLevelRestrictions.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDefenceDialog",
+      "imported": "CastleDefenceDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDefenceDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleDefenceDialogProperties",
+      "imported": "CastleDefenceDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleDefenceDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "DefenseConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/DefenseConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:DefenseConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CastleCharacterYesNoOKDialog",
+      "imported": "CastleCharacterYesNoOKDialog",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCharacterYesNoOKDialog.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CastleCharacterYesNoOKDialogProperties",
+      "imported": "CastleCharacterYesNoOKDialogProperties",
+      "bundle": "Game.bundle",
+      "path": "exports/CastleCharacterYesNoOKDialogProperties.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_92d05af59ee2ff30",
+      "imported": "Localize",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/Localize.js",
+      "moduleId": "18",
+      "moduleIdentity": "ggs.dll:export:Localize",
+      "confidence": "verified-dll-id-and-member"
+    }
+  ],
+  "declaredSourceFields": [],
+  "globalRuntimeDependencies": [
+    "Library"
+  ],
+  "runtimeReady": false
+}

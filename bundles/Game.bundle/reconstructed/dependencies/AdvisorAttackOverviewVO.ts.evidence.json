@@ -1,0 +1,74 @@
+{
+  "schemaVersion": 1,
+  "snapshot": "2026-10-16",
+  "className": "AdvisorAttackOverviewVO",
+  "canonicalSource": "modules/exports/AdvisorAttackOverviewVO.js",
+  "canonicalSourceSha256": "614a134f8936a1a0d853c542596da8e54053a5272ff0f3d51d48106539a2822d",
+  "generatedHash": "2e09ff110fbbe6a8569c1bda803d49797062cb6eee46810039ceacc6d5e00c74",
+  "dependencies": [
+    {
+      "specifier": "gge-module:export_CollectableManager",
+      "imported": "CollectableManager",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableManager.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "CommKeys",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/CommKeys.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:CommKeys",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:exact_26a421b704832cff",
+      "imported": "AttackAdvisorConst",
+      "bundle": "ggs.dll",
+      "path": "modules/exports/AttackAdvisorConst.js",
+      "moduleId": "617",
+      "moduleIdentity": "ggs.dll:export:AttackAdvisorConst",
+      "confidence": "verified-dll-id-and-member"
+    },
+    {
+      "specifier": "gge-module:export_CollectableItemGenericCurrencyVO",
+      "imported": "CollectableItemGenericCurrencyVO",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableItemGenericCurrencyVO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_ClientConstCurrency",
+      "imported": "ClientConstCurrency",
+      "bundle": "Game.bundle",
+      "path": "exports/ClientConstCurrency.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    },
+    {
+      "specifier": "gge-module:export_CollectableItemC1VO",
+      "imported": "CollectableItemC1VO",
+      "bundle": "Game.bundle",
+      "path": "exports/CollectableItemC1VO.js",
+      "moduleId": null,
+      "confidence": "unique-public-export"
+    }
+  ],
+  "declaredSourceFields": [
+    "_advisorType: any;",
+    "_commanders: any;",
+    "_defeats: any;",
+    "_gained: any;",
+    "_gallantryPoints: any;",
+    "_lost: any;",
+    "_lostTools: any;",
+    "_lostUnits: any;",
+    "_stopped: any;",
+    "_wins: any;"
+  ],
+  "globalRuntimeDependencies": [],
+  "runtimeReady": false
+}
