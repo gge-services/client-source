@@ -59,6 +59,6 @@ test('real canonical snapshot has exactly two source-identical package aliases',
     assert.equal(original,owner)
     assert.ok(row.id.includes('Game.bundle:package:'))
   }
-  assert.equal(graph.stableNodeCount,6626)
-  assert.equal(graph.unresolvedNodeCount,224)
+  assert.equal(graph.stableNodeCount,6631)
+  assert.equal(graph.unresolvedNodeCount,219)
 })

@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "compare": "node compare.mjs",
-    "test": "node --test test.mjs fetch-client.test.mjs refine-modules.test.mjs semantic-view.test.mjs reverse-ts-es5.test.mjs resolve-imports.test.mjs resolve-graph-identities.test.mjs compare-official-raw.test.mjs semantic-parameters.test.mjs event-identities.test.mjs literal-identities.test.mjs audit-command-abi.test.mjs compare-raw-revisions.test.mjs reconstruct-dependencies.test.mjs cross-bundle-aliases.test.mjs",
+    "test": "node --test test.mjs fetch-client.test.mjs refine-modules.test.mjs semantic-view.test.mjs reverse-ts-es5.test.mjs resolve-imports.test.mjs resolve-graph-identities.test.mjs compare-official-raw.test.mjs semantic-parameters.test.mjs event-identities.test.mjs literal-identities.test.mjs audit-command-abi.test.mjs compare-raw-revisions.test.mjs reconstruct-dependencies.test.mjs cross-bundle-aliases.test.mjs audit-neighborhoods.test.mjs",
     "verify": "node verify.mjs ../..",
     "audit": "node audit-symbol-views.mjs ../..",
     "reconstruct": "npm run graph && node reconstruct-commands.mjs ../.. && node reconstruct-dependencies.mjs ../..",
@@ -20,7 +20,8 @@
     "literals:compare": "node literal-identities.mjs ../.. /tmp/gge-official-20261025-live ../../graphs/2026-10-25-literal-identities.jsonl",
     "abi:compare": "node audit-command-abi.mjs ../.. /tmp/gge-official-20261025-live ../../graphs/2026-10-25-command-abi.jsonl",
     "raw:diff": "node compare-raw-revisions.mjs /tmp/gge-official-20261025-live /tmp/gge-official-20261027-rawdiff ../../graphs/2026-10-25-to-2026-10-27-rawdiff.json",
-    "dependencies:reconstruct": "node reconstruct-dependencies.mjs ../.."
+    "dependencies:reconstruct": "node reconstruct-dependencies.mjs ../..",
+    "neighborhoods:compare": "node audit-neighborhoods.mjs ../.. /tmp/gge-official-20261025-live /tmp/gge-official-20261027-rawdiff ../../graphs/2026-10-25-to-2026-10-27-neighborhoods.jsonl"
   },
   "dependencies": {
     "@babel/generator": "7.29.0",
